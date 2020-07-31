@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="apgar-timing"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-31T00:46:55.628+00:00"/>
+        <source value="#JfAPKzSEysS8ovEu"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vrcpl/ValueSet/apgar-timing"/>
+    <version value="0.1.0"/>
+    <name value="ApgarTiming"/>
+    <title value="APGAR Score Timing"/>
+    <status value="active"/>
+    <date value="2020-07-17T18:56:31+00:00"/>
+    <description value="Standard timings for APGAR assessments."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="9272-6"/>
+                <display value="1 minute Apgar Score"/>
+            </concept>
+            <concept>
+                <code value="9274-2"/>
+                <display value="5 minute Apgar Score"/>
+            </concept>
+            <concept>
+                <code value="9271-8"/>
+                <display value="10 minute Apgar Score"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-apgar-score"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-31T01:08:25.775+00:00"/>
+        <source value="#pPXhQfFQ2Xy7u8zo"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-apgar-score"/>
+    <version value="0.1.0"/>
+    <name value="ApgarScore"/>
+    <title value="Observation - APGAR Score"/>
+    <status value="active"/>
+    <date value="2020-07-17T18:56:31+00:00"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="APGAR score post-birth."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/vrcpl/ValueSet/apgar-timing"/>
+            </binding>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="integer"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
