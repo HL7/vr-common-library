@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedant-fetus"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-03T05:17:29.384+00:00"/>
-        <source value="#T73YwGcSvIdlaOW7"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-03T06:04:52.104+00:00"/>
+        <source value="#15UZbqM80YRkAgJH"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-decedant-fetus"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedant-fetus"/>
     <version value="0.1.0"/>
     <name value="PatientDecedantFetus"/>
     <title value="Patient - Decedant Fetus"/>

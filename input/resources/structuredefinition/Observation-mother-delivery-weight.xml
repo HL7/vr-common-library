@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-delivery-weight"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:30.005+00:00"/>
-        <source value="#dyAkcu8ayMOPJlpY"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.635+00:00"/>
+        <source value="#0Q3pNGhGgdYvf5nD"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-mother-delivery-weight"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-delivery-weight"/>
     <version value="0.1.0"/>
     <name value="ObservationMotherDeliveryWeight"/>
     <title value="Observation - Mother Delivery Weight"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

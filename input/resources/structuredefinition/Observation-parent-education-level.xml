@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:30.432+00:00"/>
-        <source value="#VYGEzJaNqSppNKyN"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.652+00:00"/>
+        <source value="#EIq814YDgGBLWKSm"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-parent-education-level"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-parent-education-level"/>
     <version value="0.1.0"/>
     <name value="ObservationParentEducationLevel"/>
     <title value="Observation - Parent Education Level"/>
@@ -41,7 +41,7 @@
             <path value="Observation.code"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vrcpl/ValueSet/educationlevelperson"/>
+                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-ig/ValueSet/educationlevelperson"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -50,7 +50,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-patientsubject"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-patientsubject"/>
             </type>
         </element>
         <element id="Observation.focus">
@@ -60,8 +60,8 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-relatedpersonmother"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-relatedpersonfather"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-relatedpersonmother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-relatedpersonfather"/>
             </type>
         </element>
         <element id="Observation.value[x]">

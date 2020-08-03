@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-gestational-age-at-delivery"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:29.980+00:00"/>
-        <source value="#plzy2s7SXZTQ7CGq"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.030+00:00"/>
+        <source value="#BAJwTSBRzO7erpLY"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-gestational-age-at-delivery"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-gestational-age-at-delivery"/>
     <version value="0.1.0"/>
     <name value="ObservationGestationalAgeAtDelivery"/>
     <title value="Observation - Gestational Age"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-patientsubject"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-patientsubject"/>
             </type>
         </element>
         <element id="Observation.value[x]">

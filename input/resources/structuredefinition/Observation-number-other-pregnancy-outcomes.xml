@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-other-pregnancy-outcomes"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:30.416+00:00"/>
-        <source value="#YpCxPExcJldZXez9"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.605+00:00"/>
+        <source value="#AUWUtqZHqutVUfk5"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
     <version value="0.1.0"/>
     <name value="ObservationNumberOtherPregnancyOutcomes"/>
     <title value="Observation - Number of Other Pregnancy Outcomes"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

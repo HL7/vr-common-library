@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-place-of-birth-type"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:30.387+00:00"/>
-        <source value="#2vNP3wZChJR6Yx7h"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.786+00:00"/>
+        <source value="#eER4LtZM747MvQMf"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-place-of-birth-type"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-place-of-birth-type"/>
     <version value="0.1.0"/>
     <name value="ObservationPlaceOfBirthType"/>
     <title value="Observation - Place Of Birth Type"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-patientsubject"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-patientsubject"/>
             </type>
         </element>
         <element id="Observation.value[x]">

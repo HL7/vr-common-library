@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-ethnicity"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-03T05:17:29.478+00:00"/>
-        <source value="#2V9CqtNwaaKEIQDc"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-03T06:11:18.311+00:00"/>
+        <source value="#UwYa2FOkUW5v8ZUV"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-ethnicity"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
     <version value="0.1.0"/>
     <name value="ExtensionRelatedPersonEthnicity"/>
-    <title value="Extension - RelatedPerson Ethnicity (BDR)"/>
+    <title value="Extension - RelatedPerson Ethnicity"/>
     <status value="active"/>
     <date value="2020-07-17T18:56:31+00:00"/>
     <contact>
@@ -47,7 +47,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-ethnicity"/>
+            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Newborn"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2020-08-03T05:34:57.492+00:00"/>
-        <source value="#gMCvNVNYAV4hkXgX"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-08-03T06:04:52.076+00:00"/>
+        <source value="#AEymzNoF0iMK1Sd1"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-Newborn"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-Newborn"/>
     <version value="0.1.0"/>
     <name value="PatientNewborn"/>
     <title value="Patient - Newborn"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-03T05:17:29.399+00:00"/>
-        <source value="#Tsuwoh7iyxiwng2r"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-03T06:04:52.074+00:00"/>
+        <source value="#Nv30MbaRpNFbcrYd"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/RelatedPerson-parent"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonParent"/>
     <title value="Related Person - Parent"/>
@@ -55,7 +55,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-birthplace"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-birthplace"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -66,7 +66,7 @@
             <max value="*"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-race"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-race"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -77,7 +77,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-ethnicity"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -89,7 +89,7 @@
             <path value="RelatedPerson.patient"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-patientsubject"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-patientsubject"/>
             </type>
         </element>
         <element id="RelatedPerson.relationship">

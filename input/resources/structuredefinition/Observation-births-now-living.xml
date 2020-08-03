@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-births-now-living"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:29.986+00:00"/>
-        <source value="#2OCZS7FGtTWVwpBn"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.029+00:00"/>
+        <source value="#WNa9FMpzO4n0qemI"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-births-now-living"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-births-now-living"/>
     <version value="0.1.0"/>
     <name value="ObservationBirthsNowLiving"/>
     <title value="Observation - Number of Births Now Living"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

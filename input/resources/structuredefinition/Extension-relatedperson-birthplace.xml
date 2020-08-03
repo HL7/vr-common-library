@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-birthplace"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-03T05:17:29.400+00:00"/>
-        <source value="#oisdC0gHZWbZpS46"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-03T06:04:51.071+00:00"/>
+        <source value="#a4SWGi3fFjbgxN1P"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-birthplace"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-birthplace"/>
     <version value="0.1.0"/>
     <name value="ExtensionRelatedpersonBirthplace"/>
     <title value="Extension - RelatedPerson Birth Place"/>
@@ -47,7 +47,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-birthplace"/>
+            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-birthplace"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

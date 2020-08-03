@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Mother"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2020-08-03T05:34:03.911+00:00"/>
-        <source value="#mgDdvLN9U6QRPui9"/>
+        <versionId value="24"/>
+        <lastUpdated value="2020-08-03T06:04:52.097+00:00"/>
+        <source value="#8ADDfpX6Lv7TJXi7"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-Mother"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-Mother"/>
     <version value="0.1.0"/>
     <name value="PatientMother"/>
     <title value="Patient - Mother"/>
@@ -135,7 +135,7 @@
                     <valueBoolean value="false"/>
                 </extension>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-relatedpersonmother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-relatedpersonmother"/>
             </type>
         </element>
         <element id="Patient.link:mother.type">

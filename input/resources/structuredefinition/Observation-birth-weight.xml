@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-birth-weight"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T05:17:29.876+00:00"/>
-        <source value="#w45mLRCs1GgOgGQp"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T06:04:51.060+00:00"/>
+        <source value="#QoW1Z27HYfTXJ3Hi"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-birth-weight"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-birth-weight"/>
     <version value="0.1.0"/>
     <name value="ObservationBirthWeight"/>
     <title value="Observation - Birth Weight"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-patientsubject"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-patientsubject"/>
             </type>
         </element>
         <element id="Observation.value[x]">
