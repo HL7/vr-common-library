@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-deceased"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-03T06:04:50.957+00:00"/>
-        <source value="#Z6mqBRlkdC3raxzA"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-03T07:02:00.926+00:00"/>
+        <source value="#YnYFeQEkUYwZkpjN"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-relatedpersondeceased"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-deceased"/>
     <version value="0.1.0"/>
     <name value="ExtensionRelatedPersonDeceased"/>
     <title value="Extension - RelatedPerson Deceased"/>

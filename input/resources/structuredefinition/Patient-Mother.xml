@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Mother"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2020-08-03T06:04:52.097+00:00"/>
-        <source value="#8ADDfpX6Lv7TJXi7"/>
+        <versionId value="25"/>
+        <lastUpdated value="2020-08-03T07:23:58.085+00:00"/>
+        <source value="#KEb09ZTgT450g14R"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-Mother"/>
     <version value="0.1.0"/>
@@ -135,7 +135,7 @@
                     <valueBoolean value="false"/>
                 </extension>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-relatedpersonmother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Mother"/>
             </type>
         </element>
         <element id="Patient.link:mother.type">

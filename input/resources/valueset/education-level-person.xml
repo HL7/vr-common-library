@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="education-level-person"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-03T07:21:38.489+00:00"/>
+        <source value="#1MZKol8cjGNhzwD0"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/birthdefectreporting/ValueSet/education-level-person"/>
+    <version value="0.1.0"/>
+    <name value="EducationLevelPerson"/>
+    <title value="Education Level Person"/>
+    <status value="active"/>
+    <date value="2020-07-17T18:56:31+00:00"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="Persons for whom education level can be reported."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="87300-0"/>
+                <display value="Highest level of education Father"/>
+            </concept>
+            <concept>
+                <code value="57712-2"/>
+                <display value="Highest level of education Mother"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

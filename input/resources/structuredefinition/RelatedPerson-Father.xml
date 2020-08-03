@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-Father"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2020-08-03T06:04:52.023+00:00"/>
-        <source value="#2WTtaFAGPKolhlU4"/>
+        <versionId value="13"/>
+        <lastUpdated value="2020-08-03T07:24:26.472+00:00"/>
+        <source value="#V96TULfnQ6bFRmbx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Father"/>
     <version value="0.1.0"/>
@@ -41,7 +41,7 @@
             <path value="RelatedPerson.relationship"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-ig/ValueSet/bdr-fatherRelationship"/>
+                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-ig/ValueSet/father-relationship"/>
             </binding>
         </element>
     </differential>

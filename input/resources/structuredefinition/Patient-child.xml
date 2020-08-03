@@ -2,6 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-03T07:09:29.057+00:00"/>
+        <source value="#iPORMWzGNNIQFV1a"/>
+    </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     <version value="0.1.0"/>
     <name value="PatientChild"/>

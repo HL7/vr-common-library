@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="54"/>
-        <lastUpdated value="2020-08-03T06:19:13.453+00:00"/>
-        <source value="#3Pia99eCxmYDaOik"/>
+        <versionId value="61"/>
+        <lastUpdated value="2020-08-03T07:21:38.770+00:00"/>
+        <source value="#6mQPjnK9kjiflkqE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -47,15 +47,6 @@
         <grouping id="participants">
             <name value="Participants"/>
         </grouping>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-relatedperson-deceased"/>
-                <display value="Extension - RelatedPerson Deceased"/>
-            </reference>
-            <name value="Extension - RelatedPerson Deceased"/>
-            <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
-            <exampleBoolean value="false"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-relatedperson-birthplace"/>
@@ -265,16 +256,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Patient-Newborn"/>
-                <display value="Patient - Newborn"/>
-            </reference>
-            <name value="Patient - Newborn"/>
-            <description value="The subject patient (newborn) for whom clinical data is included in the report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/RelatedPerson-father-natural"/>
                 <display value="RelatedPerson - Father Natural"/>
             </reference>
@@ -379,6 +360,52 @@
             <description value="Example of Observation-apgar profile (Baby Everybaby)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-apgar-score"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-relatedperson-deceased"/>
+                <display value="ExtensionRelatedPersonDeceased"/>
+            </reference>
+            <name value="ExtensionRelatedPersonDeceased"/>
+            <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-child"/>
+                <display value="Patient - Child"/>
+            </reference>
+            <name value="Patient - Child"/>
+            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/father-relationship"/>
+                <display value="Father Relationship"/>
+            </reference>
+            <name value="Father Relationship"/>
+            <description value="Relationships describing the father's role relative to the birth defect subject"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/newborn-procedure-list"/>
+                <display value="Newborn Procedure List"/>
+            </reference>
+            <name value="Newborn Procedure List"/>
+            <description value="Procedures performed on the newborn subject"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/education-level-person"/>
+                <display value="Education Level Person"/>
+            </reference>
+            <name value="Education Level Person"/>
+            <description value="Persons for whom education level can be reported."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

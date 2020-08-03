@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="father-relationship"/>
+  <url value="http://hl7.org/fhir/us/birthdefectreporting/ValueSet/father-relationship"/>
+  <version value="0.1.0"/>
+  <name value="FatherRelationship"/>
+  <title value="Father Relationship"/>
+  <status value="active"/>
+  <date value="2020-07-17T18:56:31+00:00"/>
+  <contact>
+    <name value="HL7 International - Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description
+    value="Relationships describing the father&#39;s role relative to the birth defect subject"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <concept>
+        <code value="ADOPTF"/>
+        <display value="adoptive father"/>
+      </concept>
+      <concept>
+        <code value="FTH"/>
+        <display value="father"/>
+      </concept>
+      <concept>
+        <code value="FTHFOST"/>
+        <display value="foster father"/>
+      </concept>
+      <concept>
+        <code value="NFTH"/>
+        <display value="natural father"/>
+      </concept>
+      <concept>
+        <code value="STPFTH"/>
+        <display value="stepfather"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
