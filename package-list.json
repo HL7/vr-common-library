@@ -9,7 +9,7 @@
 			"current": true
 		}
 	],
-	"package-id": "hll.fhir.us.fhir-vr-common-ig",
+	"package-id": "hl7.fhir.us.fhir-vr-common-ig",
 	"title": "Vital Records Common Profiles Libraray",
 	"canonical": "http://hl7.org/fhir/us/fhir-vr-common-ig"
 }
