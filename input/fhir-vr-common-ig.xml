@@ -7,7 +7,7 @@
         <lastUpdated value="2020-08-03T06:19:13.453+00:00"/>
         <source value="#3Pia99eCxmYDaOik"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/ImplementationGuide/fhir-vr-common-ig"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
     <name value="Vital_Records_Common_Profiles_Library"/>
     <title value="Vital Records Common Profiles Libraray"/>
