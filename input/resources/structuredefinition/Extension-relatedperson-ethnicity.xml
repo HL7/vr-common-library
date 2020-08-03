@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-relatedperson-ethnicity"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-03T05:17:29.478+00:00"/>
+        <source value="#2V9CqtNwaaKEIQDc"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-ethnicity"/>
+    <version value="0.1.0"/>
+    <name value="ExtensionRelatedPersonEthnicity"/>
+    <title value="Extension - RelatedPerson Ethnicity (BDR)"/>
+    <status value="active"/>
+    <date value="2020-07-17T18:56:31+00:00"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="The ethnicity for the related person."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Element"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-ethnicity"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Extension.valueCodeableConcept">
+            <path value="Extension.valueCodeableConcept"/>
+            <short value="The ethnicity of the related person."/>
+            <min value="0"/>
+            <max value="1"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-relatedperson-deceased"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-03T05:17:29.375+00:00"/>
+        <source value="#ONJCvQAhfJ3Jxubc"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/bdr-relatedpersondeceased"/>
+    <version value="0.1.0"/>
+    <name value="ExtensionRelatedPersonDeceased"/>
+    <title value="Extension - RelatedPerson Deceased"/>
+    <status value="active"/>
+    <date value="2020-07-17T18:56:31+00:00"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Element"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Extension-relatedperson-deceased"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

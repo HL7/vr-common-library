@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-apgar-score"/>
+    <id value="Observation-number-previous-cesareans"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-03T04:39:50.386+00:00"/>
-        <source value="#xEUVHUB5wtXxHUgW"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-03T05:17:29.920+00:00"/>
+        <source value="#QrJmmt6IljNrpybN"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-apgar-score"/>
+    <url value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Observation-number-previous-cesareans"/>
     <version value="0.1.0"/>
-    <name value="ObservationApgarScore"/>
-    <title value="Observation - APGAR Score"/>
+    <name value="ObservationNumberPreviousCesareans"/>
+    <title value="Observation - Number of Previous Cesareans"/>
     <status value="active"/>
     <date value="2020-07-17T18:56:31+00:00"/>
     <contact>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="APGAR score post-birth."/>
+    <description value="The total number of prior cesarean deliveries for the mother."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -39,18 +39,23 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <binding>
-                <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/vrcpl/ValueSet/apgar-timing"/>
-            </binding>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="68497-7"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrcpl/StructureDefinition/Patient-mother"/>
+            </type>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <min value="1"/>
             <type>
                 <code value="integer"/>
             </type>
