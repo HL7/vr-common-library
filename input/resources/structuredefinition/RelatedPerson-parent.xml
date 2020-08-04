@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-03T06:04:52.074+00:00"/>
-        <source value="#Nv30MbaRpNFbcrYd"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-04T22:48:25.612+00:00"/>
+        <source value="#E8YmjR1WT9VKggMq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
@@ -89,7 +89,8 @@
             <path value="RelatedPerson.patient"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/bdr-patientsubject"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedant-fetus"/>
             </type>
         </element>
         <element id="RelatedPerson.relationship">

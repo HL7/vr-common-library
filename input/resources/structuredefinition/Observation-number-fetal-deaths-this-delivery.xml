@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-fetal-deaths-this-delivery"/>
+    <id value="Observation-number-fetal-deaths-this-delivery"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-04T00:16:56.019+00:00"/>
-        <source value="#mPThp66sWmgyWJM6"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-04T23:25:47.672+00:00"/>
+        <source value="#jZBwfL2Yp0NpRcId"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-fetal-deaths-this-delivery"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
     <version value="0.1.0"/>
-    <name value="ObservationFetalDeathsThisDelivery"/>
-    <title value="Observation - Fetal Deaths This Delivery"/>
+    <name value="ObservationNumberFetalDeathsThisDelivery"/>
+    <title value="Observation - Number of Fetal Deaths This Delivery"/>
     <status value="active"/>
     <date value="2020-07-17T18:56:31+00:00"/>
     <contact>
@@ -39,10 +39,11 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <short value="LOINC LCN: Number of fetal deaths delivered"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="73773-4"/>
+                    <code value="73772-6"/>
                 </coding>
             </patternCodeableConcept>
         </element>

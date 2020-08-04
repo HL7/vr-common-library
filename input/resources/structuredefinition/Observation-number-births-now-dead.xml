@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-births-now-dead"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-04T00:16:10.372+00:00"/>
-        <source value="#VGO7segA3WSwh5Wy"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-04T23:14:05.032+00:00"/>
+        <source value="#SSh5uekufTR1xi39"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-births-now-dead"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-births-now-dead"/>
     <version value="0.1.0"/>
     <name value="ObservationNumberBirthsNowDead"/>
     <title value="Observation - Number of Births Now Dead"/>
