@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="61"/>
-        <lastUpdated value="2020-08-03T07:21:38.770+00:00"/>
-        <source value="#6mQPjnK9kjiflkqE"/>
+        <versionId value="72"/>
+        <lastUpdated value="2020-08-04T22:40:45.560+00:00"/>
+        <source value="#SEJgSuzkGOWBxgMg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -296,36 +296,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/RelatedPerson-Father"/>
-                <display value="RelatedPerson - Father"/>
-            </reference>
-            <name value="RelatedPerson - Father"/>
-            <description value="The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-Mother"/>
-                <display value="Patient - Mother"/>
-            </reference>
-            <name value="Patient - Mother"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-Mother"/>
-                <display value="RelatedPerson - Mother"/>
-            </reference>
-            <name value="RelatedPerson - Mother"/>
-            <description value="The mother of the report subject. Different individuals may play different roles as the mother (eg. biological mother, adoptive mother, etc)"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/RelatedPerson-mother-natural"/>
                 <display value="RelatedPerson - Mother Natural"/>
             </reference>
@@ -406,6 +376,40 @@
             <name value="Education Level Person"/>
             <description value="Persons for whom education level can be reported."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-fetus-fetus-everybaby"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-mother"/>
+                <display value="Patient - Mother"/>
+            </reference>
+            <name value="Patient - Mother"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-mother"/>
+                <display value="RelatedPerson - Mother"/>
+            </reference>
+            <name value="RelatedPerson - Mother"/>
+            <description value="The mother of the report subject. Different individuals may play different roles as the mother (eg. biological mother, adoptive mother, etc)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-father"/>
+                <display value="RelatedPerson - Father"/>
+            </reference>
+            <name value="RelatedPerson - Father"/>
+            <description value="The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

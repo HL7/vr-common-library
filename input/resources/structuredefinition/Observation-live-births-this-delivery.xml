@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-live-births-this-delivery"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-03T07:05:36.626+00:00"/>
-        <source value="#kySOKRL2ukhqW4Tc"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-04T00:16:56.003+00:00"/>
+        <source value="#O2zXUGFs4LOwNMX2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-live-births-this-delivery"/>
     <version value="0.1.0"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-Mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

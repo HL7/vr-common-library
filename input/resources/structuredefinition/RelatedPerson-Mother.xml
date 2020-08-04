@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="RelatedPerson-Mother"/>
+    <id value="RelatedPerson-mother"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2020-08-03T06:04:52.027+00:00"/>
-        <source value="#X5k2I1jRazRE1kQp"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-04T21:52:31.219+00:00"/>
+        <source value="#uzS6japDn8bDAgLO"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Mother"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonMother"/>
     <title value="RelatedPerson - Mother"/>

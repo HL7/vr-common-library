@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="RelatedPerson-Father"/>
+    <id value="RelatedPerson-father"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-08-03T07:24:26.472+00:00"/>
-        <source value="#V96TULfnQ6bFRmbx"/>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-04T21:59:32.475+00:00"/>
+        <source value="#ZaWPU9pqR9veTEDJ"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Father"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonFather"/>
     <title value="RelatedPerson - Father"/>

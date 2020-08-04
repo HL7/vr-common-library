@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-pregnancy-risk-factor"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-03T07:23:58.085+00:00"/>
-        <source value="#pFwOgmYhr9NJEOi7"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-04T21:53:37.510+00:00"/>
+        <source value="#r2zWYRmayUhIyPoW"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-pregnancy-risk-factor"/>
     <version value="0.1.0"/>
@@ -60,7 +60,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-03T07:22:07.183+00:00"/>
-        <source value="#CtwRj06nPXrNp6Nm"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-08-04T22:03:58.783+00:00"/>
+        <source value="#3VC8OoC2D517LMEh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-parent-education-level"/>
     <version value="0.1.0"/>
@@ -60,8 +60,8 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Mother"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Father"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
             </type>
         </element>
         <element id="Observation.value[x]">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-previous-cesareans"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-03T07:05:36.567+00:00"/>
-        <source value="#k7JCTwzP0eg2Hqnx"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-04T00:16:10.394+00:00"/>
+        <source value="#kAhyYZMXnPCNpiIk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-previous-cesareans"/>
     <version value="0.1.0"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-Mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

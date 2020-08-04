@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-prenatal-visits"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-03T07:05:36.611+00:00"/>
-        <source value="#0Vblo7xHxvjeEnqu"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-04T00:16:10.273+00:00"/>
+        <source value="#PDCEXOYsp9EQgcA9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-prenatal-visits"/>
     <version value="0.1.0"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-Mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.effective[x]">

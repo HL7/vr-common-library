@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father-natural"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-03T07:28:19.358+00:00"/>
-        <source value="#jDpXNPKeBUWVa0m9"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-08-04T22:04:31.962+00:00"/>
+        <source value="#BXTUsW2IdbsSxlCf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father-natural"/>
     <version value="1.0.0"/>
@@ -26,7 +26,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="RelatedPerson"/>
-    <baseDefinition value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-Father"/>
+    <baseDefinition value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
     <derivation value="constraint"/>
     <differential>
         <element id="RelatedPerson">
