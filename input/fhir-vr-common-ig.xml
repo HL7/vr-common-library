@@ -27,12 +27,6 @@
             <code value="US"/>
         </coding>
     </jurisdiction>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166:-2"/>
-            <code value="US"/>
-        </coding>
-    </jurisdiction>
     <packageId value="hl7.fhir.us.fhir-vr-common-ig"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn>
