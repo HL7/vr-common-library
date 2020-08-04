@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father-natural"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-04T22:04:31.962+00:00"/>
-        <source value="#BXTUsW2IdbsSxlCf"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-04T23:39:33.068+00:00"/>
+        <source value="#Ar6mNKJ2Ff9dA5L9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father-natural"/>
     <version value="1.0.0"/>
@@ -32,13 +32,6 @@
         <element id="RelatedPerson">
             <path value="RelatedPerson"/>
             <short value="The biological father of the newborn or fetus."/>
-        </element>
-        <element id="RelatedPerson.patient">
-            <path value="RelatedPerson.patient"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
-            </type>
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>

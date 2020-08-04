@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-plurality"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-04T00:16:10.352+00:00"/>
-        <source value="#yI6uIdfbOaaQPuRY"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-04T23:48:14.591+00:00"/>
+        <source value="#DmKtsMkyiFkOXBKL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-plurality"/>
     <version value="0.1.0"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

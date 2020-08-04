@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="79"/>
-        <lastUpdated value="2020-08-04T23:22:54.346+00:00"/>
-        <source value="#7J8DGmtQ00R6wgmB"/>
+        <versionId value="80"/>
+        <lastUpdated value="2020-08-04T23:40:02.176+00:00"/>
+        <source value="#ohCSz4p7vrkqcInK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -35,11 +35,11 @@
         <version value="3.1.0"/>
     </dependsOn>
     <definition>
-        <grouping id="observations">
-            <name value="Observations"/>
-        </grouping>
         <grouping id="participants">
             <name value="Participants"/>
+        </grouping>
+        <grouping id="observations">
+            <name value="Observations"/>
         </grouping>
         <resource>
             <reference>
