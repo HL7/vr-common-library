@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="80"/>
-        <lastUpdated value="2020-08-04T23:40:02.176+00:00"/>
-        <source value="#ohCSz4p7vrkqcInK"/>
+        <versionId value="84"/>
+        <lastUpdated value="2020-08-05T02:33:20.420+00:00"/>
+        <source value="#5B5sTNZALW67a2qv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -180,16 +180,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Patient-decedant-fetus"/>
-                <display value="Patient - Decedant Fetus"/>
-            </reference>
-            <name value="Patient - Decedant Fetus"/>
-            <description value="A stillborn for whom clinical data is included in the report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-place-of-birth-type"/>
                 <display value="Observation - Place Of Birth Type"/>
             </reference>
@@ -272,7 +262,7 @@
                 <reference value="StructureDefinition/Extension-relatedperson-deceased"/>
                 <display value="ExtensionRelatedPersonDeceased"/>
             </reference>
-            <name value="ExtensionRelatedPersonDeceased"/>
+            <name value="Extension - Related Person Deceased"/>
             <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -348,7 +338,7 @@
                 <reference value="StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
                 <display value="ObservationNumberFetalDeathsThisDelivery"/>
             </reference>
-            <name value="ObservationNumberFetalDeathsThisDelivery"/>
+            <name value="Observation - Number Fetal Deaths This Delivery"/>
             <description value="The number of fetal deaths in this delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -358,7 +348,7 @@
                 <reference value="StructureDefinition/Observation-number-births-now-dead"/>
                 <display value="ObservationNumberBirthsNowDead"/>
             </reference>
-            <name value="ObservationNumberBirthsNowDead"/>
+            <name value="Observation - Number Births Now Dead"/>
             <description value="The total number of previous live-born infants for the mother now dead."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -368,7 +358,7 @@
                 <reference value="StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
                 <display value="ObservationNumberOtherPregnancyOutcomes"/>
             </reference>
-            <name value="ObservationNumberOtherPregnancyOutcomes"/>
+            <name value="Observation - Number Other Pregnancy Outcomes"/>
             <description value="The total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -378,7 +368,7 @@
                 <reference value="StructureDefinition/Observation-number-previous-cesareans"/>
                 <display value="ObservationNumberPreviousCesareans"/>
             </reference>
-            <name value="ObservationNumberPreviousCesareans"/>
+            <name value="Observation - Number Previous Cesareans"/>
             <description value="The total number of prior cesarean deliveries for the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -388,10 +378,20 @@
                 <reference value="StructureDefinition/Observation-number-births-now-living"/>
                 <display value="ObservationNumberBirthsNowLiving"/>
             </reference>
-            <name value="ObservationNumberBirthsNowLiving"/>
+            <name value="Observation - Number Births Now Living"/>
             <description value="The total number of previous live-born infants for the mother now living."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-decedent-fetus"/>
+                <display value="PatientDecedentFetus"/>
+            </reference>
+            <name value="Patient - Decedent Fetus"/>
+            <description value="A stillborn for whom clinical data is included in the report."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Patient-decedant-fetus"/>
+    <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-03T06:04:52.104+00:00"/>
-        <source value="#15UZbqM80YRkAgJH"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-05T01:47:53.914+00:00"/>
+        <source value="#2Odce7g3m9mTNAtE"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedant-fetus"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
-    <name value="PatientDecedantFetus"/>
-    <title value="Patient - Decedant Fetus"/>
+    <name value="PatientDecedentFetus"/>
+    <title value="Patient - Decedent Fetus"/>
     <status value="active"/>
     <date value="2020-07-17T18:56:31+00:00"/>
     <contact>

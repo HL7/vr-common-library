@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-03T07:09:29.057+00:00"/>
-        <source value="#iPORMWzGNNIQFV1a"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-05T02:46:21.103+00:00"/>
+        <source value="#UBtqnvIL0dzc6Xjl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     <version value="0.1.0"/>
@@ -103,9 +103,63 @@
             <path value="Patient.name.family"/>
             <min value="1"/>
         </element>
+        <element id="Patient.name.family.extension">
+            <path value="Patient.name.family.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.name.family.extension:dataAbsentReason">
+            <path value="Patient.name.family.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name.given">
+            <path value="Patient.name.given"/>
+        </element>
+        <element id="Patient.name.given.extension">
+            <path value="Patient.name.given.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.name.given.extension:dataAbsentReason">
+            <path value="Patient.name.given.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
             <min value="1"/>
+        </element>
+        <element id="Patient.birthDate.extension:birthTime">
+            <path value="Patient.birthDate.extension"/>
+            <sliceName value="birthTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-04T21:53:27.035+00:00"/>
-        <source value="#P9xksQ8tW1YhbWDs"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-08-05T02:44:11.885+00:00"/>
+        <source value="#VbFJU3zJuDc1YBfl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
     <version value="0.1.0"/>
@@ -95,9 +95,48 @@
                 </coding>
             </patternCodeableConcept>
         </element>
+        <element id="Patient.name">
+            <path value="Patient.name"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="use"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
         <element id="Patient.name.family">
             <path value="Patient.name.family"/>
             <min value="1"/>
+        </element>
+        <element id="Patient.name:currentLegalName">
+            <path value="Patient.name"/>
+            <sliceName value="currentLegalName"/>
+            <short value="Mother's current legal name"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name:currentLegalName.use">
+            <path value="Patient.name.use"/>
+            <short value="Mother's name prior to first marriage"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="official"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name:namePriorToFirstMarriage">
+            <path value="Patient.name"/>
+            <sliceName value="namePriorToFirstMarriage"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name:namePriorToFirstMarriage.use">
+            <path value="Patient.name.use"/>
+            <min value="1"/>
+            <fixedCode value="maiden"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
