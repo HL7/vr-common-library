@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="84"/>
-        <lastUpdated value="2020-08-05T02:33:20.420+00:00"/>
-        <source value="#5B5sTNZALW67a2qv"/>
+        <versionId value="87"/>
+        <lastUpdated value="2020-08-06T06:59:33.672+00:00"/>
+        <source value="#hBe3QnHjsYlDYy48"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -115,16 +115,6 @@
             </reference>
             <name value="Observation - Mother Delivery Weight"/>
             <description value="The weight of the mother at the time of birth/delivery."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-live-births-this-delivery"/>
-                <display value="Observation - Live Births This Delivery"/>
-            </reference>
-            <name value="Observation - Live Births This Delivery"/>
-            <description value="The number of live births in this delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -392,6 +382,16 @@
             <description value="A stillborn for whom clinical data is included in the report."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-number-live-births-this-delivery"/>
+                <display value="ObservationNumberLiveBirthsThisDelivery"/>
+            </reference>
+            <name value="Observation - Number Live Births This Delivery"/>
+            <description value="The number of live births in this delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
