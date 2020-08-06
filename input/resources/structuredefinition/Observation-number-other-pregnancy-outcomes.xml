@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-other-pregnancy-outcomes"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-04T00:16:10.281+00:00"/>
-        <source value="#LpB4m7GYznmJiLfV"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-06T02:18:45.515+00:00"/>
+        <source value="#rLKHSJniPQhAzjSi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
     <version value="0.1.0"/>

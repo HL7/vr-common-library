@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-births-now-living"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-04T23:16:10.991+00:00"/>
-        <source value="#QI7RXyZDonL4FAKI"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-06T02:13:41.534+00:00"/>
+        <source value="#gzFaYChtTwVDY2A9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-births-now-living"/>
     <version value="0.1.0"/>

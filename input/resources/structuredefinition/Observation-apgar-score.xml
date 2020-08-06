@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-apgar-score"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-03T06:04:51.070+00:00"/>
-        <source value="#wt7TrXizDwC7l1iB"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-06T02:01:52.010+00:00"/>
+        <source value="#VZaA5fLpg3U7GKm1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-apgar-score"/>
     <version value="0.1.0"/>

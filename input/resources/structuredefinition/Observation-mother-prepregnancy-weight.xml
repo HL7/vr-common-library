@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-prepregnancy-weight"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-04T00:16:55.970+00:00"/>
-        <source value="#wY5xMSgKZrGm8fuh"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T02:29:07.926+00:00"/>
+        <source value="#FkR4DXZ1iUazbTLi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-prepregnancy-weight"/>
     <version value="0.1.0"/>
     <name value="ObservationPrepregnancyWeight"/>
-    <title value="Observation - Mother Pre-Pregnancy Weight"/>
+    <title value="Observation - Mother Prepregnancy Weight"/>
     <status value="active"/>
     <date value="2020-07-17T18:56:31+00:00"/>
     <contact>
