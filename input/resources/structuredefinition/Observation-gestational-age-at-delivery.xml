@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-gestational-age-at-delivery"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-03T07:11:47.600+00:00"/>
-        <source value="#l2QcN8NMsQV1QpXw"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T01:52:30.326+00:00"/>
+        <source value="#n2blcyj8YFF1fA5U"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-gestational-age-at-delivery"/>
     <version value="0.1.0"/>
     <name value="ObservationGestationalAgeAtDelivery"/>
-    <title value="Observation - Gestational Age"/>
+    <title value="Observation - Gestational Age at Delivery"/>
     <status value="active"/>
     <date value="2020-07-17T18:56:31+00:00"/>
     <contact>
