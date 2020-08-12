@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-ethnicity"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-03T06:11:18.311+00:00"/>
-        <source value="#UwYa2FOkUW5v8ZUV"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-12T06:37:39.071+00:00"/>
+        <source value="#5OFBqHQwsPxU6hmJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
     <version value="0.1.0"/>
@@ -32,7 +32,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Element"/>
+        <expression value="RelatedPerson"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -40,38 +40,117 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+            <short value="RelatedPerson ethnicity Extension"/>
+            <definition value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino."/>
+            <min value="0"/>
+            <max value="1"/>
         </element>
-        <element id="Extension.extension">
+        <element id="Extension.extension:ombCategory">
             <path value="Extension.extension"/>
-            <max value="0"/>
+            <sliceName value="ombCategory"/>
+            <short value="Hispanic or Latino|Not Hispanic or Latino"/>
+            <definition value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:ombCategory.url">
+            <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="ombCategory"/>
+        </element>
+        <element id="Extension.extension:ombCategory.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <description value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"/>
+            </binding>
+        </element>
+        <element id="Extension.extension:detailed">
+            <path value="Extension.extension"/>
+            <sliceName value="detailed"/>
+            <short value="Extended ethnicity codes"/>
+            <definition value="The 41 CDC ethnicity codes that are grouped under one of the 2 OMB ethnicity category codes."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+        </element>
+        <element id="Extension.extension:detailed.url">
+            <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="detailed"/>
+        </element>
+        <element id="Extension.extension:detailed.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <description value="The 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes."/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"/>
+            </binding>
+        </element>
+        <element id="Extension.extension:text">
+            <path value="Extension.extension"/>
+            <sliceName value="text"/>
+            <short value="ethnicity Text"/>
+            <definition value="Plain text representation of the ethnicity concept(s)."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:text.url">
+            <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="text"/>
+        </element>
+        <element id="Extension.extension:text.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
             <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
-            <slicing>
-                <discriminator>
-                    <type value="type"/>
-                    <path value="$this"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-        </element>
-        <element id="Extension.valueCodeableConcept">
-            <path value="Extension.valueCodeableConcept"/>
-            <short value="The ethnicity of the related person."/>
             <min value="0"/>
-            <max value="1"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"/>
-            </binding>
+            <max value="0"/>
         </element>
     </differential>
 </StructureDefinition>
