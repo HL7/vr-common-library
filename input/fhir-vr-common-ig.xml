@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="88"/>
-        <lastUpdated value="2020-08-13T00:33:52.283+00:00"/>
-        <source value="#d5X9i8RSjenDsqDB"/>
+        <versionId value="89"/>
+        <lastUpdated value="2020-08-13T00:43:14.053+00:00"/>
+        <source value="#1q6NMOchIBK8pujY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -392,6 +392,15 @@
             <description value="The number of live births in this delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-within-city-limits-indicator"/>
+                <display value="Extension - Within City Limits Indicator"/>
+            </reference>
+            <name value="Extension - Within City Limits Indicator"/>
+            <description value="Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
