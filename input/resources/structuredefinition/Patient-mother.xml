@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-08-05T02:44:11.885+00:00"/>
-        <source value="#VbFJU3zJuDc1YBfl"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-08-13T00:52:47.372+00:00"/>
+        <source value="#seuKBS4DYnAK49Yh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
     <version value="0.1.0"/>
@@ -145,6 +145,22 @@
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>
             <short value="Indicates if the individual is deceased or not, dateTime is preferred"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.address">
+            <path value="Patient.address"/>
+        </element>
+        <element id="Patient.address.extension:withinCityLimitsIndicator">
+            <path value="Patient.address.extension"/>
+            <sliceName value="withinCityLimitsIndicator"/>
+            <short value="Used to indicate whether or not an address is within city limits."/>
+            <definition value="Used to indicate whether or not an address is within city limits."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.link">
