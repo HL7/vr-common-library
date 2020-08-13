@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="87"/>
-        <lastUpdated value="2020-08-06T06:59:33.672+00:00"/>
-        <source value="#hBe3QnHjsYlDYy48"/>
+        <versionId value="88"/>
+        <lastUpdated value="2020-08-13T00:33:52.283+00:00"/>
+        <source value="#d5X9i8RSjenDsqDB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -75,7 +75,7 @@
                 <reference value="StructureDefinition/Extension-relatedperson-race"/>
                 <display value="RelatedPerson - Race"/>
             </reference>
-            <name value="RelatedPerson - Race"/>
+            <name value="Extension - RelatedPerson Race"/>
             <description value="One more races for the related person."/>
             <exampleBoolean value="false"/>
         </resource>
