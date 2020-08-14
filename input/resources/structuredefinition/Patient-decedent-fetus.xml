@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-08-05T01:47:53.914+00:00"/>
-        <source value="#2Odce7g3m9mTNAtE"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-08-14T00:17:24.996+00:00"/>
+        <source value="#ABQrs84ESjUOPhiZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
@@ -52,6 +52,39 @@
         <element id="Patient.name.family">
             <path value="Patient.name.family"/>
             <min value="1"/>
+        </element>
+        <element id="Patient.name.family.extension">
+            <path value="Patient.name.family.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.name.family.extension:dataAbsentReason">
+            <path value="Patient.name.family.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name.given">
+            <path value="Patient.name.given"/>
+        </element>
+        <element id="Patient.name.given.extension">
+            <path value="Patient.name.given.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
