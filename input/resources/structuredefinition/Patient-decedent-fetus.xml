@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-08-14T00:17:24.996+00:00"/>
-        <source value="#ABQrs84ESjUOPhiZ"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-08-14T01:38:32.656+00:00"/>
+        <source value="#PHAhhN68QQPqI8qo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
@@ -85,6 +85,16 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+        </element>
+        <element id="Patient.name.given.extension:dataAbsentReason">
+            <path value="Patient.name.given.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
