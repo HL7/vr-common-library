@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2020-08-14T01:38:32.656+00:00"/>
-        <source value="#PHAhhN68QQPqI8qo"/>
+        <versionId value="17"/>
+        <lastUpdated value="2020-08-15T03:22:24.730+00:00"/>
+        <source value="#Yhz1RSw9gAblQRzv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
@@ -98,16 +98,20 @@
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
+            <short value="Date of delivery (fetus)"/>
+            <definition value="The fetus' date of delivery"/>
             <min value="1"/>
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>
             <short value="Indicates if the individual is deceased or not, dateTime is preferred"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.multipleBirth[x]">
             <path value="Patient.multipleBirth[x]"/>
-            <short value="Whether patient is part of a multiple birth, integer is preferred"/>
+            <short value="If not single birth, specify born 1st, 2nd, etc."/>
+            <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
             <mustSupport value="true"/>
         </element>
     </differential>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-08-05T02:46:21.103+00:00"/>
-        <source value="#UBtqnvIL0dzc6Xjl"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-08-15T03:20:02.703+00:00"/>
+        <source value="#V6AYOxx4xW8L0LVl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     <version value="0.1.0"/>
@@ -168,7 +168,8 @@
         </element>
         <element id="Patient.multipleBirth[x]">
             <path value="Patient.multipleBirth[x]"/>
-            <short value="Whether patient is part of a multiple birth, integer is preferred"/>
+            <short value="If not single birth - born first, second, third, etc."/>
+            <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
             <mustSupport value="true"/>
         </element>
     </differential>
