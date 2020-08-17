@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2020-08-15T03:22:24.730+00:00"/>
-        <source value="#Yhz1RSw9gAblQRzv"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-08-17T06:05:08.016+00:00"/>
+        <source value="#JtYYIOSMErgyO7Px"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
@@ -101,6 +101,17 @@
             <short value="Date of delivery (fetus)"/>
             <definition value="The fetus' date of delivery"/>
             <min value="1"/>
+        </element>
+        <element id="Patient.birthDate.extension:birthTime">
+            <path value="Patient.birthDate.extension"/>
+            <sliceName value="birthTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>
