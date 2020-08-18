@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="90"/>
-        <lastUpdated value="2020-08-18T17:58:22.933+00:00"/>
-        <source value="#sVq0FDxPseQdGciG"/>
+        <versionId value="91"/>
+        <lastUpdated value="2020-08-18T21:38:21.025+00:00"/>
+        <source value="#hluKk0tVwafc5tQf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -43,6 +43,33 @@
         </grouping>
         <resource>
             <reference>
+                <reference value="ValueSet/apgar-timing"/>
+                <display value="APGAR Score Timing"/>
+            </reference>
+            <name value="APGAR Score Timing"/>
+            <description value="Standard timings for APGAR assessments."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/education-level-person"/>
+                <display value="Education Level Person"/>
+            </reference>
+            <name value="Education Level Person"/>
+            <description value="Persons for whom education level can be reported."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-relatedperson-deceased"/>
+                <display value="ExtensionRelatedPersonDeceased"/>
+            </reference>
+            <name value="Extension - Related Person Deceased"/>
+            <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-relatedperson-birthplace"/>
                 <display value="Extension - RelatedPerson Birth Place"/>
             </reference>
@@ -52,23 +79,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-autopsy-performed"/>
-                <display value="Observation - Autopsy Performed"/>
+                <reference value="StructureDefinition/Extension-relatedperson-ethnicity"/>
+                <display value="Extension - RelatedPerson Ethnicity"/>
             </reference>
-            <name value="Observation - Autopsy Performed"/>
-            <description value="An indication if an autopsy has been performed on the subject."/>
+            <name value="Extension - RelatedPerson Ethnicity"/>
+            <description value="The ethnicity for the related person."/>
             <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-gestational-age-at-delivery"/>
-                <display value="Observation - Gestational Age"/>
-            </reference>
-            <name value="Observation - Gestational Age"/>
-            <description value="The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
         </resource>
         <resource>
             <reference>
@@ -81,11 +97,48 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-within-city-limits-indicator"/>
+                <display value="Extension - Within City Limits Indicator"/>
+            </reference>
+            <name value="Extension - Within City Limits Indicator"/>
+            <description value="Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/father-relationship"/>
+                <display value="Father Relationship"/>
+            </reference>
+            <name value="Father Relationship"/>
+            <description value="Relationships describing the father's role relative to the birth defect subject"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/newborn-procedure-list"/>
+                <display value="Newborn Procedure List"/>
+            </reference>
+            <name value="Newborn Procedure List"/>
+            <description value="Procedures performed on the newborn subject"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-apgar-score"/>
                 <display value="Observation - APGAR Score"/>
             </reference>
             <name value="Observation - APGAR Score"/>
             <description value="APGAR score post-birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-autopsy-performed"/>
+                <display value="Observation - Autopsy Performed"/>
+            </reference>
+            <name value="Observation - Autopsy Performed"/>
+            <description value="An indication if an autopsy has been performed on the subject."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -101,20 +154,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-relatedperson-ethnicity"/>
-                <display value="Extension - RelatedPerson Ethnicity"/>
+                <reference value="StructureDefinition/Observation-gestational-age-at-delivery"/>
+                <display value="Observation - Gestational Age"/>
             </reference>
-            <name value="Extension - RelatedPerson Ethnicity"/>
-            <description value="The ethnicity for the related person."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-mother-delivery-weight"/>
-                <display value="Observation - Mother Delivery Weight"/>
-            </reference>
-            <name value="Observation - Mother Delivery Weight"/>
-            <description value="The weight of the mother at the time of birth/delivery."/>
+            <name value="Observation - Gestational Age"/>
+            <description value="The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -140,11 +184,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-mother-prepregnancy-weight"/>
-                <display value="Observation - Mother Pre-Pregnancy Weight"/>
+                <reference value="StructureDefinition/Observation-mother-delivery-weight"/>
+                <display value="Observation - Mother Delivery Weight"/>
             </reference>
-            <name value="Observation - Mother Pre-Pregnancy Weight"/>
-            <description value="The weight of the mother before becoming pregnant."/>
+            <name value="Observation - Mother Delivery Weight"/>
+            <description value="The weight of the mother at the time of birth/delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -160,168 +204,33 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-number-prenatal-visits"/>
-                <display value="Observation - Number of Prenatal Visits"/>
+                <reference value="StructureDefinition/Observation-mother-prepregnancy-weight"/>
+                <display value="Observation - Mother Pre-Pregnancy Weight"/>
             </reference>
-            <name value="Observation - Number of Prenatal Visits"/>
-            <description value="The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."/>
+            <name value="Observation - Mother Pre-Pregnancy Weight"/>
+            <description value="The weight of the mother before becoming pregnant."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-place-of-birth-type"/>
-                <display value="Observation - Place Of Birth Type"/>
+                <reference value="StructureDefinition/Observation-number-births-now-dead"/>
+                <display value="ObservationNumberBirthsNowDead"/>
             </reference>
-            <name value="Observation - Place Of Birth Type"/>
-            <description value="An indication of the type of place or situation where birth or delivery occurred"/>
+            <name value="Observation - Number Births Now Dead"/>
+            <description value="The total number of previous live-born infants for the mother now dead."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/RelatedPerson-father-natural"/>
-                <display value="RelatedPerson - Father Natural"/>
+                <reference value="StructureDefinition/Observation-number-births-now-living"/>
+                <display value="ObservationNumberBirthsNowLiving"/>
             </reference>
-            <name value="RelatedPerson - Father Natural"/>
-            <description value="The biological (natural) father of the newborn or fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-parent-education-level"/>
-                <display value="Observation - Parent Education Level"/>
-            </reference>
-            <name value="Observation - Parent Education Level"/>
-            <description value="The highest degree or level of schooling completed by the parent."/>
+            <name value="Observation - Number Births Now Living"/>
+            <description value="The total number of previous live-born infants for the mother now living."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-pregnancy-risk-factor"/>
-                <display value="Observation - Pregnancy Risk Factor"/>
-            </reference>
-            <name value="Observation - Pregnancy Risk Factor"/>
-            <description value="Selected medical risk factors of the mother during the pregnancy."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-plurality"/>
-                <display value="Observation - Plurality"/>
-            </reference>
-            <name value="Observation - Plurality"/>
-            <description value="The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. (“Reabsorbed” fetuses, those which are not “delivered” (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-mother-natural"/>
-                <display value="RelatedPerson - Mother Natural"/>
-            </reference>
-            <name value="RelatedPerson - Mother Natural"/>
-            <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-parent"/>
-                <display value="Related Person - Parent"/>
-            </reference>
-            <name value="Related Person - Parent"/>
-            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/apgar-timing"/>
-                <display value="APGAR Score Timing"/>
-            </reference>
-            <name value="APGAR Score Timing"/>
-            <description value="Standard timings for APGAR assessments."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-relatedperson-deceased"/>
-                <display value="ExtensionRelatedPersonDeceased"/>
-            </reference>
-            <name value="Extension - Related Person Deceased"/>
-            <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-child"/>
-                <display value="Patient - Child"/>
-            </reference>
-            <name value="Patient - Child"/>
-            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/father-relationship"/>
-                <display value="Father Relationship"/>
-            </reference>
-            <name value="Father Relationship"/>
-            <description value="Relationships describing the father's role relative to the birth defect subject"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/newborn-procedure-list"/>
-                <display value="Newborn Procedure List"/>
-            </reference>
-            <name value="Newborn Procedure List"/>
-            <description value="Procedures performed on the newborn subject"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/education-level-person"/>
-                <display value="Education Level Person"/>
-            </reference>
-            <name value="Education Level Person"/>
-            <description value="Persons for whom education level can be reported."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-mother"/>
-                <display value="Patient - Mother"/>
-            </reference>
-            <name value="Patient - Mother"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-mother"/>
-                <display value="RelatedPerson - Mother"/>
-            </reference>
-            <name value="RelatedPerson - Mother"/>
-            <description value="The mother of the report subject. Different individuals may play different roles as the mother (eg. biological mother, adoptive mother, etc)"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-father"/>
-                <display value="RelatedPerson - Father"/>
-            </reference>
-            <name value="RelatedPerson - Father"/>
-            <description value="The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -335,11 +244,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-number-births-now-dead"/>
-                <display value="ObservationNumberBirthsNowDead"/>
+                <reference value="StructureDefinition/Observation-number-live-births-this-delivery"/>
+                <display value="ObservationNumberLiveBirthsThisDelivery"/>
             </reference>
-            <name value="Observation - Number Births Now Dead"/>
-            <description value="The total number of previous live-born infants for the mother now dead."/>
+            <name value="Observation - Number Live Births This Delivery"/>
+            <description value="The number of live births in this delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-number-prenatal-visits"/>
+                <display value="Observation - Number of Prenatal Visits"/>
+            </reference>
+            <name value="Observation - Number of Prenatal Visits"/>
+            <description value="The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -365,13 +284,53 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-number-births-now-living"/>
-                <display value="ObservationNumberBirthsNowLiving"/>
+                <reference value="StructureDefinition/Observation-parent-education-level"/>
+                <display value="Observation - Parent Education Level"/>
             </reference>
-            <name value="Observation - Number Births Now Living"/>
-            <description value="The total number of previous live-born infants for the mother now living."/>
+            <name value="Observation - Parent Education Level"/>
+            <description value="The highest degree or level of schooling completed by the parent."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-place-of-birth-type"/>
+                <display value="Observation - Place Of Birth Type"/>
+            </reference>
+            <name value="Observation - Place Of Birth Type"/>
+            <description value="An indication of the type of place or situation where birth or delivery occurred"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-plurality"/>
+                <display value="Observation - Plurality"/>
+            </reference>
+            <name value="Observation - Plurality"/>
+            <description value="The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. (“Reabsorbed” fetuses, those which are not “delivered” (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-pregnancy-risk-factor"/>
+                <display value="Observation - Pregnancy Risk Factor"/>
+            </reference>
+            <name value="Observation - Pregnancy Risk Factor"/>
+            <description value="Selected medical risk factors of the mother during the pregnancy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-child"/>
+                <display value="Patient - Child"/>
+            </reference>
+            <name value="Patient - Child"/>
+            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -385,22 +344,63 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-number-live-births-this-delivery"/>
-                <display value="ObservationNumberLiveBirthsThisDelivery"/>
+                <reference value="StructureDefinition/Patient-mother"/>
+                <display value="Patient - Mother"/>
             </reference>
-            <name value="Observation - Number Live Births This Delivery"/>
-            <description value="The number of live births in this delivery."/>
+            <name value="Patient - Mother"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
             <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
+            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-within-city-limits-indicator"/>
-                <display value="Extension - Within City Limits Indicator"/>
+                <reference value="StructureDefinition/RelatedPerson-parent"/>
+                <display value="Related Person - Parent"/>
             </reference>
-            <name value="Extension - Within City Limits Indicator"/>
-            <description value="Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
+            <name value="Related Person - Parent"/>
+            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
             <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-father"/>
+                <display value="RelatedPerson - Father"/>
+            </reference>
+            <name value="RelatedPerson - Father"/>
+            <description value="The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-father-natural"/>
+                <display value="RelatedPerson - Father Natural"/>
+            </reference>
+            <name value="RelatedPerson - Father Natural"/>
+            <description value="The biological (natural) father of the newborn or fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-mother"/>
+                <display value="RelatedPerson - Mother"/>
+            </reference>
+            <name value="RelatedPerson - Mother"/>
+            <description value="The mother of the report subject. Different individuals may play different roles as the mother (eg. biological mother, adoptive mother, etc)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-mother-natural"/>
+                <display value="RelatedPerson - Mother Natural"/>
+            </reference>
+            <name value="RelatedPerson - Mother Natural"/>
+            <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
