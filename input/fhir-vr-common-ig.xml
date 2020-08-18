@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="89"/>
-        <lastUpdated value="2020-08-13T00:43:14.053+00:00"/>
-        <source value="#1q6NMOchIBK8pujY"/>
+        <versionId value="90"/>
+        <lastUpdated value="2020-08-18T17:58:22.933+00:00"/>
+        <source value="#sVq0FDxPseQdGciG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
     <name value="Vital_Records_Common_Profiles_Library"/>
-    <title value="Vital Records Common Profiles Libraray"/>
+    <title value="Vital Records Common Profiles Library"/>
     <status value="draft"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
