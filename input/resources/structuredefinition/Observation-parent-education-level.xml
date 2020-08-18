@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-08-06T02:24:52.728+00:00"/>
-        <source value="#R63RBvE6CBqEeNNw"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-18T07:21:07.715+00:00"/>
+        <source value="#JiI66oyIuKtVa726"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-parent-education-level"/>
     <version value="0.1.0"/>
@@ -72,7 +72,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://terminology.hl7.org/ValueSet/v3-EducationLevel"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7582"/>
             </binding>
         </element>
     </differential>
