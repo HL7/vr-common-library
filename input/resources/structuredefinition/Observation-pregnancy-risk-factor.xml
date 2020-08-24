@@ -71,7 +71,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7126"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7126"/>
             </binding>
         </element>
     </differential>
