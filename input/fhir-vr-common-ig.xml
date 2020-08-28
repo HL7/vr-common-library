@@ -37,7 +37,7 @@
     <dependsOn>
         <uri value="http://fhir.org/packages/us.cdc.phinvads"/>
         <packageId value="us.cdc.phinvads"/>
-        <version value="0.2.0"/>
+        <version value="0.7.0"/>
     </dependsOn>
     <definition>
         <grouping id="participants">
