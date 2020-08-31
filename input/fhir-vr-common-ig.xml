@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="91"/>
-        <lastUpdated value="2020-08-18T21:38:21.025+00:00"/>
-        <source value="#hluKk0tVwafc5tQf"/>
+        <versionId value="96"/>
+        <lastUpdated value="2020-08-28T19:41:04.383+00:00"/>
+        <source value="#yoYf4mCHOM3q2c7L"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>

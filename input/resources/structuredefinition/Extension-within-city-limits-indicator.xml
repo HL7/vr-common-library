@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-13T00:43:13.889+00:00"/>
-        <source value="#uhwIYKiNMJ3flk94"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-28T19:36:19.646+00:00"/>
+        <source value="#cf89lnUQ0pkJS2Av"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator"/>
     <version value="1.0"/>

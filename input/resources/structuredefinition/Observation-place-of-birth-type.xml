@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-place-of-birth-type"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-06T02:26:12.097+00:00"/>
-        <source value="#ZEyNBtIw5oGZCrSr"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-28T19:36:19.674+00:00"/>
+        <source value="#HBwkHLCieHWlGFaq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-place-of-birth-type"/>
     <version value="0.1.0"/>
