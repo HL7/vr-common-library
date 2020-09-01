@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-28T19:36:19.646+00:00"/>
-        <source value="#cf89lnUQ0pkJS2Av"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-09-01T05:30:14.662+00:00"/>
+        <source value="#yCaY61h1J2y0RZZJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator"/>
     <version value="1.0"/>
@@ -57,8 +57,8 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="PHVS_YesNoUnknown_CDC"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7486"/>
+                <description value="FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)"/>
+                <valueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
             </binding>
         </element>
     </differential>
