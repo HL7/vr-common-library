@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-ig"/>
     <meta>
-        <versionId value="96"/>
-        <lastUpdated value="2020-08-28T19:41:04.383+00:00"/>
-        <source value="#yoYf4mCHOM3q2c7L"/>
+        <versionId value="98"/>
+        <lastUpdated value="2020-09-01T03:45:40.782+00:00"/>
+        <source value="#PfK3TnXVCCPLZsfl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
     <version value="1.0.0"/>
@@ -404,6 +404,16 @@
             </reference>
             <name value="RelatedPerson - Mother Natural"/>
             <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Practitioner-live-birth-fetal-death"/>
+                <display value="Practitioner - Live Birth and Fetal Death"/>
+            </reference>
+            <name value="Practitioner - Live Birth and Fetal Death"/>
+            <description value="This Practitioner profile represents a practitioner who is involved in the live birth and fetal death as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
