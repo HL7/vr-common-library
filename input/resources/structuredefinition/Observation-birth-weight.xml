@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-birth-weight"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-08-14T00:55:41.921+00:00"/>
-        <source value="#TyvOdWGHnt4SnNTk"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-10-26T22:09:17.899+00:00"/>
+        <source value="#NKC2FaDrC1UN8o30"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-birth-weight"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
     <version value="0.1.0"/>
     <name value="ObservationBirthWeight"/>
     <title value="Observation - Birth Weight"/>
@@ -51,8 +51,8 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
         </element>
         <element id="Observation.value[x]">

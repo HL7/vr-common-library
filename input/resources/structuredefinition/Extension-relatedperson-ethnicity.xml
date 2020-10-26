@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-ethnicity"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-12T06:37:39.071+00:00"/>
-        <source value="#5OFBqHQwsPxU6hmJ"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-10-26T22:09:17.906+00:00"/>
+        <source value="#4knYah8vZNgZiPdt"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity"/>
     <version value="0.1.0"/>
     <name value="ExtensionRelatedPersonEthnicity"/>
     <title value="Extension - RelatedPerson Ethnicity"/>
@@ -145,7 +145,7 @@
             <path value="Extension.url"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
+            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-05T01:49:48.932+00:00"/>
-        <source value="#KD2bi16OQiSW3USY"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-10-26T22:09:19.150+00:00"/>
+        <source value="#kuvph4kPaN8ExFzh"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-parent"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonParent"/>
     <title value="Related Person - Parent"/>
@@ -55,7 +55,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-birthplace"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-birthplace"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -66,7 +66,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-race"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -77,7 +77,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-ethnicity"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -89,8 +89,8 @@
             <path value="RelatedPerson.patient"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
         </element>
         <element id="RelatedPerson.relationship">

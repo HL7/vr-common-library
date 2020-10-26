@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="newborn-procedure-list"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-04T23:35:15.451+00:00"/>
-        <source value="#Uql0uZsO9hNk9qra"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-10-26T22:09:48.153+00:00"/>
+        <source value="#hdgLoCOs39omKqwL"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ValueSet/newborn-procedure-list"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/newborn-procedure-list"/>
     <version value="0.1.0"/>
     <name value="NewbornProcedureList"/>
     <title value="Newborn Procedure List"/>

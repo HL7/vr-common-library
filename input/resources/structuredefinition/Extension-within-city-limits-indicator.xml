@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-09-01T05:30:14.662+00:00"/>
-        <source value="#yCaY61h1J2y0RZZJ"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-10-26T22:09:17.929+00:00"/>
+        <source value="#6Ytyyaou89JkFvBH"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-within-city-limits-indicator"/>
     <version value="1.0"/>
     <name value="ExtensionWithinCityLimitsIndicator"/>
     <title value="Extension - Within City Limits Indicator"/>
@@ -46,7 +46,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator"/>
+            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-within-city-limits-indicator"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

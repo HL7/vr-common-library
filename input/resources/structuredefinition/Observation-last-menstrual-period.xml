@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-last-menstrual-period"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-08-06T02:07:12.179+00:00"/>
-        <source value="#LoIAzkc5jwi0Xlwc"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-10-26T22:09:18.010+00:00"/>
+        <source value="#RY5ohw9PV3WzNgjw"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-last-menstrual-period"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
     <version value="0.1.0"/>
     <name value="ObservationLastMenstrualPeriod"/>
     <title value="Observation - Last Menstrual Period"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

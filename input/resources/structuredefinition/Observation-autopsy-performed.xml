@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-08-28T19:36:19.683+00:00"/>
-        <source value="#HAKTFqwqO0kvxrsY"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-10-26T22:09:17.899+00:00"/>
+        <source value="#CxNdzTzzluWGtcJG"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-autopsy-performed"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
     <version value="0.1.0"/>
     <name value="ObservationAutopsyPerformed"/>
     <title value="Observation - Autopsy Performed"/>
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
         </element>
         <element id="Observation.value[x]">

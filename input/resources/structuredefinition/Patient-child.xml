@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-08-15T03:20:02.703+00:00"/>
-        <source value="#V6AYOxx4xW8L0LVl"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-10-26T22:09:18.838+00:00"/>
+        <source value="#h9TtUaKwT31WzcQp"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
     <version value="0.1.0"/>
     <name value="PatientChild"/>
     <title value="Patient - Child"/>

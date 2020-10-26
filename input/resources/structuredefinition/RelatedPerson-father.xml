@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-04T21:59:32.475+00:00"/>
-        <source value="#ZaWPU9pqR9veTEDJ"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-10-26T22:09:18.726+00:00"/>
+        <source value="#W4rbcuI9vNaXPCSL"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonFather"/>
     <title value="RelatedPerson - Father"/>
@@ -31,7 +31,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="RelatedPerson"/>
-    <baseDefinition value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-parent"/>
+    <baseDefinition value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     <derivation value="constraint"/>
     <differential>
         <element id="RelatedPerson">
@@ -41,7 +41,7 @@
             <path value="RelatedPerson.relationship"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-ig/ValueSet/father-relationship"/>
+                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/father-relationship"/>
             </binding>
         </element>
     </differential>
