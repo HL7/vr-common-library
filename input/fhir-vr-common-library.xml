@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-library"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-11-01T05:04:31.316+00:00"/>
-        <source value="#yowXg9hbLxmuwfwN"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-01T06:03:51.083+00:00"/>
+        <source value="#a1KtxDnsliOX13PZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-library"/>
     <version value="1.0.0"/>
@@ -447,7 +447,7 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="downloads.md"/>
+                <nameUrl value="downloads.html"/>
                 <title value="Downloads"/>
                 <generation value="markdown"/>
             </page>
