@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-library"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-10-26T22:00:05.823+00:00"/>
-        <source value="#THM9DmAp4yRmNdLX"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-11-01T04:45:12.829+00:00"/>
+        <source value="#Khld1kKMiuKuf66f"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-library"/>
     <version value="1.0.0"/>
@@ -423,10 +423,29 @@
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/eicr-composition"/>
+                <display value="Electronic Initial Case Report Composition"/>
+            </reference>
+            <name value="Electronic Initial Case Report Composition"/>
+            <description value="This Composition profile represents an electronic initial case report (eICR). It describes the content requirements for the eICR including:         &#xA;&#xA;* patient demographics         &#xA;* patient pregnancy status         &#xA;* patient occupation and travel history         &#xA;* provider and facility information         &#xA;* laboratory orders, tests, and results         &#xA;* signs, symptoms, and diagnoses&#xA;* medication and immunization information&#xA;* flags for the existence of reportable condition trigger codes in diagnoses, ordered/resulted laboratory tests, medications, and immunizations&#xA;    * flags contain RCTC OID and RCTC version&#xA;* codes indicating whether the eICR was manually or alternately initiated"/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
+            <page>
+                <nameUrl value="background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="the_specification.html"/>
+                <title value="The Specification"/>
+                <generation value="markdown"/>
+            </page>
         </page>
         <parameter>
             <code value="releaselabel"/>
