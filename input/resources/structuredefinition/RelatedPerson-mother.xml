@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-mother"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-11-16T03:22:38.842+00:00"/>
-        <source value="#2oXwJvdkN0ibWmSC"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-16T04:02:08.327+00:00"/>
+        <source value="#E5MAU8x6oG3lvE7V"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother"/>
     <version value="0.1.0"/>
@@ -25,6 +25,7 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>

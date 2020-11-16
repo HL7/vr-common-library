@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-live-births-this-delivery"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-10-26T22:09:18.379+00:00"/>
-        <source value="#qhK1LnemqTQEnZsT"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-11-16T04:00:01.778+00:00"/>
+        <source value="#GxYSAzf5ke5ZErNv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery"/>
     <version value="0.1.0"/>
     <name value="ObservationNumberLiveBirthsThisDelivery"/>
     <title value="Observation - Number of Live Births This Delivery"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31+00:00"/>
+    <date value="2020-07-17T18:56:31.000Z"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -25,6 +25,7 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
@@ -33,6 +34,7 @@
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Observation">
             <path value="Observation"/>

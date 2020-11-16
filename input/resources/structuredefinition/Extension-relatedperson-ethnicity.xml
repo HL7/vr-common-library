@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-ethnicity"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-10-26T22:09:17.906+00:00"/>
-        <source value="#4knYah8vZNgZiPdt"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-16T03:58:25.365+00:00"/>
+        <source value="#KAePjBxBwlDOE9Kg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity"/>
     <version value="0.1.0"/>
     <name value="ExtensionRelatedPersonEthnicity"/>
     <title value="Extension - RelatedPerson Ethnicity"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31+00:00"/>
+    <date value="2020-07-17T18:56:31.000Z"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -25,6 +25,7 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
@@ -37,6 +38,7 @@
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Extension">
             <path value="Extension"/>

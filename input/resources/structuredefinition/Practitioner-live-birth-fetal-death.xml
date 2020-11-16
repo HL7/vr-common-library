@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Practitioner-live-birth-fetal-death"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-10-26T22:09:18.753+00:00"/>
-        <source value="#C2hdoywIjrjvLTxi"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-16T04:01:23.411+00:00"/>
+        <source value="#OJMIGiJvPwEfX11w"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
     <version value="1.0"/>
     <name value="PractitionerLiveBirthFetalDeath"/>
     <title value="Practitioner - Live Birth and Fetal Death"/>
     <status value="draft"/>
-    <date value="2020-08-12T11:13:12+00:00"/>
+    <date value="2020-08-12T11:13:12.000Z"/>
     <publisher value="Health Level Seven International"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -36,6 +36,7 @@
     <type value="Practitioner"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Practitioner">
             <path value="Practitioner"/>

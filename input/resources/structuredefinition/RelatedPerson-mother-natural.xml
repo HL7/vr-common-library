@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-mother-natural"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-10-26T22:09:18.834+00:00"/>
-        <source value="#5XE1zywCTrhUwbXv"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-11-16T04:03:00.673+00:00"/>
+        <source value="#EMjOasmGhJsdtmhf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
     <version value="1.0.0"/>
@@ -14,6 +14,13 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
     <jurisdiction>
         <coding>

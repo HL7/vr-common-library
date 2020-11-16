@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-plurality"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-11-16T03:36:05.742+00:00"/>
-        <source value="#idfBx3soWjDJFczq"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-16T04:00:52.433+00:00"/>
+        <source value="#EYAUCsQYuWEsadWU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-plurality"/>
     <version value="0.1.0"/>
     <name value="ObservationPlurality"/>
     <title value="Observation - Plurality"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31+00:00"/>
+    <date value="2020-07-17T18:56:31.000Z"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -25,6 +25,7 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
@@ -33,6 +34,7 @@
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Observation">
             <path value="Observation"/>
