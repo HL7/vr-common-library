@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-10-26T22:09:19.150+00:00"/>
-        <source value="#kuvph4kPaN8ExFzh"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-11-16T03:00:23.633+00:00"/>
+        <source value="#NHzGWcJO9uvOPvuI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
@@ -47,6 +47,17 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
+        </element>
+        <element id="RelatedPerson.extension:deceased">
+            <path value="RelatedPerson.extension"/>
+            <sliceName value="deceased"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-deceased"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="RelatedPerson.extension:birthPlace">
             <path value="RelatedPerson.extension"/>

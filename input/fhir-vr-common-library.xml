@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-library"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-11-01T06:03:51.083+00:00"/>
-        <source value="#a1KtxDnsliOX13PZ"/>
+        <versionId value="15"/>
+        <lastUpdated value="2020-11-16T03:04:12.005+00:00"/>
+        <source value="#xApl71nN3N4XpqZj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-library"/>
     <version value="1.0.0"/>
@@ -76,7 +76,7 @@
                 <display value="ExtensionRelatedPersonDeceased"/>
             </reference>
             <name value="Extension - Related Person Deceased"/>
-            <description value="The deceased indicator for a RelatedPerson. Decease date/time is preferred."/>
+            <description value="The deceased indicator for a RelatedPerson. Deceased date/time is preferred."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -121,7 +121,7 @@
                 <display value="Father Relationship"/>
             </reference>
             <name value="Father Relationship"/>
-            <description value="Relationships describing the father's role relative to the birth defect subject"/>
+            <description value="Relationships describing the father's role relative to the subject"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -379,7 +379,7 @@
                 <display value="RelatedPerson - Father"/>
             </reference>
             <name value="RelatedPerson - Father"/>
-            <description value="The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
+            <description value="The father of the subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
@@ -425,11 +425,190 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/eicr-composition"/>
-                <display value="Electronic Initial Case Report Composition"/>
+                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee-common"/>
+                <display value="last-menstrual-period"/>
             </reference>
-            <name value="Electronic Initial Case Report Composition"/>
-            <description value="This Composition profile represents an electronic initial case report (eICR). It describes the content requirements for the eICR including:         &#xA;&#xA;* patient demographics         &#xA;* patient pregnancy status         &#xA;* patient occupation and travel history         &#xA;* provider and facility information         &#xA;* laboratory orders, tests, and results         &#xA;* signs, symptoms, and diagnoses&#xA;* medication and immunization information&#xA;* flags for the existence of reportable condition trigger codes in diagnoses, ordered/resulted laboratory tests, medications, and immunizations&#xA;    * flags contain RCTC OID and RCTC version&#xA;* codes indicating whether the eICR was manually or alternately initiated"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-autopsy-performed-not-named-common"/>
+                <display value="autopsy-performed"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-birth-weight-babyg-quinn-common"/>
+                <display value="birth-weight"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn-common"/>
+                <display value="gestational-age-at-delivery"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-height-carmen-teresa-lee-common"/>
+                <display value="mother-height"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-height"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-birth-weight-not-named-common"/>
+                <display value="birth-weight"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-apgar-score-babyg-quinn-5-min-common"/>
+                <display value="apgar-score"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-apgar-score"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-infant-living-babyg-quinn-common"/>
+                <display value="infant-living"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-infant-living"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn-common"/>
+                <display value="mother-delivery-weight"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-delivery-weight"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-not-named-common"/>
+                <display value="gestational-age-at-delivery"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-common"/>
+                <display value="mother-prepregnancy-weight"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee-common"/>
+                <display value="number-births-now-living"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-births-now-living"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-plurality-carmen-teresa-lee-common"/>
+                <display value="plurality"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-plurality"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-place-of-birth-type-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-child-babyg-quinn-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-decedent-fetus-not-named-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-mother-natural-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-tom-yan-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-carmen-teresa-lee-common"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/mother-relationship"/>
+                <display value="Mother Relationship"/>
+            </reference>
+            <name value="Mother Relationship"/>
+            <description value="Relationships describing the mother's role relative to the subject"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-10-26T22:09:18.726+00:00"/>
-        <source value="#W4rbcuI9vNaXPCSL"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-16T03:22:25.304+00:00"/>
+        <source value="#pxoQelXCGY7QAAh2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonFather"/>
     <title value="RelatedPerson - Father"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31+00:00"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -20,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
+    <description value="The father of the subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -40,7 +39,7 @@
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>
             <binding>
-                <strength value="extensible"/>
+                <strength value="required"/>
                 <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/father-relationship"/>
             </binding>
         </element>

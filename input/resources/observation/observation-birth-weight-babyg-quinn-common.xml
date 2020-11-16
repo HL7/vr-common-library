@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-birth-weight-babyg-quinn-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T20:06:25.158+00:00"/>
+        <source value="#hOtpo9Cd4bzt2Kom"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="8339-4"/>
+            <display value="Birth weight Measured"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn-common"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <valueQuantity>
+        <value value="2500"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g"/>
+    </valueQuantity>
+</Observation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-number-births-now-living-carmen-teresa-lee-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T20:14:15.548+00:00"/>
+        <source value="#8H7UsTbqIaMR3rup"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-births-now-living"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="11638-4"/>
+            <display value="[#] Births.still living"/>
+        </coding>
+        <text value="[#] Births.still living"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
+        <display value="Patient - Mother (Carmen Teresa Lee)"/>
+    </subject>
+    <valueInteger value="1"/>
+</Observation>

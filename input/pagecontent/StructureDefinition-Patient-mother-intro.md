@@ -10,7 +10,3 @@ In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.go
 * Patient.address.district" is mapped to * Item **9b. County**
 * Patient.address.state" is mapped to * Item **9a. Resident of mother - state**
 * Patient.address.postalCode" is mapped to * Item **9a. Zip code**
-
-**TODO**
-
-* Inside city limits - look at VRDR

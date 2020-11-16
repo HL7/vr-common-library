@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-mother"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-10-26T22:09:19.171+00:00"/>
-        <source value="#ApUAEaSS8Q0c7PJj"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-11-16T03:22:38.842+00:00"/>
+        <source value="#2oXwJvdkN0ibWmSC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonMother"/>
     <title value="RelatedPerson - Mother"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31+00:00"/>
+    <date value="2020-07-17T18:56:31.000Z"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -37,16 +37,12 @@
         <element id="RelatedPerson">
             <path value="RelatedPerson"/>
         </element>
-        <element id="RelatedPerson.extension:deceased">
-            <path value="RelatedPerson.extension"/>
-            <sliceName value="deceased"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-deceased"/>
-            </type>
-            <mustSupport value="true"/>
+        <element id="RelatedPerson.relationship">
+            <path value="RelatedPerson.relationship"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/mother-relationship"/>
+            </binding>
         </element>
         <element id="RelatedPerson.gender">
             <path value="RelatedPerson.gender"/>

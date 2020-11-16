@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-infant-living-babyg-quinn-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T20:10:47.977+00:00"/>
+        <source value="#U8a6nSKLrxcJlUWt"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-infant-living"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73757-7"/>
+            <display value="Infant living at time of report [US Standard Certificate of Live Birth]"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn-common"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <valueBoolean value="true"/>
+</Observation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-autopsy-performed-not-named-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T19:59:57.013+00:00"/>
+        <source value="#v8HI3AsoHkvaK9Jv"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73768-4"/>
+            <display value="Autopsy was performed [US Standard Report of Fetal Death]"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named-common"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="719828003"/>
+            <display value="Autopsy not done"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

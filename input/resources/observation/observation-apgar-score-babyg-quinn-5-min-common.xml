@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-apgar-score-babyg-quinn-5-min-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T19:59:20.037+00:00"/>
+        <source value="#9M52Do69gENud5fN"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-apgar-score"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="9274-2"/>
+            <display value="5 minute Apgar Score"/>
+        </coding>
+        <text value="5 minute Apgar Score"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn-common"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <valueInteger value="7"/>
+</Observation>

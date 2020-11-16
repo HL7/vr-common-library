@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-parent-education-level-carmen-teresa-lee-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T20:15:44.827+00:00"/>
+        <source value="#FY7VsxAQb9riP2c2"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="57712-2"/>
+            <display value="Highest level of education Mother"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named-common"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+    <focus>
+        <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common"/>
+        <display value="Patient - Mother (Carmen Teresa Lee)"/>
+    </focus>
+    <valueCodeableConcept>
+        <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+            <code value="PHC1449"/>
+            <display value="9th through 12th grade; no diploma"/>
+        </coding>
+        <text value="9th through 12th grade; no diploma"/>
+    </valueCodeableConcept>
+</Observation>

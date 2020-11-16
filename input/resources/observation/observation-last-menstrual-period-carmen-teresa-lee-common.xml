@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-last-menstrual-period-carmen-teresa-lee-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T20:11:33.600+00:00"/>
+        <source value="#JyI1G4Q2Vjooicy6"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="8665-2"/>
+            <display value="Last menstrual period start date"/>
+        </coding>
+        <text value="Last menstrual period start date"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
+        <display value="Patient - Mother (Carmen Teresa Lee)"/>
+    </subject>
+    <valueDateTime value="2018-04-18"/>
+</Observation>

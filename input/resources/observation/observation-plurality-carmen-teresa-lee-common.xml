@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-plurality-carmen-teresa-lee-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-13T20:18:11.467+00:00"/>
+        <source value="#pdumRmMEQQrU2M76"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-plurality"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="57722-1"/>
+            <display value="Birth plurality of Pregnancy"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
+        <display value="Patient - Mother (Carmen Teresa Lee)"/>
+    </subject>
+    <valueInteger value="1"/>
+</Observation>
