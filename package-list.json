@@ -16,7 +16,7 @@
 			"path": "http://hl7.org/fhir/us/vrcpl/2021Jan",
 			"fhirversion": "4.0.1",
 			"status": "ballot",
-			"sequence": "STU 1 on FHIR R4",
+			"sequence": "STU 1 on FHIR R3",
 			"date": "2020-12-01"
 		}
 	],
