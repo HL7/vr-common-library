@@ -69,6 +69,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Specifies the date part that is missing data"/>
+                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/ValueSet-date-part"/>
             </binding>
         </element>
         <element id="Extension.extension:absent-reason">
