@@ -20,7 +20,7 @@
 			"date": "2020-12-01"
 		}
 	],
-	"package-id": "hl7.fhir.us.fhir-vr-common-library",
+	"package-id": "hl7.us.fhir-vr-common-library",
 	"title": "Vital Records Common Profiles Libraray",
 	"canonical": "http://hl7.org/fhir/us/fhir-vr-common-library"
 }
