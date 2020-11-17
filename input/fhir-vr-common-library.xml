@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="fhir-vr-common-library"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2020-11-16T06:09:16.442+00:00"/>
-        <source value="#SjJFZcGhYBtrOtOm"/>
+        <versionId value="38"/>
+        <lastUpdated value="2020-11-17T04:52:03.245+00:00"/>
+        <source value="#x7RVHG1CgonJnain"/>
     </meta>
     
     <url value="http://hl7.org/fhir/us/fhir-vr-common-library/ImplementationGuide/fhir-vr-common-library"/>
@@ -69,6 +69,7 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-place-of-birth-type-common"/></reference>
+            <name value="Observation - Place of Birth Type"/>
             <exampleBoolean value="true"/>
             <groupingId value="observation-examples"/>
         </resource>
@@ -716,6 +717,25 @@
             <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-date-part"/>
+                <display value="ValueSetDatePart"/>
+            </reference>
+            <name value="ValueSetDatePart"/>
+            <description value="This value set contains codes to identify the parts of a date"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-part-absent-reason"/>
+                <display value="Extension - Date Part Absent Reason"/>
+            </reference>
+            <name value="Extension - Date Part Absent Reason"/>
+            <description value="Provides a reason why an expected date part is missing."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
