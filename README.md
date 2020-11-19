@@ -1,2 +1,2 @@
-# fhir-vr-common-ig
-Vital Records Common FHIR Profiles IG
+# vr-common-library
+Vital Records Common FHIR Profiles Library

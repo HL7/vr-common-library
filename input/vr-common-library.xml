@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="vr-common-library"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-11-19T04:23:19.469+00:00"/>
-        <source value="#avqVvEFn6h3rrMdl"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-19T04:59:35.000+00:00"/>
+        <source value="#YDYU95tVzyl5U040"/>
     </meta>
     
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/vr-common-library"/>
@@ -69,7 +69,7 @@
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -78,7 +78,7 @@
             <name value="Patient - Child (Baby G Quinn)"/>
             <description value="Example of Patient-child profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -87,7 +87,7 @@
             <name value="Patient - Decedent Fetus (Fetus Not Named)"/>
             <description value="Example of patient-decedent-fetus (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -96,7 +96,7 @@
             <name value="Practitioner - Live Birth Fetal Death (Janet Seito)"/>
             <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -105,7 +105,7 @@
             <name value="RelatedPerson - Mother Natural (Carmen Teresa Lee)"/>
             <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -114,7 +114,7 @@
             <name value="RelatedPerson - Father Natural (Tom Yan Lee)"/>
             <description value="Example of relatedperson-father-natural (Tom Yan Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -123,7 +123,7 @@
             <name value="RelatedPerson - Father (Tom Yan Lee)"/>
             <description value="Example of relatedperson-father (Tom Yan Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -132,7 +132,7 @@
             <name value="RelatedPerson - Mother (Carmen Teresa Lee)"/>
             <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -141,7 +141,7 @@
             <name value="Patient - Mother (Carmen Teresa Lee)"/>
             <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -257,7 +257,7 @@
             <name value="Observation - APGAR Score (BabyG Quinn: 5 min)"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 5 min)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-apgar-score"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -278,7 +278,7 @@
             <name value="Observation - Autopsy Performed (Fetus Not Named)"/>
             <description value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -299,7 +299,7 @@
             <name value="Observation - Birth Weight (Baby G Quinn)"/>
             <description value="Example of observation-birth-weight profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -310,7 +310,7 @@
             <name value="Observation - Birth Weight (Fetus Not Named)"/>
             <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -331,7 +331,7 @@
             <name value="Observation - Gestational Age at Delivery (Baby G Quinn)"/>
             <description value="Example of  Gestational Age at Delivery profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -342,7 +342,7 @@
             <name value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
             <description value="Example of Observation-gestational-age-at-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -363,7 +363,7 @@
             <name value="Observation - Infant Living (Baby G Quinn)"/>
             <description value="Example of observation-infant-living profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-infant-living"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -384,7 +384,7 @@
             <name value="Observation - Last Menstrual Period (Carmen Teresa Lee)"/>
             <description value="Example of Observation-last-menstrual-period profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -405,7 +405,7 @@
             <name value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-delivery-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-delivery-weight"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -426,7 +426,7 @@
             <name value="Observation - Mother Height (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-height"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -447,7 +447,7 @@
             <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -466,7 +466,7 @@
             <name value="Observation - Number Births Now Dead"/>
             <description value="Example of Observation-number-births-now-dead (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-births-now-dead"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -507,7 +507,7 @@
             <name value="Observation - Number of Births Now Living (Carmen Teresa Lee)"/>
             <description value="Example of observation-number-births-now-living profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-births-now-living"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -516,7 +516,7 @@
             <name value="Observation - Number of Fetal Deaths This Delivery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-fetal-deaths-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -545,7 +545,7 @@
             <name value="Observation - Number Prenatal Visits (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-prenatal-visits"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -574,7 +574,7 @@
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -595,7 +595,7 @@
             <name value="Observation - Plurality (Carmen Teresa Lee)"/>
             <description value="Example of Observation-plurality profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-plurality"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -614,7 +614,7 @@
             <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-previous-cesareans"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -732,7 +732,7 @@
             <name value="Patient - Mother Jada Ann Quinn"/>
             <description value="Example of Patient-mother profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             <groupingId value="participant-examples"/>
         </resource>
         <page>
