@@ -40,21 +40,21 @@
             </concept>
         </include>
         <include>
-            <system value="http://snomed.info/sct/731000124108"/>
+            <system value="http://snomed.info/sct"/>
             <concept>
                 <code value="434701000124101"/>
                 <display value="Surfactant replacement therapy"/>
             </concept>
         </include>
         <include>
-            <system value="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3DBDA20B-9C63-E411-A174-0017A477041A"/>
+            <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
             <concept>
                 <code value="PHC1250"/>
                 <display value="Assisted ventilation required immediately following delivery"/>
             </concept>
         </include>
         <include>
-            <system value="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=5D073DA7-9C63-E411-A174-0017A477041A"/>
+            <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
             <concept>
                 <code value="PHC1251"/>
                 <display value="Assisted ventilation required for more than six hours"/>
