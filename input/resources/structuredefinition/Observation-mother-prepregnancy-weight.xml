@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-prepregnancy-weight"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-11-16T04:01:01.526+00:00"/>
-        <source value="#fnk31h3FfoSGz9B7"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-19T04:20:50.697+00:00"/>
+        <source value="#hEoHyMMqEayyNsZc"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
     <version value="0.1.0"/>
     <name value="ObservationPrepregnancyWeight"/>
     <title value="Observation - Mother Prepregnancy Weight"/>
@@ -53,7 +53,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

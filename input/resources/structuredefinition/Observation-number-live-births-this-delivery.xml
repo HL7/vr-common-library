@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-live-births-this-delivery"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-16T04:00:01.778+00:00"/>
-        <source value="#GxYSAzf5ke5ZErNv"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-11-19T04:01:50.243+00:00"/>
+        <source value="#WvbSxjTG8mA1hPVi"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery"/>
     <version value="0.1.0"/>
     <name value="ObservationNumberLiveBirthsThisDelivery"/>
     <title value="Observation - Number of Live Births This Delivery"/>
@@ -34,7 +34,6 @@
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Observation">
             <path value="Observation"/>
@@ -53,7 +52,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

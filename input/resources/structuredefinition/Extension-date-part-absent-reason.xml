@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-part-absent-reason"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-11-17T05:07:15.754+00:00"/>
-        <source value="#rGIRM0W4xFmRB3oE"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-11-19T04:01:49.707+00:00"/>
+        <source value="#LYojCaJSwUoTfNvB"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
     <version value="0.1.0"/>
     <name value="ExtensionDatePartAbsentReason"/>
     <title value="Extension - Date Part Absent Reason"/>
@@ -34,7 +34,6 @@
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Extension">
             <path value="Extension"/>
@@ -70,7 +69,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Specifies the date part that is missing data"/>
-                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/ValueSet-date-part"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-part"/>
             </binding>
         </element>
         <element id="Extension.extension:absent-reason">
@@ -111,7 +110,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
+            <fixedUri value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

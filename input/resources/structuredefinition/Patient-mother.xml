@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-11-16T04:01:18.731+00:00"/>
-        <source value="#UHyTrZ68m9JWw77x"/>
+        <versionId value="17"/>
+        <lastUpdated value="2020-11-19T04:24:30.815+00:00"/>
+        <source value="#7vCCK1G0Mh57OS9k"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
     <version value="0.1.0"/>
     <name value="PatientMother"/>
     <title value="Patient - Mother"/>
@@ -161,7 +161,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-within-city-limits-indicator"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -192,7 +192,7 @@
                     <valueBoolean value="false"/>
                 </extension>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
             </type>
         </element>
         <element id="Patient.link:mother.type">

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="mother-relationship"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-11-16T03:04:11.569+00:00"/>
-        <source value="#JBQYn97qS2sw4gop"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-19T04:02:28.616+00:00"/>
+        <source value="#zC0aG8ALefyave8e"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/mother-relationship"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/mother-relationship"/>
     <version value="0.1.0"/>
     <name value="MotherRelationship"/>
     <title value="Mother Relationship"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-prenatal-visits"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-11-16T04:00:11.468+00:00"/>
-        <source value="#6j9zgDjUqSTyQdiT"/>
+        <versionId value="13"/>
+        <lastUpdated value="2020-11-19T04:21:52.950+00:00"/>
+        <source value="#cvEgvu6LN50U844Q"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-number-prenatal-visits"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits"/>
     <version value="0.1.0"/>
     <name value="ObservationNumberPrenatalVisits"/>
     <title value="Observation - Number of Prenatal Visits"/>
@@ -53,7 +53,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.effective[x]">

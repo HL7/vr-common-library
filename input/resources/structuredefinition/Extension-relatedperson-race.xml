@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-race"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-11-16T04:03:22.245+00:00"/>
-        <source value="#47pIs6PRUErkr54a"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-11-19T04:01:49.728+00:00"/>
+        <source value="#mOEVVxDVIQeTXEjJ"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
     <version value="0.1.0"/>
     <name value="RelatedPersonRace"/>
     <title value="Extension - RelatedPerson - Race"/>
@@ -38,7 +38,6 @@
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Extension">
             <path value="Extension"/>
@@ -147,7 +146,7 @@
             <path value="Extension.url"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
+            <fixedUri value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

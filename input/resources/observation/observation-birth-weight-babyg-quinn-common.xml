@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-birth-weight-babyg-quinn-common"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-13T20:06:25.158+00:00"/>
-        <source value="#hOtpo9Cd4bzt2Kom"/>
-        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-birth-weight"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-11-19T04:02:54.541+00:00"/>
+        <source value="#A3clYYdE9XcXtFmN"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
     </meta>
     <status value="final"/>
     <code>

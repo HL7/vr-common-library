@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-gestational-age-at-delivery"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-11-16T03:58:56.678+00:00"/>
-        <source value="#SVy6Cxqrp8yCiNB2"/>
+        <versionId value="13"/>
+        <lastUpdated value="2020-11-19T04:19:28.587+00:00"/>
+        <source value="#eUWBWwVSjdSldyqi"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
     <version value="0.1.0"/>
     <name value="ObservationGestationalAgeAtDelivery"/>
     <title value="Observation - Gestational Age at Delivery"/>
@@ -53,8 +53,8 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
         </element>
         <element id="Observation.value[x]">

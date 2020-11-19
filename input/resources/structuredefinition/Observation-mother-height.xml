@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-height"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-11-16T03:59:45.802+00:00"/>
-        <source value="#jewOHQeB6Bgwk8UN"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-11-19T04:20:24.444+00:00"/>
+        <source value="#54LY1JCdntGUxmxM"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-height"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
     <version value="0.1.0"/>
     <name value="ObservationMotherHeight"/>
     <title value="Observation - Mother Height"/>
@@ -53,7 +53,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Observation.value[x]">

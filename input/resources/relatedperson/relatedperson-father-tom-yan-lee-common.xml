@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="relatedperson-father-tom-yan-lee-common"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-13T20:21:21.910+00:00"/>
-        <source value="#bPlXkYHwk1s86QHJ"/>
-        <profile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-11-19T04:04:28.212+00:00"/>
+        <source value="#WHxmhrOJJKvqoeYn"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
     </meta>
-    <extension url="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Extension-relatedperson-birthplace">
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace">
         <valueAddress>
             <state value="NY"/>
         </valueAddress>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-16T04:00:20.555+00:00"/>
-        <source value="#f0GHw7TwIrnELbW3"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-11-19T04:22:20.364+00:00"/>
+        <source value="#HvVXQNHVMM6PBpRf"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
     <version value="0.1.0"/>
     <name value="ObservationParentEducationLevel"/>
     <title value="Observation - Parent Education Level"/>
@@ -43,7 +43,7 @@
             <path value="Observation.code"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/education-level-person"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/education-level-person"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -52,7 +52,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Observation.focus">
@@ -62,8 +62,8 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
             </type>
         </element>
         <element id="Observation.value[x]">

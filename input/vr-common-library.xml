@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="fhir-vr-common-library"/>
+    <id value="vr-common-library"/>
     <meta>
-        <versionId value="43"/>
-        <lastUpdated value="2020-11-19T03:38:22.439+00:00"/>
-        <source value="#Ku0l1HyVGgne6159"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-11-19T04:23:19.469+00:00"/>
+        <source value="#avqVvEFn6h3rrMdl"/>
     </meta>
     
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/vr-common-library"/>
@@ -29,7 +29,13 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <packageId value="hl7.fhir.us.fhir-vr-common-library"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.vr-common-library"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -573,16 +579,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-place-of-birth-type"/>
-                <display value="Observation - Place Of Birth Type"/>
-            </reference>
-            <name value="Observation - Place Of Birth Type"/>
-            <description value="An indication of the type of place or situation where birth or delivery occurred"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-plurality"/>
                 <display value="Observation - Plurality"/>
             </reference>
@@ -743,16 +739,6 @@
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
-            <page>
-                <nameUrl value="background.html"/>
-                <title value="Background"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="the_specification.html"/>
-                <title value="The Specification"/>
-                <generation value="markdown"/>
-            </page>
             <page>
                 <nameUrl value="downloads.html"/>
                 <title value="Downloads"/>

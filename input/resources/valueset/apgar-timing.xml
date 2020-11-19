@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="apgar-timing"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-10-26T22:09:48.188+00:00"/>
-        <source value="#nJemjSQwCq45YDcQ"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-11-19T04:02:28.617+00:00"/>
+        <source value="#6wX3WeqG7qVmpJqT"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/apgar-timing"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/apgar-timing"/>
     <version value="0.1.0"/>
     <name value="ApgarTiming"/>
     <title value="APGAR Score Timing"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-infant-living"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-11-16T03:59:01.818+00:00"/>
-        <source value="#oW5KqzNTdd9pm80d"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-19T04:19:44.986+00:00"/>
+        <source value="#bbvw1VXtwvK5TfDV"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-infant-living"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living"/>
     <version value="0.1.0"/>
     <name value="ObservationInfantLiving"/>
     <title value="Observation - Infant Living"/>
@@ -53,7 +53,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Observation.value[x]">

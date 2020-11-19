@@ -1,4 +1,4 @@
-[Previous Page - The Specification](the_specification.html)
+[Previous Page - Home Page](index.html)
 
 **Full Implementation Guide**
 

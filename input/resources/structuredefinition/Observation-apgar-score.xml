@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-apgar-score"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2020-11-16T03:58:41.920+00:00"/>
-        <source value="#Q1LXDyLMszfPj2Ob"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-11-19T04:18:51.929+00:00"/>
+        <source value="#mfHRwlBD1f5YisCh"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-apgar-score"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score"/>
     <version value="0.1.0"/>
     <name value="ObservationApgarScore"/>
     <title value="Observation - APGAR Score"/>
@@ -43,7 +43,7 @@
             <path value="Observation.code"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/fhir-vr-common-library/ValueSet/apgar-timing"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/apgar-timing"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -51,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Observation.value[x]">
