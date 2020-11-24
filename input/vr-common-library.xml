@@ -3,11 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="vr-common-library"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-11-19T04:59:35.000+00:00"/>
-        <source value="#YDYU95tVzyl5U040"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-11-24T01:48:47.975+00:00"/>
+        <source value="#UwaX4R09cK9VgPcy"/>
     </meta>
-    
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/vr-common-library"/>
     <version value="0.1.0"/>
     <name value="Vital_Records_Common_Profiles_Library"/>
@@ -605,7 +604,7 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common"/></reference>
-            <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
+            <name value="Observation - Number Previous Cesareans (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans"/>
@@ -728,6 +727,30 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Number Live Births This Delivery (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-number-live-births-this-delivery (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"/>
+            <description value="Example of Observation-number-other-pregnancy-outcomes (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-parent-stepmother"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

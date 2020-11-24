@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="newborn-procedure-list"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-11-19T04:02:28.617+00:00"/>
-        <source value="#XX6XaLYobUnKe93d"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-11-24T01:57:00.068+00:00"/>
+        <source value="#GJL4YOtZJGGjamxv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/newborn-procedure-list"/>
     <version value="0.1.0"/>
@@ -38,9 +38,6 @@
                 <code value="444309000"/>
                 <display value="Determination of karyotype from blood specimen (procedure)"/>
             </concept>
-        </include>
-        <include>
-            <system value="http://snomed.info/sct"/>
             <concept>
                 <code value="434701000124101"/>
                 <display value="Surfactant replacement therapy"/>
