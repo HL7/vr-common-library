@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="vr-common-library"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2020-11-24T23:07:48.827+00:00"/>
-        <source value="#JbHxXhedLtNkBnJs"/>
+        <versionId value="27"/>
+        <lastUpdated value="2020-11-24T23:28:20.207+00:00"/>
+        <source value="#uyVokS9e3cOsvfua"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/vr-common-library"/>
     <version value="0.1.0"/>
@@ -765,6 +765,13 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters-vr-common"/></reference>
+            <name value="expansion-parameters-vr-common"/>
+            <description value="References US SNOMED CT version."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -782,6 +789,10 @@
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-vr-common.xml"/>
         </parameter>
     </definition>
 </ImplementationGuide>
