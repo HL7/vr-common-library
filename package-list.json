@@ -22,5 +22,6 @@
 	],
 	"package-id": "hl7.fhir.us.vr-common-library",
 	"title": "Vital Records Common Profiles Libraray",
-	"canonical": "http://hl7.org/fhir/us/vr-common-library"
+	"canonical": "http://hl7.org/fhir/us/vr-common-library",
+	"category": "Public Health"
 }
