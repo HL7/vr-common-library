@@ -3,16 +3,24 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-11-19T04:24:04.077+00:00"/>
-        <source value="#G2lrN4qrzRGUiUae"/>
+        <versionId value="15"/>
+        <lastUpdated value="2020-11-24T06:43:43.627+00:00"/>
+        <source value="#z5fqz7ohncW0EZoP"/>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^read"/>
+        </security>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
     <version value="0.1.0"/>
     <name value="PatientChild"/>
     <title value="Patient - Child"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31.000Z"/>
+    <date value="Sat Jul 18 2020 04:56:31 GMT+1000 (Australian Eastern Standard Time)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -34,7 +42,6 @@
     <type value="Patient"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Patient">
             <path value="Patient"/>
@@ -152,6 +159,17 @@
             <path value="Patient.birthDate"/>
             <min value="1"/>
         </element>
+        <element id="Patient.birthDate.extension:birthDateDatePartAbsentReason">
+            <path value="Patient.birthDate.extension"/>
+            <sliceName value="birthDateDatePartAbsentReason"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.birthDate.extension:birthTime">
             <path value="Patient.birthDate.extension"/>
             <sliceName value="birthTime"/>
@@ -162,6 +180,24 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Patient.birthDate.extension:birthTime.extension">
+            <path value="Patient.birthDate.extension.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.birthDate.extension:birthTime.extension:birthTimeDatePartAbsentReason">
+            <path value="Patient.birthDate.extension.extension"/>
+            <sliceName value="birthTimeDatePartAbsentReason"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
+            </type>
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>

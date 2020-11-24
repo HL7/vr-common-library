@@ -20,6 +20,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-libra
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-place-of-birth-type').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 # Using vital sign LOINC codes not in fhir vital signs value set (pre-pregnancy weight, mother's delivery weight etc.)
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/observation-vitalsignresult because the value set or code system is not known to the validator]
 # External value set
