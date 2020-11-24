@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-11-19T04:01:50.976+00:00"/>
-        <source value="#1uctoZAfaM2NnQpa"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-24T07:29:49.495+00:00"/>
+        <source value="#LR15Fxk9dce5rYZy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
@@ -121,6 +121,19 @@
         </element>
         <element id="RelatedPerson.birthDate">
             <path value="RelatedPerson.birthDate"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="RelatedPerson.birthDate.extension:datePartAbsentReason">
+            <path value="RelatedPerson.birthDate.extension"/>
+            <sliceName value="datePartAbsentReason"/>
+            <short value="Indicates reason for missing birthDate data."/>
+            <definition value="Indicates reason for missing data on either the birthDate or the birthTime."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="RelatedPerson.address">

@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-11-19T04:01:49.695+00:00"/>
-        <source value="#qUeIYkpb84RjRQwF"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-24T07:26:39.451+00:00"/>
+        <source value="#O6XINnFkgl0S3cOb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator"/>
     <version value="1.0"/>
     <name value="ExtensionWithinCityLimitsIndicator"/>
     <title value="Extension - Within City Limits Indicator"/>
     <status value="draft"/>
-    <date value="2020-08-12T10:40:28+00:00"/>
+    <date value="2020-08-12T10:40:28.000Z"/>
     <publisher value="Health Level Seven International"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -40,6 +40,7 @@
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Extension">
             <path value="Extension"/>
@@ -57,8 +58,8 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)"/>
-                <valueSet value="http://terminology.hl7.org/ValueSet/v2-0136"/>
+                <description value="PHVS_YesNoUnknown_CDC"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
             </binding>
         </element>
     </differential>

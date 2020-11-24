@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2020-11-19T04:24:30.815+00:00"/>
-        <source value="#7vCCK1G0Mh57OS9k"/>
+        <versionId value="21"/>
+        <lastUpdated value="2020-11-24T07:46:51.531+00:00"/>
+        <source value="#a20tjGcOd2fP48BK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
     <version value="0.1.0"/>
@@ -143,6 +143,19 @@
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
             <min value="1"/>
+        </element>
+        <element id="Patient.birthDate.extension:datePartAbsentReason">
+            <path value="Patient.birthDate.extension"/>
+            <sliceName value="datePartAbsentReason"/>
+            <short value="Indicates reason for missing data on either the birthDate or the birthTime."/>
+            <definition value="Indicates reason for missing data on either the birthDate or the birthTime."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>
