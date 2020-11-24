@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="vr-common-library"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2020-11-24T02:54:15.048+00:00"/>
-        <source value="#jJjqhMDEy7kJ1IPE"/>
+        <versionId value="23"/>
+        <lastUpdated value="2020-11-24T23:07:48.827+00:00"/>
+        <source value="#JbHxXhedLtNkBnJs"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/vr-common-library"/>
     <version value="0.1.0"/>
@@ -754,6 +754,16 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
             <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-estimated-fetal-death-time-point"/>
+                <display value="Extension - Estimated Fetal Death Time Point"/>
+            </reference>
+            <name value="Extension - Estimated Fetal Death Time Point"/>
+            <description value="This Extension profile represents the estimated time of fetal death; the time of death is characterized by relationship to the time of delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2020-11-19T04:01:50.681+00:00"/>
-        <source value="#A7hkmfPb2e9fjdC9"/>
+        <versionId value="23"/>
+        <lastUpdated value="2020-11-24T22:57:29.759+00:00"/>
+        <source value="#Q9ufY0QWb94Iyy55"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
@@ -37,6 +37,19 @@
     <differential>
         <element id="Patient">
             <path value="Patient"/>
+        </element>
+        <element id="Patient.extension:estFetalDeathTimePoint">
+            <path value="Patient.extension"/>
+            <sliceName value="estFetalDeathTimePoint"/>
+            <short value="Estimated time of fetal death based on delivery time."/>
+            <definition value="Estimated time of fetal death; the time of death is characterized by relationship to the time of delivery"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-estimated-fetal-death-time-point"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension"/>
