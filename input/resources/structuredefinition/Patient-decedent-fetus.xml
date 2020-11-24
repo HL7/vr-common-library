@@ -116,8 +116,12 @@
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>
-            <short value="Indicates if the individual is deceased or not, dateTime is preferred"/>
+            <short value="The fetus is deceased"/>
             <min value="1"/>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <fixedBoolean value="true"/>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.multipleBirth[x]">
