@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="vr-common-library"/>
+    <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2020-11-24T23:28:20.207+00:00"/>
-        <source value="#uyVokS9e3cOsvfua"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-26T03:15:23.225+00:00"/>
+        <source value="#rN0KDGYKDlUxpqEc"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/vr-common-library"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-vr-common-library"/>
     <version value="0.1.0"/>
     <name value="Vital_Records_Common_Profiles_Library"/>
     <title value="Vital Records Common Profiles Library"/>

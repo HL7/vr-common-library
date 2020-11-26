@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="apgar-timing"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-11-19T04:02:28.617+00:00"/>
-        <source value="#6wX3WeqG7qVmpJqT"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-11-26T00:18:47.895+00:00"/>
+        <source value="#IHZ8anBr1Pl0rBWv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/apgar-timing"/>
     <version value="0.1.0"/>

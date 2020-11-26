@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-estimated-fetal-death-time-point"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-24T22:54:32.366+00:00"/>
-        <source value="#xcaVungeqhe0L950"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-11-24T23:53:01.033+00:00"/>
+        <source value="#46eW6JcgrRQYWhzl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-estimated-fetal-death-time-point"/>
     <version value="0.1.0"/>
     <name value="ExtensionEstimatedFetalDeathTimePoint"/>
     <title value="Extension - Estimated Fetal Death Time Point"/>
     <status value="active"/>
-    <date value="2020-11-23"/>
+    <date value="2020-11-23T00:00:00.000Z"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
