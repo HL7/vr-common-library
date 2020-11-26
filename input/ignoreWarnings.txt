@@ -1,5 +1,5 @@
 == Suppressed Messages ==
-# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations
+# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
