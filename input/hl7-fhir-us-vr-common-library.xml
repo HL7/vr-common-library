@@ -589,7 +589,7 @@
                 <display value="Observation - Plurality"/>
             </reference>
             <name value="Observation - Plurality"/>
-            <description value="The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. (“Reabsorbed” fetuses, those which are not “delivered” (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy."/>
+            <description value="The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
