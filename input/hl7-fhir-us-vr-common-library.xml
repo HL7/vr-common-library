@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide
-    xmlns="http://hl7.org/fhir">
+<ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-26T03:15:23.225+00:00"/>
-        <source value="#rN0KDGYKDlUxpqEc"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-12-02T22:18:20.137+00:00"/>
+        <source value="#xOYDy6ZxNSjuViFh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-vr-common-library"/>
     <version value="0.1.0"/>
@@ -20,7 +19,8 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.&#xA;&#xA;After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://build.fhir.org/ig/HL7/fhir-bfdr), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](https://build.fhir.org/ig/HL7/vrdr/)).&#xA;&#xA;To avoid defining the same profiles multiple times, we propose to create a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden."/>
+    <description
+        value="The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.&#xA;&#xA;After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://build.fhir.org/ig/HL7/fhir-bfdr), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](https://build.fhir.org/ig/HL7/vrdr/)).&#xA;&#xA;To avoid defining the same profiles multiple times, we propose to create a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,7 +33,7 @@
     <dependsOn>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="3.1.1"/>
+        <version value="3.1.0"/>
     </dependsOn>
     <dependsOn>
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
@@ -58,7 +58,8 @@
         </grouping>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1-common"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1-common"/>
+            </reference>
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <exampleBoolean value="false"/>
@@ -67,7 +68,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-child-babyg-quinn-common"/></reference>
+                <reference value="Patient/patient-child-babyg-quinn-common"/>
+            </reference>
             <name value="Patient - Child (Baby G Quinn)"/>
             <description value="Example of Patient-child profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -76,7 +78,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-decedent-fetus-not-named-common"/></reference>
+                <reference value="Patient/patient-decedent-fetus-not-named-common"/>
+            </reference>
             <name value="Patient - Decedent Fetus (Fetus Not Named)"/>
             <description value="Example of patient-decedent-fetus (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -85,7 +88,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito-common"/></reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito-common"/>
+            </reference>
             <name value="Practitioner - Live Birth Fetal Death (Janet Seito)"/>
             <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
             <exampleBoolean value="false"/>
@@ -94,7 +98,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-mother-natural-carmen-teresa-lee-common"/></reference>
+                <reference value="RelatedPerson/relatedperson-mother-natural-carmen-teresa-lee-common"/>
+            </reference>
             <name value="RelatedPerson - Mother Natural (Carmen Teresa Lee)"/>
             <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -103,7 +108,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/></reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
+            </reference>
             <name value="RelatedPerson - Father Natural (Tom Yan Lee)"/>
             <description value="Example of relatedperson-father-natural (Tom Yan Lee)"/>
             <exampleBoolean value="false"/>
@@ -112,7 +118,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-tom-yan-lee-common"/></reference>
+                <reference value="RelatedPerson/relatedperson-father-tom-yan-lee-common"/>
+            </reference>
             <name value="RelatedPerson - Father (Tom Yan Lee)"/>
             <description value="Example of relatedperson-father (Tom Yan Lee)"/>
             <exampleBoolean value="false"/>
@@ -121,7 +128,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common"/></reference>
+                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common"/>
+            </reference>
             <name value="RelatedPerson - Mother (Carmen Teresa Lee)"/>
             <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -130,7 +138,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-carmen-teresa-lee-common"/></reference>
+                <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
+            </reference>
             <name value="Patient - Mother (Carmen Teresa Lee)"/>
             <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -455,7 +464,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee-common"/></reference>
+                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee-common"/>
+            </reference>
             <name value="Observation - Number Births Now Dead"/>
             <description value="Example of Observation-number-births-now-dead (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -505,7 +515,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common"/></reference>
+                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common"/>
+            </reference>
             <name value="Observation - Number of Fetal Deaths This Delivery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-fetal-deaths-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -534,7 +545,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn-common"/></reference>
+                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn-common"/>
+            </reference>
             <name value="Observation - Number Prenatal Visits (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -563,7 +575,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee-common"/></reference>
+                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee-common"/>
+            </reference>
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -603,7 +616,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common"/></reference>
+                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common"/>
+            </reference>
             <name value="Observation - Number Previous Cesareans (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -721,7 +735,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-jada-ann-quinn-common"/></reference>
+                <reference value="Patient/patient-mother-jada-ann-quinn-common"/>
+            </reference>
             <name value="Patient - Mother Jada Ann Quinn"/>
             <description value="Example of Patient-mother profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -730,7 +745,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common"/></reference>
+                <reference value="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common"/>
+            </reference>
             <name value="Observation - Number Live Births This Delivery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-live-births-this-delivery (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -739,7 +755,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/></reference>
+                <reference value="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/>
+            </reference>
             <name value="Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-other-pregnancy-outcomes (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -748,7 +765,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-parent-stepmother"/></reference>
+                <reference value="RelatedPerson/relatedperson-parent-stepmother"/>
+            </reference>
             <name value="RelatedPerson - Stepmother"/>
             <description value="Example of RelatedPerson-parent profile (stepmother)"/>
             <exampleBoolean value="false"/>
@@ -767,7 +785,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Parameters/expansion-parameters-vr-common"/></reference>
+                <reference value="Parameters/expansion-parameters-vr-common"/>
+            </reference>
             <name value="expansion-parameters-vr-common"/>
             <description value="References US SNOMED CT version."/>
             <exampleBoolean value="false"/>
@@ -784,7 +803,7 @@
         </page>
         <parameter>
             <code value="releaselabel"/>
-            <value value="CI build"/>
+            <value value="STU 1 Ballot"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>
