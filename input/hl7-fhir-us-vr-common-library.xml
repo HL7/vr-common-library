@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-12-11T04:51:41.706+00:00"/>
-        <source value="#y9tuUgNdaGfb9tYQ"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-12-11T21:10:29.161+00:00"/>
+        <source value="#ojAQMucpl4rlOdob"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-vr-common-library"/>
     <version value="0.1.0"/>
@@ -27,15 +27,16 @@
             <code value="US"/>
             <display value="United States of America"/>
         </coding>
+        <text value="United States of America"/>
     </jurisdiction>
     <packageId value="hl7.fhir.us.vr-common-library"/>
     <fhirVersion value="4.0.1"/>
-    <dependsOn>
+    <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="3.1.0"/>
     </dependsOn>
-    <dependsOn>
+    <dependsOn id="uscdcphinvads">
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
         <packageId value="us.cdc.phinvads"/>
         <version value="0.7.0"/>
