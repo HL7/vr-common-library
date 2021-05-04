@@ -55,6 +55,10 @@
             <sliceName value="race"/>
             <short value="If race is unknown, use UNK from the bound value set."/>
             <min value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
+            </type>
         </element>
         <!--<element id="Patient.extension:ethnicity">
             <path value="Patient.extension"/>
