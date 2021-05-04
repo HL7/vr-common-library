@@ -42,10 +42,10 @@
             <sliceName value="race"/>
             <short value="If race is unknown, use UNK from the bound value set."/>
             <min value="1"/>
-            <type>
+            <!--<type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
-            </type>
+            </type>-->
             <mustSupport value="true"/>
         </element>
         <element id="Patient.extension:ethnicity">
@@ -53,10 +53,10 @@
             <sliceName value="ethnicity"/>
             <short value="If ethnicity is unknown omit both coded data fields."/>
             <min value="1"/>
-            <type>
+            <!--<type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
-            </type>
+            </type>-->
             <mustSupport value="true"/>
         </element>
         <element id="Patient.extension:birthPlace">
