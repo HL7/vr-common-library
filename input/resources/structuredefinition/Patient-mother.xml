@@ -50,13 +50,13 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <!--<element id="Patient.extension:race">
+        <element id="Patient.extension:race">
             <path value="Patient.extension"/>
             <sliceName value="race"/>
             <short value="If race is unknown, use UNK from the bound value set."/>
             <min value="1"/>
         </element>
-        <element id="Patient.extension:ethnicity">
+        <!--<element id="Patient.extension:ethnicity">
             <path value="Patient.extension"/>
             <sliceName value="ethnicity"/>
             <short value="If ethnicity is unknown omit both coded data fields."/>
