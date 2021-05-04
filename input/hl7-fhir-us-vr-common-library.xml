@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2021-05-04T04:19:10.707+00:00"/>
-        <source value="#dlNTVZ9UeH2glBel"/>
+        <versionId value="19"/>
+        <lastUpdated value="2021-05-04T04:28:18.581+00:00"/>
+        <source value="#tQjU0mwBMYZLkKQK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-vr-common-library"/>
     <version value="0.1.0"/>
@@ -791,7 +791,6 @@
             <name value="Observation - Tabulated Ethnicity"/>
             <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
