@@ -3,13 +3,11 @@
 /Vital_Records_Common_Profiles_Library_search_set.xml
 /Vital_Records_Common_Profiles_Library_transaction.xml
 /input - Copy
-/input-cache/schemas/R4
-/input-cache/schemas/R5
 
-/temp/pages
-/temp/qa
 /org.hl7.fhir.publisher.jar
 /output
 /publisher.bat
 /publisher.sh
 /template
+/temp
+/FHIR-us-vr-common-library.xml

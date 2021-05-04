@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2020-11-24T07:46:51.531+00:00"/>
-        <source value="#a20tjGcOd2fP48BK"/>
+        <versionId value="25"/>
+        <lastUpdated value="2021-05-04T02:37:56.253+00:00"/>
+        <source value="#scDohPQNuI5sbjBO"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
     <version value="0.1.0"/>
@@ -34,7 +34,6 @@
     <type value="Patient"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Patient">
             <path value="Patient"/>
@@ -49,6 +48,20 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:race">
+            <path value="Patient.extension"/>
+            <sliceName value="race"/>
+            <short value="If race is unknown, use UNK from the bound value set."/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:ethnicity">
+            <path value="Patient.extension"/>
+            <sliceName value="ethnicity"/>
+            <short value="If ethnicity is unknown omit both coded data fields."/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.identifier">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-11-24T07:29:49.495+00:00"/>
-        <source value="#LR15Fxk9dce5rYZy"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-05-04T02:29:07.833+00:00"/>
+        <source value="#QGHOORbRM8zhbYAy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
@@ -74,7 +74,8 @@
         <element id="RelatedPerson.extension:race">
             <path value="RelatedPerson.extension"/>
             <sliceName value="race"/>
-            <min value="0"/>
+            <short value="If race is unknown, use UNK from the bound value set."/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -85,7 +86,8 @@
         <element id="RelatedPerson.extension:ethnicity">
             <path value="RelatedPerson.extension"/>
             <sliceName value="ethnicity"/>
-            <min value="0"/>
+            <short value="If ethnicity is unknown omit both coded data fields."/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
