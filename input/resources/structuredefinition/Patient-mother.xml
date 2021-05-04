@@ -38,18 +38,6 @@
         <element id="Patient">
             <path value="Patient"/>
         </element>
-        <element id="Patient.extension:birthPlace">
-            <path value="Patient.extension"/>
-            <sliceName value="birthPlace"/>
-            <short value="Place of Birth for the patient should include the state and/or country"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Patient.extension:race">
             <path value="Patient.extension"/>
             <sliceName value="race"/>
@@ -66,6 +54,18 @@
             <short value="If ethnicity is unknown omit both coded data fields."/>
             <min value="1"/>
         </element>-->
+        <element id="Patient.extension:birthPlace">
+            <path value="Patient.extension"/>
+            <sliceName value="birthPlace"/>
+            <short value="Place of Birth for the patient should include the state and/or country"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>
             <slicing>
