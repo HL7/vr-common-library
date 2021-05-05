@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="RelatedPerson-mother-natural"/>
+    <id value="RelatedPerson-mother-gestational"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-11-19T04:01:50.978+00:00"/>
-        <source value="#d7SjZd9BfBMOmnR3"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-05T05:53:58.103+00:00"/>
+        <source value="#Bfm9s7tF5pXgktJ5"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
     <version value="1.0.0"/>
-    <name value="RelatedPersonMotherNatural"/>
-    <title value="RelatedPerson - Mother Natural"/>
+    <name value="RelatedPersonMotherGestational"/>
+    <title value="RelatedPerson - Mother Gestational"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
@@ -42,13 +42,14 @@
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>
-            <short value="natural mother"/>
+            <short value="gestataional mother"/>
+            <definition value="The player is a female whose womb carries the fetus of the scoper."/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-                    <code value="NMTH"/>
+                    <code value="GESTM"/>
                 </coding>
             </patternCodeableConcept>
         </element>

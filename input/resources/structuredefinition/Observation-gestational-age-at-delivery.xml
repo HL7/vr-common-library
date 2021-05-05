@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-gestational-age-at-delivery"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-11-19T04:19:28.587+00:00"/>
-        <source value="#eUWBWwVSjdSldyqi"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-05-04T09:25:33.601+00:00"/>
+        <source value="#rC1DZKkM0yeq31ox"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
     <version value="0.1.0"/>
@@ -62,6 +62,18 @@
             <type>
                 <code value="Quantity"/>
             </type>
+        </element>
+        <element id="Observation.value[x].system">
+            <path value="Observation.value[x].system"/>
+            <min value="1"/>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x].code">
+            <path value="Observation.value[x].code"/>
+            <min value="1"/>
+            <fixedCode value="wk"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.method">
             <path value="Observation.method"/>

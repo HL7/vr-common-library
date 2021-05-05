@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-prenatal-visits"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-11-19T04:21:52.950+00:00"/>
-        <source value="#cvEgvu6LN50U844Q"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-05-04T09:07:37.772+00:00"/>
+        <source value="#obfaXyf7hLIf9IWb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits"/>
     <version value="0.1.0"/>
@@ -46,6 +46,7 @@
                     <code value="68493-6"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -54,18 +55,22 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
             <type>
                 <code value="Period"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <min value="1"/>
             <type>
                 <code value="integer"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Practitioner-live-birth-fetal-death"/>
+    <id value="Practitioner-vital-records"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-11-19T04:01:50.563+00:00"/>
-        <source value="#BZaXkQJR3RtPbJmi"/>
+        <versionId value="1"/>
+        <lastUpdated value="2021-05-04T09:17:57.478+00:00"/>
+        <source value="#5GQesaTASlAIypDd"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records"/>
     <version value="1.0"/>
-    <name value="PractitionerLiveBirthFetalDeath"/>
-    <title value="Practitioner - Live Birth and Fetal Death"/>
+    <name value="PractitionerVitalRecords"/>
+    <title value="Practitioner - VitalRecords"/>
     <status value="draft"/>
     <date value="2020-08-12T11:13:12.000Z"/>
     <publisher value="Health Level Seven International"/>
@@ -21,7 +21,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Practitioner profile represents a practitioner who is involved in the live birth and fetal death as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
+    <description value="This Practitioner profile represents a practitioner who is involved in vital records (births, fetal death, death, etc.) as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -47,6 +47,7 @@
             <type>
                 <code value="BackboneElement"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Practitioner.qualification.code">
             <path value="Practitioner.qualification.code"/>

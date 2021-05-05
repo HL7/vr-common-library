@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-births-now-dead"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-11-19T04:21:05.914+00:00"/>
-        <source value="#eyOWoxs04QF50aiM"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-05-04T09:03:07.762+00:00"/>
+        <source value="#tdEawmKbswwDNvzd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead"/>
     <version value="0.1.0"/>
@@ -57,6 +57,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <min value="1"/>
             <type>
                 <code value="integer"/>
             </type>

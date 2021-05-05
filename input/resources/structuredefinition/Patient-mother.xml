@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2021-05-04T02:37:56.253+00:00"/>
-        <source value="#scDohPQNuI5sbjBO"/>
+        <versionId value="32"/>
+        <lastUpdated value="2021-05-05T06:13:27.589+00:00"/>
+        <source value="#DgT67oU09OnXL8gO"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
     <version value="0.1.0"/>
@@ -42,22 +42,12 @@
             <sliceName value="race"/>
             <short value="If race is unknown, use UNK from the bound value set."/>
             <min value="1"/>
-            <!--<type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
-            </type>-->
-<!--            <mustSupport value="true"/>-->
         </element>
         <element id="Patient.extension:ethnicity">
             <path value="Patient.extension"/>
             <sliceName value="ethnicity"/>
             <short value="If ethnicity is unknown omit both coded data fields."/>
             <min value="1"/>
-            <!--<type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
-            </type>-->
-<!--            <mustSupport value="true"/>-->
         </element>
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension"/>
@@ -65,11 +55,6 @@
             <short value="Place of Birth for the patient should include the state and/or country"/>
             <min value="0"/>
             <max value="1"/>
-            <!--<type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
-            </type>
-            <mustSupport value="true"/>-->
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>
@@ -94,13 +79,13 @@
         <element id="Patient.identifier:MRN.type">
             <path value="Patient.identifier.type"/>
             <min value="1"/>
-            <mustSupport value="true"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                     <code value="MR"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.identifier:SSN">
             <path value="Patient.identifier"/>
@@ -113,13 +98,13 @@
         <element id="Patient.identifier:SSN.type">
             <path value="Patient.identifier.type"/>
             <min value="1"/>
-            <mustSupport value="true"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                     <code value="SB"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.name">
             <path value="Patient.name"/>

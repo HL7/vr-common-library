@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-race"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-04T04:30:35.682+00:00"/>
-        <source value="#RKsGfbaTZvweJv6H"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-05-04T09:05:13.640+00:00"/>
+        <source value="#crtaY89I69I5z2d0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race"/>
     <version value="1.0.0"/>
@@ -69,7 +69,7 @@
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <short value="Race (NCHS)"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="CodeableConcept"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-last-menstrual-period"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2020-11-19T04:19:59.709+00:00"/>
-        <source value="#M84UXC0vEqTgwm6K"/>
+        <versionId value="21"/>
+        <lastUpdated value="2021-05-05T05:50:25.957+00:00"/>
+        <source value="#Pjkr8p72Ysf9eEYy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
     <version value="0.1.0"/>
@@ -47,31 +47,35 @@
                     <code value="8665-2"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
-            <short value="Observation date"/>
-            <definition value="The date on which the observation was made."/>
+            <short value="Observation date (date on which the observation was reported to the provider)."/>
+            <definition value="The date on which the observation was made/reported to the provider for recording in the EHR."/>
             <type>
                 <code value="dateTime"/>
             </type>
-            <mustSupport value="false"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <short value="Start of last menstrual period"/>
             <definition value="Start date of last menstrual period."/>
+            <min value="1"/>
             <type>
                 <code value="dateTime"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

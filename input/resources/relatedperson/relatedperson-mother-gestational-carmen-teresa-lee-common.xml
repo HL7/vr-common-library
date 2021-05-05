@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelatedPerson
     xmlns="http://hl7.org/fhir">
-    <id value="relatedperson-mother-natural-carmen-teresa-lee-common"/>
+    <id value="relatedperson-mother-gestational-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:04:28.189+00:00"/>
-        <source value="#OhHtVk7dEqXcb5PW"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+        <versionId value="1"/>
+        <lastUpdated value="2021-05-05T05:57:32.075+00:00"/>
+        <source value="#l9XDbXostOYx0I6i"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
     </meta>
     <active value="true"/>
     <patient>
@@ -16,10 +16,10 @@
     <relationship>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-            <code value="NMTH"/>
-            <display value="natural mother"/>
+            <code value="GESTM"/>
+            <display value="gestational mother"/>
         </coding>
-        <text value="Natural Mother"/>
+        <text value="gestational Mother"/>
     </relationship>
     <name>
         <use value="official"/>

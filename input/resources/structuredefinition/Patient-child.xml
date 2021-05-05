@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2020-11-24T07:46:15.515+00:00"/>
-        <source value="#8aI1cAdgLW8GE6qR"/>
+        <versionId value="22"/>
+        <lastUpdated value="2021-05-04T09:12:18.867+00:00"/>
+        <source value="#tpeMMiohp0pEsd7U"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
     <version value="0.1.0"/>
@@ -86,6 +86,10 @@
             <min value="0"/>
             <max value="1"/>
         </element>
+        <element id="Patient.name">
+            <path value="Patient.name"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.identifier:SSN.type">
             <path value="Patient.identifier.type"/>
             <min value="1"/>
@@ -103,6 +107,7 @@
         <element id="Patient.name.family">
             <path value="Patient.name.family"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.name.family.extension">
             <path value="Patient.name.family.extension"/>
@@ -117,6 +122,7 @@
         <element id="Patient.name.family.extension:dataAbsentReason">
             <path value="Patient.name.family.extension"/>
             <sliceName value="dataAbsentReason"/>
+            <short value="When &quot;name not chosen&quot; use code &quot;temp-unknown&quot;"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -126,6 +132,7 @@
         </element>
         <element id="Patient.name.given">
             <path value="Patient.name.given"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.name.given.extension">
             <path value="Patient.name.given.extension"/>
@@ -140,6 +147,7 @@
         <element id="Patient.name.given.extension:dataAbsentReason">
             <path value="Patient.name.given.extension"/>
             <sliceName value="dataAbsentReason"/>
+            <short value="When &quot;name not chosen&quot; use code &quot;temp-unknown&quot;"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>

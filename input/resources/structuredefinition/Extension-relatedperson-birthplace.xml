@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-birthplace"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-11-19T04:01:49.726+00:00"/>
-        <source value="#mKGk7HMmWIGnT8cB"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-05-04T08:59:05.293+00:00"/>
+        <source value="#g59plmg9gyABxnQx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace"/>
     <version value="0.1.0"/>
@@ -51,15 +51,7 @@
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
-            <slicing>
-                <discriminator>
-                    <type value="type"/>
-                    <path value="$this"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-            <min value="1"/>
+            <short value="The registered place of birth of the related person."/>
             <type>
                 <code value="Address"/>
             </type>

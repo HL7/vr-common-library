@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2021-05-04T04:28:18.581+00:00"/>
-        <source value="#tQjU0mwBMYZLkKQK"/>
+        <versionId value="30"/>
+        <lastUpdated value="2021-05-05T06:07:46.473+00:00"/>
+        <source value="#0JXw8azktzvb0a1P"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-vr-common-library"/>
     <version value="0.1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.&#xA;&#xA;After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://build.fhir.org/ig/HL7/fhir-bfdr), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](https://build.fhir.org/ig/HL7/vrdr/)).&#xA;&#xA;To avoid defining the same profiles multiple times, we propose to create a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden."/>
+    <description value="The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.&#xA;&#xA;This guide is a FHIR Resources (FHIR) Library to support the needs of multiple Vital Records Implementation Guides. It does not provide any use case or scenario specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profile for reuse in multiple use case specific implementation guides focusing on the exchange of Vital Records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.&#xA;&#xA;### Background&#xA;After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://build.fhir.org/ig/HL7/fhir-bfdr), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](https://build.fhir.org/ig/HL7/vrdr/)).&#xA;&#xA;To avoid defining the same profiles multiple times, this IG contains a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross Group Projects WG's variance request process, and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -86,20 +86,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito-common"/></reference>
-            <name value="Practitioner - Live Birth Fetal Death example [Janet Seito]"/>
-            <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
+                <reference value="Practitioner/practitioner-vital-records-janet-seito-common"/></reference>
+            <name value="Practitioner - Vital Records example [Janet Seito]"/>
+            <description value="Example of Practitioner-vital-records profile (Janet Seito)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-mother-natural-carmen-teresa-lee-common"/></reference>
-            <name value="RelatedPerson - Mother Natural example [Carmen Teresa Lee]"/>
-            <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
+                <reference value="RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"/></reference>
+            <name value="RelatedPerson - Mother Gestaional example [Carmen Teresa Lee]"/>
+            <description value="Example of Relatedperson-gestational profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -118,15 +118,6 @@
             <description value="Example of relatedperson-father (Tom Yan Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common"/></reference>
-            <name value="RelatedPerson - Mother example [Carmen Teresa Lee]"/>
-            <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -222,15 +213,6 @@
             </reference>
             <name value="Mother Relationship"/>
             <description value="Relationships describing the mother's role relative to the subject"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/newborn-procedure-list"/>
-                <display value="Newborn Procedure List"/>
-            </reference>
-            <name value="Newborn Procedure List"/>
-            <description value="Procedures performed on the newborn subject"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -643,11 +625,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Practitioner-live-birth-fetal-death"/>
-                <display value="Practitioner - Live Birth and Fetal Death"/>
+                <reference value="StructureDefinition/Practitioner-vital-records"/>
+                <display value="Practitioner - VitalRecords"/>
             </reference>
             <name value="Practitioner - Live Birth and Fetal Death"/>
-            <description value="This Practitioner profile represents a practitioner who is involved in the live birth and fetal death as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
+            <description value="This Practitioner profile represents a practitioner who is involved in vital records (births, fetal death, death, etc.) as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
@@ -693,10 +675,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/RelatedPerson-mother-natural"/>
-                <display value="RelatedPerson - Mother Natural"/>
+                <reference value="StructureDefinition/RelatedPerson-mother-gestational"/>
+                <display value="RelatedPerson - Mother Gestational"/>
             </reference>
-            <name value="RelatedPerson - Mother Natural"/>
+            <name value="RelatedPerson - Mother Gestational"/>
             <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>

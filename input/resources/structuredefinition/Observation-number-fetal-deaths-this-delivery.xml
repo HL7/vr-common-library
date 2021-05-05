@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-fetal-deaths-this-delivery"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-11-19T04:01:50.217+00:00"/>
-        <source value="#WZ2PS7KCf2cXMK6X"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-05-04T09:03:45.380+00:00"/>
+        <source value="#DHC8UwrnkRsviJtz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
     <version value="0.1.0"/>
@@ -58,6 +58,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <min value="1"/>
             <type>
                 <code value="integer"/>
             </type>
