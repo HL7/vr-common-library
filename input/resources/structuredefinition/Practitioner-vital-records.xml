@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Practitioner-vital-records"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-05-04T09:17:57.478+00:00"/>
-        <source value="#5GQesaTASlAIypDd"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-05T09:20:31.119+00:00"/>
+        <source value="#N7ahtaMHGxM9iJ1n"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records"/>
     <version value="1.0"/>
     <name value="PractitionerVitalRecords"/>
     <title value="Practitioner - VitalRecords"/>
     <status value="draft"/>
-    <date value="2020-08-12T11:13:12.000Z"/>
     <publisher value="Health Level Seven International"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -51,6 +50,7 @@
         </element>
         <element id="Practitioner.qualification.code">
             <path value="Practitioner.qualification.code"/>
+            <short value="List of titles"/>
             <min value="1"/>
             <max value="1"/>
             <binding>

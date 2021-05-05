@@ -1,4 +1,4 @@
-[Previous Page - Home Page](index.html)
+[Previous Page - Terminology](terminology.html)
 
 ### Full Implementation Guide
 

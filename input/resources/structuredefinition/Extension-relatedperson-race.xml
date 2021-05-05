@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-race"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-11-19T04:01:49.728+00:00"/>
-        <source value="#mOEVVxDVIQeTXEjJ"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-05-05T07:25:51.125+00:00"/>
+        <source value="#0Lj2UMdaal3tBTVd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
     <version value="0.1.0"/>
@@ -69,6 +69,7 @@
         </element>
         <element id="Extension.extension:ombCategory.valueCoding">
             <path value="Extension.extension.valueCoding"/>
+            <short value="The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -76,7 +77,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+                <description value="OmbRaceCategories"/>
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-race-category"/>
             </binding>
         </element>
@@ -102,6 +103,7 @@
         </element>
         <element id="Extension.extension:detailed.valueCoding">
             <path value="Extension.extension.valueCoding"/>
+            <short value="All concepts that can describe a person's &quot;race&quot; as defined by the United States Bureau of Census."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -109,8 +111,8 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="The [900+ CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes."/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/detailed-race"/>
+                <description value="Race Value Set"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/{oid}"/>
             </binding>
         </element>
         <element id="Extension.extension:text">

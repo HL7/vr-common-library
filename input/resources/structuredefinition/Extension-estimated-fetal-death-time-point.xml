@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-estimated-fetal-death-time-point"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-24T23:53:01.033+00:00"/>
-        <source value="#46eW6JcgrRQYWhzl"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-05T07:29:39.630+00:00"/>
+        <source value="#mEbe7eDTD7MbG008"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-estimated-fetal-death-time-point"/>
     <version value="0.1.0"/>
@@ -52,6 +52,7 @@
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
+            <short value="The value set contains a list of items to indicate when the fetus died with respect to labor and assessment."/>
             <min value="1"/>
             <type>
                 <code value="Coding"/>

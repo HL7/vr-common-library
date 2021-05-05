@@ -11,6 +11,15 @@ To avoid defining the same profiles multiple times, this IG contains a US Realm 
 
 For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).
 
+### How to Read This Guide
+
+This Guide is divided into several pages which are listed at the top of each page in the menu bar.
+
+* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.
+* Terminology: This page provides a listing of the value sets used in this guide.
+* Downloads: This page provides links to downloadable artifacts.
+* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
+
 
 
 ### Authors
@@ -33,4 +42,4 @@ For Clinical Safety Information please refer to the [FHIR Implementer’s Safety
 
 
 
-[Next Page - Downloads](downloads.html)
+[Next Page - Terminology](terminology.html)

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-ethnicity"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-11-19T04:01:49.721+00:00"/>
-        <source value="#7Tq8gWOqeZaPEIxz"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-05-05T07:35:55.364+00:00"/>
+        <source value="#RLza5kMmKyNLXPRR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity"/>
     <version value="0.1.0"/>
@@ -69,6 +69,7 @@
         </element>
         <element id="Extension.extension:ombCategory.value[x]">
             <path value="Extension.extension.value[x]"/>
+            <short value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -76,8 +77,8 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"/>
+                <description value="Ethnicity"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837"/>
             </binding>
         </element>
         <element id="Extension.extension:detailed">
@@ -102,6 +103,7 @@
         </element>
         <element id="Extension.extension:detailed.value[x]">
             <path value="Extension.extension.value[x]"/>
+            <short value="linical Focus: All concepts that can describe a person's &quot;ethnicity&quot; as defined by the United States Bureau of Census. This includes the US Office of Management and Budget (OMB) two top-level ethnicity categories, plus all the more detailed descendant ethnicity concepts used by the US Bureau of Census."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -109,8 +111,8 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="The 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes."/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"/>
+                <description value="Detailed Ethnicity"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"/>
             </binding>
         </element>
         <element id="Extension.extension:text">

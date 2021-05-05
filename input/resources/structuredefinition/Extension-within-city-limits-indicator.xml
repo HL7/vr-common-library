@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-11-24T07:26:39.451+00:00"/>
-        <source value="#O6XINnFkgl0S3cOb"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-05-05T09:15:51.012+00:00"/>
+        <source value="#TGvmN6nXV8s2vDUa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator"/>
     <version value="1.0"/>
@@ -50,6 +50,7 @@
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
+            <short value="Value set used to respond to any question that can be answered Yes, No, or Unknown."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -57,7 +58,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="PHVS_YesNoUnknown_CDC"/>
+                <description value="Yes No Unknown (YNU) "/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
             </binding>
         </element>

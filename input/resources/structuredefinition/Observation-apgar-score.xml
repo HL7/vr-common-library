@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-apgar-score"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-19T04:18:51.929+00:00"/>
-        <source value="#mfHRwlBD1f5YisCh"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-05-05T07:38:45.042+00:00"/>
+        <source value="#FfnXj1zQo97Jk9vo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score"/>
     <version value="0.1.0"/>
@@ -40,8 +40,10 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <short value="Standard timings for APGAR assessments."/>
             <binding>
                 <strength value="required"/>
+                <description value="ApgarTiming"/>
                 <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/apgar-timing"/>
             </binding>
         </element>
