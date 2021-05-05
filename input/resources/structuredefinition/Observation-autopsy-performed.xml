@@ -57,12 +57,14 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <short value="The value set contains the list of values used to indicate whether or not an autopsy was performed."/>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
             <binding>
                 <strength value="required"/>
+                <description value="Autopsy Examination (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7137"/>
             </binding>
         </element>
