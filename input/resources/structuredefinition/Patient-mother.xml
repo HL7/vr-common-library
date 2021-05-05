@@ -46,7 +46,7 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
             </type>-->
-            <mustSupport value="true"/>
+<!--            <mustSupport value="true"/>-->
         </element>
         <element id="Patient.extension:ethnicity">
             <path value="Patient.extension"/>
@@ -57,7 +57,7 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
             </type>-->
-            <mustSupport value="true"/>
+<!--            <mustSupport value="true"/>-->
         </element>
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension"/>
@@ -65,11 +65,11 @@
             <short value="Place of Birth for the patient should include the state and/or country"/>
             <min value="0"/>
             <max value="1"/>
-            <type>
+            <!--<type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
             </type>
-            <mustSupport value="true"/>
+            <mustSupport value="true"/>-->
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>
@@ -89,10 +89,12 @@
             <short value="Medical Record Number"/>
             <min value="0"/>
             <max value="*"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.identifier:MRN.type">
             <path value="Patient.identifier.type"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -106,10 +108,12 @@
             <short value="SSN if available and appropriate to send"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.identifier:SSN.type">
             <path value="Patient.identifier.type"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -217,6 +221,7 @@
             <short value="Link to the birth mother's RelatedPerson record"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.link:mother.other">
             <path value="Patient.link.other"/>
@@ -227,10 +232,12 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.link:mother.type">
             <path value="Patient.link.type"/>
             <patternCode value="seealso"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
