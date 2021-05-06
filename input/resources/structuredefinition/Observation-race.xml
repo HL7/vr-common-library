@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-race"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-05-05T07:44:02.343+00:00"/>
-        <source value="#DMDdzujwmlnPYTw3"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-05-06T06:39:40.405+00:00"/>
+        <source value="#Ei2bmzD4KkngKl62"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race"/>
     <version value="1.0.0"/>
@@ -62,7 +62,7 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
@@ -78,7 +78,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="Race (NCHS) "/>
+                <description value="Race (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7373"/>
             </binding>
         </element>

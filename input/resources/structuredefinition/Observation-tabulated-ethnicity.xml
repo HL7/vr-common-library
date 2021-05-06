@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tabulated-ethnicity"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2021-05-05T07:56:28.590+00:00"/>
-        <source value="#TIlYwCkSnDi5Idju"/>
+        <versionId value="19"/>
+        <lastUpdated value="2021-05-06T06:40:23.167+00:00"/>
+        <source value="#j8dya9wYtwyYLGXh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity"/>
     <version value="1.0.0"/>
@@ -62,7 +62,7 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
             <mustSupport value="true"/>
