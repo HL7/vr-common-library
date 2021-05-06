@@ -112,7 +112,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Race Value Set"/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/{oid}"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914"/>
             </binding>
         </element>
         <element id="Extension.extension:text">
