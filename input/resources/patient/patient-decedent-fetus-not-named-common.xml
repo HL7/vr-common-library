@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-decedent-fetus-not-named-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-24T23:01:28.210+00:00"/>
-        <source value="#Y39goiFNEmxlGyjw"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-13T23:55:46.361+00:00"/>
+        <source value="#NzQmoQR5UVkUMVjJ"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
     </meta>
     <text>
@@ -31,13 +31,6 @@
             </table>
         </div>
     </text>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-estimated-fetal-death-time-point">
-        <valueCoding>
-            <system value="http://snomed.info/sct"/>
-            <code value="434631000124100"/>
-            <display value="Fetal intrapartum death after first assessment (event)"/>
-        </valueCoding>
-    </extension>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
         <valueCode value="F"/>
     </extension>
