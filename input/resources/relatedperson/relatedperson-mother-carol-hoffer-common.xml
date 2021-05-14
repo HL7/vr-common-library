@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelatedPerson
+    xmlns="http://hl7.org/fhir">
+    <id value="relatedperson-mother-carol-hoffer-common"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-05-14T03:56:36.053+00:00"/>
+        <source value="#aRdAboenCrcNDCdd"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+    </meta>
+    <active value="true"/>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="ADOPTM"/>
+            <display value="adoptive mother"/>
+        </coding>
+        <text value="Adoptive Mother"/>
+    </relationship>
+    <name>
+        <use value="official"/>
+        <family value="Hoffer"/>
+        <given value="Carol"/>
+    </name>
+    <gender value="female"/>
+    <birthDate value="1985-03-17"/>
+</RelatedPerson>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2021-05-05T07:41:30.558+00:00"/>
-        <source value="#tpgQNt1v445R6nKC"/>
+        <versionId value="19"/>
+        <lastUpdated value="2021-05-14T03:47:52.418+00:00"/>
+        <source value="#tNfwQtNO4ncSQDn1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
     <version value="0.1.0"/>
@@ -69,14 +69,14 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="The collection of education levels used for vital records reporting. "/>
+            <short value="The collection of education levels used for vital records reporting."/>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="Vital Records Education Level (NCHS) "/>
+                <description value="Vital Records Education Level (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582"/>
             </binding>
         </element>

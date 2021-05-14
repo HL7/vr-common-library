@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-birth-weight-babyg-quinn-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.541+00:00"/>
-        <source value="#A3clYYdE9XcXtFmN"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-05-14T03:45:46.062+00:00"/>
+        <source value="#APkpFR7GXrZsB9Mn"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
     </meta>
     <status value="final"/>
@@ -26,6 +26,7 @@
         <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
+    <effectiveDateTime value="2019-01-10"/>
     <valueQuantity>
         <value value="2500"/>
         <system value="http://unitsofmeasure.org"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-pregnancy-risk-factor"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2021-05-05T07:42:39.317+00:00"/>
-        <source value="#trwXgvpUfPWVGghX"/>
+        <versionId value="17"/>
+        <lastUpdated value="2021-05-14T03:48:26.884+00:00"/>
+        <source value="#jmbihiJWRv8a0yWw"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
     <version value="0.1.0"/>
@@ -64,7 +64,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <description value="Pregnancy Risk Factors (NCHS) "/>
+                <description value="Pregnancy Risk Factors (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7126"/>
             </binding>
         </element>

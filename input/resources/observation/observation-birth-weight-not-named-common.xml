@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-birth-weight-not-named-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:03:22.910+00:00"/>
-        <source value="#O8iXYrCDP2MdK1uP"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-05-14T03:45:46.062+00:00"/>
+        <source value="#rnWaIJ7dVqEwTECj"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
     </meta>
     <status value="final"/>
@@ -26,6 +26,7 @@
         <reference value="Patient/patient-decedent-fetus-not-named-common"/>
         <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
     </subject>
+    <effectiveDateTime value="2019-01-10"/>
     <valueQuantity>
         <value value="1530"/>
         <system value="http://unitsofmeasure.org"/>
