@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelatedPerson
     xmlns="http://hl7.org/fhir">
-    <id value="relatedperson-mother-carol-hoffer-common"/>
+    <id value="relatedperson-father-tony-lewis-common"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-05-14T04:18:26.547+00:00"/>
-        <source value="#YaDk75nIK6lny9H9"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+        <versionId value="1"/>
+        <lastUpdated value="2021-05-14T04:18:26.544+00:00"/>
+        <source value="#EdERSe9V8AzddYN5"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race">
         <extension url="ombCategory">
@@ -16,15 +16,8 @@
                 <display value="White"/>
             </valueCoding>
         </extension>
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
-                <code value="1002-5"/>
-                <display value="American Indian or Alaska Native"/>
-            </valueCoding>
-        </extension>
         <extension url="text">
-            <valueString value="White, American Indian or Alaska Native"/>
+            <valueString value="White"/>
         </extension>
     </extension>
     <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity">
@@ -39,6 +32,11 @@
             <valueString value="Not Hispanic or Latino"/>
         </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace">
+        <valueAddress>
+            <state value="VT"/>
+        </valueAddress>
+    </extension>
     <active value="true"/>
     <patient>
         <reference value="Patient/patient-child-babyg-quinn-common"/>
@@ -47,16 +45,16 @@
     <relationship>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-            <code value="ADOPTM"/>
-            <display value="adoptive mother"/>
+            <code value="ADOPTF"/>
+            <display value="adoptive father"/>
         </coding>
-        <text value="Adoptive Mother"/>
+        <text value="Adoptive Father"/>
     </relationship>
     <name>
         <use value="official"/>
-        <family value="Hoffer"/>
-        <given value="Carol"/>
+        <family value="Lewis"/>
+        <given value="Tony"/>
     </name>
-    <gender value="female"/>
-    <birthDate value="1985-03-17"/>
+    <gender value="male"/>
+    <birthDate value="1982-01-23"/>
 </RelatedPerson>

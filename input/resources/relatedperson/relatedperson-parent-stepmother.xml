@@ -3,11 +3,35 @@
     xmlns="http://hl7.org/fhir">
     <id value="relatedperson-parent-stepmother"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-11-24T01:48:47.840+00:00"/>
-        <source value="#zRsDc3JTXENKOnWg"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-05-14T04:18:26.557+00:00"/>
+        <source value="#SyfUmwIflRqpXRiq"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     </meta>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+                <code value="2054-5"/>
+                <display value="Black or African American"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Black or African America"/>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+                <code value="2135-2"/>
+                <display value="Hispanic or Latino"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Hispanic or Latino"/>
+        </extension>
+    </extension>
     <active value="true"/>
     <patient>
         <reference value="Patient/patient-child-babyg-quinn-common"/>

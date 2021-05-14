@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="44"/>
-        <lastUpdated value="2021-05-14T03:57:38.897+00:00"/>
-        <source value="#nNcQj9cGuEKh0Hc7"/>
+        <versionId value="46"/>
+        <lastUpdated value="2021-05-14T04:19:56.646+00:00"/>
+        <source value="#swLqyzge4kY8VDz9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="0.1.0"/>
@@ -790,6 +790,15 @@
             <description value="Example of RelatedPerson-mother profile (adoptive mother)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-tony-lewis-common"/></reference>
+            <name value="RelatedPerson - Adoptive Father"/>
+            <description value="Example of RelatedPerson-father profile (adoptive father)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
             <groupingId value="participant-examples"/>
         </resource>
         <page>
