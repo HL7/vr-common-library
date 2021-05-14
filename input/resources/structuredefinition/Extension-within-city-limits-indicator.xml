@@ -58,7 +58,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <description value="Yes No Unknown (YNU) "/>
+                <description value="Yes No Unknown (YNU)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
             </binding>
         </element>

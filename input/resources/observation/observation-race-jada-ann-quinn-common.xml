@@ -18,11 +18,11 @@
         <text value="Tabulated race [CDC]"/>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
     <focus>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <reference value="Patient/patient-mother-jada-ann-quinn-common"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
     </focus>
     <valueCodeableConcept>
