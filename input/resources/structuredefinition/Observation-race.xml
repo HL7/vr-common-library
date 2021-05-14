@@ -34,13 +34,13 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Bridged race"/>
+            <short value="Tabulated race [CDC]"/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="80906-1"/>
+                    <code value="80977-2"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>

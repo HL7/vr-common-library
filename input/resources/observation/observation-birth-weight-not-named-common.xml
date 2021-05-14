@@ -9,6 +9,12 @@
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
     </meta>
     <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+        </coding>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
