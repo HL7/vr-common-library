@@ -55,6 +55,11 @@
             <short value="Place of Birth for the patient should include the state and/or country"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>
