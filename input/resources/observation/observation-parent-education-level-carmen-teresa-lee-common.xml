@@ -21,7 +21,7 @@
         <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
     </subject>
     <focus>
-        <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common"/>
+        <reference value="RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"/>
         <display value="Patient - Mother (Carmen Teresa Lee)"/>
     </focus>
     <valueCodeableConcept>
