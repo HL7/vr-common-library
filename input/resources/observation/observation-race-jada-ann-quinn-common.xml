@@ -18,7 +18,7 @@
         <text value="Tabulated race [CDC]"/>
     </code>
     <subject>
-        <reference value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+        <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
     <focus>
