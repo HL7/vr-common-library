@@ -8,7 +8,7 @@
         <source value="#SyfUmwIflRqpXRiq"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     </meta>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race">
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
             <valueCoding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
@@ -20,7 +20,7 @@
             <valueString value="Black or African America"/>
         </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity">
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
         <extension url="ombCategory">
             <valueCoding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>

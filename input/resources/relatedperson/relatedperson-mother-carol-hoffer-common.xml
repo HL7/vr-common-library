@@ -8,7 +8,7 @@
         <source value="#YaDk75nIK6lny9H9"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
     </meta>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race">
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
             <valueCoding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
@@ -27,7 +27,7 @@
             <valueString value="White, American Indian or Alaska Native"/>
         </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity">
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
         <extension url="ombCategory">
             <valueCoding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
