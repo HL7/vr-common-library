@@ -54,16 +54,6 @@
             <path value="Patient.name"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Patient.gender">
-            <path value="Patient.gender"/>
-            <short value="Constrained list of sex codes in use by public health."/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <description value="Sex (MFU)"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1038"/>
-            </binding>
-        </element>
         <element id="Patient.name.family">
             <path value="Patient.name.family"/>
             <short value="When child not named use code &quot;unknown&quot;"/>
