@@ -97,8 +97,39 @@
         </element>
         <element id="RelatedPerson.identifier">
             <path value="RelatedPerson.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="type"/>
+                </discriminator>
+                <description value="Slice based on ID type"/>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
             <mustSupport value="true"/>
         </element>
+        <element id="RelatedPerson.identifier:SSN">
+            <path value="RelatedPerson.identifier"/>
+            <sliceName value="SSN"/>
+            <short value="SSN if available and appropriate to send"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="RelatedPerson.identifier:SSN.type">
+            <path value="RelatedPerson.identifier.type"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="SS"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        
+        
+        
         <element id="RelatedPerson.patient">
             <path value="RelatedPerson.patient"/>
             <type>
