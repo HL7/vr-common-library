@@ -37,11 +37,6 @@
             <state value="NY"/>
         </valueAddress>
     </extension>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace">
-        <valueAddress>
-            <state value="NY"/>
-        </valueAddress>
-    </extension>
     <active value="true"/>
     <patient>
         <reference value="Patient/patient-decedent-fetus-not-named-common"/>
