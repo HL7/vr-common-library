@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2021-05-04T02:29:07.833+00:00"/>
-        <source value="#QGHOORbRM8zhbYAy"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-07-08T07:44:03.733+00:00"/>
+        <source value="#Asj7eCzidecswyAB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
     <version value="0.1.0"/>
@@ -79,7 +79,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -91,7 +91,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
             </type>
             <mustSupport value="true"/>
         </element>

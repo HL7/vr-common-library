@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-pregnancy-risk-factor"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2021-05-14T04:22:20.167+00:00"/>
-        <source value="#2I2oMF5QKpi7jcLE"/>
+        <versionId value="20"/>
+        <lastUpdated value="2021-07-08T08:21:22.256+00:00"/>
+        <source value="#9VQZJCZ9O3proU34"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
     <version value="0.1.0"/>

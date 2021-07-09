@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-tabulated-ethnicity-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-05-14T01:25:42.029+00:00"/>
-        <source value="#TaZPeVHG07kwNC1Q"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-09T00:48:15.051+00:00"/>
+        <source value="#LZb2guA88hDIDKDG"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity"/>
     </meta>
     <status value="final"/>
@@ -27,7 +27,7 @@
     </focus>
     <valueCodeableConcept>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-Ethnicity"/>
+            <system value="urn:oid:2.16.840.1.113883.6.238"/>
             <code value="2151-9"/>
             <display value="Chicano"/>
         </coding>

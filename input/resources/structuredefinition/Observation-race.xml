@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-race"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2021-05-14T04:22:06.717+00:00"/>
-        <source value="#0BAIs0ciVBRh5UzT"/>
+        <versionId value="18"/>
+        <lastUpdated value="2021-07-08T08:25:31.227+00:00"/>
+        <source value="#UfAY07swE0mSXZuE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race"/>
     <version value="1.0.0"/>

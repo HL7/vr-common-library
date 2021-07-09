@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-births-now-living"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-05-04T09:03:16.804+00:00"/>
-        <source value="#t9DkdlW7dWIG6Bwy"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-07-08T07:59:41.482+00:00"/>
+        <source value="#2ziUQgYtNuFQsehK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living"/>
     <version value="0.1.0"/>
     <name value="ObservationNumberBirthsNowLiving"/>
     <title value="Observation - Number of Births Now Living"/>
     <status value="active"/>
-    <date value="2020-07-17T18:56:31.000Z"/>
+    <date value="2020-07-17"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
