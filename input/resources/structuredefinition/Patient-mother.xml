@@ -106,7 +106,7 @@
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                    <code value="SB"/>
+                    <code value="SS"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
