@@ -69,7 +69,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <label value="linical Focus: All concepts that can describe a person's &quot;ethnicity&quot; as defined by the United States Bureau of Census. This includes the US Office of Management and Budget (OMB) two top-level ethnicity categories, plus all the more detailed descendant ethnicity concepts used by the US Bureau of Census."/>
+            <label value="List of detailed ethnicity codes reported on a limited basis"/>
             <short value="Detailed Ethnicity"/>
             <min value="0"/>
             <max value="1"/>
@@ -80,7 +80,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detailed Ethnicity"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"/>
             </binding>
         </element>
         <element id="Observation.dataAbsentReason">
