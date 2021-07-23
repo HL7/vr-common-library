@@ -103,24 +103,30 @@
             <extension url="date-part">
                 <valueCodeableConcept>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="258706009"/>
-                        <display value="month (qualifier value)"/>
+                        <system value="http://snomed.info/sct" />
+                        <code value="258706009" />
+                        <display value="month (qualifier value)" />
                     </coding>
                 </valueCodeableConcept>
             </extension>
-            <extension url="absent-reason"/></extension>
+            <extension url="absent-reason">
+                <valueCode value="asked-unknown" />
+            </extension>
+        </extension>
         <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason">
             <extension url="date-part">
                 <valueCodeableConcept>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="258703001"/>
-                        <display value="day (qualifier value)"/>
+                        <system value="http://snomed.info/sct" />
+                        <code value="258703001" />
+                        <display value="day (qualifier value)" />
                     </coding>
                 </valueCodeableConcept>
             </extension>
-            <extension url="absent-reason"/></extension>
+            <extension url="absent-reason">
+                <valueCode value="asked-unknown" />
+            </extension>
+        </extension>
     </birthDate>
     <address>
         <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator">
