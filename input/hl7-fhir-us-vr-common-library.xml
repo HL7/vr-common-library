@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="52"/>
-        <lastUpdated value="2021-07-08T19:47:19.100+00:00"/>
-        <source value="#ojCLeONnJo1862dJ"/>
+        <versionId value="60"/>
+        <lastUpdated value="2021-07-23T01:41:44.977+00:00"/>
+        <source value="#bO24YRgaZWLq9uke"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="0.1.0"/>
@@ -770,6 +770,15 @@
             <description value="Example of RelatedPerson-mother profile (adoptive mother)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-birth-date-part-absent-common"/></reference>
+            <name value="Patient - Mother Date Part Absent"/>
+            <description value="Example of Patient-mother profile (Date Part Absent)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>

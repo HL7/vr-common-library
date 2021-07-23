@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2021-05-14T05:53:45.114+00:00"/>
-        <source value="#frtSy9EJmVxAgWPf"/>
+        <versionId value="27"/>
+        <lastUpdated value="2021-07-09T02:47:48.435+00:00"/>
+        <source value="#XPDDbtJhtlts0NlG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
     <version value="0.1.0"/>
