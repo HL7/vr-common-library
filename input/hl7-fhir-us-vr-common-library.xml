@@ -718,13 +718,13 @@
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent"/>
             <groupingId value="participant-examples"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="Parameters/expansion-parameters-vr-common"/></reference>
             <name value="expansion-parameters-vr-common"/>
             <description value="References US SNOMED CT version."/>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-race"/>
