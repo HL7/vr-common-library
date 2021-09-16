@@ -46,6 +46,7 @@
                     <code value="57722-1"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -56,6 +57,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -63,6 +65,7 @@
             <type>
                 <code value="integer"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
