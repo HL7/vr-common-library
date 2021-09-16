@@ -51,6 +51,7 @@
         <element id="Patient.extension:birthsex">
             <path value="Patient.extension"/>
             <sliceName value="birthsex"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.extension:birthPlace">
