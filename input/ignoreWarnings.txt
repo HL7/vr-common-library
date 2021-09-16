@@ -1,1 +1,9 @@
 == Suppressed Messages ==
+# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
+US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+# External value set
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-vital-signs because the value set or a code system it depends on is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
+Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
+# Extensions - all extensions have examples inside the main profiles
+The Implementation Guide contains no examples for this extension
