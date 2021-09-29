@@ -37,8 +37,6 @@
                 <display value="10 minute Apgar Score"/>
             </concept>
         </include>
-    </compose>
-    <compose>
         <include>
             <system value="http://snomed.info/sct"/>
             <concept>
