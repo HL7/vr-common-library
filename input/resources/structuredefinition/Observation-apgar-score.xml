@@ -40,7 +40,7 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Standard timings for APGAR assessments."/>
+            <short value="Standard timings for APGAR assessments. Birth certificates only require 5 and 10 minute timings. Other use cases may require/accept other timings."/>
             <binding>
                 <strength value="required"/>
                 <description value="ApgarTiming"/>
