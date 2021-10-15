@@ -40,12 +40,12 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <patternCodeableConcept>
+            <fixedCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="68493-6"/>
                 </coding>
-            </patternCodeableConcept>
+            </fixedCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
