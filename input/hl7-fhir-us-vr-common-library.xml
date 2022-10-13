@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="114"/>
-        <lastUpdated value="2022-10-13T02:19:58.518+00:00"/>
-        <source value="#ABtvxqL2R7kvvfIJ"/>
+        <versionId value="115"/>
+        <lastUpdated value="2022-10-13T02:25:26.013+00:00"/>
+        <source value="#qC34I568yfZN49Pe"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -323,6 +323,7 @@
             <name value="Observation - Mother Prepregnancy Weight Vital Records"/>
             <description value="The weight of the mother before becoming pregnant."/>
             <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
         </resource>
         <resource>
             <reference>
