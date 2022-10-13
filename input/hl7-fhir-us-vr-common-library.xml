@@ -761,7 +761,7 @@
                 <display value="ValueSet - APGAR Score Timing"/>
             </reference>
             <name value="ValueSet - APGAR Score Timing Vital Records"/>
-            <description value="Standard timings for APGAR assessments."/>
+            <description value="This value set contains codes to represent standard timings for APGAR assessments."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -770,7 +770,7 @@
                 <display value="ValueSet - Date Part"/>
             </reference>
             <name value="ValueSet - Date Part Vital Records"/>
-            <description value="This value set contains codes to identify the parts of a date"/>
+            <description value="This value set contains codes that represent the parts of a date"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -779,7 +779,7 @@
                 <display value="ValueSet - Education Level Person"/>
             </reference>
             <name value="ValueSet - Education Level Person Vital Records"/>
-            <description value="Persons for whom education level can be reported."/>
+            <description value="This value set contains codes that represent persons for whom education level can be reported."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -788,7 +788,7 @@
                 <display value="ValueSet - Father Relationship"/>
             </reference>
             <name value="ValueSet - Father Relationship Vital Records"/>
-            <description value="Relationships describing the father's role relative to the subject"/>
+            <description value="This value set contains codes that represent relationships describing the father's role relative to the subject."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -797,7 +797,7 @@
                 <display value="ValueSet - Mother Relationship"/>
             </reference>
             <name value="ValueSet - Mother Relationship Vital Records"/>
-            <description value="Relationships describing the mother's role relative to the subject"/>
+            <description value="This value set contains codes that represent relationships describing the mother's role relative to the subject."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

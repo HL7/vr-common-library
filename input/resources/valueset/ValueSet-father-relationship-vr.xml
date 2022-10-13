@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-father-relationship-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-10-13T02:19:50.358+00:00"/>
-        <source value="#Foagtpjt5yIDsdEl"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-10-13T02:44:17.827+00:00"/>
+        <source value="#QhmyJciAD1zCtaME"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-father-relationship-vr"/>
     <version value="0.1.0"/>
@@ -21,7 +21,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Relationships describing the father's role relative to the subject"/>
+    <description value="This value set contains codes that represent relationships describing the father's role relative to the subject."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

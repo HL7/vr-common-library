@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-education-level-person-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-10-13T02:19:38.983+00:00"/>
-        <source value="#B0ilpjh1aTNaGcA7"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-10-13T02:43:53.611+00:00"/>
+        <source value="#127l5lphxwLN3bDT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-education-level-person-vr"/>
     <version value="0.1.0"/>
@@ -21,7 +21,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Persons for whom education level can be reported."/>
+    <description value="This value set contains codes that represent persons for whom education level can be reported."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
