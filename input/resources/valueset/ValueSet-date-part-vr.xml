@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-date-part-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-10-13T00:42:16.927+00:00"/>
-        <source value="#5tlHFyPP3vChUEnl"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-10-13T02:19:29.163+00:00"/>
+        <source value="#Nwf3kTYPVcOCNDKY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-part-vr"/>
-    <name value="ValueSetDatePart"/>
-    <title value="ValueSet - Date Part"/>
+    <name value="ValueSetDatePartVitalRecords"/>
+    <title value="ValueSet - Date Part Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains codes to identify the parts of a date"/>
