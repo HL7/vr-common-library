@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-last-menstrual-period-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.578+00:00"/>
-        <source value="#yzAyBiIsvAdsCuDO"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:18:58.322+00:00"/>
+        <source value="#dp6DDnzCrVaVXckO"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
     </meta>
     <status value="final"/>
     <code>

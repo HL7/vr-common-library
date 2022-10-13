@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-apgar-score-babyg-quinn-5-min-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.491+00:00"/>
-        <source value="#drWMzOXAnKTAmuKr"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:18:05.366+00:00"/>
+        <source value="#InFuPsSgCndu73zC"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     </meta>
     <status value="final"/>
     <code>

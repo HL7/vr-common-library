@@ -7,4 +7,4 @@ US FHIR Usage rules require that all profiles on Observation derive from one of 
 [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582 because the value set or code system is not known to the validator]
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 # Extensions - all extensions have examples inside the main profiles
-The Implementation Guide contains no examples for this extension
+The Implementation Guide contains no examples for this extension.

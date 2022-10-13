@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-mother-delivery-weight-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.488+00:00"/>
-        <source value="#rPnklw3EP4XvHs2X"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:19:51.858+00:00"/>
+        <source value="#JvzY49M3JXxmyHGK"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"/>
     </meta>
     <status value="final"/>
     <category>

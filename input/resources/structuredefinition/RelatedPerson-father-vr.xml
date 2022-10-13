@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="RelatedPerson-father-vr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-10-12T22:19:06.457+00:00"/>
+        <source value="#Yl8B0yBhsWYjomdp"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr"/>
+    <name value="RelatedPersonFatherVitalRecords"/>
+    <title value="RelatedPerson - Father Vital Records"/>
+    <status value="active"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="The father of the subject. Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.)."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="RelatedPerson"/>
+    <baseDefinition value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="RelatedPerson">
+            <path value="RelatedPerson"/>
+        </element>
+        <element id="RelatedPerson.relationship">
+            <path value="RelatedPerson.relationship"/>
+            <short value="Relationships describing the father's role relative to the subject."/>
+            <binding>
+                <strength value="required"/>
+                <description value="FatherRelationship"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-father-relationship-vr"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

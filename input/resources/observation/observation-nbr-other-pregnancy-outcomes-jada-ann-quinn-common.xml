@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-11-24T01:39:58.353+00:00"/>
-        <source value="#jF1136RfQTUMWEvL"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-10-12T23:19:28.579+00:00"/>
+        <source value="#cIo3uQcLhj6vA1eZ"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
     </meta>
     <status value="final"/>
     <code>

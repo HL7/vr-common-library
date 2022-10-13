@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="RelatedPerson-father-natural-vr"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-10-12T22:13:36.043+00:00"/>
+        <source value="#ek4mUy4jPv5lskdY"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
+    <name value="RelatedPersonFatherNaturalVitalRecords"/>
+    <title value="RelatedPerson - Father Natural Vital Records"/>
+    <status value="active"/>
+    <description value="The biological (natural) father of the newborn or fetus."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="RelatedPerson"/>
+    <baseDefinition value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="RelatedPerson">
+            <path value="RelatedPerson"/>
+            <short value="The biological father of the newborn or fetus."/>
+        </element>
+        <element id="RelatedPerson.relationship">
+            <path value="RelatedPerson.relationship"/>
+            <short value="natural father"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                    <code value="NFTH"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+    </differential>
+</StructureDefinition>

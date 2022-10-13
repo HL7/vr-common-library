@@ -18,16 +18,6 @@
 			"status": "ballot",
 			"sequence": "STU 1 on FHIR R4",
 			"date": "2020-12-01"
-		},
-		{
-			"version": "1.0.0",
-			"date": "2021-09-25",
-			"desc": "FHIR STU Release 1",
-			"path": "http://hl7.org/fhir/us/vr-common-library/STU1",
-			"status": "trial-use",
-			"fhirversion": "4.0.1",
-			"current": true,
-			"sequence": "STU 1 on FHIR R4"
 		}
 	],
 	"package-id": "hl7.fhir.us.vr-common-library",

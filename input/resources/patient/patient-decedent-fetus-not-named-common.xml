@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-decedent-fetus-not-named-common"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-05-13T23:55:46.361+00:00"/>
-        <source value="#NzQmoQR5UVkUMVjJ"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-10-12T23:20:22.366+00:00"/>
+        <source value="#jxOVgdPtoiw6goDY"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     </meta>
     <text>
         <status value="generated"/>

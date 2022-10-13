@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-race-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-07-09T03:11:44.192+00:00"/>
-        <source value="#gv4we2em5usSV4ic"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-10-12T23:19:28.732+00:00"/>
+        <source value="#QZdY4P2wfHXvQsgk"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
     </meta>
     <status value="final"/>
     <code>
@@ -27,9 +27,7 @@
     </focus>
     <valueCodeableConcept>
         <coding>
-<!--            <system value="urn:oid:2.16.840.1.113883.6.238"/>-->
             <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
-            
             <code value="2054-5"/>
             <display value="Black or African American"/>
         </coding>

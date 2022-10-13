@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-gestational-age-at-delivery-not-named-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:03:22.882+00:00"/>
-        <source value="#upOuKXgwXfgggM4Q"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:18:58.323+00:00"/>
+        <source value="#GyIDyeySMnaCg6qW"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
     </meta>
     <status value="final"/>
     <code>

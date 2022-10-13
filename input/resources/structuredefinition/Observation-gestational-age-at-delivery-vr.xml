@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-gestational-age-at-delivery-vr"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-10-13T01:52:37.379+00:00"/>
+        <source value="#VZVvhW0d4VUNqrKW"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
+    <name value="ObservationGestationalAgeAtDeliveryVitalRecords"/>
+    <title value="Observation - Gestational Age at Delivery Vital Records"/>
+    <status value="active"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="11884-4"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation.value[x].system">
+            <path value="Observation.value[x].system"/>
+            <min value="1"/>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x].code">
+            <path value="Observation.value[x].code"/>
+            <min value="1"/>
+            <fixedCode value="wk"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.method">
+            <path value="Observation.method"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

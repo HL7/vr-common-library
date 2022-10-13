@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-autopsy-performed-not-named-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.575+00:00"/>
-        <source value="#ySOuI9nGJnPoIRSE"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:19:43.716+00:00"/>
+        <source value="#Lt8d3l77zLZf4kAl"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-vr"/>
     </meta>
     <status value="final"/>
     <code>

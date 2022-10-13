@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-plurality-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.913+00:00"/>
-        <source value="#sW9usop0JfkKuOQu"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:19:28.580+00:00"/>
+        <source value="#XjP8GrrbnHHQEiYC"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
     </meta>
     <status value="final"/>
     <code>

@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-infant-living-babyg-quinn-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.564+00:00"/>
-        <source value="#xGuhyGVmYKMgzwce"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:18:58.320+00:00"/>
+        <source value="#di5bqh379uzIuWg7"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
     </meta>
     <status value="final"/>
     <code>

@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="relatedperson-mother-gestational-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-07-09T03:11:22.987+00:00"/>
-        <source value="#9iomTF1VJhpnvB3s"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-10-12T23:20:51.337+00:00"/>
+        <source value="#sQjZXfQ23NoQakck"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">

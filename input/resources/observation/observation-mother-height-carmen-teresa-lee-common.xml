@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-mother-height-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:02:54.501+00:00"/>
-        <source value="#GhijYKXwaE8lUIJv"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-10-12T23:18:58.322+00:00"/>
+        <source value="#e7fahpVpTosHVthb"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr"/>
     </meta>
     <status value="final"/>
     <category>

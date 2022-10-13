@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-apgar-timing-vr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-10-13T00:50:11.288+00:00"/>
+        <source value="#OkCgsveha1pEFKy2"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-apgar-timing-vr"/>
+    <version value="0.1.0"/>
+    <name value="ValueSetApgarTiming"/>
+    <title value="ValueSet - APGAR Score Timing"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-07-17T18:56:31+00:00"/>
+    <description value="Standard timings for APGAR assessments."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="This material contains content from LOINC ([http://loinc.org](http://loinc.org)). LOINC is copyright © 1995-2022+, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc  &#xA;&#xA;This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="9272-6"/>
+                <display value="1 minute Apgar Score"/>
+            </concept>
+            <concept>
+                <code value="9274-2"/>
+                <display value="5 minute Apgar Score"/>
+            </concept>
+            <concept>
+                <code value="9271-8"/>
+                <display value="10 minute Apgar Score"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="443848000"/>
+                <display value="Apgar score at 15 minutes (observable entity)"/>
+            </concept>
+            <concept>
+                <code value="443849008"/>
+                <display value="Apgar score at 20 minutes (observable entity)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

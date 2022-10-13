@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="relatedperson-father-tom-yan-lee-common"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-07-09T03:27:57.746+00:00"/>
-        <source value="#E73VfrHcGb8VaZlv"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-10-12T23:44:48.452+00:00"/>
+        <source value="#cUukJfel8wp8t13E"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
@@ -32,7 +32,7 @@
             <valueString value="Not Hispanic or Latino"/>
         </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace">
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr">
         <valueAddress>
             <state value="NY"/>
         </valueAddress>

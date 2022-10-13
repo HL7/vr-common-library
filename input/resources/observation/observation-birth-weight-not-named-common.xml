@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-birth-weight-not-named-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-05-14T03:45:46.062+00:00"/>
-        <source value="#rnWaIJ7dVqEwTECj"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-10-12T23:19:43.716+00:00"/>
+        <source value="#EuTtmG1mRPnJrq0E"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
     </meta>
     <status value="final"/>
     <category>
