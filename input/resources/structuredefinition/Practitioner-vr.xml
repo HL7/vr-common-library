@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Practitioner-vital-records-vr"/>
+    <id value="Practitioner-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-10-12T22:13:36.026+00:00"/>
-        <source value="#TnsCa1FtLM5TwqUA"/>
+        <lastUpdated value="2022-10-25T15:51:11.599+00:00"/>
+        <source value="#zrB5cWTCPpGkm4ut"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records-vr"/>
-    <name value="PractitionerVitalRecordsVitalRecords"/>
-    <title value="Practitioner - VitalRecords Vital Records"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"/>
+    <name value="PractitionerVitalRecords"/>
+    <title value="Practitioner - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>
