@@ -82,13 +82,13 @@ profiles.each do |key, value|
     fullout.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| " + profile + "| " + ijeonly + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
     out.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + "| "  + ijeonly + "|" + fhirfield + " | " + fhirtype + " | " + fhirencoding + " | "
   end
-  # SG: These don't work with the current version of the VRCPL IG - maybe they are only needed for FSH IGs?
-  # out.puts "{: .grid }"
+  out.puts "{: .grid }"
+  # SG: This doesn't work with the current version of the VRCPL IG - maybe only needed for FSH IGs?
   # out.puts "{% include markdown-link-references.md %}"
   out.close
 end
-  # SG: These don't work with the current version of the VRCPL IG - maybe they are only needed for FSH IGs?
-  # fullout.puts "{: .grid }"
+  fullout.puts "{: .grid }"
+  # SG: This doesn't work with the current version of the VRCPL IG - maybe only needed for FSH IGs?
   # fullout.puts "{% include markdown-link-references.md %}"
   fullout.close
 
