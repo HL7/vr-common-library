@@ -1,19 +1,18 @@
-﻿sep=|
-Flow|Field #|Beginning Location|Length|Contents|Name|Code Structure Description|IJE Only|VRDR Profile|Field|Encoding|Comments
+﻿Flow|Field #|Beginning Location|Length|Contents|Name|Code Structure Description|IJE Only|VRDR Profile|Field|Encoding|Comments
 Mortality|1|1|4|Date of Death--Year|DOD_YR|4 digit year||DeathDate|value|dateTime|Required for processing
-Mortality|2|5|2|State| U.S. Territory or Canadian Province of Death - code"|DSTATE|"2 letter postal code"||DeathLocation|address.state or address.state.extension[nationalReportingJurisdictionId ]|codeable|[StatesTerritoriesProvincesVS] in state field or [JurisdictionVS] in extension
-Mortality|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|"YYYYJJNNNNNN   YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"||DeathCertificateDocument|identifier.value|string(12)|"YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"
-Mortality|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|"YYYYJJNNNNNN YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"||CauseOfDeathCodedContentBundle|identifier.value|string(12)|"YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"
-Mortality|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|"YYYYJJNNNNNN YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"||DemographicCodedContentBundle|identifier.value|string(12)|"YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"
+Mortality|2|5|2|State, U.S. Territory or Canadian Province of Death - code|DSTATE|2 letter postal code||DeathLocation|address.state or address.state.extension[nationalReportingJurisdictionId ]|codeable|[StatesTerritoriesProvincesVS] in state field or [JurisdictionVS] in extension
+Mortality|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|YYYYJJNNNNNN   YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number||DeathCertificateDocument|identifier.value|string(12)|YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number
+Mortality|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|YYYYJJNNNNNN YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number||CauseOfDeathCodedContentBundle|identifier.value|string(12)|YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number
+Mortality|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|YYYYJJNNNNNN YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number||DemographicCodedContentBundle|identifier.value|string(12)|YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number
 Mortality|3|7|6|Certificate Number|FILENO|Left 0 filled; 000001-999999||DeathCertificateDocument|identifier.extension[ certificateNumber].value|string(6)|-
 Mortality|3|7|6|Certificate Number|FILENO|Left 0 filled; 000001-999999||CauseOfDeathCodedContentBundle|identifier.extension[ certificateNumber].value|string(6)|-
 Mortality|3|7|6|Certificate Number|FILENO|Left 0 filled; 000001-999999||DemographicCodedContentBundle|identifier.extension[ certificateNumber].value|string(6)|-
-Mortality|4|13|1|Void flag|VOID|"0 =Default; Valid Record 1 = VOID record"||<not implemented>|||-
+Mortality|4|13|1|Void flag|VOID|0 =Default; Valid Record 1 = VOID record||<not implemented>|||-
 Mortality|5|14|12|Auxiliary State file number|AUXNO|000000000001-999999999999; Blank||DeathCertificateDocument|identifier.extension[auxiliaryStateIdentifier1].value|string(12)|-
 Mortality|5|14|12|Auxiliary State file number|AUXNO|000000000001-999999999999; Blank||CauseOfDeathCodedContentBundle|identifier.extension[auxiliaryStateIdentifier1].value|string(12)|-
 Mortality|5|14|12|Auxiliary State file number|AUXNO|000000000001-999999999999; Blank||DemographicCodedContentBundle|identifier.extension[auxiliaryStateIdentifier1].value|string(12)|-
-Mortality|6|26|1|Source flag: paper/electronic|MFILED|"0 = Electronic Mode 1 = Paper Mode 2 = Mixed Mode"||DeathCertificate|extension[ filingFormat] |codeable| [FilingFormatVS]
-Mortality|7|27|50|Decedent's Legal Name--Given |GNAME|||Decedent|"name.given | name.use = official"|string|-
+Mortality|6|26|1|Source flag: paper/electronic|MFILED|0 = Electronic Mode 1 = Paper Mode 2 = Mixed Mode||DeathCertificate|"extension[ filingFormat] "|codeable|" [FilingFormatVS]"
+Mortality|7|27|50|"Decedent's Legal Name--Given "|GNAME|||Decedent|"name.given | name.use = official"|string|-
 Mortality|8|77|1|Decedent's Legal Name--Middle|MNAME|||Decedent|"name.given | name.use = official (first letter)"|string|-
 Mortality|9|78|50|Decedent's Legal Name--Last|LNAME|Last name is required||Decedent|"name.family | name.use = official"|string|-
 Mortality|10|128|10|Decedent's Legal Name--Suffix|SUFF|||Decedent|"name.suffix | name.use = official"|string|-
@@ -22,7 +21,7 @@ Mortality|11|138|1|Alias Record Flag|ALIAS|"0 = Original Record
 Mortality|12|139|50|Father's Surname|FLNAME|||DecedentFather|name.family|string|-
 Mortality|13|189|1|Sex|SEX|"M = Male
 F = Female
-U = Unknown"||Decedent|extension[NVSS-SexAtDeath] |codeable|[AdministrativeGenderVS]
+U = Unknown"||Decedent|"extension[NVSS-SexAtDeath] "|codeable|[AdministrativeGenderVS]
 Mortality|14|190|1|Sex--Edit Flag|SEX_BYPASS|"0 = Edit Passed
 1 = Edit Failed| Data Queried| and Verified"||<not implemented>|||-
 Mortality|15|191|9|Social Security Number|SSN|9 digit SSN; blank if unknown or not sharable||Decedent|"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB"""|string|-
@@ -32,7 +31,7 @@ Mortality|16|200|1|Decedent's Age--Type|AGETYPE|"1 = Years
 5 = Hours
 6 = Minutes
 9 = Unknown (not classifiable)"||DecedentAge|valueQuantity.code|codeable|[UnitsOfAgeVS]
-Mortality|17|201|3|Decedent's Age--Units|AGE |"001 - 135| 999
+Mortality|17|201|3|Decedent's Age--Units|"AGE "|"001 - 135| 999
 Codes: If AGETYPE = 1 then 001-135| 999
                                         2 then 001-011| 999
                                         4 then 001-027| 999
@@ -44,8 +43,8 @@ Mortality|18|204|1|Decedent's Age--Edit Flag|AGE_BYPASS|"0 = Edit Passed
 Mortality|19|205|4|Date of Birth--Year|DOB_YR|"4 digit year; <=year of death| 9999"||Decedent|birthDate|dateTime|See [PartialDatesAndTimes]
 Mortality|20|209|2|Date of Birth--Month|DOB_MO|"01-12| 99"||Decedent|birthDate|dateTime|See [PartialDatesAndTimes]
 Mortality|21|211|2|Date of Birth--Day|DOB_DY|"01-31 (based on month)| 99"||Decedent|birthDate|dateTime|See [PartialDatesAndTimes]
-Mortality|22|213|2|Birthplace--Country|BPLACE_CNT|NCHS Instruction Manual: Part 8||Decedent|extension[patient-birthPlace].value[x].country |string|[BirthplaceCountryVS]
-Mortality|23|215|2|"State, U.S. Territory or Canadian Province of Birth - code"|BPLACE_ST|"NCHS Instruction Manual: Part 8
+Mortality|22|213|2|Birthplace--Country|BPLACE_CNT|NCHS Instruction Manual: Part 8||Decedent|"extension[patient-birthPlace].value[x].country "|string|[BirthplaceCountryVS]
+Mortality|23|215|2|State, U.S. Territory or Canadian Province of Birth - code|BPLACE_ST|"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
    XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN| BUT NOT U.S. OR CANADA
 For U.S. Territories:
@@ -94,17 +93,17 @@ For Canadian Provinces:
    SK  SASKATCHEWAN
    YT  YUKON"||Decedent|address.state|string|[StatesTerritoriesProvincesVS]
 Mortality|27|227|2|Decedent's Residence--Country|COUNTRYC|NCHS Instruction Manual: Part 8||Decedent|address.country|string|[ResidenceCountryVS]
-Mortality|28|229|1|Decedent's Residence--Inside City Limits|LIMITS|Y = Yes N = No.  U = Unknown ||Decedent|address.city.extension[ withinCityLimits] |codeable|[YesNoUnknownVS]
+Mortality|28|229|1|Decedent's Residence--Inside City Limits|LIMITS|"Y = Yes N = No.  U = Unknown "||Decedent|"address.city.extension[ withinCityLimits] "|codeable|[YesNoUnknownVS]
 Mortality|29|230|1|Marital Status|MARITAL|"M = Married
 A = Married but Separated
 W = Widowed
 D = Divorced
 S = Never Married
-U = Not Classifiable"||Decedent|maritalStatus|codeable| [MaritalStatusVS]
+U = Not Classifiable"||Decedent|maritalStatus|codeable|" [MaritalStatusVS]"
 Mortality|30|231|1|Marital Status--Edit Flag|MARITAL_BYPASS|"0 = Edit Passed
 1 = Edit Failed| Data Queried| and Verified
 2 = Edit Failed| Data Queried| but not Verified
-4 = Edit Failed| Query Needed"||Decedent|maritalStatus.extension[ BypassEditFlag] |codeable|[EditBypass0124VS]
+4 = Edit Failed| Query Needed"||Decedent|"maritalStatus.extension[ BypassEditFlag] "|codeable|[EditBypass0124VS]
 Mortality|31|232|1|Place of Death|DPLACE|"1 = Inpatient
 2 = Emergency Room/Outpatient
 3 = Dead on Arrival
@@ -151,7 +150,7 @@ U = Unknown"||InputRaceAndEthnicity|component[ HispanicCuban ].valueCoding|codea
 Mortality|42|250|1|Decedent of Hispanic Origin?--Other|DETHNIC4|"N = No| Not other Hispanic
 H = Yes| other Hispanic
 U = Unknown"||InputRaceAndEthnicity|component[ HispanicOther ].valueCoding|codeable|[HispanicNoUnknownVS]
-Mortality|43|251|20|"Decedent of Hispanic Origin?--Other| Literal"|DETHNIC5|Literal; Blank ||InputRaceAndEthnicity|component[ HispanicLiteral ].valueString|string|-
+Mortality|43|251|20|"Decedent of Hispanic Origin?--Other| Literal"|DETHNIC5|"Literal; Blank "||InputRaceAndEthnicity|component[ HispanicLiteral ].valueString|string|-
 Mortality|44|271|1|Decedent's Race--White|RACE1|"Y = Yes| box for race checked
 N = No| box for race not checked"||InputRaceAndEthnicity|component[ White].valueBoolean|boolean|-
 Mortality|45|272|1|Decedent's Race--Black or African American|RACE2|"Y| N"||InputRaceAndEthnicity|component[ BlackOrAfricanAmerican].valueBoolean|boolean|-
@@ -168,13 +167,13 @@ Mortality|55|282|1|Decedent's Race--Guamanian or Chamorro|RACE12|"Y| N"||InputRa
 Mortality|56|283|1|Decedent's Race--Samoan|RACE13|"Y| N"||InputRaceAndEthnicity|component[ Samoan].valueBoolean|boolean|-
 Mortality|57|284|1|Decedent's Race--Other Pacific Islander|RACE14|"Y| N"||InputRaceAndEthnicity|component[ OtherPacificIslander].valueBoolean|boolean|-
 Mortality|58|285|1|Decedent's Race--Other|RACE15|"Y| N"||InputRaceAndEthnicity|component[ OtherRace].valueBoolean|boolean|-
-Mortality|59|286|30|Decedent's Race--First American Indian or Alaska Native Literal|RACE16|Literal; Blank ||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral1].valueString|string|-
-Mortality|60|316|30|Decedent's Race--Second American Indian or Alaska Native Literal|RACE17|Literal; Blank ||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral2].valueString|string|-
-Mortality|61|346|30|Decedent's Race--First Other Asian Literal|RACE18|Literal; Blank ||InputRaceAndEthnicity|component[ OtherAsianLiteral1].valueString|string|-
-Mortality|62|376|30|Decedent's Race--Second Other Asian Literal|RACE19|Literal; Blank ||InputRaceAndEthnicity|component[ OtherAsianLiteral2].valueString|string|-
+Mortality|59|286|30|Decedent's Race--First American Indian or Alaska Native Literal|RACE16|"Literal; Blank "||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral1].valueString|string|-
+Mortality|60|316|30|Decedent's Race--Second American Indian or Alaska Native Literal|RACE17|"Literal; Blank "||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral2].valueString|string|-
+Mortality|61|346|30|Decedent's Race--First Other Asian Literal|RACE18|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherAsianLiteral1].valueString|string|-
+Mortality|62|376|30|Decedent's Race--Second Other Asian Literal|RACE19|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherAsianLiteral2].valueString|string|-
 Mortality|63|406|30|Decedent's Race--First Other Pacific Islander Literal|RACE20|Literal; Blank||InputRaceAndEthnicity|component[ OtherPacificIslandLiteral1].valueString|string|-
-Mortality|64|436|30|Decedent's Race--Second Other Pacific Islander Literal|RACE21|Literal; Blank ||InputRaceAndEthnicity|component[ OtherPacificIslandLiteral2].valueString|string|-
-Mortality|65|466|30|Decedent's Race--First Other Literal|RACE22|Literal; Blank ||InputRaceAndEthnicity|component[ OtherRaceLiteral1].valueString|string|-
+Mortality|64|436|30|Decedent's Race--Second Other Pacific Islander Literal|RACE21|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherPacificIslandLiteral2].valueString|string|-
+Mortality|65|466|30|Decedent's Race--First Other Literal|RACE22|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherRaceLiteral1].valueString|string|-
 Mortality|66|496|30|Decedent's Race--Second Other Literal|RACE23|Literal; Blank||InputRaceAndEthnicity|component[ OtherRaceLiteral2].valueString|string|-
 Mortality|67|526|3|First Edited Code|RACE1E|Appendix I (Values for fields 67 - 82 returned from NCHS)||CodedRaceAndEthnicity|component[FirstEditedCode].value||-
 Mortality|68|529|3|Second Edited Code|RACE2E|Appendix I||CodedRaceAndEthnicity|component[SecondEditedCode].value|codeable|[RaceCodeVS]
@@ -196,10 +195,10 @@ Mortality|83|574|1|Decedent's Race--Missing|RACE_MVR|"R = Refused
 S = Sought| but Unknown
 C = Not Obtainable"||InputRaceAndEthnicity|component[ MissingValueReason].valueCoding|codeable|[RaceMissingValueReasonVS]
 Mortality|NA|NA|NA|Race Recode 40  (No longer provided as of 2022)|*NO IJE MAPPING*|||CodedRaceAndEthnicity|component[RaceRecode40].value|codeable|[RaceRecode40VS]
-Mortality|84|575|40|Occupation -- Literal |OCCUP|||DecedentUsualWork|value.text|string(40)|-
-Mortality|85|615|3|Occupation -- Code |OCCUPC|"Refer to NCHS Instruction Manual Part 19| Industry and Occupation Coding for Death Certificates| 2003. Leave blank if using a coding system other than this."||<not implemented>|||-
-Mortality|86|618|40|Industry -- Literal |INDUST|||DecedentUsualWork|"component [ odh-UsualIndustry	].value.text"|string(40)|-
-Mortality|87|658|3|Industry -- Code |INDUSTC|"Refer to NCHS Instruction Manual Part 19| Industry and Occupation Coding for Death Certificates| 2003. Leave blank if using a coding system other than this."||<not implemented>|||-
+Mortality|84|575|40|"Occupation -- Literal "|OCCUP|||DecedentUsualWork|value.text|string(40)|-
+Mortality|85|615|3|"Occupation -- Code "|OCCUPC|"Refer to NCHS Instruction Manual Part 19| Industry and Occupation Coding for Death Certificates| 2003. Leave blank if using a coding system other than this."||<not implemented>|||-
+Mortality|86|618|40|"Industry -- Literal "|INDUST|||DecedentUsualWork|component [ odh-UsualIndustry	].value.text|string(40)|-
+Mortality|87|658|3|"Industry -- Code "|INDUSTC|"Refer to NCHS Instruction Manual Part 19| Industry and Occupation Coding for Death Certificates| 2003. Leave blank if using a coding system other than this."||<not implemented>|||-
 Mortality|88|661|6|Infant Death/Birth Linking - birth certificate number|BCNO|"Left 0 filled; 000001-999999| BLANK"||BirthRecordIdentifier|value|string(6)|-
 Mortality|89|667|4|Infant Death/Birth Linking - year of birth|IDOB_YR|"4 digit year = year of death or (year of death - 1)
 9999 = unknown
@@ -230,22 +229,22 @@ For Canadian Provinces:
 Mortality|91|673|4|Receipt date -- Year|R_YR|4 digit year; >=year of death||CodingStatusValues|parameter[receiptDate].value|date|See [PartialDatesAndTimes]
 Mortality|92|677|2|Receipt date -- Month|R_MO|01-12||CodingStatusValues|parameter[receiptDate].value|date|See [PartialDatesAndTimes]
 Mortality|93|679|2|Receipt date -- Day|R_DY|01-31 (based on month)||CodingStatusValues|parameter[receiptDate].value|date|See [PartialDatesAndTimes]
-Mortality|94|681|4|Occupation -- 4 digit Code |OCCUPC4|4 digit code ||DecedentUsualWork|valueCodeableConcept.coding[occupationCDCCensus2018] |codeable|[PHVS_Occupation_CDC_Census2018VS]
-Mortality|95|685|4|Industry -- 4 digit Code|INDUSTC4|4 digit code ||DecedentUsualWork|component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCCensus2018] |codeable|[PHVS_Industry_CDC_Census2018VS]
+Mortality|94|681|4|"Occupation -- 4 digit Code "|OCCUPC4|"4 digit code "||DecedentUsualWork|"valueCodeableConcept.coding[occupationCDCCensus2018] "|codeable|[PHVS_Occupation_CDC_Census2018VS]
+Mortality|95|685|4|Industry -- 4 digit Code|INDUSTC4|"4 digit code "||DecedentUsualWork|"component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCCensus2018] "|codeable|[PHVS_Industry_CDC_Census2018VS]
 Mortality|96|689|4|Date of Registration--Year|DOR_YR|"4 digit year; >=year of death| Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)"||DeathCertificate|date|dateTime|-
 Mortality|97|693|2|Date of Registration--Month|DOR_MO|"01-12| Blank"||DeathCertificate|date|dateTime|-
 Mortality|98|695|2|Date of Registration--Day|DOR_DY|"01-31 (based on month)| Blank"||DeathCertificate|date|dateTime|-
 Mortality|99|697|4|FILLER 2 for expansion||BLANK||<not implemented>|||-
 Mortality|100|701|1|Manner of Death|MANNER|||MannerOfDeath|value|codeable|[MannerOfDeathVS]
-Mortality|NA|NA|NA|coder status |"CS (TRX Field| no IJE Mapping)"|"Numeric| Valid codes: 0 -9 "||CodingStatusValues|parameter[coderStatus].value|integer|-
-Mortality|NA|NA|NA|shipment number |"SHIP (TRX Field| no IJE Mapping)"|NCHS ID Information. Alpha\Numeric. Usually month of death or month of receipts||CodingStatusValues|parameter[shipmentNumber].value|string|-
-Mortality|101|702|1|Intentional Reject |INT_REJ|||CodingStatusValues|parameter[intentionalReject].value|codeable|[IntentionalRejectVS]
-Mortality|102|703|1|Acme System Reject Codes|SYS_REJ|||CodingStatusValues|parameter[acmeSystemReject].value |codeable|[ACMESystemRejectVS]
+Mortality|NA|NA|NA|"coder status "|"CS (TRX Field| no IJE Mapping)"|"Numeric| Valid codes: 0 -9 "||CodingStatusValues|parameter[coderStatus].value|integer|-
+Mortality|NA|NA|NA|"shipment number "|"SHIP (TRX Field| no IJE Mapping)"|NCHS ID Information. Alpha\Numeric. Usually month of death or month of receipts||CodingStatusValues|parameter[shipmentNumber].value|string|-
+Mortality|101|702|1|"Intentional Reject "|INT_REJ|||CodingStatusValues|parameter[intentionalReject].value|codeable|[IntentionalRejectVS]
+Mortality|102|703|1|Acme System Reject Codes|SYS_REJ|||CodingStatusValues|"parameter[acmeSystemReject].value "|codeable|[ACMESystemRejectVS]
 Mortality|103|704|1|Place of Injury (computer generated)|INJPL|||PlaceOfInjury|value|codeable|[PlaceOfInjuryVS]
-Mortality|104|705|5|Manual Underlying Cause |MAN_UC|||ManualUnderlyingCauseOfDeath|value|codeable|[ICD10CausesOfDeathVS]
+Mortality|104|705|5|"Manual Underlying Cause "|MAN_UC|||ManualUnderlyingCauseOfDeath|value|codeable|[ICD10CausesOfDeathVS]
 Mortality|105|710|5|ACME Underlying Cause|ACME_UC|||AutomatedUnderlyingCauseOfDeath|value|codeable|[ICD10CausesOfDeathVS]
 Mortality|106|715|160|Entity-axis codes|EAC|||EntityAxisCauseOfDeath|"Each entry is a 4-tuble (value| component[position]| component[lineNumber]| component[e-code-indicator]  "|codeable|[ICD10CausesOfDeathVS]
-Mortality|107|875|1|Transax conversion flag: Computer Generated|TRX_FLG|||CodingStatusValues|parameter[transaxConversion].value |codeable|[TransaxConversionVS]
+Mortality|107|875|1|Transax conversion flag: Computer Generated|TRX_FLG|||CodingStatusValues|"parameter[transaxConversion].value "|codeable|[TransaxConversionVS]
 Mortality|108|876|100|Record-axis codes|RAC|||RecordAxisCauseOfDeath|"Each entry is a 3-tuple (value| component[position]| component[WouldBeUnderlyingCauseOfDeathWithoutPregnancy])"|codeable|[ICD10CausesOfDeathVS]
 Mortality|109|976|1|Was Autopsy performed|AUTOP|Y = Yes N = No.  U = Unknown||AutopsyPerformedIndicator|value|codeable|[YesNoUnknownVS]
 Mortality|110|977|1|Were Autopsy Findings Available to Complete the Cause of Death?|AUTOPF|Y = Yes N = No.  U = Unknown X = Not Applicable||AutopsyPerformedIndicator|component[ autopsyPerformedIndicator ].value|codeable|[YesNoUnknownNotApplicableVS]
@@ -263,15 +262,15 @@ Mortality|121|1025|12|Auxiliary State file number|AUXNO2|||DeathCertificateDocum
 Mortality|121|1025|12|Auxiliary State file number|AUXNO2|||CauseOfDeathCodedContentBundle|identifier.extension[auxiliaryStateIdentifier2].value|string(12)|-
 Mortality|121|1025|12|Auxiliary State file number|AUXNO2|||DemographicCodedContentBundle|identifier.extension[auxiliaryStateIdentifier2].value|string(12)|-
 Mortality|||||||||||
-Mortality|122|1037|30|State Specific Data |STATESP|Possible use for future filler unless two neighboring states wish to use for some specific information that they both collect. This would be a non-standard field||DeathCertificate|extension[ stateSpecificField]|string(30)|-
+Mortality|122|1037|30|"State Specific Data "|STATESP|Possible use for future filler unless two neighboring states wish to use for some specific information that they both collect. This would be a non-standard field||DeathCertificate|extension[ stateSpecificField]|string(30)|-
 Mortality|123|1067|2|Surgery Date--month|SUR_MO|"01-12| 99 or Blank"||SurgeryDate|value|dateTime|See [PartialDatesAndTimes]
 Mortality|124|1069|2|Surgery Date--day|SUR_DY|"01-31 (based on month)| 99 or Blank"||SurgeryDate|value|dateTime|See [PartialDatesAndTimes]
 Mortality|125|1071|4|Surgery Date--year|SUR_YR|"4 digit year; <=year of death| 9999 or Blank"||SurgeryDate|value|dateTime|See [PartialDatesAndTimes]
 Mortality|126|1075|1|Time of Injury Unit|TOI_UNIT|"A| P| M or Blank (AM| PM or Military)"||InjuryIncident|effective|implicit|
 Mortality|127|1076|5|For possible future change in transax|BLANK1|Blank||<not implemented>|||-
 Mortality|128|1081|1|Decedent ever served in Armed Forces?|ARMEDF|Y=yes; N=no; U=unknown|I|DecedentMilitaryService|value|codeable|[YesNoUnknownVS]
-Mortality|129|1082|30|Death Institution name|DINSTI|"Facility name literal; if Place of Death (DPLACE)=4 (decedent's home)| enter ""Home"""|I|DeathLocation|name|string |-
-Mortality|130|1112|50|Long String address for place of death|ADDRESS_D|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Place of Death address that's used in their system versus reprogramming."|I|DeathLocation|address.line|string |-
+Mortality|129|1082|30|Death Institution name|DINSTI|"Facility name literal; if Place of Death (DPLACE)=4 (decedent's home)| enter ""Home"""|I|DeathLocation|name|"string "|-
+Mortality|130|1112|50|Long String address for place of death|ADDRESS_D|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Place of Death address that's used in their system versus reprogramming."|I|DeathLocation|address.line|"string "|-
 Mortality|131|1162|10|Place of death. Street number|STNUM_D||I|DeathLocation|address.extension[stnum]|string|-
 Mortality|132|1172|10|Place of death. Pre Directional|PREDIR_D||I|DeathLocation|address.extension[predir]|string|-
 Mortality|133|1182|50|Place of death. Street name|STNAME_D||I|DeathLocation|address.extension[stname]|string|-
@@ -285,9 +284,9 @@ Mortality|140|1345|5|Place of death. City FIPS code|CITYCODE_D|NCHS Instruction 
 Mortality|141|1350|17|Place of death. Longitude|LONG_D|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes| a decimal divider| and 6 decimal places."|I|DeathLocation|position.longitude|float|-
 Mortality|142|1367|17|Place of Death. Latitude|LAT_D|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes| a decimal divider| and 6 decimal places."|I|DeathLocation|position.latitude|float|-
 Mortality|143|1384|1|Decedent's spouse living at decedent's DOD?|SPOUSELV|"1=yes; 2=no; 8=unmarried; 9=unknown;
-blank if not reported"|I|Decedent|extension[SpouseAlive] |codeable| [SpouseAliveVS]
+blank if not reported"|I|Decedent|"extension[SpouseAlive] "|codeable|" [SpouseAliveVS]"
 Mortality|144|1385|50|Spouse's First Name|SPOUSEF|"Free form literal; if unknown| leave blank"|I|DecedentSpouse|name.given|string|-
-Mortality|145|1435|50|Husband's Surname/Wife's Maiden Last Name|SPOUSEL |"Free form literal; if unknown| leave blank"|I|DecedentSpouse|"name.family| name.use = 'maiden"|string|-
+Mortality|145|1435|50|Husband's Surname/Wife's Maiden Last Name|"SPOUSEL "|"Free form literal; if unknown| leave blank"|I|DecedentSpouse|"name.family| name.use = 'maiden"|string|-
 Mortality|146|1485|10|Decedent's Residence - Street number|STNUM_R|||Decedent|address.extension[stnum]|string|-
 Mortality|147|1495|10|Decedent's Residence - Pre Directional|PREDIR_R|||Decedent|address.extension[predir]|string|-
 Mortality|148|1505|28|Decedent's Residence - Street name|STNAME_R|||Decedent|address.extension[stname]|string|-
@@ -297,27 +296,27 @@ Mortality|151|1553|7|Decedent's Residence - Unit or apt number|UNITNUM_R|||Deced
 Mortality|152|1560|28|Decedent's Residence - City or Town name|CITYTEXT_R|Valid city/town/location literal||Decedent|address.city|string|-
 Mortality|153|1588|9|Decedent's Residence - ZIP code|ZIP9_R|"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""||Decedent|address.postalCode|string|-
 Mortality|154|1597|28|Decedent's Residence - County|COUNTYTEXT_R|Valid county literal||Decedent|address.district|string|-
-Mortality|155|1625|28|Decedent's Residence - State name|STATETEXT_R |Valid text for U.S. State or Territory or Canadian Province||Decedent|address.state (expanded from 2 letter code)|string|See [StateLiterals]
+Mortality|155|1625|28|Decedent's Residence - State name|"STATETEXT_R "|Valid text for U.S. State or Territory or Canadian Province||Decedent|address.state (expanded from 2 letter code)|string|See [StateLiterals]
 Mortality|156|1653|28|Decedent's Residence - COUNTRY name|COUNTRYTEXT_R|Valid text for country of residence||Decedent|address.country (expanded from 2 letter code)|string|See [CountryLiterals]
 Mortality|157|1681|50|Long string address for decedent's place of residence same as above but allows states to choose the way they capture information.|ADDRESS_R|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Decedent's Residence address that's used in their system versus reprogramming."||Decedent|address.line[0]|string|-
 Mortality|158|1731|2|Old NCHS residence state code|RESSTATE|"See codes used before new 2003 codes -
 Receiving state will recode"||<not implemented>|||-
 Mortality|159|1733|3|Old NCHS residence city/county combo code|RESCON|"See codes used before new 2003 codes -
 Receiving state will recode"||<not implemented>|||-
-Mortality|160|1736|3|Hispanic|DETHNICE |"100 = NonHispanic
+Mortality|160|1736|3|Hispanic|"DETHNICE "|"100 = NonHispanic
 200-299 = Hispanic
 996-999 = Unknown"||CodedRaceAndEthnicity|component[HispanicCode].value|codeable|[HispanicOriginVS]
 Mortality|161|1739|2|Bridged Race|NCHSBRIDGE|||<not implemented>|||-
 Mortality|162|1741|1|Hispanic - old NCHS single ethnicity codes|HISPOLDC|||<not implemented>|||-
 Mortality|163|1742|1|Race - old NCHS single race codes|RACEOLDC|||<not implemented>|||-
-Mortality|164|1743|15|Hispanic Origin - Specify |HISPSTSP|||<not implemented>|||-
+Mortality|164|1743|15|"Hispanic Origin - Specify "|HISPSTSP|||<not implemented>|||-
 Mortality|165|1758|50|Race - Specify|RACESTSP|||<not implemented>|||-
-Mortality|166|1808|50|Middle Name of Decedent |DMIDDLE|NCHS only asks for middle initial in start col 77. Free form alpha literal; left justified|i|Decedent|"name.given | name.use = official"|string|-
+Mortality|166|1808|50|"Middle Name of Decedent "|DMIDDLE|NCHS only asks for middle initial in start col 77. Free form alpha literal; left justified|i|Decedent|"name.given | name.use = official"|string|-
 Mortality|167|1858|50|Father's First Name|DDADF|"Free form literal; if unknown| leave blank"|i|DecedentFather|"name.given | name.use = official"|string|-
 Mortality|168|1908|50|Father's Middle Name|DDADMID|"Free form literal; if unknown| leave blank"|i|DecedentFather|"name.given | name.use = official"|string|-
 Mortality|169|1958|50|Mother's First Name|DMOMF|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.given | name.use = official"|string|-
 Mortality|170|2008|50|Mother's Middle Name|DMOMMID|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.given | name.use = official"|string|-
-Mortality|171|2058|50|Mother's Maiden Surname|DMOMMDN|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.family | name.type=maiden"|string |-
+Mortality|171|2058|50|Mother's Maiden Surname|DMOMMDN|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.family | name.type=maiden"|"string "|-
 Mortality|172|2108|1|Was case Referred to Medical Examiner/Coroner?|REFERRED|Y=Yes; N=No; U=Unknown|i|ExaminerContacted|value|codeable|[YesNoUnknownVS]
 Mortality|173|2109|50|Place of Injury- literal|POILITRL|Literal description; Blank for natural death||InjuryIncident|component[ placeOfInjury ].value.text|string|-
 Mortality|174|2159|250|Describe How Injury Occurred|HOWINJ|Literal description; Blank for natural death||InjuryIncident|value.text|string|-
@@ -355,7 +354,7 @@ For Canadian Provinces:
 Mortality|181|2505|17|Place of injury. Longitude|LONG_I|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes| a decimal divider| and 6 decimal places (blank if natural death)."|i|InjuryLocation|position.longitude|float|-
 Mortality|182|2522|17|Place of injury. Latitude|LAT_I|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes| a decimal divider| and 6 decimal places (blank if natural death)."|i|InjuryLocation|position.latitude|float|-
 Mortality|183|2539|2|Old NCHS education code if collected - receiving state will recode as they prefer|OLDEDUC|||<not implemented>|||-
-Mortality|184|2541|1|Replacement Record |REPLACE|"0=original record; 1=updated record; 2=updated| do not send to NCHS"||DeathCertificate|extension[replaceStatus].value|codeable|[ReplaceStatusVS]
+Mortality|184|2541|1|"Replacement Record "|REPLACE|"0=original record; 1=updated record; 2=updated| do not send to NCHS"||DeathCertificate|extension[replaceStatus].value|codeable|[ReplaceStatusVS]
 Mortality|185|2542|120|Cause of Death Part I Line a|COD1A|Literal information reported on Line a||CauseOfDeathPart1|"value.text|   component[lineNumber] = 1"|string(120)|-
 Mortality|186|2662|20|"Cause of Death Part I Interval| Line a"|INTERVAL1A|Duration reported on Line a||CauseOfDeathPart1|"component[interval].value| component[lineNumber] = 1"|string(20)|-
 Mortality|187|2682|120|Cause of Death Part I Line b|COD1B|Literal information reported on Line b||CauseOfDeathPart1|"value.text|   component[lineNumber] = 2"|string(120)|-
@@ -372,7 +371,7 @@ Mortality|197|3425|50|Spouse's Middle Name|SPOUSEMIDNAME||i|DecedentSpouse|"name
 Mortality|198|3475|10|Spouse's Suffix|SPOUSESUFFIX||i|DecedentSpouse|"name.suffix | name.use = official"|string|-
 Mortality|199|3485|10|Father's Suffix|FATHERSUFFIX||i|DecedentFather|"name.suffix | name.use = official"|string|-
 Mortality|200|3495|10|Mother's Suffix|MOTHERSSUFFIX||i|DecedentMother|"name.suffix | name.use = official"|string|-
-Mortality|201|3505|30|Informant's Relationship|INFORMRELATE||i|Decedent|contact.type.text |string (30 characters)|-
+Mortality|201|3505|30|Informant's Relationship|INFORMRELATE||i|Decedent|"contact.type.text "|string (30 characters)|-
 Mortality|202|3535|2|"State| U.S. Territory or Canadian Province of Disposition - code"|DISPSTATECD|"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
    XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN| BUT NOT U.S. OR CANADA                                                                                  For U.S. Territories:
@@ -431,20 +430,20 @@ For Canadian Provinces:
    YT  YUKON"|i|FuneralHome|address.state|string|[StatesTerritoriesProvincesVS]
 Mortality|216|3853|28|"State| U.S. Territory or Canadian Province of Funeral Facility - literal"|FUNSTATE|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|i|FuneralHome|address.state (expanded from 2 letter code)|string|See [StateLiterals]
 Mortality|217|3881|9|Funeral Facility - ZIP|FUNZIP|"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""|i|FuneralHome|address.postalCode|string|-
-Mortality|218|3890|8|Person Pronouncing Date Signed|PPDATESIGNED|mmddyyyy format|i|DeathDate|"component[datetimePronouncedDead	].value"|dateTime|-
+Mortality|218|3890|8|Person Pronouncing Date Signed|PPDATESIGNED|mmddyyyy format|i|DeathDate|component[datetimePronouncedDead	].value|dateTime|-
 Mortality|219|3898|4|Person Pronouncing Time Pronounced|PPTIME|Military time|i|DeathDate|component[datetimePronouncedDead].value|dateTime|-
-Mortality|220|3902|50|Certifier's First Name|CERTFIRST| |i|Certifier|"name.given | name.use = official"|string|-
-Mortality|221|3952|50|Certifier's Middle Name|CERTMIDDLE| |i|Certifier|"name.given | name.use = official"|string|-
-Mortality|222|4002|50|Certifier's Last Name|CERTLAST| |i|Certifier|"name.family | name.use = official"|string|-
-Mortality|223|4052|10|Certifier's Suffix Name|CERTSUFFIX| |i|Certifier|"name.suffix | name.use = official"|string|-
+Mortality|220|3902|50|Certifier's First Name|CERTFIRST|" "|i|Certifier|"name.given | name.use = official"|string|-
+Mortality|221|3952|50|Certifier's Middle Name|CERTMIDDLE|" "|i|Certifier|"name.given | name.use = official"|string|-
+Mortality|222|4002|50|Certifier's Last Name|CERTLAST|" "|i|Certifier|"name.family | name.use = official"|string|-
+Mortality|223|4052|10|Certifier's Suffix Name|CERTSUFFIX|" "|i|Certifier|"name.suffix | name.use = official"|string|-
 Mortality|224|4062|10|Certifier - Street number|CERTSTNUM||i|Certifier|address.extension[stnum]|string|-
 Mortality|225|4072|10|Certifier - Pre Directional|CERTPREDIR||i|Certifier|address.extension[predir]|string|-
 Mortality|226|4082|28|Certifier - Street name|CERTSTRNAME||i|Certifier|address.extension[stname]|string|-
 Mortality|227|4110|10|Certifier - Street designator|CERTSTRDESIG||i|Certifier|address.extension[stdesig]|string|-
 Mortality|228|4120|10|Certifier - Post Directional|CERTPOSTDIR||i|Certifier|address.extension[postdir]|string|-
 Mortality|229|4130|7|Certifier - Unit or apt number|CERTUNITNUM||i|Certifier|address.extension[unitnum]|string|-
-Mortality|230|4137|50|Long string address for Certifier same as above but allows states to choose the way they capture information.|CERTADDRESS|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| and Post Directional. Jurisdiction should use version of Certifier address that's used in their system versus reprogramming."|i|Certifier|address.line |string|-
-Mortality|231|4187|28|Certifier - City or Town name|CERTCITYTEXT|Valid city/town/location literal|i|Certifier|address.city |string|-
+Mortality|230|4137|50|Long string address for Certifier same as above but allows states to choose the way they capture information.|CERTADDRESS|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| and Post Directional. Jurisdiction should use version of Certifier address that's used in their system versus reprogramming."|i|Certifier|"address.line "|string|-
+Mortality|231|4187|28|Certifier - City or Town name|CERTCITYTEXT|Valid city/town/location literal|i|Certifier|"address.city "|string|-
 Mortality|232|4215|2|"State| U.S. Territory or Canadian Province of Certifier - code"|CERTSTATECD|"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
    XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN| BUT NOT U.S. OR CANADA                                                                                   For U.S. Territories:
@@ -473,15 +472,15 @@ Mortality|235|4254|8|Certifier Date Signed|CERTDATE|Date signed by Certifier in 
 Mortality|236|4262|8|Date Filed|FILEDATE|Date Filed by Registrar in mmddyyyy format||<not implemented>|||-
 Mortality|237|4270|28|"State| U.S. Territory or Canadian Province of Injury - literal"|STINJURY|"Valid state| U.S. territory or Canadian province literal| otherwise blank (blank if natural death)"|i|InjuryLocation|address.state (expanded from 2 letter code)|string|See [StateLiterals]
 Mortality|238|4298|28|"State| U.S. Territory or Canadian Province of Birth - literal"|STATEBTH|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|i|Decedent|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code)|string|See [StateLiterals]
-Mortality|239|4326|2|Country of Death - Code|DTHCOUNTRYCD|NCHS Instruction Manual: Part 8|i|DeathLocation|address.country |string |[ResidenceCountryVS].  Note: For US Death certificates should be US
-Mortality|240|4328|28|Country of Death - Literal|DTHCOUNTRY|Valid text for country of death|i|DeathLocation|address.country  (expanded from 2 letter code)|string |See [CountryLIterals].   Not used. For US Death certificates should be 'United States'.
+Mortality|239|4326|2|Country of Death - Code|DTHCOUNTRYCD|NCHS Instruction Manual: Part 8|i|DeathLocation|"address.country "|"string "|[ResidenceCountryVS].  Note: For US Death certificates should be US
+Mortality|240|4328|28|Country of Death - Literal|DTHCOUNTRY|Valid text for country of death|i|DeathLocation|address.country  (expanded from 2 letter code)|"string "|See [CountryLIterals].   Not used. For US Death certificates should be 'United States'.
 Mortality|241|4356|3|SSA State Source of Death|SSADTHCODE|SSA Specific State Codes (see SSA contract)||<not implemented>|||-
 Mortality|242|4359|1|SSA Foreign Country Indicator|SSAFOREIGN|"SSA indicator| 1 if foreign"||<not implemented>|||-
-Mortality|243|4360|1|SSA EDR Verify Code|SSAVERIFY|Y=Yes; N=No ||<not implemented>|||-
+Mortality|243|4360|1|SSA EDR Verify Code|SSAVERIFY|"Y=Yes; N=No "||<not implemented>|||-
 Mortality|244|4361|8|SSA Date of SSN Verification|SSADATEVER|SSA Date of Verification||<not implemented>|||-
 Mortality|245|4369|8|SSA Date of State Transmission|SSADATETRANS|SSA Date of State Transmission||<not implemented>|||-
 Mortality|246|4377|50|Marital Descriptor|MARITAL_DESCRIP|"Free text for use of jurisdictions with domestic partnerships| other
-types of relationships."|i|Decedent|maritalStatus.text |string|-
+types of relationships."|i|Decedent|"maritalStatus.text "|string|-
 Mortality|247|4427|3|Hispanic Code for Literal|DETHNIC5C|||CodedRaceAndEthnicity|component[HispanicCodeForLiteral].value|codeable|[HispanicOriginVS]
 Mortality|248|4430|1|Blank for One-Byte Field 1|PLACE1_1|alphanumeric||EmergingIssues|component[EmergingIssue1_1].value|string(1)|-
 Mortality|249|4431|1|Blank for One-Byte Field 2|PLACE1_2|alphanumeric||EmergingIssues|component[EmergingIssue1_2].value|string(1)|-
@@ -494,7 +493,7 @@ Mortality|255|4444|8|Blank for Eight-Byte Field 2|PLACE8_2|alphanumeric||Emergin
 Mortality|256|4452|8|Blank for Eight-Byte Field 3|PLACE8_3|alphanumeric||EmergingIssues|component[EmergingIssue8_3].value|string(8)|-
 Mortality|257|4460|20|Blank for Twenty-Byte Field|PLACE20|alphanumeric||EmergingIssues|component[EmergingIssue20].value|string(20)|-
 Mortality|258|4480|250|Blank for future expansion|BLANK2|For future expansion or to account for problems missed||<not implemented>|||-
-Mortality|259|4730|271|Blank for Jurisdictional Use Only|BLANK3|For Jurisdictions to share additional internal data with their data partners ||<not implemented>|||-
+Mortality|259|4730|271|Blank for Jurisdictional Use Only|BLANK3|"For Jurisdictions to share additional internal data with their data partners "||<not implemented>|||-
 Surveillance|1|1|4|Date of Death--Year|DOD_YR|4 digit year||DeathDate|value|dateTime|Required for processing
 Surveillance|2|5|2|"State| U.S. Territory or Canadian Province of Death - code"|DSTATE|"NCHS Instruction Manual: Part 8
 For U.S. Territories:
@@ -520,14 +519,14 @@ For Canadian Provinces:
 Surveillance|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|"YYYYJJNNNNNN|  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"||SurveillanceBundle|identifier.value|string(12)|"YYYYJJNNNNNN|  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"
 Surveillance|3|7|6|Certificate Number|FILENO|Left 0 filled; 000001-999999||SurveillanceBundle|identifier.extension[ certificateNumber].value|string(6)|-
 Surveillance|4|13|12|Auxiliary State file number|AUXNO|000000000001-999999999999; Blank||SurveillanceBundle|identifier.extension[auxiliaryStateIdentifier1].value|string(12)|-
-Surveillance|5|25|50|Decedent's Legal Name--Given |GNAME|||Decedent|"name.given | name.use = official"|string|-
+Surveillance|5|25|50|"Decedent's Legal Name--Given "|GNAME|||Decedent|"name.given | name.use = official"|string|-
 Surveillance|6|75|1|Decedent's Legal Name--Middle|MNAME|||Decedent|"name.given | name.use = official (first letter)"|string|-
 Surveillance|7|76|50|Decedent's Legal Name--Last|LNAME|Last name is required||Decedent|"name.family | name.use = official"|string|-
 Surveillance|8|126|10|Decedent's Legal Name--Suffix|SUFF|||Decedent|"name.suffix | name.use = official"|string|-
 Surveillance|9|136|50|Father's Surname|FLNAME|||DecedentFather|name.family|string|-
 Surveillance|10|186|1|Sex|SEX|"M = Male
 F = Female
-U = Unknown"||Decedent|extension[NVSS-SexAtDeath] |codeable|[AdministrativeGenderVS]
+U = Unknown"||Decedent|"extension[NVSS-SexAtDeath] "|codeable|[AdministrativeGenderVS]
 Surveillance|11|187|9|Social Security Number|SSN|9 digit SSN; blank if unknown or not sharable||Decedent|"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB"""|string|-
 Surveillance|12|196|1|Decedent's Age--Type|AGETYPE|"1 = Years
 2 = Months
@@ -535,7 +534,7 @@ Surveillance|12|196|1|Decedent's Age--Type|AGETYPE|"1 = Years
 5 = Hours
 6 = Minutes
 9 = Unknown (not classifiable)"||DecedentAge|valueQuantity.code|codeable|[UnitsOfAgeVS]
-Surveillance|13|197|3|Decedent's Age--Units|AGE |"001 - 135| 999
+Surveillance|13|197|3|Decedent's Age--Units|"AGE "|"001 - 135| 999
 Codes: If AGETYPE = 1 then 001-135| 999
                                         2 then 001-011| 999
                                         4 then 001-027| 999
@@ -547,7 +546,7 @@ Surveillance|14|200|1|Decedent's Age--Edit Flag|AGE_BYPASS|"0 = Edit Passed
 Surveillance|15|201|4|Date of Birth--Year|DOB_YR|"4 digit year; <=year of death| 9999"||Decedent|birthDate|dateTime|See [PartialDatesAndTimes]
 Surveillance|16|205|2|Date of Birth--Month|DOB_MO|"01-12| 99"||Decedent|birthDate|dateTime|See [PartialDatesAndTimes]
 Surveillance|17|207|2|Date of Birth--Day|DOB_DY|"01-31 (based on month)| 99"||Decedent|birthDate|dateTime|See [PartialDatesAndTimes]
-Surveillance|18|209|2|Birthplace--Country|BPLACE_CNT|NCHS Instruction Manual: Part 8||Decedent|extension[patient-birthPlace].value[x].country |string|[BirthplaceCountryVS]
+Surveillance|18|209|2|Birthplace--Country|BPLACE_CNT|NCHS Instruction Manual: Part 8||Decedent|"extension[patient-birthPlace].value[x].country "|string|[BirthplaceCountryVS]
 Surveillance|19|211|2|"State| U.S. Territory or Canadian Province of Birth - code"|BPLACE_ST|"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
    XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN| BUT NOT U.S. OR CANADA
@@ -597,13 +596,13 @@ For Canadian Provinces:
    SK  SASKATCHEWAN
    YT  YUKON"||Decedent|address.state|string|[StatesTerritoriesProvincesVS]
 Surveillance|23|223|2|Decedent's Residence--Country|COUNTRYC|NCHS Instruction Manual: Part 8||Decedent|address.country|string|[ResidenceCountryVS]
-Surveillance|24|225|1|Decedent's Residence--Inside City Limits|LIMITS|Y = Yes N = No.  U = Unknown ||Decedent|address.city.extension[ withinCityLimits] |codeable|[YesNoUnknownVS]
+Surveillance|24|225|1|Decedent's Residence--Inside City Limits|LIMITS|"Y = Yes N = No.  U = Unknown "||Decedent|"address.city.extension[ withinCityLimits] "|codeable|[YesNoUnknownVS]
 Surveillance|25|226|1|Marital Status|MARITAL|"M = Married
 A = Married but Separated
 W = Widowed
 D = Divorced
 S = Never Married
-U = Not Classifiable"||Decedent|maritalStatus|codeable| [MaritalStatusVS]
+U = Not Classifiable"||Decedent|maritalStatus|codeable|" [MaritalStatusVS]"
 Surveillance|26|227|1|Place of Death|DPLACE|"1 = Inpatient
 2 = Emergency Room/Outpatient
 3 = Dead on Arrival
@@ -629,7 +628,7 @@ U = Unknown"||InputRaceAndEthnicity|component[ HispanicCuban ].valueCoding|codea
 Surveillance|34|242|1|Decedent of Hispanic Origin?--Other|DETHNIC4|"N = No| Not other Hispanic
 H = Yes| other Hispanic
 U = Unknown"||InputRaceAndEthnicity|component[ HispanicOther ].valueCoding|codeable|[HispanicNoUnknownVS]
-Surveillance|35|243|20|"Decedent of Hispanic Origin?--Other| Literal"|DETHNIC5|Literal; Blank ||InputRaceAndEthnicity|component[ HispanicLiteral ].valueString|string|-
+Surveillance|35|243|20|"Decedent of Hispanic Origin?--Other| Literal"|DETHNIC5|"Literal; Blank "||InputRaceAndEthnicity|component[ HispanicLiteral ].valueString|string|-
 Surveillance|36|263|1|Decedent's Race--White|RACE1|"Y = Yes| box for race checked
 N = No| box for race not checked"||InputRaceAndEthnicity|component[ White].valueBoolean|boolean|-
 Surveillance|37|264|1|Decedent's Race--Black or African American|RACE2|"Y| N"||InputRaceAndEthnicity|component[ BlackOrAfricanAmerican].valueBoolean|boolean|-
@@ -646,13 +645,13 @@ Surveillance|47|274|1|Decedent's Race--Guamanian or Chamorro|RACE12|"Y| N"||Inpu
 Surveillance|48|275|1|Decedent's Race--Samoan|RACE13|"Y| N"||InputRaceAndEthnicity|component[ Samoan].valueBoolean|boolean|-
 Surveillance|49|276|1|Decedent's Race--Other Pacific Islander|RACE14|"Y| N"||InputRaceAndEthnicity|component[ OtherPacificIslander].valueBoolean|boolean|-
 Surveillance|50|277|1|Decedent's Race--Other|RACE15|"Y| N"||InputRaceAndEthnicity|component[ OtherRace].valueBoolean|boolean|-
-Surveillance|51|278|30|Decedent's Race--First American Indian or Alaska Native Literal|RACE16|Literal; Blank ||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral1].valueString|string|-
-Surveillance|52|308|30|Decedent's Race--Second American Indian or Alaska Native Literal|RACE17|Literal; Blank ||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral2].valueString|string|-
-Surveillance|53|338|30|Decedent's Race--First Other Asian Literal|RACE18|Literal; Blank ||InputRaceAndEthnicity|component[ OtherAsianLiteral1].valueString|string|-
-Surveillance|54|368|30|Decedent's Race--Second Other Asian Literal|RACE19|Literal; Blank ||InputRaceAndEthnicity|component[ OtherAsianLiteral2].valueString|string|-
+Surveillance|51|278|30|Decedent's Race--First American Indian or Alaska Native Literal|RACE16|"Literal; Blank "||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral1].valueString|string|-
+Surveillance|52|308|30|Decedent's Race--Second American Indian or Alaska Native Literal|RACE17|"Literal; Blank "||InputRaceAndEthnicity|component[ AmericanIndianorAlaskanNativeLiteral2].valueString|string|-
+Surveillance|53|338|30|Decedent's Race--First Other Asian Literal|RACE18|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherAsianLiteral1].valueString|string|-
+Surveillance|54|368|30|Decedent's Race--Second Other Asian Literal|RACE19|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherAsianLiteral2].valueString|string|-
 Surveillance|55|398|30|Decedent's Race--First Other Pacific Islander Literal|RACE20|Literal; Blank||InputRaceAndEthnicity|component[ OtherPacificIslandLiteral1].valueString|string|-
-Surveillance|56|428|30|Decedent's Race--Second Other Pacific Islander Literal|RACE21|Literal; Blank ||InputRaceAndEthnicity|component[ OtherPacificIslandLiteral2].valueString|string|-
-Surveillance|57|458|30|Decedent's Race--First Other Literal|RACE22|Literal; Blank ||InputRaceAndEthnicity|component[ OtherRaceLiteral1].valueString|string|-
+Surveillance|56|428|30|Decedent's Race--Second Other Pacific Islander Literal|RACE21|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherPacificIslandLiteral2].valueString|string|-
+Surveillance|57|458|30|Decedent's Race--First Other Literal|RACE22|"Literal; Blank "||InputRaceAndEthnicity|component[ OtherRaceLiteral1].valueString|string|-
 Surveillance|58|488|30|Decedent's Race--Second Other Literal|RACE23|Literal; Blank||InputRaceAndEthnicity|component[ OtherRaceLiteral2].valueString|string|-
 Surveillance|59|518|1|Decedent's Race--Missing|RACE_MVR|"R = Refused
 S = Sought| but Unknown
@@ -674,13 +673,13 @@ Surveillance|73|719|1|Injury at work|WORKINJ|Y = Yes N = No.  U = Unknown X = No
 Surveillance|74|720|30|Title of Certifier|CERTL|||DeathCertification|"performer.function (note that if value is ""OTH"" then performed.function.text should contain 'Full Text for Other Individual Legally Allowed to Certify')"|codeable|[CertifierTypesVS]
 Surveillance|75|750|12|Auxiliary State file number|AUXNO2|||DeathCertificateDocument|identifier.extension[auxiliaryStateIdentifier2].value|string(12)|-
 Surveillance|76|762|||||||||
-Surveillance|77|762|30|State Specific Data |STATESP|Possible use for future filler unless two neighboring states wish to use for some specific information that they both collect. This would be a non-standard field||SurveillanceBundle|extension[ stateSpecificField]|string(30)|-
+Surveillance|77|762|30|"State Specific Data "|STATESP|Possible use for future filler unless two neighboring states wish to use for some specific information that they both collect. This would be a non-standard field||SurveillanceBundle|extension[ stateSpecificField]|string(30)|-
 Surveillance|78|792|2|Surgery Date--month|SUR_MO|"01-12| 99 or Blank"||SurgeryDate|value|dateTime|See [PartialDatesAndTimes]
 Surveillance|79|794|2|Surgery Date--day|SUR_DY|"01-31 (based on month)| 99 or Blank"||SurgeryDate|value|dateTime|See [PartialDatesAndTimes]
 Surveillance|80|796|4|Surgery Date--year|SUR_YR|"4 digit year; <=year of death| 9999 or Blank"||SurgeryDate|value|dateTime|See [PartialDatesAndTimes]
 Surveillance|81|1075|1|Time of Injury Unit|TOI_UNIT|"A| P| M or Blank (AM| PM or Military)"||InjuryIncident|effective|implicit|
-Surveillance|82|1076|30|Death Institution name|DINSTI|"Facility name literal; if Place of Death (DPLACE)=4 (decedent's home)| enter ""Home"""|I|DeathLocation|name|string |-
-Surveillance|83|1106|50|Long String address for place of death|ADDRESS_D|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Place of Death address that's used in their system versus reprogramming."|I|DeathLocation|address.line|string |-
+Surveillance|82|1076|30|Death Institution name|DINSTI|"Facility name literal; if Place of Death (DPLACE)=4 (decedent's home)| enter ""Home"""|I|DeathLocation|name|"string "|-
+Surveillance|83|1106|50|Long String address for place of death|ADDRESS_D|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Place of Death address that's used in their system versus reprogramming."|I|DeathLocation|address.line|"string "|-
 Surveillance|84|1156|10|Place of death. Street number|STNUM_D||I|DeathLocation|address.extension[stnum]|string|-
 Surveillance|85|1166|10|Place of death. Pre Directional|PREDIR_D||I|DeathLocation|address.extension[predir]|string|-
 Surveillance|86|1176|50|Place of death. Street name|STNAME_D||I|DeathLocation|address.extension[stname]|string|-
@@ -694,9 +693,9 @@ Surveillance|93|1339|5|Place of death. City FIPS code|CITYCODE_D|NCHS Instructio
 Surveillance|94|1344|17|Place of death. Longitude|LONG_D|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes| a decimal divider| and 6 decimal places."|I|DeathLocation|position.longitude|float|-
 Surveillance|95|1361|17|Place of Death. Latitude|LAT_D|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes| a decimal divider| and 6 decimal places."|I|DeathLocation|position.latitude|float|-
 Surveillance|96|1378|1|Decedent's spouse living at decedent's DOD?|SPOUSELV|"1=yes; 2=no; 8=unmarried; 9=unknown;
-blank if not reported"|I|Decedent|extension[SpouseAlive] |codeable| [SpouseAliveVS]
+blank if not reported"|I|Decedent|"extension[SpouseAlive] "|codeable|" [SpouseAliveVS]"
 Surveillance|97|1379|50|Spouse's First Name|SPOUSEF|"Free form literal; if unknown| leave blank"|I|DecedentSpouse|name.given|string|-
-Surveillance|98|1429|50|Husband's Surname/Wife's Maiden Last Name|SPOUSEL |"Free form literal; if unknown| leave blank"|I|DecedentSpouse|"name.family| name.use = 'maiden"|string|-
+Surveillance|98|1429|50|Husband's Surname/Wife's Maiden Last Name|"SPOUSEL "|"Free form literal; if unknown| leave blank"|I|DecedentSpouse|"name.family| name.use = 'maiden"|string|-
 Surveillance|99|1479|10|Decedent's Residence - Street number|STNUM_R|||Decedent|address.extension[stnum]|string|-
 Surveillance|100|1489|10|Decedent's Residence - Pre Directional|PREDIR_R|||Decedent|address.extension[predir]|string|-
 Surveillance|101|1499|28|Decedent's Residence - Street name|STNAME_R|||Decedent|address.extension[stname]|string|-
@@ -706,15 +705,15 @@ Surveillance|104|1547|7|Decedent's Residence - Unit or apt number|UNITNUM_R|||De
 Surveillance|105|1554|28|Decedent's Residence - City or Town name|CITYTEXT_R|Valid city/town/location literal||Decedent|address.city|string|-
 Surveillance|106|1582|9|Decedent's Residence - ZIP code|ZIP9_R|"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""||Decedent|address.postalCode|string|-
 Surveillance|107|1591|28|Decedent's Residence - County|COUNTYTEXT_R|Valid county literal||Decedent|address.district|string|-
-Surveillance|108|1619|28|Decedent's Residence - State name|STATETEXT_R |Valid text for U.S. State or Territory or Canadian Province||Decedent|address.state (expanded from 2 letter code)|string|See [StateLiterals]
+Surveillance|108|1619|28|Decedent's Residence - State name|"STATETEXT_R "|Valid text for U.S. State or Territory or Canadian Province||Decedent|address.state (expanded from 2 letter code)|string|See [StateLiterals]
 Surveillance|109|1647|28|Decedent's Residence - COUNTRY name|COUNTRYTEXT_R|Valid text for country of residence||Decedent|address.country (expanded from 2 letter code)|string|See [CountryLiterals]
 Surveillance|110|1675|50|Long string address for decedent's place of residence same as above but allows states to choose the way they capture information.|ADDRESS_R|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Decedent's Residence address that's used in their system versus reprogramming."||Decedent|address.line[0]|string|-
-Surveillance|111|1725|50|Middle Name of Decedent |DMIDDLE|NCHS only asks for middle initial in start col 77. Free form alpha literal; left justified|i|Decedent|"name.given | name.use = official"|string|-
+Surveillance|111|1725|50|"Middle Name of Decedent "|DMIDDLE|NCHS only asks for middle initial in start col 77. Free form alpha literal; left justified|i|Decedent|"name.given | name.use = official"|string|-
 Surveillance|112|1775|50|Father's First Name|DDADF|"Free form literal; if unknown| leave blank"|i|DecedentFather|"name.given | name.use = official"|string|-
 Surveillance|113|1825|50|Father's Middle Name|DDADMID|"Free form literal; if unknown| leave blank"|i|DecedentFather|"name.given | name.use = official"|string|-
 Surveillance|114|1875|50|Mother's First Name|DMOMF|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.given | name.use = official"|string|-
 Surveillance|115|1925|50|Mother's Middle Name|DMOMMID|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.given | name.use = official"|string|-
-Surveillance|116|1975|50|Mother's Maiden Surname|DMOMMDN|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.family | name.type=maiden"|string |-
+Surveillance|116|1975|50|Mother's Maiden Surname|DMOMMDN|"Free form literal; if unknown| leave blank"|i|DecedentMother|"name.family | name.type=maiden"|"string "|-
 Surveillance|117|2025|50|Place of Injury- literal|POILITRL|Literal description; Blank for natural death||InjuryIncident|component[ placeOfInjury ].value.text|string|-
 Surveillance|118|2075|250|Describe How Injury Occurred|HOWINJ|Literal description; Blank for natural death||InjuryIncident|value.text|string|-
 Surveillance|119|2325|30|"If Transportation Accident| Specify"|TRANSPRT|"DR=Driver/Operator
@@ -750,7 +749,7 @@ For Canadian Provinces:
    YT  YUKON"|i|InjuryLocation|address.state|string|[StatesTerritoriesProvincesVS]
 Surveillance|125|2421|17|Place of injury. Longitude|LONG_I|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes| a decimal divider| and 6 decimal places (blank if natural death)."|i|InjuryLocation|position.longitude|float|-
 Surveillance|126|2438|17|Place of injury. Latitude|LAT_I|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes| a decimal divider| and 6 decimal places (blank if natural death)."|i|InjuryLocation|position.latitude|float|-
-Surveillance|127|2455|1|Replacement Record |REPLACE|"0=original record; 1=updated record; 2=updated| do not send to NCHS"||SurveillanceBundle|extension[replaceStatus].value|codeable|[ReplaceStatusVS]
+Surveillance|127|2455|1|"Replacement Record "|REPLACE|"0=original record; 1=updated record; 2=updated| do not send to NCHS"||SurveillanceBundle|extension[replaceStatus].value|codeable|[ReplaceStatusVS]
 Surveillance|128|2456|120|Cause of Death Part I Line a (literal)|COD1A|Literal information reported on Line a||CauseOfDeathPart1|"value.text|   component[lineNumber] = 1"|string(120)|-
 Surveillance|129|||Cause of Death Part I Line a (coded)|*NO IJE MAPPING*|Coded Cause(s) of Death Associated with Text on  Line 1b||CauseOfDeathPart1|"value.coding|   component[lineNumber] = 1"|codeable|[ICD10CausesOfDeathVS]
 Surveillance|130|2576|20|"Cause of Death Part I Interval| Line a"|INTERVAL1A - optional|Duration reported on Line a||CauseOfDeathPart1|"component[interval].value| component[lineNumber] = 1"|string(20)|-
@@ -772,16 +771,16 @@ Surveillance|145|3425|50|Spouse's Middle Name|SPOUSEMIDNAME||i|DecedentSpouse|"n
 Surveillance|146|3475|10|Spouse's Suffix|SPOUSESUFFIX||i|DecedentSpouse|"name.suffix | name.use = official"|string|-
 Surveillance|147|3485|10|Father's Suffix|FATHERSUFFIX||i|DecedentFather|"name.suffix | name.use = official"|string|-
 Surveillance|148|3495|10|Mother's Suffix|MOTHERSSUFFIX||i|DecedentMother|"name.suffix | name.use = official"|string|-
-Surveillance|149|3505|30|Informant's Relationship|INFORMRELATE||i|Decedent|contact.type.text |string (30 characters)|-
-Surveillance|150|3890|8|Person Pronouncing Date Signed|PPDATESIGNED|mmddyyyy format|i|DeathDate|"component[datetimePronouncedDead	].value"|dateTime|-
+Surveillance|149|3505|30|Informant's Relationship|INFORMRELATE||i|Decedent|"contact.type.text "|string (30 characters)|-
+Surveillance|150|3890|8|Person Pronouncing Date Signed|PPDATESIGNED|mmddyyyy format|i|DeathDate|component[datetimePronouncedDead	].value|dateTime|-
 Surveillance|151|3898|4|Person Pronouncing Time Pronounced|PPTIME|Military time|i|DeathDate|component[datetimePronouncedDead].value|dateTime|-
 Surveillance|152|4254|8|Certifier Date Signed|CERTDATE|Date signed by Certifier in mmddyyyy format|i|DeathCertification|performed|dateTime|-
 Surveillance|153|4270|28|"State| U.S. Territory or Canadian Province of Injury - literal"|STINJURY|"Valid state| U.S. territory or Canadian province literal| otherwise blank (blank if natural death)"|i|InjuryLocation|address.state (expanded from 2 letter code)|string|See [StateLiterals]
 Surveillance|154|4298|28|"State| U.S. Territory or Canadian Province of Birth - literal"|STATEBTH|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|i|Decedent|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code)|string|See [StateLiterals]
-Surveillance|155|4326|2|Country of Death - Code|DTHCOUNTRYCD|NCHS Instruction Manual: Part 8|i|DeathLocation|address.country |string |[ResidenceCountryVS].  Note: For US Death certificates should be US
-Surveillance|156|4328|28|Country of Death - Literal|DTHCOUNTRY|Valid text for country of death|i|DeathLocation|address.country  (expanded from 2 letter code)|string |See [CountryLIterals].   Not used. For US Death certificates should be 'United States'.
+Surveillance|155|4326|2|Country of Death - Code|DTHCOUNTRYCD|NCHS Instruction Manual: Part 8|i|DeathLocation|"address.country "|"string "|[ResidenceCountryVS].  Note: For US Death certificates should be US
+Surveillance|156|4328|28|Country of Death - Literal|DTHCOUNTRY|Valid text for country of death|i|DeathLocation|address.country  (expanded from 2 letter code)|"string "|See [CountryLIterals].   Not used. For US Death certificates should be 'United States'.
 Surveillance|157|4377|50|Marital Descriptor|MARITAL_DESCRIP|"Free text for use of jurisdictions with domestic partnerships| other
-types of relationships."|i|Decedent|maritalStatus.text |string|-
+types of relationships."|i|Decedent|"maritalStatus.text "|string|-
 Birth Infant Death|NA|NA|NA|Death Record Identifier|*NO IJE MAPPING*|"YYYYJJNNNNNN|  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"|MortalityRosterBundle|identifier.value|string(12)|"YYYYJJNNNNNN|  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number"|
 Birth Infant Death|1|1|20|"State| U.S. Territory or Canadian Province of Birth - literal"|STATEBTH|"Valid state| U.S. territory or Canadian province literal"|Decedent|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code)|string|See [StateLiterals]|
 Birth Infant Death|2|21|2|"State| U.S. Territory or Canadian Province of Birth - code"|BPLACE_ST|"NCHS Instruction Manual: Part 8
@@ -805,8 +804,8 @@ For Canadian Provinces:
    PE  PRINCE EDWARD ISLAND
    QC  QUEBEC
    SK  SASKATCHEWAN
-   YT  YUKON"|Decedent|extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present |string|[JurisdictionsProvincesVS]|
-Birth Infant Death|3|23|50|Decedent's Legal Name--Given |GNAME|Free form alpha literal; left justified|Decedent|"name.given | name.use = official"|string|-|
+   YT  YUKON"|Decedent|"extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present "|string|[JurisdictionsProvincesVS]|
+Birth Infant Death|3|23|50|"Decedent's Legal Name--Given "|GNAME|Free form alpha literal; left justified|Decedent|"name.given | name.use = official"|string|-|
 Birth Infant Death|4|73|50|Decedent's Legal Name--Middle|MIDNAME|Free form alpha literal; left justified|Decedent|"name.given | name.use = official (first letter)"|string|-|
 Birth Infant Death|5|123|50|Decedent's Legal Name--Last|LNAME|Free form alpha literal; left justified|Decedent|"name.family | name.use = official"|string|-|
 Birth Infant Death|6|173|20|"State| U.S. Territory or Canadian Province of Death - literal"|STATETEXT_D|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|DeathLocation|address.state (expanded from 2 letter code)|string|-|
@@ -837,20 +836,20 @@ Birth Infant Death|10|199|4|Date of Death--Year|DOD_YR|"4 digit year; <=current 
 Birth Infant Death|11|203|2|Date of Birth--Month|DOB_MO|"01-12| 99"|Decedent|birthDate|dateTime|See [PartialDatesAndTimes]|
 Birth Infant Death|12|205|2|Date of Birth--Day|DOB_DY|"01-31 (based on month)| 99"|Decedent|birthDate|dateTime|See [PartialDatesAndTimes]|
 Birth Infant Death|13|207|4|Date of Birth--Year|DOB_YR|"4 digit year; <=year of death| 9999"|Decedent|birthDate|dateTime|See [PartialDatesAndTimes]|
-Birth Infant Death|14|211|1|Sex|SEX|M=male; F=female; U=unknown|Decedent|extension[NVSS-SexAtDeath] |codeable|[AdministrativeGenderVS]|
+Birth Infant Death|14|211|1|Sex|SEX|M=male; F=female; U=unknown|Decedent|"extension[NVSS-SexAtDeath] "|codeable|[AdministrativeGenderVS]|
 Birth Infant Death|15|212|6|State File Number|FILENO|Left 0 filled; 000001-999999|MortalityRosterBundle|identifier.extension[ certificateNumber].value|string(6)|-|
 Birth Infant Death|16|218|50|Father's First Name|DADFNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentFather|"name.given | name.use = official"|string|-|
 Birth Infant Death|17|268|50|Father's Middle Name|DADMIDNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentFather|"name.given | name.use = official"|string|-|
 Birth Infant Death|18|318|50|Father's Surname|DADLNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentFather|name.family|string|-|
 Birth Infant Death|19|368|50|Mother's Given Name|MOMGNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentMother|"name.given | name.use = official"|string|-|
 Birth Infant Death|20|418|50|Mother's Middle Name|MOMMIDNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentMother|"name.given | name.use = official"|string|-|
-Birth Infant Death|21|468|50|Mother's Maiden Surname|MOMMAIDNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentMother|"name.family | name.type=maiden"|string |-|
+Birth Infant Death|21|468|50|Mother's Maiden Surname|MOMMAIDNAME|"Free form literal| left justified; if unknown| leave blank"|DecedentMother|"name.family | name.type=maiden"|"string "|-|
 Birth Infant Death|22|518|10|Decedent's Suffix|SUFF||Decedent|"name.suffix | name.use = official"|string|-|
 Birth Infant Death|23|528|10|Father's Suffix|DADSUFF||DecedentFather|"name.suffix | name.use = official"|string|-|
 Birth Infant Death|24|538|10|Mother's Suffix|MOMSUFF||DecedentMother|"name.suffix | name.use = official"|string|-|
 Birth Infant Death|25|548|2|Filler|BLANK1|BLANK|||||
 Birth Infant Death|26|550|50|Decedent's Maiden Name|DMAIDEN|"Free form literal| left justified; if unknown| leave blank"|Decedent|"name.text | name.use=maiden"|string||
-Birth Infant Death|27|600|28|"State| U.S. Territory or Canadian Province of Decedent's Residence - literal"|STATETEXT_R |"valid state| U.S. territory or Canadian province literal| otherwise blank"|Decedent|address.state (expanded from 2 letter code)|string|See [StateLiterals]|
+Birth Infant Death|27|600|28|"State| U.S. Territory or Canadian Province of Decedent's Residence - literal"|"STATETEXT_R "|"valid state| U.S. territory or Canadian province literal| otherwise blank"|Decedent|address.state (expanded from 2 letter code)|string|See [StateLiterals]|
 Birth Infant Death|28|628|2|"State| U.S. Territory or Canadian Province of Decedent's Residence - code"|STATEC|"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
    XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN| BUT NOT U.S. OR CANADA
@@ -874,8 +873,8 @@ For Canadian Provinces:
    QC  QUEBEC
    SK  SASKATCHEWAN
    YT  YUKON"|Decedent|address.state|string|[StatesTerritoriesProvincesVS]|
-Birth Infant Death|29|630|2|Birthplace Country - Code|BPLACE_CT|NCHS Instruction Manual: Part 8|Decedent|extension[patient-birthPlace].value[x].country |string|[BirthplaceCountryVS].|
-Birth Infant Death|30|632|2|Death Country - Code|DCOUNTRYC|NCHS Instruction Manual: Part 8|DeathLocation|address.country |string |[ResidenceCountryVS].  Note: For US Death certificates should be US.   |
+Birth Infant Death|29|630|2|Birthplace Country - Code|BPLACE_CT|NCHS Instruction Manual: Part 8|Decedent|"extension[patient-birthPlace].value[x].country "|string|[BirthplaceCountryVS].|
+Birth Infant Death|30|632|2|Death Country - Code|DCOUNTRYC|NCHS Instruction Manual: Part 8|DeathLocation|"address.country "|"string "|"[ResidenceCountryVS].  Note: For US Death certificates should be US.   "|
 Birth Infant Death|31|634|2|Decedent's Residence Country - Code|COUNTRYC|NCHS Instruction Manual: Part 8|Decedent|address.country|string|[ResidenceCountryVS]|
 Birth Infant Death|32|636|9|"Decedent's SSN (may be used by some jurisdictions when allowed by law| to match with the SSN contained with the birth record)"|SSN|9 digit SSN; blank if unknown or not sharable|Decedent|"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB"""|string|-|
 Birth Infant Death|33|645|1|Alias Record Flag|ALIAS|"0 = Original Record
@@ -1291,7 +1290,7 @@ Fetal Death|230|3045|7|Place of Delivery Unit or Apartment Number|APTNUMB_D|||||
 Fetal Death|231|3052|50|Place of Delivery Street Address|ADDRESS_D|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Place of Delivery address that's used in their system versus reprogramming."|||||
 Fetal Death|232|3102|9|Place of Delivery Zip code and Zip+4|ZIPCODE_D|"Valid 5+4 digit zipcode; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""|||||
 Fetal Death|233|3111|28|Place of Delivery County (literal)|CNTY_D|Valid county literal or blank if unknown|||||
-Fetal Death|234|3139|28|Place of Delivery City/Town/Place (literal) |CITY_D|Valid city/town/place literal or blank if unknown|||||
+Fetal Death|234|3139|28|"Place of Delivery City/Town/Place (literal) "|CITY_D|Valid city/town/place literal or blank if unknown|||||
 Fetal Death|235|3167|28|"State| U.S. Territory or Canadian Province of Place of Delivery - literal"|STATE_D|"valid state| U.S. territory or Canadian province literal| otherwise blank"|||||
 Fetal Death|236|3195|28|Place of Delivery Country (literal)|COUNTRY_D|Valid country literal or blank if unknown|||||
 Fetal Death|237|3223|17|Place of Delivery Longitude|LONG_D|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes| a decimal divider| and 6 decimal places"|||||
@@ -1313,7 +1312,7 @@ Fetal Death|252|3667|7|Mother's Residence Unit or Apartment Number|APTNUMB||||||
 Fetal Death|253|3674|50|Mother's Residence Street Address|ADDRESS|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Mother's Residence address that's used in their system versus reprogramming."|||||
 Fetal Death|254|3724|9|Mother's Residence Zip code and Zip+4|ZIPCODE|"Valid 5+4 digit zipcode; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""|||||
 Fetal Death|255|3733|28|Mother's Residence County (literal)|COUNTYTXT|Valid county literal or blank if unknown|||||
-Fetal Death|256|3761|28|Mother's Residence City/Town/Place (literal) |CITYTXT|Valid city/town/place literal or blank if unknown|||||
+Fetal Death|256|3761|28|"Mother's Residence City/Town/Place (literal) "|CITYTXT|Valid city/town/place literal or blank if unknown|||||
 Fetal Death|257|3789|28|"State| U.S. Territory or Canadian Province of Residence (Mother) - literal"|STATETXT|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|||||
 Fetal Death|258|3817|28|Mother's Residence Country (literal)|CNTRYTXT|Valid country literal or blank if unknown|||||
 Fetal Death|259|3845|17|Mother's Residence Longitude|LONG|"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes| a decimal divider| and 6 decimal places"|||||
@@ -1478,7 +1477,7 @@ Fetal Death|341|4864|12|Attendant's NPI|ATTEND_NPI|National Provider Index (NPI)
 Fetal Death|342|4876|20|"Attendant (""Other"" specified text)"|ATTEND_OTH_TXT|"Alpha character string when ""Other"" text is specified"|||||
 Fetal Death|343|4896|50|Informant's First Name|INFORMFST||||||
 Fetal Death|344|4946|50|Informant's Middle Name|INFORMMID||||||
-Fetal Death|345|4996|50|Informant's Last Name|INFORMLST| |||||
+Fetal Death|345|4996|50|Informant's Last Name|INFORMLST|" "|||||
 Fetal Death|346|5046|1|Informant's Relationship to Fetus|INFORMRELATE|"1 = Mother
 2 = Father
 3 = Sibling
@@ -1503,7 +1502,7 @@ Fetal Death|361|5078|8|Blank for Eight-Byte Field 2|PLACE8_2|alphanumeric|||||
 Fetal Death|362|5086|8|Blank for Eight-Byte Field 3|PLACE8_3|alphanumeric|||||
 Fetal Death|363|5094|20|Blank for Twenty-Byte Field|PLACE20|alphanumeric|||||
 Fetal Death|364|5114|450|Blank for future expansion|BLANK|For future expansion or to account for problems missed|||||
-Fetal Death|365|5564|437|Blank for Jurisdictional Use Only|BLANK2|For Jurisdictions to share additional internal data with their data partners |||||
+Fetal Death|365|5564|437|Blank for Jurisdictional Use Only|BLANK2|"For Jurisdictions to share additional internal data with their data partners "|||||
 Natality|1|1|4|Date of Birth (Infant)--Year|IDOB_YR|4 digit year|||||
 Natality|2|5|2|"State| U.S. Territory or Canadian Province of Birth (Infant) - code"|BSTATE|"NCHS Instruction Manual: Part 8
 For US Territories:
@@ -1659,7 +1658,7 @@ Natality|50|130|1|Mother's Race--Guamanian or Chamorro|MRACE12|"Y| N"|||||
 Natality|51|131|1|Mother's Race--Samoan|MRACE13|"Y| N"|||||
 Natality|52|132|1|Mother's Race--Other Pacific Islander|MRACE14|"Y| N"|||||
 Natality|53|133|1|Mother's Race--Other|MRACE15|"Y| N"|||||
-Natality|54|134|30|Mother's Race--First American Indian or Alaska Native Literal|MRACE16|Literal; blank |||||
+Natality|54|134|30|Mother's Race--First American Indian or Alaska Native Literal|MRACE16|"Literal; blank "|||||
 Natality|55|164|30|Mother's Race--Second American Indian or Alaska Native Literal|MRACE17|Literal; blank|||||
 Natality|56|194|30|Mother's Race--First Other Asian Literal|MRACE18|Literal; blank|||||
 Natality|57|224|30|Mother's Race--Second Other Asian Literal|MRACE19|Literal; blank|||||
@@ -1818,7 +1817,7 @@ Natality|157|820|1|Risk Factors--Prepregnancy Diabetes|PDIAB|"Y = Yes
 N = No
 U = Unknown"|||||
 Natality|158|821|1|Risk Factors--Gestational Diabetes|GDIAB|"Y| N| U"|||||
-Natality|159|822|1|Risk Factors--Prepregnancy Hypertension |PHYPE|"Y| N| U"|||||
+Natality|159|822|1|"Risk Factors--Prepregnancy Hypertension "|PHYPE|"Y| N| U"|||||
 Natality|160|823|1|Risk Factors--Gestational Hypertension  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924)|GHYPE|"Y| N| U"|||||
 Natality|161|824|1|Risk Factors--Previous Preterm Births|PPB|"Y| N| U"|||||
 Natality|162|825|1|Risk Factors--Poor Pregnancy Outcomes(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015)|PPO|"Y| N| U"|||||
@@ -1881,7 +1880,7 @@ Natality|197|861|1|Maternal Morbidity--Ruptured Uterus|RUT|"Y| N| U"|||||
 Natality|198|862|1|Maternal Morbidity--Unplanned Hysterectomy|UHYS|"Y| N| U"|||||
 Natality|199|863|1|Maternal Morbidity--Admit to Intensive Care|AINT|"Y| N| U"|||||
 Natality|200|864|1|Maternal Morbidity--Unplanned Operation(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015)|UOPR|"Y| N| U"|||||
-Natality|201|865|4|Birthweight in grams|BWG|0000-9998; 9999=unknown|||||
+Natality|201|865|4|Birthweight in grams|BWG|0000-9998; 9999=unknown||ObservationBirthWeightVitalRecords|valueQuantity.value|integer|0000-9998; 9999=unknown
 Natality|202|869|1|Birthweight--Edit Flag|BW_BYPASS|"0 = Off
 1 = Queried data correct| out of range
 2 = Queried| failed birthweight/gestation edit"|||||
@@ -1958,20 +1957,20 @@ Natality|"Additional NCHS and State Specific Data Items for Interjurisdictional 
 Fields 262-273 are required by NCHS as of 01/01/2022. Provide other information as allowable.                                                                                                       Unavailable/unshared fields should be blank except where noted."||||||||||
 Natality|Field #|"Beginning
 Location"|Length|Contents|Name|Code structure description|||||
-Natality|247|1001|50|Child's First Name|KIDFNAME|Free form literal |||||
-Natality|248|1051|50|Child's Middle Name|KIDMNAME|Free form literal |||||
-Natality|249|1101|50|Child's Last Name|KIDLNAME|Free form literal |||||
+Natality|247|1001|50|Child's First Name|KIDFNAME|"Free form literal "|||||
+Natality|248|1051|50|Child's Middle Name|KIDMNAME|"Free form literal "|||||
+Natality|249|1101|50|Child's Last Name|KIDLNAME|"Free form literal "|||||
 Natality|250|1151|7|Child's Surname Suffix (moved from end)|KIDSUFFX|Valid suffix|||||
-Natality|251|1158|25|County of Birth (Literal)|BIRTH_CO|valid county literal |||||
+Natality|251|1158|25|County of Birth (Literal)|BIRTH_CO|"valid county literal "|||||
 Natality|252|1183|50|City/town/place of birth (Literal)|BRTHCITY|Valid city/town/place literal|||||
 Natality|253|1233|50|Name of Facility of Birth|HOSP|Facility name literal|||||
-Natality|254|1283|50|Mother's First Name|MOMFNAME|Free form literal |||||
-Natality|255|1333|50|Mother's Middle Name|MOMMIDDL|Free form literal |||||
-Natality|256|1383|50|Mother's Last Name|MOMLNAME|Free form literal |||||
-Natality|257|1433|7|Mother's Surname Suffix |MOMSUFFX|Valid suffix|||||
-Natality|258|1440|50|Mother's First Maiden Name|MOMFMNME|Free form literal |||||
-Natality|259|1490|50|Mother's Middle Maiden Name|MOMMMID|Free form literal |||||
-Natality|260|1540|50|Mother's Maiden Surname|MOMMAIDN|Free form literal |||||
+Natality|254|1283|50|Mother's First Name|MOMFNAME|"Free form literal "|||||
+Natality|255|1333|50|Mother's Middle Name|MOMMIDDL|"Free form literal "|||||
+Natality|256|1383|50|Mother's Last Name|MOMLNAME|"Free form literal "|||||
+Natality|257|1433|7|"Mother's Surname Suffix "|MOMSUFFX|Valid suffix|||||
+Natality|258|1440|50|Mother's First Maiden Name|MOMFMNME|"Free form literal "|||||
+Natality|259|1490|50|Mother's Middle Maiden Name|MOMMMID|"Free form literal "|||||
+Natality|260|1540|50|Mother's Maiden Surname|MOMMAIDN|"Free form literal "|||||
 Natality|261|1590|7|Mother's Maiden Surname Suffix|MOMMSUFX|Valid suffix|||||
 Natality|262|1597|10|Residence Street Number|STNUM|parsed residence address|||||
 Natality|263|1607|10|Residence Pre Directional|PREDIR||||||
@@ -1981,14 +1980,14 @@ Natality|266|1655|10|Residence Post Directional|POSTDIR||||||
 Natality|267|1665|7|Residence Unit or Apartment Number|UNUM||||||
 Natality|268|1672|50|Mother's Residence Street Address|ADDRESS|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Mother's Residence address that's used in their system versus reprogramming."|||||
 Natality|269|1722|9|Mother's Residence Zip Code and Zip+4|ZIPCODE|"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""|||||
-Natality|270|1731|28|Mother's Residence County (Literal)|COUNTYTXT|Valid county literal |||||
+Natality|270|1731|28|Mother's Residence County (Literal)|COUNTYTXT|"Valid county literal "|||||
 Natality|271|1759|28|Mother's Residence City/Town (Literal)|CITYTEXT|Valid city/town/place literal|||||
 Natality|272|1787|28|"State| U.S. Territory or Canadian Province of Residence (Mother) - literal"|STATETXT|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|||||
 Natality|273|1815|28|Mother's Residence Country (Literal)|CNTRYTXT|Valid text for country of residence|||||
-Natality|274|1843|50|Father's First Name|DADFNAME|Free form literal |||||
-Natality|275|1893|50|Father's Middle Name|DADMNAME|Free form literal |||||
-Natality|276|1943|50|Father's Last Name|DADLNAME|Free form literal |||||
-Natality|277|1993|7|Father's Surname Suffix|DADSUFFX|Valid suffix |||||
+Natality|274|1843|50|Father's First Name|DADFNAME|"Free form literal "|||||
+Natality|275|1893|50|Father's Middle Name|DADMNAME|"Free form literal "|||||
+Natality|276|1943|50|Father's Last Name|DADLNAME|"Free form literal "|||||
+Natality|277|1993|7|Father's Surname Suffix|DADSUFFX|"Valid suffix "|||||
 Natality|278|2000|9|Mother's Social Security Number|MOM_SSN|9 digit SSN; blank if unknown or not sharable|||||
 Natality|279|2009|9|Father's Social Security Number|DAD_SSN|9 digit SSN; blank if unknown or not sharable|||||
 Natality|280|2018|2|Mother's Age (Calculated)|MAGE_CALC|"0-98| 99"|||||
@@ -2085,7 +2084,7 @@ Natality|313|2574|10|Mother's Mailing Address Post Directional|MAIL_POSTDIR|||||
 Natality|314|2584|7|Mother's Mailing Address Unit or Apartment Number|MAIL_UNUM||||||
 Natality|315|2591|50|Mother's Mailing Address Street Address|MAIL_ADDRESS|"The item is made up of one long string that includes Street number| Pre Directional| Street name| Street designator| Post Directional| and Unit or Apartment Number. Jurisdiction should use version of Mother's Mailing address that's used in their system versus reprogramming."|||||
 Natality|316|2641|9|Mother's Mailing Address Zip Code and Zip+4|MAIL_ZIPCODE|"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-"""|||||
-Natality|317|2650|28|Mother's Mailing Address County (Literal)|MAIL_COUNTYTXT|Valid county literal |||||
+Natality|317|2650|28|Mother's Mailing Address County (Literal)|MAIL_COUNTYTXT|"Valid county literal "|||||
 Natality|318|2678|28|Mother's Mailing Address City/Town (Literal)|MAIL_CITYTEXT|Valid city/town/place literal|||||
 Natality|319|2706|28|Mother's Mailing Address State (Literal)|MAIL_STATETXT|"Valid state| U.S. territory or Canadian province literal| otherwise blank"|||||
 Natality|320|2734|28|Mother's Mailing Address Country (Literal)|MAIL_CNTRYTXT|"Valid country literal when foreign| otherwise U.S."|||||
@@ -2098,10 +2097,10 @@ or blank"|||||
 Natality|324|2765|1|SSA/EAB Feedback Release|SSN_FEEDBACK|"Y = Yes
 N = No
 or blank"|||||
-Natality|325|2766|11|SSA/EAB Birth Certificate Number Code|SSN_BRTH_CRT_NO|Refer to the Social Security Administration's State Processing Guidelines for Enumeration at Birth |||||
-Natality|326|2777|50|Attendant's Name|ATTEND_NAME|Free form literal |||||
+Natality|325|2766|11|SSA/EAB Birth Certificate Number Code|SSN_BRTH_CRT_NO|"Refer to the Social Security Administration's State Processing Guidelines for Enumeration at Birth "|||||
+Natality|326|2777|50|Attendant's Name|ATTEND_NAME|"Free form literal "|||||
 Natality|327|2827|12|Attendant's NPI|ATTEND_NPI|National Provider Index (NPI) number of attendant at birth|||||
-Natality|328|2839|50|Certifier's Name|CERTIF_NAME|Free form literal |||||
+Natality|328|2839|50|Certifier's Name|CERTIF_NAME|"Free form literal "|||||
 Natality|329|2889|12|Certifier's NPI|CERTIF_NPI|National Provider Index (NPI) number of certifier of birth|||||
 Natality|330|2901|1|Certifier Title|CERTIF|"1 = MD
 2 = DO
@@ -2111,8 +2110,8 @@ Natality|330|2901|1|Certifier Title|CERTIF|"1 = MD
 6 = Hospital Admin
 9 = Unknown"|||||
 Natality|331|2902|20|"Certifier (""Other"" specified text)"|CERTIF_OTH_TXT|"Alpha character string when ""Other"" text is specified"|||||
-Natality|332|2922|15|Infant's Medical Record Number|INF_MED_REC_NUM| |||||
-Natality|333|2937|15|Mother's Medical Record Number|MOM_MED_REC_NUM| |||||
+Natality|332|2922|15|Infant's Medical Record Number|INF_MED_REC_NUM|" "|||||
+Natality|333|2937|15|Mother's Medical Record Number|MOM_MED_REC_NUM|" "|||||
 Natality|334|2952|4|Date Signed by Certifier--Year|CERTIFIED_YR|4 digit year (= or > year of birth of child);  9999 = unknown|||||
 Natality|335|2956|2|Date Signed by Certifier--Month|CERTIFIED_MO|"01-12| 99"|||||
 Natality|336|2958|2|Date Signed by Certifier--Day|CERTIFIED_DY|"01-31 (based on month)| 99"|||||
@@ -2133,4 +2132,4 @@ Natality|349|3033|8|Blank for Eight-Byte Field 2|PLACE8_2|alphanumeric|||||
 Natality|350|3041|8|Blank for Eight-Byte Field 3|PLACE8_3|alphanumeric|||||
 Natality|351|3049|20|Blank for Twenty-Byte Field|PLACE20|alphanumeric|||||
 Natality|352|3069|450|Blank for Future Expansion|BLANK|For future expansion or to account for problems missed|||||
-Natality|353|3519|482|Blank for Jurisdictional Use Only|BLANK2|For Jurisdictions to share additional internal data with their data partners |||||
+Natality|353|3519|482|Blank for Jurisdictional Use Only|BLANK2|"For Jurisdictions to share additional internal data with their data partners "|||||

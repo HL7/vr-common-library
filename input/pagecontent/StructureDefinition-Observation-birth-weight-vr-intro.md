@@ -6,5 +6,3 @@ This concept is mapped to:
 | **#** |  **Description**   |  **IJE Name**   | IJE only |  **Field**  |  **Type**  | **Value Set**  |
 | :---------: | ------------- | ------------ | :----------: |---------- | -------- | -------- |
 | 201 | Birthweight in grams | BWG| |valueQuantity.value | integer | 0000-9998; 9999=unknown | 
-{: .grid }
-{% include markdown-link-references.md %}
