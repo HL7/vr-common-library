@@ -1,4 +1,4 @@
-﻿Flow,Field #,Beginning Location,Length,Contents,Name,Code Structure Description,IJE Only,VRDR Profile,Field,Encoding,Comments
+﻿Flow,Field #,Beginning Location,Length,Contents,Name,Code Structure Description,IJE Only,Profile,Field,Encoding,Comments
 Mortality,1,1,4,Date of Death--Year,DOD_YR,4 digit year,,DeathDate,value,dateTime,Required for processing
 Mortality,2,5,2,"State; U.S. Territory or Canadian Province of Death - code",DSTATE,2 letter postal code,,DeathLocation,address.state or address.state.extension[nationalReportingJurisdictionId ],codeable,[StatesTerritoriesProvincesVS] in state field or [JurisdictionVS] in extension
 Mortality,NA,NA,NA,Death Record Identifier,*NO IJE MAPPING*,YYYYJJNNNNNN   YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number,,DeathCertificateDocument,identifier.value,string(12),YYYYJJNNNNNN  YYYY = death year JJ = jurisdiction  and NNNNNN = certificate number
