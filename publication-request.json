@@ -1,0 +1,10 @@
+{
+	"package-id": "hl7.fhir.us.vr-common-library",
+	"title": "Vital Records Common Profiles Libraray",
+	"category": "Public Health",
+	"version": "current",
+	"desc": "Continuous Integration Build (latest in version control)",
+	"path": "http://build.fhir.org/ig/HL7/vr-common-library",
+	"status": "draft",
+	"sequence": "STU 1 on FHIR R4"
+}
