@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="CodeSystem-death-pregnancy-status-vr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-12-02T02:03:41.586+00:00"/>
+        <source value="#gAtnD4JiaxRmX7ZP"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-pregnancy-status-vr"/>
+    <version value="0.1.0"/>
+    <name value="CodeSystemDeathPregnancyStatusVitalRecords"/>
+    <title value="CodeSystem - Death Pregnancy Status Vital Records"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2022-03-02T09:27:11+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <count value="5"/>
+    <concept>
+        <code value="1"/>
+        <display value="Not pregnant within past year"/>
+    </concept>
+    <concept>
+        <code value="2"/>
+        <display value="Pregnant at time of death"/>
+    </concept>
+    <concept>
+        <code value="3"/>
+        <display value="Not pregnant, but pregnant within 42 days of death"/>
+    </concept>
+    <concept>
+        <code value="4"/>
+        <display value="Not pregnant, but pregnant 43 days to 1 year before death"/>
+    </concept>
+    <concept>
+        <code value="9"/>
+        <display value="Unknown if pregnant within the past year"/>
+    </concept>
+    <concept>
+        <code value="8"/>
+        <display value="Not Applicable: Computer generated"/>
+    </concept>
+</CodeSystem>

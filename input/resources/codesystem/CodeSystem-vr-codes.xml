@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="CodeSystem-vr-codes"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-08T19:12:45.181+00:00"/>
+        <source value="#3IkYtX5oOS5pcdwN"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-codes"/>
+    <version value="1.0.0"/>
+    <name value="CodeSystemMDI"/>
+    <title value="CodeSystem - MDI"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2021-12-01"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This code system contains codes for use in death investigations and reporting."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="demographics"/>
+        <display value="Demographics Section"/>
+    </concept>
+    <concept>
+        <code value="circumstances"/>
+        <display value="Circumstances of the Death Section"/>
+    </concept>
+    <concept>
+        <code value="jurisdiction"/>
+        <display value="Jurisdiction Section"/>
+    </concept>
+    <concept>
+        <code value="cause-manner"/>
+        <display value="Cause and Manner of Death Section"/>
+    </concept>
+    <concept>
+        <code value="medical-history"/>
+        <display value="Medical History Section"/>
+    </concept>
+    <concept>
+        <code value="exam-autopsy"/>
+        <display value="Exam/Autopsy Section"/>
+    </concept>
+    <concept>
+        <code value="mdi-case-number"/>
+        <display value="MDI Case Number"/>
+    </concept>
+    <concept>
+        <code value="edrs-file-number"/>
+        <display value="EDRS File Number"/>
+    </concept>
+    <concept>
+        <code value="tox-lab-case-number"/>
+        <display value="Toxicology Laboratory Case Number"/>
+    </concept>
+    <concept>
+        <code value="mdi-case-notes-summary"/>
+        <display value="MDI Case Notes Summary"/>
+    </concept>
+    <concept>
+        <code value="mdi-case-history"/>
+        <display value="MDI Case History"/>
+    </concept>
+    <concept>
+        <code value="tox-result-report"/>
+        <display value="Toxicology Lab Results"/>
+    </concept>
+    <concept>
+        <code value="narratives"/>
+        <display value="Narratives"/>
+    </concept>
+    <concept>
+        <code value="exact"/>
+        <display value="Exact"/>
+    </concept>
+    <concept>
+        <code value="approximate"/>
+        <display value="Approximate"/>
+    </concept>
+    <concept>
+        <code value="court-appointed"/>
+        <display value="Court Appointed"/>
+    </concept>
+    <concept>
+        <code value="injury"/>
+        <display value="Injury Location"/>
+    </concept>
+    <concept>
+        <code value="death"/>
+        <display value="Death Location"/>
+    </concept>
+</CodeSystem>

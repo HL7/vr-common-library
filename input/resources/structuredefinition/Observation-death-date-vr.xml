@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-death-date-vr"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-12-02T03:15:46.081+00:00"/>
+        <source value="#L2enDsjOZWLtiCAt"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
+    <name value="ObservationDeathDateVitalRecords"/>
+    <title value="Observation - Death Date Vital Records"/>
+    <status value="active"/>
+    <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Date+time of death"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="81956-5"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <label value="The decedent"/>
+            <short value="The decedent"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.performer">
+            <path value="Observation.performer"/>
+            <label value="Death Pronouncement Performer"/>
+            <short value="Death Pronouncement Performer"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Date/Time of Death"/>
+            <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation.valueDateTime">
+            <path value="Observation.valueDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.valueDateTime.extension">
+            <path value="Observation.valueDateTime.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.valueDateTime.extension:partialDateTime">
+            <path value="Observation.valueDateTime.extension"/>
+            <sliceName value="partialDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time"/>
+            </type>
+        </element>
+        <element id="Observation.note">
+            <path value="Observation.note"/>
+            <short value="Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"/>
+            <definition value="Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.method">
+            <path value="Observation.method"/>
+            <short value="Codes that describe the approach to establishing a date."/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="ValueSetDateEstablishmentApproach"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-establishment-approach"/>
+            </binding>
+        </element>
+        <element id="Observation.component">
+            <path value="Observation.component"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.component:datetimePronouncedDead">
+            <path value="Observation.component"/>
+            <sliceName value="datetimePronouncedDead"/>
+            <short value="Date/Time Pronounced Dead"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:datetimePronouncedDead.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="80616-6"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:datetimePronouncedDead.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation.component:placeOfDeath">
+            <path value="Observation.component"/>
+            <sliceName value="placeOfDeath"/>
+            <short value="Place of Death"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:placeOfDeath.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="58332-8"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:placeOfDeath.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-place-of-death"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

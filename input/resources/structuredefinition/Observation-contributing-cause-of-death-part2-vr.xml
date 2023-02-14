@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-autopsy-performed-indicator-vr"/>
+    <id value="Observation-contributing-cause-of-death-part2-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-12-02T03:13:03.132+00:00"/>
-        <source value="#hfTLHfo9B0DZxsVC"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-12-02T03:15:20.563+00:00"/>
+        <source value="#Nq84h8PY34M6ItpE"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-    <version value="1.9.0"/>
-    <name value="ObservationAutopsyPerformedIndicatorVitalRecords"/>
-    <title value="Observation - Autopsy Performed Indicator Vital Records"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
+    <version value="0.1.0"/>
+    <name value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
+    <title value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
     <status value="active"/>
-    <date value="2022-08-02T13:21:04+00:00"/>
+    <date value="2022-02-27T14:53:00+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>
         <telecom>
             <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
         </telecom>
         <telecom>
             <system value="email"/>
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
+    <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -51,13 +51,15 @@
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="85699-7"/>
+                    <code value="69441-4"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <label value="The decedent"/>
+            <short value="The decedent"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
@@ -68,8 +70,15 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <short value="Autopsy Performer using USCorePractioner"/>
+            <label value="Investigating coroner or medical examiner"/>
+            <short value="Investigating coroner or medical examiner"/>
+            <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -86,53 +95,17 @@
                 <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown"/>
-            </binding>
         </element>
         <element id="Observation.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
-            <short value="Autopsy was performed?"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Observation.component">
-            <path value="Observation.component"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="code"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Observation.component:autopsyResultsAvailable">
-            <path value="Observation.component"/>
-            <sliceName value="autopsyResultsAvailable"/>
-            <short value="Autopsy Results Available"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.component:autopsyResultsAvailable.code">
-            <path value="Observation.component.code"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="69436-4"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Observation.component:autopsyResultsAvailable.value[x]">
-            <path value="Observation.component.value[x]"/>
+        <element id="Observation.valueCodeableConcept.text">
+            <path value="Observation.valueCodeableConcept.text"/>
+            <short value="Cause of Death Part 2"/>
             <min value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
-            </binding>
+            <maxLength value="240"/>
         </element>
     </differential>
 </StructureDefinition>

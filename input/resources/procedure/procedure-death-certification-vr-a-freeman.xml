@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="procedure-death-certification-vr-a-freeman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-08T18:48:37.833+00:00"/>
+        <source value="#oZmgA3tof0JCon5a"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
+    </meta>
+    <identifier>
+        <value value="180"/>
+    </identifier>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="103693007"/>
+            <display value="Diagnostic procedure"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="308646001"/>
+            <display value="Death certification"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-vr-a-freeman"/>
+    </subject>
+    <performedDateTime value="2022-01-18T16:39:40-05:00"/>
+    <performer>
+        <function>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="455381000124109"/>
+                <display value="Death certification by medical examiner or coroner (procedure)"/>
+            </coding>
+        </function>
+        <actor>
+            <reference value="Practitioner/us-core-practitioner-vr-j-jones"/>
+        </actor>
+    </performer>
+</Procedure>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-date-establishment-approach-vr"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-01T19:45:48.151+00:00"/>
+        <source value="#crQxXrBoSVElwijG"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-establishment-approach-vr"/>
+    <name value="ValueSetDateEstablishmentApproachVitalRecords"/>
+    <title value="ValueSet - Date Establishment Approach Vital Records"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains codes that describe the approach to establishing a date."/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-component-codes-vr"/>
+            <concept>
+                <code value="exact"/>
+                <display value="Exact"/>
+            </concept>
+            <concept>
+                <code value="approximate"/>
+                <display value="Approximate"/>
+            </concept>
+            <concept>
+                <code value="court-appointed"/>
+                <display value="Court Appointed"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-partial-date-time-vr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-12-01T18:03:45.876+00:00"/>
+        <source value="#xC3qfAUdoPG2YUQj"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
+    <version value="1.0.0"/>
+    <name value="ExtensionPartialDateTimeVitalRecords"/>
+    <title value="Extension - Partial DateTime Vital Records"/>
+    <status value="active"/>
+    <date value="2022-07-13T19:21:56+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="Provides values of a partial dateTime"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="date"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="dateTime"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Partial Date Time"/>
+            <definition value="Provides a partial date time."/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <min value="4"/>
+        </element>
+        <element id="Extension.extension:year">
+            <path value="Extension.extension"/>
+            <sliceName value="year"/>
+            <short value="Date Year"/>
+            <definition value="The year portion (YYYY) of the partial date."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year"/>
+            </type>
+        </element>
+        <element id="Extension.extension:month">
+            <path value="Extension.extension"/>
+            <sliceName value="month"/>
+            <short value="Date Month"/>
+            <definition value="The day portion (MM) of the partial date."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month"/>
+            </type>
+        </element>
+        <element id="Extension.extension:day">
+            <path value="Extension.extension"/>
+            <sliceName value="day"/>
+            <short value="Date Day"/>
+            <definition value="The day portion (DD) of the partial date."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day"/>
+            </type>
+        </element>
+        <element id="Extension.extension:time">
+            <path value="Extension.extension"/>
+            <sliceName value="time"/>
+            <short value="Date Time"/>
+            <definition value="The time portion  of the partial datetime."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-time"/>
+            </type>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <max value="0"/>
+        </element>
+    </differential>
+</StructureDefinition>

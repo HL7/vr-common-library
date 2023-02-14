@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-10-25T15:44:13.175+00:00"/>
-        <source value="#ldtx5fOXPkjrPYJ2"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-12-02T01:56:58.438+00:00"/>
+        <source value="#zTd2Bw0MATOJBGXa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
     <version value="1.2.1"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
+    <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

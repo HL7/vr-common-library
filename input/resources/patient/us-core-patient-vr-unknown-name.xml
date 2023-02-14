@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-patient-vr-unknown-name"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-08T18:35:37.423+00:00"/>
+        <source value="#HmlBbdXmgA4JbgeH"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">
+                <b>UNK </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>MR303303305</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical Record Number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+        </type>
+        <system value="http://hospital.smarthealthit.org"/>
+        <value value="MR303303305"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family value="UNK">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                <valueCode value="unknown"/>
+            </extension>
+        </family>
+    </name>
+    <gender value="unknown"/>
+</Patient>

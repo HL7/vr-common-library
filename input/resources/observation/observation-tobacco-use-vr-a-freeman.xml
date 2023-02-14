@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-tobacco-use-vr-a-freeman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-08T18:13:43.360+00:00"/>
+        <source value="#6gtCHavvjB18S3aK"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69443-0"/>
+            <display value="Did tobacco use contribute to death"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-vr-a-freeman"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

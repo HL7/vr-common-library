@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="125"/>
-        <lastUpdated value="2022-10-25T15:51:11.724+00:00"/>
-        <source value="#vjhgBvcvzx6FxGHv"/>
+        <versionId value="210"/>
+        <lastUpdated value="2023-01-03T20:01:34.412+00:00"/>
+        <source value="#iXnxCQkLGdvNERlP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
     <name value="Vital_Records_Common_Profiles_Library"/>
     <title value="Vital Records Common Profiles Library"/>
     <status value="active"/>
+    <experimental value="false"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -32,14 +33,14 @@
     <packageId value="hl7.fhir.us.vr-common-library"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.0"/>
+        <version value="5.0.1"/>
     </dependsOn>
     <dependsOn id="uscdcphinvads">
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
         <packageId value="us.cdc.phinvads"/>
-        <version value="0.7.0"/>
+        <version value="0.12.0"/>
     </dependsOn>
     <dependsOn id="hl7fhirusvrdr">
         <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr#2.0.0"/>
@@ -56,11 +57,32 @@
         <grouping id="extensions">
             <name value="Extensions"/>
         </grouping>
+        <grouping id="profiles-death-reporting">
+            <name value="Profiles for Death Reporting"/>
+        </grouping>
+        <grouping id="extensions-death-reporting">
+            <name value="Extensions for Death Reporting"/>
+        </grouping>
+        <grouping id="codesystems-death-reporting">
+            <name value="Code Systems for Death Reporting"/>
+        </grouping>
+        <grouping id="valuesets-death-reporting">
+            <name value="Value Sets for Death Reporting"/>
+        </grouping>
         <grouping id="participant-examples">
             <name value="Participant Examples"/>
         </grouping>
         <grouping id="observation-examples">
             <name value="Observation Examples"/>
+        </grouping>
+        <grouping id="observations-death-reporting">
+            <name value="Death Reporting Observation &amp; Procedure Examples"/>
+        </grouping>
+        <grouping id="participant-death-reporting-examples">
+            <name value="Death Reporting Participant Examples"/>
+        </grouping>
+        <grouping id="location-death-reporting-examples">
+            <name value="Death Reporting Location Examples"/>
         </grouping>
         <resource>
             <reference>
@@ -787,31 +809,424 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-cause-of-death-part1-vr"/>
+                <display value="Observation - Cause of Death Part 1 Vital Records"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1 Vital Records"/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
+                <display value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
+            </reference>
+            <name value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
+            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-death-date-vr"/>
+                <display value="Observation - Death Date Vital Records"/>
+            </reference>
+            <name value="Observation - Death Date Vital Records"/>
+            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-injury-incident-vr"/>
+                <display value="Observation - Injury Incident Vital Records"/>
+            </reference>
+            <name value="Observation - Injury Incident Vital Records"/>
+            <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
                 <display value="Observation - Autopsy Performed Indicator Vital Records"/>
             </reference>
             <name value="Observation - Autopsy Performed Indicator Vital Records"/>
             <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
             <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-cause-of-death-part1-vr"/>
-                <display value="Observation - Cause of Death Part 1 Vital Records Vital Records"/>
+                <reference value="CodeSystem/CodeSystem-death-pregnancy-status-vr"/>
+                <display value="CodeSystem - Death Pregnancy Status Vital Records"/>
             </reference>
-            <name value="Observation - Cause of Death Part 1 Vital Records"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
+            <name value="CodeSystem - Death Pregnancy Status Vital Records"/>
+            <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="codesystems-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-local-component-codes-vr"/>
+                <display value="CodeSystem - Local Components Codes Vital Records"/>
+            </reference>
+            <name value="CodeSystem - Local Components Codes Vital Records"/>
+            <description value="Local Component Codes for observation components that lack an appropriate LOINC code."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="codesystems-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-manner-of-death-vr"/>
+                <display value="Observation - Manner of Death Vital Records"/>
+            </reference>
+            <name value="Observation - Manner of Death Vital Records"/>
+            <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-decedent-pregnancy-vr"/>
+                <display value="Observation - Decedent Pregnancy Vital Records"/>
+            </reference>
+            <name value="Observation - Decedent Pregnancy Vital Records"/>
+            <description value="This Observation provides an indication of the pregnancy status of the decedent."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+                <display value="Observation - Tobacco Use Contributed to Death Vital Records"/>
+            </reference>
+            <name value="Observation - Tobacco Use Contributed to Death Vital Records"/>
+            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-death-certification-vr"/>
+                <display value="Procedure - Death Certification Vital Records"/>
+            </reference>
+            <name value="Procedure - Death Certification Vital Records"/>
+            <description value="This Procedure records the certification of death by the certifier."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Location-injury-vr"/>
+                <display value="Location - Injury Vital Records"/>
+            </reference>
+            <name value="Location - Injury Vital Records"/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-time-vr"/>
+                <display value="Extension - Date Time Vital Records"/>
+            </reference>
+            <name value="Extension - Date Time Vital Records"/>
+            <description value="The time portion (DD) of the partial date."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-date-establishment-approach-vr"/>
+                <display value="ValueSet - Date Establishment Approach Vital Records"/>
+            </reference>
+            <name value="ValueSet - Date Establishment Approach Vital Records"/>
+            <description value="This value set contains codes that describe the approach to establishing a date."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-death-pregnancy-status-vr"/>
+                <display value="ValueSet - Death Pregnancy Status Vital Records"/>
+            </reference>
+            <name value="ValueSet - Death Pregnancy Status Vital Records"/>
+            <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-manner-of-death-vr"/>
+                <display value="ValueSet - Manner of Death Vital Records"/>
+            </reference>
+            <name value="ValueSet - Manner of Death Vital Records"/>
+            <description value="A set of codes to reflect the manner that a person died."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-day-vr"/>
+                <display value="Extension - Date Day Vital Records"/>
+            </reference>
+            <name value="Extension - Date Day Vital Records"/>
+            <description value="The day portion (DD) of the partial date."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-month-vr"/>
+                <display value="Extension - Date Month Vital Records"/>
+            </reference>
+            <name value="Extension - Date Month Vital Records"/>
+            <description value="The month portion (MM) of the partial date."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-year-vr"/>
+                <display value="Extension - Date Year Vital Records Vital Records"/>
+            </reference>
+            <name value="Extension - Date Year Vital Records"/>
+            <description value="The year portion (YYYY) of the partial date."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-place-of-death-vr"/>
+                <display value="ValueSet - Place of Death Vital Records"/>
+            </reference>
+            <name value="ValueSet - Place of Death Vital Records"/>
+            <description value="Code values reflecting the death location of the decedent (e.g., hospital, home, hospice)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-transportation-incident-role-vr"/>
+                <display value="ValueSet - Transportation Incident Role Vital Records"/>
+            </reference>
+            <name value="ValueSet - Transportation Incident Role Vital Records"/>
+            <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Location-death-vr"/>
+                <display value="Location - Death Vital Records"/>
+            </reference>
+            <name value="Location - Death Vital Records"/>
+            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-partial-date-time-vr"/>
+                <display value="Extension - Partial DateTime Vital Records"/>
+            </reference>
+            <name value="Extension - Partial DateTime Vital Records"/>
+            <description value="Provides values of a partial dateTime"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-units-of-age-vr"/>
+                <display value="ValueSet - Units of Age Vital Records"/>
+            </reference>
+            <name value="ValueSet - Units of Age Vital Records"/>
+            <description value="A set of codes for specifying the units used when recording age (days, years, etc.)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-not-applicable-vr"/>
+                <display value="ValueSet - Yes, No, Not Applicable Vital Records"/>
+            </reference>
+            <name value="ValueSet - Yes, No, Not Applicable Vital Records"/>
+            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"/>
+                <display value="ValueSet - Yes No Unknown NotApplicable Vital Records"/>
+            </reference>
+            <name value="ValueSet - Yes No Unknown NotApplicable Vital Records"/>
+            <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown-vr"/>
+                <display value="ValueSet - Yes No Unknown Vital Records"/>
+            </reference>
+            <name value="ValueSet - Yes No Unknown Vital Records"/>
+            <description value="Value set with Yes, No and Unknown."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-contributing-cause-of-death-part2-vr-a-freeman"/></reference>
+            <name value="Observation - Contributing Cause of Death Part2 Vital Records - A Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tobacco-use-vr-a-freeman"/></reference>
+            <name value="Observation - Tobacco Use Vital Records - A Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-decedent-pregnancy-vr-a-freeman"/></reference>
+            <name value="Observation - Decedent Pregnancy Vital Records - A Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-manner-of-death-vr-a-freeman-accidental"/></reference>
+            <name value="Observation - Manner of Death Vital Records - A Freeman, accidental"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-vr-a-freeman"/></reference>
+            <name value="Observation - Cause of Death Part1 Vital Records - A Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-autopsy-performed-indicator-vr-a-freeman"/></reference>
+            <name value="Observation - Autopsy Performed Indicator Vital Records - A Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-vr-a-freeman"/></reference>
+            <name value="Observation - Death Date Vital Records - A Freeman example"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-injury-incident-vr-a-freeman-med-ingest"/></reference>
+            <name value="Observation - Injury Incident Vital Records - A Freeman, med ingest"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/us-core-patient-vr-unknown-name"/></reference>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            <groupingId value="participant-death-reporting-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/us-core-patient-vr-a-freeman"/></reference>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            <groupingId value="participant-death-reporting-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-death-vr-atlanta-ga-a-freeman"/>
+                <display value="Atlanta GA Death Location - Freeman"/>
+            </reference>
+            <name value="Atlanta GA Death Location - Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
+            <groupingId value="location-death-reporting-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-injury-vr-atlanta-ga-a-freeman"/>
+                <display value="Atlanta GA Injury Location - Freeman"/>
+            </reference>
+            <name value="Atlanta GA Injury Location - Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
+            <groupingId value="location-death-reporting-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-death-certification-vr-a-freeman"/></reference>
+            <name value="Procedure - Death Certification Vital Records - A Freeman"/>
+            <description value="Example "/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-vr-codes"/>
+                <display value="CodeSystem - MDI"/>
+            </reference>
+            <name value="CodeSystem - MDI"/>
+            <description value="This code system contains codes for use in death investigations and reporting."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-death-reporting-codes-vr"/>
+                <display value="CodeSystem - MDI"/>
+            </reference>
+            <name value="CodeSystem - MDI"/>
+            <description value="This code system contains codes for use in death investigations and reporting."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-certifier-types-vr"/>
+                <display value="ValueSet - Certifier Types Vital Records"/>
+            </reference>
+            <name value="ValueSet - Certifier Types Vital Records"/>
+            <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
-            <page>
-                <nameUrl value="draft_updates.html"/>
-                <title value="Draft Updates"/>
-                <generation value="markdown"/>
-            </page>
             <page>
                 <nameUrl value="terminology.html"/>
                 <title value="Terminology"/>
@@ -820,6 +1235,11 @@
             <page>
                 <nameUrl value="downloads.html"/>
                 <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="change_log.html"/>
+                <title value="Change Log"/>
                 <generation value="markdown"/>
             </page>
         </page>

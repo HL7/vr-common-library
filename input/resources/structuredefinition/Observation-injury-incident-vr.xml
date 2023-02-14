@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-injury-incident-vr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-12-02T01:58:38.619+00:00"/>
+        <source value="#tRadEjmS14JpTRzk"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
+    <version value="0.1.0"/>
+    <name value="ObservationInjuryIncidentVitalRecords"/>
+    <title value="Observation - Injury Incident Vital Records"/>
+    <status value="active"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+            <short value="The certified explanation of how the injury leading to death occurred."/>
+            <definition value="The certified explanation of how the injury leading to death occurred."/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Injury incident description Narrative"/>
+            <definition value="Injury incident description Narrative"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="11374-6"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <short value="The subject of this observation is the decedent."/>
+            <definition value="The subject of this observation is the decedent."/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.effective[x]">
+            <path value="Observation.effective[x]"/>
+            <short value="Date/Time of Injury"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation.effective[x].extension">
+            <path value="Observation.effective[x].extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.effective[x].extension:partialDateTime">
+            <path value="Observation.effective[x].extension"/>
+            <sliceName value="partialDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time"/>
+            </type>
+        </element>
+        <element id="Observation.performer">
+            <path value="Observation.performer"/>
+            <short value="Certifier of the explanation."/>
+            <definition value="Certifier of the explanation."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x].text">
+            <path value="Observation.value[x].text"/>
+            <short value="Description of how injured"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.note">
+            <path value="Observation.note"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component">
+            <path value="Observation.component"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.component:placeOfInjury">
+            <path value="Observation.component"/>
+            <sliceName value="placeOfInjury"/>
+            <short value="Place of injury"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:placeOfInjury.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69450-5"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:placeOfInjury.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Observation.component:placeOfInjury.valueCodeableConcept">
+            <path value="Observation.component.valueCodeableConcept"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation.component:placeOfInjury.valueCodeableConcept.text">
+            <path value="Observation.component.valueCodeableConcept.text"/>
+            <short value="Place of Injury - Literal"/>
+        </element>
+        <element id="Observation.component:workInjuryIndicator">
+            <path value="Observation.component"/>
+            <sliceName value="workInjuryIndicator"/>
+            <short value="Injury at Work?"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:workInjuryIndicator.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69444-8"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:workInjuryIndicator.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <short value="Injury at Work?"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
+            </binding>
+        </element>
+        <element id="Observation.component:transportationRole">
+            <path value="Observation.component"/>
+            <sliceName value="transportationRole"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:transportationRole.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69451-3"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:transportationRole.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Transportation role of decedent"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-transportation-incident-role"/>
+            </binding>
+        </element>
+        <element id="Observation.component:transportationRole.valueCodeableConcept">
+            <path value="Observation.component.valueCodeableConcept"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:transportationRole.valueCodeableConcept.text">
+            <path value="Observation.component.valueCodeableConcept.text"/>
+            <short value="Transportation role of decedent, if code = OTH"/>
+        </element>
+    </differential>
+</StructureDefinition>

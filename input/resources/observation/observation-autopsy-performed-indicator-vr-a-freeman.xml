@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-autopsy-performed-indicator-vr-a-freeman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-08T18:13:43.360+00:00"/>
+        <source value="#RPsUWiCOLxn1jJ0n"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="85699-7"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-vr-a-freeman"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+            <code value="Y"/>
+            <display value="Yes"/>
+        </coding>
+    </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="69436-4"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                <code value="Y"/>
+                <display value="Yes"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+</Observation>
