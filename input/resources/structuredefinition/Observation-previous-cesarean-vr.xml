@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-previous-preterm-birth-vr"/>
+    <id value="Observation-previous-cesarean-vr"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-04-05T07:09:47.384+00:00"/>
-        <source value="#ZuHh9hgeAXW6Wr5i"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-05T06:52:27.458+00:00"/>
+        <source value="#tBxBFaZde4seKcIH"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
-    <name value="ObservationPreviousPretermBirthVitalRecords"/>
-    <title value="Observation - Previous Preterm Birth Vital Records"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
+    <name value="ObservationPreviousCesareanVitalRecords"/>
+    <title value="Observation - Previous Cesarean Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -18,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation profile indicates that the mother had a pregnancy risk factor of previous preterm birth."/>
+    <description value="This profile indicates that the mother had a pregnancy risk factor of previous cesarean."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -56,7 +56,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="History of premature delivery (situation)"/>
+            <short value="Deliveries by cesarean (finding)"/>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
@@ -64,7 +64,7 @@
             <patternCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
-                    <code value="161765003"/>
+                    <code value="200144004"/>
                 </coding>
             </patternCodeableConcept>
         </element>

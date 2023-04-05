@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="226"/>
-        <lastUpdated value="2023-04-05T06:42:48.205+00:00"/>
-        <source value="#CiEPzMfsMPjfmvZd"/>
+        <versionId value="232"/>
+        <lastUpdated value="2023-04-05T07:08:50.820+00:00"/>
+        <source value="#LjeabhVUb8SRqATN"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -1084,7 +1084,7 @@
             <reference>
                 <reference value="Observation/observation-contributing-cause-of-death-part2-vr-a-freeman"/></reference>
             <name value="Observation - Contributing Cause of Death Part2 Vital Records - A Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1093,7 +1093,7 @@
             <reference>
                 <reference value="Observation/observation-tobacco-use-vr-a-freeman"/></reference>
             <name value="Observation - Tobacco Use Vital Records - A Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1102,7 +1102,7 @@
             <reference>
                 <reference value="Observation/observation-decedent-pregnancy-vr-a-freeman"/></reference>
             <name value="Observation - Decedent Pregnancy Vital Records - A Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1111,7 +1111,7 @@
             <reference>
                 <reference value="Observation/observation-manner-of-death-vr-a-freeman-accidental"/></reference>
             <name value="Observation - Manner of Death Vital Records - A Freeman, accidental"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1120,7 +1120,7 @@
             <reference>
                 <reference value="Observation/observation-cause-of-death-part1-vr-a-freeman"/></reference>
             <name value="Observation - Cause of Death Part1 Vital Records - A Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1129,7 +1129,7 @@
             <reference>
                 <reference value="Observation/observation-autopsy-performed-indicator-vr-a-freeman"/></reference>
             <name value="Observation - Autopsy Performed Indicator Vital Records - A Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1138,7 +1138,7 @@
             <reference>
                 <reference value="Observation/observation-death-date-vr-a-freeman"/></reference>
             <name value="Observation - Death Date Vital Records - A Freeman example"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1147,7 +1147,7 @@
             <reference>
                 <reference value="Observation/observation-injury-incident-vr-a-freeman-med-ingest"/></reference>
             <name value="Observation - Injury Incident Vital Records - A Freeman, med ingest"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1155,7 +1155,7 @@
         <resource>
             <reference>
                 <reference value="Patient/us-core-patient-vr-unknown-name"/></reference>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <groupingId value="participant-death-reporting-examples"/>
@@ -1163,7 +1163,7 @@
         <resource>
             <reference>
                 <reference value="Patient/us-core-patient-vr-a-freeman"/></reference>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <groupingId value="participant-death-reporting-examples"/>
@@ -1174,7 +1174,7 @@
                 <display value="Atlanta GA Death Location - Freeman"/>
             </reference>
             <name value="Atlanta GA Death Location - Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
             <groupingId value="location-death-reporting-examples"/>
@@ -1185,7 +1185,7 @@
                 <display value="Atlanta GA Injury Location - Freeman"/>
             </reference>
             <name value="Atlanta GA Injury Location - Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
             <groupingId value="location-death-reporting-examples"/>
@@ -1194,7 +1194,7 @@
             <reference>
                 <reference value="Procedure/procedure-death-certification-vr-a-freeman"/></reference>
             <name value="Procedure - Death Certification Vital Records - A Freeman"/>
-            <description value="Example "/>
+            <description value="Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
             <groupingId value="observations-death-reporting"/>
@@ -1231,8 +1231,8 @@
                 <reference value="StructureDefinition/Observation-previous-preterm-birth-vr"/>
                 <display value="Observation - Previous Preterm Birth"/>
             </reference>
-            <name value="Observation - Previous Preterm Birth"/>
-            <description value="This profile indicates that the mother had a pregnancy risk factor of previous preterm birth."/>
+            <name value="Observation - Previous Preterm Birth Vital Records"/>
+            <description value="This Observation profile indicates that the mother had a pregnancy risk factor of previous preterm birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
         </resource>
@@ -1283,6 +1283,26 @@
             </reference>
             <name value="Condition - Gestational Hypertension Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-previous-cesarean-vr"/>
+                <display value="Observation - Previous Cesarean Vital Records"/>
+            </reference>
+            <name value="Observation - Previous Cesarean Vital Records"/>
+            <description value="This profile indicates that the mother had a pregnancy risk factor of previous cesarean."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
+                <display value="Observation - None Of Specified Pregnancy Risk Factors Vital Records"/>
+            </reference>
+            <name value="Observation - None Of Specified Pregnancy Risk Factors Vital Records"/>
+            <description value="This profile indicates that none of the specified pregnancy risk factors (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
         </resource>
