@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="210"/>
-        <lastUpdated value="2023-01-03T20:01:34.412+00:00"/>
-        <source value="#iXnxCQkLGdvNERlP"/>
+        <versionId value="226"/>
+        <lastUpdated value="2023-04-05T06:42:48.205+00:00"/>
+        <source value="#CiEPzMfsMPjfmvZd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -50,6 +50,9 @@
     <definition>
         <grouping id="participants">
             <name value="Participants"/>
+        </grouping>
+        <grouping id="pregnancy-risk-factor-profiles">
+            <name value="Pregnancy Risk Factor Profiles"/>
         </grouping>
         <grouping id="observations">
             <name value="Observations"/>
@@ -1222,6 +1225,66 @@
             <name value="ValueSet - Certifier Types Vital Records"/>
             <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-previous-preterm-birth-vr"/>
+                <display value="Observation - Previous Preterm Birth"/>
+            </reference>
+            <name value="Observation - Previous Preterm Birth"/>
+            <description value="This profile indicates that the mother had a pregnancy risk factor of previous preterm birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-gestational-diabetes-vr"/>
+                <display value="Condition - Gestational Diabetes Vital Records"/>
+            </reference>
+            <name value="Condition - Gestational Diabetes Vital Records"/>
+            <description value="This Condition profile indicates that the mother had a pregnancy risk factor of gestational diabetes."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
+                <display value="Condition - Prepregnancy Diabetes Vital Records"/>
+            </reference>
+            <name value="Condition - Prepregnancy Diabetes Vital Records"/>
+            <description value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-eclampsia-hypertension-vr"/>
+                <display value="Condition - Eclampsia Hypertension Vital Records"/>
+            </reference>
+            <name value="Condition - Eclampsia Hypertension Vital Records"/>
+            <description value="This Condition profile indicates that the mother had a pregnancy risk factor of eclampsia hypertension."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
+                <display value="Condition - Prepregnancy HypertensionVitalRecords"/>
+            </reference>
+            <name value="Condition - Prepregnancy HypertensionVitalRecords"/>
+            <description value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy hypertension."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-gestational-hypertension-vr"/>
+                <display value="Condition - Gestational Hypertension Vital Records"/>
+            </reference>
+            <name value="Condition - Gestational Hypertension Vital Records"/>
+            <description value="This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="pregnancy-risk-factor-profiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
