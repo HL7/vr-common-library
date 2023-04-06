@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-deceased-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-12T22:12:55.189+00:00"/>
-        <source value="#RV6iydLDg1moEhmg"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-04-06T06:51:28.394+00:00"/>
+        <source value="#4CKxvpywBfcTJMSk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-deceased-vr"/>
     <name value="ExtensionRelatedPersonDeceasedVitalRecords"/>
@@ -31,7 +31,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Element"/>
+        <expression value="RelatedPerson"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

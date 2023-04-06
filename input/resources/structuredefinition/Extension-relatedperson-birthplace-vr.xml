@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-birthplace-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-12T22:12:55.159+00:00"/>
-        <source value="#LgXTVatRmIuG0iQF"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-04-06T06:51:42.681+00:00"/>
+        <source value="#wceJ4s9To5hyYDNr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"/>
     <name value="ExtensionRelatedpersonBirthplaceVitalRecords"/>
@@ -31,7 +31,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Element"/>
+        <expression value="RelatedPerson"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
