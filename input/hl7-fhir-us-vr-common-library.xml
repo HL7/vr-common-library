@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="233"/>
-        <lastUpdated value="2023-04-05T18:29:28.612+00:00"/>
-        <source value="#DWZoVL5hPu9uUKSQ"/>
+        <versionId value="234"/>
+        <lastUpdated value="2023-04-06T23:18:19.439+00:00"/>
+        <source value="#OJ6mxmpL7gpFmJp2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -1252,7 +1252,7 @@
                 <reference value="StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
                 <display value="Condition - Prepregnancy HypertensionVitalRecords"/>
             </reference>
-            <name value="Condition - Prepregnancy HypertensionVitalRecords"/>
+            <name value="Condition - Prepregnancy Hypertension Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy hypertension."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
