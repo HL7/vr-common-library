@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T01:59:23.849+00:00"/>
-        <source value="#umOh9zhJFaMX0LkY"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-07T00:45:26.949+00:00"/>
+        <source value="#tbAi10318edG9TJ2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
     <version value="1.9.0"/>
@@ -103,7 +103,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr"/>
             </binding>
         </element>
         <element id="Procedure.performer.actor">

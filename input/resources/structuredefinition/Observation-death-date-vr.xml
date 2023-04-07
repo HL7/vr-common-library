@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date-vr"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-04-07T00:36:16.418+00:00"/>
-        <source value="#KKAnSlKtwzYKu6eM"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-04-07T00:45:26.951+00:00"/>
+        <source value="#gwU2Efpx1hzz29ki"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
     <name value="ObservationDeathDateVitalRecords"/>
@@ -123,7 +123,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="ValueSetDateEstablishmentApproach"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-establishment-approach"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-establishment-approach-vr"/>
             </binding>
         </element>
         <element id="Observation.component">
@@ -183,7 +183,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-place-of-death"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-place-of-death-vr"/>
             </binding>
         </element>
     </differential>
