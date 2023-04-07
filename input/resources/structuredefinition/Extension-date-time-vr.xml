@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-time-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-07T00:24:18.769+00:00"/>
-        <source value="#CNoQynuFCmNOKHLw"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-04-07T01:05:57.831+00:00"/>
+        <source value="#K2J6WzZH99PSE4uv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-time-vr"/>
     <version value="1.3.0"/>
     <name value="ExtensionDateTimeVitalRecords"/>
     <title value="Extension - Date Time Vital Records"/>
     <status value="active"/>
-    <date value="2022-07-13T19:21:56+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>
@@ -42,7 +41,11 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Observation.valueDateTime"/>
+        <expression value="date"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="dateTime"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
