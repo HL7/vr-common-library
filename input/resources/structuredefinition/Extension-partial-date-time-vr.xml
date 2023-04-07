@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-partial-date-time-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-07T00:24:39.180+00:00"/>
-        <source value="#aLkY4sPICaIYZ1yK"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-04-07T00:27:19.838+00:00"/>
+        <source value="#R2Z0wpj0ibPTEfiY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
     <version value="1.0.0"/>
@@ -70,7 +70,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr"/>
             </type>
         </element>
         <element id="Extension.extension:month">
@@ -82,7 +82,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr"/>
             </type>
         </element>
         <element id="Extension.extension:day">
@@ -94,7 +94,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr"/>
             </type>
         </element>
         <element id="Extension.extension:time">
@@ -106,7 +106,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-time"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-time-vr"/>
             </type>
         </element>
         <element id="Extension.url">
