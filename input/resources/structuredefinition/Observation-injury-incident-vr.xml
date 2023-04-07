@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-injury-incident-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-07T00:45:26.945+00:00"/>
-        <source value="#OfR4MEFQbRHo0AB8"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-04-07T01:11:05.468+00:00"/>
+        <source value="#97U8HWFOhs0QXNKe"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
     <version value="0.1.0"/>
@@ -87,7 +87,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
             </type>
         </element>
         <element id="Observation.performer">
