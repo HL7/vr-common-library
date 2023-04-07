@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-12-02T03:16:23.249+00:00"/>
-        <source value="#GAALhbvHxVGXjcCt"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-04-07T00:37:07.407+00:00"/>
+        <source value="#8DrHo7YLYNul0fe7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
     <version value="1.0"/>
@@ -76,7 +76,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death."/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-death-pregnancy-status"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-death-pregnancy-status-vr"/>
             </binding>
         </element>
     </differential>

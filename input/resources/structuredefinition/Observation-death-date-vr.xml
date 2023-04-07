@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-12-02T03:15:46.081+00:00"/>
-        <source value="#L2enDsjOZWLtiCAt"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-04-07T00:36:16.418+00:00"/>
+        <source value="#KKAnSlKtwzYKu6eM"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
     <name value="ObservationDeathDateVitalRecords"/>
@@ -103,7 +103,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
             </type>
         </element>
         <element id="Observation.note">

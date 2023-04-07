@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-injury-incident-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T01:58:38.619+00:00"/>
-        <source value="#tRadEjmS14JpTRzk"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-07T00:39:18.528+00:00"/>
+        <source value="#kvwsRtlm9h18bfZj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
     <version value="0.1.0"/>
@@ -87,7 +87,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
             </type>
         </element>
         <element id="Observation.performer">
@@ -193,7 +193,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"/>
             </binding>
         </element>
         <element id="Observation.component:transportationRole">
@@ -228,7 +228,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-transportation-incident-role"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-transportation-incident-role-vr"/>
             </binding>
         </element>
         <element id="Observation.component:transportationRole.valueCodeableConcept">

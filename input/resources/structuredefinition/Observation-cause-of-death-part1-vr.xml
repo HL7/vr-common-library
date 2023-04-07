@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1-vr"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-12-02T01:56:58.438+00:00"/>
-        <source value="#zTd2Bw0MATOJBGXa"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-04-07T00:31:50.172+00:00"/>
+        <source value="#pkMvbfAhbXrqnn6E"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
     <version value="1.2.1"/>
@@ -116,7 +116,7 @@
             <path value="Observation.component.code"/>
             <patternCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-local-component-codes"/>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-local-component-codes-vr"/>
                     <code value="lineNumber"/>
                 </coding>
             </patternCodeableConcept>

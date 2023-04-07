@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-12-02T03:13:03.132+00:00"/>
-        <source value="#hfTLHfo9B0DZxsVC"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-04-07T00:29:25.092+00:00"/>
+        <source value="#WhiTp6LAUIRTRIlK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     <version value="1.9.0"/>
@@ -88,7 +88,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-vr"/>
             </binding>
         </element>
         <element id="Observation.valueCodeableConcept">
