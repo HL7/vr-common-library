@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-local-component-codes-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T02:03:56.605+00:00"/>
-        <source value="#oTMZpUXgpU8BBOcA"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-07T01:23:38.159+00:00"/>
+        <source value="#Sy1aCOJiRdcivnic"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-component-codes-vr"/>
     <version value="1.9.0"/>
@@ -13,7 +13,6 @@
     <title value="CodeSystem - Local Components Codes Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2022-07-22T14:53:51+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>
