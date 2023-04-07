@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-year-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-04-07T02:12:38.612+00:00"/>
-        <source value="#G9jbyOo7FlTTn8W3"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-04-07T03:19:42.199+00:00"/>
+        <source value="#s86Pxx7nWZIsU7Ok"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr"/>
     <version value="1.0.0"/>
@@ -48,8 +48,8 @@
         <expression value="dateTime"/>
     </context>
     <context>
-        <type value="extension"/>
-        <expression value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
+        <type value="element"/>
+        <expression value="Extension"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
