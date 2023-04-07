@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="234"/>
-        <lastUpdated value="2023-04-06T23:18:19.439+00:00"/>
-        <source value="#OJ6mxmpL7gpFmJp2"/>
+        <versionId value="237"/>
+        <lastUpdated value="2023-04-07T00:53:09.891+00:00"/>
+        <source value="#GLJgsuvMEr0iHGGI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -163,7 +163,7 @@
             <name value="Observation - Autopsy Performed example [Fetus Not Named]"/>
             <description value="Example of Observation-autopsy-performed-vr profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-vr"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
             <groupingId value="observation-examples"/>
         </resource>
         <resource>
@@ -627,9 +627,9 @@
             <reference>
                 <reference value="Practitioner/practitioner-vital-records-janet-seito-common"/></reference>
             <name value="Practitioner - Vital Records example [Janet Seito]"/>
-            <description value="Example of Practitioner-vital-records-vr profile (Janet Seito)"/>
+            <description value="Example of Practitioner-vr profile (Janet Seito)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records-vr"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -1094,7 +1094,7 @@
             <name value="Observation - Manner of Death Vital Records - A Freeman, accidental"/>
             <description value="Example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death-vr"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-manner-of-death-vr"/>
             <groupingId value="observations-death-reporting"/>
         </resource>
         <resource>
