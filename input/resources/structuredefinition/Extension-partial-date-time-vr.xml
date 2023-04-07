@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-partial-date-time-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-07T01:34:51.380+00:00"/>
-        <source value="#6rc8yI10ySNSEGBZ"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-04-07T02:05:09.578+00:00"/>
+        <source value="#JLvWqWWggT29WjTZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
     <version value="1.0.0"/>
@@ -41,11 +41,11 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="effectiveDateTime"/>
+        <expression value="date"/>
     </context>
     <context>
         <type value="element"/>
-        <expression value="valueDateTime"/>
+        <expression value="dateTime"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

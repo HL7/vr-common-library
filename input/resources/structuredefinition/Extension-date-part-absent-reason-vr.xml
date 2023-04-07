@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-part-absent-reason-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-07T01:35:17.427+00:00"/>
-        <source value="#cy7YlfmJhEmtq4XM"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-04-07T02:05:05.871+00:00"/>
+        <source value="#AAXwseQVc34HApnl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"/>
     <version value="1.0.0"/>
@@ -25,11 +25,11 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="effectiveDateTime"/>
+        <expression value="date"/>
     </context>
     <context>
         <type value="element"/>
-        <expression value="valueDateTime"/>
+        <expression value="dateTime"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
