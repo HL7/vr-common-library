@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-injury-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-12-09T03:35:09.632+00:00"/>
-        <source value="#Xzt2uTWLxgj3QXul"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-04-07T01:18:21.982+00:00"/>
+        <source value="#uXA7xtLkZhGawzLj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
     <name value="LocationInjuryVitalRecords"/>
@@ -47,7 +47,7 @@
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-codes"/>
+                    <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>
                     <code value="injury"/>
                 </coding>
             </patternCodeableConcept>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="239"/>
-        <lastUpdated value="2023-04-07T00:57:06.652+00:00"/>
-        <source value="#HWa0dYq2BBiZZXvH"/>
+        <versionId value="242"/>
+        <lastUpdated value="2023-04-07T01:16:37.225+00:00"/>
+        <source value="#CIBQWY4Cbnt4Hmny"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -1184,19 +1184,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/CodeSystem-vr-codes"/>
-                <display value="CodeSystem - MDI"/>
-            </reference>
-            <name value="CodeSystem - MDI"/>
-            <description value="This code system contains codes for use in death investigations and reporting."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="CodeSystem/CodeSystem-death-reporting-codes-vr"/>
                 <display value="CodeSystem - MDI"/>
             </reference>
-            <name value="CodeSystem - MDI"/>
+            <name value="CodeSystem - Death Reporting Codes Vital Records"/>
             <description value="This code system contains codes for use in death investigations and reporting."/>
             <exampleBoolean value="false"/>
         </resource>

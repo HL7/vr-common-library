@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-death-reporting-codes-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T19:15:25.802+00:00"/>
-        <source value="#TxMCwc8DQCaVWdN4"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-04-07T01:15:36.961+00:00"/>
+        <source value="#D07jUH2uR5hcftOa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>
     <version value="1.0.0"/>
-    <name value="CodeSystemMDI"/>
-    <title value="CodeSystem - MDI"/>
+    <name value="CodeSystemDeathReportingCodesVitalRecords"/>
+    <title value="CodeSystem - Death Reporting Codes Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2021-12-01"/>
