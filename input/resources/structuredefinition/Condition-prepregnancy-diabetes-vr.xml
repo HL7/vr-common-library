@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-prepregnancy-diabetes-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-05T03:44:22.617+00:00"/>
-        <source value="#VQH32QuvEwFZ6D9c"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-04-19T02:09:32.065+00:00"/>
+        <source value="#N0ICzzZo08A1PMpg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
     <version value="1.0.0"/>
@@ -43,15 +43,6 @@
         <element id="Condition">
             <path value="Condition"/>
             <short value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes."/>
-        </element>
-        <element id="Condition.category">
-            <path value="Condition.category"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                    <code value="problem-list-item"/>
-                </coding>
-            </patternCodeableConcept>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>

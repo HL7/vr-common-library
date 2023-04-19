@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-death-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-07T01:18:06.286+00:00"/>
-        <source value="#JvPvFfTh97JJk3FB"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-04-19T02:22:17.347+00:00"/>
+        <source value="#YPaK0xZdY18IbzvB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
     <name value="LocationDeathVitalRecords"/>
     <title value="Location - Death Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2022-04-20"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>

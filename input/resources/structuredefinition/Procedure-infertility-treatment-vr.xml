@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Procedure-infertility-treatment-vr"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-19T02:09:32.124+00:00"/>
+        <source value="#SgsvQwHw8v7V2bTe"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
+    <name value="ProcedureInfertilityTreatmentVitalRecords"/>
+    <title value="Procedure - Infertility Treatment Vital Records"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="This Procedure profile records that a pregnancy risk factor of infertility treatment was provided to the mother."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Procedure"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Procedure">
+            <path value="Procedure"/>
+        </element>
+        <element id="Procedure.code">
+            <path value="Procedure.code"/>
+            <short value="Fertility enhancing drug therapy (procedure)"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="445151000124101"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.subject">
+            <path value="Procedure.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
