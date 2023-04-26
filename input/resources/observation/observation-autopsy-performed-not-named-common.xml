@@ -3,17 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-autopsy-performed-not-named-common"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-12-08T17:40:01.251+00:00"/>
-        <source value="#SRICs9obvN5MrYaH"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-04-19T02:52:10.979+00:00"/>
+        <source value="#tkS8UiTkIRFHRyzj"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     </meta>
     <status value="final"/>
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="73768-4"/>
-            <display value="Autopsy was performed [US Standard Report of Fetal Death]"/>
+            <code value="85699-7"/>
+            <display value="Autopsy was performed"/>
         </coding>
     </code>
     <subject>
@@ -22,9 +22,9 @@
     </subject>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="719828003"/>
-            <display value="Autopsy not done"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+            <code value="N"/>
+            <display value="No"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

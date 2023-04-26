@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-07T00:45:26.944+00:00"/>
-        <source value="#0ZNEL8YXUKAWaS6j"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-04-25T06:08:15.844+00:00"/>
+        <source value="#iYjlN5y9o3Dhk8Be"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     <version value="1.9.0"/>
@@ -63,6 +63,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

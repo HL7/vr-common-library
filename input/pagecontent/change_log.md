@@ -1,3 +1,5 @@
+While IG is in development see the [Change Log GoogleSheet](https://docs.google.com/spreadsheets/d/1d9ZIi43R4MS4qXf14u19P3SwZ1ThkPaU-K-Hoo139Ys/edit?usp=sharing) for a list of the latest changes (this page will be moved inside the IG prior to publication).
+
 ### Profiles Added to the Library - **2023 (DRAFT)**
 **Profiles used by both VRDR and MDI IGs**
 
