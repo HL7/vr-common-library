@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-race-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-10-12T23:19:28.732+00:00"/>
-        <source value="#QZdY4P2wfHXvQsgk"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-05-23T23:59:02.381+00:00"/>
+        <source value="#aLUvzKGUM3i5aqsa"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
     </meta>
     <status value="final"/>
@@ -27,7 +27,7 @@
     </focus>
     <valueCodeableConcept>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+            <system value="urn:oid:2.16.840.1.113883.6.238"/>
             <code value="2054-5"/>
             <display value="Black or African American"/>
         </coding>
