@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="261"/>
-        <lastUpdated value="2023-05-23T21:58:31.593+00:00"/>
-        <source value="#iK93VpNKLqr3prXH"/>
+        <versionId value="264"/>
+        <lastUpdated value="2023-05-23T23:34:37.762+00:00"/>
+        <source value="#4qDni673O493wkbL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -1022,16 +1022,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Procedure-death-certification"/>
-                <display value="Procedure - Death Certification Vital Records"/>
-            </reference>
-            <name value="Procedure - Death Certification Vital Records"/>
-            <description value="This Procedure records the certification of death by the certifier."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Procedure-death-certification-vr"/>
                 <display value="Procedure - Death Certification Vital Records"/>
             </reference>
@@ -1167,7 +1157,7 @@
             <reference>
                 <reference value="Patient/us-core-patient-vr-a-freeman"/></reference>
             <name value="US Core Patient - Freeman"/>
-            <description value="Example"/>
+            <description value="Example of US Core Patient (A Freeman)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <groupingId value="participant-death-reporting-examples"/>
@@ -1176,9 +1166,18 @@
             <reference>
                 <reference value="Patient/us-core-patient-vr-unknown-name"/></reference>
             <name value="US Core Patient - Unknown Name"/>
-            <description value="Example"/>
+            <description value="Example of US Core Patient (Unknown Name)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            <groupingId value="participant-death-reporting-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/us-core-practitioner-vr-j-jones"/></reference>
+            <name value="US Core Practitioner - J Jones"/>
+            <description value="Example of US Core Practitioner (J Jones)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="participant-death-reporting-examples"/>
         </resource>
         <resource>
