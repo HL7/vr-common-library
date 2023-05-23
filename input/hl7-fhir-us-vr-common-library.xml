@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="264"/>
-        <lastUpdated value="2023-05-23T23:34:37.762+00:00"/>
-        <source value="#4qDni673O493wkbL"/>
+        <versionId value="265"/>
+        <lastUpdated value="2023-05-23T23:47:23.407+00:00"/>
+        <source value="#oHnCC7HLuqBUaFuD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -43,8 +43,8 @@
         <version value="0.12.0"/>
     </dependsOn>
     <dependsOn id="hl7fhiruvextensionsr4">
-        <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions.r4#1.0.0"/>
-        <packageId value="hl7.fhir.uv.extensions.r4"/>
+        <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions#1.0.0"/>
+        <packageId value="hl7.fhir.uv.extensions"/>
         <version value="1.0.0"/>
     </dependsOn>
     <dependsOn id="hl7fhirusvrdr">
