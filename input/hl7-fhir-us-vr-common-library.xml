@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="265"/>
-        <lastUpdated value="2023-05-23T23:47:23.407+00:00"/>
-        <source value="#oHnCC7HLuqBUaFuD"/>
+        <versionId value="267"/>
+        <lastUpdated value="2023-05-24T00:03:45.734+00:00"/>
+        <source value="#2lvLljoIGUXOrrzF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0-for-comment"/>
@@ -1323,6 +1323,15 @@
             <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/us-core-practitioner-vr-s-jones"/></reference>
+            <name value="US Core Practitioner - S Jones"/>
+            <description value="Example of US Core Practitioner (S Jones)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <groupingId value="participant-death-reporting-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
