@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-vr-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:13:43.360+00:00"/>
-        <source value="#NkNsP7wv69yFy3aT"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-05-24T00:06:07.946+00:00"/>
+        <source value="#zwXSWxzqPAEwKawc"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
     </meta>
     <status value="final"/>
@@ -45,7 +45,7 @@
     </valueDateTime>
     <method>
         <coding>
-            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-component-codes-vr"/>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>
             <code value="approximate"/>
             <display value="Approximate"/>
         </coding>

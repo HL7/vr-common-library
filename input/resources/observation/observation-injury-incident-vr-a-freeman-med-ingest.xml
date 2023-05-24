@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-injury-incident-vr-a-freeman-med-ingest"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:33:04.547+00:00"/>
-        <source value="#S0jKnc4a3638yLHE"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-05-24T00:19:40.854+00:00"/>
+        <source value="#QxA0TRaklXeqFdZd"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
     </meta>
     <status value="final"/>
@@ -40,7 +40,7 @@
         </extension>
     </effectiveDateTime>
     <performer>
-        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+        <reference value="Practitioner/us-core-practitioner-vr-s-jones"/>
     </performer>
     <valueCodeableConcept>
         <text value="drug toxicity"/>
