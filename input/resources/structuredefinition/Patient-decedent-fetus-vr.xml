@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-12T22:13:36.031+00:00"/>
-        <source value="#T50QfWdwytwHHqjZ"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-05-31T00:18:13.323+00:00"/>
+        <source value="#9Q8Z1nyRo2oLGaBi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     <name value="PatientDecedentFetusVitalRecords"/>
@@ -18,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="A stillborn for whom clinical data is included in the report."/>
+    <description value="A delivered fetus for which clinical data is included in the report."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -39,7 +39,7 @@
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension"/>
             <sliceName value="birthPlace"/>
-            <short value="Place of Birth for the patient should include the state and/or country"/>
+            <short value="Place of delivery should include the state and/or country"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -130,8 +130,11 @@
         </element>
         <element id="Patient.multipleBirth[x]">
             <path value="Patient.multipleBirth[x]"/>
-            <short value="If not single birth, specify born 1st, 2nd, etc."/>
+            <short value="If not single delivery, specify born 1st, 2nd, etc."/>
             <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
+            <type>
+                <code value="integer"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>

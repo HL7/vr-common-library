@@ -940,7 +940,7 @@
                 <display value="Patient - Decedent Fetus Vital Records"/>
             </reference>
             <name value="Patient - Decedent Fetus Vital Records"/>
-            <description value="A stillborn for whom clinical data is included in the report."/>
+            <description value="A delivered fetus for which clinical data is included in the report."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
