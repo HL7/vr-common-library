@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-13T02:13:36.397Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-06T03:48:48.888Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"/>
     <name value="RelatedPersonParentVitalRecords"/>
@@ -29,7 +29,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="RelatedPerson"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
     <derivation value="constraint"/>
     <differential>
         <element id="RelatedPerson">
@@ -45,6 +45,7 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
+            <min value="2"/>
         </element>
         <element id="RelatedPerson.extension:deceased">
             <path value="RelatedPerson.extension"/>
@@ -131,21 +132,17 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
             </type>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>
             <min value="1"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="RelatedPerson.name">
             <path value="RelatedPerson.name"/>
             <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="RelatedPerson.telecom">
-            <path value="RelatedPerson.telecom"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="RelatedPerson.birthDate">
             <path value="RelatedPerson.birthDate"/>
@@ -162,10 +159,6 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"/>
             </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="RelatedPerson.address">
-            <path value="RelatedPerson.address"/>
             <mustSupport value="true"/>
         </element>
     </differential>
