@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-06-06T03:48:48.888Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-06T04:04:38.195Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"/>
     <name value="RelatedPersonParentVitalRecords"/>
@@ -132,17 +132,14 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
             </type>
-            <mustSupport value="false"/>
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>
             <min value="1"/>
-            <mustSupport value="false"/>
         </element>
         <element id="RelatedPerson.name">
             <path value="RelatedPerson.name"/>
             <min value="1"/>
-            <mustSupport value="false"/>
         </element>
         <element id="RelatedPerson.birthDate">
             <path value="RelatedPerson.birthDate"/>

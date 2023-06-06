@@ -971,16 +971,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/RelatedPerson-parent-vr"/>
-                <display value="Related Person - Parent Vital Records"/>
-            </reference>
-            <name value="Related Person - Parent Vital Records"/>
-            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="RelatedPerson/relatedperson-father-tony-lewis-common"/></reference>
             <name value="RelatedPerson - Adoptive Father"/>
             <description value="Example of RelatedPerson-father-vr profile (adoptive father)"/>
@@ -1337,6 +1327,15 @@
             </reference>
             <name value="PatientMotherVitalRecords"/>
             <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-parent-vr"/>
+                <display value="RelatedPersonParentVitalRecords"/>
+            </reference>
+            <name value="RelatedPersonParentVitalRecords"/>
+            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>
