@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-part-absent-reason-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-07T06:05:05.871Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-06T03:06:37.975Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"/>
     <version value="1.0.0"/>
@@ -36,10 +36,21 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error"/>
             <definition value="Provides a reason why the expected date part is missing."/>
             <min value="0"/>
             <max value="*"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="2"/>
+            <max value="2"/>
         </element>
         <element id="Extension.extension:date-part">
             <path value="Extension.extension"/>
