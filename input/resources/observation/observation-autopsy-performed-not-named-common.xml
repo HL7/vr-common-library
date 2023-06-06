@@ -4,8 +4,7 @@
     <id value="observation-autopsy-performed-not-named-common"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2023-04-19T02:52:10.979+00:00"/>
-        <source value="#tkS8UiTkIRFHRyzj"/>
+        <lastUpdated value="2023-04-19T06:52:10.979Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     </meta>
     <status value="final"/>

@@ -4,8 +4,7 @@
     <id value="CodeSystem-death-reporting-codes-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-07T01:15:36.961+00:00"/>
-        <source value="#D07jUH2uR5hcftOa"/>
+        <lastUpdated value="2023-04-07T05:15:36.961Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>
     <version value="1.0.0"/>

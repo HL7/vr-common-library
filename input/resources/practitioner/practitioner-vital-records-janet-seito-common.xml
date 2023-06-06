@@ -4,8 +4,7 @@
     <id value="practitioner-vital-records-janet-seito-common"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-12-08T17:49:47.830+00:00"/>
-        <source value="#vCaogcYduCie5Uj2"/>
+        <lastUpdated value="2022-12-08T22:49:47.830Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"/>
     </meta>
     <identifier>

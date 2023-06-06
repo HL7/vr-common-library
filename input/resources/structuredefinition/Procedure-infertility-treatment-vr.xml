@@ -4,8 +4,7 @@
     <id value="Procedure-infertility-treatment-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2023-04-19T02:09:32.124+00:00"/>
-        <source value="#SgsvQwHw8v7V2bTe"/>
+        <lastUpdated value="2023-04-19T06:09:32.124Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
     <name value="ProcedureInfertilityTreatmentVitalRecords"/>

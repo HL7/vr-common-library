@@ -4,8 +4,7 @@
     <id value="RelatedPerson-mother-gestational-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-10-12T22:13:35.979+00:00"/>
-        <source value="#OT7hVyhDqVWMriuN"/>
+        <lastUpdated value="2022-10-13T02:13:35.979Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"/>
     <name value="RelatedPersonMotherGestationalVitalRecords"/>

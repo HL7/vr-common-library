@@ -4,8 +4,7 @@
     <id value="observation-contributing-cause-of-death-part2-vr-a-freeman"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:13:43.330+00:00"/>
-        <source value="#0q3l5BT7vQKRxhih"/>
+        <lastUpdated value="2022-12-08T23:13:43.330Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
     </meta>
     <status value="final"/>

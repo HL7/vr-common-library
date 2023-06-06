@@ -3,26 +3,21 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-04-07T01:10:05.224+00:00"/>
-        <source value="#9Yg2HPbCh95vsi4P"/>
+        <versionId value="21"/>
+        <lastUpdated value="2023-06-06T02:29:22.226Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
-    <version value="1.2.1"/>
+    <version value="1.1.0-for-comment"/>
     <name value="ObservationCauseOfDeathPart1VitalRecords"/>
     <title value="Observation - Cause of Death Part 1 Vital Records"/>
     <status value="active"/>
     <date value="2022-02-27T13:48:44+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
-        <name value="HL7 Public Health Working Group"/>
+        <name value="HL7 International - Public Health"/>
         <telecom>
             <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
     <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
@@ -30,9 +25,41 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
+        <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -68,18 +95,25 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Cause of death certifier (coroner or medical examiner)"/>
-            <short value="Cause of death certifier (coroner or medical examiner)"/>
-            <min value="1"/>
-            <max value="1"/>
+            <label value="Death certifier"/>
+            <short value="Death certifier"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"/>
             </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
@@ -138,6 +172,12 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Observation.component:lineNumber.valueInteger">
+            <path value="Observation.component.valueInteger"/>
+            <short value="lineNumber"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
         <element id="Observation.component:interval">
             <path value="Observation.component"/>
             <sliceName value="interval"/>
@@ -170,6 +210,9 @@
             <min value="1"/>
             <type>
                 <code value="string"/>
+            </type>
+            <type>
+                <code value="Quantity"/>
             </type>
             <mustSupport value="true"/>
         </element>

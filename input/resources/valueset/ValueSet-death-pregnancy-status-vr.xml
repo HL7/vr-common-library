@@ -4,8 +4,7 @@
     <id value="ValueSet-death-pregnancy-status-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-12-02T01:08:43.515+00:00"/>
-        <source value="#MP6EMCRf65JCNHOS"/>
+        <lastUpdated value="2022-12-02T06:08:43.515Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-death-pregnancy-status-vr"/>
     <version value="1.3.0"/>

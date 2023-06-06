@@ -4,8 +4,7 @@
     <id value="Extension-date-month-vr"/>
     <meta>
         <versionId value="12"/>
-        <lastUpdated value="2023-04-19T02:22:17.346+00:00"/>
-        <source value="#d0tgX0MPj3qUsWfU"/>
+        <lastUpdated value="2023-04-19T06:22:17.346Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr"/>
     <name value="ExtensionDateMonthVitalRecords"/>

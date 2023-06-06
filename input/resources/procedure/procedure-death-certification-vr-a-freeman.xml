@@ -4,8 +4,7 @@
     <id value="procedure-death-certification-vr-a-freeman"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:48:37.833+00:00"/>
-        <source value="#oZmgA3tof0JCon5a"/>
+        <lastUpdated value="2022-12-08T23:48:37.833Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
     </meta>
     <identifier>

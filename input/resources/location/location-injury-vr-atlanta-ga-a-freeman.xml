@@ -4,8 +4,7 @@
     <id value="location-injury-vr-atlanta-ga-a-freeman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-12-08T19:27:27.646+00:00"/>
-        <source value="#lkUAXmDlVcOjAjf0"/>
+        <lastUpdated value="2022-12-09T00:27:27.646Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
     </meta>
     <identifier>

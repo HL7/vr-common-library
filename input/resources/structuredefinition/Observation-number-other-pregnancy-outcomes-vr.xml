@@ -4,8 +4,7 @@
     <id value="Observation-number-other-pregnancy-outcomes-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:54:35.200+00:00"/>
-        <source value="#algOWIHCKxuPFYe4"/>
+        <lastUpdated value="2022-10-13T05:54:35.200Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
     <name value="ObservationNumberOtherPregnancyOutcomesVitalRecords"/>

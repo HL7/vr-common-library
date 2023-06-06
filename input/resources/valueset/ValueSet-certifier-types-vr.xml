@@ -4,8 +4,7 @@
     <id value="ValueSet-certifier-types-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-09T03:15:56.834+00:00"/>
-        <source value="#TqN8CjLk3EvflVFm"/>
+        <lastUpdated value="2022-12-09T08:15:56.834Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr"/>
     <version value="0.1"/>

@@ -4,8 +4,7 @@
     <id value="relatedperson-mother-gestational-carmen-teresa-lee-common"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2022-10-12T23:20:51.337+00:00"/>
-        <source value="#sQjZXfQ23NoQakck"/>
+        <lastUpdated value="2022-10-13T03:20:51.337Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">

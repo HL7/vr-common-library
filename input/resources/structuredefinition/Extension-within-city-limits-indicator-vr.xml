@@ -4,8 +4,7 @@
     <id value="Extension-within-city-limits-indicator-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:50:38.945+00:00"/>
-        <source value="#rqHhL3S6EUOvYDGS"/>
+        <lastUpdated value="2022-10-13T05:50:38.945Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"/>
     <name value="ExtensionWithinCityLimitsIndicatorVitalRecords"/>

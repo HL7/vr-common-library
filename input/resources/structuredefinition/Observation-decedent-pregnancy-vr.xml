@@ -3,20 +3,64 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-07T00:37:07.407+00:00"/>
-        <source value="#8DrHo7YLYNul0fe7"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-06T02:30:21.936Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
-    <version value="1.0"/>
+    <version value="1.1.0-for-comment"/>
     <name value="ObservationDecedentPregnancyVitalRecords"/>
     <title value="Observation - Decedent Pregnancy Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-08-25"/>
-    <publisher value="Health Level Seven"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="This Observation provides an indication of the pregnancy status of the decedent."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -54,7 +98,6 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
-            <short value="subject"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -77,6 +120,23 @@
                 <strength value="required"/>
                 <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death."/>
                 <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-death-pregnancy-status-vr"/>
+            </binding>
+        </element>
+        <element id="Observation.value[x].extension:bypassEditFlag">
+            <path value="Observation.value[x].extension"/>
+            <sliceName value="bypassEditFlag"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"/>
+            </type>
+        </element>
+        <element id="Observation.value[x].extension:bypassEditFlag.value[x]">
+            <path value="Observation.value[x].extension.value[x]"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-edit-bypass-012-vs"/>
             </binding>
         </element>
     </differential>

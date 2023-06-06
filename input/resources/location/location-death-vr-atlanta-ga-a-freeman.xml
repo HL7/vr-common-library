@@ -4,8 +4,7 @@
     <id value="location-death-vr-atlanta-ga-a-freeman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-12-08T19:15:18.478+00:00"/>
-        <source value="#5GyqB8NpWfQTBJqq"/>
+        <lastUpdated value="2022-12-09T00:15:18.478Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
     </meta>
     <identifier>

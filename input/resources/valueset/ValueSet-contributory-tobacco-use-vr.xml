@@ -4,8 +4,7 @@
     <id value="ValueSet-contributory-tobacco-use-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-05-24T00:38:28.220+00:00"/>
-        <source value="#nVbfWio6TqYdMmCY"/>
+        <lastUpdated value="2023-05-24T04:38:28.220Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-contributory-tobacco-use-vr"/>
     <name value="ValueSetContributoryTobaccoUseVR"/>

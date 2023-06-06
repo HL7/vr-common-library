@@ -4,8 +4,7 @@
     <id value="ValueSet-yes-no-not-applicable-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-01T18:43:28.610+00:00"/>
-        <source value="#kMgQ2dyGXDyfbRXc"/>
+        <lastUpdated value="2022-12-01T23:43:28.610Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-not-applicable-vr"/>
     <version value="0.1.0"/>

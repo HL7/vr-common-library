@@ -4,8 +4,7 @@
     <id value="Observation-last-menstrual-period-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:52:55.452+00:00"/>
-        <source value="#ZIIqUEQwTqX9nwop"/>
+        <lastUpdated value="2022-10-13T05:52:55.452Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
     <name value="ObservationLastMenstrualPeriodVitalRecords"/>

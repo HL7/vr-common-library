@@ -4,8 +4,7 @@
     <id value="CodeSystem-death-pregnancy-status-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-12-02T02:03:41.586+00:00"/>
-        <source value="#gAtnD4JiaxRmX7ZP"/>
+        <lastUpdated value="2022-12-02T07:03:41.586Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-pregnancy-status-vr"/>
     <version value="0.1.0"/>

@@ -4,8 +4,7 @@
     <id value="Location-injury-vr"/>
     <meta>
         <versionId value="6"/>
-        <lastUpdated value="2023-04-19T02:22:17.345+00:00"/>
-        <source value="#9R9z3VPoUVgdRSPC"/>
+        <lastUpdated value="2023-04-19T06:22:17.345Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
     <name value="LocationInjuryVitalRecords"/>

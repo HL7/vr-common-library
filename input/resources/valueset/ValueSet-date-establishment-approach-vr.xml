@@ -4,8 +4,7 @@
     <id value="ValueSet-date-establishment-approach-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-05-23T23:45:54.349+00:00"/>
-        <source value="#pf59qjN6z1WTrbH5"/>
+        <lastUpdated value="2023-05-24T03:45:54.349Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-establishment-approach-vr"/>
     <name value="ValueSetDateEstablishmentApproachVitalRecords"/>

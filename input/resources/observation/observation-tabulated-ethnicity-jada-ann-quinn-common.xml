@@ -4,8 +4,7 @@
     <id value="observation-tabulated-ethnicity-jada-ann-quinn-common"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2022-10-12T23:19:28.736+00:00"/>
-        <source value="#MT8YEtuIrg96j3CB"/>
+        <lastUpdated value="2022-10-13T03:19:28.736Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
     </meta>
     <status value="final"/>

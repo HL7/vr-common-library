@@ -4,8 +4,7 @@
     <id value="Extension-date-year-vr"/>
     <meta>
         <versionId value="9"/>
-        <lastUpdated value="2023-04-07T03:19:42.199+00:00"/>
-        <source value="#s86Pxx7nWZIsU7Ok"/>
+        <lastUpdated value="2023-04-07T07:19:42.199Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr"/>
     <version value="1.0.0"/>

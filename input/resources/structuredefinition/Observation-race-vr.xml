@@ -4,8 +4,7 @@
     <id value="Observation-race-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:56:20.793+00:00"/>
-        <source value="#2mAXxd8TiPjEqQgU"/>
+        <lastUpdated value="2022-10-13T05:56:20.793Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
     <name value="ObservationRaceVitalRecords"/>

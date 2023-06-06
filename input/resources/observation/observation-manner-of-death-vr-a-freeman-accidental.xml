@@ -4,8 +4,7 @@
     <id value="observation-manner-of-death-vr-a-freeman-accidental"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-07T00:53:33.146+00:00"/>
-        <source value="#CrsXcjFCBA7WkULw"/>
+        <lastUpdated value="2023-04-07T04:53:33.146Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-manner-of-death-vr"/>
     </meta>
     <status value="final"/>

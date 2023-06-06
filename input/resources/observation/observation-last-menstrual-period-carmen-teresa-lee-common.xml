@@ -4,8 +4,7 @@
     <id value="observation-last-menstrual-period-carmen-teresa-lee-common"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-10-12T23:18:58.322+00:00"/>
-        <source value="#dp6DDnzCrVaVXckO"/>
+        <lastUpdated value="2022-10-13T03:18:58.322Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
     </meta>
     <status value="final"/>

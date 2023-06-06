@@ -4,8 +4,7 @@
     <id value="Practitioner-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-10-25T15:51:11.599+00:00"/>
-        <source value="#zrB5cWTCPpGkm4ut"/>
+        <lastUpdated value="2022-10-25T19:51:11.599Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"/>
     <name value="PractitionerVitalRecords"/>

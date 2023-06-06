@@ -4,8 +4,7 @@
     <id value="Observation-apgar-score-vr"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-10-13T01:51:06.695+00:00"/>
-        <source value="#iDVYL4PxvgGqUBZ4"/>
+        <lastUpdated value="2022-10-13T05:51:06.695Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     <name value="ObservationApgarScoreVitalRecords"/>

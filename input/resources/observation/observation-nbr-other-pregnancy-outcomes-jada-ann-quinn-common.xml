@@ -4,8 +4,7 @@
     <id value="observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2022-10-12T23:19:28.579+00:00"/>
-        <source value="#cIo3uQcLhj6vA1eZ"/>
+        <lastUpdated value="2022-10-13T03:19:28.579Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
     </meta>
     <status value="final"/>

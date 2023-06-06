@@ -4,8 +4,7 @@
     <id value="observation-death-date-vr-a-freeman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-05-24T00:06:07.946+00:00"/>
-        <source value="#zwXSWxzqPAEwKawc"/>
+        <lastUpdated value="2023-05-24T04:06:07.946Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
     </meta>
     <status value="final"/>

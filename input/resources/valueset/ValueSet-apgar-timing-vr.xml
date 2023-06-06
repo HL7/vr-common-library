@@ -4,8 +4,7 @@
     <id value="ValueSet-apgar-timing-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T02:43:06.228+00:00"/>
-        <source value="#pLB5eQ6hMB4Ej4Dl"/>
+        <lastUpdated value="2022-10-13T06:43:06.228Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-apgar-timing-vr"/>
     <version value="0.1.0"/>

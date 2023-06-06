@@ -4,8 +4,7 @@
     <id value="us-core-patient-vr-unknown-name"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:35:37.423+00:00"/>
-        <source value="#HmlBbdXmgA4JbgeH"/>
+        <lastUpdated value="2022-12-08T23:35:37.423Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>

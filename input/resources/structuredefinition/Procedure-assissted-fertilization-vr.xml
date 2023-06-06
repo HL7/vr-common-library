@@ -4,8 +4,7 @@
     <id value="Procedure-assissted-fertilization-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2023-04-19T02:09:32.125+00:00"/>
-        <source value="#nMJmBmtmbLsAwFyR"/>
+        <lastUpdated value="2023-04-19T06:09:32.125Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assissted-fertilization-vr"/>
     <name value="ProcedureAssisstedFertilizationVitalRecords"/>

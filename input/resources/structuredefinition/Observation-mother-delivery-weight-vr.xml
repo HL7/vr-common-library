@@ -4,8 +4,7 @@
     <id value="Observation-mother-delivery-weight-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:53:03.145+00:00"/>
-        <source value="#OdF3ELE9DxYNf8yL"/>
+        <lastUpdated value="2022-10-13T05:53:03.145Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"/>
     <name value="ObservationMotherDeliveryWeightVitalRecords"/>

@@ -4,8 +4,7 @@
     <id value="Condition-gestational-diabetes-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-19T02:09:59.116+00:00"/>
-        <source value="#PgThbYa5IZSSUARS"/>
+        <lastUpdated value="2023-04-19T06:09:59.116Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
     <version value="1.0.0"/>

@@ -4,8 +4,7 @@
     <id value="Location-death-vr"/>
     <meta>
         <versionId value="6"/>
-        <lastUpdated value="2023-04-19T02:22:17.347+00:00"/>
-        <source value="#YPaK0xZdY18IbzvB"/>
+        <lastUpdated value="2023-04-19T06:22:17.347Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
     <name value="LocationDeathVitalRecords"/>

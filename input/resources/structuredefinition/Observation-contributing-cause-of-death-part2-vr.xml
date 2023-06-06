@@ -3,24 +3,21 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-contributing-cause-of-death-part2-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-19T02:20:56.059+00:00"/>
-        <source value="#IvOwQ8wd4i89cOI8"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-06T02:27:39.767Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
+    <version value="1.1.0-for-comment"/>
     <name value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
     <title value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
     <status value="active"/>
-    <publisher value="HL7 Public Health Working Group"/>
+    <date value="2023-06-01T17:11:42+00:00"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
-        <name value="HL7 Public Health Working Group"/>
+        <name value="HL7 International - Public Health"/>
         <telecom>
             <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
     <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
@@ -28,9 +25,41 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
+        <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -39,10 +68,6 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
-        </element>
-        <element id="Observation.status">
-            <path value="Observation.status"/>
-            <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -68,13 +93,12 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Investigating coroner or medical examiner"/>
-            <short value="Investigating coroner or medical examiner"/>
-            <min value="1"/>
-            <max value="1"/>
+            <label value="Death certifier"/>
+            <short value="Death certifier"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"/>
             </type>
             <mustSupport value="true"/>
         </element>

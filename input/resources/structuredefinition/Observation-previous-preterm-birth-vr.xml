@@ -4,8 +4,7 @@
     <id value="Observation-previous-preterm-birth-vr"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2023-04-05T07:09:47.384+00:00"/>
-        <source value="#ZuHh9hgeAXW6Wr5i"/>
+        <lastUpdated value="2023-04-05T11:09:47.384Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
     <name value="ObservationPreviousPretermBirthVitalRecords"/>

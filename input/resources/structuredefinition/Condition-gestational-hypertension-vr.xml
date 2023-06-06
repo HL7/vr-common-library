@@ -4,8 +4,7 @@
     <id value="Condition-gestational-hypertension-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-19T02:09:32.065+00:00"/>
-        <source value="#0Ca4qL07AhPOohT0"/>
+        <lastUpdated value="2023-04-19T06:09:32.065Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
     <version value="1.0.0"/>

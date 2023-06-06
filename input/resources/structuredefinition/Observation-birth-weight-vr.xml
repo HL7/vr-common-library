@@ -4,8 +4,7 @@
     <id value="Observation-birth-weight-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:52:14.257+00:00"/>
-        <source value="#YlYWACS1QjJSokn7"/>
+        <lastUpdated value="2022-10-13T05:52:14.257Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
     <name value="ObservationBirthWeightVitalRecords"/>

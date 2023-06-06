@@ -4,8 +4,7 @@
     <id value="observation-mother-prepregnancy-weight-carmen-teresa-lee-common"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-10-12T23:18:58.321+00:00"/>
-        <source value="#w6pm9yWzM101Trkn"/>
+        <lastUpdated value="2022-10-13T03:18:58.321Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"/>
     </meta>
     <status value="final"/>

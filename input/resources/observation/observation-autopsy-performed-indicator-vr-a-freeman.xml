@@ -4,8 +4,7 @@
     <id value="observation-autopsy-performed-indicator-vr-a-freeman"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:13:43.360+00:00"/>
-        <source value="#RPsUWiCOLxn1jJ0n"/>
+        <lastUpdated value="2022-12-08T23:13:43.360Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     </meta>
     <status value="final"/>

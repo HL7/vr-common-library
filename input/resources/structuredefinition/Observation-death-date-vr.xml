@@ -3,16 +3,63 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-04-07T00:45:26.951+00:00"/>
-        <source value="#gwU2Efpx1hzz29ki"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-06-06T02:30:03.286Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
+    <version value="1.1.0-for-comment"/>
     <name value="ObservationDeathDateVitalRecords"/>
     <title value="Observation - Death Date Vital Records"/>
     <status value="active"/>
+    <date value="2023-06-01T17:11:42+00:00"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -54,8 +101,8 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Death Pronouncement Performer"/>
-            <short value="Death Pronouncement Performer"/>
+            <label value="Death certifier"/>
+            <short value="Death certifier"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -78,6 +125,9 @@
             <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <type>
                 <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Period"/>
             </type>
         </element>
         <element id="Observation.valueDateTime">
@@ -155,6 +205,9 @@
         <element id="Observation.component:datetimePronouncedDead.value[x]">
             <path value="Observation.component.value[x]"/>
             <min value="1"/>
+            <type>
+                <code value="time"/>
+            </type>
             <type>
                 <code value="dateTime"/>
             </type>

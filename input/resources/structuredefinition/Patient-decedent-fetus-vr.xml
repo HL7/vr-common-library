@@ -4,8 +4,7 @@
     <id value="Patient-decedent-fetus-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-05-31T00:18:13.323+00:00"/>
-        <source value="#9Q8Z1nyRo2oLGaBi"/>
+        <lastUpdated value="2023-05-31T04:18:13.323Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     <name value="PatientDecedentFetusVitalRecords"/>

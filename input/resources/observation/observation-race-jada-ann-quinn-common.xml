@@ -4,8 +4,7 @@
     <id value="observation-race-jada-ann-quinn-common"/>
     <meta>
         <versionId value="8"/>
-        <lastUpdated value="2023-05-23T23:59:02.381+00:00"/>
-        <source value="#aLUvzKGUM3i5aqsa"/>
+        <lastUpdated value="2023-05-24T03:59:02.381Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
     </meta>
     <status value="final"/>

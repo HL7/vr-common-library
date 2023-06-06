@@ -4,8 +4,7 @@
     <id value="Observation-infant-living-vr"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-10-13T01:52:46.359+00:00"/>
-        <source value="#cDTfMoVNGL055Vhb"/>
+        <lastUpdated value="2022-10-13T05:52:46.359Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
     <name value="ObservationInfantLivingVitalRecords"/>

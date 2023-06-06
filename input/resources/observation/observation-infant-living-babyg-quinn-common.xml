@@ -4,8 +4,7 @@
     <id value="observation-infant-living-babyg-quinn-common"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-10-12T23:18:58.320+00:00"/>
-        <source value="#di5bqh379uzIuWg7"/>
+        <lastUpdated value="2022-10-13T03:18:58.320Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
     </meta>
     <status value="final"/>

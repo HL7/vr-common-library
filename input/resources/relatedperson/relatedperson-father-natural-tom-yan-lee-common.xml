@@ -4,8 +4,7 @@
     <id value="relatedperson-father-natural-tom-yan-lee-common"/>
     <meta>
         <versionId value="10"/>
-        <lastUpdated value="2022-10-12T23:44:48.451+00:00"/>
-        <source value="#2Fj2aXKtLXRSkizK"/>
+        <lastUpdated value="2022-10-13T03:44:48.451Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">

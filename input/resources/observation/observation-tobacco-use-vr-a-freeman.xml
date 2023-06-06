@@ -4,8 +4,7 @@
     <id value="observation-tobacco-use-vr-a-freeman"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-12-08T18:13:43.360+00:00"/>
-        <source value="#6gtCHavvjB18S3aK"/>
+        <lastUpdated value="2022-12-08T23:13:43.360Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
     </meta>
     <status value="final"/>

@@ -4,8 +4,7 @@
     <id value="ValueSet-manner-of-death-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-12-02T02:05:02.201+00:00"/>
-        <source value="#pFVCPVYwkfUU0n46"/>
+        <lastUpdated value="2022-12-02T07:05:02.201Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-manner-of-death-vr"/>
     <version value="0.1.0"/>

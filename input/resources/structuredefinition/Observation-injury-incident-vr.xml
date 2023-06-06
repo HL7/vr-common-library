@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-injury-incident-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-07T01:11:05.468+00:00"/>
-        <source value="#97U8HWFOhs0QXNKe"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-06T02:31:23.521Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
-    <version value="0.1.0"/>
+    <version value="1.1.0-for-comment"/>
     <name value="ObservationInjuryIncidentVitalRecords"/>
     <title value="Observation - Injury Incident Vital Records"/>
     <status value="active"/>
+    <date value="2023-06-01T17:11:42+00:00"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -26,8 +27,39 @@
             <code value="US"/>
             <display value="United States of America"/>
         </coding>
+        <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -59,6 +91,7 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -92,12 +125,13 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <short value="Certifier of the explanation."/>
-            <definition value="Certifier of the explanation."/>
+            <short value="Death certifier"/>
+            <definition value="Death certifier"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"/>
             </type>
             <mustSupport value="true"/>
         </element>

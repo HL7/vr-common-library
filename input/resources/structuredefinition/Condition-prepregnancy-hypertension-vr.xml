@@ -4,8 +4,7 @@
     <id value="Condition-prepregnancy-hypertension-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-06T23:18:38.804+00:00"/>
-        <source value="#jyRrr9Fn0qrWrQTz"/>
+        <lastUpdated value="2023-04-07T03:18:38.804Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
     <version value="1.0.0"/>

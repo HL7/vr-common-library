@@ -4,8 +4,7 @@
     <id value="observation-birth-weight-babyg-quinn-common"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2022-10-12T23:18:58.323+00:00"/>
-        <source value="#zy1lFJ5w7UGQJ0ds"/>
+        <lastUpdated value="2022-10-13T03:18:58.323Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
     </meta>
     <status value="final"/>

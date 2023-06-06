@@ -4,8 +4,7 @@
     <id value="Extension-relatedperson-birthplace-vr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2023-04-06T06:51:42.681+00:00"/>
-        <source value="#wceJ4s9To5hyYDNr"/>
+        <lastUpdated value="2023-04-06T10:51:42.681Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"/>
     <name value="ExtensionRelatedpersonBirthplaceVitalRecords"/>

@@ -4,8 +4,7 @@
     <id value="Observation-none-of-specified-pregnancy-risk-factors-vr"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2023-04-05T06:56:52.989+00:00"/>
-        <source value="#BCX33CPC1Jioqr3q"/>
+        <lastUpdated value="2023-04-05T10:56:52.989Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
     <name value="ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords"/>
