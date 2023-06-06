@@ -867,16 +867,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Patient-child-vr"/>
-                <display value="Patient - Child Vital Records"/>
-            </reference>
-            <name value="Patient - Child Vital Records"/>
-            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Patient/patient-decedent-fetus-not-named-common"/></reference>
             <name value="Patient - Decedent Fetus example [Fetus Not Named]"/>
             <description value="Example of Patient-decedent-fetus-vr (Fetus Not Named)"/>
@@ -920,16 +910,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-mother-vr"/>
-                <display value="Patient - Mother Vital Records"/>
-            </reference>
-            <name value="Patient - Mother Vital Records"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -1339,6 +1319,24 @@
             </reference>
             <name value="ExtensionDatePartAbsentReasonVitalRecords"/>
             <description value="Provides a reason why an expected date part is missing."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-child-vr"/>
+                <display value="PatientChildVitalRecords"/>
+            </reference>
+            <name value="PatientChildVitalRecords"/>
+            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-mother-vr"/>
+                <display value="PatientMotherVitalRecords"/>
+            </reference>
+            <name value="PatientMotherVitalRecords"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T05:57:07.271Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-06T03:14:29.102Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
     <name value="PatientMotherVitalRecords"/>
@@ -34,6 +34,17 @@
     <differential>
         <element id="Patient">
             <path value="Patient"/>
+        </element>
+        <element id="Patient.extension">
+            <path value="Patient.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="2"/>
         </element>
         <element id="Patient.extension:race">
             <path value="Patient.extension"/>
