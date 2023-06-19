@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-autopsy-performed-not-named-common"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-04-19T06:52:10.979Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-13T22:41:03.253Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     </meta>
     <status value="final"/>
@@ -19,11 +19,12 @@
         <reference value="Patient/patient-decedent-fetus-not-named-common"/>
         <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueCodeableConcept>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-            <code value="N"/>
-            <display value="No"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="719828003"/>
+            <display value="Autopsy not done (situation)"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

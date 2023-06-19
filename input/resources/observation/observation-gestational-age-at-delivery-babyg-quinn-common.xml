@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-gestational-age-at-delivery-babyg-quinn-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T03:19:43.716Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-13T22:41:05.706Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
     </meta>
     <status value="final"/>
@@ -19,6 +19,7 @@
         <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueQuantity>
         <value value="36"/>
         <system value="http://unitsofmeasure.org"/>

@@ -3,15 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date-vr"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2023-06-06T02:30:03.286Z"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-19T06:46:42.017Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
-    <version value="1.1.0-for-comment"/>
     <name value="ObservationDeathDateVitalRecords"/>
     <title value="Observation - Death Date Vital Records"/>
     <status value="active"/>
-    <date value="2023-06-01T17:11:42+00:00"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -20,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+    <description value="This Observation profile represents the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

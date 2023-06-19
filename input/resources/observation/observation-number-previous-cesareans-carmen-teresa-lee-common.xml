@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-number-previous-cesareans-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T03:19:28.578Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-13T22:41:10.743Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"/>
     </meta>
     <status value="final"/>
@@ -20,5 +20,6 @@
         <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
         <display value="Patient - Mother (Carmen Teresa Lee)"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueInteger value="1"/>
 </Observation>

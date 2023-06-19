@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-contributing-cause-of-death-part2-vr-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T23:13:43.330Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-13T22:41:04.627Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
     </meta>
     <status value="final"/>
@@ -18,6 +18,7 @@
     <subject>
         <reference value="Patient/us-core-patient-vr-a-freeman"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <performer>
         <reference value="Practitioner/us-core-practitioner-vr-s-jones"/>
     </performer>

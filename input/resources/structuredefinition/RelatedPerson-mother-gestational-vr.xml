@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-mother-gestational-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-13T02:13:35.979Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-19T06:44:29.355Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"/>
     <name value="RelatedPersonMotherGestationalVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
+    <description value="This RelatedPerson profile represents the woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-year-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-04-07T07:19:42.199Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-19T06:46:42.043Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr"/>
     <version value="1.0.0"/>
@@ -23,7 +23,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The year portion (YYYY) of the partial date."/>
+    <description value="This Extension profile represents the year portion (YYYY) of the partial date."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

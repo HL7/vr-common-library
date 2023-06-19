@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tabulated-ethnicity-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-13T02:13:36.031Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-19T07:06:33.449Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
     <name value="ObservationTabulatedEthnicityVitalRecords"/>
     <title value="Observation - Tabulated Ethnicity Vital Records"/>
     <status value="active"/>
-    <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
+    <description value="This Observation profile represents the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -46,19 +46,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.focus">
-            <path value="Observation.focus"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>

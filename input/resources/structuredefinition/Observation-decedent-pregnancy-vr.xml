@@ -3,16 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy-vr"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-06T02:30:21.936Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-19T06:46:41.993Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
-    <version value="1.1.0-for-comment"/>
     <name value="ObservationDecedentPregnancyVitalRecords"/>
     <title value="Observation - Decedent Pregnancy Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2022-08-25"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -21,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation provides an indication of the pregnancy status of the decedent."/>
+    <description value="This Observation profile represents the pregnancy status of the decedent."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

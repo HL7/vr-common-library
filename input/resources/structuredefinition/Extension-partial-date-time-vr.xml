@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-partial-date-time-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-04-19T06:22:17.345Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-19T06:46:42.141Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
     <name value="ExtensionPartialDateTimeVitalRecords"/>
@@ -22,7 +22,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Provides values of a partial dateTime"/>
+    <description value="This Extension profile represents Provides values of a partial dateTime"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

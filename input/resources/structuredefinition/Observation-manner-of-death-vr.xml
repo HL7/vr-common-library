@@ -3,15 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-06T02:31:28.214Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-19T06:46:41.967Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-manner-of-death-vr"/>
-    <version value="1.1.0-for-comment"/>
     <name value="ObservationMannerOfDeathVitalRecords"/>
     <title value="Observation - Manner of Death Vital Records"/>
     <status value="active"/>
-    <date value="2022-08-25"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -20,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
+    <description value="This Observation profile represents the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

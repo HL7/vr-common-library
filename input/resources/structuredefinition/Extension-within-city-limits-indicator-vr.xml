@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:50:38.945Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:28.893Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"/>
     <name value="ExtensionWithinCityLimitsIndicatorVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
+    <description value="This Extension profile is used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

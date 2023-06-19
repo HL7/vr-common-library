@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-birth-weight-not-named-common"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-10-13T03:19:43.716Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-13T22:41:03.966Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
     </meta>
     <status value="final"/>

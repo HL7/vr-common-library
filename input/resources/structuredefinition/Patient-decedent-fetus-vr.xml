@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-05-31T04:18:13.323Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-19T07:24:02.050Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     <name value="PatientDecedentFetusVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="A delivered fetus for which clinical data is included in the report."/>
+    <description value="This Patient profile represents a delivered fetus for which clinical data is included in the report."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -129,10 +129,22 @@
         </element>
         <element id="Patient.multipleBirth[x]">
             <path value="Patient.multipleBirth[x]"/>
-            <short value="If not single delivery, specify born 1st, 2nd, etc."/>
-            <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
+            <short value="If not single delivery- born first, second, third, etc."/>
+            <definition value="If not single delivery, specify delivered 1st, 2nd, etc. – for multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
             <type>
                 <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.multipleBirth[x].extension:multipleBirthTotal">
+            <path value="Patient.multipleBirth[x].extension"/>
+            <sliceName value="multipleBirthTotal"/>
+            <short value="Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-other-pregnancy-outcomes-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:54:35.200Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:29.231Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
     <name value="ObservationNumberOtherPregnancyOutcomesVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
+    <description value="This Observation profile represents the total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

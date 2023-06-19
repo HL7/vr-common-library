@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-none-of-specified-pregnancy-risk-factors-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-05T10:56:52.989Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-19T06:48:29.513Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
     <name value="ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This profile indicates that none of the specified pregnancy risk factors (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."/>
+    <description value="This Observation profile indicates that none of the specified pregnancy risk factors (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

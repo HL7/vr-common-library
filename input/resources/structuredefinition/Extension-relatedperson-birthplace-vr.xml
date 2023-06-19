@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-birthplace-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-06T10:51:42.681Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-19T06:44:28.817Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"/>
     <name value="ExtensionRelatedpersonBirthplaceVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements."/>
+    <description value="This Extension profile represents the registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

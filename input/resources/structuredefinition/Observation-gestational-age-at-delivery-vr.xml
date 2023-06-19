@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-gestational-age-at-delivery-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:52:37.379Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:28.934Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
     <name value="ObservationGestationalAgeAtDeliveryVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
+    <description value="This Observation profile represents the obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

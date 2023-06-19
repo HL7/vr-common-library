@@ -3,15 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1-vr"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2023-06-06T02:29:22.226Z"/>
+        <versionId value="24"/>
+        <lastUpdated value="2023-06-19T06:44:28.793Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
-    <version value="1.1.0-for-comment"/>
     <name value="ObservationCauseOfDeathPart1VitalRecords"/>
     <title value="Observation - Cause of Death Part 1 Vital Records"/>
     <status value="active"/>
-    <date value="2022-02-27T13:48:44+00:00"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -20,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+    <description value="This Observation profile represents the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-delivery-weight-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:53:03.145Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:29.033Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"/>
     <name value="ObservationMotherDeliveryWeightVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The weight of the mother at the time of birth/delivery."/>
+    <description value="This Observation profile represents the weight of the mother at the time of birth/delivery."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

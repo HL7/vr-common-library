@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-parent-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-06T04:04:38.195Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-19T06:46:41.856Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"/>
     <name value="RelatedPersonParentVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
+    <description value="This RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

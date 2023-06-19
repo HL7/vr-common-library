@@ -3,15 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-contributing-cause-of-death-part2-vr"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-06-06T02:27:39.767Z"/>
+        <versionId value="18"/>
+        <lastUpdated value="2023-06-19T06:48:29.405Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
-    <version value="1.1.0-for-comment"/>
     <name value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
     <title value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
     <status value="active"/>
-    <date value="2023-06-01T17:11:42+00:00"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -20,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+    <description value="This Observation profile represents represents factors contributing to the cause of death as asserted by the death certifier."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

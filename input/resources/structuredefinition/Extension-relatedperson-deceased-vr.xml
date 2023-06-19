@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-deceased-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-06T10:51:28.394Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-19T06:44:28.872Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-deceased-vr"/>
     <name value="ExtensionRelatedPersonDeceasedVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The deceased indicator for a RelatedPerson. Deceased date/time is preferred."/>
+    <description value="This Extension profile represents the deceased indicator for a RelatedPerson. Deceased date/time is preferred."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

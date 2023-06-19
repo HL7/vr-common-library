@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-apgar-score-babyg-quinn-5-min-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T03:18:05.366Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-13T22:41:01.836Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     </meta>
     <status value="final"/>
@@ -20,5 +20,6 @@
         <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueInteger value="7"/>
 </Observation>

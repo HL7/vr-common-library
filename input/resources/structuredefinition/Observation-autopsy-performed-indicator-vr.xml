@@ -3,15 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator-vr"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2023-06-06T02:29:42.971Z"/>
+        <versionId value="22"/>
+        <lastUpdated value="2023-06-19T06:46:41.887Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-    <version value="1.1.0-for-comment"/>
+    <version value="1.1.0"/>
     <name value="ObservationAutopsyPerformedIndicatorVitalRecords"/>
     <title value="Observation - Autopsy Performed Indicator Vital Records"/>
     <status value="active"/>
-    <date value="2022-08-02T13:21:04+00:00"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -20,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
+    <description value="This Observation profile represents if an autopsy was performed, if autopsy findings are available, and the autopsy performer (US Core Practioner)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -71,10 +70,11 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <short value="Autopsy was performed"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="73768-4"/>
+                    <code value="85699-7"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
@@ -144,6 +144,7 @@
         </element>
         <element id="Observation.component:autopsyResultsAvailable.code">
             <path value="Observation.component.code"/>
+            <short value="Autopsy results available"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>

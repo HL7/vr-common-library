@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-prenatal-visits-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:54:42.976Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:29.257Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"/>
     <name value="ObservationNumberPrenatalVisitsVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."/>
+    <description value="This Observation profile represents the total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

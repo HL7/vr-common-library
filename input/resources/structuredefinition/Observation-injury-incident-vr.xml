@@ -3,15 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-injury-incident-vr"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-06T02:31:23.521Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-19T06:46:41.915Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
-    <version value="1.1.0-for-comment"/>
     <name value="ObservationInjuryIncidentVitalRecords"/>
     <title value="Observation - Injury Incident Vital Records"/>
     <status value="active"/>
-    <date value="2023-06-01T17:11:42+00:00"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -20,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
+    <description value="This Observation profile represents the certified explanation of how the injury leading to death occurred."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

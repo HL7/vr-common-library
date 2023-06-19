@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-infant-living-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:52:46.359Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:28.970Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
     <name value="ObservationInfantLivingVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="An indication of whether the infant is living at the time the report is being submitted."/>
+    <description value="This Observation profile represents whether the infant is living at the time the report is being submitted."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

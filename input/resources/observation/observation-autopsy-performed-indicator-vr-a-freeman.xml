@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-autopsy-performed-indicator-vr-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T23:13:43.360Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-13T22:41:02.548Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     </meta>
     <status value="final"/>
@@ -12,16 +12,18 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="85699-7"/>
+            <display value="Autopsy was performed"/>
         </coding>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-vr-a-freeman"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueCodeableConcept>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-            <code value="Y"/>
-            <display value="Yes"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="716347009"/>
+            <display value="Autopsy performed (situation)"/>
         </coding>
     </valueCodeableConcept>
     <component>
@@ -29,6 +31,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="69436-4"/>
+                <display value="Autopsy results available"/>
             </coding>
         </code>
         <valueCodeableConcept>

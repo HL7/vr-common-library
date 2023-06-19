@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-vr-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-05-24T04:06:07.946Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-13T22:41:04.992Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
     </meta>
     <status value="final"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-birth-weight-babyg-quinn-common"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-10-13T03:18:58.323Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-13T22:41:03.581Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
     </meta>
     <status value="final"/>
@@ -25,7 +25,7 @@
         <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
-    <effectiveDateTime value="2019-01-10"/>
+    <effectiveDateTime value="2019-12-02"/>
     <valueQuantity>
         <value value="2500"/>
         <system value="http://unitsofmeasure.org"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child-vr"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2023-06-06T03:12:52.041Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-19T07:23:49.716Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
     <name value="PatientChildVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
+    <description value="This Patient profile represents the subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -193,8 +193,8 @@
         </element>
         <element id="Patient.multipleBirth[x]">
             <path value="Patient.multipleBirth[x]"/>
-            <short value="If not single birth - born first, second, third, etc."/>
-            <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
+            <short value="If not single delivery- born first, second, third, etc."/>
+            <definition value="If not single delivery, specify delivered 1st, 2nd, etc. – for multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
             <type>
                 <code value="integer"/>
             </type>
@@ -203,7 +203,8 @@
         <element id="Patient.multipleBirth[x].extension:multipleBirthTotal">
             <path value="Patient.multipleBirth[x].extension"/>
             <sliceName value="multipleBirthTotal"/>
-            <short value="Where a patient is a part of a multiple birth, this is the total number of births that occurred in this pregnancy."/>
+            <short value="Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy."/>
+            <definition value="Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy."/>
             <min value="0"/>
             <max value="1"/>
             <type>

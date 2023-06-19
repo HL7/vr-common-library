@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-previous-cesareans-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T05:54:49.974Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:44:29.176Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"/>
     <name value="ObservationNumberPreviousCesareansVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The total number of prior cesarean deliveries for the mother."/>
+    <description value="This Observation profile represents the total number of prior cesarean deliveries for the mother."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

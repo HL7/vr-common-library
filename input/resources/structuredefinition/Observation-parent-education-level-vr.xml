@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T05:54:57.349Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-19T07:01:26.115Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
     <name value="ObservationParentEducationLevelVitalRecords"/>
@@ -17,7 +17,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The highest degree or level of schooling completed by the parent."/>
+    <description value="This Observation profile represents the highest degree or level of schooling completed by the parent."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38,6 +38,7 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <short value="Persons for whom education level can be reported."/>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
                 <description value="EducationLevelPerson"/>
@@ -50,20 +51,10 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
-            </type>
-        </element>
-        <element id="Observation.focus">
-            <path value="Observation.focus"/>
-            <short value="The RelatedPerson record for the parent"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -72,6 +63,7 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
                 <description value="Vital Records Education Level (NCHS)"/>

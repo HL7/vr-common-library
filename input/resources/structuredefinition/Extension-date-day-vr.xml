@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-day-vr"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-04-19T06:22:17.347Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-19T06:46:42.071Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr"/>
     <name value="ExtensionDateDayVitalRecords"/>
@@ -22,7 +22,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The day portion (DD) of the partial date."/>
+    <description value="This Extension profile represents the day portion (DD) of the partial date."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

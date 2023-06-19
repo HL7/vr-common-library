@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-infant-living-babyg-quinn-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T03:18:58.320Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-13T22:41:06.365Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
     </meta>
     <status value="final"/>
@@ -19,5 +19,6 @@
         <reference value="Patient/patient-child-babyg-quinn-common"/>
         <display value="BabyG Quinn"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueBoolean value="true"/>
 </Observation>

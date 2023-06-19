@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-injury-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-19T06:22:17.345Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-19T06:48:29.383Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
     <name value="LocationInjuryVitalRecords"/>
@@ -23,7 +23,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+    <description value="This Location profile records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

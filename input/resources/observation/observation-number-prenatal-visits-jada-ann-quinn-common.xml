@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-number-prenatal-visits-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-10-13T03:19:28.578Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-13T22:41:10.321Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"/>
     </meta>
     <status value="final"/>
@@ -24,5 +24,6 @@
         <reference value="Patient/patient-mother-jada-ann-quinn-common"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
     </focus>
+    <effectiveDateTime value="2019-12-02"/>
     <valueInteger value="8"/>
 </Observation>

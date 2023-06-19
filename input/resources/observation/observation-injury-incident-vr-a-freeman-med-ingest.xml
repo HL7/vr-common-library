@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-injury-incident-vr-a-freeman-med-ingest"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-05-24T04:19:40.854Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-13T22:41:06.699Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
     </meta>
     <status value="final"/>

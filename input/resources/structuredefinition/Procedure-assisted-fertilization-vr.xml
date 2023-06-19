@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Procedure-assissted-fertilization-vr"/>
+    <id value="Procedure-assisted-fertilization-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-19T06:09:32.125Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-13T21:54:42.905Z"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assissted-fertilization-vr"/>
-    <name value="ProcedureAssisstedFertilizationVitalRecords"/>
-    <title value="Procedure - Assissted Fertilization Vital Records"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
+    <name value="ProcedureAssistedFertilizationVitalRecords"/>
+    <title value="Procedure - Assisted Fertilization Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
