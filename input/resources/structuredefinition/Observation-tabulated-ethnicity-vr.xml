@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tabulated-ethnicity-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-06-19T07:06:33.449Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-19T09:18:25.623Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
     <name value="ObservationTabulatedEthnicityVitalRecords"/>
@@ -47,6 +47,15 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>

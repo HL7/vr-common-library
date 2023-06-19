@@ -1,3 +1,5 @@
+When the Observation is about the father, set the subject to the child and the focus to the father (RelatedPerson).
+
 This concept is mapped to:
 * Item **20. Mother's Education** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*
 * Item **23. Father's Education** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*

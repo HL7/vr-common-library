@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-tabulated-ethnicity-jada-ann-quinn-common"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-13T22:41:17.094Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-19T09:28:15.222Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
     </meta>
     <status value="final"/>
@@ -17,13 +17,9 @@
         <text value="Tabulated ethnicity [CDC]"/>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn-common"/>
-        <display value="BabyG Quinn"/>
-    </subject>
-    <focus>
         <reference value="Patient/patient-mother-jada-ann-quinn-common"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
-    </focus>
+    </subject>
     <effectiveDateTime value="2019-12-02"/>
     <valueCodeableConcept>
         <coding>

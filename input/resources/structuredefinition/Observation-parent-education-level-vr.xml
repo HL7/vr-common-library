@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-19T07:01:26.115Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-19T09:11:48.477Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
     <name value="ObservationParentEducationLevelVitalRecords"/>
@@ -52,7 +52,16 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

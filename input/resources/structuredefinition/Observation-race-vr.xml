@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-race-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-19T06:44:29.377Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-19T09:17:33.081Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
     <name value="ObservationRaceVitalRecords"/>
@@ -47,7 +47,15 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>
