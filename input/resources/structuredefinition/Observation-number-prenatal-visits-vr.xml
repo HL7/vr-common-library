@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-prenatal-visits-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:29.257Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-19T09:38:11.277Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"/>
     <name value="ObservationNumberPrenatalVisitsVitalRecords"/>
@@ -57,7 +57,7 @@
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
             <type>
-                <code value="Period"/>
+                <code value="dateTime"/>
             </type>
             <mustSupport value="true"/>
         </element>

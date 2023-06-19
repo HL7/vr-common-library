@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-nbr-live-births-delivery-carmen-teresa-lee-common"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-06-13T22:41:08.704Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T09:36:53.693Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
     </meta>
     <status value="final"/>
@@ -16,9 +16,13 @@
         </coding>
     </code>
     <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named-common"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+    <focus>
         <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
         <display value="Patient - Mother (Carmen Teresa Lee)"/>
-    </subject>
+    </focus>
     <effectiveDateTime value="2019-12-02"/>
     <valueInteger value="0"/>
 </Observation>

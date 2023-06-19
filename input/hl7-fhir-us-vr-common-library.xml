@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="313"/>
-        <lastUpdated value="2023-06-19T08:23:00.020Z"/>
+        <versionId value="314"/>
+        <lastUpdated value="2023-06-19T09:41:54.431Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -1052,15 +1052,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
             <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-autopsy-histological-exam-results-used-not-named"/></reference>
-            <name value="Observation - Autopsy Performed Indicator Vital Reocrds - Not Named"/>
-            <description value="Example of Observation - Autopsy Performed Indicator Vital Reocrds - Not Named"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-            <groupingId value="observations-death-reporting"/>
         </resource>
         <resource>
             <reference>
