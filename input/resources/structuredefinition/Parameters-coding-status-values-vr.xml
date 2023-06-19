@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Parameters-coding-status-values-vr"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Parameters-coding-status-values-vr"/>
+    <name value="ParametersCodingStatusValuesVitalRecords"/>
+    <title value="Parameters - Coding Status Values Vital Records"/>
+    <status value="active"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Parameters"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Parameters">
+            <path value="Parameters"/>
+        </element>
+        <element id="Parameters.parameter">
+            <path value="Parameters.parameter"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="name"/>
+                </discriminator>
+                <description value="Slicing based on the profile conformance of the sliced element"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Parameters.parameter:shipmentNumber">
+            <path value="Parameters.parameter"/>
+            <sliceName value="shipmentNumber"/>
+            <short value="shipment number"/>
+            <definition value="shipment number"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Parameters.parameter:shipmentNumber.extension">
+            <path value="Parameters.parameter.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:shipmentNumber.name">
+            <path value="Parameters.parameter.name"/>
+            <patternString value="shipmentNumber"/>
+        </element>
+        <element id="Parameters.parameter:shipmentNumber.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Parameters.parameter:shipmentNumber.resource">
+            <path value="Parameters.parameter.resource"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:shipmentNumber.part">
+            <path value="Parameters.parameter.part"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:receiptDate">
+            <path value="Parameters.parameter"/>
+            <sliceName value="receiptDate"/>
+            <short value="receipt date"/>
+            <definition value="receipt date"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Parameters.parameter:receiptDate.extension">
+            <path value="Parameters.parameter.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:receiptDate.name">
+            <path value="Parameters.parameter.name"/>
+            <patternString value="receiptDate"/>
+        </element>
+        <element id="Parameters.parameter:receiptDate.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="date"/>
+            </type>
+        </element>
+        <element id="Parameters.parameter:receiptDate.value[x].extension">
+            <path value="Parameters.parameter.value[x].extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Parameters.parameter:receiptDate.value[x].extension:partialDate">
+            <path value="Parameters.parameter.value[x].extension"/>
+            <sliceName value="partialDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-vr"/>
+            </type>
+        </element>
+        <element id="Parameters.parameter:receiptDate.resource">
+            <path value="Parameters.parameter.resource"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:receiptDate.part">
+            <path value="Parameters.parameter.part"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:coderStatus">
+            <path value="Parameters.parameter"/>
+            <sliceName value="coderStatus"/>
+            <short value="coder status"/>
+            <definition value="coder status"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Parameters.parameter:coderStatus.extension">
+            <path value="Parameters.parameter.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:coderStatus.name">
+            <path value="Parameters.parameter.name"/>
+            <patternString value="coderStatus"/>
+        </element>
+        <element id="Parameters.parameter:coderStatus.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="integer"/>
+            </type>
+        </element>
+        <element id="Parameters.parameter:coderStatus.resource">
+            <path value="Parameters.parameter.resource"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:coderStatus.part">
+            <path value="Parameters.parameter.part"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:intentionalReject">
+            <path value="Parameters.parameter"/>
+            <sliceName value="intentionalReject"/>
+            <short value="Intentional reject"/>
+            <definition value="Intentional reject"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Parameters.parameter:intentionalReject.extension">
+            <path value="Parameters.parameter.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:intentionalReject.name">
+            <path value="Parameters.parameter.name"/>
+            <patternString value="intentionalReject"/>
+        </element>
+        <element id="Parameters.parameter:intentionalReject.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-intentional-reject-vr"/>
+            </binding>
+        </element>
+        <element id="Parameters.parameter:intentionalReject.resource">
+            <path value="Parameters.parameter.resource"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:intentionalReject.part">
+            <path value="Parameters.parameter.part"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:acmeSystemReject">
+            <path value="Parameters.parameter"/>
+            <sliceName value="acmeSystemReject"/>
+            <short value="ACME System Reject"/>
+            <definition value="ACME System Reject"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Parameters.parameter:acmeSystemReject.extension">
+            <path value="Parameters.parameter.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:acmeSystemReject.name">
+            <path value="Parameters.parameter.name"/>
+            <patternString value="acmeSystemReject"/>
+        </element>
+        <element id="Parameters.parameter:acmeSystemReject.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-system-reject-vr"/>
+            </binding>
+        </element>
+        <element id="Parameters.parameter:acmeSystemReject.resource">
+            <path value="Parameters.parameter.resource"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:acmeSystemReject.part">
+            <path value="Parameters.parameter.part"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:transaxConversion">
+            <path value="Parameters.parameter"/>
+            <sliceName value="transaxConversion"/>
+            <short value="ALIAS: Transax Conversion"/>
+            <definition value="Transax Conversion"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Parameters.parameter:transaxConversion.extension">
+            <path value="Parameters.parameter.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:transaxConversion.name">
+            <path value="Parameters.parameter.name"/>
+            <patternString value="transaxConversion"/>
+        </element>
+        <element id="Parameters.parameter:transaxConversion.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-transax-conversion-vr"/>
+            </binding>
+        </element>
+        <element id="Parameters.parameter:transaxConversion.resource">
+            <path value="Parameters.parameter.resource"/>
+            <max value="0"/>
+        </element>
+        <element id="Parameters.parameter:transaxConversion.part">
+            <path value="Parameters.parameter.part"/>
+            <max value="0"/>
+        </element>
+    </differential>
+</StructureDefinition>

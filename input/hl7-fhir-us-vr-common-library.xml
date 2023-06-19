@@ -1338,6 +1338,24 @@
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
             <groupingId value="pregnancy-risk-factor-examples"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Parameters-coding-status-values-vr"/>
+                <display value="Parameters - Coding Status Values Vital Records"/>
+            </reference>
+            <name value="Parameters - Coding Status Values Vital Records"/>
+            <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-partial-date-vr"/>
+                <display value="Extension - Partial Date Vital Records"/>
+            </reference>
+            <name value="Extension - Partial Date Vital Records"/>
+            <description value="This Extension profile represents values of a partial date."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
