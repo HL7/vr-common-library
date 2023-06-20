@@ -1,7 +1,13 @@
 While IG is in development see the [Change Log GoogleSheet](https://docs.google.com/spreadsheets/d/1d9ZIi43R4MS4qXf14u19P3SwZ1ThkPaU-K-Hoo139Ys/edit?usp=sharing) for a list of the latest changes (this page will be moved inside the IG prior to publication).
 
-### Profiles Added to the Library - **2023 (DRAFT)**
-**Profiles used by both VRDR and MDI IGs**
+### Resources Added to this Library for STU 1.1, July 2023
+#### New Narrative Guidance
+Two new narrative pages were added: The Specification and Change Log.
+
+#### Resources for Death Reporting
+Resources were added to this Library to support future versions of the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/) and the [Medicolegal Death Investigation (MDI) FHIR IG](http://hl7.org/fhir/us/mdi/).
+
+**Profiles Used by Both VRDR and MDI IGs**
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -17,7 +23,7 @@ While IG is in development see the [Change Log GoogleSheet](https://docs.google.
 | Injury Location (USCoreLocation)     | Location - Injury     | Location - Injury Vital Records     |
 | Death Certification Procedure     | Procedure - Death Certification     | Procedure - Death Certification Vital Records     |
 
-### Extensions Added to the Library - **2023 (DRAFT)**
+### Extensions Added to the Library
 **Extensions used by both VRDR and MDI IGs**
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
@@ -28,7 +34,7 @@ While IG is in development see the [Change Log GoogleSheet](https://docs.google.
 | Date Year     | Extension - Date Year     | Extension - Date Year Vital Records     |
 | Partial Date Time     | Extension - Partial DateTime     | Extension - Partial DateTime Vital Records     |
 
-### Code Systems Added to the Library - **2023 (DRAFT)**
+### Code Systems Added to the Library
 **Code Systems used by both VRDR and MDI IGs**
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
@@ -36,7 +42,7 @@ While IG is in development see the [Change Log GoogleSheet](https://docs.google.
 | Local Component Codes     | CodeSystem - Local Component Codes     | CodeSystem - Local Components Codes Vital Records     |
 | Pregnancy Status Codes     | CodeSystem - Death Pregnancy Status     | CodeSystem - Death Pregnancy Status Vital Records     |
 
-### Value Sets Added to the Library - **2023 (DRAFT)**
+### Value Sets Added to the Library
 **Value Sets used by both VRDR and MDI IGs**
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
@@ -52,9 +58,3 @@ While IG is in development see the [Change Log GoogleSheet](https://docs.google.
 | Units of Age     | ValueSet - Units of Age     | ValueSet - Units of Age Vital Records     |
 | Yes No Unknown     | ValueSet - Yes No Unknown     | ValueSet - Yes No Unknown Vital Records     |
 | Yes No Unknown NotApplicable     | ValueSet - Yes No Unknown NotApplicable     | ValueSet - Yes No Unknown NotApplicable Vital Records     |
-
-### Vital Records Common Profile Library - **STU1, published 2021-10-12**
-
-| Column 1 | Column 2 | Column 3 |
-| -------- | -------- | -------- |
-| Text     | Text     | Text     |

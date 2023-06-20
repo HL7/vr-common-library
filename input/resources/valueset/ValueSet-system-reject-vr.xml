@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-system-reject-vr"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-06-20T21:29:04.783Z"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-system-reject-vr"/>
+    <name value="ValueSetSystemRejectVitalRecords"/>
+    <title value="ValueSet - System Reject Vital Records"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="This ValueSet contains codes representing system rejects."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-system-reject-vr"/>
+            <concept>
+                <code value="0"/>
+                <display value="Not Rejected"/>
+            </concept>
+            <concept>
+                <code value="1"/>
+                <display value="MICAR Reject Dictionary Match"/>
+            </concept>
+            <concept>
+                <code value="2"/>
+                <display value="ACME Reject"/>
+            </concept>
+            <concept>
+                <code value="3"/>
+                <display value="MICAR Reject Rule Application"/>
+            </concept>
+            <concept>
+                <code value="4"/>
+                <display value="Record Reviewed"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

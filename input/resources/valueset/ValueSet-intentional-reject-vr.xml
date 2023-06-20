@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-intentional-reject-vr"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-06-20T21:15:38.420Z"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/vrdr-intentional-reject-vs"/>
+    <name value="ValueSetIntentionalRejectVR"/>
+    <title value="ValueSet - Intentional Reject Vital Records"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="This ValueSet contains codes representing intentional rejects."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-intentional-reject-vs"/>
+            <concept>
+                <code value="1"/>
+                <display value="Reject1"/>
+            </concept>
+            <concept>
+                <code value="2"/>
+                <display value="Reject2"/>
+            </concept>
+            <concept>
+                <code value="3"/>
+                <display value="Reject3"/>
+            </concept>
+            <concept>
+                <code value="4"/>
+                <display value="Reject4"/>
+            </concept>
+            <concept>
+                <code value="5"/>
+                <display value="Reject5"/>
+            </concept>
+            <concept>
+                <code value="9"/>
+                <display value="Reject9"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

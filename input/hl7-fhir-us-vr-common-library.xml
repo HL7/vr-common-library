@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="316"/>
-        <lastUpdated value="2023-06-20T04:24:10.566Z"/>
+        <versionId value="324"/>
+        <lastUpdated value="2023-06-20T20:49:24.822Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.&#xA;&#xA;This guide is a FHIR Resources (FHIR) Library to support the needs of multiple Vital Records Implementation Guides. It does not provide any use case or scenario specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific implementation guides focusing on the exchange of Vital Records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.&#xA;&#xA;### Background&#xA;After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](http://hl7.org/fhir/us/vrdr/)).&#xA;&#xA;To avoid defining the same profiles multiple times, this IG contains a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).&#xA;&#xA;### How to Read This Guide&#xA;This Guide is divided into several pages which are listed at the top of each page in the menu bar.&#xA;&#xA;* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.&#xA;* Terminology: This page provides a listing of the value sets used in this guide.&#xA;* Downloads: This page provides links to downloadable artifacts.&#xA;* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide."/>
+    <description value="This guide is a FHIR Resources Library to support the needs of multiple vital records implementation guides (IGs). It does not provide any use case (scenario) specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific IGs focusing on the exchange of vital records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.&#xA;&#xA;### Background&#xA;Two FHIR IG projects, [Birth Defects](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&amp;ProjectNumber=1532) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), share many common data elements or concepts. The initial scope of this Vital Records Common Profiles Library included data elements common to these two FHIR projects in a US Realm framework. The current update adds data elements shared by another vital records FHIR IG, [Vital Records Death Reporting (VRDR)](http://hl7.org/fhir/us/vrdr/), and the [Medicolegal Death Investigation (MDI)](http://hl7.org/fhir/us/mdi/).&#xA;&#xA;A FHIR common profiles library avoids defining the same data element multiple times across IGs, instead allowing them to be referenced by each IG. This profile library will provide a standard framework for vital records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).&#xA;&#xA;### How to Read This Guide&#xA;This Guide is divided into several pages which are listed at the top of each page in the menu bar.&#xA;&#xA;* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.&#xA;* Terminology: This page provides a listing of the value sets used in this guide.&#xA;* Downloads: This page provides links to downloadable artifacts.&#xA;* Change Log: This page provides details of changes made in each version of this IG.&#xA;* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1383,10 +1383,69 @@
             <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-intentional-reject-vr"/>
+                <display value="CodeSystem - Intentional Reject"/>
+            </reference>
+            <name value="CodeSystem - Intentional Reject"/>
+            <description value="This CodeSystem condtains values representing intentional rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-intentional-reject-vr"/>
+                <display value="ValueSet - Intentional Reject Vital Records"/>
+            </reference>
+            <name value="ValueSet - Intentional Reject Vital Records"/>
+            <description value="This ValueSet contains codes representing intentional rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-system-reject-vr"/>
+                <display value="CodeSystem - System Reject Vital Records"/>
+            </reference>
+            <name value="CodeSystem - System Reject Vital Records"/>
+            <description value="This CodeSystem contains code representing system rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-system-reject-vr"/>
+                <display value="ValueSet - System Reject Vital Records"/>
+            </reference>
+            <name value="ValueSet - System Reject Vital Records"/>
+            <description value="This ValueSet contains codes representing system rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-transax-conversion-vr"/>
+                <display value="CodeSystem - Transax Conversion Vital Records"/>
+            </reference>
+            <name value="CodeSystem - Transax Conversion Vital Records"/>
+            <description value="This CodeSystem contains codes representing transax conversions."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-transax-conversion-vr"/>
+                <display value="ValueSet - Transax Conversion Vital Records"/>
+            </reference>
+            <name value="ValueSet - Transax Conversion Vital Records"/>
+            <description value="This ValueSet contains codes representing transax conversions."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
+            <page>
+                <nameUrl value="the_specification.html"/>
+                <title value="The Specification"/>
+                <generation value="markdown"/>
+            </page>
             <page>
                 <nameUrl value="terminology.html"/>
                 <title value="Terminology"/>

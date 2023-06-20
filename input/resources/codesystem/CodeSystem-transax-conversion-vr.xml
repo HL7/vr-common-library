@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="CodeSystem-transax-conversion-vr"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-06-20T21:32:16.140Z"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-transax-conversion-vr"/>
+    <name value="CodeSystemTransaxConversionVitalRecords"/>
+    <title value="CodeSystem - Transax Conversion Vital Records"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="This CodeSystem contains codes representing transax conversions."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <count value="4"/>
+    <concept>
+        <code value="3"/>
+        <display value="Conversion using non-ambivalent table entries"/>
+        <definition value="Conversion using non-ambivalent table entries"/>
+    </concept>
+    <concept>
+        <code value="4"/>
+        <display value="Conversion using ambivalent table entries"/>
+        <definition value="Conversion using ambivalent table entries"/>
+    </concept>
+    <concept>
+        <code value="5"/>
+        <display value="Duplicate entity-axis codes deleted; no other action involved"/>
+        <definition value="Duplicate entity-axis codes deleted; no other action involved"/>
+    </concept>
+    <concept>
+        <code value="6"/>
+        <display value="Artificial code conversion; no other action"/>
+        <definition value="Artificial code conversion; no other action"/>
+    </concept>
+</CodeSystem>
