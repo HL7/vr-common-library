@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-certifier-types-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-09T08:15:56.834Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:15:54.240Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr"/>
     <version value="0.1"/>
-    <name value="ValueSetCertifierTypes"/>
+    <name value="ValueSetCertifierTypesVitalRecords"/>
     <title value="ValueSet - Certifier Types Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>

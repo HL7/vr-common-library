@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-contributory-tobacco-use-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-05-24T04:38:28.220Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:14:23.303Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-contributory-tobacco-use-vr"/>
-    <name value="ValueSetContributoryTobaccoUseVR"/>
+    <name value="ValueSetContributoryTobaccoUseVitalRecords"/>
     <title value="ValueSet - Contributory Tobacco Use - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
