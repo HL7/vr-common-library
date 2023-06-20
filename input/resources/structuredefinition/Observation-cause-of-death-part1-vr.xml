@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1-vr"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2023-06-19T06:44:28.793Z"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-06-20T22:31:49.519Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
     <name value="ObservationCauseOfDeathPart1VitalRecords"/>
-    <title value="Observation - Cause of Death Part 1 Vital Records"/>
+    <title value="Observation - Cause of Death Part 1 - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

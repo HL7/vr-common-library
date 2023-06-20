@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-day-vr"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2023-06-19T06:46:42.071Z"/>
+        <versionId value="17"/>
+        <lastUpdated value="2023-06-20T22:28:57.798Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr"/>
     <name value="ExtensionDateDayVitalRecords"/>
-    <title value="Extension - Date Day Vital Records"/>
+    <title value="Extension - Date Day - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>

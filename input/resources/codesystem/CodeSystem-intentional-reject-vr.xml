@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-intentional-reject-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-20T20:59:48.011Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-20T22:58:00.396Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-intentional-reject-vr"/>
     <name value="CodeSystemIntentionalRejectVitalRecords"/>
@@ -23,7 +23,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This CodeSystem condtains values representing intentional rejects."/>
+    <description value="This CodeSystem contains values representing intentional rejects."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

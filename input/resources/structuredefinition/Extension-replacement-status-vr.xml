@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-replacement-status-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-20T04:39:39.645Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:31:42.602Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-replacement-status-vr"/>
     <name value="ExtensionReplacementStatusVitalRecords"/>
-    <title value="Extension - Replacement Status Vital Records"/>
+    <title value="Extension - Replacement Status - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

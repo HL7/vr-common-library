@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-manner-of-death-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T07:05:02.201Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:56:01.569Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-manner-of-death-vr"/>
     <version value="0.1.0"/>
     <name value="ValueSetMannerOfDeathVitalRecords"/>
-    <title value="ValueSet - Manner of Death Vital Records"/>
+    <title value="ValueSet - Manner of Death - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-03-02T06:38:15+00:00"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="A set of codes to reflect the manner that a person died."/>
+    <description value="This ValueSet contains codes to represent the manner in which a person died."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

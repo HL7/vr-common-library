@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-local-component-codes-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-07T05:23:38.159Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:58:00.754Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-component-codes-vr"/>
     <version value="1.9.0"/>
@@ -24,7 +24,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Local Component Codes for observation components that lack an appropriate LOINC code."/>
+    <description value="This CodeSystem contains codes that represent local component codes for observation components that lack an appropriate LOINC code."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

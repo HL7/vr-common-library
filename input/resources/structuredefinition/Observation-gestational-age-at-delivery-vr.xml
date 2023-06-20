@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-gestational-age-at-delivery-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:28.934Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:31:53.423Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
     <name value="ObservationGestationalAgeAtDeliveryVitalRecords"/>
-    <title value="Observation - Gestational Age at Delivery Vital Records"/>
+    <title value="Observation - Gestational Age at Delivery - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

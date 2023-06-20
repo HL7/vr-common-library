@@ -3,13 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father-natural-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-19T06:46:41.799Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:40:25.719Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
     <name value="RelatedPersonFatherNaturalVitalRecords"/>
-    <title value="RelatedPerson - Father Natural Vital Records"/>
+    <title value="RelatedPerson - Father Natural - Vital Records"/>
     <status value="active"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="This RelatedPerson profile represents the biological (natural) father of the newborn or fetus."/>
     <jurisdiction>
         <coding>

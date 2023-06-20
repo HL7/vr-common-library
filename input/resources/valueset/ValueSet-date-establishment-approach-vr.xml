@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-date-establishment-approach-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-05-24T03:45:54.349Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:55:59.587Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-establishment-approach-vr"/>
     <name value="ValueSetDateEstablishmentApproachVitalRecords"/>
-    <title value="ValueSet - Date Establishment Approach Vital Records"/>
+    <title value="ValueSet - Date Establishment Approach - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains codes that describe the approach to establishing a date."/>
+    <description value="This ValueSet contains codes that describe the approach to establishing a date."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>

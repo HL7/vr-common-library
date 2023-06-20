@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-parent-education-level-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-19T09:11:48.477Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-20T22:37:35.779Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
     <name value="ObservationParentEducationLevelVitalRecords"/>
-    <title value="Observation - Parent Education Level Vital Records"/>
+    <title value="Observation - Parent Education Level - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

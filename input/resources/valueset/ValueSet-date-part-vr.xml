@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-date-part-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T06:43:23.609Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:55:59.910Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-date-part-vr"/>
     <name value="ValueSetDatePartVitalRecords"/>
-    <title value="ValueSet - Date Part Vital Records"/>
+    <title value="ValueSet - Date Part - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains codes that represent the parts of a date"/>
+    <description value="This ValueSet contains codes that represent the parts of a date"/>
     <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>

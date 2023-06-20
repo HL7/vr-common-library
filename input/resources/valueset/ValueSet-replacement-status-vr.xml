@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-replacement-status-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-20T04:21:08.187Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:56:02.557Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-replacement-status-vr"/>
     <name value="ValueSetReplacementStatusVitalRecords"/>
-    <title value="ValueSet - Replacement Status Vital Records"/>
+    <title value="ValueSet - Replacement Status - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

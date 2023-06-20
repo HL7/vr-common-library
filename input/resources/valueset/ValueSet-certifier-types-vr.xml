@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-certifier-types-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-20T22:15:54.240Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-20T22:55:58.927Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr"/>
     <version value="0.1"/>
     <name value="ValueSetCertifierTypesVitalRecords"/>
-    <title value="ValueSet - Certifier Types Vital Records"/>
+    <title value="ValueSet - Certifier Types - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-08-02T13:21:04+00:00"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
+    <description value="This ValueSet contains codes to represent the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-within-city-limits-indicator-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:28.893Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:31:43.591Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"/>
     <name value="ExtensionWithinCityLimitsIndicatorVitalRecords"/>
-    <title value="Extension - Within City Limits Indicator Vital Records"/>
+    <title value="Extension - Within City Limits Indicator - Vital Records"/>
     <status value="draft"/>
     <contact>
         <name value="HL7 International - Public Health"/>

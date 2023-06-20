@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-partial-date-time-vr"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-19T06:46:42.141Z"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-06-20T22:31:37.647Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
     <name value="ExtensionPartialDateTimeVitalRecords"/>
-    <title value="Extension - Partial DateTime Vital Records"/>
+    <title value="Extension - Partial DateTime - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>

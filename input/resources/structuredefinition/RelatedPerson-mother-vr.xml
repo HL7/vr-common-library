@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-mother-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-06-19T06:44:29.499Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:40:34.817Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"/>
     <name value="RelatedPersonMotherVitalRecords"/>
-    <title value="RelatedPerson - Mother Vital Records"/>
+    <title value="RelatedPerson - Mother - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

@@ -122,17 +122,17 @@
                 <display value="CodeSystem - Death Pregnancy Status Vital Records"/>
             </reference>
             <name value="CodeSystem - Death Pregnancy Status Vital Records"/>
-            <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
+            <description value="This CodeSystem contains codes that represent whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
             <exampleBoolean value="false"/>
             <groupingId value="codesystems-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="CodeSystem/CodeSystem-death-reporting-codes-vr"/>
-                <display value="CodeSystem - MDI"/>
+                <display value="CodeSystem - Death Reporting Codes Vital Records"/>
             </reference>
             <name value="CodeSystem - Death Reporting Codes Vital Records"/>
-            <description value="This code system contains codes for use in death investigations and reporting."/>
+            <description value="This CodeSystem contains codes for use in death investigations and reporting."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -141,16 +141,16 @@
                 <display value="CodeSystem - Local Components Codes Vital Records"/>
             </reference>
             <name value="CodeSystem - Local Components Codes Vital Records"/>
-            <description value="Local Component Codes for observation components that lack an appropriate LOINC code."/>
+            <description value="This CodeSystem contains codes that represent local component codes for observation components that lack an appropriate LOINC code."/>
             <exampleBoolean value="false"/>
             <groupingId value="codesystems-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-eclampsia-hypertension-vr"/>
-                <display value="Condition - Eclampsia Hypertension Vital Records"/>
+                <display value="Condition - Eclampsia Hypertension - Vital Records"/>
             </reference>
-            <name value="Condition - Eclampsia Hypertension Vital Records"/>
+            <name value="Condition - Eclampsia Hypertension - Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of eclampsia hypertension."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -158,9 +158,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-gestational-diabetes-vr"/>
-                <display value="Condition - Gestational Diabetes Vital Records"/>
+                <display value="Condition - Gestational Diabetes - Vital Records"/>
             </reference>
-            <name value="Condition - Gestational Diabetes Vital Records"/>
+            <name value="Condition - Gestational Diabetes - Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of gestational diabetes."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -168,9 +168,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-gestational-hypertension-vr"/>
-                <display value="Condition - Gestational Hypertension Vital Records"/>
+                <display value="Condition - Gestational Hypertension - Vital Records"/>
             </reference>
-            <name value="Condition - Gestational Hypertension Vital Records"/>
+            <name value="Condition - Gestational Hypertension - Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -178,9 +178,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
-                <display value="Condition - Prepregnancy Diabetes Vital Records"/>
+                <display value="Condition - Prepregnancy Diabetes - Vital Records"/>
             </reference>
-            <name value="Condition - Prepregnancy Diabetes Vital Records"/>
+            <name value="Condition - Prepregnancy Diabetes - Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -188,9 +188,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
-                <display value="Condition - Prepregnancy HypertensionVitalRecords"/>
+                <display value="Condition - Prepregnancy Hypertension - Vital Records"/>
             </reference>
-            <name value="Condition - Prepregnancy Hypertension Vital Records"/>
+            <name value="Condition - Prepregnancy Hypertension - Vital Records"/>
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy hypertension."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -205,9 +205,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-day-vr"/>
-                <display value="Extension - Date Day Vital Records"/>
+                <display value="Extension - Date Day - Vital Records"/>
             </reference>
-            <name value="Extension - Date Day Vital Records"/>
+            <name value="Extension - Date Day - Vital Records"/>
             <description value="This Extension profile represents the day portion (DD) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
@@ -215,9 +215,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-month-vr"/>
-                <display value="Extension - Date Month Vital Records"/>
+                <display value="Extension - Date Month - Vital Records"/>
             </reference>
-            <name value="Extension - Date Month Vital Records"/>
+            <name value="Extension - Date Month - Vital Records"/>
             <description value="This Extension profile represents the month portion (MM) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
@@ -225,9 +225,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-time-vr"/>
-                <display value="Extension - Date Time Vital Records"/>
+                <display value="Extension - Date Time - Vital Records"/>
             </reference>
-            <name value="Extension - Date Time Vital Records"/>
+            <name value="Extension - Date Time - Vital Records"/>
             <description value="This Extension profile represents the time portion (DD) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
@@ -235,9 +235,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-year-vr"/>
-                <display value="Extension - Date Year Vital Records Vital Records"/>
+                <display value="Extension - Date Year - Vital Records"/>
             </reference>
-            <name value="Extension - Date Year Vital Records"/>
+            <name value="Extension - Date Year - Vital Records"/>
             <description value="This Extension profile represents the year portion (YYYY) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
@@ -245,9 +245,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-partial-date-time-vr"/>
-                <display value="Extension - Partial DateTime Vital Records"/>
+                <display value="Extension - Partial DateTime - Vital Records"/>
             </reference>
-            <name value="Extension - Partial DateTime Vital Records"/>
+            <name value="Extension - Partial DateTime - Vital Records"/>
             <description value="This Extension profile represents Provides values of a partial dateTime"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
@@ -255,9 +255,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-relatedperson-birthplace-vr"/>
-                <display value="Extension - RelatedPerson Birth Place Vital Records"/>
+                <display value="Extension - RelatedPerson Birth Place - Vital Records"/>
             </reference>
-            <name value="Extension - RelatedPerson Birth Place Vital Records"/>
+            <name value="Extension - RelatedPerson Birth Place - Vital Records"/>
             <description value="This Extension profile represents the registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
@@ -265,9 +265,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-relatedperson-deceased-vr"/>
-                <display value="Extension - RelatedPerson Deceased Vital Records"/>
+                <display value="Extension - RelatedPerson Deceased - Vital Records"/>
             </reference>
-            <name value="Extension - RelatedPerson Deceased Vital Records"/>
+            <name value="Extension - RelatedPerson Deceased - Vital Records"/>
             <description value="This Extension profile represents the deceased indicator for a RelatedPerson. Deceased date/time is preferred."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
@@ -275,9 +275,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-within-city-limits-indicator-vr"/>
-                <display value="Extension - Within City Limits Indicator Vital Records"/>
+                <display value="Extension - Within City Limits Indicator - Vital Records"/>
             </reference>
-            <name value="Extension - Within City Limits Indicator Vital Records"/>
+            <name value="Extension - Within City Limits Indicator - Vital Records"/>
             <description value="This Extension profile is used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
@@ -285,9 +285,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-apgar-score-vr"/>
-                <display value="Observation - APGAR Score Vital Records"/>
+                <display value="Observation - APGAR Score - Vital Records"/>
             </reference>
-            <name value="Observation - APGAR Score Vital Records"/>
+            <name value="Observation - APGAR Score - Vital Records"/>
             <description value="This Observation represents the APGAR score post-birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -295,9 +295,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Location-injury-vr"/>
-                <display value="Location - Injury Vital Records"/>
+                <display value="Location - Injury - Vital Records"/>
             </reference>
-            <name value="Location - Injury Vital Records"/>
+            <name value="Location - Injury - Vital Records"/>
             <description value="This Location profile records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -305,9 +305,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Location-death-vr"/>
-                <display value="Location - Death Vital Records"/>
+                <display value="Location - Death - Vital Records"/>
             </reference>
-            <name value="Location - Death Vital Records"/>
+            <name value="Location - Death - Vital Records"/>
             <description value="This Location profile records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -315,9 +315,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-birth-weight-vr"/>
-                <display value="Observation - Birth Weight Vital Records"/>
+                <display value="Observation - Birth Weight - Vital Records"/>
             </reference>
-            <name value="Observation - Birth Weight Vital Records"/>
+            <name value="Observation - Birth Weight - Vital Records"/>
             <description value="This Observation profile represents the weight of the infant/fetus at birth/delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -325,9 +325,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-decedent-pregnancy-vr"/>
-                <display value="Observation - Decedent Pregnancy Vital Records"/>
+                <display value="Observation - Decedent Pregnancy - Vital Records"/>
             </reference>
-            <name value="Observation - Decedent Pregnancy Vital Records"/>
+            <name value="Observation - Decedent Pregnancy - Vital Records"/>
             <description value="This Observation profile represents the pregnancy status of the decedent."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -335,9 +335,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
-                <display value="Observation - Gestational Age at Delivery Vital Records"/>
+                <display value="Observation - Gestational Age at Delivery - Vital Records"/>
             </reference>
-            <name value="Observation - Gestational Age at Delivery Vital Records"/>
+            <name value="Observation - Gestational Age at Delivery - Vital Records"/>
             <description value="This Observation profile represents the obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -345,9 +345,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-infant-living-vr"/>
-                <display value="Observation - Infant Living Vital Records"/>
+                <display value="Observation - Infant Living - Vital Records"/>
             </reference>
-            <name value="Observation - Infant Living Vital Records"/>
+            <name value="Observation - Infant Living - Vital Records"/>
             <description value="This Observation profile represents whether the infant is living at the time the report is being submitted."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -355,9 +355,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-injury-incident-vr"/>
-                <display value="Observation - Injury Incident Vital Records"/>
+                <display value="Observation - Injury Incident - Vital Records"/>
             </reference>
-            <name value="Observation - Injury Incident Vital Records"/>
+            <name value="Observation - Injury Incident - Vital Records"/>
             <description value="This Observation profile represents the certified explanation of how the injury leading to death occurred."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -365,9 +365,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-last-menstrual-period-vr"/>
-                <display value="Observation - Last Menstrual Period Vital Records"/>
+                <display value="Observation - Last Menstrual Period - Vital Records"/>
             </reference>
-            <name value="Observation - Last Menstrual Period Vital Records"/>
+            <name value="Observation - Last Menstrual Period - Vital Records"/>
             <description value="This Observation profile represents the date of the last menstrual period of the patient. The first day of last menstrual period should be captured. The effectiveTime captures the observation date."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -375,9 +375,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-manner-of-death-vr"/>
-                <display value="Observation - Manner of Death Vital Records"/>
+                <display value="Observation - Manner of Death - Vital Records"/>
             </reference>
-            <name value="Observation - Manner of Death Vital Records"/>
+            <name value="Observation - Manner of Death - Vital Records"/>
             <description value="This Observation profile represents the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -385,9 +385,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-mother-delivery-weight-vr"/>
-                <display value="Observation - Mother Delivery Weight Vital Records"/>
+                <display value="Observation - Mother Delivery Weight - Vital Records"/>
             </reference>
-            <name value="Observation - Mother Delivery Weight Vital Records"/>
+            <name value="Observation - Mother Delivery Weight - Vital Records"/>
             <description value="This Observation profile represents the weight of the mother at the time of birth/delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -395,9 +395,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-mother-height-vr"/>
-                <display value="Observation - Mother Height Vital Records"/>
+                <display value="Observation - Mother Height - Vital Records"/>
             </reference>
-            <name value="Observation - Mother Height Vital Records"/>
+            <name value="Observation - Mother Height - Vital Records"/>
             <description value="This Observation profile represents the height of the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -405,9 +405,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-mother-prepregnancy-weight-vr"/>
-                <display value="Observation - Mother Prepregnancy Weight Vital Records"/>
+                <display value="Observation - Mother Prepregnancy Weight - Vital Records"/>
             </reference>
-            <name value="Observation - Mother Prepregnancy Weight Vital Records"/>
+            <name value="Observation - Mother Prepregnancy Weight - Vital Records"/>
             <description value="This Observation profile represents the weight of the mother before becoming pregnant."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -415,9 +415,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
-                <display value="Observation - None Of Specified Pregnancy Risk Factors Vital Records"/>
+                <display value="Observation - None Of Specified Pregnancy Risk Factors - Vital Records"/>
             </reference>
-            <name value="Observation - None Of Specified Pregnancy Risk Factors Vital Records"/>
+            <name value="Observation - None Of Specified Pregnancy Risk Factors - Vital Records"/>
             <description value="This Observation profile indicates that none of the specified pregnancy risk factors (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -425,9 +425,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-births-now-dead-vr"/>
-                <display value="Observation - Number of Births Now Dead Vital Records"/>
+                <display value="Observation - Number of Births Now Dead - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Births Now Dead Vital Records"/>
+            <name value="Observation - Number of Births Now Dead - Vital Records"/>
             <description value="This Observation profile represents the total number of previous live-born infants for the mother now dead."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -435,9 +435,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-births-now-living-vr"/>
-                <display value="Observation - Number of Births Now Living Vital Records"/>
+                <display value="Observation - Number of Births Now Living - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Births Now Living Vital Records"/>
+            <name value="Observation - Number of Births Now Living - Vital Records"/>
             <description value="This Observation profile represents the total number of previous live-born infants for the mother now living."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -445,9 +445,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-fetal-deaths-this-delivery-vr"/>
-                <display value="Observation - Number of Fetal Deaths This Delivery Vital Records"/>
+                <display value="Observation - Number of Fetal Deaths This Delivery - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Fetal Deaths This Delivery Vital Records"/>
+            <name value="Observation - Number of Fetal Deaths This Delivery - Vital Records"/>
             <description value="This Observation profile represents the number of fetal deaths in this delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -455,9 +455,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
-                <display value="Observation - Number of Live Births This Delivery Vital Records"/>
+                <display value="Observation - Number of Live Births This Delivery - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Live Births This Delivery Vital Records"/>
+            <name value="Observation - Number of Live Births This Delivery - Vital Records"/>
             <description value="This Observation profile represents the number of live births in this delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -465,9 +465,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
-                <display value="Observation - Number of Other Pregnancy Outcomes Vital Records"/>
+                <display value="Observation - Number of Other Pregnancy Outcomes - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Other Pregnancy Outcomes Vital Records"/>
+            <name value="Observation - Number of Other Pregnancy Outcomes - Vital Records"/>
             <description value="This Observation profile represents the total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -475,9 +475,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-prenatal-visits-vr"/>
-                <display value="Observation - Number of Prenatal Visits Vital Records"/>
+                <display value="Observation - Number of Prenatal Visits - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Prenatal Visits Vital Records"/>
+            <name value="Observation - Number of Prenatal Visits - Vital Records"/>
             <description value="This Observation profile represents the total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -485,9 +485,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-number-previous-cesareans-vr"/>
-                <display value="Observation - Number of Previous Cesareans Vital Records"/>
+                <display value="Observation - Number of Previous Cesareans - Vital Records"/>
             </reference>
-            <name value="Observation - Number of Previous Cesareans Vital Records"/>
+            <name value="Observation - Number of Previous Cesareans - Vital Records"/>
             <description value="This Observation profile represents the total number of prior cesarean deliveries for the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -495,9 +495,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-parent-education-level-vr"/>
-                <display value="Observation - Parent Education Level Vital Records"/>
+                <display value="Observation - Parent Education Level - Vital Records"/>
             </reference>
-            <name value="Observation - Parent Education Level Vital Records"/>
+            <name value="Observation - Parent Education Level - Vital Records"/>
             <description value="This Observation profile represents the highest degree or level of schooling completed by the parent."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -505,9 +505,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-plurality-vr"/>
-                <display value="Observation - Plurality Vital Records"/>
+                <display value="Observation - Plurality - Vital Records"/>
             </reference>
-            <name value="Observation - Plurality Vital Records"/>
+            <name value="Observation - Plurality - Vital Records"/>
             <description value="This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy. This profile represents plurality as a characteristic of the pregnancy. For plurality as a characteristic of the patient, see the Patient.multipleBirth\[x]patient-multipleBirthTotal extension."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -515,9 +515,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-previous-cesarean-vr"/>
-                <display value="Observation - Previous Cesarean Vital Records"/>
+                <display value="Observation - Previous Cesarean - Vital Records"/>
             </reference>
-            <name value="Observation - Previous Cesarean Vital Records"/>
+            <name value="Observation - Previous Cesarean - Vital Records"/>
             <description value="This Observation profile indicates that the mother had a pregnancy risk factor of previous cesarean."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -525,9 +525,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-previous-preterm-birth-vr"/>
-                <display value="Observation - Previous Preterm Birth"/>
+                <display value="Observation - Previous Preterm Birth - Vital Records"/>
             </reference>
-            <name value="Observation - Previous Preterm Birth Vital Records"/>
+            <name value="Observation - Previous Preterm Birth - Vital Records"/>
             <description value="This Observation profile indicates that the mother had a pregnancy risk factor of previous preterm birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -535,9 +535,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-race-vr"/>
-                <display value="Observation - Race Vital Records"/>
+                <display value="Observation - Race - Vital Records"/>
             </reference>
-            <name value="Observation - Race Vital Records"/>
+            <name value="Observation - Race - Vital Records"/>
             <description value="This Observation profile represents a single race code assigned to the person. If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -545,9 +545,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-tabulated-ethnicity-vr"/>
-                <display value="Observation - Tabulated Ethnicity Vital Records"/>
+                <display value="Observation - Tabulated Ethnicity - Vital Records"/>
             </reference>
-            <name value="Observation - Tabulated Ethnicity Vital Records"/>
+            <name value="Observation - Tabulated Ethnicity - Vital Records"/>
             <description value="This Observation profile represents the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
@@ -564,9 +564,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
-                <display value="Observation - Tobacco Use Contributed to Death Vital Records"/>
+                <display value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
             </reference>
-            <name value="Observation - Tobacco Use Contributed to Death Vital Records"/>
+            <name value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
             <description value="This Observation profile represents the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -583,9 +583,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Patient-decedent-fetus-vr"/>
-                <display value="Patient - Decedent Fetus Vital Records"/>
+                <display value="Patient - Decedent Fetus - Vital Records"/>
             </reference>
-            <name value="Patient - Decedent Fetus Vital Records"/>
+            <name value="Patient - Decedent Fetus - Vital Records"/>
             <description value="This Patient profile represents a delivered fetus for which clinical data is included in the report."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
@@ -639,9 +639,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Procedure-artificial-insemination-vr"/>
-                <display value="Procedure - Artificial Insemination Vital Records"/>
+                <display value="Procedure - Artificial Insemination - Vital Records"/>
             </reference>
-            <name value="Procedure - Artificial Insemination Vital Records"/>
+            <name value="Procedure - Artificial Insemination - Vital Records"/>
             <description value="This Procedure profile records that a pregnancy risk factor of artificial insemination was provided to the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -649,9 +649,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Procedure-assisted-fertilization-vr"/>
-                <display value="Procedure - Assisted Fertilization Vital Records"/>
+                <display value="Procedure - Assisted Fertilization - Vital Records"/>
             </reference>
-            <name value="Procedure - Assissted Fertilization Vital Records"/>
+            <name value="Procedure - Assisted Fertilization - Vital Records"/>
             <description value="This Procedure profile records that a pregnancy risk factor of assisted fertilization was provided to the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -668,9 +668,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Procedure-infertility-treatment-vr"/>
-                <display value="Procedure - Infertility Treatment Vital Records"/>
+                <display value="Procedure - Infertility Treatment - Vital Records"/>
             </reference>
-            <name value="Procedure - Infertility Treatment Vital Records"/>
+            <name value="Procedure - Infertility Treatment - Vital Records"/>
             <description value="This Procedure profile records that a pregnancy risk factor of infertility treatment was provided to the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
@@ -714,9 +714,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/RelatedPerson-father-natural-vr"/>
-                <display value="RelatedPerson - Father Natural Vital Records"/>
+                <display value="RelatedPerson - Father Natural - Vital Records"/>
             </reference>
-            <name value="RelatedPerson - Father Natural Vital Records"/>
+            <name value="RelatedPerson - Father Natural - Vital Records"/>
             <description value="This RelatedPerson profile represents the biological (natural) father of the newborn or fetus."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
@@ -724,9 +724,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/RelatedPerson-father-vr"/>
-                <display value="RelatedPerson - Father Vital Records"/>
+                <display value="RelatedPerson - Father - Vital Records"/>
             </reference>
-            <name value="RelatedPerson - Father Vital Records"/>
+            <name value="RelatedPerson - Father - Vital Records"/>
             <description value="This RelatedPerson profile represents the father of the subject (patient). Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.)."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
@@ -743,9 +743,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/RelatedPerson-mother-gestational-vr"/>
-                <display value="RelatedPerson - Mother Gestational Vital Records"/>
+                <display value="RelatedPerson - Mother Gestational - Vital Records"/>
             </reference>
-            <name value="RelatedPerson - Mother Gestational Vital Records"/>
+            <name value="RelatedPerson - Mother Gestational - Vital Records"/>
             <description value="This RelatedPerson profile represents the woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
@@ -753,9 +753,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/RelatedPerson-mother-vr"/>
-                <display value="RelatedPerson - Mother Vital Records"/>
+                <display value="RelatedPerson - Mother - Vital Records"/>
             </reference>
-            <name value="RelatedPerson - Mother Vital Records"/>
+            <name value="RelatedPerson - Mother - Vital Records"/>
             <description value="This RelatedPerson profile represents the mother of the report subject. Different individuals may play different roles as the mother (e.g., biological mother, adoptive mother, etc.)."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
@@ -799,9 +799,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-cause-of-death-part1-vr"/>
-                <display value="ObservationCauseOfDeathPart1VitalRecords"/>
+                <display value="Observation - Cause of Death Part 1 - Vital Records"/>
             </reference>
-            <name value="Observation - Cause of Death Part1 Vital Records"/>
+            <name value="Observation - Cause of Death Part 1 - Vital Records"/>
             <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -809,144 +809,144 @@
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-apgar-timing-vr"/>
-                <display value="ValueSet - APGAR Score Timing"/>
+                <display value="ValueSet - APGAR Score Timing - Vital Records"/>
             </reference>
-            <name value="ValueSet - APGAR Score Timing Vital Records"/>
-            <description value="This value set contains codes to represent standard timings for APGAR assessments."/>
+            <name value="ValueSet - APGAR Score Timing - Vital Records"/>
+            <description value="This ValueSet contains codes to represent standard timings for APGAR assessments."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-certifier-types-vr"/>
-                <display value="ValueSet - Certifier Types Vital Records"/>
+                <display value="ValueSet - Certifier Types - Vital Records"/>
             </reference>
-            <name value="ValueSet - Certifier Types Vital Records"/>
-            <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
+            <name value="ValueSet - Certifier Types - Vital Records"/>
+            <description value="This ValueSet contains codes to represent the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-date-establishment-approach-vr"/>
-                <display value="ValueSet - Date Establishment Approach Vital Records"/>
+                <display value="ValueSet - Date Establishment Approach - Vital Records"/>
             </reference>
-            <name value="ValueSet - Date Establishment Approach Vital Records"/>
-            <description value="This value set contains codes that describe the approach to establishing a date."/>
+            <name value="ValueSet - Date Establishment Approach - Vital Records"/>
+            <description value="This ValueSet contains codes that describe the approach to establishing a date."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-date-part-vr"/>
-                <display value="ValueSet - Date Part"/>
+                <display value="ValueSet - Date Part - Vital Records"/>
             </reference>
-            <name value="ValueSet - Date Part Vital Records"/>
-            <description value="This value set contains codes that represent the parts of a date"/>
+            <name value="ValueSet - Date Part - Vital Records"/>
+            <description value="This ValueSet contains codes that represent the parts of a date"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-death-pregnancy-status-vr"/>
-                <display value="ValueSet - Death Pregnancy Status Vital Records"/>
+                <display value="ValueSet - Death Pregnancy Status - Vital Records"/>
             </reference>
-            <name value="ValueSet - Death Pregnancy Status Vital Records"/>
-            <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)."/>
+            <name value="ValueSet - Death Pregnancy Status - Vital Records"/>
+            <description value="This ValueSet contains codes that represent whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-education-level-person-vr"/>
-                <display value="ValueSet - Education Level Person"/>
+                <display value="ValueSet - Education Level Person - Vital Records"/>
             </reference>
-            <name value="ValueSet - Education Level Person Vital Records"/>
-            <description value="This value set contains codes that represent persons for whom education level can be reported."/>
+            <name value="ValueSet - Education Level Person - Vital Records"/>
+            <description value="This ValueSet contains codes that represent persons for whom education level can be reported."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-father-relationship-vr"/>
-                <display value="ValueSet - Father Relationship"/>
+                <display value="ValueSet - Father Relationship - Vital Records"/>
             </reference>
-            <name value="ValueSet - Father Relationship Vital Records"/>
-            <description value="This value set contains codes that represent relationships describing the father's role relative to the subject."/>
+            <name value="ValueSet - Father Relationship - Vital Records"/>
+            <description value="This ValueSet contains codes that represent relationships describing the father's role relative to the subject."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-manner-of-death-vr"/>
-                <display value="ValueSet - Manner of Death Vital Records"/>
+                <display value="ValueSet - Manner of Death - Vital Records"/>
             </reference>
-            <name value="ValueSet - Manner of Death Vital Records"/>
-            <description value="A set of codes to reflect the manner that a person died."/>
+            <name value="ValueSet - Manner of Death - Vital Records"/>
+            <description value="This ValueSet contains codes to represent the manner in which a person died."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-mother-relationship-vr"/>
-                <display value="ValueSet - Mother Relationship"/>
+                <display value="ValueSet - Mother Relationship - Vital Records"/>
             </reference>
-            <name value="ValueSet - Mother Relationship Vital Records"/>
-            <description value="This value set contains codes that represent relationships describing the mother's role relative to the subject."/>
+            <name value="ValueSet - Mother Relationship - Vital Records"/>
+            <description value="This ValueSet contains codes that represent relationships describing the mother's role relative to the subject."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-place-of-death-vr"/>
-                <display value="ValueSet - Place of Death Vital Records"/>
+                <display value="ValueSet - Place of Death - Vital Records"/>
             </reference>
-            <name value="ValueSet - Place of Death Vital Records"/>
-            <description value="Code values reflecting the death location of the decedent (e.g., hospital, home, hospice)."/>
+            <name value="ValueSet - Place of Death - Vital Records"/>
+            <description value="This ValueSet contains codes that represent the death location of the decedent (e.g., hospital, home, hospice)."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-transportation-incident-role-vr"/>
-                <display value="ValueSet - Transportation Incident Role Vital Records"/>
+                <display value="ValueSet - Transportation Incident Role - Vital Records"/>
             </reference>
-            <name value="ValueSet - Transportation Incident Role Vital Records"/>
-            <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
+            <name value="ValueSet - Transportation Incident Role - Vital Records"/>
+            <description value="This ValueSet contains codes representing the role of the decedent in a transportation incident resulting in a death-related injury."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-units-of-age-vr"/>
-                <display value="ValueSet - Units of Age Vital Records"/>
+                <display value="ValueSet - Units of Age - Vital Records"/>
             </reference>
-            <name value="ValueSet - Units of Age Vital Records"/>
-            <description value="A set of codes for specifying the units used when recording age (days, years, etc.)."/>
+            <name value="ValueSet - Units of Age - Vital Records"/>
+            <description value="This ValueSet contains codes representing the units used when recording age (days, years, etc.)."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"/>
-                <display value="ValueSet - Yes No Unknown NotApplicable Vital Records"/>
+                <display value="ValueSet - Yes, No, Unknown, Not Applicable - Vital Records"/>
             </reference>
-            <name value="ValueSet - Yes No Unknown NotApplicable Vital Records"/>
-            <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
+            <name value="ValueSet - Yes, No, Unknown, Not Applicable - Vital Records"/>
+            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-yes-no-unknown-vr"/>
-                <display value="ValueSet - Yes No Unknown Vital Records"/>
+                <display value="ValueSet - Yes, No, Unknown - Vital Records"/>
             </reference>
-            <name value="ValueSet - Yes No Unknown Vital Records"/>
-            <description value="Value set with Yes, No and Unknown."/>
+            <name value="ValueSet - Yes, No, Unknown - Vital Records"/>
+            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, or Unknown."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-yes-no-not-applicable-vr"/>
-                <display value="ValueSet - Yes, No, Not Applicable Vital Records"/>
+                <display value="ValueSet - Yes, No, Not Applicable - Vital Records"/>
             </reference>
-            <name value="ValueSet - Yes, No, Not Applicable Vital Records"/>
-            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
+            <name value="ValueSet - Yes, No, Not Applicable - Vital Records"/>
+            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
@@ -965,15 +965,15 @@
                 <display value="ValueSet - Contributory Tobacco Use - Vital Records"/>
             </reference>
             <name value="ValueSet - Contributory Tobacco Use - Vital Records"/>
-            <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <description value="This ValueSet contains codes that represent the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-                <display value="ObservationAutopsyPerformedIndicatorVitalRecords"/>
+                <display value="Observation - Autopsy Performed Indicator - Vital Records"/>
             </reference>
-            <name value="Observation - Autopsy Performed Indicator Vital Records"/>
+            <name value="Observation - Autopsy Performed Indicator - Vital Records"/>
             <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -981,9 +981,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
-                <display value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
+                <display value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
             </reference>
-            <name value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
+            <name value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
             <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -991,9 +991,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Procedure-death-certification-vr"/>
-                <display value="ProcedureDeathCertificationVitalRecords"/>
+                <display value="Procedure - Death Certification - Vital Records"/>
             </reference>
-            <name value="Procedure - Death Certification Vital Records"/>
+            <name value="Procedure - Death Certification - Vital Records"/>
             <description value="This Procedure records the certification of death by the certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -1001,9 +1001,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-death-date-vr"/>
-                <display value="ObservationDeathDateVitalRecords"/>
+                <display value="Observation - Death Date - Vital Records"/>
             </reference>
-            <name value="Observation - Death Date Vital Records"/>
+            <name value="Observation - Death Date - Vital Records"/>
             <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
@@ -1011,36 +1011,36 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-part-absent-reason-vr"/>
-                <display value="ExtensionDatePartAbsentReasonVitalRecords"/>
+                <display value="Extension - Date Part Absent Reason - Vital Records"/>
             </reference>
-            <name value="ExtensionDatePartAbsentReasonVitalRecords"/>
+            <name value="Extension - Date Part Absent Reason - Vital Records"/>
             <description value="Provides a reason why an expected date part is missing."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Patient-child-vr"/>
-                <display value="Patient - Child Vital Records"/>
+                <display value="Patient - Child - Vital Records"/>
             </reference>
-            <name value="Patient - Child Vital Records"/>
+            <name value="Patient - Child - Vital Records"/>
             <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Patient-mother-vr"/>
-                <display value="PatientMotherVitalRecords"/>
+                <display value="Patient - Mother - Vital Records"/>
             </reference>
-            <name value="PatientMotherVitalRecords"/>
+            <name value="Patient - Mother - Vital Records"/>
             <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/RelatedPerson-parent-vr"/>
-                <display value="RelatedPersonParentVitalRecords"/>
+                <display value="Related Person - Parent - Vital Records"/>
             </reference>
-            <name value="RelatedPersonParentVitalRecords"/>
+            <name value="Related Person - Parent - Vital Records"/>
             <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -1341,27 +1341,27 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Parameters-coding-status-values-vr"/>
-                <display value="Parameters - Coding Status Values Vital Records"/>
+                <display value="Parameters - Coding Status Values - Vital Records"/>
             </reference>
-            <name value="Parameters - Coding Status Values Vital Records"/>
+            <name value="Parameters - Coding Status Values - Vital Records"/>
             <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-partial-date-vr"/>
-                <display value="Extension - Partial Date Vital Records"/>
+                <display value="Extension - Partial Date - Vital Records"/>
             </reference>
-            <name value="Extension - Partial Date Vital Records"/>
+            <name value="Extension - Partial Date - Vital Records"/>
             <description value="This Extension profile represents values of a partial date."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-replacement-status-vr"/>
-                <display value="Extension - Replacement Status Vital Records"/>
+                <display value="Extension - Replacement Status - Vital Records"/>
             </reference>
-            <name value="Extension - Replacement Status Vital Records"/>
+            <name value="Extension - Replacement Status - Vital Records"/>
             <description value="This Extension profile represents the replacement status of a record."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -1377,9 +1377,9 @@
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-replacement-status-vr"/>
-                <display value="ValueSet - Replacement Status Vital Records"/>
+                <display value="ValueSet - Replacement Status - Vital Records"/>
             </reference>
-            <name value="ValueSet - Replacement Status Vital Records"/>
+            <name value="ValueSet - Replacement Status - Vital Records"/>
             <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -1389,15 +1389,15 @@
                 <display value="CodeSystem - Intentional Reject"/>
             </reference>
             <name value="CodeSystem - Intentional Reject"/>
-            <description value="This CodeSystem condtains values representing intentional rejects."/>
+            <description value="This CodeSystem contains values representing intentional rejects."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-intentional-reject-vr"/>
-                <display value="ValueSet - Intentional Reject Vital Records"/>
+                <display value="ValueSet - Intentional Reject - Vital Records"/>
             </reference>
-            <name value="ValueSet - Intentional Reject Vital Records"/>
+            <name value="ValueSet - Intentional Reject - Vital Records"/>
             <description value="This ValueSet contains codes representing intentional rejects."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -1413,9 +1413,9 @@
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-system-reject-vr"/>
-                <display value="ValueSet - System Reject Vital Records"/>
+                <display value="ValueSet - System Reject - Vital Records"/>
             </reference>
-            <name value="ValueSet - System Reject Vital Records"/>
+            <name value="ValueSet - System Reject - Vital Records"/>
             <description value="This ValueSet contains codes representing system rejects."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -1431,9 +1431,9 @@
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-transax-conversion-vr"/>
-                <display value="ValueSet - Transax Conversion Vital Records"/>
+                <display value="ValueSet - Transax Conversion - Vital Records"/>
             </reference>
-            <name value="ValueSet - Transax Conversion Vital Records"/>
+            <name value="ValueSet - Transax Conversion - Vital Records"/>
             <description value="This ValueSet contains codes representing transax conversions."/>
             <exampleBoolean value="false"/>
         </resource>

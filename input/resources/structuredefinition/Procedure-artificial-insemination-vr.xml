@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-artificial-insemination-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-19T06:09:32.125Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-20T22:40:07.858Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr"/>
     <name value="ProcedureArtificialInseminationVitalRecords"/>
-    <title value="Procedure - Artificial Insemination Vital Records"/>
+    <title value="Procedure - Artificial Insemination - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>

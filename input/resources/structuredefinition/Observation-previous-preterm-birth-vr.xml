@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-previous-preterm-birth-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-19T06:48:29.459Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-20T22:37:40.716Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
     <name value="ObservationPreviousPretermBirthVitalRecords"/>
-    <title value="Observation - Previous Preterm Birth Vital Records"/>
+    <title value="Observation - Previous Preterm Birth - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

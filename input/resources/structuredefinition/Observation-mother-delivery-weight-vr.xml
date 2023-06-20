@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-delivery-weight-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:29.033Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:37:10.691Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"/>
     <name value="ObservationMotherDeliveryWeightVitalRecords"/>
-    <title value="Observation - Mother Delivery Weight Vital Records"/>
+    <title value="Observation - Mother Delivery Weight - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

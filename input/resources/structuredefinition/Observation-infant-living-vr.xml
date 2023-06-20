@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-infant-living-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:28.970Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:31:54.429Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
     <name value="ObservationInfantLivingVitalRecords"/>
-    <title value="Observation - Infant Living Vital Records"/>
+    <title value="Observation - Infant Living - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

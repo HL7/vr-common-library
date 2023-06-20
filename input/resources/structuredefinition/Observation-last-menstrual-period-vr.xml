@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-last-menstrual-period-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:29.012Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:31:56.577Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
     <name value="ObservationLastMenstrualPeriodVitalRecords"/>
-    <title value="Observation - Last Menstrual Period Vital Records"/>
+    <title value="Observation - Last Menstrual Period - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

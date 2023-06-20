@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-infertility-treatment-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-04-19T06:09:32.124Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-20T22:40:22.767Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
     <name value="ProcedureInfertilityTreatmentVitalRecords"/>
-    <title value="Procedure - Infertility Treatment Vital Records"/>
+    <title value="Procedure - Infertility Treatment - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>

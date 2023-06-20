@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-gestational-hypertension-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-19T06:09:32.065Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:28:39.783Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
     <version value="1.0.0"/>
     <name value="ConditionGestationalHypertensionVitalRecords"/>
-    <title value="Condition - Gestational Hypertension Vital Records"/>
+    <title value="Condition - Gestational Hypertension - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

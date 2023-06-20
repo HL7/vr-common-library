@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-gestational-diabetes-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-19T06:09:59.116Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:28:34.378Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
     <version value="1.0.0"/>
     <name value="ConditionGestationalDiabetesVitalRecords"/>
-    <title value="Condition - Gestational Diabetes Vital Records"/>
+    <title value="Condition - Gestational Diabetes - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

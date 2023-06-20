@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification-vr"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-06-19T06:48:29.430Z"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-06-20T22:40:16.088Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
     <name value="ProcedureDeathCertificationVitalRecords"/>
-    <title value="Procedure - Death Certification Vital Records"/>
+    <title value="Procedure - Death Certification - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

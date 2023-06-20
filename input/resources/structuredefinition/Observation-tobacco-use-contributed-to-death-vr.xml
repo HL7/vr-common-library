@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tobacco-use-contributed-to-death-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-19T06:46:41.942Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-20T22:37:46.270Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
     <name value="ObservationTobaccoUseContributedToDeathVitalRecords"/>
-    <title value="Observation - Tobacco Use Contributed to Death Vital Records"/>
+    <title value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

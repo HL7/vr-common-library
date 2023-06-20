@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-education-level-person-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-13T06:43:53.611Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:56:00.592Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-education-level-person-vr"/>
     <version value="0.1.0"/>
     <name value="ValueSetEducationLevelPersonVitalRecords"/>
-    <title value="ValueSet - Education Level Person Vital Records"/>
+    <title value="ValueSet - Education Level Person - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2020-07-17T18:56:31+00:00"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This value set contains codes that represent persons for whom education level can be reported."/>
+    <description value="This ValueSet contains codes that represent persons for whom education level can be reported."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

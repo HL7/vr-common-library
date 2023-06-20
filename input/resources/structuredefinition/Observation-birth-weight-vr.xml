@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-birth-weight-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T06:44:28.991Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:32:24.383Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
     <name value="ObservationBirthWeightVitalRecords"/>
-    <title value="Observation - Birth Weight Vital Records"/>
+    <title value="Observation - Birth Weight - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

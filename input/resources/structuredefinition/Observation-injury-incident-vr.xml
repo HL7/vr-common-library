@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-injury-incident-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-19T06:46:41.915Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-20T22:31:55.421Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
     <name value="ObservationInjuryIncidentVitalRecords"/>
-    <title value="Observation - Injury Incident Vital Records"/>
+    <title value="Observation - Injury Incident - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

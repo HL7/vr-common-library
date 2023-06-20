@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-relatedperson-deceased-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-06-19T06:44:28.872Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:31:40.621Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-deceased-vr"/>
     <name value="ExtensionRelatedPersonDeceasedVitalRecords"/>
-    <title value="Extension - RelatedPerson Deceased Vital Records"/>
+    <title value="Extension - RelatedPerson Deceased - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

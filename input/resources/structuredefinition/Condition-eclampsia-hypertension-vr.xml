@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-eclampsia-hypertension-vr"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-06T04:17:29.717Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-20T22:28:29.287Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-eclampsia-hypertension-vr"/>
     <version value="1.0.0"/>
     <name value="ConditionEclampsiaHypertensionVitalRecords"/>
-    <title value="Condition - Eclampsia Hypertension Vital Records"/>
+    <title value="Condition - Eclampsia Hypertension - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

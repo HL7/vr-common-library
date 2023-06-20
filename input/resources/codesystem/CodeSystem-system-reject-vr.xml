@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-system-reject-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-20T21:20:00.938Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-20T22:58:01.431Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-system-reject-vr"/>
     <name value="CodeSystemSystemRejectVitalRecords"/>

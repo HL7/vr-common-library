@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-apgar-score-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-19T06:44:28.913Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-20T22:31:46.475Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     <name value="ObservationApgarScoreVitalRecords"/>
-    <title value="Observation - APGAR Score Vital Records"/>
+    <title value="Observation - APGAR Score - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

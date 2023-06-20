@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-death-reporting-codes-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-07T05:15:36.961Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:58:00.057Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <experimental value="false"/>
     <date value="2021-12-01"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This code system contains codes for use in death investigations and reporting."/>
+    <description value="This CodeSystem contains codes for use in death investigations and reporting."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

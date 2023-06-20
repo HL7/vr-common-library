@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-19T06:46:41.967Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-20T22:31:57.496Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-manner-of-death-vr"/>
     <name value="ObservationMannerOfDeathVitalRecords"/>
-    <title value="Observation - Manner of Death Vital Records"/>
+    <title value="Observation - Manner of Death - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

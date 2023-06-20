@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-yes-no-unknown-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T07:05:51.300Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-20T22:56:04.817Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-vr"/>
     <version value="1.9.0"/>
     <name value="ValueSetYesNoUnknownVitalRecords"/>
-    <title value="ValueSet - Yes No Unknown Vital Records"/>
+    <title value="ValueSet - Yes, No, Unknown - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-08-02T13:21:04+00:00"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Value set with Yes, No and Unknown."/>
+    <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, or Unknown."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

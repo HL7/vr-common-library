@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-plurality-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-19T07:27:13.526Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-20T22:37:37.590Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
     <name value="ObservationPluralityVitalRecords"/>
-    <title value="Observation - Plurality Vital Records"/>
+    <title value="Observation - Plurality - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

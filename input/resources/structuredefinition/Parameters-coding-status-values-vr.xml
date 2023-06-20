@@ -4,7 +4,7 @@
     <id value="Parameters-coding-status-values-vr"/>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Parameters-coding-status-values-vr"/>
     <name value="ParametersCodingStatusValuesVitalRecords"/>
-    <title value="Parameters - Coding Status Values Vital Records"/>
+    <title value="Parameters - Coding Status Values - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

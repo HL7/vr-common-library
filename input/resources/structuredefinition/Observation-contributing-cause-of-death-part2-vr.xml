@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-contributing-cause-of-death-part2-vr"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2023-06-19T06:48:29.405Z"/>
+        <versionId value="19"/>
+        <lastUpdated value="2023-06-20T22:31:50.500Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
     <name value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
-    <title value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
+    <title value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

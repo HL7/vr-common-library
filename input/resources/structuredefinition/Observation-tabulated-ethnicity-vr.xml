@@ -3,13 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tabulated-ethnicity-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-19T09:18:25.623Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-20T22:37:44.414Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
     <name value="ObservationTabulatedEthnicityVitalRecords"/>
-    <title value="Observation - Tabulated Ethnicity Vital Records"/>
+    <title value="Observation - Tabulated Ethnicity - Vital Records"/>
     <status value="active"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="This Observation profile represents the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
     <jurisdiction>
         <coding>

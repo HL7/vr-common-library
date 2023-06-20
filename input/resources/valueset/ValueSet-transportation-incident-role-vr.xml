@@ -3,16 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-transportation-incident-role-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T07:04:31.690Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:56:03.526Z"/>
     </meta>
-    <text>
-        <status value="extensions"/>
-    </text>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-transportation-incident-role-vr"/>
     <version value="1.9.0"/>
     <name value="ValueSetTransportationIncidentRoleVitalRecords"/>
-    <title value="ValueSet - Transportation Incident Role Vital Records"/>
+    <title value="ValueSet - Transportation Incident Role - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-08-02T13:21:04+00:00"/>
@@ -28,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
+    <description value="This ValueSet contains codes representing the role of the decedent in a transportation incident resulting in a death-related injury."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

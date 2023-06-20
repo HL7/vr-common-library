@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-none-of-specified-pregnancy-risk-factors-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-19T06:48:29.513Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:37:20.443Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
     <name value="ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords"/>
-    <title value="Observation - None Of Specified Pregnancy Risk Factors Vital Records"/>
+    <title value="Observation - None Of Specified Pregnancy Risk Factors - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

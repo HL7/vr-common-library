@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-number-prenatal-visits-vr"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-19T09:38:11.277Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-20T22:37:32.281Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"/>
     <name value="ObservationNumberPrenatalVisitsVitalRecords"/>
-    <title value="Observation - Number of Prenatal Visits Vital Records"/>
+    <title value="Observation - Number of Prenatal Visits - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

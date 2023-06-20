@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-previous-cesarean-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-19T06:48:29.484Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:37:39.117Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
     <name value="ObservationPreviousCesareanVitalRecords"/>
-    <title value="Observation - Previous Cesarean Vital Records"/>
+    <title value="Observation - Previous Cesarean - Vital Records"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>

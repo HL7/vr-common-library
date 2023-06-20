@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-death-pregnancy-status-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-12-02T06:08:43.515Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:56:00.261Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-death-pregnancy-status-vr"/>
     <version value="1.3.0"/>
     <name value="ValueSetDeathPregnancyStatusVitalRecords"/>
-    <title value="ValueSet - Death Pregnancy Status Vital Records"/>
+    <title value="ValueSet - Death Pregnancy Status - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-03-02T07:45:13+00:00"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)."/>
+    <description value="This ValueSet contains codes that represent whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

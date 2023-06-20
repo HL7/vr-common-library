@@ -3,13 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-race-vr"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-19T09:17:33.081Z"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-06-20T22:37:42.552Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
     <name value="ObservationRaceVitalRecords"/>
-    <title value="Observation - Race Vital Records"/>
+    <title value="Observation - Race - Vital Records"/>
     <status value="active"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="This Observation profile represents a single race code assigned to the person. If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
     <jurisdiction>
         <coding>

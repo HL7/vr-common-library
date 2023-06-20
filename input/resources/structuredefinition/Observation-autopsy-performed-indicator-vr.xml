@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator-vr"/>
     <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2023-06-19T06:46:41.887Z"/>
+        <versionId value="23"/>
+        <lastUpdated value="2023-06-20T22:31:47.461Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
     <version value="1.1.0"/>
     <name value="ObservationAutopsyPerformedIndicatorVitalRecords"/>
-    <title value="Observation - Autopsy Performed Indicator Vital Records"/>
+    <title value="Observation - Autopsy Performed Indicator - Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>

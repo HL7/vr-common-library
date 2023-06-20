@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-prepregnancy-hypertension-vr"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-06-13T22:08:26.239Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-20T22:28:53.292Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
     <version value="1.0.0"/>
     <name value="ConditionPrepregnancyHypertensionVitalRecords"/>
-    <title value="Condition - Prepregnancy Hypertension Vital Records"/>
+    <title value="Condition - Prepregnancy Hypertension - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

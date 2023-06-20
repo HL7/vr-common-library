@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-prepregnancy-diabetes-vr"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-19T06:09:32.065Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-20T22:28:48.533Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
     <version value="1.0.0"/>
     <name value="ConditionPrepregnancyDiabetesVitalRecords"/>
-    <title value="Condition - Prepregnancy Diabetes Vital Records"/>
+    <title value="Condition - Prepregnancy Diabetes - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

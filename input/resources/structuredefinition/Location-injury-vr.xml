@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-injury-vr"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-19T06:48:29.383Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-20T22:32:15.745Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
     <name value="LocationInjuryVitalRecords"/>
-    <title value="Location - Injury Vital Records"/>
+    <title value="Location - Injury - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Working Group"/>

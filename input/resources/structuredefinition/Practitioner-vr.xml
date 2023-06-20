@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Practitioner-vr"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-10-25T19:51:11.599Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-20T22:40:05.064Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"/>
     <name value="PractitionerVitalRecords"/>
