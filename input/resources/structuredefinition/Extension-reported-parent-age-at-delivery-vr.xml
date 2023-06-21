@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-06-21T02:50:46.066Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-21T03:27:40.510Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
@@ -29,6 +29,10 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+            <short value="Extension - Reported Parent Age at Delivery - Vital Records"/>
+            <definition value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
+            <min value="0"/>
+            <max value="*"/>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>
@@ -39,17 +43,34 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
         </element>
         <element id="Extension.extension:reportedAge">
             <path value="Extension.extension"/>
             <sliceName value="reportedAge"/>
+            <short value="Age of the parent at the time of delivery reported by another person."/>
+            <definition value="Age of the parent at the time of delivery reported by another person."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:reportedAge.url">
             <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
             <fixedUri value="reportedAge"/>
         </element>
         <element id="Extension.extension:reportedAge.value[x]">
             <path value="Extension.extension.value[x]"/>
+            <short value="Reported age in years"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Quantity"/>
             </type>
@@ -57,13 +78,29 @@
         <element id="Extension.extension:newbornOrFetus">
             <path value="Extension.extension"/>
             <sliceName value="newbornOrFetus"/>
+            <short value="Reference to the newborn or fetus."/>
+            <definition value="Reference to the newborn or fetus."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:newbornOrFetus.url">
             <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
             <fixedUri value="newbornOrFetus"/>
         </element>
         <element id="Extension.extension:newbornOrFetus.value[x]">
             <path value="Extension.extension.value[x]"/>
+            <short value="Reported age in years"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
@@ -73,13 +110,26 @@
         <element id="Extension.extension:reporter">
             <path value="Extension.extension"/>
             <sliceName value="reporter"/>
+            <short value="Reference to the person who reported the parent's age."/>
+            <definition value="Reference to the person who reported the parent's age."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
         </element>
         <element id="Extension.extension:reporter.url">
             <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
             <fixedUri value="reporter"/>
         </element>
         <element id="Extension.extension:reporter.value[x]">
             <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>

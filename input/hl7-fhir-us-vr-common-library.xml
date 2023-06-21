@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="334"/>
-        <lastUpdated value="2023-06-21T02:47:28.817Z"/>
+        <versionId value="335"/>
+        <lastUpdated value="2023-06-21T03:31:43.407Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -96,28 +96,6 @@
         </grouping>
         <resource>
             <reference>
-                <reference value="Location/location-death-vr-atlanta-ga-a-freeman"/>
-                <display value="Atlanta GA Death Location - Freeman"/>
-            </reference>
-            <name value="Location - Death - Atlanta GA - Freeman"/>
-            <description value="Location - Death - Atlanta GA: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
-            <groupingId value="location-death-reporting-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/location-injury-vr-atlanta-ga-a-freeman"/>
-                <display value="Atlanta GA Injury Location - Freeman"/>
-            </reference>
-            <name value="Location - Injury - Atlanta GA - Freeman"/>
-            <description value="Location - Injury - Atlanta GA: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
-            <groupingId value="location-death-reporting-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="CodeSystem/CodeSystem-death-pregnancy-status-vr"/>
                 <display value="CodeSystem - Death Pregnancy Status Vital Records"/>
             </reference>
@@ -138,6 +116,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="CodeSystem/CodeSystem-intentional-reject-vr"/>
+                <display value="CodeSystem - Intentional Reject"/>
+            </reference>
+            <name value="CodeSystem - Intentional Reject"/>
+            <description value="This CodeSystem contains values representing intentional rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/CodeSystem-local-component-codes-vr"/>
                 <display value="CodeSystem - Local Components Codes Vital Records"/>
             </reference>
@@ -145,6 +132,42 @@
             <description value="This CodeSystem contains codes that represent local component codes for observation components that lack an appropriate LOINC code."/>
             <exampleBoolean value="false"/>
             <groupingId value="codesystems-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-replacement-status-vr"/>
+                <display value="CodeSystem - Replacement Status Vital Records"/>
+            </reference>
+            <name value="CodeSystem - Replacement Status Vital Records"/>
+            <description value="This CodeSystem contains codes that represent the replacement status of a record submission."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-system-reject-vr"/>
+                <display value="CodeSystem - System Reject Vital Records"/>
+            </reference>
+            <name value="CodeSystem - System Reject Vital Records"/>
+            <description value="This CodeSystem contains code representing system rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-transax-conversion-vr"/>
+                <display value="CodeSystem - Transax Conversion Vital Records"/>
+            </reference>
+            <name value="CodeSystem - Transax Conversion Vital Records"/>
+            <description value="This CodeSystem contains codes representing transax conversions."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-eclampsia-hypertension-jada-ann-quinn-common"/></reference>
+            <name value="Condition - Eclampsia Hypertension - Jada Ann Quinn"/>
+            <description value="Condition - Eclampsia Hypertension: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-eclampsia-hypertension-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
         </resource>
         <resource>
             <reference>
@@ -158,6 +181,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Condition/condition-gestational-diabetes-jada-ann-quinn-common"/></reference>
+            <name value="Condition - Gestational Diabetes - Jada Ann Quinn"/>
+            <description value="Condition - Gestational Diabetes: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Condition-gestational-diabetes-vr"/>
                 <display value="Condition - Gestational Diabetes - Vital Records"/>
             </reference>
@@ -165,6 +197,15 @@
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of gestational diabetes."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn-common"/></reference>
+            <name value="Condition - Gestational Hypertension - Jada Ann Quinn"/>
+            <description value="Condition - Gestational Hypertension: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
         </resource>
         <resource>
             <reference>
@@ -178,6 +219,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Condition/condition-prepregnancy-diabetes-jada-ann-quinn-common"/></reference>
+            <name value="Condition - Prepregnancy Diabetes - Jada Ann Quinn"/>
+            <description value="Condition - Prepregnancy Diabetes: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
                 <display value="Condition - Prepregnancy Diabetes - Vital Records"/>
             </reference>
@@ -185,6 +235,15 @@
             <description value="This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-prepregnancy-hypertension-jada-ann-quinn-common"/></reference>
+            <name value="Condition - Prepregnancy Hypertension - Jada Ann Quinn"/>
+            <description value="Condition - Prepregnancy Hypertension: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
         </resource>
         <resource>
             <reference>
@@ -225,6 +284,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-date-part-absent-reason-vr"/>
+                <display value="Extension - Date Part Absent Reason - Vital Records"/>
+            </reference>
+            <name value="Extension - Date Part Absent Reason - Vital Records"/>
+            <description value="Provides a reason why an expected date part is missing."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-date-time-vr"/>
                 <display value="Extension - Date Time - Vital Records"/>
             </reference>
@@ -242,6 +310,15 @@
             <description value="This Extension profile represents the year portion (YYYY) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-partial-date-vr"/>
+                <display value="Extension - Partial Date - Vital Records"/>
+            </reference>
+            <name value="Extension - Partial Date - Vital Records"/>
+            <description value="This Extension profile represents values of a partial date."/>
+            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -275,6 +352,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-replacement-status-vr"/>
+                <display value="Extension - Replacement Status - Vital Records"/>
+            </reference>
+            <name value="Extension - Replacement Status - Vital Records"/>
+            <description value="This Extension profile represents the replacement status of a record."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+                <display value="Extension - Reported Parent Age At Delivery - Vital Records"/>
+            </reference>
+            <name value="Extension - Reported Parent Age At Delivery - Vital Records"/>
+            <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-within-city-limits-indicator-vr"/>
                 <display value="Extension - Within City Limits Indicator - Vital Records"/>
             </reference>
@@ -285,23 +380,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-apgar-score-vr"/>
-                <display value="Observation - APGAR Score - Vital Records"/>
+                <reference value="Location/location-death-vr-atlanta-ga-a-freeman"/>
+                <display value="Atlanta GA Death Location - Freeman"/>
             </reference>
-            <name value="Observation - APGAR Score - Vital Records"/>
-            <description value="This Observation represents the APGAR score post-birth."/>
+            <name value="Location - Death - Atlanta GA - Freeman"/>
+            <description value="Location - Death - Atlanta GA: Freeman example"/>
             <exampleBoolean value="false"/>
-            <groupingId value="observations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Location-injury-vr"/>
-                <display value="Location - Injury - Vital Records"/>
-            </reference>
-            <name value="Location - Injury - Vital Records"/>
-            <description value="This Location profile records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
+            <groupingId value="location-death-reporting-examples"/>
         </resource>
         <resource>
             <reference>
@@ -315,6 +401,92 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Location/location-injury-vr-atlanta-ga-a-freeman"/>
+                <display value="Atlanta GA Injury Location - Freeman"/>
+            </reference>
+            <name value="Location - Injury - Atlanta GA - Freeman"/>
+            <description value="Location - Injury - Atlanta GA: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
+            <groupingId value="location-death-reporting-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Location-injury-vr"/>
+                <display value="Location - Injury - Vital Records"/>
+            </reference>
+            <name value="Location - Injury - Vital Records"/>
+            <description value="This Location profile records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-apgar-score-babyg-quinn-5-min-common"/></reference>
+            <name value="Observation - Apgar Score - - Baby G Quinn-5 min"/>
+            <description value="Observation - Apgar Score: Baby G Quinn-5 min example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-apgar-score-vr"/>
+                <display value="Observation - APGAR Score - Vital Records"/>
+            </reference>
+            <name value="Observation - APGAR Score - Vital Records"/>
+            <description value="This Observation represents the APGAR score post-birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-autopsy-performed-not-named-common"/></reference>
+            <name value="Observation - Autopsy Performed - Fetus Not Named"/>
+            <description value="Observation - Autopsy Performed: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-autopsy-performed-indicator-vr-a-freeman"/></reference>
+            <name value="Observation - Autopsy Performed Indicator - A Freeman"/>
+            <description value="Observation - Autopsy Performed Indicator: A Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
+                <display value="Observation - Autopsy Performed Indicator - Vital Records"/>
+            </reference>
+            <name value="Observation - Autopsy Performed Indicator - Vital Records"/>
+            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-birth-weight-babyg-quinn-common"/></reference>
+            <name value="Observation - Birth Weight - Baby G Quinn"/>
+            <description value="Observation - Birth Weight: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-birth-weight-not-named-common"/></reference>
+            <name value="Observation - Birth Weight - Fetus Not Named"/>
+            <description value="Observation - Birth Weight: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-birth-weight-vr"/>
                 <display value="Observation - Birth Weight - Vital Records"/>
             </reference>
@@ -322,6 +494,72 @@
             <description value="This Observation profile represents the weight of the infant/fetus at birth/delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-vr-a-freeman"/></reference>
+            <name value="Observation - Cause of Death Part 1 - Freeman"/>
+            <description value="Observation - Cause of Death Part 1: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
+            <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-cause-of-death-part1-vr"/>
+                <display value="Observation - Cause of Death Part 1 - Vital Records"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1 - Vital Records"/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-contributing-cause-of-death-part2-vr-a-freeman"/></reference>
+            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
+            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
+                <display value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
+            </reference>
+            <name value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
+            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-vr-a-freeman"/></reference>
+            <name value="Observation - Death Date - Freeman"/>
+            <description value="Observation - Death Date: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-death-date-vr"/>
+                <display value="Observation - Death Date - Vital Records"/>
+            </reference>
+            <name value="Observation - Death Date - Vital Records"/>
+            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-decedent-pregnancy-vr-a-freeman"/></reference>
+            <name value="Observation - Decedent Pregnancy - Freeman"/>
+            <description value="Observation - Decedent Pregnancy: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
+            <groupingId value="observations-death-reporting"/>
         </resource>
         <resource>
             <reference>
@@ -335,6 +573,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn-common"/></reference>
+            <name value="Observation - Gestational Age at Delivery - Baby G Quinn"/>
+            <description value="Observation - Gestational Age at Delivery: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-not-named-common"/></reference>
+            <name value="Observation - Gestational Age at Delivery - Fetus Not Named"/>
+            <description value="Observation - Gestational Age at Delivery: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
                 <display value="Observation - Gestational Age at Delivery - Vital Records"/>
             </reference>
@@ -342,6 +598,15 @@
             <description value="This Observation profile represents the obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-infant-living-babyg-quinn-common"/></reference>
+            <name value="Observation - Infant Living - Baby G Quinn"/>
+            <description value="Observation - Infant Living: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
+            <groupingId value="observation-examples"/>
         </resource>
         <resource>
             <reference>
@@ -355,6 +620,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-injury-incident-vr-a-freeman-med-ingest"/></reference>
+            <name value="Observation - Injury Incident - Freeman"/>
+            <description value="Observation - Injury Incident: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-injury-incident-vr"/>
                 <display value="Observation - Injury Incident - Vital Records"/>
             </reference>
@@ -362,6 +636,15 @@
             <description value="This Observation profile represents the certified explanation of how the injury leading to death occurred."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Last Menstrual Period - Carmen Teresa Lee"/>
+            <description value="Observation - Last Menstrual Period: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
+            <groupingId value="observation-examples"/>
         </resource>
         <resource>
             <reference>
@@ -375,6 +658,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-manner-of-death-vr-a-freeman-accidental"/></reference>
+            <name value="Observation - Manner of Death - A Freeman, accidental"/>
+            <description value="Observation - Manner of Death: A Freeman, accidental example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-manner-of-death-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-manner-of-death-vr"/>
                 <display value="Observation - Manner of Death - Vital Records"/>
             </reference>
@@ -382,6 +674,15 @@
             <description value="This Observation profile represents the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Mother Delivery Weight - Jada Ann Quinn"/>
+            <description value="Observation - Mother Delivery Weight: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"/>
+            <groupingId value="observation-examples"/>
         </resource>
         <resource>
             <reference>
@@ -395,6 +696,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-mother-height-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Mother Height - Carmen Teresa Lee"/>
+            <description value="Observation - Mother Height: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-mother-height-vr"/>
                 <display value="Observation - Mother Height - Vital Records"/>
             </reference>
@@ -402,6 +712,15 @@
             <description value="This Observation profile represents the height of the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Mother Prepregnancy Weight - Carmen Teresa Lee"/>
+            <description value="Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"/>
+            <groupingId value="observation-examples"/>
         </resource>
         <resource>
             <reference>
@@ -425,6 +744,33 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-none-specified-risk-factors-jada-ann-quinn-common"/></reference>
+            <name value="Observation - None of Specified Risk Factors - Jada Ann Quinn"/>
+            <description value="Observation - Previous Cesarean: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Number Births Now Dead - Carmen Teresa Lee"/>
+            <description value="Observation - Number Births Now Dead: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Number Live Births This Delivery - Carmen Teresa Lee"/>
+            <description value="Observation - Number Live Births This Delivery: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-number-births-now-dead-vr"/>
                 <display value="Observation - Number of Births Now Dead - Vital Records"/>
             </reference>
@@ -435,6 +781,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Number of Births Now Living - Carmen Teresa Lee"/>
+            <description value="Observation - Number of Births Now Living: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-number-births-now-living-vr"/>
                 <display value="Observation - Number of Births Now Living - Vital Records"/>
             </reference>
@@ -442,6 +797,15 @@
             <description value="This Observation profile represents the total number of previous live-born infants for the mother now living."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee"/>
+            <description value="Observation - Number of Fetal Deaths This Delivery: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery-vr"/>
+            <groupingId value="observation-examples"/>
         </resource>
         <resource>
             <reference>
@@ -495,6 +859,42 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"/>
+            <description value="Observation - Number Other Pregnancy Outcomes: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Number Prenatal Visits - Jada Ann Quinn"/>
+            <description value="Observation - Number Prenatal Visits: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Number Previous Cesareans - Carmen Teresa Lee"/>
+            <description value="Observation - Number Previous Cesareans: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Parent Education Level - Carmen Teresa Lee"/>
+            <description value="Observation - Parent Education Level: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-parent-education-level-vr"/>
                 <display value="Observation - Parent Education Level - Vital Records"/>
             </reference>
@@ -505,6 +905,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-plurality-carmen-teresa-lee-common"/></reference>
+            <name value="Observation - Plurality - Carmen Teresa Lee"/>
+            <description value="Observation - Plurality: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-plurality-vr"/>
                 <display value="Observation - Plurality - Vital Records"/>
             </reference>
@@ -512,6 +921,15 @@
             <description value="This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy. This profile represents plurality as a characteristic of the pregnancy. For plurality as a characteristic of the patient, see the Patient.multipleBirth\[x]patient-multipleBirthTotal extension."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-previous-cesarean-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Previous Cesarean - Jada Ann Quinn"/>
+            <description value="Observation - Previous Cesarean: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
         </resource>
         <resource>
             <reference>
@@ -535,6 +953,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-previous-preterm-births-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Previous Preterm Births - Jada Ann Quinn"/>
+            <description value="Observation - Previous Preterm Births: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-race-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Race - Jada Ann Quinn"/>
+            <description value="Observation - Race: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-race-vr"/>
                 <display value="Observation - Race - Vital Records"/>
             </reference>
@@ -542,6 +978,15 @@
             <description value="This Observation profile represents a single race code assigned to the person. If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn-common"/></reference>
+            <name value="Observation - Tabulated Ethnicity - Jada Ann Quinn"/>
+            <description value="Observation - Tabulated Ethnicity: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
+            <groupingId value="observation-examples"/>
         </resource>
         <resource>
             <reference>
@@ -555,6 +1000,42 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+                <display value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
+            </reference>
+            <name value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
+            <description value="This Observation profile represents the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tobacco-use-vr-a-freeman"/></reference>
+            <name value="Observation - Tobacco Use Vital Records - A Freeman"/>
+            <description value="Observation - Tobacco Use Vital Records: A Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/parameters-coding-status-values-example-common"/></reference>
+            <name value="Parameters - Coding Status Values"/>
+            <description value="Parameters - Coding Status Values example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Parameters-coding-status-values-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Parameters-coding-status-values-vr"/>
+                <display value="Parameters - Coding Status Values - Vital Records"/>
+            </reference>
+            <name value="Parameters - Coding Status Values - Vital Records"/>
+            <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Patient/patient-child-babyg-quinn-common"/></reference>
             <name value="Patient - Child - Baby G Quinn"/>
             <description value="Patient - Child: Baby G Quinn example"/>
@@ -564,13 +1045,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
-                <display value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
+                <reference value="StructureDefinition/Patient-child-vr"/>
+                <display value="Patient - Child - Vital Records"/>
             </reference>
-            <name value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
-            <description value="This Observation profile represents the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
+            <name value="Patient - Child - Vital Records"/>
+            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
             <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
+            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -593,18 +1074,18 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-birth-date-part-absent-common"/></reference>
-            <name value="Patient - Mother - Date Part Absent"/>
-            <description value="Patient - Mother: Date Part Absent example"/>
+                <reference value="Patient/patient-mother-carmen-teresa-lee-common"/></reference>
+            <name value="Patient - Mother - Carmen Teresa Lee"/>
+            <description value="Patient - Mother: Carmen Teresa Lee example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-carmen-teresa-lee-common"/></reference>
-            <name value="Patient - Mother - Carmen Teresa Lee"/>
-            <description value="Patient - Mother: Carmen Teresa Lee example"/>
+                <reference value="Patient/patient-mother-birth-date-part-absent-common"/></reference>
+            <name value="Patient - Mother - Date Part Absent"/>
+            <description value="Patient - Mother: Date Part Absent example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             <groupingId value="participant-examples"/>
@@ -617,6 +1098,16 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-mother-vr"/>
+                <display value="Patient - Mother - Vital Records"/>
+            </reference>
+            <name value="Patient - Mother - Vital Records"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -649,6 +1140,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Procedure/procedure-assisted-fertilization-jada-ann-quinn-common"/></reference>
+            <name value="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
+            <description value="Procedure - Assisted Fertilization: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Procedure-assisted-fertilization-vr"/>
                 <display value="Procedure - Assisted Fertilization - Vital Records"/>
             </reference>
@@ -668,6 +1168,25 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Procedure-death-certification-vr"/>
+                <display value="Procedure - Death Certification - Vital Records"/>
+            </reference>
+            <name value="Procedure - Death Certification - Vital Records"/>
+            <description value="This Procedure records the certification of death by the certifier."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-infertility-treatment-jada-ann-quinn-common"/></reference>
+            <name value="Procedure - Infertility Treatment - Jada Ann Quinn"/>
+            <description value="Procedure - Infertility Treatment: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Procedure-infertility-treatment-vr"/>
                 <display value="Procedure - Infertility Treatment - Vital Records"/>
             </reference>
@@ -675,6 +1194,25 @@
             <description value="This Procedure profile records that a pregnancy risk factor of infertility treatment was provided to the mother."/>
             <exampleBoolean value="false"/>
             <groupingId value="pregnancy-risk-factor-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-artificial-insemination-jada-ann-quinn-common"/></reference>
+            <name value="Prodecure - Artificial Insemniation - Jada Ann Quinn"/>
+            <description value="Prodecure - Artificial Insemniation: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr"/>
+            <groupingId value="pregnancy-risk-factor-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-parent-vr"/>
+                <display value="Related Person - Parent - Vital Records"/>
+            </reference>
+            <name value="Related Person - Parent - Vital Records"/>
+            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -696,6 +1234,17 @@
         </resource>
         <resource>
             <reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
+                <display value="Tom Yan Lee"/>
+            </reference>
+            <name value="RelatedPerson - Father - deceased - Tom Yan Lee"/>
+            <description value="RelatedPerson - Father: Tom Yan Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="RelatedPerson/relatedperson-father-tom-yan-lee-common"/></reference>
             <name value="RelatedPerson - Father - Tom Yan Lee"/>
             <description value="RelatedPerson - Father: Tom Yan Lee example"/>
@@ -705,14 +1254,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
-                <display value="Tom Yan Lee"/>
+                <reference value="StructureDefinition/RelatedPerson-father-vr"/>
+                <display value="RelatedPerson - Father - Vital Records"/>
             </reference>
-            <name value="RelatedPerson - Father - deceased - Tom Yan Lee"/>
-            <description value="RelatedPerson - Father: Tom Yan Lee example"/>
+            <name value="RelatedPerson - Father - Vital Records"/>
+            <description value="This RelatedPerson profile represents the father of the subject (patient). Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.)."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
-            <groupingId value="participant-examples"/>
+            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -726,11 +1274,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/RelatedPerson-father-vr"/>
-                <display value="RelatedPerson - Father - Vital Records"/>
+                <reference value="StructureDefinition/RelatedPerson-mother-vr"/>
+                <display value="RelatedPerson - Mother - Vital Records"/>
             </reference>
-            <name value="RelatedPerson - Father - Vital Records"/>
-            <description value="This RelatedPerson profile represents the father of the subject (patient). Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.)."/>
+            <name value="RelatedPerson - Mother - Vital Records"/>
+            <description value="This RelatedPerson profile represents the mother of the report subject. Different individuals may play different roles as the mother (e.g., biological mother, adoptive mother, etc.)."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
@@ -750,16 +1298,6 @@
             </reference>
             <name value="RelatedPerson - Mother Gestational - Vital Records"/>
             <description value="This RelatedPerson profile represents the woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-mother-vr"/>
-                <display value="RelatedPerson - Mother - Vital Records"/>
-            </reference>
-            <name value="RelatedPerson - Mother - Vital Records"/>
-            <description value="This RelatedPerson profile represents the mother of the report subject. Different individuals may play different roles as the mother (e.g., biological mother, adoptive mother, etc.)."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
@@ -801,13 +1339,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-cause-of-death-part1-vr"/>
-                <display value="Observation - Cause of Death Part 1 - Vital Records"/>
-            </reference>
-            <name value="Observation - Cause of Death Part 1 - Vital Records"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+                <reference value="Practitioner/us-core-practitioner-vr-s-jones"/></reference>
+            <name value="US Core Practitioner - S Jones"/>
+            <description value="US Core Practitioner: S Jones example"/>
             <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <groupingId value="participant-death-reporting-examples"/>
         </resource>
         <resource>
             <reference>
@@ -826,6 +1363,16 @@
             <name value="ValueSet - Certifier Types - Vital Records"/>
             <description value="This ValueSet contains codes to represent the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-contributory-tobacco-use-vr"/>
+                <display value="ValueSet - Contributory Tobacco Use - Vital Records"/>
+            </reference>
+            <name value="ValueSet - Contributory Tobacco Use - Vital Records"/>
+            <description value="This ValueSet contains codes that represent the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="valuesets-death-reporting"/>
         </resource>
         <resource>
             <reference>
@@ -876,6 +1423,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/ValueSet-intentional-reject-vr"/>
+                <display value="ValueSet - Intentional Reject - Vital Records"/>
+            </reference>
+            <name value="ValueSet - Intentional Reject - Vital Records"/>
+            <description value="This ValueSet contains codes representing intentional rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/ValueSet-manner-of-death-vr"/>
                 <display value="ValueSet - Manner of Death - Vital Records"/>
             </reference>
@@ -905,6 +1461,33 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/ValueSet-replacement-status-vr"/>
+                <display value="ValueSet - Replacement Status - Vital Records"/>
+            </reference>
+            <name value="ValueSet - Replacement Status - Vital Records"/>
+            <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-system-reject-vr"/>
+                <display value="ValueSet - System Reject - Vital Records"/>
+            </reference>
+            <name value="ValueSet - System Reject - Vital Records"/>
+            <description value="This ValueSet contains codes representing system rejects."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-transax-conversion-vr"/>
+                <display value="ValueSet - Transax Conversion - Vital Records"/>
+            </reference>
+            <name value="ValueSet - Transax Conversion - Vital Records"/>
+            <description value="This ValueSet contains codes representing transax conversions."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/ValueSet-transportation-incident-role-vr"/>
                 <display value="ValueSet - Transportation Incident Role - Vital Records"/>
             </reference>
@@ -925,11 +1508,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"/>
-                <display value="ValueSet - Yes, No, Unknown, Not Applicable - Vital Records"/>
+                <reference value="ValueSet/ValueSet-yes-no-not-applicable-vr"/>
+                <display value="ValueSet - Yes, No, Not Applicable - Vital Records"/>
             </reference>
-            <name value="ValueSet - Yes, No, Unknown, Not Applicable - Vital Records"/>
-            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."/>
+            <name value="ValueSet - Yes, No, Not Applicable - Vital Records"/>
+            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
         </resource>
@@ -945,596 +1528,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-yes-no-not-applicable-vr"/>
-                <display value="ValueSet - Yes, No, Not Applicable - Vital Records"/>
+                <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"/>
+                <display value="ValueSet - Yes, No, Unknown, Not Applicable - Vital Records"/>
             </reference>
-            <name value="ValueSet - Yes, No, Not Applicable - Vital Records"/>
-            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
+            <name value="ValueSet - Yes, No, Unknown, Not Applicable - Vital Records"/>
+            <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/us-core-practitioner-vr-s-jones"/></reference>
-            <name value="US Core Practitioner - S Jones"/>
-            <description value="US Core Practitioner: S Jones example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            <groupingId value="participant-death-reporting-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-contributory-tobacco-use-vr"/>
-                <display value="ValueSet - Contributory Tobacco Use - Vital Records"/>
-            </reference>
-            <name value="ValueSet - Contributory Tobacco Use - Vital Records"/>
-            <description value="This ValueSet contains codes that represent the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="valuesets-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-                <display value="Observation - Autopsy Performed Indicator - Vital Records"/>
-            </reference>
-            <name value="Observation - Autopsy Performed Indicator - Vital Records"/>
-            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
-                <display value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
-            </reference>
-            <name value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
-            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-death-certification-vr"/>
-                <display value="Procedure - Death Certification - Vital Records"/>
-            </reference>
-            <name value="Procedure - Death Certification - Vital Records"/>
-            <description value="This Procedure records the certification of death by the certifier."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-death-date-vr"/>
-                <display value="Observation - Death Date - Vital Records"/>
-            </reference>
-            <name value="Observation - Death Date - Vital Records"/>
-            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="profiles-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-part-absent-reason-vr"/>
-                <display value="Extension - Date Part Absent Reason - Vital Records"/>
-            </reference>
-            <name value="Extension - Date Part Absent Reason - Vital Records"/>
-            <description value="Provides a reason why an expected date part is missing."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-child-vr"/>
-                <display value="Patient - Child - Vital Records"/>
-            </reference>
-            <name value="Patient - Child - Vital Records"/>
-            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-mother-vr"/>
-                <display value="Patient - Mother - Vital Records"/>
-            </reference>
-            <name value="Patient - Mother - Vital Records"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-parent-vr"/>
-                <display value="Related Person - Parent - Vital Records"/>
-            </reference>
-            <name value="Related Person - Parent - Vital Records"/>
-            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-apgar-score-babyg-quinn-5-min-common"/></reference>
-            <name value="Observation - Apgar Score - - Baby G Quinn-5 min"/>
-            <description value="Observation - Apgar Score: Baby G Quinn-5 min example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-autopsy-performed-indicator-vr-a-freeman"/></reference>
-            <name value="Observation - Autopsy Performed Indicator - A Freeman"/>
-            <description value="Observation - Autopsy Performed Indicator: A Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-autopsy-performed-not-named-common"/></reference>
-            <name value="Observation - Autopsy Performed - Fetus Not Named"/>
-            <description value="Observation - Autopsy Performed: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-birth-weight-babyg-quinn-common"/></reference>
-            <name value="Observation - Birth Weight - Baby G Quinn"/>
-            <description value="Observation - Birth Weight: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-birth-weight-not-named-common"/></reference>
-            <name value="Observation - Birth Weight - Fetus Not Named"/>
-            <description value="Observation - Birth Weight: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cause-of-death-part1-vr-a-freeman"/></reference>
-            <name value="Observation - Cause of Death Part 1 - Freeman"/>
-            <description value="Observation - Cause of Death Part 1: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
-            <groupingId value="extensions-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-contributing-cause-of-death-part2-vr-a-freeman"/></reference>
-            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
-            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-contributing-cause-of-death-part2-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-death-date-vr-a-freeman"/></reference>
-            <name value="Observation - Death Date - Freeman"/>
-            <description value="Observation - Death Date: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-decedent-pregnancy-vr-a-freeman"/></reference>
-            <name value="Observation - Decedent Pregnancy - Freeman"/>
-            <description value="Observation - Decedent Pregnancy: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn-common"/></reference>
-            <name value="Observation - Gestational Age at Delivery - Baby G Quinn"/>
-            <description value="Observation - Gestational Age at Delivery: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-gestational-age-at-delivery-not-named-common"/></reference>
-            <name value="Observation - Gestational Age at Delivery - Fetus Not Named"/>
-            <description value="Observation - Gestational Age at Delivery: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-infant-living-babyg-quinn-common"/></reference>
-            <name value="Observation - Infant Living - Baby G Quinn"/>
-            <description value="Observation - Infant Living: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-injury-incident-vr-a-freeman-med-ingest"/></reference>
-            <name value="Observation - Injury Incident - Freeman"/>
-            <description value="Observation - Injury Incident: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Last Menstrual Period - Carmen Teresa Lee"/>
-            <description value="Observation - Last Menstrual Period: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-manner-of-death-vr-a-freeman-accidental"/></reference>
-            <name value="Observation - Manner of Death - A Freeman, accidental"/>
-            <description value="Observation - Manner of Death: A Freeman, accidental example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-manner-of-death-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Mother Delivery Weight - Jada Ann Quinn"/>
-            <description value="Observation - Mother Delivery Weight: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-height-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Mother Height - Carmen Teresa Lee"/>
-            <description value="Observation - Mother Height: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Mother Prepregnancy Weight - Carmen Teresa Lee"/>
-            <description value="Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Number Live Births This Delivery - Carmen Teresa Lee"/>
-            <description value="Observation - Number Live Births This Delivery: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"/>
-            <description value="Observation - Number Other Pregnancy Outcomes: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Number Births Now Dead - Carmen Teresa Lee"/>
-            <description value="Observation - Number Births Now Dead: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Number of Births Now Living - Carmen Teresa Lee"/>
-            <description value="Observation - Number of Births Now Living: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee"/>
-            <description value="Observation - Number of Fetal Deaths This Delivery: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Number Prenatal Visits - Jada Ann Quinn"/>
-            <description value="Observation - Number Prenatal Visits: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Number Previous Cesareans - Carmen Teresa Lee"/>
-            <description value="Observation - Number Previous Cesareans: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Parent Education Level - Carmen Teresa Lee"/>
-            <description value="Observation - Parent Education Level: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-plurality-carmen-teresa-lee-common"/></reference>
-            <name value="Observation - Plurality - Carmen Teresa Lee"/>
-            <description value="Observation - Plurality: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-race-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Race - Jada Ann Quinn"/>
-            <description value="Observation - Race: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Tabulated Ethnicity - Jada Ann Quinn"/>
-            <description value="Observation - Tabulated Ethnicity: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
-            <groupingId value="observation-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tobacco-use-vr-a-freeman"/></reference>
-            <name value="Observation - Tobacco Use Vital Records - A Freeman"/>
-            <description value="Observation - Tobacco Use Vital Records: A Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
-            <groupingId value="observations-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-eclampsia-hypertension-jada-ann-quinn-common"/></reference>
-            <name value="Condition - Eclampsia Hypertension - Jada Ann Quinn"/>
-            <description value="Condition - Eclampsia Hypertension: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-eclampsia-hypertension-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-gestational-diabetes-jada-ann-quinn-common"/></reference>
-            <name value="Condition - Gestational Diabetes - Jada Ann Quinn"/>
-            <description value="Condition - Gestational Diabetes: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn-common"/></reference>
-            <name value="Condition - Gestational Hypertension - Jada Ann Quinn"/>
-            <description value="Condition - Gestational Hypertension: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-prepregnancy-diabetes-jada-ann-quinn-common"/></reference>
-            <name value="Condition - Prepregnancy Diabetes - Jada Ann Quinn"/>
-            <description value="Condition - Prepregnancy Diabetes: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-prepregnancy-hypertension-jada-ann-quinn-common"/></reference>
-            <name value="Condition - Prepregnancy Hypertension - Jada Ann Quinn"/>
-            <description value="Condition - Prepregnancy Hypertension: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Parameters-coding-status-values-vr"/>
-                <display value="Parameters - Coding Status Values - Vital Records"/>
-            </reference>
-            <name value="Parameters - Coding Status Values - Vital Records"/>
-            <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-partial-date-vr"/>
-                <display value="Extension - Partial Date - Vital Records"/>
-            </reference>
-            <name value="Extension - Partial Date - Vital Records"/>
-            <description value="This Extension profile represents values of a partial date."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-replacement-status-vr"/>
-                <display value="Extension - Replacement Status - Vital Records"/>
-            </reference>
-            <name value="Extension - Replacement Status - Vital Records"/>
-            <description value="This Extension profile represents the replacement status of a record."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-replacement-status-vr"/>
-                <display value="CodeSystem - Replacement Status Vital Records"/>
-            </reference>
-            <name value="CodeSystem - Replacement Status Vital Records"/>
-            <description value="This CodeSystem contains codes that represent the replacement status of a record submission."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-replacement-status-vr"/>
-                <display value="ValueSet - Replacement Status - Vital Records"/>
-            </reference>
-            <name value="ValueSet - Replacement Status - Vital Records"/>
-            <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-intentional-reject-vr"/>
-                <display value="CodeSystem - Intentional Reject"/>
-            </reference>
-            <name value="CodeSystem - Intentional Reject"/>
-            <description value="This CodeSystem contains values representing intentional rejects."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-intentional-reject-vr"/>
-                <display value="ValueSet - Intentional Reject - Vital Records"/>
-            </reference>
-            <name value="ValueSet - Intentional Reject - Vital Records"/>
-            <description value="This ValueSet contains codes representing intentional rejects."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-system-reject-vr"/>
-                <display value="CodeSystem - System Reject Vital Records"/>
-            </reference>
-            <name value="CodeSystem - System Reject Vital Records"/>
-            <description value="This CodeSystem contains code representing system rejects."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-system-reject-vr"/>
-                <display value="ValueSet - System Reject - Vital Records"/>
-            </reference>
-            <name value="ValueSet - System Reject - Vital Records"/>
-            <description value="This ValueSet contains codes representing system rejects."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-transax-conversion-vr"/>
-                <display value="CodeSystem - Transax Conversion Vital Records"/>
-            </reference>
-            <name value="CodeSystem - Transax Conversion Vital Records"/>
-            <description value="This CodeSystem contains codes representing transax conversions."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-transax-conversion-vr"/>
-                <display value="ValueSet - Transax Conversion - Vital Records"/>
-            </reference>
-            <name value="ValueSet - Transax Conversion - Vital Records"/>
-            <description value="This ValueSet contains codes representing transax conversions."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
-                <display value="Extension - Reported Parent Age At Delivery - Vital Records"/>
-            </reference>
-            <name value="Extension - Reported Parent Age At Delivery - Vital Records"/>
-            <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-infertility-treatment-jada-ann-quinn-common"/></reference>
-            <name value="Procedure - Infertility Treatment - Jada Ann Quinn"/>
-            <description value="Procedure - Infertility Treatment: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-assisted-fertilization-jada-ann-quinn-common"/></reference>
-            <name value="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
-            <description value="Procedure - Assisted Fertilization: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-artificial-insemination-jada-ann-quinn-common"/></reference>
-            <name value="Prodecure - Artificial Insemniation - Jada Ann Quinn"/>
-            <description value="Prodecure - Artificial Insemniation: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Parameters/parameters-coding-status-values-example-common"/></reference>
-            <name value="Parameters - Coding Status Values"/>
-            <description value="Parameters - Coding Status Values example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Parameters-coding-status-values-vr"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-previous-preterm-births-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Previous Preterm Births - Jada Ann Quinn"/>
-            <description value="Observation - Previous Preterm Births: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-previous-cesarean-jada-ann-quinn-common"/></reference>
-            <name value="Observation - Previous Cesarean - Jada Ann Quinn"/>
-            <description value="Observation - Previous Cesarean: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-none-specified-risk-factors-jada-ann-quinn-common"/></reference>
-            <name value="Observation - None of Specified Risk Factors - Jada Ann Quinn"/>
-            <description value="Observation - Previous Cesarean: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
-            <groupingId value="pregnancy-risk-factor-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
