@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father-natural-vr"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-06-20T22:40:25.719Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-21T01:32:01.875Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
     <name value="RelatedPersonFatherNaturalVitalRecords"/>
@@ -35,6 +35,24 @@
         <element id="RelatedPerson">
             <path value="RelatedPerson"/>
             <short value="The biological father of the newborn or fetus."/>
+        </element>
+        <element id="RelatedPerson.extension">
+            <path value="RelatedPerson.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="RelatedPerson.extension:reportedAge">
+            <path value="RelatedPerson.extension"/>
+            <sliceName value="reportedAge"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+            </type>
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>

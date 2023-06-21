@@ -4,9 +4,9 @@ In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.go
 * Patient.identifier is mapped to Item **Mother's medical record number**
 * Patient.name:currentLegalName" is mapped to Item **8a. Mother's current legal name (First, Middle, Last, Suffix)**
 * Patient.name:namePriorToFirstMarriage" is mapped to Item **8c. Mother's name prior to first marriage (First, Middle, Last, Suffix)**
-* Patient.birthDate" is mapped to Item **8b. Date of birth**
-* Patient.address.line" is mapped to Item **9d. Street and number**
-* Patient.address.city" is mapped to Item **9c. City, town, or location**
-* Patient.address.district" is mapped to Item **9b. County**
-* Patient.address.state" is mapped to Item **9a. Resident of mother - state**
-* Patient.address.postalCode" is mapped to Item **9a. Zip code**
+* Patient.birthDate is mapped to Item **8b. Date of birth**
+* Patient.address.line is mapped to Item **9d. Street and number**
+* Patient.address.city is mapped to Item **9c. City, town, or location**
+* Patient.address.district is mapped to Item **9b. County**
+* Patient.address.state is mapped to Item **9a. Resident of mother - state**
+* Patient.address.postalCode is mapped to Item **9a. Zip code**

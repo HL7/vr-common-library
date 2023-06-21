@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-reported-parent-age-at-delivery-vr"/>
+    <meta>
+        <versionId value="14"/>
+        <lastUpdated value="2023-06-21T01:28:46.214Z"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+    <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
+    <title value="Extension - Reported Parent Age At Delivery - Vital Records"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Patient"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="RelatedPerson"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Extension.extension:reportedAge">
+            <path value="Extension.extension"/>
+            <sliceName value="reportedAge"/>
+        </element>
+        <element id="Extension.extension:reportedAge.url">
+            <path value="Extension.extension.url"/>
+            <fixedUri value="reportedAge"/>
+        </element>
+        <element id="Extension.extension:reportedAge.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Extension.extension:newbornOrFetus">
+            <path value="Extension.extension"/>
+            <sliceName value="newbornOrFetus"/>
+        </element>
+        <element id="Extension.extension:newbornOrFetus.url">
+            <path value="Extension.extension.url"/>
+            <fixedUri value="newbornOrFetus"/>
+        </element>
+        <element id="Extension.extension:newbornOrFetus.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
+            </type>
+        </element>
+        <element id="Extension.extension:reporter">
+            <path value="Extension.extension"/>
+            <sliceName value="reporter"/>
+        </element>
+        <element id="Extension.extension:reporter.url">
+            <path value="Extension.extension.url"/>
+            <fixedUri value="reporter"/>
+        </element>
+        <element id="Extension.extension:reporter.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+            </type>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <max value="0"/>
+        </element>
+    </differential>
+</StructureDefinition>

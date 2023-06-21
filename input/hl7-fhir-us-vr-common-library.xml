@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="324"/>
-        <lastUpdated value="2023-06-20T20:49:24.822Z"/>
+        <versionId value="328"/>
+        <lastUpdated value="2023-06-21T01:04:19.709Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -1435,6 +1435,15 @@
             </reference>
             <name value="ValueSet - Transax Conversion - Vital Records"/>
             <description value="This ValueSet contains codes representing transax conversions."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+                <display value="Extension - Reported Parent Age At Delivery - Vital Records"/>
+            </reference>
+            <name value="Extension - Reported Parent Age At Delivery - Vital Records"/>
+            <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

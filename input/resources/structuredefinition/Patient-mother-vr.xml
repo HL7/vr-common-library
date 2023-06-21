@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother-vr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-20T22:40:02.089Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-06-21T01:33:35.475Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
     <name value="PatientMotherVitalRecords"/>
@@ -69,6 +69,14 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:reportedAge">
+            <path value="Patient.extension"/>
+            <sliceName value="reportedAge"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+            </type>
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>
