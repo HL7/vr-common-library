@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-father-natural-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-21T02:54:06.038Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-21T05:01:18.581Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
     <name value="RelatedPersonFatherNaturalVitalRecords"/>
@@ -39,10 +39,6 @@
         <element id="RelatedPerson.extension">
             <path value="RelatedPerson.extension"/>
             <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
                 <rules value="open"/>
             </slicing>
         </element>
