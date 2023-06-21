@@ -1237,7 +1237,7 @@
                 <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
                 <display value="Tom Yan Lee"/>
             </reference>
-            <name value="RelatedPerson - Father - deceased - Tom Yan Lee"/>
+            <name value="Tom Yan Lee"/>
             <description value="RelatedPerson - Father: Tom Yan Lee example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>

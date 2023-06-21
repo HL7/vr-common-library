@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2023-06-21T03:27:40.510Z"/>
+        <versionId value="18"/>
+        <lastUpdated value="2023-06-21T03:57:05.285Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
@@ -43,7 +43,8 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <min value="1"/>
+            <min value="2"/>
+            <max value="3"/>
         </element>
         <element id="Extension.extension:reportedAge">
             <path value="Extension.extension"/>
@@ -59,8 +60,6 @@
         </element>
         <element id="Extension.extension:reportedAge.url">
             <path value="Extension.extension.url"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="uri"/>
             </type>
@@ -89,8 +88,6 @@
         </element>
         <element id="Extension.extension:newbornOrFetus.url">
             <path value="Extension.extension.url"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="uri"/>
             </type>
@@ -120,7 +117,6 @@
         </element>
         <element id="Extension.extension:reporter.url">
             <path value="Extension.extension.url"/>
-            <min value="1"/>
             <type>
                 <code value="uri"/>
             </type>
