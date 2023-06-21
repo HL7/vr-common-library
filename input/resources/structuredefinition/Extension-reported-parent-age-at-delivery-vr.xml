@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-06-21T01:28:46.214Z"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-21T02:50:46.066Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
@@ -13,7 +13,7 @@
     <experimental value="false"/>
     <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
     <fhirVersion value="4.0.1"/>
-    <kind value="resource"/>
+    <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
