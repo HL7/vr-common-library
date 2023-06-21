@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="relatedperson-father-natural-tom-yan-lee-common"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-10-13T03:44:48.451Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-06-21T02:15:53.559Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
@@ -35,6 +35,9 @@
         <valueAddress>
             <state value="NY"/>
         </valueAddress>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-deceased-vr">
+        <valueBoolean value="true"/>
     </extension>
     <active value="true"/>
     <patient>

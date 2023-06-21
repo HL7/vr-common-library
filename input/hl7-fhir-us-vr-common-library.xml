@@ -704,8 +704,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/></reference>
-            <name value="RelatedPerson - Father Natural example - Tom Yan Lee"/>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
+                <display value="Tom Yan Lee"/>
+            </reference>
+            <name value="Tom Yan Lee"/>
             <description value="Example of Relatedperson-father-natural-vr - Tom Yan Lee"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
@@ -1445,6 +1447,48 @@
             <name value="Extension - Reported Parent Age At Delivery - Vital Records"/>
             <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-infertility-treatment-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-assisted-fertilization-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-artificial-insemination-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/parameters-coding-status-values-example-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Parameters-coding-status-values-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-previous-preterm-births-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-previous-cesarean-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-none-specified-risk-factors-jada-ann-quinn-common"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters
+    xmlns="http://hl7.org/fhir">
+    <id value="parameters-coding-status-values-example-common"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-21T02:15:53.223Z"/>
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Parameters-coding-status-values-vr"/>
+    </meta>
+    <parameter>
+        <name value="shipmentNumber"/>
+        <valueString value="A2B2"/>
+    </parameter>
+    <parameter>
+        <name value="receiptDate"/>
+        <valueDate>
+            <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-vr">
+                <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr">
+                    <valueUnsignedInt value="2021"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
+                    <valueUnsignedInt value="12"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr">
+                    <valueUnsignedInt value="12"/>
+                </extension>
+            </extension>
+        </valueDate>
+    </parameter>
+    <parameter>
+        <name value="coderStatus"/>
+        <valueInteger value="5"/>
+    </parameter>
+    <parameter>
+        <name value="intentionalReject"/>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-intentional-reject-vr"/>
+                <code value="1"/>
+                <display value="Reject1"/>
+            </coding>
+        </valueCodeableConcept>
+    </parameter>
+    <parameter>
+        <name value="acmeSystemReject"/>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-system-reject-vr"/>
+                <code value="0"/>
+                <display value="Not Rejected"/>
+            </coding>
+        </valueCodeableConcept>
+    </parameter>
+    <parameter>
+        <name value="transaxConversion"/>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-transax-conversion-vr"/>
+                <code value="3"/>
+                <display value="Conversion using non-ambivalent table entries"/>
+            </coding>
+        </valueCodeableConcept>
+    </parameter>
+</Parameters>
