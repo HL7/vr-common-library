@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2023-06-22T02:10:48.988Z"/>
+        <versionId value="28"/>
+        <lastUpdated value="2023-06-22T02:27:47.625Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
@@ -99,7 +99,7 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="DateTime"/>
+                <code value="dateTime"/>
             </type>
         </element>
         <element id="Extension.extension:newbornOrFetus">
