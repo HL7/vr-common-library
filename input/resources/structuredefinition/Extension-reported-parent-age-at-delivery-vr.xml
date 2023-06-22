@@ -3,25 +3,21 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2023-06-22T02:27:47.625Z"/>
+        <versionId value="34"/>
+        <lastUpdated value="2023-06-22T04:01:20.260Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
     <title value="Extension - Reported Parent Age At Delivery - Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. It also contains a reference to the newborn (Patient - Child - Vital Records) or the fetus (Patient - Decedent Fetus - Vital Records) in which is located the date of delivery (Patient.birthDate). It can optionally contain a reference to the reporter (US Core Patient Profile or US Core RelatedPerson Profile)."/>
+    <description value="This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. A reference to either the **Patient - Mother - Vital Records** or the **RelatedPerson - Father Natural - Vital Records** represents the parent. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**)."/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
         <expression value="Patient"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="RelatedPerson"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -74,11 +70,11 @@
                 <code value="Quantity"/>
             </type>
         </element>
-        <element id="Extension.extension:dateReported">
+        <element id="Extension.extension:motherOrFather">
             <path value="Extension.extension"/>
-            <sliceName value="dateReported"/>
-            <short value="Date the age was reported."/>
-            <definition value="Date the age was reported."/>
+            <sliceName value="motherOrFather"/>
+            <short value="Reference to the mother or father."/>
+            <definition value="Reference to the mother or father."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -86,50 +82,22 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:dateReported.url">
+        <element id="Extension.extension:motherOrFather.url">
             <path value="Extension.extension.url"/>
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="dateReported"/>
+            <fixedUri value="motherOrFather"/>
         </element>
-        <element id="Extension.extension:dateReported.value[x]">
-            <path value="Extension.extension.value[x]"/>
-            <short value="Date the age was reported"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="dateTime"/>
-            </type>
-        </element>
-        <element id="Extension.extension:newbornOrFetus">
-            <path value="Extension.extension"/>
-            <sliceName value="newbornOrFetus"/>
-            <short value="Reference to the newborn or fetus."/>
-            <definition value="Reference to the newborn or fetus."/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Extension.extension:newbornOrFetus.url">
-            <path value="Extension.extension.url"/>
-            <type>
-                <code value="uri"/>
-            </type>
-            <fixedUri value="newbornOrFetus"/>
-        </element>
-        <element id="Extension.extension:newbornOrFetus.value[x]">
+        <element id="Extension.extension:motherOrFather.value[x]">
             <path value="Extension.extension.value[x]"/>
             <short value="Reported age in years"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
         </element>
         <element id="Extension.extension:reporter">

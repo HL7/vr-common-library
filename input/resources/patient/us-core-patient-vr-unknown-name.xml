@@ -3,27 +3,23 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-patient-vr-unknown-name"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T23:35:37.423Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-22T04:04:41.449Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">
-                <b>UNK </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>MR303303305</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr">
+        <extension url="reportedAge">
+            <valueQuantity>
+                <value value="32"/>
+                <unit value="a"/>
+            </valueQuantity>
+        </extension>
+        <extension url="motherOrFather">
+            <valueReference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
+            </valueReference>
+        </extension>
+    </extension>
     <identifier>
         <use value="usual"/>
         <type>

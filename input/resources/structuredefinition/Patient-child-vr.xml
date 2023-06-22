@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child-vr"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2023-06-20T22:37:51.663Z"/>
+        <versionId value="19"/>
+        <lastUpdated value="2023-06-22T03:50:21.484Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
     <name value="PatientChildVitalRecords"/>
@@ -73,6 +73,16 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:parentReportedAgeAtDelivery">
+            <path value="Patient.extension"/>
+            <sliceName value="parentReportedAgeAtDelivery"/>
+            <short value="The mother or father's reported age at the time of delivery of the child"/>
+            <max value="2"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+            </type>
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>

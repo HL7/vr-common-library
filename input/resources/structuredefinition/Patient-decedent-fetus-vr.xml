@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-20T22:39:59.296Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-06-22T03:51:02.264Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     <name value="PatientDecedentFetusVitalRecords"/>
@@ -35,6 +35,16 @@
         <element id="Patient">
             <path value="Patient"/>
         </element>
+        <element id="Patient.extension">
+            <path value="Patient.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension"/>
             <sliceName value="birthPlace"/>
@@ -46,6 +56,16 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:parentReportedAgeAtDelivery">
+            <path value="Patient.extension"/>
+            <sliceName value="parentReportedAgeAtDelivery"/>
+            <short value="The mother or father's reported age at the time of delivery of the fetus"/>
+            <max value="2"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
+            </type>
         </element>
         <element id="Patient.name">
             <path value="Patient.name"/>
