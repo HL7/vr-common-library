@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="337"/>
-        <lastUpdated value="2023-06-21T04:41:54.257Z"/>
+        <versionId value="338"/>
+        <lastUpdated value="2023-06-21T23:27:29.785Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -132,15 +132,6 @@
             <description value="This CodeSystem contains codes that represent local component codes for observation components that lack an appropriate LOINC code."/>
             <exampleBoolean value="false"/>
             <groupingId value="codesystems-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-replacement-status-vr"/>
-                <display value="CodeSystem - Replacement Status Vital Records"/>
-            </reference>
-            <name value="CodeSystem - Replacement Status Vital Records"/>
-            <description value="This CodeSystem contains codes that represent the replacement status of a record submission."/>
-            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -349,16 +340,6 @@
             </reference>
             <name value="Extension - RelatedPerson Deceased - Vital Records"/>
             <description value="This Extension profile represents the deceased indicator for a RelatedPerson. Deceased date/time is preferred."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-replacement-status-vr"/>
-                <display value="Extension - Replacement Status - Vital Records"/>
-            </reference>
-            <name value="Extension - Replacement Status - Vital Records"/>
-            <description value="This Extension profile represents the replacement status of a record."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -1462,15 +1443,6 @@
             <description value="This ValueSet contains codes that represent the death location of the decedent (e.g., hospital, home, hospice)."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-replacement-status-vr"/>
-                <display value="ValueSet - Replacement Status - Vital Records"/>
-            </reference>
-            <name value="ValueSet - Replacement Status - Vital Records"/>
-            <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
-            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
