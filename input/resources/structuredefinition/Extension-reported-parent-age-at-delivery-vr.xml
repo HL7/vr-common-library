@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2023-06-22T00:57:03.498Z"/>
+        <versionId value="27"/>
+        <lastUpdated value="2023-06-22T02:10:48.988Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
@@ -72,6 +72,34 @@
             <max value="1"/>
             <type>
                 <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Extension.extension:dateReported">
+            <path value="Extension.extension"/>
+            <sliceName value="dateReported"/>
+            <short value="Date the age was reported."/>
+            <definition value="Date the age was reported."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:dateReported.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="dateReported"/>
+        </element>
+        <element id="Extension.extension:dateReported.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <short value="Date the age was reported"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="DateTime"/>
             </type>
         </element>
         <element id="Extension.extension:newbornOrFetus">
