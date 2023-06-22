@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-reported-parent-age-at-delivery-vr"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2023-06-22T00:35:28.718Z"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-06-22T00:57:03.498Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
     <name value="ExtensionReportedParentAgeAtDeliveryVitalRecords"/>
@@ -131,6 +131,10 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             </type>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
