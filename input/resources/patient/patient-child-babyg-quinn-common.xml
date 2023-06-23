@@ -3,34 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-child-babyg-quinn-common"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-05-24T01:53:36.461Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-23T05:09:09.484Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Baby G 
-                
-                <b>QUINN </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>9932702</td>
-                    </tr>
-                    <tr>
-                        <td>Date of birth</td>
-                        <td>
-                            <span>12 February 2019</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
             <valueCoding>

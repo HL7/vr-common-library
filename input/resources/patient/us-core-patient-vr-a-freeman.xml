@@ -3,44 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-patient-vr-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-12-08T23:35:37.423Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-23T05:09:53.790Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Alice J. 
-                
-                <b>FREEMAN </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>987054321</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>
-                            <span>112 Miramar Ct </span>
-                            <br/>
-                            <span>Danville </span>
-                            <span>Nova Scotia </span>
-                            <span>CA </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Date of birth</td>
-                        <td>
-                            <span>12 March 1978</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="detailed">
             <valueCoding>
