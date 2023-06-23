@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-patient-vr-unknown-name"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-22T04:04:41.449Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-23T03:38:43.071Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr">

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-patient-fetal-death-vr"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-23T03:28:15.319Z"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.4.642.5.1493"/>
+    </identifier>
+    <name value="ExtensionPatientFetalDeathVitalRecords"/>
+    <title value="Extension - Patient Fetal Death - Vital Records"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <publisher value="HL7 International - Public Health (http://www.hl7.org/Special/committees/pher)"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/fhir-i"/>
+        </telecom>
+    </contact>
+    <description value="The fetal death status of the patient."/>
+    <jurisdiction>
+        <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Patient"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="fetal-death"/>
+            <definition value="An indicator that the status of the patient is fetal death."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <short value="Fetal death (event)"/>
+            <min value="1"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <patternCoding>
+                <system value="http://snomed.info/sct"/>
+                <code value="276507005"/>
+            </patternCoding>
+        </element>
+    </differential>
+</StructureDefinition>

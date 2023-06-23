@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="339"/>
-        <lastUpdated value="2023-06-22T01:35:07.156Z"/>
+        <versionId value="340"/>
+        <lastUpdated value="2023-06-23T03:24:00.066Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -1040,8 +1040,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-decedent-fetus-not-named-common"/></reference>
-            <name value="Patient - Decedent Fetus - Fetus Not Named"/>
+                <reference value="Patient/patient-decedent-fetus-not-named-common"/>
+                <display value=" UNK"/>
+            </reference>
+            <name value=" UNK"/>
             <description value="Patient - Decedent Fetus: Fetus Not Named example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
@@ -1513,6 +1515,15 @@
             <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-patient-fetal-death-vr"/>
+                <display value="Extension - Patient Fetal Death - Vital Records"/>
+            </reference>
+            <name value="Extension - Patient Fetal Death - Vital Records"/>
+            <description value="The fetal death status of the patient."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
