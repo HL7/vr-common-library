@@ -3,37 +3,22 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-patient-fetal-death-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-26T06:30:40.858Z"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-06-26T08:40:17.641Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"/>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:oid:2.16.840.1.113883.4.642.5.1493"/>
-    </identifier>
     <name value="ExtensionPatientFetalDeathVitalRecords"/>
     <title value="Extension - Patient Fetal Death - Vital Records"/>
     <status value="active"/>
     <experimental value="true"/>
     <publisher value="HL7 International - Public Health (http://www.hl7.org/Special/committees/pher)"/>
     <description value="The fetal death status of the patient."/>
-    <jurisdiction>
-        <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-        </coding>
-    </jurisdiction>
     <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="rim"/>
-        <uri value="http://hl7.org/v3"/>
-        <name value="RIM Mapping"/>
-    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr#Patient"/>
+        <expression value="Patient"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
