@@ -32,8 +32,8 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
-        <type value="fhirpath"/>
-        <expression value="$this.conformsTo('http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr')"/>
+        <type value="element"/>
+        <expression value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
