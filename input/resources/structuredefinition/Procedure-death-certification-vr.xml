@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification-vr"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2023-06-20T22:40:16.088Z"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-26T20:06:44.524Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
     <name value="ProcedureDeathCertificationVitalRecords"/>
@@ -56,6 +56,10 @@
     <differential>
         <element id="Procedure">
             <path value="Procedure"/>
+        </element>
+        <element id="Procedure.status">
+            <path value="Procedure.status"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Procedure.category">
             <path value="Procedure.category"/>

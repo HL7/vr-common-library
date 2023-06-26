@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tobacco-use-contributed-to-death-vr"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-20T22:37:46.270Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-06-26T20:04:17.707Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
     <name value="ObservationTobaccoUseContributedToDeathVitalRecords"/>
@@ -66,11 +66,6 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
-        </element>
-        <element id="Observation.id">
-            <path value="Observation.id"/>
-            <min value="0"/>
-            <max value="1"/>
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>

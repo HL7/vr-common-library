@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-injury-incident-vr"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-20T22:31:55.421Z"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-06-26T20:02:53.564Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
     <name value="ObservationInjuryIncidentVitalRecords"/>
@@ -68,6 +68,10 @@
             <path value="Observation"/>
             <short value="The certified explanation of how the injury leading to death occurred."/>
             <definition value="The certified explanation of how the injury leading to death occurred."/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>

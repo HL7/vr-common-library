@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy-vr"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-20T22:31:52.507Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-06-26T20:03:33.225Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-decedent-pregnancy-vr"/>
     <name value="ObservationDecedentPregnancyVitalRecords"/>
@@ -70,12 +70,6 @@
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
-            <short value="status"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="code"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code">

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-death-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-20T22:32:11.821Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-26T20:07:58.101Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-death-vr"/>
     <name value="LocationDeathVitalRecords"/>
@@ -38,6 +38,10 @@
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
     <derivation value="constraint"/>
     <differential>
+        <element id="Location.name">
+            <path value="Location.name"/>
+            <short value="Name of Death Location"/>
+        </element>
         <element id="Location.type">
             <path value="Location.type"/>
             <short value="Death location"/>
