@@ -1043,7 +1043,7 @@
         <resource>
             <reference>
                 <reference value="Patient/patient-decedent-fetus-not-named-common"/>
-                <display value=" UNK"/>
+                <display value="UNK"/>
             </reference>
             <name value="Patient - Decedent Fetus - Vital Records - Fetus Not Named"/>
             <description value="Patient - Decedent Fetus: Fetus Not Named"/>
@@ -1319,7 +1319,7 @@
         <resource>
             <reference>
                 <reference value="Patient/us-core-patient-vr-unknown-name"/>
-                <display value=" UNK"/>
+                <display value="UNK"/>
             </reference>
             <name value="Patient - US Core - Unknown Name"/>
             <description value="US Core Patient: Unknown Name example"/>
