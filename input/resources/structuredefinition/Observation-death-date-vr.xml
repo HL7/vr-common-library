@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date-vr"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2023-06-20T22:31:51.540Z"/>
+        <versionId value="23"/>
+        <lastUpdated value="2023-06-26T21:56:06.810Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-death-date-vr"/>
     <name value="ObservationDeathDateVitalRecords"/>
@@ -111,16 +111,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <slicing>
-                <discriminator>
-                    <type value="type"/>
-                    <path value="$this"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
             <short value="Date/Time of Death"/>
-            <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <type>
                 <code value="dateTime"/>
             </type>
@@ -128,13 +119,8 @@
                 <code value="Period"/>
             </type>
         </element>
-        <element id="Observation.valueDateTime">
-            <path value="Observation.valueDateTime"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.valueDateTime.extension">
-            <path value="Observation.valueDateTime.extension"/>
+        <element id="Observation.value[x].extension">
+            <path value="Observation.value[x].extension"/>
             <slicing>
                 <discriminator>
                     <type value="value"/>
@@ -144,8 +130,8 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Observation.valueDateTime.extension:partialDateTime">
-            <path value="Observation.valueDateTime.extension"/>
+        <element id="Observation.value[x].extension:partialDateTime">
+            <path value="Observation.value[x].extension"/>
             <sliceName value="partialDateTime"/>
             <min value="0"/>
             <max value="1"/>
