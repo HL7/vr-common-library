@@ -6,8 +6,8 @@ This concept is mapped to:
  * Item **11.5. Risk factors in this pregnancy: Eclampsia** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 239 | Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004) | EHYPE|
-| Fetal Death| 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 239 | Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004) | EHYPE |
+| Fetal Death | 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE |
 {: .grid }

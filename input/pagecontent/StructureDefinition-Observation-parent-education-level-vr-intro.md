@@ -1,4 +1,3 @@
-### Usage
 When the Observation is about the father, set the subject to the child and the focus to the father (RelatedPerson).
 
 ### Form Mapping
@@ -11,10 +10,10 @@ This concept is mapped to:
  * Item **8. What is the highest level of schooling that you have completed at the time of delivery?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 78 | Father's Education | FEDUC|
-| Fetal Death| 283 | Father's Education | FEDUC|
-| Natality| 32 | Mother's Education | MEDUC|
-| Fetal Death| 32 | Mother's Education | MEDUC|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 78 | Father's Education | FEDUC |
+| Fetal Death | 283 | Father's Education | FEDUC |
+| Natality | 32 | Mother's Education | MEDUC |
+| Fetal Death | 32 | Mother's Education | MEDUC |
 {: .grid }

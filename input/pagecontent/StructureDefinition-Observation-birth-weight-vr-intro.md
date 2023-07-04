@@ -7,8 +7,8 @@ This concept is mapped to:
  * Item **19. Weight of fetus** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 201 | Birthweight in grams | BWG|
-| Fetal Death| 143 | Weight of Fetus | FWG|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 201 | Birthweight in grams | BWG |
+| Fetal Death | 143 | Weight of Fetus | FWG |
 {: .grid }

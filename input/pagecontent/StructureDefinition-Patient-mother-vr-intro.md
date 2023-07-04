@@ -45,102 +45,102 @@ This concept is mapped to:
  * Item **6. What is your date of birth?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 268 | Mother's Residence Street Address | ADDRESS|
-| Fetal Death| 253 | Mother's Residence Street Address | ADDRESS|
-| Fetal Death| 252 | Mother's Residence Unit or Apartment Number | APTNUMB|
-| Natality| 20 | Residence of Mother--City | CITYC|
-| Fetal Death| 20 | Residence of Mother--City/Town | CITYC|
-| Natality| 271 | Mother's Residence City/Town (Literal) | CITYTEXT|
-| Fetal Death| 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT|
-| Natality| 273 | Mother's Residence Country (Literal) | CNTRYTXT|
-| Fetal Death| 258 | Mother's Residence Country (literal) | CNTRYTXT|
-| Natality| 23 | Residence of Mother--Country | COUNTRYC|
-| Fetal Death| 23 | Residence of Mother--Country | COUNTRYC|
-| Natality| 21 | Residence of Mother--County | COUNTYC|
-| Fetal Death| 21 | Residence of Mother--County | COUNTYC|
-| Natality| 270 | Mother's Residence County (Literal) | COUNTYTXT|
-| Fetal Death| 255 | Mother's Residence County (literal) | COUNTYTXT|
-| Natality| 315 | Mother's Mailing Address Street Address | MAIL_ADDRESS|
-| Natality| 318 | Mother's Mailing Address City/Town (Literal) | MAIL_CITYTEXT|
-| Natality| 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT|
-| Natality| 317 | Mother's Mailing Address County (Literal) | MAIL_COUNTYTXT|
-| Natality| 313 | Mother's Mailing Address Post Directional | MAIL_POSTDIR|
-| Natality| 310 | Mother's Mailing Address Pre Directional | MAIL_PREDIR|
-| Natality| 319 | Mother's Mailing Address State (Literal) | MAIL_STATETXT|
-| Natality| 312 | Mother's Mailing Address Street designator | MAIL_STDESIG|
-| Natality| 311 | Mother's Mailing Address Street name | MAIL_STNAME|
-| Natality| 309 | Mother's Mailing Address Street number | MAIL_STNUM|
-| Natality| 314 | Mother's Mailing Address Unit or Apartment Number | MAIL_UNUM|
-| Natality| 316 | Mother's Mailing Address Zip Code and Zip+4 | MAIL_ZIPCODE|
-| Natality| 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP|
-| Natality| 16 | Date of Birth (Mother)--Day | MDOB_DY|
-| Fetal Death| 16 | Date of Birth (Mother)--Day | MDOB_DY|
-| Natality| 15 | Date of Birth (Mother)--Month | MDOB_MO|
-| Fetal Death| 15 | Date of Birth (Mother)--Month | MDOB_MO|
-| Natality| 14 | Date of Birth (Mother)--Year | MDOB_YR|
-| Fetal Death| 14 | Date of Birth (Mother)--Year | MDOB_YR|
-| Fetal Death| 34 | Mother of Hispanic Origin?--Mexican | METHNIC1|
-| Fetal Death| 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2|
-| Fetal Death| 36 | Mother of Hispanic Origin?--Cuban | METHNIC3|
-| Fetal Death| 37 | Mother of Hispanic Origin?--Other | METHNIC4|
-| Fetal Death| 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5|
-| Natality| 333 | Mother's Medical Record Number | MOM_MED_REC_NUM|
-| Natality| 278 | Mother's Social Security Number | MOM_SSN|
-| Fetal Death| 265 | Mother's Social Security Number | MOM_SSN|
-| Natality| 258 | Mother's First Maiden Name | MOMFMNME|
-| Fetal Death| 243 | Mother's First Maiden Name | MOMFMNME|
-| Natality| 254 | Mother's First Name | MOMFNAME|
-| Fetal Death| 239 | Mother's Legal First Name | MOMFNAME|
-| Natality| 256 | Mother's Last Name | MOMLNAME|
-| Fetal Death| 241 | Mother's Legal Last Name | MOMLNAME|
-| Natality| 260 | Mother's Maiden Surname | MOMMAIDN|
-| Fetal Death| 245 | Mother's Last Maiden Name | MOMMAIDN|
-| Natality| 255 | Mother's Middle Name | MOMMIDDL|
-| Natality| 259 | Mother's Middle Maiden Name | MOMMMID|
-| Fetal Death| 244 | Mother's Middle Maiden Name | MOMMMID|
-| Fetal Death| 240 | Mother's Legal Middle Name | MOMMNAME|
-| Fetal Death| 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX|
-| Natality| 261 | Mother's Maiden Surname Suffix | MOMMSUFX|
-| Fetal Death| 242 | Mother's Legal Surname Suffix | MOMSUFFIX|
-| Natality| 257 | Mother's Surname Suffix  | MOMSUFFX|
-| Fetal Death| 39 | Mother's Race--White | MRACE1|
-| Fetal Death| 48 | Mother's Race--Other Asian | MRACE10|
-| Fetal Death| 49 | Mother's Race--Native Hawaiian | MRACE11|
-| Fetal Death| 50 | Mother's Race--Guamanian or Chamorro | MRACE12|
-| Fetal Death| 51 | Mother's Race--Samoan | MRACE13|
-| Fetal Death| 52 | Mother's Race--Other Pacific Islander | MRACE14|
-| Fetal Death| 53 | Mother's Race--Other | MRACE15|
-| Fetal Death| 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16|
-| Fetal Death| 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17|
-| Fetal Death| 56 | Mother's Race--First Other Asian Literal | MRACE18|
-| Fetal Death| 57 | Mother's Race--Second Other Asian Literal | MRACE19|
-| Fetal Death| 40 | Mother's Race--Black or African American | MRACE2|
-| Fetal Death| 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20|
-| Fetal Death| 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21|
-| Fetal Death| 60 | Mother's Race--First Other Literal | MRACE22|
-| Fetal Death| 61 | Mother's Race--Second Other Literal | MRACE23|
-| Fetal Death| 41 | Mother's Race--American Indian or Alaska Native | MRACE3|
-| Fetal Death| 42 | Mother's Race--Asian Indian | MRACE4|
-| Fetal Death| 43 | Mother's Race--Chinese | MRACE5|
-| Fetal Death| 44 | Mother's Race--Filipino | MRACE6|
-| Fetal Death| 45 | Mother's Race--Japanese | MRACE7|
-| Fetal Death| 46 | Mother's Race--Korean | MRACE8|
-| Fetal Death| 47 | Mother's Race--Vietnamese | MRACE9|
-| Natality| 266 | Residence Post Directional | POSTDIR|
-| Fetal Death| 251 | Mother's Residence Post Directional | POSTDIR|
-| Natality| 263 | Residence Pre Directional | PREDIR|
-| Fetal Death| 248 | Mother's Residence Pre Directional | PREDIR|
-| Natality| 272 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT|
-| Fetal Death| 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT|
-| Natality| 265 | Residence Street designator | STDESIG|
-| Fetal Death| 250 | Mother's Residence Street designator | STDESIG|
-| Natality| 264 | Residence Street name | STNAME|
-| Fetal Death| 249 | Mother's Residence Street name | STNAME|
-| Natality| 262 | Residence Street Number | STNUM|
-| Fetal Death| 247 | Mother's Residence Street number | STNUM|
-| Natality| 267 | Residence Unit or Apartment Number | UNUM|
-| Natality| 269 | Mother's Residence Zip Code and Zip+4 | ZIPCODE|
-| Fetal Death| 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 268 | Mother's Residence Street Address | ADDRESS |
+| Fetal Death | 253 | Mother's Residence Street Address | ADDRESS |
+| Fetal Death | 252 | Mother's Residence Unit or Apartment Number | APTNUMB |
+| Natality | 20 | Residence of Mother--City | CITYC |
+| Fetal Death | 20 | Residence of Mother--City/Town | CITYC |
+| Natality | 271 | Mother's Residence City/Town (Literal) | CITYTEXT |
+| Fetal Death | 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT |
+| Natality | 273 | Mother's Residence Country (Literal) | CNTRYTXT |
+| Fetal Death | 258 | Mother's Residence Country (literal) | CNTRYTXT |
+| Natality | 23 | Residence of Mother--Country | COUNTRYC |
+| Fetal Death | 23 | Residence of Mother--Country | COUNTRYC |
+| Natality | 21 | Residence of Mother--County | COUNTYC |
+| Fetal Death | 21 | Residence of Mother--County | COUNTYC |
+| Natality | 270 | Mother's Residence County (Literal) | COUNTYTXT |
+| Fetal Death | 255 | Mother's Residence County (literal) | COUNTYTXT |
+| Natality | 315 | Mother's Mailing Address Street Address | MAIL_ADDRESS |
+| Natality | 318 | Mother's Mailing Address City/Town (Literal) | MAIL_CITYTEXT |
+| Natality | 320 | Mother's Mailing Address Country (Literal) | MAIL_CNTRYTXT |
+| Natality | 317 | Mother's Mailing Address County (Literal) | MAIL_COUNTYTXT |
+| Natality | 313 | Mother's Mailing Address Post Directional | MAIL_POSTDIR |
+| Natality | 310 | Mother's Mailing Address Pre Directional | MAIL_PREDIR |
+| Natality | 319 | Mother's Mailing Address State (Literal) | MAIL_STATETXT |
+| Natality | 312 | Mother's Mailing Address Street designator | MAIL_STDESIG |
+| Natality | 311 | Mother's Mailing Address Street name | MAIL_STNAME |
+| Natality | 309 | Mother's Mailing Address Street number | MAIL_STNUM |
+| Natality | 314 | Mother's Mailing Address Unit or Apartment Number | MAIL_UNUM |
+| Natality | 316 | Mother's Mailing Address Zip Code and Zip+4 | MAIL_ZIPCODE |
+| Natality | 340 | For use of jurisdictions with domestic partnerships, othertypes of relationships. | MARITAL_DESCRIP |
+| Natality | 16 | Date of Birth (Mother)--Day | MDOB_DY |
+| Fetal Death | 16 | Date of Birth (Mother)--Day | MDOB_DY |
+| Natality | 15 | Date of Birth (Mother)--Month | MDOB_MO |
+| Fetal Death | 15 | Date of Birth (Mother)--Month | MDOB_MO |
+| Natality | 14 | Date of Birth (Mother)--Year | MDOB_YR |
+| Fetal Death | 14 | Date of Birth (Mother)--Year | MDOB_YR |
+| Fetal Death | 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 |
+| Fetal Death | 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 |
+| Fetal Death | 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 |
+| Fetal Death | 37 | Mother of Hispanic Origin?--Other | METHNIC4 |
+| Fetal Death | 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5 |
+| Natality | 333 | Mother's Medical Record Number | MOM_MED_REC_NUM |
+| Natality | 278 | Mother's Social Security Number | MOM_SSN |
+| Fetal Death | 265 | Mother's Social Security Number | MOM_SSN |
+| Natality | 258 | Mother's First Maiden Name | MOMFMNME |
+| Fetal Death | 243 | Mother's First Maiden Name | MOMFMNME |
+| Natality | 254 | Mother's First Name | MOMFNAME |
+| Fetal Death | 239 | Mother's Legal First Name | MOMFNAME |
+| Natality | 256 | Mother's Last Name | MOMLNAME |
+| Fetal Death | 241 | Mother's Legal Last Name | MOMLNAME |
+| Natality | 260 | Mother's Maiden Surname | MOMMAIDN |
+| Fetal Death | 245 | Mother's Last Maiden Name | MOMMAIDN |
+| Natality | 255 | Mother's Middle Name | MOMMIDDL |
+| Natality | 259 | Mother's Middle Maiden Name | MOMMMID |
+| Fetal Death | 244 | Mother's Middle Maiden Name | MOMMMID |
+| Fetal Death | 240 | Mother's Legal Middle Name | MOMMNAME |
+| Fetal Death | 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX |
+| Natality | 261 | Mother's Maiden Surname Suffix | MOMMSUFX |
+| Fetal Death | 242 | Mother's Legal Surname Suffix | MOMSUFFIX |
+| Natality | 257 | Mother's Surname Suffix  | MOMSUFFX |
+| Fetal Death | 39 | Mother's Race--White | MRACE1 |
+| Fetal Death | 48 | Mother's Race--Other Asian | MRACE10 |
+| Fetal Death | 49 | Mother's Race--Native Hawaiian | MRACE11 |
+| Fetal Death | 50 | Mother's Race--Guamanian or Chamorro | MRACE12 |
+| Fetal Death | 51 | Mother's Race--Samoan | MRACE13 |
+| Fetal Death | 52 | Mother's Race--Other Pacific Islander | MRACE14 |
+| Fetal Death | 53 | Mother's Race--Other | MRACE15 |
+| Fetal Death | 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16 |
+| Fetal Death | 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17 |
+| Fetal Death | 56 | Mother's Race--First Other Asian Literal | MRACE18 |
+| Fetal Death | 57 | Mother's Race--Second Other Asian Literal | MRACE19 |
+| Fetal Death | 40 | Mother's Race--Black or African American | MRACE2 |
+| Fetal Death | 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20 |
+| Fetal Death | 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21 |
+| Fetal Death | 60 | Mother's Race--First Other Literal | MRACE22 |
+| Fetal Death | 61 | Mother's Race--Second Other Literal | MRACE23 |
+| Fetal Death | 41 | Mother's Race--American Indian or Alaska Native | MRACE3 |
+| Fetal Death | 42 | Mother's Race--Asian Indian | MRACE4 |
+| Fetal Death | 43 | Mother's Race--Chinese | MRACE5 |
+| Fetal Death | 44 | Mother's Race--Filipino | MRACE6 |
+| Fetal Death | 45 | Mother's Race--Japanese | MRACE7 |
+| Fetal Death | 46 | Mother's Race--Korean | MRACE8 |
+| Fetal Death | 47 | Mother's Race--Vietnamese | MRACE9 |
+| Natality | 266 | Residence Post Directional | POSTDIR |
+| Fetal Death | 251 | Mother's Residence Post Directional | POSTDIR |
+| Natality | 263 | Residence Pre Directional | PREDIR |
+| Fetal Death | 248 | Mother's Residence Pre Directional | PREDIR |
+| Natality | 272 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT |
+| Fetal Death | 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT |
+| Natality | 265 | Residence Street designator | STDESIG |
+| Fetal Death | 250 | Mother's Residence Street designator | STDESIG |
+| Natality | 264 | Residence Street name | STNAME |
+| Fetal Death | 249 | Mother's Residence Street name | STNAME |
+| Natality | 262 | Residence Street Number | STNUM |
+| Fetal Death | 247 | Mother's Residence Street number | STNUM |
+| Natality | 267 | Residence Unit or Apartment Number | UNUM |
+| Natality | 269 | Mother's Residence Zip Code and Zip+4 | ZIPCODE |
+| Fetal Death | 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE |
 {: .grid }

@@ -1,4 +1,3 @@
-### Usage
 This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
 
 * the [patient-birthPlace](http://hl7.org/fhir/StructureDefinition/patient-birthPlace) extension
@@ -23,15 +22,15 @@ This concept is mapped to:
  * Item **23. If not single delivery, order delivered in the pregnancy** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 9 | Date of Birth (Infant)--Day | IDOB_DY|
-| Natality| 8 | Date of Birth (Infant)--Month | IDOB_MO|
-| Natality| 1 | Date of Birth (Infant)--Year | IDOB_YR|
-| Natality| 332 | Infant's Medical Record Number | INF_MED_REC_NUM|
-| Natality| 247 | Child's First Name | KIDFNAME|
-| Natality| 249 | Child's Last Name | KIDLNAME|
-| Natality| 248 | Child's Middle Name | KIDMNAME|
-| Natality| 250 | Child's Surname Suffix (moved from end) | KIDSUFFX|
-| Natality| 208 | Set Order | SORD|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 9 | Date of Birth (Infant)--Day | IDOB_DY |
+| Natality | 8 | Date of Birth (Infant)--Month | IDOB_MO |
+| Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR |
+| Natality | 332 | Infant's Medical Record Number | INF_MED_REC_NUM |
+| Natality | 247 | Child's First Name | KIDFNAME |
+| Natality | 249 | Child's Last Name | KIDLNAME |
+| Natality | 248 | Child's Middle Name | KIDMNAME |
+| Natality | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX |
+| Natality | 208 | Set Order | SORD |
 {: .grid }

@@ -6,10 +6,10 @@ This concept is mapped to:
  * Item **15. What is your height?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 134 | Mother's Height--Feet | HFT|
-| Fetal Death| 88 | Mother's Height--Feet | HFT|
-| Natality| 135 | Mother's Height--Inches | HIN|
-| Fetal Death| 89 | Mother's Height--Inches | HIN|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 134 | Mother's Height--Feet | HFT |
+| Fetal Death | 88 | Mother's Height--Feet | HFT |
+| Natality | 135 | Mother's Height--Inches | HIN |
+| Fetal Death | 89 | Mother's Height--Inches | HIN |
 {: .grid }

@@ -12,22 +12,22 @@ This concept is mapped to:
  * Item **12. What is the father’s date of birth?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 279 | Father's Social Security Number | DAD_SSN|
-| Fetal Death| 266 | Father's Social Security Number | DAD_SSN|
-| Natality| 274 | Father's First Name | DADFNAME|
-| Fetal Death| 261 | Father's Legal First Name | DADFNAME|
-| Natality| 276 | Father's Last Name | DADLNAME|
-| Fetal Death| 263 | Father's Legal Last Name | DADLNAME|
-| Natality| 275 | Father's Middle Name | DADMNAME|
-| Fetal Death| 262 | Father's Legal Middle Name | DADMNAME|
-| Fetal Death| 264 | Father's Legal Surname Suffix | DADSUFFIX|
-| Natality| 277 | Father's Surname Suffix | DADSUFFX|
-| Natality| 27 | Date of Birth (Father)--Day | FDOB_DY|
-| Fetal Death| 27 | Date of Birth (Father)--Day | FDOB_DY|
-| Natality| 26 | Date of Birth (Father)--Month | FDOB_MO|
-| Fetal Death| 26 | Date of Birth (Father)--Month | FDOB_MO|
-| Natality| 25 | Date of Birth (Father)--Year | FDOB_YR|
-| Fetal Death| 25 | Date of Birth (Father)--Year | FDOB_YR|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 279 | Father's Social Security Number | DAD_SSN |
+| Fetal Death | 266 | Father's Social Security Number | DAD_SSN |
+| Natality | 274 | Father's First Name | DADFNAME |
+| Fetal Death | 261 | Father's Legal First Name | DADFNAME |
+| Natality | 276 | Father's Last Name | DADLNAME |
+| Fetal Death | 263 | Father's Legal Last Name | DADLNAME |
+| Natality | 275 | Father's Middle Name | DADMNAME |
+| Fetal Death | 262 | Father's Legal Middle Name | DADMNAME |
+| Fetal Death | 264 | Father's Legal Surname Suffix | DADSUFFIX |
+| Natality | 277 | Father's Surname Suffix | DADSUFFX |
+| Natality | 27 | Date of Birth (Father)--Day | FDOB_DY |
+| Fetal Death | 27 | Date of Birth (Father)--Day | FDOB_DY |
+| Natality | 26 | Date of Birth (Father)--Month | FDOB_MO |
+| Fetal Death | 26 | Date of Birth (Father)--Month | FDOB_MO |
+| Natality | 25 | Date of Birth (Father)--Year | FDOB_YR |
+| Fetal Death | 25 | Date of Birth (Father)--Year | FDOB_YR |
 {: .grid }

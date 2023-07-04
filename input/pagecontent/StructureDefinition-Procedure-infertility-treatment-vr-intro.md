@@ -6,8 +6,8 @@ This concept is mapped to:
  * Item **11.6. Risk factors in this pregnancy: Pregnancy resulted from infertility treatment** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 164 | <html>Risk Factors--Infertility Treatment  <b><i>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926)</i></b></html> | INFT|
-| Fetal Death| 117 | <html>Risk Factors--Infertility Treatment  <b>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575)</b></html> | INFT|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT |
+| Fetal Death | 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT |
 {: .grid }
