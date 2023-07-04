@@ -1,2 +1,3 @@
 ### Usage
 This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy. This profile represents plurality as a characteristic of the pregnancy. For plurality as a characteristic of the patient, see the Patient.multipleBirth\[x]patient-multipleBirthTotal extension.
+{: .grid }

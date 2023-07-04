@@ -8,6 +8,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 143 | Previous Live Births Now Dead | PLBD|
 | Fetal Death| 97 | Previous Live Births Now Dead | PLBD|
+{: .grid }

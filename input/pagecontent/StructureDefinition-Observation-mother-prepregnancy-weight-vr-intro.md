@@ -7,6 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 137 | Mother's Prepregnancy Weight (in whole pounds) | PWGT|
 | Fetal Death| 91 | Mother's Prepregnancy Weight | PWGT|
+{: .grid }

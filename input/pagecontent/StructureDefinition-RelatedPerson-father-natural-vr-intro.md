@@ -13,7 +13,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 279 | Father's Social Security Number | DAD_SSN|
 | Fetal Death| 266 | Father's Social Security Number | DAD_SSN|
 | Natality| 274 | Father's First Name | DADFNAME|
@@ -30,3 +30,4 @@ This concept is mapped to:
 | Fetal Death| 26 | Date of Birth (Father)--Month | FDOB_MO|
 | Natality| 25 | Date of Birth (Father)--Year | FDOB_YR|
 | Fetal Death| 25 | Date of Birth (Father)--Year | FDOB_YR|
+{: .grid }

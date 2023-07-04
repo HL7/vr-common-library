@@ -26,7 +26,7 @@ This concept is mapped to:
  * Item **25a. What is your Social Security Number?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
  * Item **10a. Mother’s Current Legal Name** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
  * Item **10b. Mother's Date of Birth** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **10c. Mother’s Name Prior to First Marriage ** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
+ * Item **10c. Mother’s Name Prior to First Marriage** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
  * Item **11a. Residence of Mother-State** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
  * Item **11b. Residence of Mother-County** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
  * Item **11c. Residence of Mother-City, Town, Or Location** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
@@ -46,7 +46,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 268 | Mother's Residence Street Address | ADDRESS|
 | Fetal Death| 253 | Mother's Residence Street Address | ADDRESS|
 | Fetal Death| 252 | Mother's Residence Unit or Apartment Number | APTNUMB|
@@ -143,3 +143,4 @@ This concept is mapped to:
 | Natality| 267 | Residence Unit or Apartment Number | UNUM|
 | Natality| 269 | Mother's Residence Zip Code and Zip+4 | ZIPCODE|
 | Fetal Death| 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE|
+{: .grid }

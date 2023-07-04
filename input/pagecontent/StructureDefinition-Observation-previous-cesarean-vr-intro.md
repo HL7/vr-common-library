@@ -7,6 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 165 | Risk Factors--Previous Cesarean | PCES|
 | Fetal Death| 118 | Risk Factors--Previous Cesarean | PCES|
+{: .grid }

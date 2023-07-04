@@ -7,8 +7,9 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 134 | Mother's Height--Feet | HFT|
 | Fetal Death| 88 | Mother's Height--Feet | HFT|
 | Natality| 135 | Mother's Height--Inches | HIN|
 | Fetal Death| 89 | Mother's Height--Inches | HIN|
+{: .grid }

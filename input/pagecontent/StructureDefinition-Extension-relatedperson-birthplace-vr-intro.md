@@ -7,7 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 290 | State, U.S. Territory or Canadian Province of Birth (Father) - code | FBPLACD_ST_TER_C|
 | Fetal Death| 277 | State, U.S. Territory or Canadian Province of Birth (Father) - code | FBPLACD_ST_TER_C|
 | Natality| 291 | Father's Country of Birth (Code) | FBPLACE_CNT_C|
@@ -16,3 +16,4 @@ This concept is mapped to:
 | Fetal Death| 282 | Father's Country of Birth (Literal) | FBPLACE_CNTRY_TXT|
 | Natality| 307 | State, U.S. Territory or Canadian Province of Birth (Father) - literal | FBPLACE_ST_TER_TXT|
 | Fetal Death| 281 | State, U.S. Territory or Canadian Province of Birth (Father) - literal | FBPLACE_ST_TER_TXT|
+{: .grid }

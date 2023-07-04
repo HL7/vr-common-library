@@ -7,6 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 164 | <html>Risk Factors--Infertility Treatment  <b><i>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926)</i></b></html> | INFT|
 | Fetal Death| 117 | <html>Risk Factors--Infertility Treatment  <b>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575)</b></html> | INFT|
+{: .grid }

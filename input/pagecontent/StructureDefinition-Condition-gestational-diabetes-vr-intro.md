@@ -7,6 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 158 | Risk Factors--Gestational Diabetes | GDIAB|
 | Fetal Death| 111 | Risk Factors--Gestational Diabetes | GDIAB|
+{: .grid }

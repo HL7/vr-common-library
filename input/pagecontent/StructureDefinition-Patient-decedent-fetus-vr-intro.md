@@ -7,7 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Fetal Death| 9 | Date of Delivery (Fetus)--Day | FDOD_DY|
 | Fetal Death| 8 | Date of Delivery (Fetus)--Month | FDOD_MO|
 | Fetal Death| 1 | Date of Delivery (Fetus)--Year | FDOD_YR|
@@ -17,3 +17,4 @@ This concept is mapped to:
 | Fetal Death| 152 | Set Order | SORD|
 | Fetal Death| 222 | Fetus Surname Suffix | SUFFIX|
 | Fetal Death| 6 | Time of Delivery | TD|
+{: .grid }

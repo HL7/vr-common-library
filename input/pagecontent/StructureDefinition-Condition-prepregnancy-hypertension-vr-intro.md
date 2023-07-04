@@ -7,6 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE|
 | Fetal Death| 112 | Risk Factors--Hypertension Prepregnancy | PHYPE|
+{: .grid }

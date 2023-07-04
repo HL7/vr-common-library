@@ -7,10 +7,11 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 156 | Date Last Normal Menses Began--Day | DLMP_DY|
 | Fetal Death| 109 | Date Last Normal Menses Began--Day | DLMP_DY|
 | Natality| 155 | Date Last Normal Menses Began--Month | DLMP_MO|
 | Fetal Death| 108 | Date Last Normal Menses Began--Month | DLMP_MO|
 | Natality| 154 | Date Last Normal Menses Began--Year | DLMP_YR|
 | Fetal Death| 107 | Date Last Normal Menses Began--Year | DLMP_YR|
+{: .grid }

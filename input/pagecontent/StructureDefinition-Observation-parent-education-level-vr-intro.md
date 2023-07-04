@@ -12,8 +12,9 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 78 | Father's Education | FEDUC|
 | Fetal Death| 283 | Father's Education | FEDUC|
 | Natality| 32 | Mother's Education | MEDUC|
 | Fetal Death| 32 | Mother's Education | MEDUC|
+{: .grid }

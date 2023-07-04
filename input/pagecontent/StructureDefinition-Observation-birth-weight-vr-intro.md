@@ -8,6 +8,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 201 | Birthweight in grams | BWG|
 | Fetal Death| 143 | Weight of Fetus | FWG|
+{: .grid }

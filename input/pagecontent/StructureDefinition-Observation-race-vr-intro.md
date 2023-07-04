@@ -4,7 +4,7 @@ When the Observation is about the father, set the subject to the child and the f
 In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 296 | Father's Edited Hispanic Origin Code | FETHNICE|
 | Natality| 301 | Father's Race - Specify | FRACE_T|
 | Fetal Death| 338 | Father's Race - Specify | FRACE_T|
@@ -78,3 +78,4 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
 | Fetal Death| 69 | Mother's Race Tabulation Variable 8E | MRACE8E|
 | Natality| 294 | Mother's Bridged Race - NCHS Code | MRACEBG_C|
 | Fetal Death| 331 | Mother's Bridged Race - NCHS Code | MRACEBG_C|
+{: .grid }
