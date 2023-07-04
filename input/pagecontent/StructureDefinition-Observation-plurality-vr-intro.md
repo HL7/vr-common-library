@@ -1,5 +1,2 @@
-This concept is mapped to:
-* Item **52. Plurality - Single, Twin, Triplet, etc.** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*
-* Item **32. Plurality - Single, Twin, Triplet, etc.** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*
-* IJE Natality Data Element: PLUR
-* IJE Fetal Death Data Element: PLUR
+### Usage
+This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy. This profile represents plurality as a characteristic of the pregnancy. For plurality as a characteristic of the patient, see the Patient.multipleBirth\[x]patient-multipleBirthTotal extension.

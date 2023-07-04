@@ -1,5 +1,16 @@
+### Form Mapping
 This concept is mapped to:
-* Item **39. Date last normal menses began** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*
-* Item **32. Date last normal menses began** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*
-* IJE Natality Data Element: DLMP_YR, DLMP_MO, DLMP_DY
-* IJE Fetal Death Data Element: DLMP_YR, DLMP_MO, DLMP_DY
+ * Item **39. Date Last Normal Menses Began** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
+ * Item **8. Date last normal menses began** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
+ * Item **32. Date Last Normal Menses Began** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
+ * Item **7. Date last normal menses began:** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
+
+### IJE Mapping
+| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
+| :---------: | --------------- | ------------ |
+| Natality| 156 | Date Last Normal Menses Began--Day | DLMP_DY|
+| Fetal Death| 109 | Date Last Normal Menses Began--Day | DLMP_DY|
+| Natality| 155 | Date Last Normal Menses Began--Month | DLMP_MO|
+| Fetal Death| 108 | Date Last Normal Menses Began--Month | DLMP_MO|
+| Natality| 154 | Date Last Normal Menses Began--Year | DLMP_YR|
+| Fetal Death| 107 | Date Last Normal Menses Began--Year | DLMP_YR|
