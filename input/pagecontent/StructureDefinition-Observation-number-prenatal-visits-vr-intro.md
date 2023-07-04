@@ -5,6 +5,7 @@ This concept is mapped to:
  * Item **24. Total Number of Prenatal Visits For This Pregnancy** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 132 | Total Number of Prenatal Care Visits | NPREV |

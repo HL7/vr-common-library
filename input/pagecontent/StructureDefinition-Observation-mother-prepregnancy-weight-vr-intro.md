@@ -6,6 +6,7 @@ This concept is mapped to:
  * Item **16. What was your prepregnancy weight?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 137 | Mother's Prepregnancy Weight (in whole pounds) | PWGT |
