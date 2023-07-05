@@ -45,9 +45,9 @@ vOutputFile.puts "Many of the BFDR data elements can be identified using the IJE
 
 The following IJE mappings to locations in FHIR specifications are for information purposes only:
 * BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
-* VRCPL: [Vital Records Common IJE_PROFILE_COL Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
+* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
 * US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
-* FHIR: standard extensions"
+* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
 
 vOutputFile.puts ""
 
@@ -56,7 +56,7 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
   pOutputFile.puts pHeading
   pOutputFile.puts ""
 
-  pOutputFile.puts "| **IJE Field#** |  **IJE_DESC_COL**   |  **IJE Name**  | **IJE_PROFILE_COL**  | **Location** |"
+  pOutputFile.puts "| **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |"
   pOutputFile.puts "| -------------- | ------------------ | -------------- | ------------ | ------------ |"
 
   pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
@@ -67,7 +67,7 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
     ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
     fhirig = row[IJE_FHIR_IG_COL].value.to_s if row[IJE_FHIR_IG_COL]
     vProvOutputFilename = row[IJE_PROFILE_COL].value.to_s if row[IJE_PROFILE_COL]
-    
+
     case fhirig
     when "BFDR"
       profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-" + vProvOutputFilename + ".html)"
