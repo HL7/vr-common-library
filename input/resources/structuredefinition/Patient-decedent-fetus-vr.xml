@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-decedent-fetus-vr"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-06-23T05:01:24.187Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-07-07T03:02:41.511Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     <name value="PatientDecedentFetusVitalRecords"/>
@@ -67,6 +67,7 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.extension:fetalDeath">
             <path value="Patient.extension"/>
@@ -78,6 +79,7 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.name">
             <path value="Patient.name"/>
