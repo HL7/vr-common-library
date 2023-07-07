@@ -80,4 +80,10 @@
         <postalCode value="48103"/>
         <country value="US"/>
     </address>
+    <link>
+        <other>
+            <reference value="relatedperson/relatedperson-mother-gestational-carmen-teresa-lee-common"/>
+        </other>
+        <type value="seealso"/>
+    </link>
 </Patient>
