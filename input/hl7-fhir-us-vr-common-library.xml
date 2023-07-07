@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="368"/>
-        <lastUpdated value="2023-07-07T01:54:09.524Z"/>
+        <versionId value="372"/>
+        <lastUpdated value="2023-07-07T02:16:10.496Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -908,9 +908,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-parent-education-level-james-quinn-common"/></reference>
-            <name value="Observation - Parent Education Level - James Quinn"/>
-            <description value="Observation - Parent Education Level: James Quinn example"/>
+                <reference value="Observation/observation-parent-education-level-tom-yan-lee-common"/></reference>
+            <name value="Observation - Parent Education Level - Tom Yan Lee"/>
+            <description value="Observation - Parent Education Level: Carmen Teresa Lee example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
             <groupingId value="observation-examples"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-parent-education-level-james-quinn-common"/>
+    <id value="observation-parent-education-level-tom-yan-lee-common"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-07-07T01:54:49.533Z"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-07-07T02:14:12.001Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
     </meta>
     <status value="final"/>
@@ -16,10 +16,10 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn-common"/>
+        <reference value="Patient/patient-decedent-fetus-not-named-common"/>
     </subject>
     <focus>
-        <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn-common"/>
+        <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
     </focus>
     <valueCodeableConcept>
         <coding>
