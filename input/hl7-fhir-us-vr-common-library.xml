@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="347"/>
-        <lastUpdated value="2023-06-26T16:09:14.399Z"/>
+        <versionId value="365"/>
+        <lastUpdated value="2023-07-07T00:52:10.004Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This guide is a FHIR Resources Library to support the needs of multiple vital records implementation guides (IGs). It does not provide any use case (scenario) specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific IGs focusing on the exchange of vital records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.&#xA;&#xA;### Background&#xA;Two FHIR IG projects, [Birth Defects](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&amp;ProjectNumber=1532) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), share many common data elements or concepts. The initial scope of this Vital Records Common Profiles Library included data elements common to these two FHIR projects in a US Realm framework. The current update adds data elements shared by another vital records FHIR IG, [Vital Records Death Reporting (VRDR)](http://hl7.org/fhir/us/vrdr/), and the [Medicolegal Death Investigation (MDI)](http://hl7.org/fhir/us/mdi/).&#xA;&#xA;A FHIR common profiles library avoids defining the same data element multiple times across IGs, instead allowing them to be referenced by each IG. This profile library will provide a standard framework for vital records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).&#xA;&#xA;### How to Read This Guide&#xA;This Guide is divided into several pages which are listed at the top of each page in the menu bar.&#xA;&#xA;* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.&#xA;* Terminology: This page provides a listing of the value sets used in this guide.&#xA;* Downloads: This page provides links to downloadable artifacts.&#xA;* Change Log: This page provides details of changes made in each version of this IG.&#xA;* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide."/>
+    <description value="# Note to Commenters&#xA;This CI-Build version of the Vital Records Common Profiles Library (VRCPL) FHIR IG is ready for review and comment for an STU 1.1 Update (“dot release”).&#xA;&#xA;*See [IG Update Page](https://confluence.hl7.org/pages/viewpage.action?pageId=175610684) for instructions on how to comment, comment areas of interest, and notes about the IG.*&#xA;&#xA;This &quot;Note to Commenters&quot; will be removed at the close of the Comment Period.&#xA;&#xA;### Description&#xA;&#xA;This guide is a Fast Healthcare Interoperability Resources (FHIR) Profiles Library to support the needs of multiple vital records implementation guides (IGs). It does not provide any use case (scenario) specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific IGs focusing on the exchange of vital records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.&#xA;&#xA;### Background&#xA;Two FHIR IG projects, [Birth Defects](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&amp;ProjectNumber=1532) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), share many common data elements or concepts. The initial scope of this Vital Records Common Profiles Library included data elements common to these two FHIR projects in a US Realm framework. The current update adds data elements shared by two other vital records FHIR IGs, [Vital Records Death Reporting (VRDR)](http://hl7.org/fhir/us/vrdr/), and the [Medicolegal Death Investigation (MDI)](http://hl7.org/fhir/us/mdi/).&#xA;&#xA;Many of the data elements in the vital records IGs (BFDR, VRDR, and this Library) can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for exchange of data among jurisdictions and with authorized data partners, such as NCHS. NCHS has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG, however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS. [FHIR profile mappings to the IJE format are available for Mortality, Natality, and Fetal Death.](https://github.com/HL7/vr-common-library/raw/master/input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx) The mappings are based on information from: &#xA; * [200X NCHS Mortality - Demographic File Description](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf)&#xA; * [200X NCHS Natality File Description](https://www.cdc.gov/nchs/data/dvs/200XNAT_web_with%20clearance%20revisions-acc.pdf)&#xA; * [200X NCHS Fetal Death File Description](https://www.cdc.gov/nchs/data/dvs/200XFET_web_with%20clearance%20revisions-acc.pdf)&#xA;&#xA;A FHIR common profiles library avoids defining the same data element multiple times across IGs by allowing each IG to reference them. This profile library will provide a standard framework for vital records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR IG uses US Core profiles. Where unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the IG.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).&#xA;&#xA;### How to Read This Guide&#xA;This Guide is divided into several pages which are listed at the top of each page in the menu bar.&#xA;&#xA;* Home: The introduction and background for HL7® FHIR® Vital Records Common Profiles Library&#xA;* [Terminology](terminology.html): A listing of the value sets used in this guide&#xA;* [Downloads](downloads.html): Links to downloadable artifacts&#xA;* [Change Log](change_log.html): Details of changes made in each version of this IG&#xA;* [Artifact Index](artifacts.html): A list of the defined FHIR artifacts (profiles, examples, and value sets) in this guide"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -53,46 +53,61 @@
     </dependsOn>
     <definition>
         <grouping id="participants">
-            <name value="Participants"/>
-        </grouping>
-        <grouping id="pregnancy-risk-factor-profiles">
-            <name value="Pregnancy Risk Factor Profiles"/>
+            <name value="Profiles: Participant"/>
         </grouping>
         <grouping id="observations">
-            <name value="Observations"/>
+            <name value="Profiles: Observations"/>
+        </grouping>
+        <grouping id="pregnancy-risk-factor-profiles">
+            <name value="Profiles: Pregnancy Risk Factors"/>
         </grouping>
         <grouping id="extensions">
-            <name value="Extensions"/>
+            <name value="Profiles: Extensions"/>
         </grouping>
         <grouping id="profiles-death-reporting">
-            <name value="Profiles for Death Reporting"/>
+            <name value="Profiles: Death Reporting"/>
+        </grouping>
+        <grouping id="profiles-administrative">
+            <name value="Profiles: Administrative"/>
         </grouping>
         <grouping id="extensions-death-reporting">
-            <name value="Extensions for Death Reporting"/>
-        </grouping>
-        <grouping id="codesystems-death-reporting">
-            <name value="Code Systems for Death Reporting"/>
-        </grouping>
-        <grouping id="valuesets-death-reporting">
-            <name value="Value Sets for Death Reporting"/>
+            <name value="Profiles: Extensions - Death Reporting"/>
         </grouping>
         <grouping id="participant-examples">
-            <name value="Participant Examples"/>
+            <name value="Examples: Participant"/>
         </grouping>
         <grouping id="observation-examples">
-            <name value="Observation Examples"/>
+            <name value="Examples: Observation"/>
         </grouping>
         <grouping id="pregnancy-risk-factor-examples">
-            <name value="Pregnancy Risk Factor Examples"/>
+            <name value="Examples: Pregnancy Risk Factors"/>
         </grouping>
         <grouping id="observations-death-reporting">
-            <name value="Death Reporting Observation &amp; Procedure Examples"/>
+            <name value="Examples: Death Reporting"/>
         </grouping>
         <grouping id="participant-death-reporting-examples">
-            <name value="Death Reporting Participant Examples"/>
+            <name value="Examples: Death Reporting Participant"/>
         </grouping>
         <grouping id="location-death-reporting-examples">
-            <name value="Death Reporting Location Examples"/>
+            <name value="Examples: Death Reporting Location"/>
+        </grouping>
+        <grouping id="examples-administrative">
+            <name value="Examples: Administrative"/>
+        </grouping>
+        <grouping id="code-systems-administrative">
+            <name value="Terminology: Code Systems - Administrative"/>
+        </grouping>
+        <grouping id="codesystems-death-reporting">
+            <name value="Terminology: Code Systems - Death Reporting"/>
+        </grouping>
+        <grouping id="value-sets">
+            <name value="Terminology: Value Sets"/>
+        </grouping>
+        <grouping id="value-sets-administrative">
+            <name value="Terminology: Value Sets - Administrative"/>
+        </grouping>
+        <grouping id="valuesets-death-reporting">
+            <name value="Terminology: Value Sets - Death Reporting"/>
         </grouping>
         <resource>
             <reference>
@@ -122,6 +137,7 @@
             <name value="CodeSystem - Intentional Reject"/>
             <description value="This CodeSystem contains values representing intentional rejects."/>
             <exampleBoolean value="false"/>
+            <groupingId value="code-systems-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -131,7 +147,7 @@
             <name value="CodeSystem - Local Components Codes Vital Records"/>
             <description value="This CodeSystem contains codes that represent local component codes for observation components that lack an appropriate LOINC code."/>
             <exampleBoolean value="false"/>
-            <groupingId value="codesystems-death-reporting"/>
+            <groupingId value="code-systems-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -141,6 +157,7 @@
             <name value="CodeSystem - System Reject Vital Records"/>
             <description value="This CodeSystem contains code representing system rejects."/>
             <exampleBoolean value="false"/>
+            <groupingId value="code-systems-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -150,6 +167,7 @@
             <name value="CodeSystem - Transax Conversion Vital Records"/>
             <description value="This CodeSystem contains codes representing transax conversions."/>
             <exampleBoolean value="false"/>
+            <groupingId value="code-systems-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -279,7 +297,7 @@
                 <display value="Extension - Date Part Absent Reason - Vital Records"/>
             </reference>
             <name value="Extension - Date Part Absent Reason - Vital Records"/>
-            <description value="Provides a reason why an expected date part is missing."/>
+            <description value="This Extension profile provides a reason why an expected date part is missing."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -322,6 +340,16 @@
             <description value="This Extension profile represents Provides values of a partial dateTime"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-patient-fetal-death-vr"/>
+                <display value="Extension - Patient Fetal Death - Vital Records"/>
+            </reference>
+            <name value="Extension - Patient Fetal Death - Vital Records"/>
+            <description value="The fetal death status of the patient."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
@@ -420,7 +448,7 @@
                 <display value="Observation - APGAR Score - Vital Records"/>
             </reference>
             <name value="Observation - APGAR Score - Vital Records"/>
-            <description value="This Observation represents the APGAR score post-birth."/>
+            <description value="This Observation represents the Apgar score post-birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -448,7 +476,7 @@
                 <display value="Observation - Autopsy Performed Indicator - Vital Records"/>
             </reference>
             <name value="Observation - Autopsy Performed Indicator - Vital Records"/>
-            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
+            <description value="This Observation profile represents if an autopsy was performed, if autopsy findings are available, and the autopsy performer (US Core Practioner)."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
         </resource>
@@ -495,7 +523,7 @@
                 <display value="Observation - Cause of Death Part 1 - Vital Records"/>
             </reference>
             <name value="Observation - Cause of Death Part 1 - Vital Records"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+            <description value="This Observation profile represents the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
         </resource>
@@ -514,7 +542,7 @@
                 <display value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
             </reference>
             <name value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
-            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+            <description value="This Observation profile represents represents factors contributing to the cause of death as asserted by the death certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
         </resource>
@@ -533,7 +561,7 @@
                 <display value="Observation - Death Date - Vital Records"/>
             </reference>
             <name value="Observation - Death Date - Vital Records"/>
-            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <description value="This Observation profile represents the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
         </resource>
@@ -880,6 +908,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-parent-education-level-james-quinn-common"/></reference>
+            <name value="Observation - Parent Education Level - James Quinn"/>
+            <description value="Observation - Parent Education Level: James Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
+            <groupingId value="observation-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-parent-education-level-vr"/>
                 <display value="Observation - Parent Education Level - Vital Records"/>
             </reference>
@@ -903,7 +940,7 @@
                 <display value="Observation - Plurality - Vital Records"/>
             </reference>
             <name value="Observation - Plurality - Vital Records"/>
-            <description value="This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.) Include all live births and fetal losses resulting from this pregnancy. This profile represents plurality as a characteristic of the pregnancy. For plurality as a characteristic of the patient, see the Patient.multipleBirth\[x]patient-multipleBirthTotal extension."/>
+            <description value="This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="observations"/>
         </resource>
@@ -985,6 +1022,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-tobacco-use-vr-a-freeman"/></reference>
+            <name value="Observation - Tobacco Use - A Freeman"/>
+            <description value="Observation - Tobacco Use: A Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+            <groupingId value="observations-death-reporting"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
                 <display value="Observation - Tobacco Use Contributed to Death - Vital Records"/>
             </reference>
@@ -992,15 +1038,6 @@
             <description value="This Observation profile represents the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tobacco-use-vr-a-freeman"/></reference>
-            <name value="Observation - Tobacco Use Vital Records - A Freeman"/>
-            <description value="Observation - Tobacco Use Vital Records: A Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
-            <groupingId value="observations-death-reporting"/>
         </resource>
         <resource>
             <reference>
@@ -1018,13 +1055,14 @@
             <name value="Parameters - Coding Status Values - Vital Records"/>
             <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
             <exampleBoolean value="false"/>
+            <groupingId value="profiles-administrative"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/patient-child-babyg-quinn-common"/>
                 <display value="Baby G Quinn"/>
             </reference>
-            <name value="Baby G Quinn"/>
+            <name value="Patient - Child - Baby G Quinn"/>
             <description value="Patient - Child: Baby G Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
@@ -1036,16 +1074,16 @@
                 <display value="Patient - Child - Vital Records"/>
             </reference>
             <name value="Patient - Child - Vital Records"/>
-            <description value="The subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
+            <description value="This Patient profile represents the subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/patient-decedent-fetus-not-named-common"/>
-                <display value="UNK"/>
+                <display value=" UNK"/>
             </reference>
-            <name value="Patient - Decedent Fetus - Vital Records - Fetus Not Named"/>
+            <name value="Patient - Decedent Fetus - Fetus Not Named"/>
             <description value="Patient - Decedent Fetus: Fetus Not Named"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
@@ -1066,7 +1104,7 @@
                 <reference value="Patient/patient-mother-carmen-teresa-lee-common"/>
                 <display value="Carmen Teresa Lee"/>
             </reference>
-            <name value="Carmen Teresa Lee"/>
+            <name value="Patient - Mother - Carmen Teresa Lee"/>
             <description value="Patient - Mother: Carmen Teresa Lee example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
@@ -1077,8 +1115,8 @@
                 <reference value="Patient/patient-mother-birth-date-part-absent-common"/>
                 <display value="Carmen Teresa Lee"/>
             </reference>
-            <name value="Carmen Teresa Lee"/>
-            <description value="Patient - Mother: Date Part Absent example"/>
+            <name value="Patient - Mother - Carmen Teresa Lee DOB Part Absent"/>
+            <description value="Patient - Mother: Carmen Teresa Lee DOB Part Absent"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             <groupingId value="participant-examples"/>
@@ -1088,7 +1126,7 @@
                 <reference value="Patient/patient-mother-jada-ann-quinn-common"/>
                 <display value="Jada Ann Quinn"/>
             </reference>
-            <name value="Jada Ann Quinn"/>
+            <name value="Patient - Mother - Jada Ann Quinn"/>
             <description value="Patient - Mother: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
@@ -1167,7 +1205,7 @@
                 <display value="Procedure - Death Certification - Vital Records"/>
             </reference>
             <name value="Procedure - Death Certification - Vital Records"/>
-            <description value="This Procedure records the certification of death by the certifier."/>
+            <description value="This Procedure profile records the certification of death by the certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="profiles-death-reporting"/>
         </resource>
@@ -1205,15 +1243,15 @@
                 <display value="Related Person - Parent - Vital Records"/>
             </reference>
             <name value="Related Person - Parent - Vital Records"/>
-            <description value="The RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
+            <description value="This RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-father-tony-lewis-common"/></reference>
-            <name value="RelatedPerson - Adoptive Father"/>
-            <description value="RelatedPerson: Adoptive Father example"/>
+            <name value="RelatedPerson - Adoptive Father - Tony Lewis"/>
+            <description value="RelatedPerson - Adoptive Father: Tony Lewis example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr"/>
             <groupingId value="participant-examples"/>
@@ -1221,21 +1259,10 @@
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-mother-carol-hoffer-common"/></reference>
-            <name value="RelatedPerson - Adoptive Mother"/>
-            <description value="RelatedPerson: Adoptive Mother example"/>
+            <name value="RelatedPerson - Adoptive Mother - Carol Hoffer"/>
+            <description value="RelatedPerson - Adoptive Mother: Carol Hoffer example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
-                <display value="Tom Yan Lee"/>
-            </reference>
-            <name value="Tom Yan Lee"/>
-            <description value="RelatedPerson - Father: Tom Yan Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -1256,6 +1283,17 @@
             <description value="This RelatedPerson profile represents the father of the subject (patient). Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.)."/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common"/>
+                <display value="Tom Yan Lee"/>
+            </reference>
+            <name value="RelatedPerson - Father Natural - Tom Yan Lee"/>
+            <description value="RelatedPerson - Father Natural: Tom Yan Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1300,7 +1338,7 @@
             <reference>
                 <reference value="RelatedPerson/relatedperson-parent-stepmother"/></reference>
             <name value="RelatedPerson - Stepmother"/>
-            <description value="RelatedPerson: Stepmother example"/>
+            <description value="RelatedPerson - Stepmother: example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"/>
             <groupingId value="participant-examples"/>
@@ -1310,7 +1348,7 @@
                 <reference value="Patient/us-core-patient-vr-a-freeman"/>
                 <display value="Alice J. Freeman"/>
             </reference>
-            <name value="Alice J. Freeman"/>
+            <name value="US Core Patient - Alice J. Freeman"/>
             <description value="US Core Patient: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
@@ -1319,9 +1357,9 @@
         <resource>
             <reference>
                 <reference value="Patient/us-core-patient-vr-unknown-name"/>
-                <display value="UNK"/>
+                <display value=" UNK"/>
             </reference>
-            <name value="Patient - US Core - Unknown Name"/>
+            <name value="US Core Patient - Unknown Name"/>
             <description value="US Core Patient: Unknown Name example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
@@ -1353,6 +1391,7 @@
             <name value="ValueSet - APGAR Score Timing - Vital Records"/>
             <description value="This ValueSet contains codes to represent standard timings for APGAR assessments."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -1362,6 +1401,7 @@
             <name value="ValueSet - Certifier Types - Vital Records"/>
             <description value="This ValueSet contains codes to represent the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -1391,6 +1431,7 @@
             <name value="ValueSet - Date Part - Vital Records"/>
             <description value="This ValueSet contains codes that represent the parts of a date"/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1410,6 +1451,7 @@
             <name value="ValueSet - Education Level Person - Vital Records"/>
             <description value="This ValueSet contains codes that represent persons for whom education level can be reported."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -1419,6 +1461,7 @@
             <name value="ValueSet - Father Relationship - Vital Records"/>
             <description value="This ValueSet contains codes that represent relationships describing the father's role relative to the subject."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -1428,6 +1471,7 @@
             <name value="ValueSet - Intentional Reject - Vital Records"/>
             <description value="This ValueSet contains codes representing intentional rejects."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1447,6 +1491,7 @@
             <name value="ValueSet - Mother Relationship - Vital Records"/>
             <description value="This ValueSet contains codes that represent relationships describing the mother's role relative to the subject."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -1466,6 +1511,7 @@
             <name value="ValueSet - System Reject - Vital Records"/>
             <description value="This ValueSet contains codes representing system rejects."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1475,6 +1521,7 @@
             <name value="ValueSet - Transax Conversion - Vital Records"/>
             <description value="This ValueSet contains codes representing transax conversions."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets-administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1525,15 +1572,6 @@
             <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."/>
             <exampleBoolean value="false"/>
             <groupingId value="valuesets-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-patient-fetal-death-vr"/>
-                <display value="Extension - Patient Fetal Death - Vital Records"/>
-            </reference>
-            <name value="Extension - Patient Fetal Death - Vital Records"/>
-            <description value="The fetal death status of the patient."/>
-            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

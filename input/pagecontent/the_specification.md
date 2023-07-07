@@ -5,9 +5,7 @@ For more information on these aspects of FHIR, please refer to the [FHIR Exchang
 
 ### Profiles and Extensions
 
-To claim conformance to a Vital Records Common Profiles Library, servers SHALL:
-
-* Be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition. 
+To claim conformance to a Vital Records Common Profiles Library, servers SHALL be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition. 
 
 ### General Guidance
 
@@ -15,9 +13,9 @@ This section outlines important definitions, interpretations, and requirements c
 
 #### US Core
 
-This IG relies on the US Core specification (STU 5, v5.0.1) where possible. If a US Core profile does not exist for a required concept, then other resources are referenced instead. It is expected that US Core will evolve over time, and as it does this IG will be updated to include new US Core Profiles. 
+This IG relies on the US Core specification (STU 5, v5.0.1) where possible. If a US Core profile does not exist for a required concept, then other resources are referenced instead.
 
-More information on US Core, STU 5, v5.0.1., can be found [here](http://hl7.org/fhir/us/core/STU5.0.1/). 
+See [US Core Implementation Guide](http://hl7.org/fhir/us/core/STU5.0.1/) for more information.
 
 #### Must Support
 
