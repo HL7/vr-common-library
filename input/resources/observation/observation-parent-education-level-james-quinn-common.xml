@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-parent-education-level-james-quinn-common"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-07-07T00:49:57.237Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-07-07T01:54:49.533Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
     </meta>
     <status value="final"/>
@@ -16,10 +16,10 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn-common"/>
     </subject>
     <focus>
-        <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/>
+        <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn-common"/>
     </focus>
     <valueCodeableConcept>
         <coding>
