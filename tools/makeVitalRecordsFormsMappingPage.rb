@@ -101,7 +101,7 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
         when "US CORE"
             vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProfile + ".html)"
         when "FHIR"
-            vProfileWithURL = "[" + vProfileFieldContext + "]" + "(http://hl7.org/fhir/StructureDefinition-" + vProfile + ".html)"
+            vProfileWithURL = "[" + vProfileFieldContext + "]" + "(http://hl7.org/fhir/extensions/StructureDefinition-" + vProfile + ".html)"
         when "ODH"
             vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusodh}}" + "/StructureDefinition-" + vProfile + ".html)"
         else
@@ -112,14 +112,6 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
     end
     pOutputFile.puts "{: .grid }"
   end
-
-createMappingTable( "2003 Revision of the U.S. Standard Certificate of Live Birth", vOutputFile, vSpreadsheet)
-createMappingTable( "2003 Revision of the U.S. Standard Report of Fetal Death", vOutputFile, vSpreadsheet)
-createMappingTable( "2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births", vOutputFile, vSpreadsheet)
-createMappingTable( "2016 US Standard Facility Worksheet for the Live Birth Certificate", vOutputFile, vSpreadsheet)
-createMappingTable( "2019 US Standard Facility Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
-createMappingTable( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
-createMappingTable( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
 
 # Adding extra processing to map to the Questionnaires
 def createMappingTableQaire(pRowFilter, pOutputFile, pSpreadsheet)
@@ -156,5 +148,15 @@ def createMappingTableQaire(pRowFilter, pOutputFile, pSpreadsheet)
   pOutputFile.puts "{: .grid }"
 end
 
+createMappingTable( "2003 Revision of the U.S. Standard Certificate of Live Birth", vOutputFile, vSpreadsheet)
+createMappingTable( "2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births", vOutputFile, vSpreadsheet)
+createMappingTable( "2016 US Standard Facility Worksheet for the Live Birth Certificate", vOutputFile, vSpreadsheet)
+createMappingTable( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
+
 createMappingTableQaire( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
+
+createMappingTable( "2003 Revision of the U.S. Standard Report of Fetal Death", vOutputFile, vSpreadsheet)
+createMappingTable( "2019 US Standard Facility Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
+createMappingTable( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
+
 createMappingTableQaire( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)

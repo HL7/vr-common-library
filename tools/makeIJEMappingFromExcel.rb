@@ -79,7 +79,7 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
     when "US CORE"
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
     when "FHIR"
-      profile = "[" + vProvOutputFilename + "]" + "(http://hl7.org/fhir/StructureDefinition-" + vProvOutputFilename + ".html)"
+      profile = "[" + vProvOutputFilename + "]" + "(http://hl7.org/fhir/extensions/StructureDefinition-" + vProvOutputFilename + ".html)"
     when "ODH"
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusodh}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
     end
