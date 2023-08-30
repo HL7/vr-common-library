@@ -1,17 +1,3 @@
-# <mark>Note to Commenters</mark>
-This CI-Build version of the Vital Records Common Profiles Library (VRCPL) FHIR IG is ready for review and comment for an STU 1.1 Update ('dot release').
-
-*See [IG Update Page](https://confluence.hl7.org/pages/viewpage.action?pageId=175610684) for instructions on how to comment, comment areas of interest, and notes about the IG.*
-
-This "Note to Commenters" will be removed at the close of the Comment Period.
-
-
-***Thank you.***
-
-
------
-
-
 ### Description
 
 This guide is a Fast Healthcare Interoperability Resources (FHIR) Profiles Library to support the needs of multiple vital records implementation guides (IGs). It does not provide any use case (scenario) specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific IGs focusing on the exchange of vital records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.
@@ -55,5 +41,3 @@ This Guide is divided into several pages which are listed at the top of each pag
 </tr>
 </tbody>
 </table>
-
-
