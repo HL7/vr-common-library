@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tabulated-ethnicity-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-20T22:37:44.414Z"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-08-30T03:00:57.254Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr"/>
     <name value="ObservationTabulatedEthnicityVitalRecords"/>
@@ -50,10 +50,10 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <short value="This is the subject of the report, not the parent"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
             </type>
             <mustSupport value="true"/>
@@ -63,6 +63,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>

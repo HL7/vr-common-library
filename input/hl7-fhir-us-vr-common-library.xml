@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="373"/>
-        <lastUpdated value="2023-07-07T03:48:16.664Z"/>
+        <versionId value="375"/>
+        <lastUpdated value="2023-08-28T18:36:10.680Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>

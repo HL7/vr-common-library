@@ -32,6 +32,8 @@ IJE_FHIR_IG_COL = 9
 IJE_PROFILE_COL = 10
 IJE_FHIR_FIELD_COL = 11
 IJE_FHIR_ENCODING_COL = 12
+# added this column to get the ije mappings printing out on the related profile page - e.g. if something is mapped to a us core profile, set this to the 
+# profile containing the us core profile (e.g. Encounter-maternity contains US Core Location). Similarly if something is mapped to a fhir extension
 IJE_MAPPING_PROFILE_COL = 18
 
 # BFDR_Profile_Intros.xlsx columns
@@ -47,6 +49,8 @@ FORMS_FORM_COL = 1
 FORMS_URL_COL = 2
 FORMS_ELEMENT_COL = 3
 FORMS_IG_COL = 4
+# added this column to get the forms mappings printing out on the related profile page - e.g. if something is mapped to a us core profile, set this to the 
+# profile containing the us core profile (e.g. Encounter-maternity contains US Core Location). Similarly if something is mapped to a fhir extension
 FORMS_MAPPING_PROFILE_COL = 5
 FORMS_PROFILE_COL = 6
 FORMS_FIELD_COL = 7
