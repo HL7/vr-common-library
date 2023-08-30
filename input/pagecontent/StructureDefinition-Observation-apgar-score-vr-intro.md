@@ -8,8 +8,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 206 | Apgar Score at 10 Minutes | APGAR10 |
-| Natality | 205 | Apgar Score at 5 Minutes | APGAR5 |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 206 | Apgar Score at 10 Minutes | APGAR10 |  |
+| Natality | 205 | Apgar Score at 5 Minutes | APGAR5 |  |
 {: .grid }

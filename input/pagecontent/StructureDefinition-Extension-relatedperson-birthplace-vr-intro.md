@@ -7,10 +7,10 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Fetal Death | 277 | State, U.S. Territory or Canadian Province of Birth (Father) - code | FBPLACD_ST_TER_C |
-| Fetal Death | 278 | Father's Country of Birth (Code) | FBPLACE_CNT_C |
-| Fetal Death | 282 | Father's Country of Birth (Literal) | FBPLACE_CNTRY_TXT |
-| Fetal Death | 281 | State, U.S. Territory or Canadian Province of Birth (Father) - literal | FBPLACE_ST_TER_TXT |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Fetal Death | 277 | State, U.S. Territory or Canadian Province of Birth (Father) - code | FBPLACD_ST_TER_C | extension:Extension-relatedperson-birthplace-vr |
+| Fetal Death | 278 | Father's Country of Birth (Code) | FBPLACE_CNT_C | extension:Extension-relatedperson-birthplace-vr |
+| Fetal Death | 282 | Father's Country of Birth (Literal) | FBPLACE_CNTRY_TXT | extension:Extension-relatedperson-birthplace-vr |
+| Fetal Death | 281 | State, U.S. Territory or Canadian Province of Birth (Father) - literal | FBPLACE_ST_TER_TXT | extension:Extension-relatedperson-birthplace-vr |
 {: .grid }

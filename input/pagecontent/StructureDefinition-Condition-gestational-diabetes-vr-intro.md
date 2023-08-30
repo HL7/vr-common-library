@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 158 | Risk Factors--Gestational Diabetes | GDIAB |
-| Fetal Death | 111 | Risk Factors--Gestational Diabetes | GDIAB |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 158 | Risk Factors--Gestational Diabetes | GDIAB |  |
+| Fetal Death | 111 | Risk Factors--Gestational Diabetes | GDIAB |  |
 {: .grid }

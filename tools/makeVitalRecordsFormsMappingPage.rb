@@ -53,7 +53,12 @@ vOutputFile.puts "This IG supports communicating information from an EHR system 
  * [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
  * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
  
-The following tables map the form elements to the appropriate profile or extension along with the containing specification; BFDR (this IG), the [Vital Records Common Profile Library (VRCPL)]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}), [US Core]({{site.data.fhir.ver.hl7fhiruscore}}), [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}}), or FHIR.
+The following tables map the form elements to the appropriate profile or extension along with the containing specification:
+* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
+* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
+* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
+* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
+* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 The Profile/Extension column contains a link to the profile or extension that contains the specific data element. Where there are dot separated pieces in the link, the bolded part of the link is the target. The non-bolded parts of the link are for context:
  * e.g. [Encounter-birth.location.location.**us-core-location**.location.location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html)

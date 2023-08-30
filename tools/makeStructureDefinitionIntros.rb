@@ -104,20 +104,20 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "" if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
             vIntroOutputFile.puts "### IJE Mapping"
             vIntroOutputFile.puts ""
-            vIntroOutputFile.puts "| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |"
-            vIntroOutputFile.puts "| ------------ | -------------- | --------------- | ------------ |"
+            vIntroOutputFile.puts "| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |"
+            vIntroOutputFile.puts "| ------------ | -------------- | --------------- | ------------ | --------- |"
 
           # process any natality rows first
           pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
               next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_MAPPING_PROFILE_COL].to_s != vProfileName
               
-              vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " |"
+              vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |"
           end
           # now process any fetal death rows
           pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
             next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_MAPPING_PROFILE_COL].to_s != vProfileName
             
-            vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " |"
+            vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |"
           end
           vIntroOutputFile.puts "{: .grid }"
         end

@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE |
-| Fetal Death | 112 | Risk Factors--Hypertension Prepregnancy | PHYPE |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 159 | Risk Factors--Prepregnancy Hypertension  | PHYPE |  |
+| Fetal Death | 112 | Risk Factors--Hypertension Prepregnancy | PHYPE |  |
 {: .grid }

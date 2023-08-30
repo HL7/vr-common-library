@@ -2,6 +2,10 @@
 	"package-id": "hl7.fhir.us.vr-common-library",
 	"version": "1.1.0",
 	"path": "http://hl7.org/fhir/us/vr-common-library/STU1.1",
+	"milestone": true,
 	"status": "trial-use",
 	"sequence": "STU 1.1",
+	"desc": "",
+	"title": "Vital Records Common Profiles Libraray",
+	"category": "Public Health"
 }

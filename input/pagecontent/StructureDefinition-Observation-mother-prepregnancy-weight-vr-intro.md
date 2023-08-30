@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 137 | Mother's Prepregnancy Weight (in whole pounds) | PWGT |
-| Fetal Death | 91 | Mother's Prepregnancy Weight | PWGT |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 137 | Mother's Prepregnancy Weight (in whole pounds) | PWGT |  |
+| Fetal Death | 91 | Mother's Prepregnancy Weight | PWGT |  |
 {: .grid }

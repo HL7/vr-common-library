@@ -7,10 +7,10 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 134 | Mother's Height--Feet | HFT |
-| Natality | 135 | Mother's Height--Inches | HIN |
-| Fetal Death | 88 | Mother's Height--Feet | HFT |
-| Fetal Death | 89 | Mother's Height--Inches | HIN |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 134 | Mother's Height--Feet | HFT |  |
+| Natality | 135 | Mother's Height--Inches | HIN |  |
+| Fetal Death | 88 | Mother's Height--Feet | HFT |  |
+| Fetal Death | 89 | Mother's Height--Inches | HIN |  |
 {: .grid }

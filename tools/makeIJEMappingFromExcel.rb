@@ -47,6 +47,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
 * VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
 * US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
+* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
 
 vOutputFile.puts ""
@@ -89,6 +90,7 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
     
     pOutputFile.puts "| " + field.chomp + " | " + description.chomp + " | " + ijename + " | " + profile + " | " + fhirig + " |"
   end
+  
   pOutputFile.puts "{: .grid }"
 end
 

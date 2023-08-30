@@ -9,10 +9,10 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 78 | Father's Education | FEDUC |
-| Natality | 32 | Mother's Education | MEDUC |
-| Fetal Death | 283 | Father's Education | FEDUC |
-| Fetal Death | 32 | Mother's Education | MEDUC |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 78 | Father's Education | FEDUC |  |
+| Natality | 32 | Mother's Education | MEDUC | Observation-parent-education-level |
+| Fetal Death | 283 | Father's Education | FEDUC |  |
+| Fetal Death | 32 | Mother's Education | MEDUC |  |
 {: .grid }

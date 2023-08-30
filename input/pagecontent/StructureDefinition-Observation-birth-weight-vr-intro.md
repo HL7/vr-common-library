@@ -8,8 +8,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 201 | Birthweight in grams | BWG |
-| Fetal Death | 143 | Weight of Fetus | FWG |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 201 | Birthweight in grams | BWG | valueQuantity.value |
+| Fetal Death | 143 | Weight of Fetus | FWG |  |
 {: .grid }

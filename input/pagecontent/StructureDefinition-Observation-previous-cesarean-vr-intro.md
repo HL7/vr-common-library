@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 165 | Risk Factors--Previous Cesarean | PCES |
-| Fetal Death | 118 | Risk Factors--Previous Cesarean | PCES |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 165 | Risk Factors--Previous Cesarean | PCES |  |
+| Fetal Death | 118 | Risk Factors--Previous Cesarean | PCES |  |
 {: .grid }

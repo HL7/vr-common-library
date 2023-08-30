@@ -5,7 +5,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 139 | Mother's Weight at Delivery (in whole pounds) | DWGT |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 139 | Mother's Weight at Delivery (in whole pounds) | DWGT |  |
 {: .grid }

@@ -8,8 +8,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 203 | Obstetric Estimation of Gestation | OWGEST |
-| Fetal Death | 145 | Obstetric Estimation of Gestation | OWGEST |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 203 | Obstetric Estimation of Gestation | OWGEST |  |
+| Fetal Death | 145 | Obstetric Estimation of Gestation | OWGEST |  |
 {: .grid }

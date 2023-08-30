@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 132 | Total Number of Prenatal Care Visits | NPREV |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 132 | Total Number of Prenatal Care Visits | NPREV |  |
 {: .grid }

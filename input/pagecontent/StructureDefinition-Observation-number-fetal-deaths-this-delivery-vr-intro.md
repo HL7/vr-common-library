@@ -4,7 +4,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Fetal Death | 153 | Number of Fetal Deaths | FDTH |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Fetal Death | 153 | Number of Fetal Deaths | FDTH |  |
 {: .grid }

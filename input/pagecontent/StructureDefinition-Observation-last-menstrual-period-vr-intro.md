@@ -7,12 +7,12 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 156 | Date Last Normal Menses Began--Day | DLMP_DY |
-| Natality | 155 | Date Last Normal Menses Began--Month | DLMP_MO |
-| Natality | 154 | Date Last Normal Menses Began--Year | DLMP_YR |
-| Fetal Death | 109 | Date Last Normal Menses Began--Day | DLMP_DY |
-| Fetal Death | 108 | Date Last Normal Menses Began--Month | DLMP_MO |
-| Fetal Death | 107 | Date Last Normal Menses Began--Year | DLMP_YR |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 156 | Date Last Normal Menses Began--Day | DLMP_DY |  |
+| Natality | 155 | Date Last Normal Menses Began--Month | DLMP_MO |  |
+| Natality | 154 | Date Last Normal Menses Began--Year | DLMP_YR |  |
+| Fetal Death | 109 | Date Last Normal Menses Began--Day | DLMP_DY |  |
+| Fetal Death | 108 | Date Last Normal Menses Began--Month | DLMP_MO |  |
+| Fetal Death | 107 | Date Last Normal Menses Began--Year | DLMP_YR |  |
 {: .grid }

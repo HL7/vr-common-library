@@ -34,22 +34,22 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 251 | County of Birth (Literal) | BIRTH_CO |
-| Natality | 252 | City/town/place of birth (Literal) | BRTHCITY |
-| Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE |
-| Natality | 10 | County of Birth | CNTYO |
-| Natality | 9 | Date of Birth (Infant)--Day | IDOB_DY |
-| Natality | 8 | Date of Birth (Infant)--Month | IDOB_MO |
-| Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR |
-| Natality | 332 | Infant's Medical Record Number | INF_MED_REC_NUM |
-| Natality | 7 | Sex | ISEX |
-| Natality | 247 | Child's First Name | KIDFNAME |
-| Natality | 249 | Child's Last Name | KIDLNAME |
-| Natality | 248 | Child's Middle Name | KIDMNAME |
-| Natality | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX |
-| Natality | 207 | Plurality | PLUR |
-| Natality | 208 | Set Order | SORD |
-| Natality | 6 | Time of Birth | TB |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 251 | County of Birth (Literal) | BIRTH_CO | extension: patient-birthPlace |
+| Natality | 252 | City/town/place of birth (Literal) | BRTHCITY | extension: patient-birthPlace |
+| Natality | 2 | State, U.S. Territory or Canadian Province of Birth (Infant) - code | BSTATE | extension: patient-birthPlace |
+| Natality | 10 | County of Birth | CNTYO | extension: patient-birthPlace |
+| Natality | 9 | Date of Birth (Infant)--Day | IDOB_DY | birthDate |
+| Natality | 8 | Date of Birth (Infant)--Month | IDOB_MO | birthDate |
+| Natality | 1 | Date of Birth (Infant)--Year | IDOB_YR | birthDate |
+| Natality | 332 | Infant's Medical Record Number | INF_MED_REC_NUM | identifier |
+| Natality | 7 | Sex | ISEX | extension:us-core-birthsex |
+| Natality | 247 | Child's First Name | KIDFNAME | name.given |
+| Natality | 249 | Child's Last Name | KIDLNAME | name.family |
+| Natality | 248 | Child's Middle Name | KIDMNAME | name.given |
+| Natality | 250 | Child's Surname Suffix (moved from end) | KIDSUFFX | name.suffix |
+| Natality | 207 | Plurality | PLUR | extension[patient-multipleBirthTotal].valuePositiveInt |
+| Natality | 208 | Set Order | SORD | multipleBirth |
+| Natality | 6 | Time of Birth | TB | birthDate.extension:patient-birthTime |
 {: .grid }

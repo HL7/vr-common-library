@@ -23,18 +23,18 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 124 | Attendant Title | ATTEND |
-| Natality | 326 | Attendant's Name | ATTEND_NAME |
-| Natality | 327 | Attendant's NPI | ATTEND_NPI |
-| Natality | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT |
-| Natality | 330 | Certifier Title | CERTIF |
-| Natality | 328 | Certifier's Name | CERTIF_NAME |
-| Natality | 329 | Certifier's NPI | CERTIF_NPI |
-| Natality | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT |
-| Fetal Death | 78 | Attendant | ATTEND |
-| Fetal Death | 340 | Attendant's Name | ATTEND_NAME |
-| Fetal Death | 341 | Attendant's NPI | ATTEND_NPI |
-| Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 124 | Attendant Title | ATTEND | qualification.code |
+| Natality | 326 | Attendant's Name | ATTEND_NAME | name |
+| Natality | 327 | Attendant's NPI | ATTEND_NPI | id |
+| Natality | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |
+| Natality | 330 | Certifier Title | CERTIF | qualification.code |
+| Natality | 328 | Certifier's Name | CERTIF_NAME | name |
+| Natality | 329 | Certifier's NPI | CERTIF_NPI | id |
+| Natality | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT | qualification.code.text |
+| Fetal Death | 78 | Attendant | ATTEND | qualification.code |
+| Fetal Death | 340 | Attendant's Name | ATTEND_NAME | name |
+| Fetal Death | 341 | Attendant's NPI | ATTEND_NPI | id |
+| Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | qualification.code.text |
 {: .grid }

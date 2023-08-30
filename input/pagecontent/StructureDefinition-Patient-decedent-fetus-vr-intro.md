@@ -19,18 +19,18 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Fetal Death | 10 | County of Delivery | CNTYO |
-| Fetal Death | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE |
-| Fetal Death | 9 | Date of Delivery (Fetus)--Day | FDOD_DY |
-| Fetal Death | 8 | Date of Delivery (Fetus)--Month | FDOD_MO |
-| Fetal Death | 1 | Date of Delivery (Fetus)--Year | FDOD_YR |
-| Fetal Death | 219 | Fetus First Name | FETFNAME |
-| Fetal Death | 221 | Fetus Last Name | FETLNAME |
-| Fetal Death | 220 | Fetus Middle Name | FETMNAME |
-| Fetal Death | 7 | Sex | FSEX |
-| Fetal Death | 152 | Set Order | SORD |
-| Fetal Death | 222 | Fetus Surname Suffix | SUFFIX |
-| Fetal Death | 6 | Time of Delivery | TD |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Fetal Death | 10 | County of Delivery | CNTYO | extension: patient-birthPlace |
+| Fetal Death | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE | extension: patient-birthPlace |
+| Fetal Death | 9 | Date of Delivery (Fetus)--Day | FDOD_DY | birthDate |
+| Fetal Death | 8 | Date of Delivery (Fetus)--Month | FDOD_MO | birthDate |
+| Fetal Death | 1 | Date of Delivery (Fetus)--Year | FDOD_YR | birthDate |
+| Fetal Death | 219 | Fetus First Name | FETFNAME | name.given |
+| Fetal Death | 221 | Fetus Last Name | FETLNAME | name.family |
+| Fetal Death | 220 | Fetus Middle Name | FETMNAME | name.given |
+| Fetal Death | 7 | Sex | FSEX | extension:us-core-birthsex |
+| Fetal Death | 152 | Set Order | SORD | multipleBirth |
+| Fetal Death | 222 | Fetus Surname Suffix | SUFFIX | name.suffix |
+| Fetal Death | 6 | Time of Delivery | TD | birthDate.extension:patient-birthTime |
 {: .grid }

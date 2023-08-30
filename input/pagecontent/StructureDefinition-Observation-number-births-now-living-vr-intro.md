@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 142 | Previous Live Births Now Living | PLBL |
-| Fetal Death | 96 | Previous Live Births Now Living | PLBL |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 142 | Previous Live Births Now Living | PLBL |  |
+| Fetal Death | 96 | Previous Live Births Now Living | PLBL |  |
 {: .grid }
