@@ -7,12 +7,12 @@
         <lastUpdated value="2023-06-20T22:57:59.730Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-pregnancy-status-vr"/>
-    <version value="0.1.0"/>
+<!--    <version value="0.1.0"/>-->
     <name value="CodeSystemDeathPregnancyStatusVitalRecords"/>
     <title value="CodeSystem - Death Pregnancy Status Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2022-03-02T09:27:11+00:00"/>
+<!--    <date value="2022-03-02T09:27:11+00:00"/>-->
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>
@@ -34,7 +34,7 @@
     </jurisdiction>
     <caseSensitive value="true"/>
     <content value="complete"/>
-    <count value="5"/>
+<!--    <count value="5"/>-->
     <concept>
         <code value="1"/>
         <display value="Not pregnant within past year"/>
