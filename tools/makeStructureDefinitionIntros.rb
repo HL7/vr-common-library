@@ -31,8 +31,8 @@ IJE_ONLY_COL = 8
 IJE_FHIR_IG_COL = 9
 IJE_PROFILE_COL = 10
 IJE_FHIR_FIELD_COL = 11
-IJE_FHIR_TYPE_COL = 12
-IJE_FHIR_ENCODING_COL = 13
+IJE_FHIR_ENCODING_COL = 12
+IJE_MAPPING_PROFILE_COL = 18
 
 # BFDR_Profile_Intros.xlsx columns
 INTRO_PROFILE_NAME_COL = 0
@@ -47,9 +47,10 @@ FORMS_FORM_COL = 1
 FORMS_URL_COL = 2
 FORMS_ELEMENT_COL = 3
 FORMS_IG_COL = 4
-FORMS_PROFILE_COL = 5
-FORMS_FIELD_COL = 6
-FORMS_CONTEXT_COL = 7
+FORMS_MAPPING_PROFILE_COL = 5
+FORMS_PROFILE_COL = 6
+FORMS_FIELD_COL = 7
+FORMS_CONTEXT_COL = 8
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
 vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
@@ -86,10 +87,10 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
             vIntroOutputFile.puts "" if !row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty?
             vIntroOutputFile.puts "### Form Mapping"
-            vIntroOutputFile.puts "This concept is mapped to:"
+            vIntroOutputFile.puts "This profile is mapped to:"
             
             pFormsMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-                next if row[FORMS_PROFILE_COL].to_s != vProfileName
+                next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileName
                 vIntroOutputFile.puts " * Item **" + row[FORMS_ELEMENT_COL].to_s + "** in the [" + row[FORMS_FORM_COL].to_s + "](" + row[FORMS_URL_COL].to_s + ")"
             end
         end
@@ -102,12 +103,19 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |"
             vIntroOutputFile.puts "| ------------ | -------------- | --------------- | ------------ |"
 
-            pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-                next if (row[IJE_USECASE_COL].to_s != "Natality" && row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName
-                
-                vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " |"
-            end
-            vIntroOutputFile.puts "{: .grid }"
+          # process any natality rows first
+          pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+              next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_MAPPING_PROFILE_COL].to_s != vProfileName
+              
+              vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " |"
+          end
+          # now process any fetal death rows
+          pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+            next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_MAPPING_PROFILE_COL].to_s != vProfileName
+            
+            vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " |"
+          end
+          vIntroOutputFile.puts "{: .grid }"
         end
     end
 end

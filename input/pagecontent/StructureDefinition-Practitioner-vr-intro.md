@@ -1,5 +1,5 @@
 ### Form Mapping
-This concept is mapped to:
+This profile is mapped to:
  * Item **11. Certifier’s Name** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
  * Item **11. Certifier’s Title** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
  * Item **27. Attendant’s Name** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
@@ -17,9 +17,24 @@ This concept is mapped to:
  * Item **15. Title Of Person Completing Report** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
  * Item **14. Name of person completing report** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
  * Item **14. Title of person completing report** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
+ * Item **16. Attendant’s name** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
+ * Item **16. Attendant’s title** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
+ * Item **16. Attendant’s N.P.I.** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
 
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
+| Natality | 124 | Attendant Title | ATTEND |
+| Natality | 326 | Attendant's Name | ATTEND_NAME |
+| Natality | 327 | Attendant's NPI | ATTEND_NPI |
+| Natality | 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT |
+| Natality | 330 | Certifier Title | CERTIF |
+| Natality | 328 | Certifier's Name | CERTIF_NAME |
+| Natality | 329 | Certifier's NPI | CERTIF_NPI |
+| Natality | 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT |
+| Fetal Death | 78 | Attendant | ATTEND |
+| Fetal Death | 340 | Attendant's Name | ATTEND_NAME |
+| Fetal Death | 341 | Attendant's NPI | ATTEND_NPI |
+| Fetal Death | 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT |
 {: .grid }

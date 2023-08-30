@@ -1,5 +1,5 @@
 ### Form Mapping
-This concept is mapped to:
+This profile is mapped to:
  * Item **20. Mother’s Education** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
  * Item **23. Father’s Education** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
  * Item **8. What is the highest level of schooling that you will have completed at the time of delivery?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
@@ -12,7 +12,7 @@ This concept is mapped to:
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 78 | Father's Education | FEDUC |
-| Fetal Death | 283 | Father's Education | FEDUC |
 | Natality | 32 | Mother's Education | MEDUC |
+| Fetal Death | 283 | Father's Education | FEDUC |
 | Fetal Death | 32 | Mother's Education | MEDUC |
 {: .grid }

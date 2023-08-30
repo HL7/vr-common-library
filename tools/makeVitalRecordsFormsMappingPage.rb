@@ -24,11 +24,12 @@ FORMS_FORM_COL = 1
 FORMS_URL_COL = 2
 FORMS_ELEMENT_COL = 3
 FORMS_IG_COL = 4
-FORMS_PROFILE_COL = 5
-FORMS_FIELD_COL = 6
-FORMS_CONTEXT_COL = 7
-FORMS_QAIRE_COL = 8
-FORMS_QAIRE_FIELD_COL = 9
+FORMS_MAPPING_PROFILE_COL = 5
+FORMS_PROFILE_COL = 6
+FORMS_FIELD_COL = 7
+FORMS_CONTEXT_COL = 8
+FORMS_QAIRE_COL = 9
+FORMS_QAIRE_FIELD_COL = 10
 
 puts ARGV[0]
 
@@ -52,8 +53,15 @@ vOutputFile.puts "This IG supports communicating information from an EHR system 
  * [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
  * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
  
-The following tables map the form elements to the appropriate profile and IG, either BFDR (this IG) or the Vital Records Common Profile Library (VRCPL).
+The following tables map the form elements to the appropriate profile or extension along with the containing specification; BFDR (this IG), the [Vital Records Common Profile Library (VRCPL)]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}), [US Core]({{site.data.fhir.ver.hl7fhiruscore}}), [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}}), or FHIR.
+
+The Profile/Extension column contains a link to the profile or extension that contains the specific data element. Where there are dot separated pieces in the link, the bolded part of the link is the target. The non-bolded parts of the link are for context:
+ * e.g. [Encounter-birth.location.location.**us-core-location**.location.location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html)
+   * the specific data being mapped is recorded in the US Core Location profile and the link resolves to that profile
+   * the US Core Location profile is referenced in the BFDR Encounter-birth profile in Encounter.location.location
+
 The last two tables on this page map the Patient's Worksheets to the Questionnaires.
+
 Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)"
 
 vOutputFile.puts ""
@@ -63,7 +71,7 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
     pOutputFile.puts "### " + pRowFilter + " Mapping"
     pOutputFile.puts ""
     
-    pOutputFile.puts "| **Form** | **Element** | **Profile** | **Location** |"
+    pOutputFile.puts "| **Form** | **Element** | **Profile/Extension** | **Location** |"
     pOutputFile.puts "| -------- | ----------- | ----------- | ------------ |"
     
     pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
