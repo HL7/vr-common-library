@@ -225,7 +225,9 @@
         <element id="Patient.link:mother.other">
             <path value="Patient.link.other"/>
             <type>
-                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"/>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
+                    <valueBoolean value="false"/>
+                </extension>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"/>
             </type>
