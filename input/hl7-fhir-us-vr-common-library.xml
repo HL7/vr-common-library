@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-vr-common-library"/>
     <meta>
-        <versionId value="375"/>
-        <lastUpdated value="2023-08-28T18:36:10.680Z"/>
+        <versionId value="376"/>
+        <lastUpdated value="2023-08-31T05:20:01.709Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7-fhir-us-vr-common-library"/>
     <version value="1.1.0"/>
@@ -290,16 +290,6 @@
             <description value="This Extension profile represents the month portion (MM) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions-death-reporting"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-part-absent-reason-vr"/>
-                <display value="Extension - Date Part Absent Reason - Vital Records"/>
-            </reference>
-            <name value="Extension - Date Part Absent Reason - Vital Records"/>
-            <description value="This Extension profile provides a reason why an expected date part is missing."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>

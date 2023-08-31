@@ -3,11 +3,19 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-apgar-score-babyg-quinn-5-min-common"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-13T22:41:01.836Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-08-31T05:48:49.866Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     </meta>
     <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+        </coding>
+        <text value="Survey"/>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>

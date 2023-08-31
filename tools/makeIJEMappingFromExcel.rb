@@ -48,7 +48,9 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
 * US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
 * ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
-* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
+* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
+
+See the [Sources of Data Section](use_cases.html#sources-of-data) for details about locating and retrieving required data."
 
 vOutputFile.puts ""
 

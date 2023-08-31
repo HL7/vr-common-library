@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-mother-vr"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2023-06-22T03:43:29.208Z"/>
+        <versionId value="18"/>
+        <lastUpdated value="2023-08-31T05:31:24.941Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
     <name value="PatientMotherVitalRecords"/>
@@ -167,16 +167,16 @@
             <path value="Patient.birthDate"/>
             <min value="1"/>
         </element>
-        <element id="Patient.birthDate.extension:datePartAbsentReason">
+        <element id="Patient.birthDate.extension:partialDate">
             <path value="Patient.birthDate.extension"/>
-            <sliceName value="datePartAbsentReason"/>
-            <short value="Indicates reason for missing data on either the birthDate or the birthTime."/>
+            <sliceName value="partialDate"/>
+            <short value="Provides values of a partial date"/>
             <definition value="Indicates reason for missing data on either the birthDate or the birthTime."/>
             <min value="0"/>
             <max value="*"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"/>
+                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -225,9 +225,7 @@
         <element id="Patient.link:mother.other">
             <path value="Patient.link.other"/>
             <type>
-                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
-                    <valueBoolean value="false"/>
-                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"/>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"/>
             </type>

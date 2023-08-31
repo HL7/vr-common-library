@@ -46,7 +46,7 @@ vOutputFile.puts "This IG supports communicating information from an EHR system 
  * [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
  * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
  * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
+ * [2016 US Standard Mother’s Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
  
 **Fetal Death**
  * [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
@@ -164,12 +164,11 @@ end
 createMappingTable( "2003 Revision of the U.S. Standard Certificate of Live Birth", vOutputFile, vSpreadsheet)
 createMappingTable( "2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births", vOutputFile, vSpreadsheet)
 createMappingTable( "2016 US Standard Facility Worksheet for the Live Birth Certificate", vOutputFile, vSpreadsheet)
-createMappingTable( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
-
-createMappingTableQaire( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
+createMappingTable( "2016 US Standard Mother’s Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
 
 createMappingTable( "2003 Revision of the U.S. Standard Report of Fetal Death", vOutputFile, vSpreadsheet)
 createMappingTable( "2019 US Standard Facility Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
 createMappingTable( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
 
+createMappingTableQaire( "2016 US Standard Mother’s Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
 createMappingTableQaire( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)

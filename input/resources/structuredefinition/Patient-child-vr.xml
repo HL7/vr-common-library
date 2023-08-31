@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-child-vr"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2023-06-22T03:50:21.484Z"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-08-31T05:31:27.360Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
     <name value="PatientChildVitalRecords"/>
@@ -172,16 +172,16 @@
             <path value="Patient.birthDate"/>
             <min value="1"/>
         </element>
-        <element id="Patient.birthDate.extension:datePartAbsentReason">
+        <element id="Patient.birthDate.extension:partialDate">
             <path value="Patient.birthDate.extension"/>
-            <sliceName value="datePartAbsentReason"/>
-            <short value="Indicates reason for missing data on either the birthDate or the birthTime."/>
+            <sliceName value="partialDate"/>
+            <short value="Provides values of a partial date"/>
             <definition value="Indicates reason for missing data on either the birthDate or the birthTime."/>
             <min value="0"/>
             <max value="*"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr"/>
+                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"/>
             </type>
             <mustSupport value="true"/>
         </element>

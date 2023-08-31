@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-apgar-score-vr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-07-05T02:36:03.906Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-08-31T05:46:18.137Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     <name value="ObservationApgarScoreVitalRecords"/>
@@ -29,7 +29,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

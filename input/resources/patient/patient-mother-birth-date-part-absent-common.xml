@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-mother-birth-date-part-absent-common"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-06-23T05:09:26.313Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-08-31T05:43:43.303Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
@@ -64,33 +64,24 @@
         <given value="Teresa"/>
     </name>
     <gender value="female"/>
-    <birthDate value="1986">
-        <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr">
-            <extension url="date-part">
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="258706009"/>
-                        <display value="month (qualifier value)"/>
-                    </coding>
-                </valueCodeableConcept>
+    <birthDate>
+        <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate">
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year">
+                <valueUnsignedInt value="1986"/>
             </extension>
-            <extension url="absent-reason">
-                <valueCode value="asked-unknown"/>
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month">
+                <valueUnsignedInt>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="asked-unknown"/>
+                    </extension>
+                </valueUnsignedInt>
             </extension>
-        </extension>
-        <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-part-absent-reason-vr">
-            <extension url="date-part">
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="258703001"/>
-                        <display value="day (qualifier value)"/>
-                    </coding>
-                </valueCodeableConcept>
-            </extension>
-            <extension url="absent-reason">
-                <valueCode value="asked-unknown"/>
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day">
+                <valueUnsignedInt>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="asked-unknown"/>
+                    </extension>
+                </valueUnsignedInt>
             </extension>
         </extension>
     </birthDate>
