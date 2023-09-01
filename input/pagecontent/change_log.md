@@ -1,13 +1,21 @@
-While IG is in development see the [Change Log GoogleSheet](https://docs.google.com/spreadsheets/d/1d9ZIi43R4MS4qXf14u19P3SwZ1ThkPaU-K-Hoo139Ys/edit?usp=sharing) for a list of the latest changes (this page will be moved inside the IG prior to publication).
+### STU 1.1 Update, July 2023
 
-### Resources Added to this Library for STU 1.1, July 2023
-#### New Narrative Guidance
-Two new narrative pages were added: The Specification and Change Log.
+| Jira Issue | Description of Change | Changes Made |
+| -------- | -------- | -------- |
+| https://jira.hl7.org/browse/FHIR-40848 | The Observation - Pregnancy Risk Factor has a value set containing a mix of Conditions, Observations, and Procedures have been used in the IG. This is not how the data is represented in the real world. Split the Observation into separate profiles using the appropriate resource. | Removed profile:<br/>Observation - Pregnancy Risk Factor<br/>Added:<br/>Condition - Prepregnancy Diabetes Vital Records<br/>Condition - Gestational Diabetes Vital Records<br/>Condition - Prepregnancy Hypertension Vital Records<br/>Condition - Gestational Hypertension Vital Records<br/>Condition - Eclampsia Hypertension Vital Records<br/>Observation - Previous Preterm Birth Vital Records<br/>Procedure - Infertility Treatment Vital Records<br/>Procedure - Artificial Insemination Vital Records<br/>Procedure - Assissted Fertilization Vital Records<br/>Observation - Previous Cesarean Vital Records<br/>Observation - None Of Specified Pregnancy Risk Factors Vital Records |
+| https://jira.hl7.org/browse/FHIR-40846 | Update to latest version of US Core (5.0.1) | All profiles that are based on US Core templates are affected. |
+| https://jira.hl7.org/browse/FHIR-40928 | Revisit profile focus/subject mappings (mother and child/fetus) and update where needed.<br/>Ensure all Observation subject/focus mappings are current and update where needed. | Revisted all profiles and updated subject/focus mappings where needed. (See also https://jira.hl7.org/browse/FHIR-41593) |
+| https://jira.hl7.org/browse/FHIR-41531 | Observation - Parent Education: Clarify the use of the subject and focus fields. | Updated subject/focus mappings to subject = baby and focus = mother/father as part of https://jira.hl7.org/browse/FHIR-40928 |
+| https://jira.hl7.org/browse/FHIR-40845 | Add death-related profiles shared by VRDR & MDI | See Vital Records Common Resources Added to this Library for STU 1.1, July 2023 below |
+| https://jira.hl7.org/browse/FHIR-41648 | Drop Date Part Absent Reason extension: In VRDR there's an extension that allows conveying each of the different parts of a date as separate elements with an ability to provide an absent reason for each. This is more scalable than the approach here as it allows conveying month and day with no year (a common use-case). There shouldn't be two different mechanisms to solve this problem. | Deleted Date Part Absent Reason extension and associated value set. Referenced to Extension - Partial Date - Vital Records. Updated example. |
+| https://jira.hl7.org/browse/FHIR-41593 | Observation - Apgar Score: Should the Observation - Apgar Score profile profile be based on http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-survey.html? | Updated Observation - Apgar Score to be based on http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-survey.html |
+{: .grid }
 
-#### Resources for Death Reporting
+### Vital Records Common Resources Added to this Library for STU 1.1, July 2023
+
 Resources were added to this Library to support future versions of the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/) and the [Medicolegal Death Investigation (MDI) FHIR IG](http://hl7.org/fhir/us/mdi/).
 
-**Profiles Used by Both VRDR and MDI IGs**
+#### Profiles
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -22,9 +30,9 @@ Resources were added to this Library to support future versions of the [Vital Re
 | Death Location (USCoreLocation)     | Location - Death     | Location - Death Vital Records     |
 | Injury Location (USCoreLocation)     | Location - Injury     | Location - Injury Vital Records     |
 | Death Certification Procedure     | Procedure - Death Certification     | Procedure - Death Certification Vital Records     |
+{: .grid }
 
-### Extensions Added to the Library
-**Extensions used by both VRDR and MDI IGs**
+#### Extensions
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -33,17 +41,17 @@ Resources were added to this Library to support future versions of the [Vital Re
 | Date Time     | Extension - Date Time     | Extension - Date Time Vital Records     |
 | Date Year     | Extension - Date Year     | Extension - Date Year Vital Records     |
 | Partial Date Time     | Extension - Partial DateTime     | Extension - Partial DateTime Vital Records     |
+{: .grid }
 
-### Code Systems Added to the Library
-**Code Systems used by both VRDR and MDI IGs**
+#### Code Systems
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
 | Local Component Codes     | CodeSystem - Local Component Codes     | CodeSystem - Local Components Codes Vital Records     |
 | Pregnancy Status Codes     | CodeSystem - Death Pregnancy Status     | CodeSystem - Death Pregnancy Status Vital Records     |
+{: .grid }
 
-### Value Sets Added to the Library
-**Value Sets used by both VRDR and MDI IGs**
+#### Value Sets
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -58,3 +66,4 @@ Resources were added to this Library to support future versions of the [Vital Re
 | Units of Age     | ValueSet - Units of Age     | ValueSet - Units of Age Vital Records     |
 | Yes No Unknown     | ValueSet - Yes No Unknown     | ValueSet - Yes No Unknown Vital Records     |
 | Yes No Unknown NotApplicable     | ValueSet - Yes No Unknown NotApplicable     | ValueSet - Yes No Unknown NotApplicable Vital Records     |
+{: .grid }
