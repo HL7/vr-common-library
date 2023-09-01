@@ -3,8 +3,6 @@
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 # External value sets
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
-# HTML for highlighting note to commenters - will be deleted after comment period
-The markdown contains content that appears to be an embedded HTML tag starting at '# '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 # Example NPI
 INFORMATION: Practitioner/practitioner-vital-records-janet-seito-common: Practitioner.qualification[0].code.coding[0]: The code '112247003' is valid but is not active
 # Information messages about draft condition category codes used in US Core
