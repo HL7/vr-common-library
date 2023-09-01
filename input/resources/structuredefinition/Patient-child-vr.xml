@@ -181,7 +181,7 @@
             <max value="*"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -65,18 +65,18 @@
     </name>
     <gender value="female"/>
     <birthDate>
-        <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate">
-            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year">
+        <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-vr">
+            <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr">
                 <valueUnsignedInt value="1986"/>
             </extension>
             <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month">
                 <valueUnsignedInt>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
                         <valueCode value="asked-unknown"/>
                     </extension>
                 </valueUnsignedInt>
             </extension>
-            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day">
+            <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr">
                 <valueUnsignedInt>
                     <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                         <valueCode value="asked-unknown"/>

@@ -1415,16 +1415,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-date-part-vr"/>
-                <display value="ValueSet - Date Part - Vital Records"/>
-            </reference>
-            <name value="ValueSet - Date Part - Vital Records"/>
-            <description value="This ValueSet contains codes that represent the parts of a date"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets-administrative"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/ValueSet-death-pregnancy-status-vr"/>
                 <display value="ValueSet - Death Pregnancy Status - Vital Records"/>
             </reference>
