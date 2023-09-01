@@ -69,7 +69,7 @@
             <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr">
                 <valueUnsignedInt value="1986"/>
             </extension>
-            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month">
+            <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
                 <valueUnsignedInt>
                     <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
                         <valueCode value="asked-unknown"/>

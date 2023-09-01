@@ -65,7 +65,7 @@ The Profile/Extension column contains a link to the profile or extension that co
    * the specific data being mapped is recorded in the US Core Location profile and the link resolves to that profile
    * the US Core Location profile is referenced in the BFDR Encounter-birth profile in Encounter.location.location
 
-The last two tables on this page map the Patient's Worksheets to the Questionnaires.
+The last two tables on this page map the Patient’s Worksheets to the Questionnaires.
 
 Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)"
 
