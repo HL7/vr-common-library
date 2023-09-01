@@ -71,7 +71,7 @@
             </extension>
             <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
                 <valueUnsignedInt>
-                    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                         <valueCode value="asked-unknown"/>
                     </extension>
                 </valueUnsignedInt>
