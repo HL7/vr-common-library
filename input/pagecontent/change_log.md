@@ -16,11 +16,11 @@
 | https://jira.hl7.org/browse/FHIR-41648 | Drop Date Part Absent Reason extension: In VRDR there's an extension that allows conveying each of the different parts of a date as separate elements with an ability to provide an absent reason for each. This is more scalable than the approach here as it allows conveying month and day with no year (a common use-case). There shouldn't be two different mechanisms to solve this problem. | Deleted Date Part Absent Reason extension and associated value set. Referenced to Extension - Partial Date - Vital Records. Updated example. |
 {: .grid }
 
-### Vital Records Common Resources Added to this Library for STU 1.1, July 2023
+#### Vital Records Common Resources Added to this Library for STU 1.1, July 2023
 
 Resources were added to this Library to support future versions of the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/) and the [Medicolegal Death Investigation (MDI) FHIR IG](http://hl7.org/fhir/us/mdi/).
 
-#### Profiles
+##### Profiles
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -37,7 +37,7 @@ Resources were added to this Library to support future versions of the [Vital Re
 | Death Certification Procedure     | Procedure - Death Certification     | Procedure - Death Certification Vital Records     |
 {: .grid }
 
-#### Extensions
+##### Extensions
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -48,7 +48,7 @@ Resources were added to this Library to support future versions of the [Vital Re
 | Partial Date Time     | Extension - Partial DateTime     | Extension - Partial DateTime Vital Records     |
 {: .grid }
 
-#### Code Systems
+##### Code Systems
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
@@ -56,7 +56,7 @@ Resources were added to this Library to support future versions of the [Vital Re
 | Pregnancy Status Codes     | CodeSystem - Death Pregnancy Status     | CodeSystem - Death Pregnancy Status Vital Records     |
 {: .grid }
 
-#### Value Sets
+##### Value Sets
 
 | VRDR STU 2 | MDI STU 1 | VRCPL 1.1 |
 | -------- | -------- | -------- |
