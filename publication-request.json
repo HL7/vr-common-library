@@ -4,6 +4,6 @@
 	"path": "http://hl7.org/fhir/us/vr-common-library/STU1.1",
 	"mode": "milestone",
 	"status": "trial-use",
-	"sequence": "STU 1.1",
-	"desc": "STU 1.1",
+	"sequence": "STU 1",
+	"desc": "STU 1",
 }
