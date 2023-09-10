@@ -18,6 +18,7 @@
     <subject>
         <reference value="Patient/us-core-patient-vr-a-freeman"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueCodeableConcept>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
