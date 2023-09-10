@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-tobacco-use-vr-a-freeman"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-tobacco-use-vr-a-freeman" />
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-13T22:41:17.481Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr"/>
+        <versionId value="2" />
+        <lastUpdated value="2023-06-13T22:41:17.481Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tobacco-use-contributed-to-death-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="69443-0"/>
-            <display value="Did tobacco use contribute to death"/>
+            <system value="http://loinc.org" />
+            <code value="69443-0" />
+            <display value="Did tobacco use contribute to death" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-vr-a-freeman"/>
+        <reference value="Patient/us-core-patient-vr-a-freeman" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="373067005"/>
-            <display value="No"/>
+            <system value="http://snomed.info/sct" />
+            <code value="373067005" />
+            <display value="No" />
         </coding>
     </valueCodeableConcept>
 </Observation>

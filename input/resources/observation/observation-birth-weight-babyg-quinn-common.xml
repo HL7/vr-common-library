@@ -26,7 +26,8 @@
         <display value="BabyG Quinn"/>
     </subject>
     <effectiveDateTime value="2019-12-02"/>
-    <valueQuantity>
+    <performer><reference value="Practitioner/practitioner-vital-records-janet-seito-common"/></performer>
+<valueQuantity>
         <value value="2500"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="g"/>

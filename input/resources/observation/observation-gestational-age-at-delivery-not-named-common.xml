@@ -20,7 +20,8 @@
         <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
     </subject>
     <effectiveDateTime value="2019-12-02"/>
-    <valueQuantity>
+    <performer><reference value="Practitioner/practitioner-vital-records-janet-seito-common"/></performer>
+<valueQuantity>
         <value value="20"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="wk"/>
