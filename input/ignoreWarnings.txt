@@ -9,3 +9,5 @@ INFORMATION: Condition/condition-gestational-diabetes-jada-ann-quinn-common: Con
 INFORMATION: Condition/condition-gestational-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
 INFORMATION: Condition/condition-prepregnancy-diabetes-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
 INFORMATION: Condition/condition-prepregnancy-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+# This is the code that is used in the VRDR profile
+INFORMATION: Procedure/procedure-death-certification-vr-a-freeman: Procedure.category.coding[0]: The code '103693007' is valid but is not active

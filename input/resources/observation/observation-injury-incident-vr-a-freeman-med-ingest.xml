@@ -1,89 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-injury-incident-vr-a-freeman-med-ingest"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-injury-incident-vr-a-freeman-med-ingest" />
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-06-13T22:41:06.699Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr"/>
+        <versionId value="3" />
+        <lastUpdated value="2023-06-13T22:41:06.699Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-injury-incident-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="11374-6"/>
-            <display value="Injury incident description Narrative"/>
+            <system value="http://loinc.org" />
+            <code value="11374-6" />
+            <display value="Injury incident description Narrative" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-vr-a-freeman"/>
+        <reference value="Patient/us-core-patient-vr-a-freeman" />
     </subject>
     <effectiveDateTime>
         <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr">
             <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr">
-                <valueUnsignedInt value="8"/>
+                <valueUnsignedInt value="8" />
             </extension>
             <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr">
-                <valueUnsignedInt value="2022"/>
+                <valueUnsignedInt value="2022" />
             </extension>
             <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr">
-                <valueUnsignedInt value="1"/>
+                <valueUnsignedInt value="1" />
             </extension>
             <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-time-vr">
                 <valueTime>
                     <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                        <valueCode value="unknown"/>
+                        <valueCode value="unknown" />
                     </extension>
                 </valueTime>
             </extension>
         </extension>
     </effectiveDateTime>
     <performer>
-        <reference value="Practitioner/us-core-practitioner-vr-s-jones"/>
+        <reference value="Practitioner/us-core-practitioner-vr-s-jones" />
     </performer>
     <valueCodeableConcept>
-        <text value="drug toxicity"/>
+        <text value="drug toxicity" />
     </valueCodeableConcept>
     <component>
         <code>
             <coding>
-                <system value="http://loinc.org"/>
-                <code value="69444-8"/>
+                <system value="http://loinc.org" />
+                <code value="69444-8" />
             </coding>
         </code>
         <valueCodeableConcept>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-                <code value="N"/>
-                <display value="No"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0136" />
+                <code value="N" />
+                <display value="No" />
             </coding>
         </valueCodeableConcept>
     </component>
     <component>
         <code>
             <coding>
-                <system value="http://loinc.org"/>
-                <code value="69450-5"/>
+                <system value="http://loinc.org" />
+                <code value="69450-5" />
             </coding>
         </code>
         <valueCodeableConcept>
-            <text value="Private house"/>
+            <text value="Private house" />
         </valueCodeableConcept>
     </component>
     <component>
         <code>
             <coding>
-                <system value="http://loinc.org"/>
-                <code value="69451-3"/>
+                <system value="http://loinc.org" />
+                <code value="69451-3" />
             </coding>
         </code>
         <valueCodeableConcept>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-                <code value="NA"/>
-                <display value="not applicable"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+                <code value="NA" />
+                <display value="not applicable" />
             </coding>
-            <text value="not applicable"/>
+            <text value="not applicable" />
         </valueCodeableConcept>
     </component>
 </Observation>

@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-cause-of-death-part1-vr-a-freeman"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-cause-of-death-part1-vr-a-freeman" />
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-13T22:41:04.299Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr"/>
+        <versionId value="2" />
+        <lastUpdated value="2023-06-13T22:41:04.299Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-cause-of-death-part1-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="69453-9"/>
-            <display value="Cause of death [US Standard Certificate of Death]"/>
+            <system value="http://loinc.org" />
+            <code value="69453-9" />
+            <display value="Cause of death [US Standard Certificate of Death]" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-vr-a-freeman"/>
+        <reference value="Patient/us-core-patient-vr-a-freeman" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
     <performer>
-        <reference value="Practitioner/us-core-practitioner-vr-s-jones"/>
+        <reference value="Practitioner/us-core-practitioner-vr-s-jones" />
     </performer>
     <valueCodeableConcept>
-        <text value="Fentanyl toxicity"/>
+        <text value="Fentanyl toxicity" />
     </valueCodeableConcept>
     <component>
         <code>
             <coding>
-                <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-component-codes-vr"/>
-                <code value="lineNumber"/>
+                <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-component-codes-vr" />
+                <code value="lineNumber" />
             </coding>
         </code>
-        <valueInteger value="1"/>
+        <valueInteger value="1" />
     </component>
     <component>
         <code>
             <coding>
-                <system value="http://loinc.org"/>
-                <code value="69440-6"/>
-                <display value="Disease onset to death interval"/>
+                <system value="http://loinc.org" />
+                <code value="69440-6" />
+                <display value="Disease onset to death interval" />
             </coding>
         </code>
-        <valueString value="minutes to hours"/>
+        <valueString value="minutes to hours" />
     </component>
 </Observation>
