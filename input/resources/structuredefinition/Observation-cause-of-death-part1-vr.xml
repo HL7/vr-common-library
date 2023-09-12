@@ -28,36 +28,6 @@
         <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="workflow"/>
-        <uri value="http://hl7.org/fhir/workflow"/>
-        <name value="Workflow Pattern"/>
-    </mapping>
-    <mapping>
-        <identity value="sct-concept"/>
-        <uri value="http://snomed.info/conceptdomain"/>
-        <name value="SNOMED CT Concept Domain Binding"/>
-    </mapping>
-    <mapping>
-        <identity value="v2"/>
-        <uri value="http://hl7.org/v2"/>
-        <name value="HL7 v2 Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="rim"/>
-        <uri value="http://hl7.org/v3"/>
-        <name value="RIM Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="w5"/>
-        <uri value="http://hl7.org/fhir/fivews"/>
-        <name value="FiveWs Pattern Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="sct-attr"/>
-        <uri value="http://snomed.org/attributebinding"/>
-        <name value="SNOMED CT Attribute Binding"/>
-    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -217,9 +187,11 @@
         <element id="Observation.component:interval.valueString">
             <path value="Observation.component.valueString"/>
             <short value="Interval"/>
-            <min value="1"/>
-            <max value="1"/>
             <maxLength value="20"/>
+        </element>
+        <element id="Observation.component:interval.valueQuantity">
+            <path value="Observation.component.valueQuantity"/>
+            <short value="Interval-quantity"/>
         </element>
     </differential>
 </StructureDefinition>
