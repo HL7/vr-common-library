@@ -6,14 +6,8 @@
     <name value="ParametersCodingStatusValuesVitalRecords"/>
     <title value="Parameters - Coding Status Values - Vital Records"/>
     <status value="active"/>
-    <publisher value="HL7 International - Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This Parameters profile contains coding status values that represent various status flags that result from the coding process."/>
     <jurisdiction>
         <coding>

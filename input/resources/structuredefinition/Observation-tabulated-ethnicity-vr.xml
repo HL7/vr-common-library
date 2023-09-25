@@ -10,13 +10,7 @@
     <name value="ObservationTabulatedEthnicityVitalRecords"/>
     <title value="Observation - Tabulated Ethnicity - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
     <jurisdiction>
         <coding>

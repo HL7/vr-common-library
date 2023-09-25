@@ -10,13 +10,7 @@
     <name value="PatientMotherVitalRecords"/>
     <title value="Patient - Mother - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
     <jurisdiction>
         <coding>

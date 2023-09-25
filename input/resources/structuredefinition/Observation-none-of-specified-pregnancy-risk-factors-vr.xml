@@ -10,13 +10,7 @@
     <name value="ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords"/>
     <title value="Observation - None Of Specified Pregnancy Risk Factors - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile indicates that none of the specified pregnancy risk factors (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."/>
     <jurisdiction>
         <coding>

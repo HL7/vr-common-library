@@ -13,14 +13,8 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-22T14:53:51+00:00"/>
-    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This ValueSet contains codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable."/>
     <jurisdiction>
         <coding>

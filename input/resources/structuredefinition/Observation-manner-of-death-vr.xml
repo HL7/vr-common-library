@@ -10,14 +10,8 @@
     <name value="ObservationMannerOfDeathVitalRecords"/>
     <title value="Observation - Manner of Death - Vital Records"/>
     <status value="active"/>
-    <publisher value="HL7 International - Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This Observation profile represents the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
     <jurisdiction>
         <coding>

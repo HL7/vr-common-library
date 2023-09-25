@@ -10,14 +10,8 @@
     <name value="ObservationDeathDateVitalRecords"/>
     <title value="Observation - Death Date - Vital Records"/>
     <status value="active"/>
-    <publisher value="HL7 International - Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This Observation profile represents the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
     <jurisdiction>
         <coding>

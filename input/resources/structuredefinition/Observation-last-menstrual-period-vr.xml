@@ -10,13 +10,7 @@
     <name value="ObservationLastMenstrualPeriodVitalRecords"/>
     <title value="Observation - Last Menstrual Period - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the date of the last menstrual period of the patient. The first day of last menstrual period should be captured. The effectiveTime captures the observation date."/>
     <jurisdiction>
         <coding>

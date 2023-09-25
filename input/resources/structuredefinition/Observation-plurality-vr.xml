@@ -10,13 +10,7 @@
     <name value="ObservationPluralityVitalRecords"/>
     <title value="Observation - Plurality - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy."/>
     <jurisdiction>
         <coding>

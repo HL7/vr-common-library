@@ -10,13 +10,7 @@
     <name value="ObservationNumberOtherPregnancyOutcomesVitalRecords"/>
     <title value="Observation - Number of Other Pregnancy Outcomes - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
     <jurisdiction>
         <coding>

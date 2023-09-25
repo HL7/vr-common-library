@@ -13,18 +13,8 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-03-02T07:45:13+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
-    <contact>
-        <name value="HL7 Public Health Working Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This ValueSet contains codes that represent whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)."/>
     <jurisdiction>
         <coding>

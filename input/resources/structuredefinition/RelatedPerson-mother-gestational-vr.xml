@@ -10,13 +10,7 @@
     <name value="RelatedPersonMotherGestationalVitalRecords"/>
     <title value="RelatedPerson - Mother Gestational - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This RelatedPerson profile represents the woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
     <jurisdiction>
         <coding>

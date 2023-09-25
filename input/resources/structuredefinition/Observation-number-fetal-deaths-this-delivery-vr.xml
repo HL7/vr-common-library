@@ -10,13 +10,7 @@
     <name value="ObservationNumberFetalDeathsThisDeliveryVitalRecords"/>
     <title value="Observation - Number of Fetal Deaths This Delivery - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the number of fetal deaths in this delivery."/>
     <jurisdiction>
         <coding>

@@ -11,14 +11,8 @@
     <name value="ObservationAutopsyPerformedIndicatorVitalRecords"/>
     <title value="Observation - Autopsy Performed Indicator - Vital Records"/>
     <status value="active"/>
-    <publisher value="HL7 International - Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This Observation profile represents if an autopsy was performed, if autopsy findings are available, and the autopsy performer (US Core Practioner)."/>
     <jurisdiction>
         <coding>

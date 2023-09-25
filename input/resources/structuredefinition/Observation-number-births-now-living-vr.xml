@@ -10,13 +10,7 @@
     <name value="ObservationNumberBirthsNowLivingVitalRecords"/>
     <title value="Observation - Number of Births Now Living - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the total number of previous live-born infants for the mother now living."/>
     <jurisdiction>
         <coding>

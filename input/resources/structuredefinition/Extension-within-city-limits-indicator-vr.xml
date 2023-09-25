@@ -10,13 +10,7 @@
     <name value="ExtensionWithinCityLimitsIndicatorVitalRecords"/>
     <title value="Extension - Within City Limits Indicator - Vital Records"/>
     <status value="draft"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Extension profile is used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."/>
     <jurisdiction>
         <coding>

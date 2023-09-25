@@ -10,13 +10,7 @@
     <name value="PatientChildVitalRecords"/>
     <title value="Patient - Child - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Patient profile represents the subject patient (newborn/infant/child) for whom clinical data is included in the report."/>
     <jurisdiction>
         <coding>

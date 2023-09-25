@@ -10,13 +10,7 @@
     <name value="ObservationMotherDeliveryWeightVitalRecords"/>
     <title value="Observation - Mother Delivery Weight - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the weight of the mother at the time of birth/delivery."/>
     <jurisdiction>
         <coding>

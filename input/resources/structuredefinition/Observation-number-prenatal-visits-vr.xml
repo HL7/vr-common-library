@@ -10,13 +10,7 @@
     <name value="ObservationNumberPrenatalVisitsVitalRecords"/>
     <title value="Observation - Number of Prenatal Visits - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."/>
     <jurisdiction>
         <coding>

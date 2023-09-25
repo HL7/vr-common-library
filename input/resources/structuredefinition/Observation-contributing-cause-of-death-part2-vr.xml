@@ -10,14 +10,8 @@
     <name value="ObservationContributingCauseOfDeathPart2VitalRecords"/>
     <title value="Observation - Contributing Cause of Death Part 2 - Vital Records"/>
     <status value="active"/>
-    <publisher value="HL7 International - Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
+    
     <description value="This Observation profile represents represents factors contributing to the cause of death as asserted by the death certifier."/>
     <jurisdiction>
         <coding>

@@ -10,13 +10,7 @@
     <name value="ObservationGestationalAgeAtDeliveryVitalRecords"/>
     <title value="Observation - Gestational Age at Delivery - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Observation profile represents the obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam."/>
     <jurisdiction>
         <coding>

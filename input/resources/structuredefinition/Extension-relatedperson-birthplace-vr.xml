@@ -10,13 +10,7 @@
     <name value="ExtensionRelatedpersonBirthplaceVitalRecords"/>
     <title value="Extension - RelatedPerson Birth Place - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This Extension profile represents the registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements."/>
     <jurisdiction>
         <coding>

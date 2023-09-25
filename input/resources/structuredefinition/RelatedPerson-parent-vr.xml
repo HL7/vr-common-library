@@ -10,13 +10,7 @@
     <name value="RelatedPersonParentVitalRecords"/>
     <title value="Related Person - Parent - Vital Records"/>
     <status value="active"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
+    
     <description value="This RelatedPerson profile contains constraints common to the Mother and Father profiles."/>
     <jurisdiction>
         <coding>
