@@ -76,7 +76,7 @@ def createMappingTable(pRowFilter, pHeading, pOutputFile, pSpreadsheet)
       profile = "[" + vProvOutputFilename + "]" + "(StructureDefinition-" + vProvOutputFilename + ".html)"
     when "VRCPL"
       # *TODO* this might need to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
-      # TODO add code to check whether the version is current or not
+      # *TODO* add code to check whether the version is current or not
       # version build
       profile = "[" + vProvOutputFilename + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProvOutputFilename + ".html)"
       # current build

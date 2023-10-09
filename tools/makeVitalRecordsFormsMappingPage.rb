@@ -110,7 +110,7 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
         when "VRCPL"
             # *TODO* this may needneeds to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
             # versioned build
-            vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition/" + vProfile + ".html)"
+            vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProfile + ".html)"
             # current build
             #vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProfile + ".html)"
         when "US CORE"
