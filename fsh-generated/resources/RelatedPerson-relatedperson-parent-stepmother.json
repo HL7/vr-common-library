@@ -65,7 +65,7 @@
   ],
   "active": true,
   "patient": {
-    "reference": "patient-child-babyg-quinn",
+    "reference": "Patient/patient-child-babyg-quinn",
     "display": "Patient - Child (Baby G Quinn)"
   },
   "gender": "female",

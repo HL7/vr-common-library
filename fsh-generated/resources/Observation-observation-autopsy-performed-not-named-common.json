@@ -21,7 +21,7 @@
   },
   "status": "final",
   "subject": {
-    "reference": "patient-decedent-fetus-not-named"
+    "reference": "Patient/patient-decedent-fetus-not-named"
   },
   "effectiveDateTime": "2019-12-02",
   "valueCodeableConcept": {

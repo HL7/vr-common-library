@@ -93,285 +93,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/Observation-autopsy-performed-indicator-vr"
-        },
-        "name": "Observation - Autopsy Performed Indicator Vital Records",
-        "description": "This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/coded-race-and-ethnicity-vr"
-        },
-        "name": "Observation - Coded Race and Ethnicity Vital Records",
-        "description": "Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.\n\nThis profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.\n\nNote:  NCHS stopped providing RaceRecode40 data in 2022.\n\nSubmission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.\nThe formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described\nin [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Observation-education-level-vr"
-        },
-        "name": "Observation - Education Level Vital Records",
-        "description": "The highest degree or level of schooling completed by the decedent or parent. \nThis profile is designed to supplant similar profile in VRDR",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Observation-emerging-issues-vr"
-        },
-        "name": "Observation - Emerging Issues Vital Records",
-        "description": "Emerging Issues (Observation)",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/input-race-and-ethnicity-vr"
-        },
-        "name": "Observation - Input Race and Ethnicity Vital Records",
-        "description": "Input (from EDRS or EBRS) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.\n\nThis profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.\n\nSubmission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.\nThe formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described\nin [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Observation-parent-education-level-vr"
-        },
-        "name": "Observation - Parent Education Level Vital Records",
-        "description": "The highest degree or level of schooling completed by the parent.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Patient-child-vr"
-        },
-        "name": "Patient - Child Vital Records",
-        "description": "The subject patient (newborn/infant/child) for whom clinical data is included in the report.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Patient-decedent-fetus-vr"
-        },
-        "name": "Patient - Decedent Fetus Vital Records",
-        "description": "A stillborn for whom clinical data is included in the report.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Patient-mother-vr"
-        },
-        "name": "Patient - Mother Vital Records",
-        "description": "This Patient profile represents the woman who gave birth to, or delivered the infant.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Patient-vr"
-        },
-        "name": "Patient - Vital Records",
-        "description": "This abstract Patient profile includes common extensions and slicing used across vital records.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Practitioner-vr"
-        },
-        "name": "Practitioner - Vital Records",
-        "description": "This Practitioner profile represents a practitioner who is involved in vital records (births, fetal death, death, etc.) as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/RelatedPerson-father-natural-vr"
-        },
-        "name": "RelatedPerson - Father Natural Vital Records",
-        "description": "The biological (natural) father of the newborn or fetus.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/RelatedPerson-father-vr"
-        },
-        "name": "RelatedPerson - Father Vital Records",
-        "description": "The father of the report subject. Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.).\nThis profile is designed to supplant the similar profile in VRDR",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/RelatedPerson-mother-gestational-vr"
-        },
-        "name": "RelatedPerson - Mother Gestational Vital Records",
-        "description": "The woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/RelatedPerson-mother-vr"
-        },
-        "name": "RelatedPerson - Mother Vital Records",
-        "description": "The mother of the report subject. Different individuals may play different roles as the mother (e.g., biological mother, adoptive mother, etc.).\nThis profile is designed to supplant the similar profile in VRDR",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/RelatedPerson-parent-vr"
-        },
-        "name": "Related Person - Parent Vital Records",
-        "description": "The RelatedPerson profile contains constraints common to the Mother and Father profiles. Serves as resource profile for RelatedPersonMother and RelatedPersonFather. \nThis profile is designed to supplant the similar profile in VRDR",
-        "exampleBoolean": false,
-        "groupingId": "VRCLProfiles"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords"
-        },
-        "name": "Extension - Partial Date Absent Reason Vital Records",
-        "description": "Provides values of a partial date (Extension).\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM or YYYY-MM-DD).\n* This extension SHOULD NOT be used to express that the date in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the date field.\n* This extension SHOULD be used to express missing components of date including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'. If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\nWhen the known components of the date can be expressed as a valid date, the value SHALL be present.  So, for example 2022-XX-12, the date value should be \"2022\".",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ExtensionPartialDateTimeVitalRecords"
-        },
-        "name": "Extension - Partial Date Time Vital Records",
-        "description": "Provides values of a partial dateTime (Extension).\n\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [dateTime](https://build.fhir.org/datatypes.html#dateTime), specifically YYYY, YYYY-MM, YYYY-MM-DD, or a full dateTime.\n* This extension SHOULD NOT be used to express that the dateTime in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the dateTime.\n* This extension SHOULD be used to express missing components of dateTime including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX, as well as all cases where the time is known, but one or more components of the date is unknown.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\n\nWhen the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX-1201212, the dateTime value should be \"2022-12\".",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Extension-relatedperson-birthplace-vr"
-        },
-        "name": "Extension - RelatedPerson Birth Place Vital Records",
-        "description": "The registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Extension-relatedperson-deceased-vr"
-        },
-        "name": "Extension - RelatedPerson Deceased Vital Records",
-        "description": "The deceased indicator for a RelatedPerson. Deceased date/time is preferred.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Extension-within-city-limits-indicator-vr"
-        },
-        "name": "Extension - Within City Limits Indicator Vital Records",
-        "description": "Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/BypassEditFlag"
-        },
-        "name": "Extension - BypassEditFlag Vital Records",
-        "description": "Extension to hold a codeable concept from one of several valuesets.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/CityCode"
-        },
-        "name": "Extension - City Code Vital Records",
-        "description": "City expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/DistrictCode"
-        },
-        "name": "Extension - District Code Vital Records",
-        "description": "District expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ExtensionPartialDateVitalRecords"
-        },
-        "name": "Extension - Partial Date Vital Records",
-        "description": "Provides values of a partial date (Extension).\n\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM, YYYY-MM-DD, or a full date.\n* This extension SHOULD NOT be used to express that the date in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the date.\n* This extension SHOULD be used to express missing components of date including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX, but one or more components of the date is unknown.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\n\nWhen the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX, the dateTime value should be \"2022-12\".",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PostDirectional"
-        },
-        "name": "Extension - PostDirectional Vital Records",
-        "description": "PostDirectional",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PreDirectional"
-        },
-        "name": "Extension - PreDirectional Vital Records",
-        "description": "PreDirectional",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/StreetDesignator"
-        },
-        "name": "Extension - StreetDesignator Vital Records",
-        "description": "StreetDesignator",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/StreetName"
-        },
-        "name": "Extension - StreetName Vital Records",
-        "description": "StreetName",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/StreetNumber"
-        },
-        "name": "Extension - StreetNumber Vital Records",
-        "description": "StreetNumber",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/UnitOrAptNumber"
-        },
-        "name": "Extension - UnitOrAptNumber Vital Records",
-        "description": "UnitOrAptNumber",
-        "exampleBoolean": false,
-        "groupingId": "VRCLExtensions"
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/codesystem-bypass-edit-flag-vr"
         },
         "name": "Bypass Edit Flag Code System Vital Records",
@@ -381,19 +102,19 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/CodeSystem-canadian-provinces-vr"
+          "reference": "CodeSystem/CodeSystem-vr-edit-flags"
         },
-        "name": "CodeSystem - Canadian Provinces Vital Records",
-        "description": "Canadian Provinces",
+        "name": "CodeSystem - Birth and Death Edit Flags Vital Records",
+        "description": "This code system contains codes to represent all edit flags",
         "exampleBoolean": false,
         "groupingId": "VRCLCodeSystems"
       },
       {
         "reference": {
-          "reference": "CodeSystem/codesystem-vr-component"
+          "reference": "CodeSystem/CodeSystem-canadian-provinces-vr"
         },
-        "name": "Local Component Codes",
-        "description": "Local Component Codes for observation components that lack an appropriate LOINC code",
+        "name": "CodeSystem - Canadian Provinces Vital Records",
+        "description": "Canadian Provinces",
         "exampleBoolean": false,
         "groupingId": "VRCLCodeSystems"
       },
@@ -426,6 +147,15 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/CodeSystem-local-observation-codes-vr"
+        },
+        "name": "CodeSystem - Local Observation Codes Vital Records",
+        "description": "Local Observation Codes for observations that lack an appropriate LOINC code",
+        "exampleBoolean": false,
+        "groupingId": "VRCLCodeSystems"
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/CodeSystem-missing-value-reason-vr"
         },
         "name": "CodeSystem - Missing Value Reason Vital Records",
@@ -453,258 +183,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/CodeSystem-vr-edit-flags"
-        },
-        "name": "CodeSystem - Birth and Death Edit Flags Vital Records",
-        "description": "This code system contains codes to represent all edit flags",
-        "exampleBoolean": false,
-        "groupingId": "VRCLCodeSystems"
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/CodeSystem-local-observation-codes-vr"
-        },
-        "name": "CodeSystem - Local Observation Codes Vital Records",
-        "description": "Local Observation Codes for observations that lack an appropriate LOINC code",
-        "exampleBoolean": false,
-        "groupingId": "VRCLCodeSystems"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-birth-attendant-titles-vr"
-        },
-        "name": "ValueSet - Birth Attendants Titles Vital Records",
-        "description": "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-birthplace-country-vr"
-        },
-        "name": "ValueSet - Birthplace Country Vital Records",
-        "description": "This valueset contains the set of codes used to represent 2 Letter Birthplace Country Codes from GEC and ISO 3166-1.  Includes historic countries that no longer exist.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-birth-sex-child-vr"
-        },
-        "name": "ValueSet - Birth Sex Child Vital Records",
-        "description": "This valueset contains the subset of the US Core Birth Sex Valueset that can be used for a child's Vital Records.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapBirthSexChildVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-birth-sex-fetus-vr"
-        },
-        "name": "ValueSet - Birth Sex Fetus Vital Records",
-        "description": "This valueset contains the subset of the US Core Birth Sex Valueset that can be used for a decedent fetus' Vital Records.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapBirthSexFetusVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/valueset-edit-bypass-01234-vr"
-        },
-        "name": "Edit Bypass 01234 Vital Records",
-        "description": "A subset of code values (0, 1, 2, 3, and 4) use to indicate the outcome of data validation assessment for unusual data values.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-education-level-vr"
-        },
-        "name": "ValueSet - Education Level Vital Records",
-        "description": "This valueset contains the set of codes used to represent the Highest educational level achieved.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapEducationLevelVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-education-level-person-vr"
-        },
-        "name": "ValueSet - Education Level Person Vital Records",
-        "description": "This valueset contains codes that represent persons for whom education level can be reported.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-coded-race-and-ethnicity-person-vr"
-        },
-        "name": "ValueSet - Coded Race and Ethnicity Person Vital Records",
-        "description": "This value set contains codes that represent persons for whom coded race and ethnicity can be reported.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-father-relationship-vr"
-        },
-        "name": "ValueSet - Father Relationship Vital Records",
-        "description": "This valueset contains codes that represent relationships describing the father's role relative to the subject.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-hispanic-no-unknown-vr"
-        },
-        "name": "ValueSet - Hispanic(Yes) No Unknown Vital Records",
-        "description": "This valueset contains the set of codes used to represent Hispanic(Yes), No and Unknown.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapHispanicNoUnknownVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-hispanic-origin-vr"
-        },
-        "name": "ValueSet - HispanicOrigin Vital Records",
-        "description": "This valueset contains the set of codes used to represent NCHS HispanicOrigin.\n\n\nMapping to IJE codes [here](ConceptMap-ConceptMapHispanicOriginVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-jurisdiction-vr"
-        },
-        "name": "ValueSet - Jurisdictions Vital Records",
-        "description": "This valueset contains the set of codes used to represent 2 Letter Codes for all 57 Jurisdictions Reporting Deaths to NCHS",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-input-race-and-ethnicity-person-vr"
-        },
-        "name": "ValueSet - Input Race and Ethnicity Person Vital Records",
-        "description": "This valueset contains codes that represent persons for whom input race and ethnicity can be reported.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-mother-relationship-vr"
-        },
-        "name": "ValueSet - Mother Relationship Vital Records",
-        "description": "This valueset contains codes that represent relationships describing the mother's role relative to the subject.",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-mothers-date-of-birth-edit-flags-vr"
-        },
-        "name": "ValueSet - Mothers Date of Birth Edit Flags (NCHS) Vital Records",
-        "description": "This valueset contains codes to represent Mothers Date of Birth Edit Flags. This valueset is based on [PHVS_BirthdateEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3BD473EE-40DD-E811-816D-0017A477041A)",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-plurality-edit-flags-vr"
-        },
-        "name": "ValueSet - Plurality Edit Flags (NCHS) Vital Records",
-        "description": "This valueset contains codes to represent Plurality Edit Flags. This valueset is based on [PHVS_PluralityEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A)",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-race-code-vr"
-        },
-        "name": "ValueSet - Race Code Vital Records",
-        "description": "This valueset contains the set of codes used to represent NCHS Race Codes.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceCodeVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-race-missing-value-reason-vr"
-        },
-        "name": "ValueSet - Race Missing Value Reason Vital Records",
-        "description": "This valueset contains the set of codes used to indicate the reason decedent race data is absent.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceMissingValueReasonVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-race-recode-40-vr"
-        },
-        "name": "ValueSet - Race Recode 40 Vital Records",
-        "description": "This valueset contains the set of codes used to represent NCHS Race Recode 40.\n\nNCHS will stop delivering this coded data in this representation in 2022.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceRecode40VitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-residence-country-vr"
-        },
-        "name": "ValueSet - Residence Country Vital Records",
-        "description": "This valueset contains the set of codes used to represent 2 Letter Residence Country Codes from GEC and ISO 3166-1.  Excludes historic countries that no longer exist",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-states-territories-provinces-vr"
-        },
-        "name": "ValueSet - States, Territories and Provinces Vital Records",
-        "description": "This valueset contains the set of codes used to represent 2 Letter States and Provinces",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-usstates-territories-vr"
-        },
-        "name": "ValueSet - US States, Territories Vital Records",
-        "description": "This valueset contains the set of codes used to represent 2 Letter States and Territories",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-units-of-age-vr"
-        },
-        "name": "ValueSet - Units of Age Vital Records",
-        "description": "This valueset contains the set of codes for specifying the units used when recording age (days, years, etc.).\n\nMapping to IJE codes [here](ConceptMap-ConceptMapUnitsOfAgeVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-yes-no-not-applicable-vr"
-        },
-        "name": "ValueSet - Yes No Not Applicable Vital Records",
-        "description": "A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoNotApplicableVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-yes-no-unknown-vr"
-        },
-        "name": "ValueSet - Yes No Unknown Vital Records",
-        "description": "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, or Unknown.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"
-        },
-        "name": "ValueSet - Yes No Unknown NotApplicable Vital Records",
-        "description": "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownNotApplicableVitalRecords.html).",
-        "exampleBoolean": false,
-        "groupingId": "VRCLValueSets"
-      },
-      {
-        "reference": {
           "reference": "ConceptMap/ConceptMapBirthSexChildVitalRecords"
         },
         "name": "ConceptMap - Birth Sex Child Vital Records",
@@ -718,15 +196,6 @@
         },
         "name": "ConceptMap - Birth Sex Fetus Vital Records",
         "description": "A mapping between NCHS IJE and FHIR BirthSex Value Sets",
-        "exampleBoolean": false,
-        "groupingId": "VRCLConceptMaps"
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/ConceptMapEditBypass01234VitalRecords"
-        },
-        "name": "EditBypass01234 Concept Map",
-        "description": "A mapping between NCHS IJE and FHIR EditBypass01234 Value Sets",
         "exampleBoolean": false,
         "groupingId": "VRCLConceptMaps"
       },
@@ -822,12 +291,210 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/valueset-edit-bypass-01234-vr"
+        },
+        "name": "Edit Bypass 01234 Vital Records",
+        "description": "A subset of code values (0, 1, 2, 3, and 4) use to indicate the outcome of data validation assessment for unusual data values.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ConceptMapEditBypass01234VitalRecords"
+        },
+        "name": "EditBypass01234 Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR EditBypass01234 Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "VRCLConceptMaps"
+      },
+      {
+        "reference": {
           "reference": "Parameters/expansion-parameters-vr-common"
         },
         "name": "expansion-parameters-vr-common",
         "description": "References US SNOMED CT version.",
         "exampleBoolean": false,
         "groupingId": "VRCLParameters"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/BypassEditFlag"
+        },
+        "name": "Extension - BypassEditFlag Vital Records",
+        "description": "Extension to hold a codeable concept from one of several valuesets.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CityCode"
+        },
+        "name": "Extension - City Code Vital Records",
+        "description": "City expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DistrictCode"
+        },
+        "name": "Extension - District Code Vital Records",
+        "description": "District expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords"
+        },
+        "name": "Extension - Partial Date Absent Reason Vital Records",
+        "description": "Provides values of a partial date (Extension).\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM or YYYY-MM-DD).\n* This extension SHOULD NOT be used to express that the date in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the date field.\n* This extension SHOULD be used to express missing components of date including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'. If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\nWhen the known components of the date can be expressed as a valid date, the value SHALL be present.  So, for example 2022-XX-12, the date value should be \"2022\".",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ExtensionPartialDateTimeVitalRecords"
+        },
+        "name": "Extension - Partial Date Time Vital Records",
+        "description": "Provides values of a partial dateTime (Extension).\n\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [dateTime](https://build.fhir.org/datatypes.html#dateTime), specifically YYYY, YYYY-MM, YYYY-MM-DD, or a full dateTime.\n* This extension SHOULD NOT be used to express that the dateTime in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the dateTime.\n* This extension SHOULD be used to express missing components of dateTime including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX, as well as all cases where the time is known, but one or more components of the date is unknown.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\n\nWhen the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX-1201212, the dateTime value should be \"2022-12\".",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ExtensionPartialDateVitalRecords"
+        },
+        "name": "Extension - Partial Date Vital Records",
+        "description": "Provides values of a partial date (Extension).\n\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM, YYYY-MM-DD, or a full date.\n* This extension SHOULD NOT be used to express that the date in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the date.\n* This extension SHOULD be used to express missing components of date including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX, but one or more components of the date is unknown.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\n\nWhen the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX, the dateTime value should be \"2022-12\".",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/PostDirectional"
+        },
+        "name": "Extension - PostDirectional Vital Records",
+        "description": "PostDirectional",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/PreDirectional"
+        },
+        "name": "Extension - PreDirectional Vital Records",
+        "description": "PreDirectional",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-relatedperson-birthplace-vr"
+        },
+        "name": "Extension - RelatedPerson Birth Place Vital Records",
+        "description": "The registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-relatedperson-deceased-vr"
+        },
+        "name": "Extension - RelatedPerson Deceased Vital Records",
+        "description": "The deceased indicator for a RelatedPerson. Deceased date/time is preferred.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/StreetDesignator"
+        },
+        "name": "Extension - StreetDesignator Vital Records",
+        "description": "StreetDesignator",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/StreetName"
+        },
+        "name": "Extension - StreetName Vital Records",
+        "description": "StreetName",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/StreetNumber"
+        },
+        "name": "Extension - StreetNumber Vital Records",
+        "description": "StreetNumber",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/UnitOrAptNumber"
+        },
+        "name": "Extension - UnitOrAptNumber Vital Records",
+        "description": "UnitOrAptNumber",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-within-city-limits-indicator-vr"
+        },
+        "name": "Extension - Within City Limits Indicator Vital Records",
+        "description": "Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLExtensions"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/codesystem-vr-component"
+        },
+        "name": "Local Component Codes",
+        "description": "Local Component Codes for observation components that lack an appropriate LOINC code",
+        "exampleBoolean": false,
+        "groupingId": "VRCLCodeSystems"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-autopsy-performed-not-named-common"
+        },
+        "name": "Observation - Autopsy Performed example [Fetus Not Named]",
+        "description": "Example of Observation-autopsy-performed-vr profile (Fetus Not Named)",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr",
+        "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-autopsy-performed-indicator-vr-a-freeman"
+        },
+        "name": "Observation - Autopsy Performed Indicator example [A Freeman]",
+        "description": "Example of Observation-autopsy-performed-indicator-vr profile (A Freeman)",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr",
+        "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-autopsy-performed-indicator-vr"
+        },
+        "name": "Observation - Autopsy Performed Indicator Vital Records",
+        "description": "This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/coded-race-and-ethnicity-vr"
+        },
+        "name": "Observation - Coded Race and Ethnicity Vital Records",
+        "description": "Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.\n\nThis profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.\n\nNote:  NCHS stopped providing RaceRecode40 data in 2022.\n\nSubmission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.\nThe formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described\nin [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
       },
       {
         "reference": {
@@ -849,6 +516,33 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/Observation-education-level-vr"
+        },
+        "name": "Observation - Education Level Vital Records",
+        "description": "The highest degree or level of schooling completed by the decedent or parent. \nThis profile is designed to supplant similar profile in VRDR",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-emerging-issues-vr"
+        },
+        "name": "Observation - Emerging Issues Vital Records",
+        "description": "Emerging Issues (Observation)",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/input-race-and-ethnicity-vr"
+        },
+        "name": "Observation - Input Race and Ethnicity Vital Records",
+        "description": "Input (from EDRS or EBRS) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.\n\nThis profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.\n\nSubmission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.\nThe formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described\nin [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
           "reference": "Observation/InputRaceAndEthnicityFather"
         },
         "name": "Observation - InputRaceAndEthnicity example [Father]",
@@ -867,30 +561,110 @@
       },
       {
         "reference": {
-          "reference": "Observation/observation-autopsy-performed-indicator-vr-a-freeman"
+          "reference": "StructureDefinition/Observation-parent-education-level-vr"
         },
-        "name": "Observation - Autopsy Performed Indicator example [A Freeman]",
-        "description": "Example of Observation-autopsy-performed-indicator-vr profile (A Freeman)",
-        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr",
+        "name": "Observation - Parent Education Level Vital Records",
+        "description": "The highest degree or level of schooling completed by the parent.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-child-babyg-quinn"
+        },
+        "name": "Patient - Child example [Baby G Quinn]",
+        "description": "Example of Patient-child-vr profile (Baby G Quinn)",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr",
         "groupingId": "VRCLExamples"
       },
       {
         "reference": {
-          "reference": "Observation/observation-autopsy-performed-not-named-common"
+          "reference": "Patient/patient-child-babyg-quinn-w-edit"
         },
-        "name": "Observation - Autopsy Performed example [Fetus Not Named]",
-        "description": "Example of Observation-autopsy-performed-vr profile (Fetus Not Named)",
-        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr",
+        "name": "Patient - Child example [Baby G Quinn], with Edit Flag",
+        "description": "Example of Patient-child-vr profile (Baby G Quinn), with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient-child-vr"
+        },
+        "name": "Patient - Child Vital Records",
+        "description": "The subject patient (newborn/infant/child) for whom clinical data is included in the report.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-decedent-fetus-not-named"
+        },
+        "name": "Patient - Decedent Fetus example [Fetus Not Named]",
+        "description": "Example of Patient-decedent-fetus-vr (Fetus Not Named)",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr",
         "groupingId": "VRCLExamples"
       },
       {
         "reference": {
-          "reference": "RelatedPerson/relatedperson-father-tom-yan-lee-common"
+          "reference": "Patient/patient-decedent-fetus-not-named-w-edit"
         },
-        "name": "RelatedPerson - Father example [Tom Yan Lee]",
-        "description": "Example of Relatedperson-father-vr (Tom Yan Lee)",
-        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr",
+        "name": "Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag",
+        "description": "Example of Patient-decedent-fetus-vr (Fetus Not Named), with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr",
         "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient-decedent-fetus-vr"
+        },
+        "name": "Patient - Decedent Fetus Vital Records",
+        "description": "A stillborn for whom clinical data is included in the report.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient-mother-vr"
+        },
+        "name": "Patient - Mother Vital Records",
+        "description": "This Patient profile represents the woman who gave birth to, or delivered the infant.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient-vr"
+        },
+        "name": "Patient - Vital Records",
+        "description": "This abstract Patient profile includes common extensions and slicing used across vital records.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Practitioner-vr"
+        },
+        "name": "Practitioner - Vital Records",
+        "description": "This Practitioner profile represents a practitioner who is involved in vital records (births, fetal death, death, etc.) as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-vital-records-janet-seito"
+        },
+        "name": "Practitioner - Vital Records - Janet Seito",
+        "description": "Practitioner - Vital Records: Janet Seito example",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr",
+        "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RelatedPerson-parent-vr"
+        },
+        "name": "Related Person - Parent Vital Records",
+        "description": "The RelatedPerson profile contains constraints common to the Mother and Father profiles. Serves as resource profile for RelatedPersonMother and RelatedPersonFather. \nThis profile is designed to supplant the similar profile in VRDR",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
       },
       {
         "reference": {
@@ -912,12 +686,57 @@
       },
       {
         "reference": {
+          "reference": "RelatedPerson/relatedperson-father-tom-yan-lee-common"
+        },
+        "name": "RelatedPerson - Father example [Tom Yan Lee]",
+        "description": "Example of Relatedperson-father-vr (Tom Yan Lee)",
+        "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-vr",
+        "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RelatedPerson-father-natural-vr"
+        },
+        "name": "RelatedPerson - Father Natural Vital Records",
+        "description": "The biological (natural) father of the newborn or fetus.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RelatedPerson-father-vr"
+        },
+        "name": "RelatedPerson - Father Vital Records",
+        "description": "The father of the report subject. Different individuals may play different roles as the father (e.g., biological father, adoptive father, etc.).\nThis profile is designed to supplant the similar profile in VRDR",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
           "reference": "RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common"
         },
         "name": "RelatedPerson - Mother Gestational example [Carmen Teresa Lee]",
         "description": "Example of Relatedperson-gestational-vr profile (Carmen Teresa Lee)",
         "exampleCanonical": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr",
         "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RelatedPerson-mother-gestational-vr"
+        },
+        "name": "RelatedPerson - Mother Gestational Vital Records",
+        "description": "The woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RelatedPerson-mother-vr"
+        },
+        "name": "RelatedPerson - Mother Vital Records",
+        "description": "The mother of the report subject. Different individuals may play different roles as the mother (e.g., biological mother, adoptive mother, etc.).\nThis profile is designed to supplant the similar profile in VRDR",
+        "exampleBoolean": false,
+        "groupingId": "VRCLProfiles"
       },
       {
         "reference": {
@@ -945,6 +764,231 @@
         "description": "Example of US Core Patient profile (Unknown)",
         "exampleBoolean": true,
         "groupingId": "VRCLExamples"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-attendant-titles-vr"
+        },
+        "name": "ValueSet - Birth Attendants Titles Vital Records",
+        "description": "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-sex-child-vr"
+        },
+        "name": "ValueSet - Birth Sex Child Vital Records",
+        "description": "This valueset contains the subset of the US Core Birth Sex Valueset that can be used for a child's Vital Records.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapBirthSexChildVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-sex-fetus-vr"
+        },
+        "name": "ValueSet - Birth Sex Fetus Vital Records",
+        "description": "This valueset contains the subset of the US Core Birth Sex Valueset that can be used for a decedent fetus' Vital Records.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapBirthSexFetusVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birthplace-country-vr"
+        },
+        "name": "ValueSet - Birthplace Country Vital Records",
+        "description": "This valueset contains the set of codes used to represent 2 Letter Birthplace Country Codes from GEC and ISO 3166-1.  Includes historic countries that no longer exist.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-coded-race-and-ethnicity-person-vr"
+        },
+        "name": "ValueSet - Coded Race and Ethnicity Person Vital Records",
+        "description": "This value set contains codes that represent persons for whom coded race and ethnicity can be reported.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-education-level-person-vr"
+        },
+        "name": "ValueSet - Education Level Person Vital Records",
+        "description": "This valueset contains codes that represent persons for whom education level can be reported.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-education-level-vr"
+        },
+        "name": "ValueSet - Education Level Vital Records",
+        "description": "This valueset contains the set of codes used to represent the Highest educational level achieved.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapEducationLevelVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-father-relationship-vr"
+        },
+        "name": "ValueSet - Father Relationship Vital Records",
+        "description": "This valueset contains codes that represent relationships describing the father's role relative to the subject.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-hispanic-no-unknown-vr"
+        },
+        "name": "ValueSet - Hispanic(Yes) No Unknown Vital Records",
+        "description": "This valueset contains the set of codes used to represent Hispanic(Yes), No and Unknown.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapHispanicNoUnknownVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-hispanic-origin-vr"
+        },
+        "name": "ValueSet - HispanicOrigin Vital Records",
+        "description": "This valueset contains the set of codes used to represent NCHS HispanicOrigin.\n\n\nMapping to IJE codes [here](ConceptMap-ConceptMapHispanicOriginVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-input-race-and-ethnicity-person-vr"
+        },
+        "name": "ValueSet - Input Race and Ethnicity Person Vital Records",
+        "description": "This valueset contains codes that represent persons for whom input race and ethnicity can be reported.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-jurisdiction-vr"
+        },
+        "name": "ValueSet - Jurisdictions Vital Records",
+        "description": "This valueset contains the set of codes used to represent 2 Letter Codes for all 57 Jurisdictions Reporting Deaths to NCHS",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-mother-relationship-vr"
+        },
+        "name": "ValueSet - Mother Relationship Vital Records",
+        "description": "This valueset contains codes that represent relationships describing the mother's role relative to the subject.",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-mothers-date-of-birth-edit-flags-vr"
+        },
+        "name": "ValueSet - Mothers Date of Birth Edit Flags (NCHS) Vital Records",
+        "description": "This valueset contains codes to represent Mothers Date of Birth Edit Flags. This valueset is based on [PHVS_BirthdateEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3BD473EE-40DD-E811-816D-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-plurality-edit-flags-vr"
+        },
+        "name": "ValueSet - Plurality Edit Flags (NCHS) Vital Records",
+        "description": "This valueset contains codes to represent Plurality Edit Flags. This valueset is based on [PHVS_PluralityEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-race-code-vr"
+        },
+        "name": "ValueSet - Race Code Vital Records",
+        "description": "This valueset contains the set of codes used to represent NCHS Race Codes.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceCodeVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-race-missing-value-reason-vr"
+        },
+        "name": "ValueSet - Race Missing Value Reason Vital Records",
+        "description": "This valueset contains the set of codes used to indicate the reason decedent race data is absent.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceMissingValueReasonVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-race-recode-40-vr"
+        },
+        "name": "ValueSet - Race Recode 40 Vital Records",
+        "description": "This valueset contains the set of codes used to represent NCHS Race Recode 40.\n\nNCHS will stop delivering this coded data in this representation in 2022.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceRecode40VitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-residence-country-vr"
+        },
+        "name": "ValueSet - Residence Country Vital Records",
+        "description": "This valueset contains the set of codes used to represent 2 Letter Residence Country Codes from GEC and ISO 3166-1.  Excludes historic countries that no longer exist",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-states-territories-provinces-vr"
+        },
+        "name": "ValueSet - States, Territories and Provinces Vital Records",
+        "description": "This valueset contains the set of codes used to represent 2 Letter States and Provinces",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-units-of-age-vr"
+        },
+        "name": "ValueSet - Units of Age Vital Records",
+        "description": "This valueset contains the set of codes for specifying the units used when recording age (days, years, etc.).\n\nMapping to IJE codes [here](ConceptMap-ConceptMapUnitsOfAgeVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-usstates-territories-vr"
+        },
+        "name": "ValueSet - US States, Territories Vital Records",
+        "description": "This valueset contains the set of codes used to represent 2 Letter States and Territories",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-yes-no-not-applicable-vr"
+        },
+        "name": "ValueSet - Yes No Not Applicable Vital Records",
+        "description": "A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoNotApplicableVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-yes-no-unknown-not-applicable-vr"
+        },
+        "name": "ValueSet - Yes No Unknown NotApplicable Vital Records",
+        "description": "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownNotApplicableVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-yes-no-unknown-vr"
+        },
+        "name": "ValueSet - Yes No Unknown Vital Records",
+        "description": "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, or Unknown.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownVitalRecords.html).",
+        "exampleBoolean": false,
+        "groupingId": "VRCLValueSets"
       }
     ],
     "page": {

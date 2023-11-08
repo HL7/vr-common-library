@@ -23,3 +23,8 @@
 /input-cache/schemas/R4
 /input-cache
 /publisher.jar
+.DS_Store
+Thumbs.db
+/fsh-generated
+*.sh
+*.bat

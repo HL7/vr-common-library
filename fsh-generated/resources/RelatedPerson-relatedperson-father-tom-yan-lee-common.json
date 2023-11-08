@@ -72,7 +72,7 @@
   ],
   "active": true,
   "patient": {
-    "reference": "patient-decedent-fetus-not-named",
+    "reference": "Patient/patient-decedent-fetus-not-named",
     "display": "Patient - Decedent Fetus (Fetus Not Named)"
   },
   "gender": "male",

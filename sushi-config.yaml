@@ -290,6 +290,10 @@ groups:
       - InputRaceAndEthnicityMother
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
+      - patient-child-babyg-quinn
+      - patient-decedent-fetus-not-named
+      - patient-decedent-fetus-not-named-w-edit
+      - practitioner-vital-records-janet-seito
       - relatedperson-father-tom-yan-lee-common
       - relatedperson-father-tony-lewis-common
       - relatedperson-mother-carol-hoffer-common
