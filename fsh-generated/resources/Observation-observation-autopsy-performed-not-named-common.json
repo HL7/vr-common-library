@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-autopsy-performed-not-named-common",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"
+    ]
+  },
+  "focus": [
+    {
+      "reference": "Practitioner/practitioner-vital-records-janet-seito"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "85699-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "patient-decedent-fetus-not-named"
+  },
+  "effectiveDateTime": "2019-12-02",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "N",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+        "display": "No"
+      }
+    ]
+  }
+}

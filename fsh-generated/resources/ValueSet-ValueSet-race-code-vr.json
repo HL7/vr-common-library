@@ -1,0 +1,4695 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ValueSetRaceCodeVitalRecords",
+  "id": "ValueSet-race-code-vr",
+  "title": "ValueSet - Race Code Vital Records",
+  "description": "This valueset contains the set of codes used to represent NCHS Race Codes.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapRaceCodeVitalRecords.html).",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr",
+        "concept": [
+          {
+            "code": "100",
+            "display": "White Checkbox"
+          },
+          {
+            "code": "101",
+            "display": "White"
+          },
+          {
+            "code": "102",
+            "display": "Arab"
+          },
+          {
+            "code": "103",
+            "display": "English"
+          },
+          {
+            "code": "104",
+            "display": "French"
+          },
+          {
+            "code": "105",
+            "display": "German"
+          },
+          {
+            "code": "106",
+            "display": "Irish"
+          },
+          {
+            "code": "107",
+            "display": "Italian"
+          },
+          {
+            "code": "108",
+            "display": "Near Easterner"
+          },
+          {
+            "code": "109",
+            "display": "Polish"
+          },
+          {
+            "code": "110",
+            "display": "Scottish"
+          },
+          {
+            "code": "111",
+            "display": "Armenian"
+          },
+          {
+            "code": "112",
+            "display": "Assyrian"
+          },
+          {
+            "code": "113",
+            "display": "Egyptian"
+          },
+          {
+            "code": "114",
+            "display": "Iranian"
+          },
+          {
+            "code": "115",
+            "display": "Iraqi"
+          },
+          {
+            "code": "116",
+            "display": "Lebanese"
+          },
+          {
+            "code": "117",
+            "display": "Middle East"
+          },
+          {
+            "code": "118",
+            "display": "Palestinian"
+          },
+          {
+            "code": "119",
+            "display": "Syrian"
+          },
+          {
+            "code": "120",
+            "display": "Other Arab"
+          },
+          {
+            "code": "121",
+            "display": "Afghanistani"
+          },
+          {
+            "code": "122",
+            "display": "Israeli"
+          },
+          {
+            "code": "123",
+            "display": "Californio"
+          },
+          {
+            "code": "124",
+            "display": "Cajun"
+          },
+          {
+            "code": "125",
+            "display": "EUROPEAN"
+          },
+          {
+            "code": "126",
+            "display": "PORTUGUESE"
+          },
+          {
+            "code": "127",
+            "display": "ALBANIAN"
+          },
+          {
+            "code": "128",
+            "display": "CROATIAN"
+          },
+          {
+            "code": "129",
+            "display": "CZECH"
+          },
+          {
+            "code": "130",
+            "display": "RUSSIAN"
+          },
+          {
+            "code": "131",
+            "display": "UKRANIAN"
+          },
+          {
+            "code": "132",
+            "display": "CZECHOSLOVAKIAN"
+          },
+          {
+            "code": "133",
+            "display": "BOSNIAN"
+          },
+          {
+            "code": "134",
+            "display": "KOSOVIAN"
+          },
+          {
+            "code": "199",
+            "display": "Multiple WHITE responses"
+          },
+          {
+            "code": "200",
+            "display": "Black Checkbox"
+          },
+          {
+            "code": "201",
+            "display": "Black"
+          },
+          {
+            "code": "202",
+            "display": "African"
+          },
+          {
+            "code": "203",
+            "display": "African American"
+          },
+          {
+            "code": "204",
+            "display": "AfroAmerican"
+          },
+          {
+            "code": "205",
+            "display": "Nigritian"
+          },
+          {
+            "code": "206",
+            "display": "Negro"
+          },
+          {
+            "code": "207",
+            "display": "Bahamian"
+          },
+          {
+            "code": "208",
+            "display": "Barbadian"
+          },
+          {
+            "code": "209",
+            "display": "Botswana"
+          },
+          {
+            "code": "213",
+            "display": "Ethiopian"
+          },
+          {
+            "code": "214",
+            "display": "Haitian"
+          },
+          {
+            "code": "215",
+            "display": "Jamaican"
+          },
+          {
+            "code": "216",
+            "display": "Liberian"
+          },
+          {
+            "code": "218",
+            "display": "Namibian"
+          },
+          {
+            "code": "219",
+            "display": "Nigerian"
+          },
+          {
+            "code": "220",
+            "display": "Other African"
+          },
+          {
+            "code": "222",
+            "display": "Tobago"
+          },
+          {
+            "code": "223",
+            "display": "Trinidad"
+          },
+          {
+            "code": "224",
+            "display": "West Indies"
+          },
+          {
+            "code": "225",
+            "display": "Zaire"
+          },
+          {
+            "code": "226",
+            "display": "ERITREAN"
+          },
+          {
+            "code": "227",
+            "display": "TOGOLESE"
+          },
+          {
+            "code": "228",
+            "display": "SOMALIAN"
+          },
+          {
+            "code": "299",
+            "display": "Multiple BLACK  or AFRICAN AMERICAN responses"
+          },
+          {
+            "code": "300",
+            "display": "American Indian Checkbox"
+          },
+          {
+            "code": "400",
+            "display": "Asian Indian Checkbox"
+          },
+          {
+            "code": "401",
+            "display": "Asian Indian"
+          },
+          {
+            "code": "402",
+            "display": "Bangladeshi"
+          },
+          {
+            "code": "403",
+            "display": "Bhutanese"
+          },
+          {
+            "code": "404",
+            "display": "Burmese"
+          },
+          {
+            "code": "405",
+            "display": "Cambodian"
+          },
+          {
+            "code": "410",
+            "display": "Chinese Checkbox"
+          },
+          {
+            "code": "411",
+            "display": "Chinese"
+          },
+          {
+            "code": "412",
+            "display": "Taiwanese"
+          },
+          {
+            "code": "420",
+            "display": "Filipino Checkbox"
+          },
+          {
+            "code": "421",
+            "display": "Filipino"
+          },
+          {
+            "code": "422",
+            "display": "Hmong"
+          },
+          {
+            "code": "423",
+            "display": "Indonesian"
+          },
+          {
+            "code": "430",
+            "display": "Japanese Checkbox"
+          },
+          {
+            "code": "431",
+            "display": "Japanese"
+          },
+          {
+            "code": "440",
+            "display": "Korean Checkbox"
+          },
+          {
+            "code": "441",
+            "display": "Korean"
+          },
+          {
+            "code": "442",
+            "display": "Laotian"
+          },
+          {
+            "code": "443",
+            "display": "Malaysian"
+          },
+          {
+            "code": "444",
+            "display": "Okinawan"
+          },
+          {
+            "code": "445",
+            "display": "Pakistani"
+          },
+          {
+            "code": "446",
+            "display": "Sri Lankan"
+          },
+          {
+            "code": "447",
+            "display": "Thai"
+          },
+          {
+            "code": "450",
+            "display": "Vietnamese Checkbox"
+          },
+          {
+            "code": "451",
+            "display": "Vietnamese"
+          },
+          {
+            "code": "460",
+            "display": "Other Asian Checkbox"
+          },
+          {
+            "code": "462",
+            "display": "Asian"
+          },
+          {
+            "code": "463",
+            "display": "Asiatic"
+          },
+          {
+            "code": "465",
+            "display": "Mongolian"
+          },
+          {
+            "code": "466",
+            "display": "Oriental"
+          },
+          {
+            "code": "467",
+            "display": "Whello"
+          },
+          {
+            "code": "468",
+            "display": "Yello"
+          },
+          {
+            "code": "469",
+            "display": "Indo Chinese"
+          },
+          {
+            "code": "470",
+            "display": "Iwo Jiman"
+          },
+          {
+            "code": "471",
+            "display": "Maldivian"
+          },
+          {
+            "code": "472",
+            "display": "Nepalese"
+          },
+          {
+            "code": "473",
+            "display": "Singaporean"
+          },
+          {
+            "code": "474",
+            "display": "MADAGASCAR"
+          },
+          {
+            "code": "475",
+            "display": "MIEN"
+          },
+          {
+            "code": "476",
+            "display": "TIBETAN"
+          },
+          {
+            "code": "499",
+            "display": "Multiple ASIAN responses"
+          },
+          {
+            "code": "500",
+            "display": "Native Hawaiian Checkbox"
+          },
+          {
+            "code": "501",
+            "display": "Native Hawaiian"
+          },
+          {
+            "code": "502",
+            "display": "Hawaiian"
+          },
+          {
+            "code": "503",
+            "display": "Part Hawaiian"
+          },
+          {
+            "code": "510",
+            "display": "Samoan Checkbox"
+          },
+          {
+            "code": "511",
+            "display": "Samoan"
+          },
+          {
+            "code": "512",
+            "display": "Tahitian"
+          },
+          {
+            "code": "513",
+            "display": "Tongan"
+          },
+          {
+            "code": "514",
+            "display": "Polynesian"
+          },
+          {
+            "code": "515",
+            "display": "Tokelauan"
+          },
+          {
+            "code": "520",
+            "display": "Guamanian Checkbox"
+          },
+          {
+            "code": "521",
+            "display": "Guamanian"
+          },
+          {
+            "code": "522",
+            "display": "Chamorro"
+          },
+          {
+            "code": "530",
+            "display": "Other Pacific Islander Checkbox"
+          },
+          {
+            "code": "531",
+            "display": "Mariana Islander"
+          },
+          {
+            "code": "532",
+            "display": "Marshallese"
+          },
+          {
+            "code": "533",
+            "display": "Palauan"
+          },
+          {
+            "code": "534",
+            "display": "Carolinian"
+          },
+          {
+            "code": "535",
+            "display": "Kosraean"
+          },
+          {
+            "code": "536",
+            "display": "Micronesian"
+          },
+          {
+            "code": "537",
+            "display": "Pohnpeian"
+          },
+          {
+            "code": "538",
+            "display": "Saipanese"
+          },
+          {
+            "code": "539",
+            "display": "Kirabati"
+          },
+          {
+            "code": "540",
+            "display": "Chuukese"
+          },
+          {
+            "code": "541",
+            "display": "Yapese"
+          },
+          {
+            "code": "542",
+            "display": "Fijian"
+          },
+          {
+            "code": "543",
+            "display": "Melanesian"
+          },
+          {
+            "code": "544",
+            "display": "Papua New Guinean"
+          },
+          {
+            "code": "545",
+            "display": "Solomon Islander"
+          },
+          {
+            "code": "546",
+            "display": "New Hebrides"
+          },
+          {
+            "code": "547",
+            "display": "Pacific Islander"
+          },
+          {
+            "code": "599",
+            "display": "Multiple NATIVE HAWAIIAN and OTHER PACIFIC ISLANDER responses"
+          },
+          {
+            "code": "600",
+            "display": "Other Race Checkbox"
+          },
+          {
+            "code": "601",
+            "display": "Argentinean"
+          },
+          {
+            "code": "602",
+            "display": "Bolivian"
+          },
+          {
+            "code": "604",
+            "display": "Central American"
+          },
+          {
+            "code": "605",
+            "display": "Chicano"
+          },
+          {
+            "code": "606",
+            "display": "Chilean"
+          },
+          {
+            "code": "607",
+            "display": "Colombian"
+          },
+          {
+            "code": "608",
+            "display": "Costa Rican"
+          },
+          {
+            "code": "609",
+            "display": "Cuban"
+          },
+          {
+            "code": "610",
+            "display": "Ecuadorian"
+          },
+          {
+            "code": "611",
+            "display": "Salvadoran"
+          },
+          {
+            "code": "612",
+            "display": "Guatemalan"
+          },
+          {
+            "code": "613",
+            "display": "Hispanic"
+          },
+          {
+            "code": "614",
+            "display": "Honduran"
+          },
+          {
+            "code": "615",
+            "display": "Latin American"
+          },
+          {
+            "code": "616",
+            "display": "Mestizo"
+          },
+          {
+            "code": "617",
+            "display": "Mexican"
+          },
+          {
+            "code": "618",
+            "display": "Nicaraguan"
+          },
+          {
+            "code": "619",
+            "display": "Panamanian"
+          },
+          {
+            "code": "620",
+            "display": "Paraguayan"
+          },
+          {
+            "code": "621",
+            "display": "Peruvian"
+          },
+          {
+            "code": "622",
+            "display": "Puerto Rican"
+          },
+          {
+            "code": "623",
+            "display": "Morena"
+          },
+          {
+            "code": "624",
+            "display": "South American"
+          },
+          {
+            "code": "625",
+            "display": "Spanish"
+          },
+          {
+            "code": "626",
+            "display": "Spanish American"
+          },
+          {
+            "code": "627",
+            "display": "Sudamericano"
+          },
+          {
+            "code": "628",
+            "display": "Uruguayan"
+          },
+          {
+            "code": "629",
+            "display": "Venezuelan"
+          },
+          {
+            "code": "630",
+            "display": "Spaniard"
+          },
+          {
+            "code": "631",
+            "display": "Tejano"
+          },
+          {
+            "code": "632",
+            "display": "Cayman Islander"
+          },
+          {
+            "code": "633",
+            "display": "Moroccan"
+          },
+          {
+            "code": "634",
+            "display": "North African"
+          },
+          {
+            "code": "635",
+            "display": "United Arab Emirates"
+          },
+          {
+            "code": "636",
+            "display": "South African"
+          },
+          {
+            "code": "637",
+            "display": "Azerbaijani"
+          },
+          {
+            "code": "638",
+            "display": "Aryan"
+          },
+          {
+            "code": "640",
+            "display": "Dominican Republic"
+          },
+          {
+            "code": "641",
+            "display": "Dominica Islander"
+          },
+          {
+            "code": "642",
+            "display": "Belizean"
+          },
+          {
+            "code": "643",
+            "display": "Bermudan"
+          },
+          {
+            "code": "644",
+            "display": "Aruba Islander"
+          },
+          {
+            "code": "645",
+            "display": "Cayenne"
+          },
+          {
+            "code": "646",
+            "display": "Guyanese"
+          },
+          {
+            "code": "647",
+            "display": "Surinam"
+          },
+          {
+            "code": "648",
+            "display": "Sudanese"
+          },
+          {
+            "code": "649",
+            "display": "Amerasian"
+          },
+          {
+            "code": "650",
+            "display": "Eurasian"
+          },
+          {
+            "code": "651",
+            "display": "Brazilian"
+          },
+          {
+            "code": "652",
+            "display": "Brown"
+          },
+          {
+            "code": "653",
+            "display": "Bushwacker"
+          },
+          {
+            "code": "655",
+            "display": "Cape Verdean"
+          },
+          {
+            "code": "656",
+            "display": "Chocolate"
+          },
+          {
+            "code": "657",
+            "display": "Coe Clan"
+          },
+          {
+            "code": "658",
+            "display": "Coffee"
+          },
+          {
+            "code": "659",
+            "display": "Cosmopolitan"
+          },
+          {
+            "code": "660",
+            "display": "Issues"
+          },
+          {
+            "code": "661",
+            "display": "Jackson White"
+          },
+          {
+            "code": "662",
+            "display": "Melungeon"
+          },
+          {
+            "code": "663",
+            "display": "Mixed"
+          },
+          {
+            "code": "664",
+            "display": "Ramp"
+          },
+          {
+            "code": "665",
+            "display": "Wesort"
+          },
+          {
+            "code": "666",
+            "display": "Mulatto"
+          },
+          {
+            "code": "667",
+            "display": "Moor"
+          },
+          {
+            "code": "668",
+            "display": "Biracial"
+          },
+          {
+            "code": "669",
+            "display": "Creole"
+          },
+          {
+            "code": "670",
+            "display": "Indian"
+          },
+          {
+            "code": "671",
+            "display": "Turk"
+          },
+          {
+            "code": "672",
+            "display": "Half Breed"
+          },
+          {
+            "code": "673",
+            "display": "Rainbow"
+          },
+          {
+            "code": "674",
+            "display": "Octoroon"
+          },
+          {
+            "code": "675",
+            "display": "Quadroon"
+          },
+          {
+            "code": "676",
+            "display": "Multiracial"
+          },
+          {
+            "code": "677",
+            "display": "Interracial"
+          },
+          {
+            "code": "678",
+            "display": "Multiethnic"
+          },
+          {
+            "code": "679",
+            "display": "Multinational"
+          },
+          {
+            "code": "680",
+            "display": "JEWISH"
+          },
+          {
+            "code": "681",
+            "display": "CANADIAN"
+          },
+          {
+            "code": "682",
+            "display": "FRENCH CANADIAN"
+          },
+          {
+            "code": "683",
+            "display": "IBERIAN"
+          },
+          {
+            "code": "684",
+            "display": "TRIGUENO"
+          },
+          {
+            "code": "685",
+            "display": "MALADA"
+          },
+          {
+            "code": "686",
+            "display": "OTHER SPANISH"
+          },
+          {
+            "code": "699",
+            "display": "OTHER RACE, N.E.C."
+          },
+          {
+            "code": "990",
+            "display": "Multiple SOME OTHER RACE responses"
+          },
+          {
+            "code": "995",
+            "display": "American"
+          },
+          {
+            "code": "996",
+            "display": "Uncodable"
+          },
+          {
+            "code": "997",
+            "display": "Deferred"
+          },
+          {
+            "code": "998",
+            "display": "UNKNOWN"
+          },
+          {
+            "code": "999",
+            "display": "First Pass Reject"
+          },
+          {
+            "code": "A01",
+            "display": "Abenaki Nation of Missiquoi"
+          },
+          {
+            "code": "A05",
+            "display": "Algonquian"
+          },
+          {
+            "code": "A09",
+            "display": "Apache"
+          },
+          {
+            "code": "A10",
+            "display": "Chiricahua"
+          },
+          {
+            "code": "A11",
+            "display": "Fort Sill Apache"
+          },
+          {
+            "code": "A12",
+            "display": "Jicarilla Apache"
+          },
+          {
+            "code": "A13",
+            "display": "Lipan Apache"
+          },
+          {
+            "code": "A14",
+            "display": "Mescalero Apache"
+          },
+          {
+            "code": "A15",
+            "display": "Oklahoma Apache"
+          },
+          {
+            "code": "A16",
+            "display": "Payson Tonto Apache"
+          },
+          {
+            "code": "A17",
+            "display": "San Carlos Apache"
+          },
+          {
+            "code": "A18",
+            "display": "White Mountain Apache"
+          },
+          {
+            "code": "A24",
+            "display": "Arapahoe"
+          },
+          {
+            "code": "A25",
+            "display": "Northern Arapahoe"
+          },
+          {
+            "code": "A26",
+            "display": "Southern Arapahoe"
+          },
+          {
+            "code": "A27",
+            "display": "Wind River Arapahoe"
+          },
+          {
+            "code": "A31",
+            "display": "Arikara"
+          },
+          {
+            "code": "A34",
+            "display": "Assiniboine"
+          },
+          {
+            "code": "A35",
+            "display": "Fort Peck Assiniboine"
+          },
+          {
+            "code": "A36",
+            "display": "Fort Belknap Assiniboine"
+          },
+          {
+            "code": "A38",
+            "display": "Assiniboine Sioux"
+          },
+          {
+            "code": "A39",
+            "display": "Fort Peck Assiniboine and Sioux"
+          },
+          {
+            "code": "A42",
+            "display": "Bannock"
+          },
+          {
+            "code": "A45",
+            "display": "Blackfeet"
+          },
+          {
+            "code": "A51",
+            "display": "Brotherton"
+          },
+          {
+            "code": "A54",
+            "display": "Burt Lake Band"
+          },
+          {
+            "code": "A56",
+            "display": "Caddo"
+          },
+          {
+            "code": "A57",
+            "display": "Caddo Indian Tribe of Oklahoma"
+          },
+          {
+            "code": "A58",
+            "display": "Caddo Adais Indians"
+          },
+          {
+            "code": "A61",
+            "display": "Agua Caliente Band of Cahuilla Indians"
+          },
+          {
+            "code": "A62",
+            "display": "Augustine"
+          },
+          {
+            "code": "A63",
+            "display": "Cabazon Band of Cahuilla Mission Indians"
+          },
+          {
+            "code": "A64",
+            "display": "Cahuilla"
+          },
+          {
+            "code": "A65",
+            "display": "Los Coyotes Band of Cahuilla Mission Indians"
+          },
+          {
+            "code": "A66",
+            "display": "Morongo Band of Cahuilla Mission Indians"
+          },
+          {
+            "code": "A67",
+            "display": "Santa Rosa Cahuilla"
+          },
+          {
+            "code": "A68",
+            "display": "Torres Martinez Band of Cahuilla Mission Indians"
+          },
+          {
+            "code": "A69",
+            "display": "Ramona Band or Village of Cahuilla Mission Indians"
+          },
+          {
+            "code": "A74",
+            "display": "CALIFORNIA TRIBES N.E.C."
+          },
+          {
+            "code": "A75",
+            "display": "Cahto Indian Tribe of the Laytonville Rancheria"
+          },
+          {
+            "code": "A76",
+            "display": "Chimariko"
+          },
+          {
+            "code": "A77",
+            "display": "Coast Miwok"
+          },
+          {
+            "code": "A78",
+            "display": "MISSION BAND"
+          },
+          {
+            "code": "A79",
+            "display": "Kawaiisu"
+          },
+          {
+            "code": "A80",
+            "display": "Kem River Paiute Council"
+          },
+          {
+            "code": "A81",
+            "display": "Mattole"
+          },
+          {
+            "code": "A82",
+            "display": "Red Wood"
+          },
+          {
+            "code": "A83",
+            "display": "Santa Rosa Indian Community"
+          },
+          {
+            "code": "A84",
+            "display": "Takelma"
+          },
+          {
+            "code": "A85",
+            "display": "Wappo"
+          },
+          {
+            "code": "A86",
+            "display": "Yana"
+          },
+          {
+            "code": "A87",
+            "display": "Yuki"
+          },
+          {
+            "code": "A88",
+            "display": "Bear River Band of Rohnerville Rancheria"
+          },
+          {
+            "code": "A89",
+            "display": "DIGGER"
+          },
+          {
+            "code": "A90",
+            "display": "WIKCHAMNI"
+          },
+          {
+            "code": "A91",
+            "display": "Smith River Rancheria"
+          },
+          {
+            "code": "A94",
+            "display": "Canadian Indian"
+          },
+          {
+            "code": "A95",
+            "display": "Central American Indian"
+          },
+          {
+            "code": "A96",
+            "display": "French American Indian"
+          },
+          {
+            "code": "A97",
+            "display": "Mexican American Indian"
+          },
+          {
+            "code": "A98",
+            "display": "South American Indian"
+          },
+          {
+            "code": "A99",
+            "display": "Spanish American Indian"
+          },
+          {
+            "code": "B04",
+            "display": "Catawba Indian Nation"
+          },
+          {
+            "code": "B07",
+            "display": "Cayuse"
+          },
+          {
+            "code": "B11",
+            "display": "Chehalis"
+          },
+          {
+            "code": "B14",
+            "display": "Chemakuan"
+          },
+          {
+            "code": "B15",
+            "display": "Hoh Indian Tribe"
+          },
+          {
+            "code": "B16",
+            "display": "Quileute"
+          },
+          {
+            "code": "B19",
+            "display": "Chemehuevi"
+          },
+          {
+            "code": "B21",
+            "display": "Cherokee"
+          },
+          {
+            "code": "B22",
+            "display": "Cherokee Alabama"
+          },
+          {
+            "code": "B23",
+            "display": "Cherokees of Northeast Alabama"
+          },
+          {
+            "code": "B24",
+            "display": "Cherokees of Southeast Alabama"
+          },
+          {
+            "code": "B25",
+            "display": "Georgia Eastern Cherokee"
+          },
+          {
+            "code": "B26",
+            "display": "Echota Cherokee"
+          },
+          {
+            "code": "B27",
+            "display": "Etowah Cherokee"
+          },
+          {
+            "code": "B28",
+            "display": "Northern Cherokee Nation of Missouri and Arkansas"
+          },
+          {
+            "code": "B29",
+            "display": "Tuscola"
+          },
+          {
+            "code": "B30",
+            "display": "United Keetoowah Band of Cherokee"
+          },
+          {
+            "code": "B31",
+            "display": "Western Cherokee"
+          },
+          {
+            "code": "B32",
+            "display": "Southeastern Cherokee Council"
+          },
+          {
+            "code": "B33",
+            "display": "Sac River Band of the Chickamauga Cherokee"
+          },
+          {
+            "code": "B34",
+            "display": "White River Band of the Chickamauga Cherokee"
+          },
+          {
+            "code": "B35",
+            "display": "Four Winds Cherokee"
+          },
+          {
+            "code": "B36",
+            "display": "Cherokee of Georgia"
+          },
+          {
+            "code": "B37",
+            "display": "Cherokee Shawnee"
+          },
+          {
+            "code": "B40",
+            "display": "Cheyenne"
+          },
+          {
+            "code": "B41",
+            "display": "Northern Cheyenne"
+          },
+          {
+            "code": "B42",
+            "display": "Southern Cheyenne"
+          },
+          {
+            "code": "B46",
+            "display": "Cheyenne Arapaho"
+          },
+          {
+            "code": "B49",
+            "display": "Chickahominy Indian Tribe"
+          },
+          {
+            "code": "B50",
+            "display": "Chickahominy Eastern Band"
+          },
+          {
+            "code": "B51",
+            "display": "WESTERN CHICKAHOMINY"
+          },
+          {
+            "code": "B53",
+            "display": "Chickasaw"
+          },
+          {
+            "code": "B57",
+            "display": "Chinook"
+          },
+          {
+            "code": "B58",
+            "display": "Clatsop"
+          },
+          {
+            "code": "B59",
+            "display": "Columbia River Chinook"
+          },
+          {
+            "code": "B60",
+            "display": "Kathlamet"
+          },
+          {
+            "code": "B61",
+            "display": "Upper Chinook"
+          },
+          {
+            "code": "B62",
+            "display": "Wakiakum Chinook"
+          },
+          {
+            "code": "B63",
+            "display": "Willapa Chinook"
+          },
+          {
+            "code": "B64",
+            "display": "Wishram"
+          },
+          {
+            "code": "B67",
+            "display": "Bad River Band of the Lake Superior Tribe"
+          },
+          {
+            "code": "B68",
+            "display": "Bay Mills Indian Community of the Sault Ste. Marie Band"
+          },
+          {
+            "code": "B69",
+            "display": "Bois Forte Nett Lake Band of Chippewa"
+          },
+          {
+            "code": "B70",
+            "display": "Burt Lake Chippewa"
+          },
+          {
+            "code": "B71",
+            "display": "Chippewa"
+          },
+          {
+            "code": "B72",
+            "display": "Fond du Lac"
+          },
+          {
+            "code": "B73",
+            "display": "Grand Portage"
+          },
+          {
+            "code": "B74",
+            "display": "Grand Traverse Band of Ottawa and Chippewa Indians"
+          },
+          {
+            "code": "B75",
+            "display": "Keweenaw Bay Indian Community of the L'Anse and Ontonagon Bands"
+          },
+          {
+            "code": "B76",
+            "display": "Lac Court Oreilles Band of Lake Superior Chippewa"
+          },
+          {
+            "code": "B77",
+            "display": "Lac du Flambeau"
+          },
+          {
+            "code": "B78",
+            "display": "Lac Vieux Desert Band of Lake Superior Chippewa"
+          },
+          {
+            "code": "B79",
+            "display": "Lake Superior"
+          },
+          {
+            "code": "B80",
+            "display": "Leech Lake"
+          },
+          {
+            "code": "B81",
+            "display": "Little Shell Chippewa"
+          },
+          {
+            "code": "B82",
+            "display": "Mille Lacs"
+          },
+          {
+            "code": "B83",
+            "display": "Minnesota Chippewa"
+          },
+          {
+            "code": "B84",
+            "display": "Ontonagon"
+          },
+          {
+            "code": "B85",
+            "display": "Red Cliff Band of Lake Superior Chippewa"
+          },
+          {
+            "code": "B86",
+            "display": "Red Lake Band of Chippewa Indians"
+          },
+          {
+            "code": "B87",
+            "display": "Saginaw Chippewa"
+          },
+          {
+            "code": "B88",
+            "display": "St. Croix Chippewa"
+          },
+          {
+            "code": "B89",
+            "display": "Sault Ste. Marie Chippewa"
+          },
+          {
+            "code": "B90",
+            "display": "Sokoagon Chippewa"
+          },
+          {
+            "code": "B91",
+            "display": "Turtle Mountain Band"
+          },
+          {
+            "code": "B92",
+            "display": "White Earth"
+          },
+          {
+            "code": "B93",
+            "display": "Swan Creek Black River Confederate Tribe"
+          },
+          {
+            "code": "C02",
+            "display": "Rocky Boy's Chippewa Cree"
+          },
+          {
+            "code": "C05",
+            "display": "Chitimacha Tribe of Louisiana"
+          },
+          {
+            "code": "C08",
+            "display": "Choctaw"
+          },
+          {
+            "code": "C09",
+            "display": "Clifton Choctaw"
+          },
+          {
+            "code": "C10",
+            "display": "Jena Band of Choctaw"
+          },
+          {
+            "code": "C11",
+            "display": "Mississippi Band of Choctaw"
+          },
+          {
+            "code": "C12",
+            "display": "Mowa Band of Choctaw"
+          },
+          {
+            "code": "C13",
+            "display": "Oklahoma Choctaw"
+          },
+          {
+            "code": "C17",
+            "display": "Choctaw Apache Community of Ebarb"
+          },
+          {
+            "code": "C20",
+            "display": "Chumash"
+          },
+          {
+            "code": "C21",
+            "display": "Santa Ynez"
+          },
+          {
+            "code": "C22",
+            "display": "San Luis Rey Mission Indian"
+          },
+          {
+            "code": "C25",
+            "display": "Clear Lake"
+          },
+          {
+            "code": "C26",
+            "display": "Coeur D'Alene"
+          },
+          {
+            "code": "C29",
+            "display": "Coharie"
+          },
+          {
+            "code": "C32",
+            "display": "Colorado River"
+          },
+          {
+            "code": "C35",
+            "display": "Colville"
+          },
+          {
+            "code": "C39",
+            "display": "Comanche"
+          },
+          {
+            "code": "C40",
+            "display": "Oklahoma Comanche"
+          },
+          {
+            "code": "C44",
+            "display": "Coos Lower Umpqua and Siuslaw"
+          },
+          {
+            "code": "C46",
+            "display": "Coos"
+          },
+          {
+            "code": "C47",
+            "display": "Coquille"
+          },
+          {
+            "code": "C48",
+            "display": "Costanoan"
+          },
+          {
+            "code": "C52",
+            "display": "Alabama Coushatta Tribes of Texas"
+          },
+          {
+            "code": "C53",
+            "display": "Coushatta"
+          },
+          {
+            "code": "C56",
+            "display": "Cowlitz"
+          },
+          {
+            "code": "C59",
+            "display": "Cree"
+          },
+          {
+            "code": "C64",
+            "display": "Alabama Creek"
+          },
+          {
+            "code": "C65",
+            "display": "Alabama Quassarte Tribal Town"
+          },
+          {
+            "code": "C66",
+            "display": "Muscogee Creek Nation"
+          },
+          {
+            "code": "C67",
+            "display": "Eastern Creek"
+          },
+          {
+            "code": "C68",
+            "display": "Eastern Muscogee"
+          },
+          {
+            "code": "C69",
+            "display": "Kialegee Tribal Town"
+          },
+          {
+            "code": "C70",
+            "display": "Lower Muscogee Creek Tama Tribal Town"
+          },
+          {
+            "code": "C71",
+            "display": "Machis Lower Creek Indian"
+          },
+          {
+            "code": "C72",
+            "display": "Poarch Band"
+          },
+          {
+            "code": "C73",
+            "display": "Principal Creek Indian Nation"
+          },
+          {
+            "code": "C74",
+            "display": "Star Clan of Muskogee Creeks"
+          },
+          {
+            "code": "C75",
+            "display": "Thiopthlocco Tribal Town"
+          },
+          {
+            "code": "C76",
+            "display": "Tuckabachee"
+          },
+          {
+            "code": "C81",
+            "display": "Croatan"
+          },
+          {
+            "code": "C82",
+            "display": "Crow"
+          },
+          {
+            "code": "C87",
+            "display": "Cumberland County Association for Indian People"
+          },
+          {
+            "code": "C89",
+            "display": "Agua Caliente"
+          },
+          {
+            "code": "C90",
+            "display": "Cupeno"
+          },
+          {
+            "code": "C93",
+            "display": "Delaware"
+          },
+          {
+            "code": "C94",
+            "display": "Delaware Tribe of Indians, Oklahoma"
+          },
+          {
+            "code": "C95",
+            "display": "Lenni Lanape"
+          },
+          {
+            "code": "C96",
+            "display": "Munsee"
+          },
+          {
+            "code": "C97",
+            "display": "Delaware Tribe of Western Oklahoma"
+          },
+          {
+            "code": "C98",
+            "display": "Ramapough Mountain"
+          },
+          {
+            "code": "C99",
+            "display": "Sand Hill Band of Delaware Indians"
+          },
+          {
+            "code": "D05",
+            "display": "Barona Group of Capitan Grande Band"
+          },
+          {
+            "code": "D06",
+            "display": "Campo Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D07",
+            "display": "Capitan Grande Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D08",
+            "display": "Cuyapaipe"
+          },
+          {
+            "code": "D09",
+            "display": "Diegueno"
+          },
+          {
+            "code": "D10",
+            "display": "La Posta Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D11",
+            "display": "Manzanita"
+          },
+          {
+            "code": "D12",
+            "display": "Mesa Grande Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D13",
+            "display": "San Pasqual Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D14",
+            "display": "Santa Ysabel Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D15",
+            "display": "Sycuan Band of Diegueno Mission Indians"
+          },
+          {
+            "code": "D16",
+            "display": "Viejas Group of Capitan Grande Band"
+          },
+          {
+            "code": "D17",
+            "display": "Inaja Band of Diegueno Mission Indians of the Inaja and Cosmit Reservation"
+          },
+          {
+            "code": "D18",
+            "display": "Jarnul Indian Village"
+          },
+          {
+            "code": "D20",
+            "display": "Attacapa"
+          },
+          {
+            "code": "D21",
+            "display": "Biloxi"
+          },
+          {
+            "code": "D22",
+            "display": "Georgetown"
+          },
+          {
+            "code": "D24",
+            "display": "Nansemond Indian Tribe"
+          },
+          {
+            "code": "D25",
+            "display": "Natchez"
+          },
+          {
+            "code": "D26",
+            "display": "Nausu Waiwash"
+          },
+          {
+            "code": "D27",
+            "display": "Nipmuc"
+          },
+          {
+            "code": "D28",
+            "display": "Golden Hill Paugussett"
+          },
+          {
+            "code": "D29",
+            "display": "Pocomoke Acohonock"
+          },
+          {
+            "code": "D30",
+            "display": "Southeastern Indians"
+          },
+          {
+            "code": "D31",
+            "display": "Susquehanock"
+          },
+          {
+            "code": "D33",
+            "display": "Tunica Biloxi"
+          },
+          {
+            "code": "D34",
+            "display": "Waccamaw Siouan"
+          },
+          {
+            "code": "D36",
+            "display": "Wicomico"
+          },
+          {
+            "code": "D37",
+            "display": "Mehemn Indian Tribe"
+          },
+          {
+            "code": "D42",
+            "display": "Esselen"
+          },
+          {
+            "code": "D44",
+            "display": "Fort Belknap"
+          },
+          {
+            "code": "D45",
+            "display": "FORT BERTHOLD"
+          },
+          {
+            "code": "D46",
+            "display": "Three Affiliated Tribes of North Dakota"
+          },
+          {
+            "code": "D49",
+            "display": "Fort McDowell MohaveApache Community"
+          },
+          {
+            "code": "D51",
+            "display": "ShoshoneBannock Tribes of the Fort Hall Reservation"
+          },
+          {
+            "code": "D55",
+            "display": "Gabrieleno"
+          },
+          {
+            "code": "D57",
+            "display": "Grand Ronde"
+          },
+          {
+            "code": "D58",
+            "display": "Guilford Native American Association"
+          },
+          {
+            "code": "D60",
+            "display": "Atsina"
+          },
+          {
+            "code": "D61",
+            "display": "Gros Ventres"
+          },
+          {
+            "code": "D62",
+            "display": "Fort Belknap Gros Ventres"
+          },
+          {
+            "code": "D64",
+            "display": "HaliwaSaponi"
+          },
+          {
+            "code": "D67",
+            "display": "Hidatsa"
+          },
+          {
+            "code": "D70",
+            "display": "Hoopa Valley Tribe"
+          },
+          {
+            "code": "D71",
+            "display": "Trinity"
+          },
+          {
+            "code": "D72",
+            "display": "Whilkut"
+          },
+          {
+            "code": "D76",
+            "display": "Hoopa Extension"
+          },
+          {
+            "code": "D78",
+            "display": "United Houma Nation"
+          },
+          {
+            "code": "D87",
+            "display": "Iowa"
+          },
+          {
+            "code": "D88",
+            "display": "Iowa of Kansas and Nebraska"
+          },
+          {
+            "code": "D89",
+            "display": "Iowa of Oklahoma"
+          },
+          {
+            "code": "D91",
+            "display": "Indians of Person County"
+          },
+          {
+            "code": "D93",
+            "display": "Cayuga Nation"
+          },
+          {
+            "code": "D94",
+            "display": "Iroquois"
+          },
+          {
+            "code": "D95",
+            "display": "Mohawk"
+          },
+          {
+            "code": "D96",
+            "display": "Oneida Nation of New York"
+          },
+          {
+            "code": "D97",
+            "display": "Onondaga"
+          },
+          {
+            "code": "D98",
+            "display": "Seneca"
+          },
+          {
+            "code": "D99",
+            "display": "Seneca Nation"
+          },
+          {
+            "code": "E01",
+            "display": "SenecaCayuga"
+          },
+          {
+            "code": "E02",
+            "display": "Tonawanda Band of Seneca"
+          },
+          {
+            "code": "E03",
+            "display": "Tuscarora"
+          },
+          {
+            "code": "E04",
+            "display": "Wyandotte"
+          },
+          {
+            "code": "E10",
+            "display": "Juaneno"
+          },
+          {
+            "code": "E13",
+            "display": "Kalispel Indian Community"
+          },
+          {
+            "code": "E17",
+            "display": "Karuk Tribe of California"
+          },
+          {
+            "code": "E21",
+            "display": "Kaw"
+          },
+          {
+            "code": "E24",
+            "display": "Kickapoo"
+          },
+          {
+            "code": "E25",
+            "display": "Oklahoma Kickapoo"
+          },
+          {
+            "code": "E26",
+            "display": "Texas Kickapoo"
+          },
+          {
+            "code": "E30",
+            "display": "Kiowa"
+          },
+          {
+            "code": "E31",
+            "display": "Oklahoma Kiowa"
+          },
+          {
+            "code": "E37",
+            "display": "Jamestown S'Klallam"
+          },
+          {
+            "code": "E38",
+            "display": "Klallam"
+          },
+          {
+            "code": "E39",
+            "display": "Lower Elwha Tribal Community"
+          },
+          {
+            "code": "E40",
+            "display": "Port Gamble Klallam"
+          },
+          {
+            "code": "E44",
+            "display": "Klamath"
+          },
+          {
+            "code": "E48",
+            "display": "Konkow"
+          },
+          {
+            "code": "E50",
+            "display": "Kootenai"
+          },
+          {
+            "code": "E53",
+            "display": "Lassik"
+          },
+          {
+            "code": "E59",
+            "display": "Matinecock"
+          },
+          {
+            "code": "E60",
+            "display": "Montauk"
+          },
+          {
+            "code": "E61",
+            "display": "Poospatuck"
+          },
+          {
+            "code": "E62",
+            "display": "Setauket"
+          },
+          {
+            "code": "E63",
+            "display": "LONG ISLAND"
+          },
+          {
+            "code": "E66",
+            "display": "La Jolla Band of Luiseno Mission Indians"
+          },
+          {
+            "code": "E67",
+            "display": "Luiseno"
+          },
+          {
+            "code": "E68",
+            "display": "Pala Band of Luiseno Mission Indians"
+          },
+          {
+            "code": "E69",
+            "display": "Pauma Band of Luiseno Mission Indians"
+          },
+          {
+            "code": "E70",
+            "display": "Pechanga Band of Luiseno Mission Indians"
+          },
+          {
+            "code": "E71",
+            "display": "Soboba"
+          },
+          {
+            "code": "E72",
+            "display": "TwentyNine Palms Band of Luiseno Mission Indians"
+          },
+          {
+            "code": "E73",
+            "display": "Temecula"
+          },
+          {
+            "code": "E74",
+            "display": "Rincon Band of Luiseno Mission Indians"
+          },
+          {
+            "code": "E78",
+            "display": "Lumbee"
+          },
+          {
+            "code": "E84",
+            "display": "Lummi"
+          },
+          {
+            "code": "E87",
+            "display": "Mooretown Rancheria of Maidu Indians"
+          },
+          {
+            "code": "E88",
+            "display": "Maidu"
+          },
+          {
+            "code": "E89",
+            "display": "Mountain Maidu"
+          },
+          {
+            "code": "E90",
+            "display": "Nisenen"
+          },
+          {
+            "code": "E91",
+            "display": "Mechoopda Indian Tribe of Chico Rancheria, California"
+          },
+          {
+            "code": "E92",
+            "display": "Berry Creek Rancheria of Maidu Indians"
+          },
+          {
+            "code": "E93",
+            "display": "Enterprise Rancheria"
+          },
+          {
+            "code": "E94",
+            "display": "Greenville Rancheria"
+          },
+          {
+            "code": "E95",
+            "display": "Makah"
+          },
+          {
+            "code": "F01",
+            "display": "Maliseet"
+          },
+          {
+            "code": "F02",
+            "display": "Houlton Band of Maliseet Indians"
+          },
+          {
+            "code": "F05",
+            "display": "Mandan"
+          },
+          {
+            "code": "F09",
+            "display": "Mattaponi Indian Tribe"
+          },
+          {
+            "code": "F10",
+            "display": "Upper Mattaponi Tribe"
+          },
+          {
+            "code": "F11",
+            "display": "Menominee"
+          },
+          {
+            "code": "F15",
+            "display": "Metrolina Nadve American Association"
+          },
+          {
+            "code": "F17",
+            "display": "Illinois Miami"
+          },
+          {
+            "code": "F18",
+            "display": "Indiana Miami"
+          },
+          {
+            "code": "F19",
+            "display": "Miami"
+          },
+          {
+            "code": "F20",
+            "display": "Oklahoma Miami"
+          },
+          {
+            "code": "F24",
+            "display": "Miccosukee"
+          },
+          {
+            "code": "F27",
+            "display": "Aroostook Band"
+          },
+          {
+            "code": "F28",
+            "display": "Micmac"
+          },
+          {
+            "code": "F31",
+            "display": "Mission Indians"
+          },
+          {
+            "code": "F32",
+            "display": "Cahuilla Band of Mission Indians"
+          },
+          {
+            "code": "F34",
+            "display": "Ione Band of Miwok Indians"
+          },
+          {
+            "code": "F35",
+            "display": "Shingle Springs Band of Miwok Indians"
+          },
+          {
+            "code": "F36",
+            "display": "MeWuk"
+          },
+          {
+            "code": "F37",
+            "display": "Jackson Rancheria of MeWuk Indians of California"
+          },
+          {
+            "code": "F38",
+            "display": "Tuolumne Band of MeWuk Indians of California"
+          },
+          {
+            "code": "F39",
+            "display": "Buena Vista Rancheria of MeWuk Indians of California"
+          },
+          {
+            "code": "F40",
+            "display": "Chicken Ranch Rancheria of MeWuk Indians"
+          },
+          {
+            "code": "F41",
+            "display": "Sheep Ranch Rancheria of MeWuk Indians"
+          },
+          {
+            "code": "F42",
+            "display": "Modoc"
+          },
+          {
+            "code": "F43",
+            "display": "Oklahoma Modoc"
+          },
+          {
+            "code": "F46",
+            "display": "Mohegan"
+          },
+          {
+            "code": "F47",
+            "display": "Monacan Indian Nation"
+          },
+          {
+            "code": "F49",
+            "display": "Mono"
+          },
+          {
+            "code": "F50",
+            "display": "North Fork Rancheria"
+          },
+          {
+            "code": "F51",
+            "display": "Cold Springs Rancheria"
+          },
+          {
+            "code": "F52",
+            "display": "Big Sandy Rancheria"
+          },
+          {
+            "code": "F53",
+            "display": "Nanticoke"
+          },
+          {
+            "code": "F56",
+            "display": "Nanticoke LenniLenape"
+          },
+          {
+            "code": "F57",
+            "display": "Narragansett"
+          },
+          {
+            "code": "F62",
+            "display": "Alamo Navajo"
+          },
+          {
+            "code": "F63",
+            "display": "Tohajiileehee Navajo"
+          },
+          {
+            "code": "F64",
+            "display": "Navajo"
+          },
+          {
+            "code": "F65",
+            "display": "Ramah Navajo"
+          },
+          {
+            "code": "F71",
+            "display": "Nez Perce"
+          },
+          {
+            "code": "F75",
+            "display": "Hassanamisco Band of the Nipmuc Nation"
+          },
+          {
+            "code": "F76",
+            "display": "Chaubunagungameg Nipmuc"
+          },
+          {
+            "code": "F77",
+            "display": "Nomlaki"
+          },
+          {
+            "code": "F78",
+            "display": "Paskenta Band of Nomlaki Indians"
+          },
+          {
+            "code": "F80",
+            "display": "Alsea"
+          },
+          {
+            "code": "F81",
+            "display": "Celilo"
+          },
+          {
+            "code": "F82",
+            "display": "Columbia"
+          },
+          {
+            "code": "F83",
+            "display": "Kalapuya"
+          },
+          {
+            "code": "F84",
+            "display": "Molalla"
+          },
+          {
+            "code": "F85",
+            "display": "Talakamish"
+          },
+          {
+            "code": "F86",
+            "display": "Tenino"
+          },
+          {
+            "code": "F87",
+            "display": "Tillamook"
+          },
+          {
+            "code": "F88",
+            "display": "Wenatchee"
+          },
+          {
+            "code": "F95",
+            "display": "Omaha"
+          },
+          {
+            "code": "F99",
+            "display": "Oneida Tribe of Wisconsin"
+          },
+          {
+            "code": "G01",
+            "display": "Oregon Athabaskan"
+          },
+          {
+            "code": "G04",
+            "display": "Osage"
+          },
+          {
+            "code": "G10",
+            "display": "OtoeMissouria"
+          },
+          {
+            "code": "G14",
+            "display": "Burt Lake Ottawa"
+          },
+          {
+            "code": "G15",
+            "display": "Little River Band of Ottawa Indians of Michigan"
+          },
+          {
+            "code": "G16",
+            "display": "Oklahoma Ottawa"
+          },
+          {
+            "code": "G17",
+            "display": "Ottawa"
+          },
+          {
+            "code": "G18",
+            "display": "Little Traverse Bay Bands of Ottawa Indians of Michigan"
+          },
+          {
+            "code": "G19",
+            "display": "Grand River Band of Ottawa Indians"
+          },
+          {
+            "code": "G24",
+            "display": "Bridgeport Paiute Indian Colony"
+          },
+          {
+            "code": "G25",
+            "display": "Burns Paiute Tribe"
+          },
+          {
+            "code": "G26",
+            "display": "Cedarville Rancheria"
+          },
+          {
+            "code": "G27",
+            "display": "Fort Bidwell"
+          },
+          {
+            "code": "G28",
+            "display": "Fort Independence"
+          },
+          {
+            "code": "G29",
+            "display": "Kaibab Band of Paiute Indians"
+          },
+          {
+            "code": "G30",
+            "display": "Las Vegas Tribe of the Las Vegas Indian Colony"
+          },
+          {
+            "code": "G32",
+            "display": "Lovelock Paiute Tribe of the Lovelock Indian Colony"
+          },
+          {
+            "code": "G33",
+            "display": "Malheur Paiute"
+          },
+          {
+            "code": "G34",
+            "display": "Moapa Band of Paiute"
+          },
+          {
+            "code": "G35",
+            "display": "Northern Paiute"
+          },
+          {
+            "code": "G37",
+            "display": "Paiute"
+          },
+          {
+            "code": "G38",
+            "display": "Pyramid Lake"
+          },
+          {
+            "code": "G39",
+            "display": "San Juan Southern Paiute"
+          },
+          {
+            "code": "G40",
+            "display": "Southern Paiute"
+          },
+          {
+            "code": "G41",
+            "display": "Summit Lake"
+          },
+          {
+            "code": "G42",
+            "display": "Utu Utu Gwaitu Paiute"
+          },
+          {
+            "code": "G43",
+            "display": "Walker River"
+          },
+          {
+            "code": "G44",
+            "display": "Yerington Paiute"
+          },
+          {
+            "code": "G45",
+            "display": "Yahooskin Band of Snake"
+          },
+          {
+            "code": "G47",
+            "display": "Susanville"
+          },
+          {
+            "code": "G48",
+            "display": "Winnemucca"
+          },
+          {
+            "code": "G50",
+            "display": "Pamunkey Indian Tribe"
+          },
+          {
+            "code": "G53",
+            "display": "Indian Township"
+          },
+          {
+            "code": "G54",
+            "display": "Passamaquoddy"
+          },
+          {
+            "code": "G55",
+            "display": "Pleasant Point Passamaquoddy"
+          },
+          {
+            "code": "G61",
+            "display": "Oklahoma Pawnee"
+          },
+          {
+            "code": "G62",
+            "display": "Pawnee"
+          },
+          {
+            "code": "G68",
+            "display": "Penobscot"
+          },
+          {
+            "code": "G72",
+            "display": "Oklahoma Peoria"
+          },
+          {
+            "code": "G73",
+            "display": "Peoria"
+          },
+          {
+            "code": "G77",
+            "display": "Mashantucket Pequot"
+          },
+          {
+            "code": "G78",
+            "display": "Pequot"
+          },
+          {
+            "code": "G79",
+            "display": "Paucatuck Eastern Pequot"
+          },
+          {
+            "code": "G84",
+            "display": "Gila River Indian Community"
+          },
+          {
+            "code": "G85",
+            "display": "Pima"
+          },
+          {
+            "code": "G86",
+            "display": "Salt River PimaMaricopa"
+          },
+          {
+            "code": "G92",
+            "display": "Piscataway"
+          },
+          {
+            "code": "G96",
+            "display": "Pit River Tribe of California"
+          },
+          {
+            "code": "G97",
+            "display": "Alturas Indian Rancheria"
+          },
+          {
+            "code": "G98",
+            "display": "Redding Rancheria"
+          },
+          {
+            "code": "G99",
+            "display": "Big Valley Rancheria of Pomo and Pit River Indians"
+          },
+          {
+            "code": "H01",
+            "display": "Central Pomo"
+          },
+          {
+            "code": "H02",
+            "display": "Dry Creek"
+          },
+          {
+            "code": "H03",
+            "display": "Eastern Pomo"
+          },
+          {
+            "code": "H04",
+            "display": "Kashia Band of Pomo Indians of the Stewarts Point Rancheria"
+          },
+          {
+            "code": "H05",
+            "display": "Northern Pomo"
+          },
+          {
+            "code": "H06",
+            "display": "Pomo"
+          },
+          {
+            "code": "H07",
+            "display": "Scotts Valley Band"
+          },
+          {
+            "code": "H08",
+            "display": "Stonyford"
+          },
+          {
+            "code": "H09",
+            "display": "Elem Indian Colony of the Sulphur Bank"
+          },
+          {
+            "code": "H10",
+            "display": "Sherwood Valley Rancheria of Pomo Indians of California"
+          },
+          {
+            "code": "H11",
+            "display": "Guidiville Rancheria of California"
+          },
+          {
+            "code": "H12",
+            "display": "Lytton Rancheria of California"
+          },
+          {
+            "code": "H13",
+            "display": "Cloverdale Rancheria"
+          },
+          {
+            "code": "H14",
+            "display": "Coyote Valley Band"
+          },
+          {
+            "code": "H15",
+            "display": "Nebraska Ponca"
+          },
+          {
+            "code": "H16",
+            "display": "Oklahoma Ponca"
+          },
+          {
+            "code": "H17",
+            "display": "Ponca"
+          },
+          {
+            "code": "H21",
+            "display": "Citizen Potawatomi Nation"
+          },
+          {
+            "code": "H22",
+            "display": "Forest County"
+          },
+          {
+            "code": "H23",
+            "display": "Hannahville Indian Community of Wisconsin Potawatomi"
+          },
+          {
+            "code": "H24",
+            "display": "Huron Potawatomi"
+          },
+          {
+            "code": "H25",
+            "display": "Pokagon Band of Potawatomi Indians"
+          },
+          {
+            "code": "H26",
+            "display": "Potawatomi"
+          },
+          {
+            "code": "H27",
+            "display": "Prairie Band of Potawatomi Indians"
+          },
+          {
+            "code": "H28",
+            "display": "Wisconsin Potawatomi"
+          },
+          {
+            "code": "H34",
+            "display": "Powhatan"
+          },
+          {
+            "code": "H38",
+            "display": "Acoma"
+          },
+          {
+            "code": "H39",
+            "display": "Arizona Tewa"
+          },
+          {
+            "code": "H40",
+            "display": "Cochiti"
+          },
+          {
+            "code": "H41",
+            "display": "Hopi"
+          },
+          {
+            "code": "H42",
+            "display": "Isleta"
+          },
+          {
+            "code": "H43",
+            "display": "Jemez"
+          },
+          {
+            "code": "H44",
+            "display": "Keres"
+          },
+          {
+            "code": "H45",
+            "display": "Laguna"
+          },
+          {
+            "code": "H46",
+            "display": "Nambe"
+          },
+          {
+            "code": "H47",
+            "display": "Picuris"
+          },
+          {
+            "code": "H48",
+            "display": "Piro"
+          },
+          {
+            "code": "H49",
+            "display": "Pojoaque"
+          },
+          {
+            "code": "H50",
+            "display": "Pueblo"
+          },
+          {
+            "code": "H51",
+            "display": "San Felipe"
+          },
+          {
+            "code": "H52",
+            "display": "San Ildefonso"
+          },
+          {
+            "code": "H53",
+            "display": "San Juan Pueblo"
+          },
+          {
+            "code": "H54",
+            "display": "SAN JUAN DE GUADELUPE"
+          },
+          {
+            "code": "H55",
+            "display": "San Juan"
+          },
+          {
+            "code": "H56",
+            "display": "Sandia"
+          },
+          {
+            "code": "H57",
+            "display": "Santa Ana"
+          },
+          {
+            "code": "H58",
+            "display": "Santa Clara"
+          },
+          {
+            "code": "H59",
+            "display": "Santo Domingo"
+          },
+          {
+            "code": "H60",
+            "display": "Taos"
+          },
+          {
+            "code": "H61",
+            "display": "Tesuque"
+          },
+          {
+            "code": "H62",
+            "display": "Tewa"
+          },
+          {
+            "code": "H63",
+            "display": "Ysleta Del Sur Pueblo of Texas"
+          },
+          {
+            "code": "H64",
+            "display": "Zia"
+          },
+          {
+            "code": "H65",
+            "display": "Zuni"
+          },
+          {
+            "code": "H66",
+            "display": "Hopland Band of Pomo Indians"
+          },
+          {
+            "code": "H67",
+            "display": "Manchester Band of Pomo Indians of the ManchesterPoint Arena Racheria"
+          },
+          {
+            "code": "H68",
+            "display": "Middletown Rancheria of Pomo Indians"
+          },
+          {
+            "code": "H69",
+            "display": "Pinoleville Rancheria of Pomo Indians"
+          },
+          {
+            "code": "H70",
+            "display": "Marietta Band of Nooksack"
+          },
+          {
+            "code": "H71",
+            "display": "Duwamish"
+          },
+          {
+            "code": "H72",
+            "display": "Kikiallus"
+          },
+          {
+            "code": "H73",
+            "display": "Lower Skagit"
+          },
+          {
+            "code": "H74",
+            "display": "Muckleshoot"
+          },
+          {
+            "code": "H75",
+            "display": "Nisqually"
+          },
+          {
+            "code": "H76",
+            "display": "Nooksack"
+          },
+          {
+            "code": "H77",
+            "display": "Port Madison"
+          },
+          {
+            "code": "H78",
+            "display": "Puget Sound Salish"
+          },
+          {
+            "code": "H79",
+            "display": "Puyaliup"
+          },
+          {
+            "code": "H80",
+            "display": "Samish"
+          },
+          {
+            "code": "H81",
+            "display": "SaukSuiattle"
+          },
+          {
+            "code": "H82",
+            "display": "Skokomish"
+          },
+          {
+            "code": "H83",
+            "display": "Skykomish"
+          },
+          {
+            "code": "H84",
+            "display": "Snohomish"
+          },
+          {
+            "code": "H85",
+            "display": "Snoqualmie"
+          },
+          {
+            "code": "H86",
+            "display": "Squaxin Island"
+          },
+          {
+            "code": "H87",
+            "display": "Steilacoom"
+          },
+          {
+            "code": "H88",
+            "display": "Stillaguamish"
+          },
+          {
+            "code": "H89",
+            "display": "Suquamish"
+          },
+          {
+            "code": "H90",
+            "display": "Swinomish"
+          },
+          {
+            "code": "H91",
+            "display": "Tulalip"
+          },
+          {
+            "code": "H92",
+            "display": "Upper Skagit"
+          },
+          {
+            "code": "H93",
+            "display": "Potter Valley Rancheria of Pomo Indians"
+          },
+          {
+            "code": "H94",
+            "display": "Redwood Valley Rancheria of Pomo Indians"
+          },
+          {
+            "code": "H95",
+            "display": "Robinson Rancheria of Pomo Indians"
+          },
+          {
+            "code": "H96",
+            "display": "Upper Lake Band of Pomo Indians of Upper Lake Rancheria"
+          },
+          {
+            "code": "H97",
+            "display": "Quapaw"
+          },
+          {
+            "code": "I01",
+            "display": "TIGUA"
+          },
+          {
+            "code": "J01",
+            "display": "Quinault"
+          },
+          {
+            "code": "J05",
+            "display": "Rappahannock Indian Tribe"
+          },
+          {
+            "code": "J07",
+            "display": "RenoSparks"
+          },
+          {
+            "code": "J14",
+            "display": "Round Valley"
+          },
+          {
+            "code": "J19",
+            "display": "Sac and Fox Tribe of the Mississippi in Iowa"
+          },
+          {
+            "code": "J20",
+            "display": "Sac and Fox Nation of Missouri in Kansas and Nebraska"
+          },
+          {
+            "code": "J21",
+            "display": "Sac and Fox Nation, Oklahoma"
+          },
+          {
+            "code": "J22",
+            "display": "Sac and Fox"
+          },
+          {
+            "code": "J28",
+            "display": "Salinan"
+          },
+          {
+            "code": "J31",
+            "display": "Salish"
+          },
+          {
+            "code": "J35",
+            "display": "Salish and Kootenai"
+          },
+          {
+            "code": "J36",
+            "display": "Pondre Band of Salish and Kootenai"
+          },
+          {
+            "code": "J39",
+            "display": "Schaghticoke"
+          },
+          {
+            "code": "J47",
+            "display": "Big Cypress"
+          },
+          {
+            "code": "J48",
+            "display": "Brighton"
+          },
+          {
+            "code": "J49",
+            "display": "Florida Seminole"
+          },
+          {
+            "code": "J50",
+            "display": "Hollywood Seminole"
+          },
+          {
+            "code": "J51",
+            "display": "Oklahoma Seminole"
+          },
+          {
+            "code": "J52",
+            "display": "Seminole"
+          },
+          {
+            "code": "J53",
+            "display": "Dania Seminole"
+          },
+          {
+            "code": "J54",
+            "display": "Tampa Seminole"
+          },
+          {
+            "code": "J58",
+            "display": "San Manual Band"
+          },
+          {
+            "code": "J59",
+            "display": "Serrano"
+          },
+          {
+            "code": "J62",
+            "display": "Shasta"
+          },
+          {
+            "code": "J63",
+            "display": "Quartz Valley"
+          },
+          {
+            "code": "J66",
+            "display": "Absentee Shawnee Tribe of Indians of Oklahoma"
+          },
+          {
+            "code": "J67",
+            "display": "Eastern Shawnee"
+          },
+          {
+            "code": "J68",
+            "display": "Shawnee"
+          },
+          {
+            "code": "J69",
+            "display": "Piqua Sept of Ohio Shawnee"
+          },
+          {
+            "code": "J74",
+            "display": "Shinnecock"
+          },
+          {
+            "code": "J78",
+            "display": "Shoalwater Bay"
+          },
+          {
+            "code": "J81",
+            "display": "Duckwater"
+          },
+          {
+            "code": "J82",
+            "display": "Ely"
+          },
+          {
+            "code": "J83",
+            "display": "Goshute"
+          },
+          {
+            "code": "J84",
+            "display": "PANAMINT"
+          },
+          {
+            "code": "J85",
+            "display": "Shoshone"
+          },
+          {
+            "code": "J86",
+            "display": "Skull Valley Band of Goshute Indians"
+          },
+          {
+            "code": "J88",
+            "display": "Death Valley TimbiSha Shoshone"
+          },
+          {
+            "code": "J89",
+            "display": "Northwestern Band of Shoshoni Nation of Utah"
+          },
+          {
+            "code": "J90",
+            "display": "Wind River Shoshone"
+          },
+          {
+            "code": "J91",
+            "display": "Yomba"
+          },
+          {
+            "code": "J93",
+            "display": "TeMoak Tribes of Western Shoshone Indians"
+          },
+          {
+            "code": "J94",
+            "display": "Battle Mountain"
+          },
+          {
+            "code": "J95",
+            "display": "Elko"
+          },
+          {
+            "code": "J96",
+            "display": "South Fork"
+          },
+          {
+            "code": "J97",
+            "display": "Wells Band"
+          },
+          {
+            "code": "J98",
+            "display": "Ruby Valley"
+          },
+          {
+            "code": "J99",
+            "display": "Odgers Ranch"
+          },
+          {
+            "code": "K01",
+            "display": "Duck Valley"
+          },
+          {
+            "code": "K02",
+            "display": "Fallen"
+          },
+          {
+            "code": "K03",
+            "display": "Fort McDermitt Paiute and Shoshone Tribes"
+          },
+          {
+            "code": "K04",
+            "display": "Shoshone Paiute"
+          },
+          {
+            "code": "K05",
+            "display": "Bishop"
+          },
+          {
+            "code": "K06",
+            "display": "Lone Pine"
+          },
+          {
+            "code": "K07",
+            "display": "Big Pine Band of Owens Valley PaiuteShoshone"
+          },
+          {
+            "code": "K10",
+            "display": "Confederated Tribes of the Siletz Reservation"
+          },
+          {
+            "code": "K16",
+            "display": "Blackfoot Sioux"
+          },
+          {
+            "code": "K17",
+            "display": "Brule Sioux"
+          },
+          {
+            "code": "K18",
+            "display": "Cheyenne River Sioux"
+          },
+          {
+            "code": "K19",
+            "display": "Crow Creek Sioux"
+          },
+          {
+            "code": "K20",
+            "display": "Dakota Sioux"
+          },
+          {
+            "code": "K21",
+            "display": "Flandreau Santee Sioux"
+          },
+          {
+            "code": "K22",
+            "display": "Fort Peck Sioux"
+          },
+          {
+            "code": "K23",
+            "display": "Lake Traverse Sioux"
+          },
+          {
+            "code": "K24",
+            "display": "Lower Brule Sioux"
+          },
+          {
+            "code": "K25",
+            "display": "Lower Sioux Indian Community of Minnesota Mdewakanton Sioux"
+          },
+          {
+            "code": "K26",
+            "display": "Mdewakanton Sioux"
+          },
+          {
+            "code": "K27",
+            "display": "Miniconjou"
+          },
+          {
+            "code": "K28",
+            "display": "Oglala Sioux"
+          },
+          {
+            "code": "K29",
+            "display": "Pine Ridge Sioux"
+          },
+          {
+            "code": "K30",
+            "display": "Pipestone Sioux"
+          },
+          {
+            "code": "K31",
+            "display": "Prairie Island Sioux"
+          },
+          {
+            "code": "K32",
+            "display": "Shakopee Mdewakanton Sioux Community"
+          },
+          {
+            "code": "K33",
+            "display": "Rosebud Sioux"
+          },
+          {
+            "code": "K34",
+            "display": "Sans Arc Sioux"
+          },
+          {
+            "code": "K35",
+            "display": "Santee Sioux of Nebraska"
+          },
+          {
+            "code": "K36",
+            "display": "Sioux"
+          },
+          {
+            "code": "K37",
+            "display": "SissetonWahpeton"
+          },
+          {
+            "code": "K38",
+            "display": "Sisseton Sioux"
+          },
+          {
+            "code": "K39",
+            "display": "Spirit Lake Sioux"
+          },
+          {
+            "code": "K40",
+            "display": "Standing Rock Sioux"
+          },
+          {
+            "code": "K41",
+            "display": "Teton Sioux"
+          },
+          {
+            "code": "K42",
+            "display": "Two Kettle Sioux"
+          },
+          {
+            "code": "K43",
+            "display": "Upper Sioux"
+          },
+          {
+            "code": "K44",
+            "display": "Wahpekute Sioux"
+          },
+          {
+            "code": "K45",
+            "display": "Wahpeton Sioux"
+          },
+          {
+            "code": "K46",
+            "display": "Wazhaza Sioux"
+          },
+          {
+            "code": "K47",
+            "display": "Yankton Sioux"
+          },
+          {
+            "code": "K48",
+            "display": "Yanktonai Sioux"
+          },
+          {
+            "code": "K54",
+            "display": "Siuslaw"
+          },
+          {
+            "code": "K59",
+            "display": "Spokane"
+          },
+          {
+            "code": "K67",
+            "display": "StockbridgeMunsee Community of Mohican Indians of Wisconsin"
+          },
+          {
+            "code": "K77",
+            "display": "AkChin"
+          },
+          {
+            "code": "K78",
+            "display": "Gila Bend"
+          },
+          {
+            "code": "K79",
+            "display": "San Xavier"
+          },
+          {
+            "code": "K80",
+            "display": "Sells"
+          },
+          {
+            "code": "K81",
+            "display": "Tohono O'Odham"
+          },
+          {
+            "code": "K87",
+            "display": "Tolowa"
+          },
+          {
+            "code": "K88",
+            "display": "Big Lagoon Rancheria"
+          },
+          {
+            "code": "K89",
+            "display": "Elk Valley Rancheria"
+          },
+          {
+            "code": "K90",
+            "display": "Tonkawa"
+          },
+          {
+            "code": "K93",
+            "display": "CherAe Indian Community of Trinidad Rancheria"
+          },
+          {
+            "code": "K94",
+            "display": "Tygh"
+          },
+          {
+            "code": "K97",
+            "display": "Umatilla"
+          },
+          {
+            "code": "L01",
+            "display": "Cow Creek Umpqua"
+          },
+          {
+            "code": "L02",
+            "display": "Umpqua"
+          },
+          {
+            "code": "L06",
+            "display": "Alien Canyon"
+          },
+          {
+            "code": "L07",
+            "display": "Uintah Ute"
+          },
+          {
+            "code": "L08",
+            "display": "Ute Mountain"
+          },
+          {
+            "code": "L09",
+            "display": "Ute"
+          },
+          {
+            "code": "L10",
+            "display": "Southern Ute"
+          },
+          {
+            "code": "L15",
+            "display": "Wailaki"
+          },
+          {
+            "code": "L19",
+            "display": "WallaWalla"
+          },
+          {
+            "code": "L22",
+            "display": "Gay Head Wampanoag"
+          },
+          {
+            "code": "L23",
+            "display": "Mashpee Wampanoag"
+          },
+          {
+            "code": "L24",
+            "display": "Wampanoag"
+          },
+          {
+            "code": "L25",
+            "display": "Seaconeke Wampanoag"
+          },
+          {
+            "code": "L26",
+            "display": "Pocasset Wampanoag"
+          },
+          {
+            "code": "L28",
+            "display": "Warm Springs"
+          },
+          {
+            "code": "L34",
+            "display": "Wascopum"
+          },
+          {
+            "code": "L38",
+            "display": "Alpine"
+          },
+          {
+            "code": "L39",
+            "display": "Carson Colony"
+          },
+          {
+            "code": "L40",
+            "display": "Dresslerville Colony"
+          },
+          {
+            "code": "L41",
+            "display": "Washoe"
+          },
+          {
+            "code": "L42",
+            "display": "Stewart Community"
+          },
+          {
+            "code": "L43",
+            "display": "Woodsfords Community"
+          },
+          {
+            "code": "L47",
+            "display": "Wichita"
+          },
+          {
+            "code": "L48",
+            "display": "Keechi"
+          },
+          {
+            "code": "L49",
+            "display": "Waco"
+          },
+          {
+            "code": "L50",
+            "display": "Tawakonie"
+          },
+          {
+            "code": "L52",
+            "display": "Wind River"
+          },
+          {
+            "code": "L55",
+            "display": "HoChunk Nation of Wisconsin"
+          },
+          {
+            "code": "L56",
+            "display": "Nebraska Winnebago"
+          },
+          {
+            "code": "L57",
+            "display": "Winnebago"
+          },
+          {
+            "code": "L66",
+            "display": "Wintun"
+          },
+          {
+            "code": "L67",
+            "display": "Cachil Dehe Band of Wintun Indians of the Colusa Rancheria"
+          },
+          {
+            "code": "L68",
+            "display": "Cortina Indian Rancheria of Wintun Indians"
+          },
+          {
+            "code": "L69",
+            "display": "Rumsey Indian Rancheria of Wintun Indians"
+          },
+          {
+            "code": "L71",
+            "display": "Grindstone Indian Rancheria of WintunWailaki Indians"
+          },
+          {
+            "code": "L72",
+            "display": "Table Bluff"
+          },
+          {
+            "code": "L73",
+            "display": "Wiyot"
+          },
+          {
+            "code": "L74",
+            "display": "Blue Lake Rancheria"
+          },
+          {
+            "code": "L79",
+            "display": "Yakama"
+          },
+          {
+            "code": "L85",
+            "display": "Yakama Cowlitz"
+          },
+          {
+            "code": "L91",
+            "display": "Barrio Libre"
+          },
+          {
+            "code": "L92",
+            "display": "Pascua Yaqui"
+          },
+          {
+            "code": "L93",
+            "display": "Yaqui"
+          },
+          {
+            "code": "M01",
+            "display": "Yavapai Apache"
+          },
+          {
+            "code": "M07",
+            "display": "Picayune Rancheria of Chukchansi Indians"
+          },
+          {
+            "code": "M08",
+            "display": "Tachi"
+          },
+          {
+            "code": "M09",
+            "display": "Tule River"
+          },
+          {
+            "code": "M10",
+            "display": "Yokuts"
+          },
+          {
+            "code": "M11",
+            "display": "Table Mountain Rancheria"
+          },
+          {
+            "code": "M16",
+            "display": "Yuchi"
+          },
+          {
+            "code": "M17",
+            "display": "Tia"
+          },
+          {
+            "code": "M18",
+            "display": "Wilono"
+          },
+          {
+            "code": "M19",
+            "display": "Anstohini"
+          },
+          {
+            "code": "M22",
+            "display": "Cocopah Tribe of Arizona"
+          },
+          {
+            "code": "M23",
+            "display": "Havasupai"
+          },
+          {
+            "code": "M24",
+            "display": "Hualapai"
+          },
+          {
+            "code": "M25",
+            "display": "Maricopa"
+          },
+          {
+            "code": "M26",
+            "display": "Fort Mojave Indian Tribe of Arizona"
+          },
+          {
+            "code": "M27",
+            "display": "Quechan"
+          },
+          {
+            "code": "M28",
+            "display": "YavapaiPrescott Tribe of the Yavapai Reservation"
+          },
+          {
+            "code": "M29",
+            "display": "YUMAN"
+          },
+          {
+            "code": "M34",
+            "display": "Resighini Rancheria"
+          },
+          {
+            "code": "M35",
+            "display": "Yurok"
+          },
+          {
+            "code": "M36",
+            "display": "COAST YUROK"
+          },
+          {
+            "code": "M41",
+            "display": "American Indian"
+          },
+          {
+            "code": "M42",
+            "display": "Tribal Response, NEC"
+          },
+          {
+            "code": "M43",
+            "display": "KUTENAI INDIAN"
+          },
+          {
+            "code": "M44",
+            "display": "Alaska Indian"
+          },
+          {
+            "code": "M47",
+            "display": "Alaska Native"
+          },
+          {
+            "code": "M48",
+            "display": "Other Alaskan, NEC"
+          },
+          {
+            "code": "M52",
+            "display": "Ahtna"
+          },
+          {
+            "code": "M53",
+            "display": "Alaskan Athabascan"
+          },
+          {
+            "code": "M54",
+            "display": "Alatna Village"
+          },
+          {
+            "code": "M55",
+            "display": "Alexander"
+          },
+          {
+            "code": "M56",
+            "display": "Allakaket Village"
+          },
+          {
+            "code": "M57",
+            "display": "Alanvik"
+          },
+          {
+            "code": "M58",
+            "display": "Anvik Village"
+          },
+          {
+            "code": "M59",
+            "display": "Arctic Village"
+          },
+          {
+            "code": "M60",
+            "display": "Beaver Village"
+          },
+          {
+            "code": "M61",
+            "display": "Birch Crcek Village"
+          },
+          {
+            "code": "M62",
+            "display": "Native Village of Cantwell"
+          },
+          {
+            "code": "M63",
+            "display": "Chalkyitsik Village"
+          },
+          {
+            "code": "M64",
+            "display": "Chickaloon Native Village"
+          },
+          {
+            "code": "M65",
+            "display": "Native Village of Chistochina"
+          },
+          {
+            "code": "M66",
+            "display": "Native Village of Chitina"
+          },
+          {
+            "code": "M67",
+            "display": "Circle Native Community"
+          },
+          {
+            "code": "M68",
+            "display": "COOK INLET"
+          },
+          {
+            "code": "M69",
+            "display": "COPPER CENTER"
+          },
+          {
+            "code": "M70",
+            "display": "Copper River"
+          },
+          {
+            "code": "M71",
+            "display": "Village of Dot Lake"
+          },
+          {
+            "code": "M72",
+            "display": "Doyon"
+          },
+          {
+            "code": "M73",
+            "display": "Native Village of Eagle"
+          },
+          {
+            "code": "M74",
+            "display": "Ekiutna Native Village"
+          },
+          {
+            "code": "M75",
+            "display": "Evansville Village"
+          },
+          {
+            "code": "M76",
+            "display": "Native Village of Fort Yukon"
+          },
+          {
+            "code": "M77",
+            "display": "Native Village of Gakona"
+          },
+          {
+            "code": "M78",
+            "display": "Galena Village"
+          },
+          {
+            "code": "M79",
+            "display": "Organized Village of Grayling"
+          },
+          {
+            "code": "M80",
+            "display": "Gulkana Village"
+          },
+          {
+            "code": "M81",
+            "display": "Healy Lake Village"
+          },
+          {
+            "code": "M82",
+            "display": "Holy Cross Village"
+          },
+          {
+            "code": "M83",
+            "display": "Hughes Village"
+          },
+          {
+            "code": "M84",
+            "display": "Huslia Village"
+          },
+          {
+            "code": "M85",
+            "display": "Village of Iliamna"
+          },
+          {
+            "code": "M86",
+            "display": "Village ofKaltag"
+          },
+          {
+            "code": "M87",
+            "display": "Native Village of Kluti Kaah"
+          },
+          {
+            "code": "M88",
+            "display": "Knik Tribe"
+          },
+          {
+            "code": "M89",
+            "display": "Koyukuk Native Village"
+          },
+          {
+            "code": "M90",
+            "display": "Lake Minchumina"
+          },
+          {
+            "code": "M91",
+            "display": "Lime Village"
+          },
+          {
+            "code": "M92",
+            "display": "McGrath Native Village"
+          },
+          {
+            "code": "M93",
+            "display": "Manley Hot Springs Village"
+          },
+          {
+            "code": "M94",
+            "display": "Mentasta Traditional Council"
+          },
+          {
+            "code": "M95",
+            "display": "Native Village of Minto"
+          },
+          {
+            "code": "M96",
+            "display": "Nenana Native Association"
+          },
+          {
+            "code": "M97",
+            "display": "Nikolai Village"
+          },
+          {
+            "code": "M98",
+            "display": "Ninilchik Village Traditional Council"
+          },
+          {
+            "code": "M99",
+            "display": "Nondalton Village"
+          },
+          {
+            "code": "N01",
+            "display": "Northway Village"
+          },
+          {
+            "code": "N02",
+            "display": "Nulato Village"
+          },
+          {
+            "code": "N03",
+            "display": "Pedro Bay Village"
+          },
+          {
+            "code": "N04",
+            "display": "Rampart Village"
+          },
+          {
+            "code": "N05",
+            "display": "Native Village of Ruby"
+          },
+          {
+            "code": "N06",
+            "display": "Village of Salamatoff"
+          },
+          {
+            "code": "N07",
+            "display": "Seldovia Village Tribe"
+          },
+          {
+            "code": "N08",
+            "display": "Slana"
+          },
+          {
+            "code": "N09",
+            "display": "Shageluk Native Village"
+          },
+          {
+            "code": "N10",
+            "display": "Native Village of Stevens"
+          },
+          {
+            "code": "N11",
+            "display": "Village of Stony River"
+          },
+          {
+            "code": "N12",
+            "display": "Takotna Village"
+          },
+          {
+            "code": "N13",
+            "display": "Native Village of Tanacross"
+          },
+          {
+            "code": "N14",
+            "display": "Tanaina"
+          },
+          {
+            "code": "N15",
+            "display": "Native Village of Tanana"
+          },
+          {
+            "code": "N16",
+            "display": "Tanana Chiefs"
+          },
+          {
+            "code": "N17",
+            "display": "Native Village of Tazlina"
+          },
+          {
+            "code": "N18",
+            "display": "Telida Village"
+          },
+          {
+            "code": "N19",
+            "display": "Native Village of Tetlin"
+          },
+          {
+            "code": "N20",
+            "display": "Tok"
+          },
+          {
+            "code": "N21",
+            "display": "Native Village of Tyonek"
+          },
+          {
+            "code": "N22",
+            "display": "Village of Venetie"
+          },
+          {
+            "code": "N23",
+            "display": "Wiseman"
+          },
+          {
+            "code": "N24",
+            "display": "Kenaitze Indian Tribe"
+          },
+          {
+            "code": "N27",
+            "display": "TLINGIT-HAIDA"
+          },
+          {
+            "code": "N28",
+            "display": "Angoon Community Association"
+          },
+          {
+            "code": "N29",
+            "display": "Central Council of the Tlingit and Haida Indian Tribes"
+          },
+          {
+            "code": "N30",
+            "display": "Chilkat Indian Village"
+          },
+          {
+            "code": "N31",
+            "display": "Chilkoot Indian Association"
+          },
+          {
+            "code": "N32",
+            "display": "Craig Community Association"
+          },
+          {
+            "code": "N33",
+            "display": "Douglas Indian Association"
+          },
+          {
+            "code": "N34",
+            "display": "Haida"
+          },
+          {
+            "code": "N35",
+            "display": "Hoonah Indian Association"
+          },
+          {
+            "code": "N36",
+            "display": "Hydaburg Cooperative Association"
+          },
+          {
+            "code": "N37",
+            "display": "Organized Village of Kake"
+          },
+          {
+            "code": "N38",
+            "display": "Organized Village of Kasaan"
+          },
+          {
+            "code": "N40",
+            "display": "Ketchikan Indian Corporation"
+          },
+          {
+            "code": "N41",
+            "display": "Klawock Cooperative Association"
+          },
+          {
+            "code": "N43",
+            "display": "Pelican"
+          },
+          {
+            "code": "N44",
+            "display": "Petersburg Indian Association"
+          },
+          {
+            "code": "N45",
+            "display": "Organized Village of Saxman"
+          },
+          {
+            "code": "N46",
+            "display": "Sitka Tribe of Alaska"
+          },
+          {
+            "code": "N47",
+            "display": "Tenakee Springs"
+          },
+          {
+            "code": "N48",
+            "display": "Tlingit"
+          },
+          {
+            "code": "N49",
+            "display": "Wrangell Cooperative Association"
+          },
+          {
+            "code": "N50",
+            "display": "Yakutat Tlingit Tribe"
+          },
+          {
+            "code": "N51",
+            "display": "Juneau"
+          },
+          {
+            "code": "N56",
+            "display": "Metlakatia Indian Community, Annette Island Reserve"
+          },
+          {
+            "code": "N57",
+            "display": "Tsimshian"
+          },
+          {
+            "code": "N59",
+            "display": "Sealaska"
+          },
+          {
+            "code": "N60",
+            "display": "Sealaska Corporation"
+          },
+          {
+            "code": "N64",
+            "display": "Southeast Alaska"
+          },
+          {
+            "code": "N65",
+            "display": "Skagway Village"
+          },
+          {
+            "code": "N67",
+            "display": "American Eskimo"
+          },
+          {
+            "code": "N68",
+            "display": "Eskimo"
+          },
+          {
+            "code": "N69",
+            "display": "Greenland Eskimo"
+          },
+          {
+            "code": "N75",
+            "display": "Inuit"
+          },
+          {
+            "code": "N78",
+            "display": "INUPIAT ESKIMO"
+          },
+          {
+            "code": "N79",
+            "display": "Native Village of Ambler"
+          },
+          {
+            "code": "N80",
+            "display": "Anaktuvuk"
+          },
+          {
+            "code": "N81",
+            "display": "Village of Anaktuvuk Pass"
+          },
+          {
+            "code": "N82",
+            "display": "Inupiat Community of the Arctic Slope"
+          },
+          {
+            "code": "N83",
+            "display": "Arctic Slope Corporation"
+          },
+          {
+            "code": "N84",
+            "display": "Atqasuk Village"
+          },
+          {
+            "code": "N85",
+            "display": "Native Village of Barrow hilipiat Traditional Government"
+          },
+          {
+            "code": "N86",
+            "display": "Bering Straits Inupiat"
+          },
+          {
+            "code": "N87",
+            "display": "Native Village of Brevig Mission"
+          },
+          {
+            "code": "N88",
+            "display": "Native Village ofBuckland"
+          },
+          {
+            "code": "N89",
+            "display": "Chinik Eskimo Community"
+          },
+          {
+            "code": "N90",
+            "display": "Native Village of Council"
+          },
+          {
+            "code": "N91",
+            "display": "Native Village of Deering"
+          },
+          {
+            "code": "N92",
+            "display": "Native Village of Elim"
+          },
+          {
+            "code": "N93",
+            "display": "GOLOVIN"
+          },
+          {
+            "code": "N94",
+            "display": "Native Village of Diomede"
+          },
+          {
+            "code": "N95",
+            "display": "Inupiaq"
+          },
+          {
+            "code": "N96",
+            "display": "Inupiat"
+          },
+          {
+            "code": "N97",
+            "display": "Kaktovik Village"
+          },
+          {
+            "code": "N98",
+            "display": "Kawerak"
+          },
+          {
+            "code": "N99",
+            "display": "Native Village of Kiana"
+          },
+          {
+            "code": "P01",
+            "display": "Native Village of Kivalina"
+          },
+          {
+            "code": "P02",
+            "display": "Native Village of Kobuk"
+          },
+          {
+            "code": "P03",
+            "display": "Native Village of Kotzebue"
+          },
+          {
+            "code": "P04",
+            "display": "Native Village of Koyuk"
+          },
+          {
+            "code": "P05",
+            "display": "Kwiguk"
+          },
+          {
+            "code": "P06",
+            "display": "Mauneluk Inupiat"
+          },
+          {
+            "code": "P07",
+            "display": "Nana Inupiat"
+          },
+          {
+            "code": "P08",
+            "display": "Native Village of Noatak"
+          },
+          {
+            "code": "P09",
+            "display": "Nome Eskimo Community"
+          },
+          {
+            "code": "P10",
+            "display": "Noorvik Native Community"
+          },
+          {
+            "code": "P11",
+            "display": "Native Village of Nuiqsut"
+          },
+          {
+            "code": "P12",
+            "display": "Native Village of Point Hope"
+          },
+          {
+            "code": "P13",
+            "display": "Native Village of Point Lay"
+          },
+          {
+            "code": "P14",
+            "display": "Native Village of Selawik"
+          },
+          {
+            "code": "P15",
+            "display": "Native Village of Shaktoolik"
+          },
+          {
+            "code": "P16",
+            "display": "Native Village of Shishmaref"
+          },
+          {
+            "code": "P17",
+            "display": "Native Village of Shungnak"
+          },
+          {
+            "code": "P18",
+            "display": "Village of Solomon"
+          },
+          {
+            "code": "P19",
+            "display": "Native Village of Teller"
+          },
+          {
+            "code": "P20",
+            "display": "Native Village of Unalakleet"
+          },
+          {
+            "code": "P21",
+            "display": "Village of Wainwright"
+          },
+          {
+            "code": "P22",
+            "display": "Village of Wales"
+          },
+          {
+            "code": "P23",
+            "display": "Village of White Mountain"
+          },
+          {
+            "code": "P24",
+            "display": "White Mountain Inupiat"
+          },
+          {
+            "code": "P25",
+            "display": "Native Village of Mary's Igloo"
+          },
+          {
+            "code": "P26",
+            "display": "King Island Native Community"
+          },
+          {
+            "code": "P29",
+            "display": "SIBERIAN ESKIMO"
+          },
+          {
+            "code": "P30",
+            "display": "Native Village of Gambell"
+          },
+          {
+            "code": "P31",
+            "display": "Native Village of Savoonga"
+          },
+          {
+            "code": "P32",
+            "display": "Siberian Yupik"
+          },
+          {
+            "code": "P36",
+            "display": "Chevak Native Village"
+          },
+          {
+            "code": "P37",
+            "display": "Native Village of Mekoryuk"
+          },
+          {
+            "code": "P38",
+            "display": "Akiachak Native Community"
+          },
+          {
+            "code": "P39",
+            "display": "Akiak Native Community"
+          },
+          {
+            "code": "P40",
+            "display": "Village of Alakanuk"
+          },
+          {
+            "code": "P41",
+            "display": "Native Village of Aleknagik"
+          },
+          {
+            "code": "P42",
+            "display": "Yupiit of Andreafski"
+          },
+          {
+            "code": "P43",
+            "display": "Village of Aniak"
+          },
+          {
+            "code": "P44",
+            "display": "Village of Atmautluak"
+          },
+          {
+            "code": "P45",
+            "display": "Orutsararmuit Native Village"
+          },
+          {
+            "code": "P46",
+            "display": "Village of Bill Moore's Slough"
+          },
+          {
+            "code": "P47",
+            "display": "Bristol Bay"
+          },
+          {
+            "code": "P48",
+            "display": "Calista"
+          },
+          {
+            "code": "P49",
+            "display": "Village of Chefomak"
+          },
+          {
+            "code": "P50",
+            "display": "Native Village of Hamilton"
+          },
+          {
+            "code": "P51",
+            "display": "Native Village of Chuathbaluk"
+          },
+          {
+            "code": "P52",
+            "display": "Village of Clark's Point"
+          },
+          {
+            "code": "P53",
+            "display": "Village of Crooked Creek"
+          },
+          {
+            "code": "P54",
+            "display": "Curyung Tribal Council"
+          },
+          {
+            "code": "P55",
+            "display": "Native Village of Eek"
+          },
+          {
+            "code": "P56",
+            "display": "Native Village of Ekuk"
+          },
+          {
+            "code": "P57",
+            "display": "Ekwok Village"
+          },
+          {
+            "code": "P58",
+            "display": "Emmonak Village"
+          },
+          {
+            "code": "P59",
+            "display": "Native Village of Goodnews Bay"
+          },
+          {
+            "code": "P60",
+            "display": "Native Village of Hooper Bay"
+          },
+          {
+            "code": "P61",
+            "display": "Iqurmuit Traditional Council"
+          },
+          {
+            "code": "P62",
+            "display": "Village of Kalskag"
+          },
+          {
+            "code": "P63",
+            "display": "Native Village of Kasigluk"
+          },
+          {
+            "code": "P64",
+            "display": "Native Village of Kipnuk"
+          },
+          {
+            "code": "P65",
+            "display": "New Koliganek Village Council"
+          },
+          {
+            "code": "P66",
+            "display": "Native Village of Kongiganak"
+          },
+          {
+            "code": "P67",
+            "display": "Village of Kotlik"
+          },
+          {
+            "code": "P68",
+            "display": "Organized Village of Kwethluk"
+          },
+          {
+            "code": "P69",
+            "display": "Native Village of Kwigillingok"
+          },
+          {
+            "code": "P70",
+            "display": "Levelock Village"
+          },
+          {
+            "code": "P71",
+            "display": "Village of Lower Kalskag"
+          },
+          {
+            "code": "P72",
+            "display": "Manokotak Village"
+          },
+          {
+            "code": "P73",
+            "display": "Native Village of Marshall"
+          },
+          {
+            "code": "P74",
+            "display": "Village of Ohogamiut"
+          },
+          {
+            "code": "P75",
+            "display": "Asa'carsarmiut Tribe"
+          },
+          {
+            "code": "P76",
+            "display": "Naknek Native Village"
+          },
+          {
+            "code": "P77",
+            "display": "Native Village of Napaimute"
+          },
+          {
+            "code": "P78",
+            "display": "Native Village of Napakiak"
+          },
+          {
+            "code": "P79",
+            "display": "Native Village of Napaskiak"
+          },
+          {
+            "code": "P80",
+            "display": "Newhalen Village"
+          },
+          {
+            "code": "P81",
+            "display": "New Stuyahok Village"
+          },
+          {
+            "code": "P82",
+            "display": "Newtek Village"
+          },
+          {
+            "code": "P83",
+            "display": "Native Village of Nightmute"
+          },
+          {
+            "code": "P84",
+            "display": "Native Village of Nunapitchuk"
+          },
+          {
+            "code": "P85",
+            "display": "Oscarville Traditional Village"
+          },
+          {
+            "code": "P86",
+            "display": "Pilot Station Traditional Village"
+          },
+          {
+            "code": "P87",
+            "display": "Native Village of Pitkas Point"
+          },
+          {
+            "code": "P88",
+            "display": "Platinum Traditional Village"
+          },
+          {
+            "code": "P89",
+            "display": "Portage Creek Village"
+          },
+          {
+            "code": "P90",
+            "display": "Native Village of Kwinhagak"
+          },
+          {
+            "code": "P91",
+            "display": "Village of Red Devil"
+          },
+          {
+            "code": "P92",
+            "display": "Native Village of Saint Michael"
+          },
+          {
+            "code": "P93",
+            "display": "Native Village of Scammon Bay"
+          },
+          {
+            "code": "P94",
+            "display": "Native Village of Sheldon's Point"
+          },
+          {
+            "code": "P95",
+            "display": "Village of Sleetmute"
+          },
+          {
+            "code": "P96",
+            "display": "Stebbins Community Association"
+          },
+          {
+            "code": "P97",
+            "display": "Traditional Village ofTogiak"
+          },
+          {
+            "code": "P98",
+            "display": "Native Village of Toksook Bay"
+          },
+          {
+            "code": "P99",
+            "display": "Tuluksak Native Community"
+          },
+          {
+            "code": "Q01",
+            "display": "MOUNTAIN VILLAGE"
+          },
+          {
+            "code": "R01",
+            "display": "Native Village of Tuntutuliak"
+          },
+          {
+            "code": "R02",
+            "display": "Native Village of Tununak"
+          },
+          {
+            "code": "R03",
+            "display": "Twin Hills Village"
+          },
+          {
+            "code": "R04",
+            "display": "Yup'ik"
+          },
+          {
+            "code": "R05",
+            "display": "Yup'ik Eskimo"
+          },
+          {
+            "code": "R06",
+            "display": "Native Village of Georgetown"
+          },
+          {
+            "code": "R07",
+            "display": "Algaaciq Native Village"
+          },
+          {
+            "code": "R08",
+            "display": "Umkumiute Native Village"
+          },
+          {
+            "code": "R09",
+            "display": "Chuloonawick Native Village"
+          },
+          {
+            "code": "R11",
+            "display": "Aleut"
+          },
+          {
+            "code": "R15",
+            "display": "ALUTIIQ ALEUT"
+          },
+          {
+            "code": "R16",
+            "display": "Alutiiq"
+          },
+          {
+            "code": "R17",
+            "display": "Village of Afognak"
+          },
+          {
+            "code": "R18",
+            "display": "Native Village of Tatitlek"
+          },
+          {
+            "code": "R19",
+            "display": "Ugashik Village"
+          },
+          {
+            "code": "R28",
+            "display": "Bristol Bay Aleut"
+          },
+          {
+            "code": "R29",
+            "display": "Native Village of Chignik"
+          },
+          {
+            "code": "R30",
+            "display": "Chignik Lake Village"
+          },
+          {
+            "code": "R31",
+            "display": "Egegik Village"
+          },
+          {
+            "code": "R32",
+            "display": "Igiugig Village"
+          },
+          {
+            "code": "R33",
+            "display": "Ivanoff Bay Village"
+          },
+          {
+            "code": "R34",
+            "display": "King Salmon"
+          },
+          {
+            "code": "R35",
+            "display": "Kokhanok Village"
+          },
+          {
+            "code": "R36",
+            "display": "Native Village of Perryville"
+          },
+          {
+            "code": "R37",
+            "display": "Native Village of Pilot Point"
+          },
+          {
+            "code": "R38",
+            "display": "Native Village of Port Heiden"
+          },
+          {
+            "code": "R43",
+            "display": "Native Village of Chanega"
+          },
+          {
+            "code": "R44",
+            "display": "Chugach Aleut"
+          },
+          {
+            "code": "R45",
+            "display": "Chugach Corporation"
+          },
+          {
+            "code": "R46",
+            "display": "Native Village of Nanwaiek"
+          },
+          {
+            "code": "R47",
+            "display": "Native Village of Port Graham"
+          },
+          {
+            "code": "R51",
+            "display": "Eyak"
+          },
+          {
+            "code": "R55",
+            "display": "Native Village of Akhiok"
+          },
+          {
+            "code": "R56",
+            "display": "Agdaagux Tribe of King Cove"
+          },
+          {
+            "code": "R57",
+            "display": "Native Village of Karluk"
+          },
+          {
+            "code": "R58",
+            "display": "Native Village of Kanatak"
+          },
+          {
+            "code": "R59",
+            "display": "Kodiak"
+          },
+          {
+            "code": "R60",
+            "display": "Koniag Aleut"
+          },
+          {
+            "code": "R61",
+            "display": "Native Village of Larsen Bay"
+          },
+          {
+            "code": "R62",
+            "display": "Village of Old Harbor"
+          },
+          {
+            "code": "R63",
+            "display": "Native Village of Ouzinkie"
+          },
+          {
+            "code": "R64",
+            "display": "Native Village of Port Lions"
+          },
+          {
+            "code": "R65",
+            "display": "Lesnoi Village"
+          },
+          {
+            "code": "R67",
+            "display": "Sugpiaq"
+          },
+          {
+            "code": "R71",
+            "display": "Suqpigaq"
+          },
+          {
+            "code": "R74",
+            "display": "UNANGAN ALEUT"
+          },
+          {
+            "code": "R75",
+            "display": "Native Village of Akutan"
+          },
+          {
+            "code": "R76",
+            "display": "Aleut Corporation"
+          },
+          {
+            "code": "R77",
+            "display": "Aleutian"
+          },
+          {
+            "code": "R78",
+            "display": "Aleutian Islander"
+          },
+          {
+            "code": "R79",
+            "display": "Native Village of Atka"
+          },
+          {
+            "code": "R80",
+            "display": "Native Village of Belkofski"
+          },
+          {
+            "code": "R81",
+            "display": "Native Village of Chignikn Lagoon"
+          },
+          {
+            "code": "R82",
+            "display": "King Cove"
+          },
+          {
+            "code": "R83",
+            "display": "Native Village of False Pass"
+          },
+          {
+            "code": "R84",
+            "display": "Native Village of Nelson Lagoon"
+          },
+          {
+            "code": "R85",
+            "display": "Native Village of Nikolski"
+          },
+          {
+            "code": "R86",
+            "display": "Pauloff Harbor Village"
+          },
+          {
+            "code": "R87",
+            "display": "Qagan Toyagungin Tribe of Sand Point Village"
+          },
+          {
+            "code": "R88",
+            "display": "Qawalangin Tribe of Unalaska"
+          },
+          {
+            "code": "R89",
+            "display": "Saint George"
+          },
+          {
+            "code": "R90",
+            "display": "Saint Paul"
+          },
+          {
+            "code": "R91",
+            "display": "Sand Point"
+          },
+          {
+            "code": "R92",
+            "display": "South Naknek Village"
+          },
+          {
+            "code": "R93",
+            "display": "Unangan"
+          },
+          {
+            "code": "R94",
+            "display": "Unalaska"
+          },
+          {
+            "code": "R95",
+            "display": "Native Village of Unga"
+          },
+          {
+            "code": "R96",
+            "display": "Kaguyak Village"
+          }
+        ]
+      }
+    ]
+  }
+}

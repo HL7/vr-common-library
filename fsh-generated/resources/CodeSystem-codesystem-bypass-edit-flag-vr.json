@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "CodeSystemBypassEditFlagVitalRecords",
+  "id": "codesystem-bypass-edit-flag-vr",
+  "title": "Bypass Edit Flag Code System Vital Records",
+  "description": "Bypass Edit Flag Code System",
+  "url": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-bypass-edit-flag-vr",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Edit Passed"
+    },
+    {
+      "code": "1",
+      "display": "Edit Failed, Data Queried, and Verified"
+    },
+    {
+      "code": "2",
+      "display": "Edit Failed, Data Queried, but not Verified"
+    },
+    {
+      "code": "3",
+      "display": "Edit Failed, Review Needed"
+    },
+    {
+      "code": "4",
+      "display": "Edit Failed, Query Needed"
+    }
+  ],
+  "publisher": "Health Level Seven International",
+  "caseSensitive": false,
+  "compositional": true,
+  "versionNeeded": false,
+  "experimental": false,
+  "count": 5
+}

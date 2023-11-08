@@ -1,0 +1,751 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "coded-race-and-ethnicity-vr",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr",
+  "name": "ObservationCodedRaceAndEthnicityVitalRecords",
+  "title": "Observation - Coded Race and Ethnicity Vital Records",
+  "status": "draft",
+  "description": "Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.\n\nThis profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.\n\nNote:  NCHS stopped providing RaceRecode40 data in 2022.\n\nSubmission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.\nThe formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described\nin [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-coded-race-and-ethnicity-person-vr"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "This is the subject of the report, not the parent",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "short": "The RelatedPerson or Patient record for the parent",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr",
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:FirstEditedCode",
+        "path": "Observation.component",
+        "sliceName": "FirstEditedCode",
+        "short": "FirstEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FirstEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FirstEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FirstEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SecondEditedCode",
+        "path": "Observation.component",
+        "sliceName": "SecondEditedCode",
+        "short": "SecondEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SecondEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SecondEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SecondEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:ThirdEditedCode",
+        "path": "Observation.component",
+        "sliceName": "ThirdEditedCode",
+        "short": "ThirdEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ThirdEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ThirdEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:ThirdEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:FourthEditedCode",
+        "path": "Observation.component",
+        "sliceName": "FourthEditedCode",
+        "short": "FourthEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FourthEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FourthEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FourthEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:FifthEditedCode",
+        "path": "Observation.component",
+        "sliceName": "FifthEditedCode",
+        "short": "FifthEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FifthEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FifthEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FifthEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SixthEditedCode",
+        "path": "Observation.component",
+        "sliceName": "SixthEditedCode",
+        "short": "SixthEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SixthEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SixthEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SixthEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SeventhEditedCode",
+        "path": "Observation.component",
+        "sliceName": "SeventhEditedCode",
+        "short": "SeventhEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SeventhEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SeventhEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SeventhEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:EighthEditedCode",
+        "path": "Observation.component",
+        "sliceName": "EighthEditedCode",
+        "short": "EighthEditedCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:EighthEditedCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "EighthEditedCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:EighthEditedCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:FirstAmericanIndianCode",
+        "path": "Observation.component",
+        "sliceName": "FirstAmericanIndianCode",
+        "short": "FirstAmericanIndianCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FirstAmericanIndianCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FirstAmericanIndianCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FirstAmericanIndianCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SecondAmericanIndianCode",
+        "path": "Observation.component",
+        "sliceName": "SecondAmericanIndianCode",
+        "short": "SecondAmericanIndianCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SecondAmericanIndianCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SecondAmericanIndianCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SecondAmericanIndianCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:FirstOtherAsianCode",
+        "path": "Observation.component",
+        "sliceName": "FirstOtherAsianCode",
+        "short": "FirstOtherAsianCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FirstOtherAsianCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FirstOtherAsianCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FirstOtherAsianCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SecondOtherAsianCode",
+        "path": "Observation.component",
+        "sliceName": "SecondOtherAsianCode",
+        "short": "SecondOtherAsianCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SecondOtherAsianCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SecondOtherAsianCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SecondOtherAsianCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:FirstOtherPacificIslanderCode",
+        "path": "Observation.component",
+        "sliceName": "FirstOtherPacificIslanderCode",
+        "short": "FirstOtherPacificIslanderCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FirstOtherPacificIslanderCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FirstOtherPacificIslanderCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FirstOtherPacificIslanderCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SecondOtherPacificIslanderCode",
+        "path": "Observation.component",
+        "sliceName": "SecondOtherPacificIslanderCode",
+        "short": "SecondOtherPacificIslanderCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SecondOtherPacificIslanderCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SecondOtherPacificIslanderCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SecondOtherPacificIslanderCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:FirstOtherRaceCode",
+        "path": "Observation.component",
+        "sliceName": "FirstOtherRaceCode",
+        "short": "FirstOtherRaceCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:FirstOtherRaceCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FirstOtherRaceCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:FirstOtherRaceCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:SecondOtherRaceCode",
+        "path": "Observation.component",
+        "sliceName": "SecondOtherRaceCode",
+        "short": "SecondOtherRaceCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:SecondOtherRaceCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SecondOtherRaceCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:SecondOtherRaceCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-code-vr"
+        }
+      },
+      {
+        "id": "Observation.component:RaceRecode40",
+        "path": "Observation.component",
+        "sliceName": "RaceRecode40",
+        "short": "RaceRecode40",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:RaceRecode40.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "RaceRecode40",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:RaceRecode40.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-race-recode-40-vr"
+        }
+      },
+      {
+        "id": "Observation.component:HispanicCode",
+        "path": "Observation.component",
+        "sliceName": "HispanicCode",
+        "short": "HispanicCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:HispanicCode.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "HispanicCode",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:HispanicCode.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-hispanic-origin-vr"
+        }
+      },
+      {
+        "id": "Observation.component:HispanicCodeForLiteral",
+        "path": "Observation.component",
+        "sliceName": "HispanicCodeForLiteral",
+        "short": "HispanicCodeForLiteral",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:HispanicCodeForLiteral.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "HispanicCodeForLiteral",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:HispanicCodeForLiteral.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-hispanic-origin-vr"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "CodeSystemLocalObservationsCodesVitalRecords",
+  "id": "CodeSystem-local-observation-codes-vr",
+  "title": "CodeSystem - Local Observation Codes Vital Records",
+  "description": "Local Observation Codes for observations that lack an appropriate LOINC code",
+  "url": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr",
+  "concept": [
+    {
+      "code": "emergingissues",
+      "display": "Emerging Issues",
+      "definition": "NCHS-required emerging issues data."
+    },
+    {
+      "code": "inputraceandethnicity",
+      "display": "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+    },
+    {
+      "code": "codedraceandethnicity",
+      "display": "Coded Race and Ethnicity",
+      "definition": "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+    },
+    {
+      "code": "inputraceandethnicityDecedent",
+      "display": "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+    },
+    {
+      "code": "codedraceandethnicityDecedent",
+      "display": "Coded Race and Ethnicity",
+      "definition": "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+    },
+    {
+      "code": "inputraceandethnicityMother",
+      "display": "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+    },
+    {
+      "code": "codedraceandethnicityMother",
+      "display": "Coded Race and Ethnicity",
+      "definition": "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+    },
+    {
+      "code": "inputraceandethnicityFather",
+      "display": "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+    },
+    {
+      "code": "codedraceandethnicityFather",
+      "display": "Coded Race and Ethnicity",
+      "definition": "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+    }
+  ],
+  "publisher": "Health Level Seven International",
+  "caseSensitive": false,
+  "experimental": false,
+  "count": 9
+}

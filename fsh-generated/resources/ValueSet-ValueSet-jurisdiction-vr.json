@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ValueSetJurisdictionVitalRecords",
+  "id": "ValueSet-jurisdiction-vr",
+  "title": "ValueSet - Jurisdictions Vital Records",
+  "description": "This valueset contains the set of codes used to represent 2 Letter Codes for all 57 Jurisdictions Reporting Deaths to NCHS",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-jurisdiction-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-usstates-territories-vr"
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr",
+        "concept": [
+          {
+            "code": "YC",
+            "display": "New York City"
+          }
+        ]
+      }
+    ]
+  }
+}

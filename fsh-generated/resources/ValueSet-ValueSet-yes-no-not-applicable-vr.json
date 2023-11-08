@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ValueSetYesNoNotApplicableVitalRecords",
+  "id": "ValueSet-yes-no-not-applicable-vr",
+  "title": "ValueSet - Yes No Not Applicable Vital Records",
+  "description": "A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoNotApplicableVitalRecords.html).",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-not-applicable-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+        "concept": [
+          {
+            "code": "N",
+            "display": "No"
+          },
+          {
+            "code": "Y",
+            "display": "Yes"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "NA",
+            "display": "not applicable"
+          }
+        ]
+      }
+    ]
+  }
+}

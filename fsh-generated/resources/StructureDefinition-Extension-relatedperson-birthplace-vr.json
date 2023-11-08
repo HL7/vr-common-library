@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Extension-relatedperson-birthplace-vr",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr",
+  "name": "ExtensionRelatedpersonBirthplaceVitalRecords",
+  "title": "Extension - RelatedPerson Birth Place Vital Records",
+  "status": "draft",
+  "description": "The registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Extension - RelatedPerson Birth Place Vital Records",
+        "definition": "The registered place of birth for the related person. A system may use the address.text if it doesn't store the birthPlace address in discrete elements."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "The registered place of birth of the related person.",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ]
+      }
+    ]
+  }
+}

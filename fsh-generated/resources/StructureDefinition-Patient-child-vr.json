@@ -1,0 +1,166 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Patient-child-vr",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr",
+  "name": "PatientChildVitalRecords",
+  "title": "Patient - Child Vital Records",
+  "status": "draft",
+  "description": "The subject patient (newborn/infant/child) for whom clinical data is included in the report.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-vr",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:race",
+        "path": "Patient.extension",
+        "sliceName": "race",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:ethnicity",
+        "path": "Patient.extension",
+        "sliceName": "ethnicity",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:birthsex",
+        "path": "Patient.extension",
+        "sliceName": "birthsex",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:birthsex.extension",
+        "path": "Patient.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthsex.value[x]",
+        "path": "Patient.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-birth-sex-child-vr"
+        }
+      },
+      {
+        "id": "Patient.extension:birthPlace",
+        "path": "Patient.extension",
+        "sliceName": "birthPlace",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MRN",
+        "path": "Patient.identifier",
+        "sliceName": "MRN",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name"
+      },
+      {
+        "id": "Patient.name.family.extension:dataAbsentReason",
+        "path": "Patient.name.family.extension",
+        "sliceName": "dataAbsentReason",
+        "short": "When \"name not chosen\" use code \"temp-unknown\""
+      },
+      {
+        "id": "Patient.name.given.extension:dataAbsentReason",
+        "path": "Patient.name.given.extension",
+        "sliceName": "dataAbsentReason",
+        "short": "When \"name not chosen\" use code \"temp-unknown\""
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate.extension:partialDate",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "partialDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:birthTime",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "birthTime",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "short": "Indicates if the individual is deceased or not, dateTime is preferred",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "short": "If not single birth - born first, second, third, etc.",
+        "definition": "If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.multipleBirth[x].extension:bypassEditFlag",
+        "path": "Patient.multipleBirth[x].extension",
+        "sliceName": "bypassEditFlag",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.multipleBirth[x].extension:bypassEditFlag.value[x]",
+        "path": "Patient.multipleBirth[x].extension.value[x]",
+        "short": "To reflect the relevant edit possibilities for plurality.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-plurality-edit-flags-vr",
+          "description": "Plurality Edit Flags (NCHS)"
+        }
+      }
+    ]
+  }
+}

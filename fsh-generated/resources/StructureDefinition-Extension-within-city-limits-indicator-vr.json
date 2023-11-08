@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Extension-within-city-limits-indicator-vr",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr",
+  "name": "ExtensionWithinCityLimitsIndicatorVitalRecords",
+  "title": "Extension - Within City Limits Indicator Vital Records",
+  "status": "draft",
+  "description": "Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Address"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Extension - Within City Limits Indicator Vital Records",
+        "definition": "Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value set used to respond to any question that can be answered Yes, No, or Unknown.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-vr",
+          "description": "Yes No Unknown (YNU)"
+        }
+      }
+    ]
+  }
+}

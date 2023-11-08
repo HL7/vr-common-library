@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ValueSetEducationLevelVitalRecords",
+  "id": "ValueSet-education-level-vr",
+  "title": "ValueSet - Education Level Vital Records",
+  "description": "This valueset contains the set of codes used to represent the Highest educational level achieved.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapEducationLevelVitalRecords.html).",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-education-level-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+        "concept": [
+          {
+            "code": "ELEM",
+            "display": "Elementary School"
+          },
+          {
+            "code": "SEC",
+            "display": "Some secondary or high school education"
+          },
+          {
+            "code": "HS",
+            "display": "High School or secondary school degree complete"
+          },
+          {
+            "code": "SCOL",
+            "display": "Some College education"
+          },
+          {
+            "code": "POSTG",
+            "display": "Doctoral or post graduate education"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+        "concept": [
+          {
+            "code": "AA",
+            "display": "Associate's or technical degree complete"
+          },
+          {
+            "code": "BA",
+            "display": "Bachelor's degree"
+          },
+          {
+            "code": "MA",
+            "display": "Master's degree"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "UNK",
+            "display": "unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

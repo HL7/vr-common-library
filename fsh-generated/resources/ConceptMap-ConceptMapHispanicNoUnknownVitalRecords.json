@@ -1,0 +1,90 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ConceptMapHispanicNoUnknownVitalRecords",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ConceptMap/ConceptMapHispanicNoUnknownVitalRecords",
+  "title": "HispanicNoUnknown Concept Map",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "valueCodeableConcept": {
+        "text": "for IJE to FHIR alignment"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "H",
+          "display": "Yes"
+        },
+        {
+          "target": [
+            {
+              "code": "N",
+              "display": "No",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "N",
+          "display": "No"
+        }
+      ],
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "source": "IJE"
+    },
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "UNK",
+              "display": "unknown",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "U",
+          "display": "Unknown"
+        }
+      ],
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "source": "IJE"
+    }
+  ],
+  "experimental": false,
+  "name": "HispanicNoUnknown",
+  "status": "draft",
+  "description": "A mapping between NCHS IJE and FHIR HispanicNoUnknown Value Sets",
+  "purpose": "To help implementers map from IJE to FHIR Vocabulary",
+  "targetCanonical": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-hispanic-no-unknown-vr"
+}

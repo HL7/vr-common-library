@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ValueSetInputRaceAndEthnicityPersonVitalRecords",
+  "id": "ValueSet-input-race-and-ethnicity-person-vr",
+  "title": "ValueSet - Input Race and Ethnicity Person Vital Records",
+  "description": "This valueset contains codes that represent persons for whom input race and ethnicity can be reported.",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-input-race-and-ethnicity-person-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr",
+        "concept": [
+          {
+            "code": "inputraceandethnicityFather"
+          },
+          {
+            "code": "inputraceandethnicityMother"
+          },
+          {
+            "code": "inputraceandethnicityDecedent"
+          },
+          {
+            "code": "inputraceandethnicity"
+          }
+        ]
+      }
+    ]
+  }
+}

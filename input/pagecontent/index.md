@@ -1,29 +1,24 @@
 ### Overview
 
-### Description
+The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.
 
-This guide is a Fast Healthcare Interoperability Resources (FHIR) Profiles Library to support the needs of multiple vital records implementation guides (IGs). It does not provide any use case (scenario) specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific IGs focusing on the exchange of vital records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.
+This guide is a FHIR Resources (FHIR) Library to support the needs of multiple Vital Records Implementation Guides. It does not provide any use case or scenario specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific implementation guides focusing on the exchange of Vital Records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.
 
 ### Background
-Two FHIR IG projects, [Birth Defects](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1532) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), share many common data elements or concepts. The initial scope of this Vital Records Common Profiles Library included data elements common to these two FHIR projects in a US Realm framework. The current update adds data elements shared by two other vital records FHIR IGs, [Vital Records Death Reporting (VRDR)](http://hl7.org/fhir/us/vrdr/), and the [Medicolegal Death Investigation (MDI)](http://hl7.org/fhir/us/mdi/).
+After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](http://hl7.org/fhir/us/vrdr/)).
 
-Many of the data elements in the vital records IGs (BFDR, VRDR, and this Library) can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for exchange of data among jurisdictions and with authorized data partners, such as NCHS. NCHS has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG, however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS. [FHIR profile mappings to the IJE format are available for Mortality, Natality, and Fetal Death.](https://github.com/HL7/vr-common-library/raw/master/input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx) The mappings are based on information from: 
- * [200X NCHS Mortality - Demographic File Description](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf)
- * [200X NCHS Natality File Description](https://www.cdc.gov/nchs/data/dvs/200XNAT_web_with%20clearance%20revisions-acc.pdf)
- * [200X NCHS Fetal Death File Description](https://www.cdc.gov/nchs/data/dvs/200XFET_web_with%20clearance%20revisions-acc.pdf)
-
-A FHIR common profiles library avoids defining the same data element multiple times across IGs by allowing each IG to reference them. This profile library will provide a standard framework for vital records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR IG uses US Core profiles. Where unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the IG.
+To avoid defining the same profiles multiple times, this IG contains a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.
 
 For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).
 
 ### How to Read This Guide
+
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
 
-* Home: The introduction and background for HL7® FHIR® Vital Records Common Profiles Library
-* [Terminology](terminology.html): A listing of the value sets used in this guide
-* [Downloads](downloads.html): Links to downloadable artifacts
-* [Change Log](change_log.html): Details of changes made in each version of this IG
-* [Artifact Index](artifacts.html): A list of the defined FHIR artifacts (profiles, examples, and value sets) in this guide
+* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.
+* Terminology: This page provides a listing of the value sets used in this guide.
+* Downloads: This page provides links to downloadable artifacts.
+* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
 
 
 

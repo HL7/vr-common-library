@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ValueSetYesNoUnknownNotApplicableVitalRecords",
+  "id": "ValueSet-yes-no-unknown-not-applicable-vr",
+  "title": "ValueSet - Yes No Unknown NotApplicable Vital Records",
+  "description": "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable.\n\nMapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownNotApplicableVitalRecords.html).",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-not-applicable-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+        "concept": [
+          {
+            "code": "Y",
+            "display": "Yes"
+          },
+          {
+            "code": "N",
+            "display": "No"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "UNK",
+            "display": "unknown"
+          },
+          {
+            "code": "NA",
+            "display": "not applicable"
+          }
+        ]
+      }
+    ]
+  }
+}

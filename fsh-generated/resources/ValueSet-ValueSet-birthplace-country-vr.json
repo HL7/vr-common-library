@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ValueSetBirthplaceCountryVitalRecords",
+  "id": "ValueSet-birthplace-country-vr",
+  "title": "ValueSet - Birthplace Country Vital Records",
+  "description": "This valueset contains the set of codes used to represent 2 Letter Birthplace Country Codes from GEC and ISO 3166-1.  Includes historic countries that no longer exist.",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-birthplace-country-vr",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-country-code-vr"
+      }
+    ]
+  }
+}

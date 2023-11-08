@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RelatedPerson-mother-gestational-vr",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational-vr",
+  "name": "RelatedPersonMotherGestationalVitalRecords",
+  "title": "RelatedPerson - Mother Gestational Vital Records",
+  "status": "draft",
+  "description": "The woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson",
+        "path": "RelatedPerson",
+        "short": "The woman who gave birth to or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "short": "gestational mother",
+        "definition": "The player of the role is a female whose womb carries the fetus of the scoping entity (child).",
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "GESTM",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

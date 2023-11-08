@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RelatedPerson-mother-vr",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr",
+  "name": "RelatedPersonMotherVitalRecords",
+  "title": "RelatedPerson - Mother Vital Records",
+  "status": "draft",
+  "description": "The mother of the report subject. Different individuals may play different roles as the mother (e.g., biological mother, adoptive mother, etc.).\nThis profile is designed to supplant the similar profile in VRDR",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "short": "Relationships describing the mother's role relative to the subject.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-mother-relationship-vr",
+          "description": "MotherRelationship"
+        }
+      },
+      {
+        "id": "RelatedPerson.gender",
+        "path": "RelatedPerson.gender",
+        "short": "Gender"
+      },
+      {
+        "id": "RelatedPerson.birthDate.extension:bypassEditFlag",
+        "path": "RelatedPerson.birthDate.extension",
+        "sliceName": "bypassEditFlag",
+        "short": "To reflect the relevant edit possibilities for Mother's date of birth."
+      }
+    ]
+  }
+}

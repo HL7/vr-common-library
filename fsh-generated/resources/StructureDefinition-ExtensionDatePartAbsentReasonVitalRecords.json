@@ -1,0 +1,187 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ExtensionDatePartAbsentReasonVitalRecords",
+  "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords",
+  "name": "ExtensionDatePartAbsentReasonVitalRecords",
+  "title": "Extension - Partial Date Absent Reason Vital Records",
+  "status": "draft",
+  "publisher": "Health Level Seven International",
+  "description": "Provides values of a partial date (Extension).\nIf a component is missing, it is assumed unknown.\n* This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM or YYYY-MM-DD).\n* This extension SHOULD NOT be used to express that the date in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the date field.\n* This extension SHOULD be used to express missing components of date including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX.\n* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'. If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.\nWhen the known components of the date can be expressed as a valid date, the value SHALL be present.  So, for example 2022-XX-12, the date value should be \"2022\".",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "date"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Partial Date",
+        "definition": "Provides a partial date."
+      },
+      {
+        "id": "Extension.extension:year",
+        "path": "Extension.extension",
+        "sliceName": "year",
+        "short": "Date year (0-9998)",
+        "definition": "The year portion (YYYY) of the partial date (0-9998).",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:year.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:year.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "year"
+      },
+      {
+        "id": "Extension.extension:year.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 9998
+      },
+      {
+        "id": "Extension.extension:year.value[x].extension:dataabsent",
+        "path": "Extension.extension.value[x].extension",
+        "sliceName": "dataabsent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:month",
+        "path": "Extension.extension",
+        "sliceName": "month",
+        "short": "Date month (1-12)",
+        "definition": "The month portion (MM) of the partial date (1-12).",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:month.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:month.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "month"
+      },
+      {
+        "id": "Extension.extension:month.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ],
+        "minValueInteger": 1,
+        "maxValueInteger": 12
+      },
+      {
+        "id": "Extension.extension:month.value[x].extension:dataabsent",
+        "path": "Extension.extension.value[x].extension",
+        "sliceName": "dataabsent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:day",
+        "path": "Extension.extension",
+        "sliceName": "day",
+        "short": "Date day (1-31)",
+        "definition": "The day portion (DD) of the partial date (1-31).",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:day.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:day.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "day"
+      },
+      {
+        "id": "Extension.extension:day.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ],
+        "minValueInteger": 1,
+        "maxValueInteger": 31
+      },
+      {
+        "id": "Extension.extension:day.value[x].extension:dataabsent",
+        "path": "Extension.extension.value[x].extension",
+        "sliceName": "dataabsent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/ExtensionDatePartAbsentReasonVitalRecords"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "CodeSystemJurisdictionsVitalRecords",
+  "id": "CodeSystem-jurisdictions-vr",
+  "title": "CodeSystem - Jurisdictions Vital Records",
+  "description": "NVSS Jurisdictions that are not US States or Territories",
+  "url": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-jurisdictions-vr",
+  "concept": [
+    {
+      "code": "YC",
+      "display": "New York City",
+      "definition": "New York City"
+    }
+  ],
+  "caseSensitive": true,
+  "experimental": false,
+  "count": 1
+}

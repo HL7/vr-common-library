@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ValueSetUSStatesAndTerritoriesVitalRecords",
+  "id": "ValueSet-usstates-territories-vr",
+  "title": "ValueSet - US States, Territories Vital Records",
+  "description": "This valueset contains the set of codes used to represent 2 Letter States and Territories",
+  "url": "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-usstates-territories-vr",
+  "version": "1.0.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "https://www.usps.com/",
+        "concept": [
+          {
+            "code": "FM"
+          },
+          {
+            "code": "MH"
+          },
+          {
+            "code": "PW"
+          },
+          {
+            "code": "AP"
+          },
+          {
+            "code": "AE"
+          },
+          {
+            "code": "AA"
+          }
+        ]
+      }
+    ]
+  }
+}
