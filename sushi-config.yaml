@@ -63,8 +63,6 @@ pages:
     title: Usage
   vrcl_change_log.md:
     title: Change Log 
-  vrcl_terminology.md:
-    title: Terminology 
   vrcl_the_specification.md:
     title: Specification 
   vr_ig_harmonization.md:
