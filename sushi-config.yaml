@@ -67,6 +67,8 @@ pages:
     title: VRCL Terminology 
   vrcl_the_specification.md:
     title: VRCL Specification 
+  vr_ig_harmonization.md:
+    title: FHIR Implementation Guide Harmonization Plan 
   
 
 
@@ -99,6 +101,7 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Plan: vr_ig_harmonization.html
   Usage: usage.html
   Artifacts: artifacts.html
   Terminology: vrcl_terminology.html
