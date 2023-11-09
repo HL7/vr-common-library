@@ -69,6 +69,8 @@ pages:
     title: VRCL Specification 
   vr_ig_harmonization.md:
     title: FHIR Implementation Guide Harmonization Plan 
+  downloads.md:
+    title:  Downloads 
   
 
 
@@ -107,6 +109,7 @@ menu:
   Terminology: vrcl_terminology.html
   Specification: vrcl_the_specification.html
   Changes: vrcl_change_log.html
+  Downloads:  downloads.html
   
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
