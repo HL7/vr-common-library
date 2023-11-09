@@ -4,7 +4,7 @@
 
 This ballot addresses the following:
 
-- Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See [Vital Records IG Harmonization](vr_ig_harmonization).
+- Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See [Vital Records IG Harmonization](vr_ig_harmonization.html).
 - This reorganization and harmonization includes
   - Addition of profiles supporting NCHS-standard submission of race and ethnicity inputs, and return of coded race and ethnicity.
   - Inclusion of extensions used by multiple vital-records related FHIR IGs (e.g., partial dates)
