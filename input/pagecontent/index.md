@@ -8,7 +8,7 @@ This guide is a FHIR Resources (FHIR) Library to support the needs of multiple V
 
 Where possible, new and updated pre-publishing content are highlighted with green text and background - This highlighting will be removed prior to publication {:.new-content}
 
-Key updates and detailed changes between this and prior versions are available on the US Core [Change Log] and [Changes Between Versions] pages. {:.stu-note}
+Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages. {:.stu-note}
 
 
 ### Background

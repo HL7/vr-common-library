@@ -91,7 +91,7 @@ pages:
 #   validation: [allow-any-extensions, no-broken-links]
 parameters:
   show-inherited-invariants: false
-  path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
+  path-expansion-params: '../../input/_resources/exp-params.json'  # for using US ed of SNOMED
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
