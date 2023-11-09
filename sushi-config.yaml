@@ -62,11 +62,11 @@ pages:
   usage.md:
     title: Usage
   vrcl_change_log.md:
-    title: VRCL Change Log 
+    title: Change Log 
   vrcl_terminology.md:
-    title: VRCL Terminology 
+    title: Terminology 
   vrcl_the_specification.md:
-    title: VRCL Specification 
+    title: Specification 
   vr_ig_harmonization.md:
     title: FHIR Implementation Guide Harmonization Plan 
   downloads.md:
@@ -182,7 +182,7 @@ menu:
 
 groups:
   VRCLProfiles:
-    name: VRCL Profiles
+    name: Profiles
     resources:
       - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationCodedRaceAndEthnicityVitalRecords
@@ -202,7 +202,7 @@ groups:
       - RelatedPersonParentVitalRecords
 
   VRCLExtensions:
-    name: VRCL Extensions
+    name: Extensions
     resources:
       - ExtensionDatePartAbsentReasonVitalRecords
       - ExtensionPartialDateTimeVitalRecords
@@ -221,7 +221,7 @@ groups:
       - ExtensionUnitOrAptNumberVitalRecords
   
   VRCLCodeSystems:
-    name: VRCL CodeSystems
+    name: CodeSystems
     resources:
       - CodeSystemBypassEditFlagVitalRecords
       - CodeSystemCanadianProvincesVitalRecords
@@ -236,7 +236,7 @@ groups:
       - CodeSystemLocalObservationsCodesVitalRecords
 
   VRCLValueSets:
-    name: VRCL ValueSets
+    name: ValueSets
     resources:  
       - ValueSetBirthAttendantTitlesVitalRecords
       - ValueSetBirthplaceCountryVitalRecords
@@ -266,7 +266,7 @@ groups:
       - ValueSetYesNoUnknownNotApplicableVitalRecords
   
   VRCLConceptMaps:
-    name: VRCL Concept Maps
+    name: Concept Maps
     resources:
       - ConceptMapBirthSexChildVitalRecords
       - ConceptMapBirthSexFetusVitalRecords
@@ -283,12 +283,12 @@ groups:
       - ConceptMapYesNoUnknownVitalRecords
   
   VRCLParameters:
-    name: VRCL Parameters
+    name: Parameters
     resources:
       - expansion-parameters-vr-common
 
   VRCLExamples:
-    name: VRCL Examples
+    name: Examples
     resources:
       - CodedRaceAndEthnicity-Father
       - CodedRaceAndEthnicity-Mother
