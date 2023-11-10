@@ -6,10 +6,13 @@ This guide is a FHIR Resources (FHIR) Library to support the needs of multiple V
 
 {% include note-to-balloters.md %}
 
-Where possible, new and updated pre-publishing content are highlighted with green text and background - This highlighting will be removed prior to publication {:.new-content}
+<div class="new-content" markdown="1">
+Where possible, new and updated pre-publishing content are highlighted with green text and background - This highlighting will be removed prior to publication 
+</div><!-- note-to-balloters -->
 
-Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages. {:.stu-note}
-
+<div class="stu-note" markdown="1">
+Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages.
+</div><!-- note-to-balloters -->
 
 ### Background
 After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](http://hl7.org/fhir/us/vrdr/)).

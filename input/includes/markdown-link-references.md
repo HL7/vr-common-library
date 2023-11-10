@@ -7,8 +7,6 @@
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
-[Note on Decedent Name]: usage.html#decedent-name
-[Note on Decedent Gender]: usage.html#decedent-gender
 [CityCodes]: usage.html#city-codes
 [CountyCodes]: usage.html#county-codes
 [StateLiterals]: usage.html#state-literals
@@ -23,10 +21,10 @@
 [Note on missing method of delivery data]: usage.html#method-of-delivery
 [Note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [Handling of edit flags]: usage.html#handling-of-edit-flags
-[Birth and Fetal Death Vital Reporting]: bfdr_index.html
-[Vital Records Common Library]: index.html
-[Medicolegal Death Investigation]: mdi_index.html
-[Vital Records Death Reporting]: vrdr_index.html
+[Birth and Fetal Death Vital Reporting]: https://build.fhir.org/ig/HL7/fhir-bfdr
+[Vital Records Common Library]: https://build.fhir.org/ig/HL7/vr-common-library
+[Medicolegal Death Investigation]: https://build.fhir.org/ig/HL7/fhir-mdi-ig/
+[Vital Records Death Reporting]: https://hl7.org/fhir/us/vrdr/
 [PHVS_Occupation_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186
 [PHVS_Industry_CDC_Census2010VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187
 [PHVS_Occupation_CDC_Census2012VS]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8026
