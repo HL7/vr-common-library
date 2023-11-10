@@ -1,8 +1,15 @@
 == Suppressed Messages ==
-# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
-US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles https://jira.hl7.org/browse/FHIR-43067 Approved Saul Kravitz / Brett Marquard: 20-0-3  11/9/2023
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-emerging-issues-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
 # External value sets
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
+
 # Information messages about draft condition category codes used in US Core
 INFORMATION: Condition/condition-eclampsia-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
 INFORMATION: Condition/condition-gestational-diabetes-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
@@ -14,6 +21,9 @@ The code '103693007' is valid but is not active
 
 # Can't validate code system....no action required
 The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
+
+# This is an internal NCHS Code system that is not used as part of FHIR-based exchange.  Mappings are provided to ease transition from legacy systems.
+The Source Code System CodeSystemIJEVitalRecords is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem

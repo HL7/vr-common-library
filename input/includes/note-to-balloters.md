@@ -1,8 +1,8 @@
 <div class="note-to-balloters" markdown="1">
 
-#### The January 2024 Ballot
+####  January 2024 Ballot of STU2
 
-This ballot addresses the following:
+This STU2 ballot addresses the following:
 
 - Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See [Vital Records IG Harmonization](vr_ig_harmonization.html).
 - This reorganization and harmonization includes

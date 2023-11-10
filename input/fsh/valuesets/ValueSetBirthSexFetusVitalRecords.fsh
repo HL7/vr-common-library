@@ -7,5 +7,5 @@ Mapping to IJE codes [here](ConceptMap-ConceptMapBirthSexFetusVitalRecords.html)
 * ^status = #active
 * ^experimental = false
 * include codes from valueset BirthSex
-* exclude $v3-AdministrativeGender#ASKU "asked but unknown"
+* exclude $v3-NullFlavor#ASKU "asked but unknown"
 * exclude $v3-NullFlavor#OTH "other"
