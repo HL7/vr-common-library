@@ -38,30 +38,30 @@ Description: "District expressed as a numeric value.  As of the date of publicat
 Extension: ExtensionPreDirectionalVitalRecords
 Id: PreDirectional
 Title: "Extension - PreDirectional Vital Records"
-Description: "PreDirectional"
+Description: "PreDirectional component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionStreetNameVitalRecords
 Id: StreetName
 Title: "Extension - StreetName Vital Records"
-Description: "StreetName"
+Description: "StreetName component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(50)
 Extension: ExtensionStreetNumberVitalRecords
 Id: StreetNumber
 Title: "Extension - StreetNumber Vital Records"
-Description: "StreetNumber"
+Description: "StreetNumber component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionStreetDesignatorVitalRecords
 Id: StreetDesignator
 Title: "Extension - StreetDesignator Vital Records"
-Description: "StreetDesignator"
+Description: "StreetDesignator component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionPostDirectionalVitalRecords
 Id: PostDirectional
 Title: "Extension - PostDirectional Vital Records"
-Description: "PostDirectional"
+Description: "PostDirectional component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionUnitOrAptNumberVitalRecords
 Id: UnitOrAptNumber
 Title: "Extension - UnitOrAptNumber Vital Records"
-Description: "UnitOrAptNumber"
+Description: "UnitOrAptNumber component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
