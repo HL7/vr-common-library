@@ -1,8 +1,15 @@
 == Suppressed Messages ==
-# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
-US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles https://jira.hl7.org/browse/FHIR-43067 Approved Saul Kravitz / Brett Marquard: 20-0-3  11/9/2023
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-emerging-issues-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
 # External value sets
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
+
 # Information messages about draft condition category codes used in US Core
 INFORMATION: Condition/condition-eclampsia-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
 INFORMATION: Condition/condition-gestational-diabetes-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
@@ -11,3 +18,41 @@ INFORMATION: Condition/condition-prepregnancy-diabetes-jada-ann-quinn-common: Co
 INFORMATION: Condition/condition-prepregnancy-hypertension-jada-ann-quinn-common: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
 # This is the code that is used in the Death Certification VRDR profile
 The code '103693007' is valid but is not active
+
+# Can't validate code system....no action required
+The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
+
+# This is an internal NCHS Code system that is not used as part of FHIR-based exchange.  Mappings are provided to ease transition from legacy systems.
+The Source Code System CodeSystemIJEVitalRecords is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# This is not relevant for our application
+Best Practice Recommendation: In general, all observations should have a performer
+Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+# This is a publisher induced issue.   The extension in question is introduced by the publisher, not sushi.   See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher 
+The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
+
+# Open Slicing....of course it isn't known
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-certificate-document|0.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrsandbox/StructureDefinition/BundleDocumentBFDR|0.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Bundle-document-mdi-to-edrs|0.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Bundle-message-tox-to-mdi|0.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-certificate|0.1.0
+
+# Beyond my control
+Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+
+# Unknown internal code system IJE
+	The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+
+# Best practice for Vital Stats?
+Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+
+# Proprietary AMA/CPT CodeSystem
+The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
+

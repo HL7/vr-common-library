@@ -1,3 +1,9 @@
+### STU 2.0 January 2024
+| Jira Issue | Description of Change | Changes Made |
+| -------- | -------- | -------- |
+|  | Restrict birth sex for newborn to M,F,U | Added [ValueSetBirthSexVitalRecords], and referenced from [PatientChildVitalRecords] |
+
+
 ### STU 1.1 Update, July 2023
 
 | Jira Issue | Description of Change | Changes Made |
