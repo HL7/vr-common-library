@@ -5,7 +5,7 @@ Title: "ConceptMap - Race Code Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(RaceCodes, ValueSetRaceCodeVitalRecords)
-* insert AddGroup("MRE",[[Canonical(CodeSystemRaceCodeVitalRecords)]])
+* insert AddGroup("IJE",[[Canonical(CodeSystemRaceCodeVitalRecords)]])
 * insert MapConcept(#100, "White Checkbox", #100,  "White Checkbox")
 * insert MapConcept(#101, "White", #101,  "White")
 * insert MapConcept(#102, "Arab", #102,  "Arab")

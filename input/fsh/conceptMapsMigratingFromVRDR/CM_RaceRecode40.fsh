@@ -5,7 +5,7 @@ Title: "ConceptMap - Race Recode40 Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(RaceRecode40, ValueSetRaceRecode40VitalRecords)
-* insert AddGroup("MRE",[[Canonical(CodeSystemRaceRecode40VitalRecords)]])
+* insert AddGroup($IJE,[[Canonical(CodeSystemRaceRecode40VitalRecords)]])
 * insert MapConcept(#01, "White", #01,  "White")
 * insert MapConcept(#02, "Black", #02,  "Black")
 * insert MapConcept(#03, "American Indian or Alaskan Native (AIAN\)", #03,  "American Indian or Alaskan Native (AIAN\)")

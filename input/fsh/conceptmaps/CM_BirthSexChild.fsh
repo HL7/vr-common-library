@@ -1,6 +1,3 @@
-
-Alias: $IJE = CodeSystemIJEVitalRecords
-
 Instance: ConceptMapBirthSexChildVitalRecords
 InstanceOf: ConceptMap
 Title: "ConceptMap - Birth Sex Child Vital Records"

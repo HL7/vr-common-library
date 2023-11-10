@@ -4,7 +4,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(EditBypass01234, ValueSetEditBypass01234VitalRecords)
-* insert AddGroup("IJE",[[Canonical(CodeSystemBypassEditFlagVitalRecords)]])
+* insert AddGroup($IJE,[[Canonical(CodeSystemBypassEditFlagVitalRecords)]])
 * insert MapConcept(#0, "Edit Passed", #0,  "Edit Passed")
 * insert MapConcept(#1, "Edit Failed\, Data Queried\, and Verified", #1,  "Edit Failed\, Data Queried\, and Verified")
 * insert MapConcept(#2, "Edit Failed\, Data Queried\, but not Verified", #2,  "Edit Failed\, Data Queried\, but not Verified")
