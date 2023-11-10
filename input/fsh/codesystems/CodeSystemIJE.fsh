@@ -10,5 +10,6 @@ that are referenced in the ConceptMaps"
 * ^experimental = false
 * ^publisher = "Centers for Disease Control, National Center for Health Statistics"
 * ^useContext.code.display = "Vital Statistics"
+* ^useContext.valueCodeableConcept.text = "Vital Statistics"
 * ^status = #active 
 
