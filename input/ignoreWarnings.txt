@@ -12,7 +12,8 @@ INFORMATION: Condition/condition-prepregnancy-hypertension-jada-ann-quinn-common
 # This is the code that is used in the Death Certification VRDR profile
 The code '103693007' is valid but is not active
 
-
+# Can't validate code system....no action required
+The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
