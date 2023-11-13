@@ -287,10 +287,10 @@ groups:
   VRCLExamples:
     name: Examples
     resources:
-      - CodedRaceAndEthnicity-Father
-      - CodedRaceAndEthnicity-Mother
-      - InputRaceAndEthnicityFather
-      - InputRaceAndEthnicityMother
+      - observation-input-race-and-ethnicity-mother 
+      - observation-input-race-and-ethnicity-father 
+      - observation-coded-race-and-ethnicity-mother 
+      - observation-coded-race-and-ethnicity-father 
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
       - patient-child-babyg-quinn
