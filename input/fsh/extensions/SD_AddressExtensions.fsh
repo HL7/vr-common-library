@@ -1,5 +1,5 @@
 Extension: ExtensionCityCodeVitalRecords
-Id: CityCode
+Id: Extension-city-code-vr
 Title: "Extension - City Code Vital Records"
 Description: "City expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
 * ^context.type = #element
@@ -13,7 +13,7 @@ Description: "City expressed as a numeric value.  As of the date of publication,
 //* valueString from $PHVSCityPlacesNCHS (required)
 
 Extension: ExtensionDistrictCodeVitalRecords
-Id: DistrictCode
+Id: Extension-district-code-vr
 Title: "Extension - District Code Vital Records"
 Description: "District expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
 //* insert boilerplate
@@ -36,32 +36,32 @@ Description: "District expressed as a numeric value.  As of the date of publicat
 
 
 Extension: ExtensionPreDirectionalVitalRecords
-Id: PreDirectional
+Id: Extension-predirectional-vr
 Title: "Extension - PreDirectional Vital Records"
 Description: "PreDirectional component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionStreetNameVitalRecords
-Id: StreetName
+Id: Extension-street-name-vr
 Title: "Extension - StreetName Vital Records"
 Description: "StreetName component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(50)
 Extension: ExtensionStreetNumberVitalRecords
-Id: StreetNumber
+Id: Extension-street-number-vr
 Title: "Extension - StreetNumber Vital Records"
 Description: "StreetNumber component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionStreetDesignatorVitalRecords
-Id: StreetDesignator
+Id: Extension-street-designator-vr
 Title: "Extension - StreetDesignator Vital Records"
 Description: "StreetDesignator component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionPostDirectionalVitalRecords
-Id: PostDirectional
+Id: Extension-postdirectional-vr
 Title: "Extension - PostDirectional Vital Records"
 Description: "PostDirectional component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)
 Extension: ExtensionUnitOrAptNumberVitalRecords
-Id: UnitOrAptNumber
+Id: Extension-unit-or-apt-number-vr
 Title: "Extension - UnitOrAptNumber Vital Records"
 Description: "UnitOrAptNumber component of address as [defined by USPS](https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf)"
 * insert addressextension(10)

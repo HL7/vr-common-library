@@ -1,5 +1,5 @@
 Extension: ExtensionPartialDateTimeVitalRecords
-Id: ExtensionPartialDateTimeVitalRecords
+Id: Extension-partial-date-time-vr
 Title: "Extension - Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime (Extension).
 
@@ -29,7 +29,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
      $DataAbsentReason named dataabsent 0..1
 
 Extension: ExtensionPartialDateVitalRecords
-Id: ExtensionPartialDateVitalRecords
+Id: Extension-partial-date-vr
 Title: "Extension - Partial Date Vital Records"
 Description: "Provides values of a partial date (Extension).
 
@@ -52,7 +52,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
 
 
 Extension: ExtensionDatePartAbsentReasonVitalRecords
-Id: ExtensionDatePartAbsentReasonVitalRecords
+Id: Extension-date-part-absent-reason-vr
 Title: "Extension - Partial Date Absent Reason Vital Records"
 Description: "Provides values of a partial date (Extension).
 If a component is missing, it is assumed unknown.

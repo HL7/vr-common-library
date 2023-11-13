@@ -10,11 +10,11 @@ Description: "This abstract Patient profile includes common extensions and slici
   * country from ValueSetBirthplaceCountryVitalRecords (required)    // BPLACE_CNT
   * state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required) // BPLACE_ST
   * district.extension contains
-       DistrictCode named districtCode 0..1
+       ExtensionDistrictCodeVitalRecords named districtCode 0..1
   * district.extension[districtCode] ^label = "County code"
   * district.extension[districtCode] ^short = "County code"
   * city.extension contains
-      CityCode named cityCode 0..1
+      ExtensionCityCodeVitalRecords named cityCode 0..1
 // Add usage note that codes are from: https://ftp.cdc.gov/pub/health_Statistics/nchs/Manuals/Mortality/PLACE_CODES.txt and
   * district.extension[districtCode] ^definition = "Numeric code in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf) and https://ftp.cdc.gov/pub/health_Statistics/nchs/Manuals/Mortality/PLACE_CODES.txt."
   * city.extension[cityCode] ^definition = "Numeric code in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf) and https://ftp.cdc.gov/pub/health_Statistics/nchs/Manuals/Mortality/PLACE_CODES.txt."
@@ -64,7 +64,7 @@ Description: "This abstract Patient profile includes common extensions and slici
     //PartialDate named partialDate 0..1 and
     ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..*  and
     $patient-birthTime named birthTime 0..1 and
-    BypassEditFlag named bypassEditFlag 0..1
+    ExtensionBypassEditFlagVitalRecords named bypassEditFlag 0..1
 * birthDate.extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."
 * birthDate.extension[datePartAbsentReason] ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
 * birthDate.extension[partialDate] ^short = "partialDate"

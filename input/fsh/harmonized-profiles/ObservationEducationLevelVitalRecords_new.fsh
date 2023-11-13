@@ -27,6 +27,6 @@ This profile is designed to supplant similar profile in VRDR"
   * ^short = "The collection of education levels used for vital records reporting."
   * ^binding.description = "Vital Records Education Level (NCHS)"
 * value[x].extension contains
-    BypassEditFlag named bypassEditFlag 0..1
+    ExtensionBypassEditFlagVitalRecords named bypassEditFlag 0..1
 * value[x].extension[bypassEditFlag].value[x] from ValueSetEditBypass01234VitalRecords (required)
 * value[x].extension[bypassEditFlag].value[x] only CodeableConcept

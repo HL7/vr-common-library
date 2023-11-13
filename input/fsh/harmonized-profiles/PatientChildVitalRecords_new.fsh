@@ -34,7 +34,7 @@ RuleSet: multipleBirths
   * ^definition = "If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."
 // Add Edit Flags, a la VRDR 
 * multipleBirth[x].extension contains
-    BypassEditFlag named bypassEditFlag 0..1
+    ExtensionBypassEditFlagVitalRecords named bypassEditFlag 0..1
 * multipleBirth[x].extension[bypassEditFlag]
   * value[x] from ValueSetPluralityEditFlagsVitalRecords (required)
   * value[x] only CodeableConcept

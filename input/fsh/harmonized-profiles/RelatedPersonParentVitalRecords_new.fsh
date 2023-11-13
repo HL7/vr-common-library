@@ -54,7 +54,7 @@ This profile is designed to supplant the similar profile in VRDR"
 * birthDate MS
   * extension contains 
       ExtensionPartialDateTimeVitalRecords named partialDate 0..* MS and
-      BypassEditFlag named bypassEditFlag 0..1
+      ExtensionBypassEditFlagVitalRecords named bypassEditFlag 0..1
   * extension[partialDate] ^short = "Provides values of a partial date"
     * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
   * extension[bypassEditFlag]
