@@ -6,3 +6,4 @@ Description: "The registered place of birth for the related person. A system may
   * ^short = "The registered place of birth of the related person."
 * valueAddress 0..1
   * ^short = "The registered place of birth of the related person."
+* insert ExtensionContextResource(RelatedPerson)
