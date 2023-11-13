@@ -220,7 +220,6 @@ groups:
   VRCLCodeSystems:
     name: CodeSystems
     resources:
-      #- CodeSystemBypassEditFlagVitalRecords
       - CodeSystemCanadianProvincesVitalRecords
       - CodeSystemComponentVitalRecords
       - CodeSystemCountryCodeVitalRecords  
