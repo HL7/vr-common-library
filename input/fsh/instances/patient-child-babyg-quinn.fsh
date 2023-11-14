@@ -1,4 +1,4 @@
-Instance: patient-child-babyg-quinn
+Instance: patient-child-vr-babyg-quinn-common
 InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn]"
 Description: "Example of Patient-child-vr profile (Baby G Quinn)"

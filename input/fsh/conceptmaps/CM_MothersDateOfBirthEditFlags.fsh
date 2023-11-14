@@ -1,5 +1,6 @@
 Instance: ConceptMapMothersDateOfBirthEditFlagsVitalRecords
 InstanceOf: ConceptMap
+Title: "ConceptMap - Mother's Date of Birth Edit Flags Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(MothersDateOfBirthEditFlags, ValueSetMothersDateOfBirthEditFlagsVitalRecords)

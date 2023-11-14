@@ -1,7 +1,7 @@
-Instance: relatedperson-father-tom-yan-lee-common
+Instance: relatedperson-father-vr-tom-yan-lee-common
 InstanceOf: RelatedPersonFatherVitalRecords
 Title: "RelatedPerson - Father example [Tom Yan Lee]"
-Description: "Example of Relatedperson-father-vr (Tom Yan Lee)"
+Description: "Example of Relatedperson-father-vr profile (Tom Yan Lee) with partial birthdate"
 Usage: #example
 * extension[race]
   * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
@@ -11,7 +11,7 @@ Usage: #example
   * extension[text].valueString = "Not Hispanic or Latino"
 * extension[birthPlace].valueAddress.state = "NY"
 * active = true
-* patient = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
+* patient = Reference(patient-decedent-fetus-vr-not-named-common) "Patient - Decedent Fetus (Fetus Not Named)"
 * relationship = $v3-RoleCode#NFTH "natural father"
   * text = "Natural Father"
 * name
@@ -20,4 +20,8 @@ Usage: #example
   * given[0] = "Tom"
   * given[+] = "Yan"
 * gender = #male
-* birthDate = "1984-02-27"
+* birthDate = "1984"
+  * extension[partialDate]
+    * extension[year].valueUnsignedInt = 1984 
+    * extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
+    * extension[day].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown

@@ -1,7 +1,7 @@
-Instance: patient-decedent-fetus-not-named
+Instance: patient-decedent-fetus-vr-not-named-common
 InstanceOf: PatientDecedentFetusVitalRecords
 Title: "Patient - Decedent Fetus example [Fetus Not Named]"
-Description: "Example of Patient-decedent-fetus-vr (Fetus Not Named)"
+Description: "Example of Patient-decedent-fetus-vr profile (Fetus Not Named)"
 Usage: #example
 * extension[birthsex]
   * valueCode = #F

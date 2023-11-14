@@ -1,4 +1,4 @@
-Instance: observation-coded-race-and-ethnicity-mother 
+Instance: observation-coded-race-and-ethnicity-vr-mother 
 InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - CodedRaceAndEthnicity example [Mother]"
@@ -12,7 +12,7 @@ Description: "Example of coded-race-and-ethnicity-vr profile (Mother)"
 * component[RaceRecode40].valueCodeableConcept = CodeSystemRaceRecode40VitalRecords#20 "AIAN and Asian"
 * component[HispanicCode].valueCodeableConcept = CodeSystemHispanicOriginVitalRecords#233 "Chilean"
 
-Instance: observation-coded-race-and-ethnicity-father 
+Instance: observation-coded-race-and-ethnicity-vr-father 
 InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - CodedRaceAndEthnicity example [Father]"
@@ -27,7 +27,7 @@ Description: "Example of coded-race-and-ethnicity-vr profile (Father)"
 * component[HispanicCode].valueCodeableConcept = CodeSystemHispanicOriginVitalRecords#233 "Chilean"
 
 
-Instance: observation-input-race-and-ethnicity-mother 
+Instance: observation-input-race-and-ethnicity-vr-mother 
 InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [Mother]"
@@ -60,7 +60,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (Mother)"
 * component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 
-Instance: observation-input-race-and-ethnicity-father 
+Instance: observation-input-race-and-ethnicity-vr-father 
 InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [Father]"
