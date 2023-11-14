@@ -8,3 +8,4 @@ Description: "Extension to hold a codeable concept from one of several valuesets
 * insert ExtensionContextResource(integer) //multipleBirth
 * insert ExtensionContextResource(CodeableConcept) //education
 * insert ExtensionContextResource(date) //birthDate
+* insert ExtensionContextResource(Quantity) //bfdr
