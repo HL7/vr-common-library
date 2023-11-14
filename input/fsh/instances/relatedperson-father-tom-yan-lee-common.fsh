@@ -20,4 +20,8 @@ Usage: #example
   * given[0] = "Tom"
   * given[+] = "Yan"
 * gender = #male
-* birthDate = "1984-02-27"
+* birthDate = "1984"
+  * extension[partialDate]
+    * extension[year].valueUnsignedInt = 1984 
+    * extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
+    * extension[day].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown

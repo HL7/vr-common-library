@@ -16,3 +16,16 @@ Usage: #example
 //   * given = "Avery"
 //   * suffix = "M.D."
 * qualification.code = $sct#76231001 "Osteopath (occupation)"
+* address.line = "5590 E Lockwood Drive SW, #1"
+* address.city = "Queens"
+* address.state = "NY"
+* address.district = "Kings"
+* address.city.extension[cityCode].valuePositiveInt = 01234
+* address.district.extension[districtCode].valuePositiveInt  = 321
+* address.country = "US"
+* address.extension[unitnumber].valueString = "#1"
+* address.extension[stnum].valueString = "5590"
+* address.extension[stname].valueString = "Lockwood"
+* address.extension[stdesig].valueString = "Drive"
+* address.extension[predir].valueString = "E"
+* address.extension[postdir].valueString = "SW"

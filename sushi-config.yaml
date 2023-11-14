@@ -265,12 +265,15 @@ groups:
   VRCLConceptMaps:
     name: Concept Maps
     resources:
+      - ConceptMapBirthAttendantTitlesVitalRecords
       - ConceptMapBirthSexChildVitalRecords
       - ConceptMapBirthSexFetusVitalRecords
       - ConceptMapEditBypass01234VitalRecords
       - ConceptMapEducationLevelVitalRecords
       - ConceptMapHispanicNoUnknownVitalRecords
       - ConceptMapHispanicOriginVitalRecords
+      - ConceptMapMothersDateOfBirthEditFlagsVitalRecords
+      - ConceptMapPluralityEditFlagsVitalRecords
       - ConceptMapRaceCodeVitalRecords 
       - ConceptMapRaceMissingValueReasonVitalRecords
       - ConceptMapRaceRecode40VitalRecords
@@ -293,10 +296,17 @@ groups:
       - observation-coded-race-and-ethnicity-father 
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-autopsy-performed-not-named-common
+      - observation-education-level-vr-a-freeman
+      - observation-emerging-issues-vr-a-freeman
+      - observation-parent-education-level-vr-carmen-teresa-lee
       - patient-child-babyg-quinn
+      - patient-child-babyg-quinn-w-edit
       - patient-decedent-fetus-not-named
       - patient-decedent-fetus-not-named-w-edit
+      - patient-mother-birth-date-part-absent
+      - patient-mother-jada-ann-quinn
       - practitioner-vital-records-janet-seito
+      - relatedperson-father-natural-james-brandon-quinn-common
       - relatedperson-father-tom-yan-lee-common
       - relatedperson-father-tony-lewis-common
       - relatedperson-mother-carol-hoffer-common

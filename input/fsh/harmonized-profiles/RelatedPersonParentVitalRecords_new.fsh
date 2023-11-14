@@ -53,7 +53,7 @@ This profile is designed to supplant the similar profile in VRDR"
 //* telecom MS - remove MS, doesn't appear in differential for either VRDR or VRCL so seems ok to remove without adding a ^short
 * birthDate MS
   * extension contains 
-      ExtensionPartialDateTimeVitalRecords named partialDate 0..* MS and
+      ExtensionPartialDateVitalRecords named partialDate 0..* MS and
       BypassEditFlag named bypassEditFlag 0..1
   * extension[partialDate] ^short = "Provides values of a partial date"
     * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
