@@ -1,7 +1,7 @@
-Instance: patient-mother-jada-ann-quinn
+Instance: patient-mother-vr-jada-ann-quinn-common
 InstanceOf: PatientMotherVitalRecords
 Title: "Patient - Mother example [Jada Ann Quinn]"
-Description: "Example of Patient-mother-vr (Jada Ann Quinn)"
+Description: "Example of Patient-mother-vr profile (Jada Ann Quinn)"
 Usage: #example
 * extension[race]
   * extension[ombCategory]

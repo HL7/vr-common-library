@@ -1,7 +1,7 @@
-Instance: patient-child-babyg-quinn-w-edit
+Instance: patient-child-vr-babyg-quinn-w-edit
 InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn], with Edit Flag"
-Description: "Example of Patient-child-vr profile (Baby G Quinn), with Edit Flag"
+Description: "Example of Patient-child-vr profile (Baby G Quinn) with Edit Flag"
 Usage: #example
 * extension[race]
   * extension[ombCategory]

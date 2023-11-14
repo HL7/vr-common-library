@@ -1,7 +1,7 @@
-Instance: practitioner-vital-records-janet-seito
+Instance: practitioner-vr-janet-seito-common
 InstanceOf: PractitionerVitalRecords
-Title: "Practitioner - Vital Records - Janet Seito"
-Description: "Practitioner - Vital Records: Janet Seito example"
+Title: "Practitioner - example [Janet Seito]"
+Description: "Example of Practitioner-vr profile (Janet Seito) with address extensions"
 Usage: #example
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"

@@ -1,7 +1,7 @@
 Instance: observation-education-level-vr-a-freeman
 InstanceOf: ObservationEducationLevelVitalRecords
 Title: "Observation - Education Level example [A Freeman]"
-Description: "Example of Observation-education-level-vr (A Freeman)"
+Description: "Example of Observation-education-level-vr profile (A Freeman)"
 Usage: #example
 * status = #final
 * code = $loinc#80913-7 "Highest level of education [US Standard Certificate of Death]"

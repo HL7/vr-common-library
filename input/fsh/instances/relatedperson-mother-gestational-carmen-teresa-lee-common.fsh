@@ -1,4 +1,4 @@
-Instance: relatedperson-mother-gestational-carmen-teresa-lee-common
+Instance: relatedperson-mother-gestational-vr-carmen-teresa-lee-common
 InstanceOf: RelatedPersonMotherGestationalVitalRecords
 Title: "RelatedPerson - Mother Gestational example [Carmen Teresa Lee]"
 Description: "Example of Relatedperson-gestational-vr profile (Carmen Teresa Lee)"
@@ -20,7 +20,7 @@ Usage: #example
     * valueString = "Hispanic or Latino"
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * active = true
-* patient = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
+* patient = Reference(patient-decedent-fetus-vr-not-named-common) "Patient - Decedent Fetus (Fetus Not Named)"
 * relationship = $v3-RoleCode#GESTM "gestational mother"
   * text = "gestational Mother"
 * name

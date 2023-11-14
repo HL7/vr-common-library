@@ -1,7 +1,7 @@
-Instance: patient-mother-birth-date-part-absent
+Instance: patient-mother-vr-birth-date-part-absent
 InstanceOf: PatientMotherVitalRecords
-Title: "Patient - Mother Date Part Absent example"
-Description: "Example of Patient-mother-vr profile (Date Part Absent)"
+Title: "Patient - Mother Date Part Absent Reason example"
+Description: "Example of Patient-mother-vr profile with Date Part Absent Reason"
 Usage: #example
 //* extension[USCoreRaceExtension]
 * extension[race]

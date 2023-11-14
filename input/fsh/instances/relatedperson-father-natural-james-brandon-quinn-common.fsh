@@ -1,7 +1,7 @@
-Instance: relatedperson-father-natural-james-brandon-quinn-common
+Instance: relatedperson-father-natural-vr-james-brandon-quinn-common
 InstanceOf: RelatedPersonFatherNaturalVitalRecords
 Title: "RelatedPerson - Father Natural example [James Brandon Quinn]"
-Description: "Example of Relatedperson-father-natural-vr (James Brandon Quinn)"
+Description: "Example of Relatedperson-father-natural-vr profile (James Brandon Quinn)"
 Usage: #example
 * extension[race]
   * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
@@ -16,7 +16,7 @@ Usage: #example
   * system = "http://hl7.org/fhir/sid/us-ssn"
   * value = "132225987"
 * active = true
-* patient = Reference(patient-child-babyg-quinn)
+* patient = Reference(patient-child-vr-babyg-quinn-common)
 * relationship = $v3-RoleCode#NFTH "natural father"
   * text = "Natural Father"
 * name

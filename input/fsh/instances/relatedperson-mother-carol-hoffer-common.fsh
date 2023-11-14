@@ -1,4 +1,4 @@
-Instance: relatedperson-mother-carol-hoffer-common
+Instance: relatedperson-mother-vr-carol-hoffer-common
 InstanceOf: RelatedPersonMotherVitalRecords
 Title: "RelatedPerson - Adoptive Mother example [Carol Hoffer]"
 Description: "Example of RelatedPerson-mother-vr profile (adoptive mother)"
@@ -23,7 +23,7 @@ Usage: #example
     * valueString = "Not Hispanic or Latino"
   * url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * active = true
-* patient = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
+* patient = Reference(patient-child-vr-babyg-quinn-common) "Patient - Child (Baby G Quinn)"
 * relationship = $v3-RoleCode#ADOPTM "adoptive mother"
   * text = "Adoptive Mother"
 * name
