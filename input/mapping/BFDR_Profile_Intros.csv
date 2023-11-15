@@ -159,7 +159,7 @@ This profile represents plurality as a characteristic of the pregnancy. For plur
 129,Input,ProcedureUnplannedHysterectomy,Procedure-unplanned-hysterectomy,,x,x,BFDR
 130,Input,RelatedpersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,,x,x,VRCPL
 131,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,,VRCPL
-132,Input,RelatedpersonMotherGestationalVitalRecords,RelatedPerson-mother-gestational-vr,,,,VRCPL
+,,,,,,,
 133,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
 134,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
 135,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
