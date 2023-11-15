@@ -8,6 +8,7 @@ Description: "Local Component Codes for observation components that lack an appr
 * insert boilerplate
 * ^content = #complete
 * ^caseSensitive = false
+* ^experimental = false 
 * #position "position"
 * #lineNumber "line number"
 * #eCodeIndicator "e Code Indicator"

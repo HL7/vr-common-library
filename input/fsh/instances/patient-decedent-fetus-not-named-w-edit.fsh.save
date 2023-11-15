@@ -17,12 +17,9 @@ Usage: #example
   * value = "9932702"
 // NOTE TODO: name.use is a required element and the child is unnamed
 // want to confirm this is the appropriate code
-* name.use = #usual
-// profile indicates that 'When child not named use code "unknown"'
-* name.family = "UNK"
-  * extension[dataAbsentReason].valueCode = #not-applicable
-    // * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-    // * valueCode = #not-applicable
+* name[currentLegalName]
+  * family
+    * extension[dataAbsentReason].valueCode = #not-applicable
 * gender = #female
 * birthDate = "2019-01-09"
   * extension

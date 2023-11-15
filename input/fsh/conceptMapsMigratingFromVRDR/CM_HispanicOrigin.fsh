@@ -5,7 +5,7 @@ Title: "ConceptMap - Hispanic Origin Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(HispanicOrigin, ValueSetHispanicOriginVitalRecords)
-* insert AddGroup("MRE",[[Canonical(CodeSystemHispanicOriginVitalRecords)]])
+* insert AddGroup($IJE,[[Canonical(CodeSystemHispanicOriginVitalRecords)]])
 * insert MapConcept(#100, "Not Hispanic", #100,  "Non-Hispanic")
 * insert MapConcept(#200, "Spaniard", #200,  "Spaniard")
 * insert MapConcept(#201, "Andalusian", #201,  "Andalusian")
