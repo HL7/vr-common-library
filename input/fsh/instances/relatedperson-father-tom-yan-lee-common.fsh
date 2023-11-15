@@ -11,7 +11,7 @@ Usage: #example
   * extension[text].valueString = "Not Hispanic or Latino"
 * extension[birthPlace].valueAddress.state = "NY"
 * active = true
-* patient = Reference(patient-decedent-fetus-vr-not-named-common) "Patient - Decedent Fetus (Fetus Not Named)"
+* patient = Reference(patient-child-vr-babyg-quinn-common) "Patient - Child (Baby G Quinn)"
 * relationship = $v3-RoleCode#NFTH "natural father"
   * text = "Natural Father"
 * name
