@@ -83,5 +83,23 @@ Description: "This abstract Patient profile includes common extensions and slici
 * insert CityCode
 * insert CountyCode
 * insert AddressComponents
+* insert multipleBirths
+
+RuleSet: multipleBirths
+* multipleBirth[x] 
+  * ^short = "If not single birth - born first, second, third, etc."
+  * ^definition = "If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."
+// Add Edit Flags, a la VRDR 
+* multipleBirth[x].extension contains
+    BypassEditFlag named bypassEditFlag 0..1 and
+    PatMultipleBirthTotal named multipleBirthTotal 0..1 
+* multipleBirth[x].extension[bypassEditFlag]
+  * value[x] from ValueSetPluralityEditFlagsVitalRecords (required)
+  * value[x] only CodeableConcept
+    * ^binding.description = "Plurality Edit Flags (NCHS)"
+* multipleBirth[x].extension[multipleBirthTotal] 
+  * ^definition = "Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy." 
+
+
 
 
