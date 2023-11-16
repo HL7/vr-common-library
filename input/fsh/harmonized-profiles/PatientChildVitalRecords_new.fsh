@@ -3,7 +3,6 @@ Parent: PatientVitalRecords
 Id: Patient-child-vr
 Title: "Patient - Child Vital Records"
 Description: "The subject patient (newborn/infant/child) for whom clinical data is included in the report."
-* extension contains ExtensionReportedParentAgeAtDeliveryVitalRecords named parentReportedAgeAtDelivery 0..2
 * extension[race] MS
 * extension[ethnicity] MS
 * extension[birthsex] 1.. MS

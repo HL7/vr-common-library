@@ -83,6 +83,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * insert CityCode
 * insert CountyCode
 * insert AddressComponents
+* extension contains ExtensionReportedParentAgeAtDeliveryVitalRecords named parentReportedAgeAtDelivery 0..2
 * insert multipleBirths
 
 RuleSet: multipleBirths
