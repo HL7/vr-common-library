@@ -7,11 +7,17 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
 * extension[ethnicity] MS
 * extension[birthsex] 1.. MS
 * extension[birthPlace] MS 
+* extension[parentReportedAgeAtDelivery] ^short = "The mother or father's reported age at the time of delivery of the child"
 * identifier[MRN] MS
 * extension[birthsex].valueCode from ValueSetBirthSexChildVitalRecords (required)
 * insert childName 
 * insert birthDateAndTime
-* insert multipleBirths 
+* multipleBirth[x] only integer
+* multipleBirth[x] MS
+  * .extension[bypassEditFlag].value[x]
+    * ^short = "To reflect the relevant edit possibilities for plurality."
+  * .extension[multipleBirthTotal] MS
+    * ^short = "Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy."
 * deceased[x] MS
   * ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
 
@@ -27,17 +33,3 @@ RuleSet: birthDateAndTime
   * extension[birthTime] MS 
   * extension[partialDate] MS 
   // * extension[datePartAbsentReason] MS 
-
-RuleSet: multipleBirths
-* multipleBirth[x] MS
-  * ^short = "If not single birth - born first, second, third, etc."
-  * ^definition = "If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."
-// Add Edit Flags, a la VRDR 
-* multipleBirth[x].extension contains
-    BypassEditFlag named bypassEditFlag 0..1
-* multipleBirth[x].extension[bypassEditFlag]
-  * value[x] from ValueSetPluralityEditFlagsVitalRecords (required)
-  * value[x] only CodeableConcept
-  * value[x]
-    * ^short = "To reflect the relevant edit possibilities for plurality."
-    * ^binding.description = "Plurality Edit Flags (NCHS)"

@@ -20,6 +20,11 @@ Usage: #example
     * city = "Salt Lake City"
     * district = "Salt Lake"
     * state = "UT"
+* extension[parentReportedAgeAtDelivery]
+  * extension[reportedAge]
+    * valueQuantity = 34 'a'
+  * extension[motherOrFather]
+    * valueReference = Reference(patient-mother-vr-jada-ann-quinn-common)
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"
