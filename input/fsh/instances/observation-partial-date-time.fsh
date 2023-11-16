@@ -2,7 +2,7 @@ Instance: observation-partial-date-time-example
 InstanceOf: Observation
 Title: "Observation - Partial Date Time Extension example"
 Usage: #example
-Description: "Example of an Observation with the Partial Date Time Extension"
+Description: "Example of an Observation with Partial Date Time"
 * subject.display = "A subject"
 * effectiveDateTime = "2020-11-12T16:39:40-05:00"
 * performer.display = "A Performer"
