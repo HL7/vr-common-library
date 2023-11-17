@@ -210,6 +210,7 @@ groups:
       - ExtensionPartialDateVitalRecords
       - ExtensionPostDirectionalVitalRecords
       - ExtensionPreDirectionalVitalRecords
+      - ExtensionReportedParentAgeAtDeliveryVitalRecords
       - ExtensionStreetDesignatorVitalRecords
       - ExtensionStreetNameVitalRecords
       - ExtensionStreetNumberVitalRecords
@@ -295,6 +296,8 @@ groups:
       - observation-autopsy-performed-indicator-vr-a-freeman
       - observation-education-level-vr-a-freeman
       - observation-emerging-issues-vr-a-freeman
+      - observation-parent-education-level-vr-carmen-teresa-lee
+      - observation-partial-date-time-example
       - patient-child-vr-babyg-quinn-common
       - patient-child-vr-babyg-quinn-w-edit
       - patient-mother-vr-birth-date-part-absent

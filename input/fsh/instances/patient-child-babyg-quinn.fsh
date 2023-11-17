@@ -1,7 +1,7 @@
 Instance: patient-child-vr-babyg-quinn-common
 InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn]"
-Description: "Example of Patient-child-vr profile (Baby G Quinn)"
+Description: "Example of Patient-child-vr profile (Baby G Quinn) with Reported Parent Age at Delivery"
 Usage: #example
 * extension[race]
   * extension[ombCategory]
@@ -20,6 +20,11 @@ Usage: #example
     * city = "Salt Lake City"
     * district = "Salt Lake"
     * state = "UT"
+* extension[parentReportedAgeAtDelivery]
+  * extension[reportedAge]
+    * valueQuantity = 34 'a'
+  * extension[motherOrFather]
+    * valueReference = Reference(patient-mother-vr-jada-ann-quinn-common)
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"
