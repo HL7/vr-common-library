@@ -1,7 +1,7 @@
 Instance: patient-child-vr-babyg-quinn-common
 InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn]"
-Description: "Example of Patient-child-vr profile (Baby G Quinn)"
+Description: "Example of Patient-child-vr profile (Baby G Quinn) with Reported Parent Age at Delivery"
 Usage: #example
 * extension[race]
   * extension[ombCategory]

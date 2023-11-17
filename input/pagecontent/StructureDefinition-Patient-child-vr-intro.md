@@ -236,39 +236,3 @@ This profile is mapped to:
 </details>
 <p></p>
 
-<details>
-
-<summary>
-
-<strong class='context-menu'> Fetal Death </strong>
-
-</summary>
-<table class='grid'>
-<thead>
-  <tr>
-    <th style='text-align: center'><strong>Use Case</strong></th>
-    <th><strong>#</strong></th>
-    <th><strong>Description</strong></th>
-    <th><strong>IJE Name</strong></th>
-    <th><strong>Field</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Value Set/Comments</strong></th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td style='text-align: center'>Fetal Death</td>
-  <td>171</td>
-  <td>Mother's Reported Age</td>
-  <td>MAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
-  <td>quantity</td>
-  <td></td>
-</tr>
-
-</tbody>
-</table>
-
-</details>
-<p></p>
-

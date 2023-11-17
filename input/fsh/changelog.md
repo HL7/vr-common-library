@@ -1,5 +1,8 @@
 ## Change Log
 
+### As of 15 November 2023
+- ObservationParentEducationLevelVitalRecords and related example was removed (doesn't add value given ObservationEducationLevelVitalRecords exists). PatientDecedentFetusVitalRecords and related examples moved to BFDR. 
+
 ### As of 31 October 2023
 - Removed ObservationRaceVitalRecords and ObservationTabulatedEthnicityVitalRecords and related instances
 

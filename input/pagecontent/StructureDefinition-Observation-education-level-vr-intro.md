@@ -44,12 +44,30 @@ This profile is mapped to:
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
+  <td>33</td>
+  <td>Mother's Education--Edit Flag</td>
+  <td>MEDUC_BYPASS</td>
+  <td>value.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />Original phinvads valueset [PHVS_EditFlags_NCHS] was different than that of father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
   <td>78</td>
   <td>Father's Education</td>
   <td>FEDUC</td>
   <td>value, focus[ RelatedPersonFatherNaturalVitalRecords ]</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>79</td>
+  <td>Father's Education--Edit Flag</td>
+  <td>FEDUC_BYPASS</td>
+  <td>value.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
@@ -89,12 +107,30 @@ This profile is mapped to:
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td>33</td>
+  <td>Mother's Education--Edit Flag</td>
+  <td>MEDUC_BYPASS</td>
+  <td>value.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />Original phinvads valueset [PHVS_EditFlags_NCHS] was different than that of father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>283</td>
   <td>Father's Education</td>
   <td>FEDUC</td>
   <td>value, <br />focus[ RelatedPersonFatherNaturalVitalRecords ]</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>284</td>
+  <td>Father's Education--Edit Flag</td>
+  <td>FEDUC_BYPASS</td>
+  <td>value.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
