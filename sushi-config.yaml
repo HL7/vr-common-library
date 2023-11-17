@@ -192,7 +192,6 @@ groups:
       - PractitionerVitalRecords
       - RelatedPersonFatherNaturalVitalRecords
       - RelatedPersonFatherVitalRecords
-      - RelatedPersonMotherGestationalVitalRecords
       - RelatedPersonMotherVitalRecords
       - RelatedPersonParentVitalRecords
 
@@ -307,7 +306,6 @@ groups:
       - relatedperson-father-vr-tom-yan-lee-common
       - relatedperson-father-vr-tony-lewis-common
       - relatedperson-mother-vr-carol-hoffer-common
-      - relatedperson-mother-gestational-vr-carmen-teresa-lee-common
       - relatedperson-parent-vr-stepmother
       - us-core-patient-vr-a-freeman
       - us-core-patient-vr-unknown-name
