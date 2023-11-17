@@ -6,6 +6,7 @@
 | -  | Restrict birth sex for newborn to M,F,U | Added [ValueSetBirthSexVitalRecords], and referenced from [PatientChildVitalRecords] |
 | -  | Addition of abstract patient profile | Added [PatientVitalRecords], which is derived from [USCorePatient]. Child profiles of Patient: [PatientChildVitalRecords], [PatientDecedentFetusVitalRecords], [PatientMotherVitalRecords] |
 | -  | Generalization of Parent Education Level to Education Level | [ObservationEducationLevelVitalRecords] now accomodates use cases in VRDR and BFDR, with subject now a generalized [PatientVitalRecords], focus can now be a [RelatedPersonParentVitalRecords] or Mother (rather than just Mother/Father), and the addition of a bypass edit flag  |
+| - | (re)moving of profiles | ObservationParentEducationLevelVitalRecords and related example was removed (doesn't add value given ObservationEducationLevelVitalRecords exists). PatientDecedentFetusVitalRecords and related examples moved to BFDR. RelatedPersonMotherGestationalVitalRecords and related example was removed (doesn't add value given ObservationEducationLevelVitalRecords exists).   |
 {: .grid }
 
 ### STU 1.1 Update, July 2023

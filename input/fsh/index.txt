@@ -48,7 +48,6 @@ PractitionerVitalRecords                                          Profile     pr
 ProcedureDeathCertificationVitalRecords                           Profile     profiles/ProcedureDeathCertificationVitalRecords.fsh
 RelatedPersonFatherNaturalVitalRecords                            Profile     profiles/RelatedPersonFatherNaturalVitalRecords.fsh
 RelatedPersonFatherVitalRecords                                   Profile     profiles/RelatedPersonFatherVitalRecords.fsh
-RelatedPersonMotherGestationalVitalRecords                        Profile     profiles/RelatedPersonMotherGestationalVitalRecords.fsh
 RelatedPersonMotherVitalRecords                                   Profile     profiles/RelatedPersonMotherVitalRecords.fsh
 RelatedPersonParentVitalRecords                                   Profile     profiles/RelatedPersonParentVitalRecords.fsh
 ValueSetApgarTimingVitalRecords                                   ValueSet    valuesets/ValueSetApgarTimingVitalRecords.fsh
