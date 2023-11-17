@@ -200,6 +200,7 @@ groups:
     resources:
       - ExtensionDatePartAbsentReasonVitalRecords
       - ExtensionPartialDateTimeVitalRecords
+      - ExtensionPatientFetalDeathVitalRecords
       - ExtensionRelatedpersonBirthplaceVitalRecords
       - ExtensionRelatedPersonDeceasedVitalRecords
       - ExtensionWithinCityLimitsIndicatorVitalRecords
@@ -299,6 +300,9 @@ groups:
       - observation-partial-date-time-example
       - patient-child-vr-babyg-quinn-common
       - patient-child-vr-babyg-quinn-w-edit
+      - patient-decedent-fetus-vr-not-named-common
+      - patient-decedent-fetus-vr-not-named-w-edit
+      - patient-fetal-death-example
       - patient-mother-vr-birth-date-part-absent
       - patient-mother-vr-jada-ann-quinn-common
       - practitioner-vr-janet-seito-common
