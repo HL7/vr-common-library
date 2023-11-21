@@ -67,6 +67,8 @@ pages:
     title: Specification 
   vr_ig_harmonization.md:
     title: FHIR Implementation Guide Harmonization Plan 
+  content-transitions.md:
+    title: Content Transitions
   downloads.md:
     title:  Downloads 
   
