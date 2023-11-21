@@ -48,12 +48,11 @@ Description: "This abstract Patient profile includes common extensions and slici
 * name 
   * use 1..1 
   * family 1..
-    * ^short = "When child not named use code \"unknown\""
     * extension ^slicing.discriminator.type = #value
       * ^slicing.discriminator.path = "url"
       * ^slicing.rules = #open
     * extension contains $data-absent-reason named dataAbsentReason 0..1 
-  * given ^short = "When child not named use code \"unknown\""
+  * given 
     * extension ^slicing.discriminator.type = #value
       * ^slicing.discriminator.path = "url"
       * ^slicing.rules = #open
