@@ -46,7 +46,7 @@ vOutputFile.puts "This IG supports communicating information from an EHR system 
  * [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
  * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
  * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * [2016 US Standard Mother’s Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
+ * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
  
 **Fetal Death**
  * [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
@@ -65,7 +65,7 @@ The Profile/Extension column contains a link to the profile or extension that co
    * the specific data being mapped is recorded in the US Core Location profile and the link resolves to that profile
    * the US Core Location profile is referenced in the BFDR Encounter-birth profile in Encounter.location.location
 
-The last two tables on this page map the Patient’s Worksheets to the Questionnaires.
+The last two tables on this page map the Patient's Worksheets to the Questionnaires.
 
 Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)"
 
@@ -105,14 +105,12 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
             if vProfile.include?("Questionnaire") 
               vProfileWithURL = "[" + vProfileFieldContext + "]" + "(Questionnaire-" + vProfile + ".html)"  
             else
-              vProfileWithURL = "[" + vProfileFieldContext + "]" + "(StructureDefinition-" + vProfile + ".html)"
+              vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusbfdr}}/" + "StructureDefinition-" + vProfile + ".html)"
             end
         when "VRCPL"
             # *TODO* this may needneeds to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
-            # versioned build
-            vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition-" + vProfile + ".html)"
-            # current build
-            #vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProfile + ".html)"
+            #vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition/" + vProfile + ")"
+            vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/" + "StructureDefinition-" + vProfile + ".html)"
         when "US CORE"
             vProfileWithURL = "[" + vProfileFieldContext + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProfile + ".html)"
         when "FHIR"
@@ -166,11 +164,12 @@ end
 createMappingTable( "2003 Revision of the U.S. Standard Certificate of Live Birth", vOutputFile, vSpreadsheet)
 createMappingTable( "2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births", vOutputFile, vSpreadsheet)
 createMappingTable( "2016 US Standard Facility Worksheet for the Live Birth Certificate", vOutputFile, vSpreadsheet)
-createMappingTable( "2016 US Standard Mother’s Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
+createMappingTable( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
+
+createMappingTableQaire( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
 
 createMappingTable( "2003 Revision of the U.S. Standard Report of Fetal Death", vOutputFile, vSpreadsheet)
 createMappingTable( "2019 US Standard Facility Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
 createMappingTable( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
 
-createMappingTableQaire( "2016 US Standard Mother’s Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
 createMappingTableQaire( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)

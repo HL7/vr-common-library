@@ -26,5 +26,6 @@
 .DS_Store
 Thumbs.db
 /fsh-generated
+input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
 *.sh
 *.bat
