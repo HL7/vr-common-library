@@ -231,20 +231,28 @@ groups:
       - ExtensionRelatedPersonDeceasedVitalRecords
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionReportedParentAgeAtDeliveryVitalRecords
-
-  VRCLCodeSystems:
-    name: CodeSystems
+  
+  AddressCodeSystems:
+    name: Address CodeSystems
     resources:
       - CodeSystemCanadianProvincesVitalRecords
-      - CodeSystemComponentVitalRecords
       - CodeSystemCountryCodeVitalRecords  
+      - CodeSystemJurisdictionsVitalRecords
+      
+  EditFlagCodeSystems:
+    name: Edit Flag CodeSystems
+    resources:
+      - CodeSystemEditFlagsVitalRecords
+
+  VRCLCodeSystems:
+    name: Other CodeSystems
+    resources:
+      - CodeSystemComponentVitalRecords
       - CodeSystemHispanicOriginVitalRecords
       - CodeSystemIJEVitalRecords
-      - CodeSystemJurisdictionsVitalRecords
       - CodeSystemMissingValueReasonVitalRecords
       - CodeSystemRaceCodeVitalRecords
       - CodeSystemRaceRecode40VitalRecords
-      - CodeSystemEditFlagsVitalRecords
       - CodeSystemLocalObservationsCodesVitalRecords
 
 RaceEthnicityValueSets:
