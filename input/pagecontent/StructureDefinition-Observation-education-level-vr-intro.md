@@ -49,7 +49,7 @@ This profile is mapped to:
   <td>MEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />Original phinvads valueset [PHVS_EditFlags_NCHS] was different than that of father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -67,7 +67,7 @@ This profile is mapped to:
   <td>FEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
@@ -112,7 +112,7 @@ This profile is mapped to:
   <td>MEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />Original phinvads valueset [PHVS_EditFlags_NCHS] was different than that of father's education [PHVS_EducationLevelEditFlags_NCHS]?  <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -130,7 +130,7 @@ This profile is mapped to:
   <td>FEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-vrdr-edit-bypass-01234-vs.html'>EditBypass01234VS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>

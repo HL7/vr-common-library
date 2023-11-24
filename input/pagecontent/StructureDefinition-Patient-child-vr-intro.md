@@ -146,7 +146,7 @@ This profile is mapped to:
   <td>PLUR_BYPASS</td>
   <td>multipleBirth.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-plurality-edit-flags.html'>PluralityEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td>[PluralityEditFlagsVS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -173,7 +173,7 @@ This profile is mapped to:
   <td>KIDFNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td></td>
+  <td>See [Note on Child and Decedent Fetus name]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -182,7 +182,7 @@ This profile is mapped to:
   <td>KIDMNAME</td>
   <td>name.given, <br />name.use = official </td>
   <td>string</td>
-  <td></td>
+  <td>See [Note on Child and Decedent Fetus name]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -191,7 +191,7 @@ This profile is mapped to:
   <td>KIDLNAME</td>
   <td>name.family, <br />name.use = official</td>
   <td>string</td>
-  <td></td>
+  <td>See [Note on Child and Decedent Fetus name]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
