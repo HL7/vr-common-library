@@ -178,14 +178,9 @@ menu:
 #
 
 groups:
-  VRCLProfiles:
-    name: Profiles
+  PatientProfiles:
+    name: People Profiles
     resources:
-      - ObservationAutopsyPerformedIndicatorVitalRecords
-      - ObservationCodedRaceAndEthnicityVitalRecords
-      - ObservationEducationLevelVitalRecords
-      - ObservationEmergingIssuesVitalRecords
-      - ObservationInputRaceAndEthnicityVitalRecords
       - PatientChildVitalRecords
       - PatientMotherVitalRecords
       - PatientVitalRecords
@@ -194,28 +189,49 @@ groups:
       - RelatedPersonFatherVitalRecords
       - RelatedPersonMotherVitalRecords
       - RelatedPersonParentVitalRecords
-
-  VRCLExtensions:
-    name: Extensions
+  
+  RaceEthnicityProfiles:
+    name: Race and Ethnicity Profiles
     resources:
-      - ExtensionDatePartAbsentReasonVitalRecords
-      - ExtensionPartialDateTimeVitalRecords
-      - ExtensionPatientFetalDeathVitalRecords
-      - ExtensionRelatedpersonBirthplaceVitalRecords
-      - ExtensionRelatedPersonDeceasedVitalRecords
-      - ExtensionWithinCityLimitsIndicatorVitalRecords
-      - ExtensionBypassEditFlagVitalRecords
+      - ObservationCodedRaceAndEthnicityVitalRecords
+      - ObservationInputRaceAndEthnicityVitalRecords
+
+  OtherProfiles:
+    name: Other Profiles
+    resources:
+      - ObservationAutopsyPerformedIndicatorVitalRecords
+      - ObservationEducationLevelVitalRecords
+      - ObservationEmergingIssuesVitalRecords
+
+  AddressExtensions:
+    name: Address Extensions
+    resources:
       - ExtensionCityCodeVitalRecords
       - ExtensionDistrictCodeVitalRecords
-      - ExtensionPartialDateVitalRecords
       - ExtensionPostDirectionalVitalRecords
       - ExtensionPreDirectionalVitalRecords
-      - ExtensionReportedParentAgeAtDeliveryVitalRecords
       - ExtensionStreetDesignatorVitalRecords
       - ExtensionStreetNameVitalRecords
       - ExtensionStreetNumberVitalRecords
       - ExtensionUnitOrAptNumberVitalRecords
-  
+      - ExtensionWithinCityLimitsIndicatorVitalRecords
+
+  PartialDateTimeExtensions:
+    name: Partial Date and Time Extensions
+    resources:
+      - ExtensionDatePartAbsentReasonVitalRecords
+      - ExtensionPartialDateTimeVitalRecords
+      - ExtensionPartialDateVitalRecords
+
+  OtherExtensions:
+    name: Other Extensions
+    resources:
+      - ExtensionPatientFetalDeathVitalRecords
+      - ExtensionRelatedpersonBirthplaceVitalRecords
+      - ExtensionRelatedPersonDeceasedVitalRecords
+      - ExtensionBypassEditFlagVitalRecords
+      - ExtensionReportedParentAgeAtDeliveryVitalRecords
+
   VRCLCodeSystems:
     name: CodeSystems
     resources:
@@ -231,37 +247,45 @@ groups:
       - CodeSystemEditFlagsVitalRecords
       - CodeSystemLocalObservationsCodesVitalRecords
 
-  VRCLValueSets:
-    name: ValueSets
+RaceEthnicityValueSets:
+    name: Race and Ethnicity ValueSets
     resources:  
-      - ValueSetBirthAttendantTitlesVitalRecords
-      - ValueSetBirthplaceCountryVitalRecords
-      - ValueSetBirthSexChildVitalRecords
-      - ValueSetBirthSexFetusVitalRecords
-      - ValueSetEditBypass01234VitalRecords
-      - ValueSetEducationLevelVitalRecords
-      - ValueSetEducationLevelPersonVitalRecords
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
-      - ValueSetFatherRelationshipVitalRecords
       - ValueSetHispanicNoUnknownVitalRecords
       - ValueSetHispanicOriginVitalRecords
-      - ValueSetJurisdictionVitalRecords
       - ValueSetInputRaceAndEthnicityPersonVitalRecords
-      - ValueSetMotherRelationshipVitalRecords
-      - ValueSetMothersDateOfBirthEditFlagsVitalRecords
-      - ValueSetPluralityEditFlagsVitalRecords
       - ValueSetRaceCodeVitalRecords
-      - ValueSetRaceMissingValueReasonVitalRecords
-      - ValueSetRaceRecode40VitalRecords
+
+AddressValueSets:
+    name: Address ValueSets
+    resources:  
+      - ValueSetBirthplaceCountryVitalRecords
+      - ValueSetJurisdictionVitalRecords
       - ValueSetResidenceCountryVitalRecords
       - ValueSetStatesTerritoriesAndProvincesVitalRecords
       - ValueSetUSStatesAndTerritoriesVitalRecords
+
+OtherValueSets:
+    name: Other ValueSets
+    resources:  
+      - ValueSetBirthAttendantTitlesVitalRecords
+      - ValueSetBirthSexChildVitalRecords
+      - ValueSetBirthSexFetusVitalRecords
+      - ValueSetEducationLevelVitalRecords
+      - ValueSetEducationLevelPersonVitalRecords
+      - ValueSetFatherRelationshipVitalRecords
+      - ValueSetMotherRelationshipVitalRecords
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
       - ValueSetYesNoUnknownNotApplicableVitalRecords
-  
-  VRCLConceptMaps:
+EditFlagValueSets:
+    name: ValueSets
+    resources:  
+      - ValueSetEditBypass01234VitalRecords
+      - ValueSetMothersDateOfBirthEditFlagsVitalRecords
+      - ValueSetPluralityEditFlagsVitalRecords
+VRCLConceptMaps:
     name: Concept Maps
     resources:
       - ConceptMapBirthAttendantTitlesVitalRecords
@@ -280,13 +304,12 @@ groups:
       - ConceptMapYesNoNotApplicableVitalRecords
       - ConceptMapYesNoUnknownNotApplicableVitalRecords
       - ConceptMapYesNoUnknownVitalRecords
-  
-  VRCLParameters:
+VRCLParameters:
     name: Parameters
     resources:
       - expansion-parameters-vr-common
 
-  VRCLExamples:
+VRCLExamples:
     name: Examples
     resources:
       - observation-input-race-and-ethnicity-vr-mother 
