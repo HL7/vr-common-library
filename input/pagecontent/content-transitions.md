@@ -110,5 +110,24 @@
 | [ValueSetApgarTimingVitalRecords](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-apgar-score-vr.html) |  [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-apgar-score-vr.html) |  [BFDR](placeholder.html)    | Moved to Birth and Fetal Death Reporting IG |
 {: .grid }
 
+[CodeSystemDeathPregnancyStatusVitalRecords]: CodeSystem-CodeSystem-death-pregnancy-status-vr.html
+
+[CodeSystemDeathReportingCodesVitalRecords]: CodeSystem-CodeSystem-death-reporting-codes-vr.html
+[CodeSystemIntentionalRejectVitalRecords]: CodeSystem-CodeSystem-intentional-reject-vr.html
+[CodeSystemLocalComponentCodesVitalRecords]: CodeSystem-CodeSystem-local-component-codes-vr.html
+[CodeSystemSystemRejectVitalRecords]: CodeSystem-CodeSystem-system-reject-vr.html
+[CodeSystemTransaxConversionVitalRecords]: CodeSystem-CodeSystem-transax-conversion-vr.html
+[ParametersCodingStatusValuesVitalRecords]: StructureDefinition-Parameters-coding-status-values-vr.html
+
+### Removed Codesystems
+
+| Name         |  Current IG      | Comments/Updates  |
+| :----------: |  -----------     | :---------------: |
+| [CodeSystemDeathPregnancyStatusVitalRecords] |  [VRDR][DeathPregnancyStatusCS]     | :---------------: |
+| :----------: |  -----------     | :---------------: |
+| :----------: |  -----------     | :---------------: |
+| :----------: |  -----------     | :---------------: |
+{: .grid }
+
 
 {% include markdown-link-references.md %}

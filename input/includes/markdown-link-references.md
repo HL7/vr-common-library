@@ -39,12 +39,17 @@
 [USCoreBirthSexVS]: http://hl7.org/fhir/us/core/ValueSet/birthsex
 
 
+<!-- old terminology -->
 [CodeSystemDeathPregnancyStatusVitalRecords]: CodeSystem-CodeSystem-death-pregnancy-status-vr.html
 [CodeSystemDeathReportingCodesVitalRecords]: CodeSystem-CodeSystem-death-reporting-codes-vr.html
 [CodeSystemIntentionalRejectVitalRecords]: CodeSystem-CodeSystem-intentional-reject-vr.html
 [CodeSystemLocalComponentCodesVitalRecords]: CodeSystem-CodeSystem-local-component-codes-vr.html
 [CodeSystemSystemRejectVitalRecords]: CodeSystem-CodeSystem-system-reject-vr.html
 [CodeSystemTransaxConversionVitalRecords]: CodeSystem-CodeSystem-transax-conversion-vr.html
+[ParametersCodingStatusValuesVitalRecords]: StructureDefinition-Parameters-coding-status-values-vr.html
+
+
+<!-- old profiles/extensions -->
 [ConditionEclampsiaHypertensionVitalRecords]: StructureDefinition-Condition-eclampsia-hypertension-vr.html
 [ConditionGestationalDiabetesVitalRecords]: StructureDefinition-Condition-gestational-diabetes-vr.html
 [ConditionGestationalHypertensionVitalRecords]: StructureDefinition-Condition-gestational-hypertension-vr.html
@@ -91,7 +96,6 @@
 [ObservationPreviousPretermBirthVitalRecords]: StructureDefinition-Observation-previous-preterm-birth-vr.html
 [ObservationRaceVitalRecords]: StructureDefinition-Observation-race-vr.html
 [ObservationTabulatedEthnicityVitalRecords]: StructureDefinition-Observation-tabulated-ethnicity-vr.html
-[ParametersCodingStatusValuesVitalRecords]: StructureDefinition-Parameters-coding-status-values-vr.html
 [PatientDecedentFetusVitalRecords]: StructureDefinition-Patient-decedent-fetus-vr.html
 [ProcedureArtificialInseminationVitalRecords]: StructureDefinition-Procedure-artificial-insemination-vr.html
 [ProcedureAssistedFertilizationVitalRecords]: StructureDefinition-Procedure-assisted-fertilization-vr.html
@@ -111,4 +115,9 @@
 [ValueSetSystemRejectVitalRecords]: ValueSet-ValueSet-system-reject-vr.html
 [ValueSetTransaxConversionVitalRecords]: ValueSet-ValueSet-transax-conversion-vr.html
 [ValueSetTransportationIncidentRoleVitalRecords]: ValueSet-ValueSet-transportation-incident-role-vr.html
+
+<!-- VRDR Terminology -->
+[DeathPregnancyStatusCS]: CodeSystem-CodeSystem-death-pregnancy-status.html
+
+
 {% include fsh-link-references.md %}
