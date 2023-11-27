@@ -146,7 +146,7 @@ This profile is mapped to:
   <td>PLUR_BYPASS</td>
   <td>multipleBirth.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[PluralityEditFlagsVS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-plurality-edit-flags.html'>PluralityEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>

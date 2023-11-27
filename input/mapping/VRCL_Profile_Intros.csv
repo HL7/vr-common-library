@@ -1,0 +1,53 @@
+﻿Order,Heading,Profile Name,Profile ID,Profile Usage,Form Mappng,IJE Mapping,Profile Location
+1,Input,ExtensionPartialDateAbsentReasonVitalRecords,Extension-partial-date-absent-reason-vr,,,,VRCPL
+2,Input,ExtensionPartialDateTimeVitalRecords,Extension-partial-date-time-vr,,,,VRCPL
+3,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,x,x,VRCPL
+4,Input,ExtensionRelatedpersonDeceasedVitalRecords,Extension-relatedperson-deceased-vr,,,,VRCPL
+5,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,x,x,VRCPL
+6,Input,ExtensionBypassEditFlagVitalRecords,Extension-bypass-edit-flag-vr,,,,VRCPL
+7,Input,ExtensionCityCodeVitalRecords,Extension-city-code-vr,,,,VRCPL
+8,Input,ExtensionDistrictCodeVitalRecords,Extension-district-code-vr,,,,VRCPL
+9,Input,ExtensionPartialDateVitalRecords,Extension-partial-date-vr,,,,VRCPL
+10,Input,ExtensionPostDirectionalVitalRecords,Extension-post-directional-vr,,,,VRCPL
+11,Input,ExtensionPreDirectionalVitalRecords,Extension-pre-directional-vr,,,,VRCPL
+12,Input,ExtensionStreetDesignatorVitalRecords,Extension-street-designator-vr,,,,VRCPL
+16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.,,x,VRCPL
+17,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
+18,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
+19,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
+
+ * the [patient-birthPlace](http://hl7.org/fhir/StructureDefinition/patient-birthPlace) extension
+ * the [patient-birthTime](http://hl7.org/fhir/StructureDefinition/patient-birthTime) extension
+ * the [patient-multipleBirthTotal](http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal) extension to record plurality
+ * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
+    * use not-applicable if the name hasn't been chosen",x,x,VRCPL
+,,,,,,,
+21,Input,PatientMotherVitalRecords,Patient-mother-vr,,x,x,VRCPL
+22,Input,PractitionerVitalRecords,Practitioner-vr,,x,x,VRCPL
+23,Input,RelatedpersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,,x,x,VRCPL
+24,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,,VRCPL
+25,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
+26,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
+27,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
+                For documentation on their use see referenceTBD.
+                There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
+28,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"It contains data that are a coded form of the race and ethnicity data that has been submitted to the the national statistics agency.
+
+Two sets of codes will be used to address two objectives. These objectives are:
+* to generate codes for race or ethnicity data provided as text entries
+* to generate a single race code in cases where multiple races have been reported
+
+In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. 
+
+Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.",,x,VRCPL
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+29,Input,ExtensionDatePartAbsentReasonVitalRecords,Extension-date-part-absent-reason-vr,,,,VRCPL
+,,,,,,,
+,,,,,,,
+30,Input,ExtensionReportedParentAgeAtDeliveryVitalRecords,Extension-reported-parent-age-at-delivery-vr,,,,VRCPL
+,,,,,,,
+,,,,,,,
+31,Input,ParametersCodingStatusValuesVitalRecords,Parameters-coding-status-values-vr,,,,VRCPL

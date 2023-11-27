@@ -54,7 +54,7 @@ This profile is mapped to:
   <td>ATTEND</td>
   <td>qualification.code</td>
   <td>codeable</td>
-  <td>[BirthAttendantTitlesVS]</td>
+  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -108,7 +108,7 @@ This profile is mapped to:
   <td>CERTIF</td>
   <td>qualification.code</td>
   <td>codeable</td>
-  <td>[BirthAttendantTitlesVS]</td>
+  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -153,7 +153,7 @@ This profile is mapped to:
   <td>ATTEND</td>
   <td>qualification.code</td>
   <td>codeable</td>
-  <td>[BirthAttendantTitlesVS]</td>
+  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>

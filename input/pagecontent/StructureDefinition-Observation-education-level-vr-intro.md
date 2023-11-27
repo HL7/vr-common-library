@@ -1,11 +1,5 @@
 ### Form Mapping
 This profile is mapped to:
- * Item **20. Mother’s Education** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **23. Father’s Education** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **8. What is the highest level of schooling that you will have completed at the time of delivery?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **22. What is the highest level of schooling that the father will have completed at the time of delivery?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **19. Mother’s Education** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **8. What is the highest level of schooling that you have completed at the time of delivery?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
 
@@ -49,7 +43,7 @@ This profile is mapped to:
   <td>MEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -67,7 +61,7 @@ This profile is mapped to:
   <td>FEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
@@ -112,7 +106,7 @@ This profile is mapped to:
   <td>MEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -130,7 +124,7 @@ This profile is mapped to:
   <td>FEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
