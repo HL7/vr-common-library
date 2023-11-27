@@ -37,8 +37,6 @@
 [HL7EncounterAdmitSourceVS]: http://hl7.org/fhir/ValueSet/encounter-admit-source
 [USCoreDischargeDispositionVS]: http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition
 [USCoreBirthSexVS]: http://hl7.org/fhir/us/core/ValueSet/birthsex
-
-
 <!-- old terminology -->
 [CodeSystemDeathPregnancyStatusVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-death-pregnancy-status-vr.html
 [CodeSystemDeathReportingCodesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-death-reporting-codes-vr.html
@@ -46,7 +44,6 @@
 [CodeSystemLocalComponentCodesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-local-component-codes-vr.html
 [CodeSystemSystemRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-system-reject-vr.html
 [CodeSystemTransaxConversionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-transax-conversion-vr.html
-
 [ValueSetApgarTimingVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-apgar-timing-vr.html
 [ValueSetCertifierTypesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-certifier-types-vr.html
 [ValueSetContributoryTobaccoUseVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-contributory-tobacco-use-vr.html
@@ -58,8 +55,6 @@
 [ValueSetSystemRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-system-reject-vr.html
 [ValueSetTransaxConversionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-transax-conversion-vr.html
 [ValueSetTransportationIncidentRoleVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-transportation-incident-role-vr.html
-
-
 <!-- old profiles/extensions -->
 [ConditionEclampsiaHypertensionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html
 [ConditionGestationalDiabetesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html
@@ -116,10 +111,7 @@
 [RelatedPersonFatherNaturalVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-father-natural-vr.html
 [RelatedPersonMotherGestationalVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-mother-gestational-vr.html
 [RelatedPersonParentVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-parent-vr.html
-
-
 <!-- BFDR Profiles/Extensions-->
-
 [ConditionChorioamnionitis]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-chorioamnionitis.html
 [ConditionCongenitalAnomalyOfNewborn]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-congenital-anomaly-of-newborn.html
 [ConditionEclampsiaHypertension]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-eclampsia-hypertension.html
@@ -205,17 +197,12 @@
 [ProcedureObstetric]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-obstetric.html
 [ProcedureSurfactantReplacementTherapy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-surfactant-replacement-therapy.html
 [ProcedureUnplannedHysterectomy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-unplanned-hysterectomy.html
-
-
-
-
 <!-- BFDR Terminology -->
 [AbnormalConditionsNewbornCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-abnormal-conditions-newborn.html
 [BirthAndFetalDeathFinancialClassCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class.html
 [BirthDeliveryOccurredCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-vr-birth-delivery-occurred.html
 [FetalDeathCauseOrConditionCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition.html
 [InformantRelationshipToMotherCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-informant-relationship-to-mother.html
-
 [ApgarTimingVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-apgar-timing.html
 [BirthAndFetalDeathFinancialClassVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-and-fetal-death-financial-class.html
 [BirthAttendantTitlesVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html
@@ -238,7 +225,6 @@
 [ObstetricProcedureVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-obstetric-procedure.html
 [PluralityEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-plurality-edit-flags.html
 [PregnancyReportEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-pregnancy-report-edit-flags.html
-
 <!-- VRDR Profiles -->
 [CodingStatusValues]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-coding-status-values.html
 [DeathLocation]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-location.html
@@ -250,8 +236,6 @@
 [InjuryIncident]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-injury-incident.html
 [MannerOfDeath]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-manner-of-death.html
 [DeathCertification]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-certification.html
-
-
 <!-- VRDR Terminology -->
 [DeathPregnancyStatusCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-CodeSystem-death-pregnancy-status.html
 [IntentionalRejectCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-intentional-reject-cs.html
@@ -268,13 +252,6 @@
 [SystemRejectVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-system-reject-vs.html
 [TransaxConversionVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-transax-conversion-vs.html
 [TransportationIncidentRoleVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-transportation-incident-role-vs.html
-
-
 <!-- MDI Terminology -->
 [CodeSystemMDI]: https://build.fhir.org/ig/HL7/fhir-mdi-ig/CodeSystem-CodeSystem-vr-codes.html
-
-
-
-
-
 {% include fsh-link-references.md %}
