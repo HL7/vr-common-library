@@ -9,6 +9,8 @@
 | - | (re)moving of profiles | ObservationParentEducationLevelVitalRecords and related example was removed (doesn't add value given ObservationEducationLevelVitalRecords exists). PatientDecedentFetusVitalRecords and related examples moved to BFDR. RelatedPersonMotherGestationalVitalRecords and related example was removed (doesn't add value given ObservationEducationLevelVitalRecords exists).   |
 {: .grid }
 
+See the [Content Transitions](content-transitions.html) page for more details on movement of and changes to content.
+
 ### STU 1.1 Update, July 2023
 
 | Jira Issue | Description of Change | Changes Made |
