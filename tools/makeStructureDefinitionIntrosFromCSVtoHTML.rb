@@ -15,7 +15,7 @@
 #IO.copy_stream(download3, 'input/mapping/BFDR_Forms_Mapping.csv')
 
 #run:
-# ruby tools/makeStructureDefinitionIntrosHTML.rb input/mapping/VRCL_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
+#ruby tools/makeStructureDefinitionIntrosHTML.rb input/mapping/VRCL_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
 
 require "json"
 require "pry"
