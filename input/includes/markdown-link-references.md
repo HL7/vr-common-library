@@ -40,84 +40,241 @@
 
 
 <!-- old terminology -->
-[CodeSystemDeathPregnancyStatusVitalRecords]: CodeSystem-CodeSystem-death-pregnancy-status-vr.html
-[CodeSystemDeathReportingCodesVitalRecords]: CodeSystem-CodeSystem-death-reporting-codes-vr.html
-[CodeSystemIntentionalRejectVitalRecords]: CodeSystem-CodeSystem-intentional-reject-vr.html
-[CodeSystemLocalComponentCodesVitalRecords]: CodeSystem-CodeSystem-local-component-codes-vr.html
-[CodeSystemSystemRejectVitalRecords]: CodeSystem-CodeSystem-system-reject-vr.html
-[CodeSystemTransaxConversionVitalRecords]: CodeSystem-CodeSystem-transax-conversion-vr.html
-[ParametersCodingStatusValuesVitalRecords]: StructureDefinition-Parameters-coding-status-values-vr.html
+[CodeSystemDeathPregnancyStatusVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-death-pregnancy-status-vr.html
+[CodeSystemDeathReportingCodesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-death-reporting-codes-vr.html
+[CodeSystemIntentionalRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-intentional-reject-vr.html
+[CodeSystemLocalComponentCodesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-local-component-codes-vr.html
+[CodeSystemSystemRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-system-reject-vr.html
+[CodeSystemTransaxConversionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-transax-conversion-vr.html
+
+[ValueSetApgarTimingVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-apgar-timing-vr.html
+[ValueSetCertifierTypesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-certifier-types-vr.html
+[ValueSetContributoryTobaccoUseVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-contributory-tobacco-use-vr.html
+[ValueSetDateEstablishmentApproachVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-date-establishment-approach-vr.html
+[ValueSetDeathPregnancyStatusVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-death-pregnancy-status-vr.html
+[ValueSetIntentionalRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-intentional-reject-vr.html
+[ValueSetMannerOfDeathVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-manner-of-death-vr.html
+[ValueSetPlaceOfDeathVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-place-of-death-vr.html
+[ValueSetSystemRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-system-reject-vr.html
+[ValueSetTransaxConversionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-transax-conversion-vr.html
+[ValueSetTransportationIncidentRoleVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-transportation-incident-role-vr.html
 
 
 <!-- old profiles/extensions -->
-[ConditionEclampsiaHypertensionVitalRecords]: StructureDefinition-Condition-eclampsia-hypertension-vr.html
-[ConditionGestationalDiabetesVitalRecords]: StructureDefinition-Condition-gestational-diabetes-vr.html
-[ConditionGestationalHypertensionVitalRecords]: StructureDefinition-Condition-gestational-hypertension-vr.html
-[ConditionPrepregnancyDiabetesVitalRecords]: StructureDefinition-Condition-prepregnancy-diabetes-vr.html
-[ConditionPrepregnancyHypertensionVitalRecords]: StructureDefinition-Condition-prepregnancy-hypertension-vr.html
-[ExtensionDateDayVitalRecords]: StructureDefinition-Extension-date-day-vr.html
-[ExtensionDateMonthVitalRecords]: StructureDefinition-Extension-date-month-vr.html
-[ExtensionDateTimeVitalRecords]: StructureDefinition-Extension-date-time-vr.html
-[ExtensionDateYearVitalRecords]: StructureDefinition-Extension-date-year-vr.html
-[ExtensionPartialDateVitalRecords]: StructureDefinition-Extension-partial-date-vr.html
-[ExtensionPartialDateTimeVitalRecords]: StructureDefinition-Extension-partial-date-time-vr.html
-[ExtensionPatientFetalDeathVitalRecords]: StructureDefinition-Extension-patient-fetal-death-vr.html
-[ExtensionRelatedpersonBirthplaceVitalRecords]: StructureDefinition-Extension-relatedperson-birthplace-vr.html
-[ExtensionRelatedPersonDeceasedVitalRecords]: StructureDefinition-Extension-relatedperson-deceased-vr.html
-[ExtensionReportedParentAgeAtDeliveryVitalRecords]: StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html
-[ExtensionWithinCityLimitsIndicatorVitalRecords]: StructureDefinition-Extension-within-city-limits-indicator-vr.html
-[LocationDeathVitalRecords]: StructureDefinition-Location-death-vr.html
-[LocationInjuryVitalRecords]: StructureDefinition-Location-injury-vr.html
-[ObservationApgarScoreVitalRecords]: StructureDefinition-Observation-apgar-score-vr.html
-[ObservationBirthWeightVitalRecords]: StructureDefinition-Observation-birth-weight-vr.html
-[ObservationCauseOfDeathPart1VitalRecords]: StructureDefinition-Observation-cause-of-death-part1-vr.html
-[ObservationContributingCauseOfDeathPart2VitalRecords]: StructureDefinition-Observation-contributing-cause-of-death-part2-vr.html
-[ObservationDeathDateVitalRecords]: StructureDefinition-Observation-death-date-vr.html
-[ObservationDecedentPregnancyVitalRecords]: StructureDefinition-Observation-decedent-pregnancy-vr.html
-[ObservationGestationalAgeAtDeliveryVitalRecords]: StructureDefinition-Observation-gestational-age-at-delivery-vr.html
-[ObservationInfantLivingVitalRecords]: StructureDefinition-Observation-infant-living-vr.html
-[ObservationInjuryIncidentVitalRecords]: StructureDefinition-Observation-injury-incident-vr.html
-[ObservationLastMenstrualPeriodVitalRecords]: StructureDefinition-Observation-last-menstrual-period-vr.html
-[ObservationMannerOfDeathVitalRecords]: StructureDefinition-Observation-manner-of-death-vr.html
-[ObservationMotherDeliveryWeightVitalRecords]: StructureDefinition-Observation-mother-delivery-weight-vr.html
-[ObservationMotherHeightVitalRecords]: StructureDefinition-Observation-mother-height-vr.htm
-[ObservationMotherPrepregnancyWeightVitalRecords]: StructureDefinition-Observation-mother-prepregnancy-weight-vr.html
-[ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords]: StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors-vr.html
-[ObservationNumberBirthsNowDeadVitalRecords]: StructureDefinition-Observation-number-births-now-dead-vr.html
-[ObservationNumberBirthsNowLivingVitalRecords]: StructureDefinition-Observation-number-births-now-living-vr.html
-[ObservationNumberFetalDeathsThisDeliveryVitalRecords]: StructureDefinition-Observation-number-fetal-deaths-this-delivery-vr.html
-[ObservationNumberLiveBirthsThisDeliveryVitalRecords]: StructureDefinition-Observation-number-live-births-this-delivery-vr.html
-[ObservationNumberOtherPregnancyOutcomesVitalRecords]: StructureDefinition-Observation-number-other-pregnancy-outcomes-vr.html
-[ObservationNumberPrenatalVisitsVitalRecords]: StructureDefinition-Observation-number-prenatal-visits-vr.html
-[ObservationNumberPreviousCesareansVitalRecords]: StructureDefinition-Observation-number-previous-cesareans-vr.html
-[ObservationParentEducationLevelVitalRecords]: StructureDefinition-Observation-parent-education-level-vr.html
-[ObservationPluralityVitalRecords]: StructureDefinition-Observation-plurality-vr.html
-[ObservationPreviousCesareanVitalRecords]: StructureDefinition-Observation-previous-cesarean-vr.html
-[ObservationPreviousPretermBirthVitalRecords]: StructureDefinition-Observation-previous-preterm-birth-vr.html
-[ObservationRaceVitalRecords]: StructureDefinition-Observation-race-vr.html
-[ObservationTabulatedEthnicityVitalRecords]: StructureDefinition-Observation-tabulated-ethnicity-vr.html
-[PatientDecedentFetusVitalRecords]: StructureDefinition-Patient-decedent-fetus-vr.html
-[ProcedureArtificialInseminationVitalRecords]: StructureDefinition-Procedure-artificial-insemination-vr.html
-[ProcedureAssistedFertilizationVitalRecords]: StructureDefinition-Procedure-assisted-fertilization-vr.html
-[ProcedureDeathCertificationVitalRecords]: StructureDefinition-Procedure-death-certification-vr.html
-[ProcedureInfertilityTreatmentVitalRecords]: StructureDefinition-Procedure-infertility-treatment-vr.html
-[RelatedPersonFatherNaturalVitalRecords]: StructureDefinition-RelatedPerson-father-natural-vr.html
-[RelatedPersonMotherGestationalVitalRecords]: StructureDefinition-RelatedPerson-mother-gestational-vr.html
-[RelatedPersonParentVitalRecords]: StructureDefinition-RelatedPerson-parent-vr.html
-[ValueSetApgarTimingVitalRecords]: ValueSet-ValueSet-apgar-timing-vr.html
-[ValueSetCertifierTypesVitalRecords]: ValueSet-ValueSet-certifier-types-vr.html
-[ValueSetContributoryTobaccoUseVitalRecords]: ValueSet-ValueSet-contributory-tobacco-use-vr.html
-[ValueSetDateEstablishmentApproachVitalRecords]: ValueSet-ValueSet-date-establishment-approach-vr.html
-[ValueSetDeathPregnancyStatusVitalRecords]: ValueSet-ValueSet-death-pregnancy-status-vr.html
-[ValueSetIntentionalRejectVitalRecords]: ValueSet-ValueSet-intentional-reject-vr.html
-[ValueSetMannerOfDeathVitalRecords]: ValueSet-ValueSet-manner-of-death-vr.html
-[ValueSetPlaceOfDeathVitalRecords]: ValueSet-ValueSet-place-of-death-vr.html
-[ValueSetSystemRejectVitalRecords]: ValueSet-ValueSet-system-reject-vr.html
-[ValueSetTransaxConversionVitalRecords]: ValueSet-ValueSet-transax-conversion-vr.html
-[ValueSetTransportationIncidentRoleVitalRecords]: ValueSet-ValueSet-transportation-incident-role-vr.html
+[ConditionEclampsiaHypertensionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html
+[ConditionGestationalDiabetesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html
+[ConditionGestationalHypertensionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-hypertension-vr.html
+[ConditionPrepregnancyDiabetesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-diabetes-vr.html
+[ConditionPrepregnancyHypertensionVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-hypertension-vr.html
+[ExtensionDateDayVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-day-vr.html
+[ExtensionDateMonthVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-month-vr.html
+[ExtensionDateTimeVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-time-vr.html
+[ExtensionDateYearVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-year-vr.html
+[ExtensionPartialDateVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-vr.html
+[ExtensionPartialDateTimeVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-time-vr.html
+[ExtensionPatientFetalDeathVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-patient-fetal-death-vr.html
+[ExtensionRelatedpersonBirthplaceVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-birthplace-vr.html
+[ExtensionRelatedPersonDeceasedVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-deceased-vr.html
+[ExtensionReportedParentAgeAtDeliveryVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html
+[ExtensionWithinCityLimitsIndicatorVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-within-city-limits-indicator-vr.html
+[LocationDeathVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Location-death-vr.html
+[LocationInjuryVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Location-injury-vr.html
+[ObservationApgarScoreVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-apgar-score-vr.html
+[ObservationBirthWeightVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-birth-weight-vr.html
+[ObservationCauseOfDeathPart1VitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-cause-of-death-part1-vr.html
+[ObservationContributingCauseOfDeathPart2VitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-contributing-cause-of-death-part2-vr.html
+[ObservationDeathDateVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-death-date-vr.html
+[ObservationDecedentPregnancyVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-decedent-pregnancy-vr.html
+[ObservationGestationalAgeAtDeliveryVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-gestational-age-at-delivery-vr.html
+[ObservationInfantLivingVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-infant-living-vr.html
+[ObservationInjuryIncidentVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-injury-incident-vr.html
+[ObservationLastMenstrualPeriodVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-last-menstrual-period-vr.html
+[ObservationMannerOfDeathVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-manner-of-death-vr.html
+[ObservationMotherDeliveryWeightVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-delivery-weight-vr.html
+[ObservationMotherHeightVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-height-vr.htm
+[ObservationMotherPrepregnancyWeightVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-prepregnancy-weight-vr.html
+[ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors-vr.html
+[ObservationNumberBirthsNowDeadVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-dead-vr.html
+[ObservationNumberBirthsNowLivingVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-living-vr.html
+[ObservationNumberFetalDeathsThisDeliveryVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-fetal-deaths-this-delivery-vr.html
+[ObservationNumberLiveBirthsThisDeliveryVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-live-births-this-delivery-vr.html
+[ObservationNumberOtherPregnancyOutcomesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-other-pregnancy-outcomes-vr.html
+[ObservationNumberPrenatalVisitsVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-prenatal-visits-vr.html
+[ObservationNumberPreviousCesareansVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-previous-cesareans-vr.html
+[ObservationParentEducationLevelVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-parent-education-level-vr.html
+[ObservationPluralityVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-plurality-vr.html
+[ObservationPreviousCesareanVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-cesarean-vr.html
+[ObservationPreviousPretermBirthVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-preterm-birth-vr.html
+[ObservationRaceVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-race-vr.html
+[ObservationTabulatedEthnicityVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-tabulated-ethnicity-vr.html
+[ParametersCodingStatusValuesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Parameters-coding-status-values-vr.html
+[PatientDecedentFetusVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-decedent-fetus-vr.html
+[ProcedureArtificialInseminationVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-artificial-insemination-vr.html
+[ProcedureAssistedFertilizationVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-assisted-fertilization-vr.html
+[ProcedureDeathCertificationVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-death-certification-vr.html
+[ProcedureInfertilityTreatmentVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-infertility-treatment-vr.html
+[RelatedPersonFatherNaturalVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-father-natural-vr.html
+[RelatedPersonMotherGestationalVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-mother-gestational-vr.html
+[RelatedPersonParentVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-parent-vr.html
+
+
+<!-- BFDR Profiles/Extensions-->
+
+[ConditionChorioamnionitis]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-chorioamnionitis.html
+[ConditionCongenitalAnomalyOfNewborn]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-congenital-anomaly-of-newborn.html
+[ConditionEclampsiaHypertension]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-eclampsia-hypertension.html
+[ConditionFetalDeathCauseOrCondition]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-fetal-death-cause-or-condition.html
+[ConditionFetalDeathOtherCauseOrCondition]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-fetal-death-other-cause-or-condition.html
+[ConditionGestationalDiabetes]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-gestational-diabetes.html
+[ConditionGestationalHypertension]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-gestational-hypertension.html
+[ConditionInfectionPresentDuringPregnancy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-infection-present-during-pregnancy.html
+[ConditionPerinealLaceration]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-perineal-laceration.html
+[ConditionPrepregnancyDiabetes]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-prepregnancy-diabetes.html
+[ConditionPrepregnancyHypertension]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-prepregnancy-hypertension.html
+[ConditionRupturedUterus]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-ruptured-uterus.html
+[ConditionSeizure]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Condition-seizure.html
+[CoveragePrincipalPayerDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Coverage-principal-payer-delivery.html
+[EncounterBirth]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Encounter-birth.html
+[Encounter_Maternity]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Encounter-maternity.html
+[ExtensionDateFiledByRegistrar]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-date-filed-by-registrar.html
+[ExtensionDatereceivedByRegistrar]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-date-received-by-registrar.html
+[ExtensionEncounterMaternityReference]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-encounter-maternity-reference.html
+[ExtensionFetalDeathLocalFileNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-fetal-death-local-file-number.html
+[ExtensionFetalDeathReportNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-fetal-death-report-number.html
+[ExtensionLiveBirthCertificateNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-live-birth-certificate-number.html
+[ExtensionLiveBirthLocalFileNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-live-birth-local-file-number.html
+[ObservationSteroidsFetalLungMaturation]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-steroids-fetal-lung-maturation.html
+[ObservationAntibioticsAdministeredDuringLabor]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-antibiotics-during-labor.html
+[ObservationApgarScore]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-apgar-score.html
+[ObservationAutopsyHistologicalExamResultsUsed]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-autopsy-histological-exam-results-used.html
+[ObservationBirthWeight]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-birth-weight.html
+[ObservationCigaretteSmokingBeforeDuringPregnancy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html
+[ObservationCodedInitiatingFetalDeathCauseOrCondition]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition.html
+[ObservationCodedOtherFetalDeathCauseOrCondition]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-coded-other-fetal-death-cause-or-condition.html
+[ObservationDateOfFirstPrenatalCareVisit]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-date-of-first-prenatal-care-visit.html
+[ObservationDateOfLastLiveBirth]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-date-of-last-live-birth.html
+[ObservationDateOfLastOtherPregnancyOutcome]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html
+[ObservationFetalDeathTimePoint]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-fetal-death-time-point.html
+[ObservationFetalPresentation]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-fetal-presentation.html
+[ObservationGestationalAgeAtDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-gestational-age-at-delivery.html
+[ObservationHistologicalPlacentalExamPerformed]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-histological-placental-exam-performed.html
+[ObservationICUAdmission]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-icu-admission.html
+[ObservationInfantBreastfedAtDischarge]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-infant-breastfed-at-discharge.html
+[ObservationInfantLiving]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-infant-living.html
+[ObservationLaborTrialAttempted]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-labor-trial-attempted.html
+[ObservationLastMenstrualPeriod]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-last-menstrual-period.html
+[ObservationMethodOfDisposition]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-method-of-disposition.html
+[ObservationMotherDeliveryWeight]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-mother-delivery-weight.html
+[ObservationMotherHeight]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-mother-height.html
+[ObservationMotherMarriedDuringPregnancy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-mother-married-during-pregnancy.html
+[ObservationMotherPrepregnancyWeight]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-mother-prepregnancy-weight.html
+[ObservationMotherReceivedWICFood]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-mother-received-wic-food.html
+[ObservationNICUAdmission]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-nicu-admission.html
+[ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html
+[ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html
+[ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html
+[ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-no-infections-present-during-pregnancy.html
+[ObservationNoneOfSpecifiedMaternalMorbidities]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-none-of-specified-maternal-morbidities.html
+[ObservationNoneOfSpecifiedObstetricProcedures]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-none-of-specified-obstetric-procedures.html
+[ObservationNoneOfSpecifiedPregnancyRiskFactors]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html
+[ObservationNumberBirthsNowDead]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-births-now-dead.html
+[ObservationNumberBirthsNowLiving]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-births-now-living.html
+[ObservationNumberFetalDeathsThisDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-fetal-deaths-this-delivery.html
+[ObservationNumberLiveBirthsThisDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-live-births-this-delivery.html
+[ObservationNumberOtherPregnancyOutcomes]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-other-pregnancy-outcomes.html
+[ObservationNumberPrenatalVisits]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-prenatal-visits.html
+[ObservationNumberPreviousCesareans]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-number-previous-cesareans.html
+[ObservationPaternityAcknowledgementSigned]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-paternity-acknowledgement-signed.html
+[ObservationPlannedToDeliverAtHome]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-planned-to-deliver-at-home.html
+[ObservationPreviousCesarean]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-previous-cesarean.html
+[ObservationPreviousPretermBirth]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-previous-preterm-birth.html
+[ObservationSSNRequestedForChild]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-ssn-requested-for-child.html
+[ObservationUnknownFinalRouteMethodDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Observation-unknown-final-route-and-method-of-delivery.html
+[PatientDecedentFetus]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Patient-decedent-fetus.html
+[ProcedureAntibioticSuspectedNeonatalSepsis]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html
+[ProcedureArtificialInsemination]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-artificial-insemination.html
+[ProcedureAssistedFertilization]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-assisted-fertilization.html
+[ProcedureAssistedVentilationFollowingDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-assisted-ventilation-following-delivery.html
+[ProcedureAssistedVentilationMoreThanSixHours]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html
+[ProcedureAugmentationOfLabor]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-augmentation-of-labor.html
+[ProcedureBloodTransfusion]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-blood-transfusion.html
+[ProcedureEpiduralOrSpinalAnesthesia]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html
+[ProcedureFinalRouteMethodDelivery]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-final-route-method-delivery.html
+[ProcedureInductionOfLabor]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-induction-of-labor.html
+[ProcedureInfertilityTreatment]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-infertility-treatment.html
+[ProcedureObstetric]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-obstetric.html
+[ProcedureSurfactantReplacementTherapy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-surfactant-replacement-therapy.html
+[ProcedureUnplannedHysterectomy]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Procedure-unplanned-hysterectomy.html
+
+
+
+
+<!-- BFDR Terminology -->
+[AbnormalConditionsNewbornCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-abnormal-conditions-newborn.html
+[BirthAndFetalDeathFinancialClassCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class.html
+[BirthDeliveryOccurredCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-vr-birth-delivery-occurred.html
+[FetalDeathCauseOrConditionCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition.html
+[InformantRelationshipToMotherCS]: http://build.fhir.org/ig/HL7/fhir-bfdr/CodeSystem-CodeSystem-informant-relationship-to-mother.html
+
+[ApgarTimingVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-apgar-timing.html
+[BirthAndFetalDeathFinancialClassVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-and-fetal-death-financial-class.html
+[BirthAttendantTitlesVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html
+[BirthDeliveryOccurredVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-delivery-occurred.html
+[BirthWeightEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-weight-edit-flags.html
+[CigaretteSmokingBeforeAndDuringPregnancyVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-cigarette-smoking-before-during-pregnancy.html
+[DeliveryRoutesVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-delivery-routes.html
+[EstimateOfGestationEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-estimate-of-gestation-edit-flags.html
+[FathersDateOfBirthEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-fathers-date-of-birth-edit-flags.html
+[FetalDeathCauseOrConditionVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-fetal-death-cause-or-condition.html
+[FetalDeathTimePointsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-fetal-death-time-points.html
+[FetalPresentationsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-fetal-presentations.html
+[HistologicalPlacentalExaminationVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-histological-placental-examination.html
+[InfectionsDuringPregnancyLiveBirthVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-infections-during-pregnancy-live-birth.html
+[InformantRelationshipToMotherVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-informant-relationship-to-mother.html
+[MothersDateOfBirthEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html
+[NewbornCongenitalAnomaliesVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-newborn-congenital-anomalies.html
+[NumberPreviousCesareansEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-number-previous-cesareans-edit-flags.html
+[ValueSetObstetricProcedureOutcome]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-obstetric-procedure-outcome.html
+[ObstetricProcedureVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-obstetric-procedure.html
+[PluralityEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-plurality-edit-flags.html
+[PregnancyReportEditFlagsVS]: http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-pregnancy-report-edit-flags.html
+
+<!-- VRDR Profiles -->
+[CodingStatusValues]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-coding-status-values.html
+[DeathLocation]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-location.html
+[InjuryLocation]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-injury-location.html
+[CauseOfDeathPart1]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-part1.html
+[CauseOfDeathPart2]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-cause-of-death-part2.html
+[DeathDate]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-date.html
+[DecedentPregnancyStatus]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-decedent-pregnancy-status.html
+[InjuryIncident]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-injury-incident.html
+[MannerOfDeath]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-manner-of-death.html
+[DeathCertification]: http://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-death-certification.html
+
 
 <!-- VRDR Terminology -->
-[DeathPregnancyStatusCS]: CodeSystem-CodeSystem-death-pregnancy-status.html
+[DeathPregnancyStatusCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-CodeSystem-death-pregnancy-status.html
+[IntentionalRejectCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-intentional-reject-cs.html
+[ObservationsCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-observations-cs.html
+[SystemRejectCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-system-reject-cs.html
+[TransaxConversionCS]: https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-transax-conversion-cs.html
+[CertifierTypesVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-certifier-types-vs.html
+[ContributoryTobaccoUseVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-contributory-tobacco-use-vs.html
+[DateOfDeathDeterminationMethodsVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-date-of-death-determination-methods-vs.html
+[DeathPregnancyStatusVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-pregnancy-status-vs.html
+[IntentionalRejectVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-intentional-reject-vs.html
+[MannerOfDeathVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-manner-of-death-vs.html
+[PlaceOfDeathVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-place-of-death-vs.html
+[SystemRejectVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-system-reject-vs.html
+[TransaxConversionVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-transax-conversion-vs.html
+[TransportationIncidentRoleVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-transportation-incident-role-vs.html
+
+
+<!-- MDI Terminology -->
+[CodeSystemMDI]: https://build.fhir.org/ig/HL7/fhir-mdi-ig/CodeSystem-CodeSystem-vr-codes.html
+
+
+
 
 
 {% include fsh-link-references.md %}
