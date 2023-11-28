@@ -1,17 +1,33 @@
 ﻿Order,Heading,Profile Name,Profile ID,Profile Usage,Form Mappng,IJE Mapping,Profile Location
 1,Input,ExtensionPartialDateAbsentReasonVitalRecords,Extension-partial-date-absent-reason-vr,,,,VRCPL
-2,Input,ExtensionPartialDateTimeVitalRecords,Extension-partial-date-time-vr,,,,VRCPL
+2,Input,ExtensionPartialDateTimeVitalRecords,Extension-partial-date-time-vr,"
+If a component is missing, it is assumed unknown.
+* This extension SHOULD NOT be used when the value can be expressed as a [dateTime](https://build.fhir.org/datatypes.html#dateTime), specifically YYYY, YYYY-MM, YYYY-MM-DD, or a full dateTime.
+* This extension SHOULD NOT be used to express that the dateTime in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the dateTime.
+* This extension SHOULD be used to express missing components of dateTime including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX, as well as all cases where the time is known, but one or more components of the date is unknown.
+* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.
+
+When the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX-1201212, the dateTime value should be \""2022-12\"".",,,VRCPL
 3,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,x,x,VRCPL
 4,Input,ExtensionRelatedpersonDeceasedVitalRecords,Extension-relatedperson-deceased-vr,,,,VRCPL
 5,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,x,x,VRCPL
 6,Input,ExtensionBypassEditFlagVitalRecords,Extension-bypass-edit-flag-vr,,,,VRCPL
 7,Input,ExtensionCityCodeVitalRecords,Extension-city-code-vr,,,,VRCPL
 8,Input,ExtensionDistrictCodeVitalRecords,Extension-district-code-vr,,,,VRCPL
-9,Input,ExtensionPartialDateVitalRecords,Extension-partial-date-vr,,,,VRCPL
+9,Input,ExtensionPartialDateVitalRecords,Extension-partial-date-vr,"
+If a component is missing, it is assumed unknown.
+* This extension SHOULD NOT be used when the value can be expressed as a [date](https://build.fhir.org/datatypes.html#date), specifically YYYY, YYYY-MM, YYYY-MM-DD, or a full date.
+* This extension SHOULD NOT be used to express that the date in its entirety is missing/unknown.  In this case a simple dataAbsent reason extension should be used on the date.
+* This extension SHOULD be used to express missing components of date including XXXX-XX-DD, YYYY-XX-DD, YYYY-MM-XX, but one or more components of the date is unknown.
+* If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.
+
+When the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX, the dateTime value should be \""2022-12\"".",,,VRCPL
 10,Input,ExtensionPostDirectionalVitalRecords,Extension-post-directional-vr,,,,VRCPL
 11,Input,ExtensionPreDirectionalVitalRecords,Extension-pre-directional-vr,,,,VRCPL
 12,Input,ExtensionStreetDesignatorVitalRecords,Extension-street-designator-vr,,,,VRCPL
-16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.,,x,VRCPL
+16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,"Input (from Jurisdictions) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
+
+This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.",,x,VRCPL
 17,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
 18,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
 19,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
@@ -31,15 +47,11 @@
 27,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
                 For documentation on their use see referenceTBD.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
-28,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"It contains data that are a coded form of the race and ethnicity data that has been submitted to the the national statistics agency.
+28,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS based on  submitted information and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
 
-Two sets of codes will be used to address two objectives. These objectives are:
-* to generate codes for race or ethnicity data provided as text entries
-* to generate a single race code in cases where multiple races have been reported
+This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
 
-In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. 
-
-Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.",,x,VRCPL
+Coded race and ethnicity data is communicated for both the mother and father in the case of live birth, for the mother in the case of fetal death, and for the decdent for mortality reporting.",,x,VRCPL
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
