@@ -1,12 +1,8 @@
-It contains data that are a coded form of the race and ethnicity data that has been submitted to the the national statistics agency.
+Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS based on  submitted information and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
 
-Two sets of codes will be used to address two objectives. These objectives are:
-* to generate codes for race or ethnicity data provided as text entries
-* to generate a single race code in cases where multiple races have been reported
+This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
 
-In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. 
-
-Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.
+Coded race and ethnicity data is communicated for both the mother and father in the case of live birth, for the mother in the case of fetal death, and for the decdent for mortality reporting.
 ### IJE Mapping
 
 <style>
