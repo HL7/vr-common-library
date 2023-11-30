@@ -959,7 +959,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>295</td>
   <td>Father's Race--Filipino</td>
   <td>FRACE6</td>
-  <td>component[ Filipino].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>component[ Filipino].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>boolean</td>
   <td></td>
 </tr>
@@ -1148,7 +1148,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>39</td>
   <td>Decedent of Hispanic Origin?--Mexican</td>
   <td>DETHNIC1</td>
-  <td>component[ HispanicMexican].valueCoding</td>
+  <td>component[ HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
@@ -1157,7 +1157,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>40</td>
   <td>Decedent of Hispanic Origin?--Puerto Rican</td>
   <td>DETHNIC2</td>
-  <td>component[ HispanicPuertoRican].valueCoding</td>
+  <td>component[ HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
@@ -1166,7 +1166,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>41</td>
   <td>Decedent of Hispanic Origin?--Cuban</td>
   <td>DETHNIC3</td>
-  <td>component[ HispanicCuban ].valueCoding</td>
+  <td>component[ HispanicCuban ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
@@ -1175,7 +1175,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>42</td>
   <td>Decedent of Hispanic Origin?--Other</td>
   <td>DETHNIC4</td>
-  <td>component[ HispanicOther ].valueCoding</td>
+  <td>component[ HispanicOther ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
@@ -1184,7 +1184,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>43</td>
   <td>Decedent of Hispanic Origin?--Other, Literal</td>
   <td>DETHNIC5</td>
-  <td>component[ HispanicLiteral ].valueString</td>
+  <td>component[ HispanicLiteral ].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1193,7 +1193,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>44</td>
   <td>Decedent's Race--White</td>
   <td>RACE1</td>
-  <td>component[ White].valueBoolean</td>
+  <td>component[ White].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1202,7 +1202,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>45</td>
   <td>Decedent's Race--Black or African American</td>
   <td>RACE2</td>
-  <td>component[ BlackOrAfricanAmerican].valueBoolean</td>
+  <td>component[ BlackOrAfricanAmerican].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1211,7 +1211,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>46</td>
   <td>Decedent's Race--American Indian or Alaska Native</td>
   <td>RACE3</td>
-  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean</td>
+  <td>component[ AmericanIndianOrAlaskanNative].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1220,7 +1220,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>47</td>
   <td>Decedent's Race--Asian Indian</td>
   <td>RACE4</td>
-  <td>component[ AsianIndian].valueBoolean</td>
+  <td>component[ AsianIndian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1229,7 +1229,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>48</td>
   <td>Decedent's Race--Chinese</td>
   <td>RACE5</td>
-  <td>component[ Chinese].valueBoolean</td>
+  <td>component[ Chinese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1238,7 +1238,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>49</td>
   <td>Decedent's Race--Filipino</td>
   <td>RACE6</td>
-  <td>component[ Filipino].valueBoolean</td>
+  <td>component[ Filipino].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1247,7 +1247,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>50</td>
   <td>Decedent's Race--Japanese</td>
   <td>RACE7</td>
-  <td>component[ Japanese].valueBoolean</td>
+  <td>component[ Japanese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1256,7 +1256,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>51</td>
   <td>Decedent's Race--Korean</td>
   <td>RACE8</td>
-  <td>component[ Korean].valueBoolean</td>
+  <td>component[ Korean].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1265,7 +1265,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>52</td>
   <td>Decedent's Race--Vietnamese</td>
   <td>RACE9</td>
-  <td>component[ Vietnamese].valueBoolean</td>
+  <td>component[ Vietnamese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1274,7 +1274,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>53</td>
   <td>Decedent's Race--Other Asian</td>
   <td>RACE10</td>
-  <td>component[ OtherAsian].valueBoolean</td>
+  <td>component[ OtherAsian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1283,7 +1283,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>54</td>
   <td>Decedent's Race--Native Hawaiian</td>
   <td>RACE11</td>
-  <td>component[ NativeHawaiian].valueBoolean</td>
+  <td>component[ NativeHawaiian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1292,7 +1292,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>55</td>
   <td>Decedent's Race--Guamanian or Chamorro</td>
   <td>RACE12</td>
-  <td>component[ GuamanianOrChamorro].valueBoolean</td>
+  <td>component[ GuamanianOrChamorro].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1301,7 +1301,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>56</td>
   <td>Decedent's Race--Samoan</td>
   <td>RACE13</td>
-  <td>component[ Samoan].valueBoolean</td>
+  <td>component[ Samoan].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1310,7 +1310,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>57</td>
   <td>Decedent's Race--Other Pacific Islander</td>
   <td>RACE14</td>
-  <td>component[ OtherPacificIslander].valueBoolean</td>
+  <td>component[ OtherPacificIslander].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1319,7 +1319,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>58</td>
   <td>Decedent's Race--Other</td>
   <td>RACE15</td>
-  <td>component[ OtherRace].valueBoolean</td>
+  <td>component[ OtherRace].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>boolean</td>
   <td>-</td>
 </tr>
@@ -1328,7 +1328,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>59</td>
   <td>Decedent's Race--First American Indian or Alaska Native Literal</td>
   <td>RACE16</td>
-  <td>component[ FirstAmericanIndianOrAlaskanNativeLiteral].valueString</td>
+  <td>component[ FirstAmericanIndianOrAlaskanNativeLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1337,7 +1337,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>60</td>
   <td>Decedent's Race--Second American Indian or Alaska Native Literal</td>
   <td>RACE17</td>
-  <td>component[ SecondAmericanIndianOrAlaskanNativeLiteral].valueString</td>
+  <td>component[ SecondAmericanIndianOrAlaskanNativeLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1346,7 +1346,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>61</td>
   <td>Decedent's Race--First Other Asian Literal</td>
   <td>RACE18</td>
-  <td>component[ FirstOtherAsianLiteral].valueString</td>
+  <td>component[ FirstOtherAsianLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1355,7 +1355,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>62</td>
   <td>Decedent's Race--Second Other Asian Literal</td>
   <td>RACE19</td>
-  <td>component[ SecondOtherAsianLiteral].valueString</td>
+  <td>component[ SecondOtherAsianLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1364,7 +1364,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>63</td>
   <td>Decedent's Race--First Other Pacific Islander Literal</td>
   <td>RACE20</td>
-  <td>component[ FirstOtherPacificIslanderLiteral].valueString</td>
+  <td>component[ FirstOtherPacificIslanderLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1373,7 +1373,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>64</td>
   <td>Decedent's Race--Second Other Pacific Islander Literal</td>
   <td>RACE21</td>
-  <td>component[ SecondOtherPacificIslanderLiteral].valueString</td>
+  <td>component[ SecondOtherPacificIslanderLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1382,7 +1382,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>65</td>
   <td>Decedent's Race--First Other Literal</td>
   <td>RACE22</td>
-  <td>component[ FirstOtherRaceLiteral].valueString</td>
+  <td>component[ FirstOtherRaceLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1391,7 +1391,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>66</td>
   <td>Decedent's Race--Second Other Literal</td>
   <td>RACE23</td>
-  <td>component[ SecondOtherRaceLiteral].valueString</td>
+  <td>component[ SecondOtherRaceLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>string</td>
   <td>-</td>
 </tr>
@@ -1400,7 +1400,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>83</td>
   <td>Decedent's Race--Missing</td>
   <td>RACE_MVR</td>
-  <td>component[ MissingValueReason].valueCoding</td>
+  <td>component[ MissingValueReason].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-missing-value-reason-vr.html'>ValueSetRaceMissingValueReasonVitalRecords</a></td>
 </tr>
