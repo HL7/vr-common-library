@@ -1,6 +1,3 @@
-### Form Mapping
-This profile is mapped to:
-
 ### IJE Mapping
 
 <style>
