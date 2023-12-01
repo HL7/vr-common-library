@@ -55,7 +55,7 @@
 <tr>
   <td style='text-align: center'>18f</td>
   <td>Was an Autopsy Performed?</td>
-  <td>-</td>
+  <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
