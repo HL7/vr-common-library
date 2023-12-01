@@ -71,6 +71,8 @@ pages:
     title: Content Transitions
   downloads.md:
     title:  Downloads 
+  credits.md:
+    title: Credits
   
 
 
@@ -102,12 +104,17 @@ parameters:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
-  Plan: vr_ig_harmonization.html
-  Usage: usage.html
+  Home: 
+    Home: index.html
+    Vital Records Modernization: vr_ig_harmonization.html
+    Credits: credits.html
+  Implementer Guidance: 
+    Specification: the_specification.html
+    Usage Notes: usage.html
   Artifacts: artifacts.html
-  Specification: the_specification.html
-  Changes: change_log.html
+  Changes: 
+    Change Log: change_log.html
+    STU1.1 to STU2 Changes: content-transitions.html
   Downloads:  downloads.html
   
 
