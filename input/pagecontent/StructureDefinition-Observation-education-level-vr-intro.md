@@ -30,7 +30,7 @@
   <td>32</td>
   <td>Mother's Education</td>
   <td>MEDUC</td>
-  <td>value,  <br />focus[ PatientMotherVitalRecords ]</td>
+  <td>value,  <br />code=57712-2 (Highest level of education Mother)</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
 </tr>
@@ -39,7 +39,7 @@
   <td>33</td>
   <td>Mother's Education--Edit Flag</td>
   <td>MEDUC_BYPASS</td>
-  <td>value.extension[bypassEditFlag].value</td>
+  <td>value.extension[bypassEditFlag].value, <br />code=57712-2 (Highest level of education Mother)</td>
   <td>codeable</td>
   <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
@@ -48,7 +48,7 @@
   <td>78</td>
   <td>Father's Education</td>
   <td>FEDUC</td>
-  <td>value, focus[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>value, <br />code=87300-0 (Highest level of education Father)</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
 </tr>
@@ -57,7 +57,7 @@
   <td>79</td>
   <td>Father's Education--Edit Flag</td>
   <td>FEDUC_BYPASS</td>
-  <td>value.extension[bypassEditFlag].value</td>
+  <td>value.extension[bypassEditFlag].value, <br />code=87300-0 (Highest level of education Father)</td>
   <td>codeable</td>
   <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
@@ -93,7 +93,7 @@
   <td>32</td>
   <td>Mother's Education</td>
   <td>MEDUC</td>
-  <td>value, <br />focus[ PatientMotherVitalRecords ]</td>
+  <td>value, <br />code=57712-2 (Highest level of education Mother)</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
 </tr>
@@ -102,7 +102,7 @@
   <td>33</td>
   <td>Mother's Education--Edit Flag</td>
   <td>MEDUC_BYPASS</td>
-  <td>value.extension[bypassEditFlag].value</td>
+  <td>value.extension[bypassEditFlag].value, <br />code=57712-2 (Highest level of education Mother)</td>
   <td>codeable</td>
   <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
@@ -111,7 +111,7 @@
   <td>283</td>
   <td>Father's Education</td>
   <td>FEDUC</td>
-  <td>value, <br />focus[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>value, <br />code=87300-0 (Highest level of education Father)</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-education-level-vr.html'>ValueSetEducationLevelVitalRecords</a></td>
 </tr>
@@ -120,7 +120,7 @@
   <td>284</td>
   <td>Father's Education--Edit Flag</td>
   <td>FEDUC_BYPASS</td>
-  <td>value.extension[bypassEditFlag].value</td>
+  <td>value.extension[bypassEditFlag].value, <br />code=87300-0 (Highest level of education Father)</td>
   <td>codeable</td>
   <td><a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
