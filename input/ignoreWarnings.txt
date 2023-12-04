@@ -26,9 +26,6 @@ The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-Con
 # Unknown internal code system IJE
 	The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 
-# Best practice for Vital Stats?
-Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-
 # Beyond my control 
 INFORMATION: ValueSet/ValueSet-race-code-vr: ValueSet.compose.include[0]: The value set include has too many codes to validate (1,168)
 
