@@ -8,9 +8,9 @@ If a component is missing, it is assumed unknown.
 * If a component is missing, the interpretation should be equivalent to it being present, with a data absent reason of 'unknown'.  If the data absent reason is other than 'unknown', the component may be included wih a data absent reason.
 
 When the known components of the date can be expressed as a valid dateTime, the value SHALL be present.  So, for example 2022-12-XX-1201212, the dateTime value should be \""2022-12\"".",,,VRCPL
-3,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,x,x,VRCPL
+3,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,,x,VRCPL
 4,Input,ExtensionRelatedpersonDeceasedVitalRecords,Extension-relatedperson-deceased-vr,,,,VRCPL
-5,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,x,x,VRCPL
+5,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,,x,VRCPL
 6,Input,ExtensionBypassEditFlagVitalRecords,Extension-bypass-edit-flag-vr,,,,VRCPL
 7,Input,ExtensionCityCodeVitalRecords,Extension-city-code-vr,,,,VRCPL
 8,Input,ExtensionDistrictCodeVitalRecords,Extension-district-code-vr,,,,VRCPL

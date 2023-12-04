@@ -1,146 +1,148 @@
 
+{% include transitions_documentation.md %}
 ### Current Profiles
 
-| Name | Previous IG |  Comments/Updates |
-| ---------- | ----------- | --------------- |
-| [ObservationAutopsyPerformedIndicatorVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-autopsy-performed-indicator-vr.html) | Value field now a slice definition ("actual result") and "autopsy was performed?" is reported under valueCodeableConcept field |
-| [ObservationCodedRaceAndEthnicityVitalRecords] | [VRCL - race](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-race-vr.html), [VRCL - tabulated](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-tabulated-ethnicity-vr.html) | Tabulated race was deprecated, with the new profile encapsulating information coded by NCHS to be sent back to jurisdictions |
-| [ObservationEducationLevelVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-parent-education-level-vr.html)  | Generalized profile now has subject set to [patient](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-vr.html), focus set to [mother](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-mother-vr.html) or [parent](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-RelatedPerson-parent-vr.html), and profile now includes bypassEditFlag |
-| [ObservationEmergingIssuesVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-emerging-issues.html) | Moved to VRCL to be used in BFDR and BFDR |
-| [ObservationInputRaceAndEthnicityVitalRecords] | [VRCL - race](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-race-vr.html), [VRCL - tabulated](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-tabulated-ethnicity-vr.html) | Race profiles refactored, new profile represents information sent from jurisdictions to NCHS to be coded |
-| [PatientChildVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Patient-child-vr.html) | Now inherits from [PatientVitalRecords] rather than [USCorePatient], added bypassedit flag to multiplebirth, birthTime, dataAbsentReason, partialDate no longer extensions  |
-| [PatientMotherVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-mother-vr.html) | New profile inherits from  [PatientVitalRecords] rather than [USCorePatient] |
-| [PatientVitalRecords] | - | New addition, serves as a new abstract profile (parent to [PatientChildVitalRecords], [PatientDecedentFetus](http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Patient-decedent-fetus.html), [PatientMotherVitalRecords], and [Decedent](https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-decedent.html)) |
-| [PractitionerVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Practitioner-vr.html) | Now includes slice for qualification, additional address slice items, and name field constrained to exactly one|
-| [RelatedPersonFatherNaturalVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-father-natural-vr.html) | - |
-| [RelatedPersonFatherVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-father-vr.html) | Now includes birthDate bypassEditFlag |
-| [RelatedPersonMotherVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-mother-vr.html) | Now includes birthDate bypassEditFlag, communication field no longer MS   |
-| [RelatedPersonParentVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-parent-vr.html) | Now includes birthDate bypassEditFlag, subject generalized to [PatientVitalRecords] |
+| Name | Previous Version/Location |  Comments/Updates |
+| :----------: | ----------- | :---------------: |
+| [ObservationAutopsyPerformedIndicatorVitalRecords] | [VRCL][ObservationAutopsyPerformedIndicatorVitalRecordsOld] | Value field now a slice definition ("actual result") and "autopsy was performed?" is reported under valueCodeableConcept field |
+| [ObservationCodedRaceAndEthnicityVitalRecords] | [VRDR][CodedRaceAndEthnicityOld] | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [ObservationEducationLevelVitalRecords] | [VRCL][ObservationParentEducationLevelVitalRecordsOld]  | Generalized profile now has subject set to [patient](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-vr.html), focus set to [mother](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-mother-vr.html) or [parent](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-RelatedPerson-parent-vr.html), and profile now includes bypassEditFlag |
+[EmergingIssuesOld] | Moved to VRCL to be used in BFDR (fetal birth/death) and VRDR (mortality) use cases |
+| [ObservationInputRaceAndEthnicityVitalRecords] | [VRDR][InputRaceAndEthnicityOld] | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [PatientChildVitalRecords] | [VRCL][PatientChildVitalRecordsOld] | Now inherits from [PatientVitalRecords] rather than [USCorePatient], added bypassedit flag to multiplebirth, birthTime, dataAbsentReason, partialDate no longer extensions  |
+| [PatientMotherVitalRecords] | [VRCL][PatientMotherVitalRecordsOld] | New profile inherits from  [PatientVitalRecords] rather than [USCorePatient] |
+| [PatientVitalRecords] | New | New addition, serves as a new abstract profile (parent to [PatientChildVitalRecords], [PatientDecedentFetus][PatientDecedentFetusOld], [PatientMotherVitalRecords], and [Decedent][DecedentOld]) |
+| [PractitionerVitalRecords] | [VRCL][PractitionerVitalRecordsOld] | Now includes slice for qualification, additional address slice items, and name field constrained to exactly one|
+| [RelatedPersonFatherNaturalVitalRecords] | [VRCL][RelatedPersonFatherNaturalVitalRecordsOld] | - |
+| [RelatedPersonFatherVitalRecords] | [VRCL][RelatedPersonFatherVitalRecordsOld] | Now includes birthDate bypassEditFlag |
+| [RelatedPersonMotherVitalRecords] | [VRCL][RelatedPersonMotherVitalRecordsOld] | Now includes birthDate bypassEditFlag, communication field no longer MS   |
+| [RelatedPersonParentVitalRecords] | [VRCL][RelatedPersonParentVitalRecordsOld] | Now includes birthDate bypassEditFlag, subject generalized to [PatientVitalRecords] |
 {: .grid }
 
 ### Current Extensions
 
-| Name         | Previous IG  |  Comments/Updates  |
+| Name         | Previous Version/Location  |  Comments/Updates  |
 | :----------: | -----------  |  :---------------: |
-| [ExtensionDatePartAbsentReasonVitalRecords]| -   | New addition |
-| [ExtensionPartialDateTimeVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-time-vr.html)    | - |
-| [ExtensionRelatedpersonBirthplaceVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-birthplace-vr.html)   | - |
-| [ExtensionRelatedPersonDeceasedVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-deceased-vr.html)   | - |
-| [ExtensionWithinCityLimitsIndicatorVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-within-city-limits-indicator-vr.html)   | changed to reference VRCL, rather than phinvads valueset |
-| [ExtensionBypassEditFlagVitalRecords] | - | New addition |
-| [ExtensionCityCodeVitalRecords] | - | New addition |
-| [ExtensionDistrictCodeVitalRecords] | -  | New addition |
-| [ExtensionPartialDateVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-vr.html) | - |
-| [ExtensionPostDirectionalVitalRecords] | - | New addition |
-| [ExtensionPreDirectionalVitalRecords] | - |  New addition |
-| [ExtensionReportedParentAgeAtDeliveryVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html)  | - |
-| [ExtensionStreetDesignatorVitalRecords] | -    | New addition |
-| [ExtensionStreetNameVitalRecords] | -  | New addition |
-| [ExtensionStreetNumberVitalRecords] | -  | New addition |
-| [ExtensionUnitOrAptNumberVitalRecords] | - | New addition |
+| [ExtensionDatePartAbsentReasonVitalRecords]| New | New addition |
+| [ExtensionPartialDateTimeVitalRecords] | [VRCL][ExtensionPartialDateTimeVitalRecordsOld]   | - |
+| [ExtensionRelatedpersonBirthplaceVitalRecords] | [VRCL][ExtensionRelatedpersonBirthplaceVitalRecordsOld]   | - |
+| [ExtensionRelatedPersonDeceasedVitalRecords] | [VRCL][ExtensionRelatedPersonDeceasedVitalRecordsOld]   | - |
+| [ExtensionWithinCityLimitsIndicatorVitalRecords] | [VRCL][ExtensionWithinCityLimitsIndicatorVitalRecordsOld]   | changed to reference VRCL, rather than phinvads valueset |
+| [ExtensionBypassEditFlagVitalRecords] | [VRDR][BypassEditFlag] | - |
+| [ExtensionCityCodeVitalRecords] | [VRDR][CityCodeOld] | - |
+| [ExtensionDistrictCodeVitalRecords] | [VRDR][DistrictCodeOld]  | - |
+| [ExtensionPartialDateVitalRecords] | [VRCL][ExtensionPartialDateVitalRecordsOld] | - |
+| [ExtensionPostDirectionalVitalRecords] | [VRDR][PostDirectionalOld] | - |
+| [ExtensionPreDirectionalVitalRecords] | [VRDR][PreDirectionalOld] |  - |
+| [ExtensionReportedParentAgeAtDeliveryVitalRecords] | [VRCL][ExtensionReportedParentAgeAtDeliveryVitalRecordsOld]  | - |
+| [ExtensionStreetDesignatorVitalRecords] | [VRDR][StreetDesignatorOld]  | - |
+| [ExtensionStreetNameVitalRecords] | [VRDR][StreetNameOld] | - |
+| [ExtensionStreetNumberVitalRecords] | [VRDR][StreetNumberOld] | - |
+| [ExtensionUnitOrAptNumberVitalRecords] | [VRDR][UnitOrAptNumberOld] | - |
 {: .grid }
 
 ### Current Valuesets
 
-| Name         | Previous IG  | Comments/Updates  |
+| Name         | Previous Version/Location  | Comments/Updates  |
 | :----------: | -----------  | :---------------: |
 | [ValueSetBirthAttendantTitlesVitalRecords] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7111) | - |
-| [ValueSetBirthplaceCountryVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-birthplace-country-vs.html) | Meant to be used outside of just mortality use case  |
-| [ValueSetBirthSexChildVitalRecords] | [USCoreBirthSex]  | - |
-| [ValueSetBirthSexFetusVitalRecords] | -  | New addition |
-| [ValueSetCodedRaceAndEthnicityPersonVitalRecords] | -  | New addition |
-| [ValueSetEditBypass01234VitalRecords] | [VRDR](https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-edit-bypass-01234-vs.html) | Meant to be used outside of just mortality use case  | 
-| [ValueSetEducationLevelVitalRecords] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7582) | < HS diploma codes now "Elementary School" and "secondary or high school education" |
-| [ValueSetEducationLevelPersonVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-education-level-person-vr.html) | Now includes "Highest level of education [US Standard Certificate of Death]" |
-| [ValueSetFatherRelationshipVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-father-relationship-vr.html)  | - |
-| [ValueSetHispanicNoUnknownVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-hispanic-no-unknown-vs.html)  | Meant to be used outside of just mortality use case  |
-| [ValueSetHispanicOriginVitalRecords] | [VRDR](https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-hispanic-origin-vs.html) | Meant to be used outside of just mortality use case  |
-| [ValueSetJurisdictionVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-jurisdiction-vs.html)  | - |
-| [ValueSetInputRaceAndEthnicityPersonVitalRecords] | - | New addition |
-| [ValueSetMotherRelationshipVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-mother-relationship-vr.html)  | - |
+| [ValueSetBirthplaceCountryVitalRecords] | [VRDR][BirthplaceCountryVSOld] | Incorporated standard vital records approach to address  |
+| [ValueSetBirthSexChildVitalRecords] | [USCoreBirthSex]  | Restricted to NCHS-specific codes |
+| [ValueSetBirthSexFetusVitalRecords] | [USCoreBirthSex]  | Restricted to NCHS-specific codes  |
+| [ValueSetCodedRaceAndEthnicityPersonVitalRecords] | New | New addition, incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [ValueSetEducationLevelVitalRecords] | [VRDR][EducationLevelVSOld] | replaced [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7582) |
+| [ValueSetEducationLevelPersonVitalRecords] | [VRCL][ValueSetEducationLevelPersonVitalRecords] | Now includes "Highest level of education [US Standard Certificate of Death]" |
+| [ValueSetFatherRelationshipVitalRecords] | [VRCL][ValueSetFatherRelationshipVitalRecords]  | - |
+| [ValueSetHispanicNoUnknownVitalRecords] | [VRDR][HispanicNoUnknownVSOld]  | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases)  |
+| [ValueSetHispanicOriginVitalRecords] | [VRDR][HispanicOriginVSOld] | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases)  |
+| [ValueSetJurisdictionVitalRecords] | [VRDR][JurisdictionVSOld]  | Incorporated standard vital records approach to address |
+| [ValueSetInputRaceAndEthnicityPersonVitalRecords] | - | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [ValueSetMotherRelationshipVitalRecords] | [VRCL][ValueSetMotherRelationshipVitalRecords]  | - |
+| [ValueSetRaceCodeVitalRecords] | [VRDR][RaceCodeVSOld]  | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [ValueSetRaceMissingValueReasonVitalRecords] | [VRDR][RaceMissingValueReasonVSOld]  | Meant to be used outside of just mortality use case  |
+| [ValueSetRaceRecode40VitalRecords] | [VRDR][RaceRecode40VSOld] | Meant to be used outside of just mortality use case  |
+| [ValueSetResidenceCountryVitalRecords] | [VRDR][ResidenceCountryVSOld]  | Incorporated standard vital records approach to address  |
+| [ValueSetStatesTerritoriesAndProvincesVitalRecords] | [VRDR][StatesTerritoriesAndProvincesVSOld] | Incorporated standard vital records approach to address  |
+| [ValueSetUSStatesAndTerritoriesVitalRecords] | [VRDR][USStatesAndTerritoriesVSOld] | Incorporated standard vital records approach to address  |
+| [ValueSetUnitsOfAgeVitalRecords] | [VRDR][UnitsOfAgeVSOld] | - |
+| [ValueSetYesNoNotApplicableVitalRecords] | [VRCL][ValueSetYesNoNotApplicableVitalRecords] | - |
+| [ValueSetYesNoUnknownVitalRecords] | [VRCL][ValueSetYesNoUnknownVitalRecords]  | - |
+| [ValueSetYesNoUnknownNotApplicableVitalRecords] | [VRCL][ValueSetYesNoUnknownNotApplicableVitalRecords] | - |
+| [ValueSetEditBypass01234VitalRecords] | [VRDR][EditBypass01234VSOld] | Meant to be used outside of just mortality use case  | 
 | [ValueSetMothersDateOfBirthEditFlagsVitalRecords] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3BD473EE-40DD-E811-816D-0017A477041A) | - |
 | [ValueSetPluralityEditFlagsVitalRecords] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A)  | - |
-| [ValueSetRaceCodeVitalRecords] | replacing [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7373), based on [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-race-code-vs.html) VS  | - |
-| [ValueSetRaceMissingValueReasonVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-race-missing-value-reason-vs.html)  | Meant to be used outside of just mortality use case  |
-| [ValueSetRaceRecode40VitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-race-recode-40-vs.html) | Meant to be used outside of just mortality use case  |
-| [ValueSetResidenceCountryVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-residence-country-vs.html)  | Meant to be used outside of just mortality use case  |
-| [ValueSetStatesTerritoriesAndProvincesVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-states-territories-provinces-vs.html) | Meant to be used outside of just mortality use case  |
-| [ValueSetUSStatesAndTerritoriesVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-usstates-territories-vs.html) | Meant to be used outside of just mortality use case  |
-| [ValueSetUnitsOfAgeVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-units-of-age-vs.html) | - |
-| [ValueSetYesNoNotApplicableVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-yes-no-not-applicable-vr.html) | - |
-| [ValueSetYesNoUnknownVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-yes-no-unknown-vr.html)  | - |
-| [ValueSetYesNoUnknownNotApplicableVitalRecords] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html) | - |
 {: .grid }
 
 ### Current Codesystems
 
-| Name         | Previous IG  | Comments/Updates  |
+| Name         | Previous Version/Location  | Comments/Updates  |
 | :----------: | -----------  | :---------------: |
-| [CodeSystemCanadianProvincesVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-canada-provinces-vs.html) | Meant to be used outside of just mortality use case | 
+| [CodeSystemCanadianProvincesVitalRecords] | [VRDR][CanadaProvincesVSOld] | Incorporated standard vital records approach to address | 
 | [CodeSystemComponentVitalRecords] | [VRCL][CodeSystemLocalComponentCodesVitalRecords]  | - |
-| [CodeSystemCountryCodeVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-country-code-cs.html)  |  Meant to be used outside of just mortality use case  |
-| [CodeSystemHispanicOriginVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-hispanic-origin-cs.html)  |  Meant to be used outside of just mortality use case  |
-| [CodeSystemJurisdictionsVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-jurisdictions-cs.html)  |  Meant to be used outside of just mortality use case  |
-| [CodeSystemMissingValueReasonVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-missing-value-reason-cs.html) |  Meant to be used outside of just mortality use case  |
-| [CodeSystemRaceCodeVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-race-code-cs.html) |  Meant to be used outside of just mortality use case  |
-| [CodeSystemRaceRecode40VitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-race-recode-40-cs.html)  |  Meant to be used outside of just mortality use case  |
-| [CodeSystemEditFlagsVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-bypass-edit-flag-cs.html)  | Includes additional codes for plurality and date of birth value sets, meant to be used outside of just mortality use case  |
-| [CodeSystemLocalObservationsCodesVitalRecords] | [VRDR](http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-observations-cs.html) | Includes additional codes for decedent, mother, and father use cases |
+| [CodeSystemCountryCodeVitalRecords] | [VRDR][CountryCodeCSOld]  |  Incorporated standard vital records approach to address  |
+| [CodeSystemHispanicOriginVitalRecords] | [VRDR][HispanicOriginCSOld]  |  Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases)  |
+| [CodeSystemJurisdictionsVitalRecords] | [VRDR][JurisdictionsCSOld]  |  Meant to be used outside of just mortality use case  |
+| [CodeSystemMissingValueReasonVitalRecords] | [VRDR][MissingValueReasonCSOld] |  Meant to be used outside of just mortality use case  |
+| [CodeSystemRaceCodeVitalRecords] | [VRDR][RaceCodeCSOld] |  Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [CodeSystemRaceRecode40VitalRecords] | [VRDR][RaceRecode40CSOld]  |  Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases)  |
+| [CodeSystemLocalObservationsCodesVitalRecords] | [VRDR][ObservationsCSOld] | Includes additional codes for decedent, mother, and father use cases |
+| [CodeSystemEditFlagsVitalRecords] | [VRDR][BypassEditFlagCSOld]  | Includes additional codes for plurality and date of birth value sets, meant to be used outside of just mortality use case  |
 {: .grid }
 
 
 
 ### Removed Profiles
 
-| Name         | Current IG      | Comments/Updates  |
+| Name         | Current Version/Location      | Comments/Updates  |
 | :----------: | -----------     | :---------------: |
-| [ConditionEclampsiaHypertensionVitalRecords]| [BFDR][ConditionEclampsiaHypertension]  |  Only used for birth use case, omitted from VRCL | 
-| [ConditionGestationalDiabetesVitalRecords] | [BFDR][ConditionGestationalDiabetes]    |  Only used for birth use case, omitted from VRCL |
-| [ConditionGestationalHypertensionVitalRecords] | [BFDR][ConditionGestationalHypertension]   |  Only used for birth use case, omitted from VRCL |
-| [ConditionPrepregnancyDiabetesVitalRecords] | [BFDR][ConditionPrepregnancyDiabetes]   |  Only used for birth use case, omitted from VRCL |
-| [ConditionPrepregnancyHypertensionVitalRecords] | [BFDR][ConditionPrepregnancyHypertension]   |  Only used for birth use case, omitted from VRCL |
-| [LocationDeathVitalRecords] | [VRDR][DeathLocation]   |  Only used for death use case, omitted from VRCL |
-| [LocationInjuryVitalRecords] | [VRDR][InjuryLocation] |  Only used for death use case, omitted from VRCL | 
-| [ObservationApgarScoreVitalRecords] | [BFDR][ObservationApgarScore]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationBirthWeightVitalRecords] | [BFDR][ObservationBirthWeight]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationCauseOfDeathPart1VitalRecords] | [VRDR][CauseOfDeathPart1] |  Only used for death use case, omitted from VRCL | 
-| [ObservationContributingCauseOfDeathPart2VitalRecords] | [VRDR][CauseOfDeathPart2] |  Only used for death use case, omitted from VRCL | 
-| [ObservationDeathDateVitalRecords] | [VRDR][DeathDate] |  Only used for death use case, omitted from VRCL | 
-| [ObservationDecedentPregnancyVitalRecords] | [VRDR][DecedentPregnancyStatus] |  Only used for death use case, omitted from VRCL | 
-| [ObservationGestationalAgeAtDeliveryVitalRecords] | [BFDR][ObservationGestationalAgeAtDelivery]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationInfantLivingVitalRecords] | [BFDR][ObservationInfantLiving]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationInjuryIncidentVitalRecords] | [VRDR][InjuryIncident] |  Only used for death use case, omitted from VRCL | 
-| [ObservationLastMenstrualPeriodVitalRecords] | [BFDR][ObservationLastMenstrualPeriod]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationMannerOfDeathVitalRecords] | [VRDR][MannerOfDeath] |  Only used for death use case, omitted from VRCL | 
-| [ObservationMotherDeliveryWeightVitalRecords] | [BFDR][ObservationMotherDeliveryWeight]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationMotherHeightVitalRecords] | [BFDR][ObservationMotherHeight]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationMotherPrepregnancyWeightVitalRecords] | [BFDR][ObservationMotherPrepregnancyWeight]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords] | [BFDR][ObservationNoneOfSpecifiedPregnancyRiskFactors]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberBirthsNowDeadVitalRecords] | [BFDR][ObservationNumberBirthsNowDead]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberBirthsNowLivingVitalRecords] | [BFDR][ObservationNumberBirthsNowLiving]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberFetalDeathsThisDeliveryVitalRecords] | [BFDR][ObservationNumberFetalDeathsThisDelivery]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberLiveBirthsThisDeliveryVitalRecords] | [BFDR][ObservationNumberLiveBirthsThisDelivery]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberOtherPregnancyOutcomesVitalRecords] | [BFDR][ObservationNumberOtherPregnancyOutcomes]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberPrenatalVisitsVitalRecords] | [BFDR][ObservationNumberPrenatalVisits]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationNumberPreviousCesareansVitalRecords] | [BFDR][ObservationNumberPreviousCesareans]   |  Only used for birth use case, omitted from VRCL |
+| [ConditionEclampsiaHypertensionVitalRecords]| [BFDR][ConditionEclampsiaHypertension]  |  Only used for birth use case | 
+| [ConditionGestationalDiabetesVitalRecords] | [BFDR][ConditionGestationalDiabetes]    |  Only used for birth use case |
+| [ConditionGestationalHypertensionVitalRecords] | [BFDR][ConditionGestationalHypertension]   |  Only used for birth use case |
+| [ConditionPrepregnancyDiabetesVitalRecords] | [BFDR][ConditionPrepregnancyDiabetes]   |  Only used for birth use case |
+| [ConditionPrepregnancyHypertensionVitalRecords] | [BFDR][ConditionPrepregnancyHypertension]   |  Only used for birth use case |
+| [LocationDeathVitalRecords] | [VRDR][DeathLocation]   |  Only used for death use case |
+| [LocationInjuryVitalRecords] | [VRDR][InjuryLocation] |  Only used for death use case | 
+| [ObservationApgarScoreVitalRecords] | [BFDR][ObservationApgarScore]   |  Only used for birth use case |
+| [ObservationBirthWeightVitalRecords] | [BFDR][ObservationBirthWeight]   |  Only used for birth use case |
+| [ObservationCauseOfDeathPart1VitalRecords] | [VRDR][CauseOfDeathPart1] |  Only used for death use case | 
+| [ObservationContributingCauseOfDeathPart2VitalRecords] | [VRDR][CauseOfDeathPart2] |  Only used for death use case | 
+| [ObservationDeathDateVitalRecords] | [VRDR][DeathDate] |  Only used for death use case | 
+| [ObservationDecedentPregnancyVitalRecords] | [VRDR][DecedentPregnancyStatus] |  Only used for death use case | 
+| [ObservationGestationalAgeAtDeliveryVitalRecords] | [BFDR][ObservationGestationalAgeAtDelivery]   |  Only used for birth use case |
+| [ObservationInfantLivingVitalRecords] | [BFDR][ObservationInfantLiving]   |  Only used for birth use case |
+| [ObservationInjuryIncidentVitalRecords] | [VRDR][InjuryIncident] |  Only used for death use case | 
+| [ObservationLastMenstrualPeriodVitalRecords] | [BFDR][ObservationLastMenstrualPeriod]   |  Only used for birth use case |
+| [ObservationMannerOfDeathVitalRecords] | [VRDR][MannerOfDeath] |  Only used for death use case | 
+| [ObservationMotherDeliveryWeightVitalRecords] | [BFDR][ObservationMotherDeliveryWeight]   |  Only used for birth use case |
+| [ObservationMotherHeightVitalRecords] | [BFDR][ObservationMotherHeight]   |  Only used for birth use case |
+| [ObservationMotherPrepregnancyWeightVitalRecords] | [BFDR][ObservationMotherPrepregnancyWeight]   |  Only used for birth use case |
+| [ObservationNoneOfSpecifiedPregnancyRiskFactorsVitalRecords] | [BFDR][ObservationNoneOfSpecifiedPregnancyRiskFactors]   |  Only used for birth use case |
+| [ObservationNumberBirthsNowDeadVitalRecords] | [BFDR][ObservationNumberBirthsNowDead]   |  Only used for birth use case |
+| [ObservationNumberBirthsNowLivingVitalRecords] | [BFDR][ObservationNumberBirthsNowLiving]   |  Only used for birth use case |
+| [ObservationNumberFetalDeathsThisDeliveryVitalRecords] | [BFDR][ObservationNumberFetalDeathsThisDelivery]   |  Only used for birth use case |
+| [ObservationNumberLiveBirthsThisDeliveryVitalRecords] | [BFDR][ObservationNumberLiveBirthsThisDelivery]   |  Only used for birth use case |
+| [ObservationNumberOtherPregnancyOutcomesVitalRecords] | [BFDR][ObservationNumberOtherPregnancyOutcomes]   |  Only used for birth use case |
+| [ObservationNumberPrenatalVisitsVitalRecords] | [BFDR][ObservationNumberPrenatalVisits]   |  Only used for birth use case |
+| [ObservationNumberPreviousCesareansVitalRecords] | [BFDR][ObservationNumberPreviousCesareans]   |  Only used for birth use case |
 | [ObservationParentEducationLevelVitalRecords] | -  |  Removed (only relying on [ObservationEducationLevelVitalRecords]) |
 | [ObservationPluralityVitalRecords] | -   |  Removed (plurality is now specified with alive/dead births) |
-| [ObservationPreviousCesareanVitalRecords] | [BFDR][ObservationPreviousCesarean]   |  Only used for birth use case, omitted from VRCL |
-| [ObservationPreviousPretermBirthVitalRecords] | [BFDR][ObservationPreviousPretermBirth]   |  Only used for birth use case, omitted from VRCL |
+| [ObservationPreviousCesareanVitalRecords] | [BFDR][ObservationPreviousCesarean]   |  Only used for birth use case |
+| [ObservationPreviousPretermBirthVitalRecords] | [BFDR][ObservationPreviousPretermBirth]   |  Only used for birth use case |
 | [ObservationRaceVitalRecords] | -  |  Superseded by [input][ObservationInputRaceAndEthnicityVitalRecords] and [coded][ObservationCodedRaceAndEthnicityVitalRecords] race |
 | [ObservationTabulatedEthnicityVitalRecords] | -  |  Use was deprecated, superseded by [input][ObservationInputRaceAndEthnicityVitalRecords] and [coded][ObservationCodedRaceAndEthnicityVitalRecords] race |
-| [ParametersCodingStatusValuesVitalRecords] | [VRDR][CodingStatusValues]    |  Only used for death use case, omitted from VRCL |
-| [PatientDecedentFetusVitalRecords] | [BFDR][PatientDecedentFetus]   |  Only used for birth use case, omitted from VRCL |
-| [ProcedureArtificialInseminationVitalRecords] | [BFDR][ProcedureArtificialInsemination]   |  Only used for birth use case, omitted from VRCL |
-| [ProcedureAssistedFertilizationVitalRecords] | [BFDR][ProcedureAssistedFertilization]   |  Only used for birth use case, omitted from VRCL |
-| [ProcedureDeathCertificationVitalRecords] | [VRDR][DeathCertification] |  Only used for death use case, omitted from VRCL | 
-| [ProcedureInfertilityTreatmentVitalRecords] | [BFDR][ProcedureInfertilityTreatment]   |  Only used for birth use case, omitted from VRCL |
+| [ParametersCodingStatusValuesVitalRecords] | [VRDR][CodingStatusValues]    |  Only used for death use case |
+| [PatientDecedentFetusVitalRecords] | [BFDR][PatientDecedentFetus]   |  Only used for birth use case |
+| [ProcedureArtificialInseminationVitalRecords] | [BFDR][ProcedureArtificialInsemination]   |  Only used for birth use case |
+| [ProcedureAssistedFertilizationVitalRecords] | [BFDR][ProcedureAssistedFertilization]   |  Only used for birth use case |
+| [ProcedureDeathCertificationVitalRecords] | [VRDR][DeathCertification] |  Only used for death use case | 
+| [ProcedureInfertilityTreatmentVitalRecords] | [BFDR][ProcedureInfertilityTreatment]   |  Only used for birth use case |
 | [RelatedPersonMotherGestationalVitalRecords] |  -  | Removed |
 {: .grid }
 
 ### Removed Extensions
 
-| Name         |  Current IG      | Comments/Updates  |
+| Name         |  Current Version/Location      | Comments/Updates  |
+| :----------: |  -----------     | :---------------: |
 | [ExtensionDateDayVitalRecords] |  -  | No longer used in date/time extensions |
 | [ExtensionDateTimeVitalRecords] |  -    | No longer used in date/time extensions |
 | [ExtensionDateTimeVitalRecords] |  -    | No longer used in [ExtensionPartialDateTimeVitalRecords] |
@@ -150,10 +152,10 @@
 
 ### Removed Valuesets
 
-| Name         |  Current IG      | Comments/Updates  |
+| Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: |  -----------     | :---------------: |
 | [ValueSetApgarTimingVitalRecords] |  [BFDR][ApgarTimingVS]    | Only relevant to birth use case |
-| [ValueSetCertifierTypesVitalRecords] |   [VRDR][CertifierTypesVS]    | No codesystem, codes are directly used in a valueset, only relevant to mortality use case |
+| [ValueSetCertifierTypesVitalRecords] |   [VRDR][CertifierTypesVS]    | Only relevant to mortality use case |
 | [ValueSetContributoryTobaccoUseVitalRecords] | [VRDR][ContributoryTobaccoUseVS]     | Only relevant to mortality use case |
 | [ValueSetDateEstablishmentApproachVitalRecords] | [VRDR][DateOfDeathDeterminationMethodsVS]   | Only relevant to mortality use case |
 | [ValueSetDeathPregnancyStatusVitalRecords] |  [VRDR][DeathPregnancyStatusVS]    | Only relevant to mortality use case |
@@ -168,7 +170,7 @@
 
 ### Removed Codesystems
 
-| Name         |  Current IG      | Comments/Updates  |
+| Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: |  -----------     | :---------------: |
 | [CodeSystemDeathPregnancyStatusVitalRecords]|  [VRDR][DeathPregnancyStatusCS]    | Only relevant to mortality use case |
 | [CodeSystemDeathReportingCodesVitalRecords] |  [MDI][CodeSystemMDI]     | Only relevant to death investigation use case |
