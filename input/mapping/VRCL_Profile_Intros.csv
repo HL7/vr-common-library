@@ -63,3 +63,9 @@ Coded race and ethnicity data is communicated for both the mother and father in 
 ,,,,,,,
 ,,,,,,,
 31,Input,ParametersCodingStatusValuesVitalRecords,Parameters-coding-status-values-vr,,,,VRCPL
+32,Input,ObservationUsualWorkVitalRecords,Observation-usual-work-vr,"Implementors are free to use the coded fields with the defined valuesets for inter-jurisdictional exchange, 
+but coded values are not expected for vital records submissions. 
+
+Note that the coded industry and occupation fields are bound to PHINVADs-hosted value sets. 
+
+For NCHS provided coded values the specific vocabulary used will depend on the death year.",,x,VRCPL

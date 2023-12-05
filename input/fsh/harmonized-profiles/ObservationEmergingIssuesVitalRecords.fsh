@@ -15,7 +15,7 @@ Profile: ObservationEmergingIssuesVitalRecords
 Parent: Observation
 Id: Observation-emerging-issues-vr
 Title: "Observation - Emerging Issues Vital Records"
-Description: "Emerging Issues (Observation)"
+Description: "Used to send data needed to respond to emerging public health issues from jurisdictions to NCHS."
 * insert RequireMetaProfile(ObservationEmergingIssuesVitalRecords)
 * status 1..1
 * status = #final (exactly)

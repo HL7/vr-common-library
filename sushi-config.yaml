@@ -15,6 +15,9 @@ dependencies:
   hl7.fhir.us.core: 
     version: 5.0.1
     id: hl7fhiruscore
+  hl7.fhir.us.odh: 
+    version: 1.2.0
+    id: odh
   us.nlm.vsac:
     version: 0.9.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
@@ -211,6 +214,7 @@ groups:
       - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationEducationLevelVitalRecords
       - ObservationEmergingIssuesVitalRecords
+      - ObservationUsualWorkVitalRecords
 
   AddressExtensions:
     name: Address Extensions
@@ -238,6 +242,7 @@ groups:
       - ExtensionPatientFetalDeathVitalRecords
       - ExtensionRelatedpersonBirthplaceVitalRecords
       - ExtensionRelatedPersonDeceasedVitalRecords
+      - ExtensionRoleVitalRecords 
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionReportedParentAgeAtDeliveryVitalRecords
   
@@ -292,6 +297,7 @@ OtherValueSets:
       - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMotherRelationshipVitalRecords
+      - ValueSetRoleVitalRecords 
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
