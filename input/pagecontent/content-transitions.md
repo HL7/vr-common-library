@@ -24,15 +24,14 @@
 
 | Name         | Previous Version/Location  |  Comments/Updates  |
 | :----------: | -----------  |  :---------------: |
-| [ExtensionDatePartAbsentReasonVitalRecords]| New | New addition |
+| [ExtensionPartialDateVitalRecords] | [VRCL][ExtensionPartialDateVitalRecordsOld] | - |
 | [ExtensionPartialDateTimeVitalRecords] | [VRCL][ExtensionPartialDateTimeVitalRecordsOld]   | - |
 | [ExtensionRelatedpersonBirthplaceVitalRecords] | [VRCL][ExtensionRelatedpersonBirthplaceVitalRecordsOld]   | - |
 | [ExtensionRelatedPersonDeceasedVitalRecords] | [VRCL][ExtensionRelatedPersonDeceasedVitalRecordsOld]   | - |
-| [ExtensionWithinCityLimitsIndicatorVitalRecords] | [VRCL][ExtensionWithinCityLimitsIndicatorVitalRecordsOld]   | changed to reference VRCL, rather than phinvads valueset |
+| [ExtensionRoleVitalRecords] | New | New Addition |
 | [ExtensionBypassEditFlagVitalRecords] | [VRDR][BypassEditFlag] | - |
 | [ExtensionCityCodeVitalRecords] | [VRDR][CityCodeOld] | - |
 | [ExtensionDistrictCodeVitalRecords] | [VRDR][DistrictCodeOld]  | - |
-| [ExtensionPartialDateVitalRecords] | [VRCL][ExtensionPartialDateVitalRecordsOld] | - |
 | [ExtensionPostDirectionalVitalRecords] | [VRDR][PostDirectionalOld] | - |
 | [ExtensionPreDirectionalVitalRecords] | [VRDR][PreDirectionalOld] |  - |
 | [ExtensionReportedParentAgeAtDeliveryVitalRecords] | [VRCL][ExtensionReportedParentAgeAtDeliveryVitalRecordsOld]  | - |
@@ -40,7 +39,8 @@
 | [ExtensionStreetNameVitalRecords] | [VRDR][StreetNameOld] | - |
 | [ExtensionStreetNumberVitalRecords] | [VRDR][StreetNumberOld] | - |
 | [ExtensionUnitOrAptNumberVitalRecords] | [VRDR][UnitOrAptNumberOld] | - |
-| [ExtensionRoleVitalRecords] | New | New Addition |
+| [ExtensionWithinCityLimitsIndicatorVitalRecords] | [VRCL][ExtensionWithinCityLimitsIndicatorVitalRecordsOld]   | changed to reference VRCL, rather than phinvads valueset |
+
 {: .grid }
 
 ### Current Valuesets
