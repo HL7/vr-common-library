@@ -232,7 +232,6 @@ groups:
   PartialDateTimeExtensions:
     name: Partial Date and Time Extensions
     resources:
-      - ExtensionDatePartAbsentReasonVitalRecords
       - ExtensionPartialDateTimeVitalRecords
       - ExtensionPartialDateVitalRecords
 
