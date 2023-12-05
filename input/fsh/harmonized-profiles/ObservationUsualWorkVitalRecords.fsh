@@ -1,8 +1,8 @@
 Profile: ObservationUsualWorkVitalRecords
 Parent: UsualWork
 Id: Observation-usual-work-vr
-Title: "Vital Records Usual Work"
-Description: "Vital Records Usual Work (UsualWork)"
+Title: "Observation - Usual Work"
+Description: "Used to send text-string industry and occupation information from Jurisdictions to NCHS, and coded versions from NCHS to Jurisdictions."
 * subject only Reference(PatientVitalRecords)  // Mother, Child or Decedent... required by the Usual Work Profile
 * focus only  Reference(RelatedPersonParentVitalRecords)  // Mother or Father
 * extension contains ExtensionRoleVitalRecords named roleVitalRecords 0..1 

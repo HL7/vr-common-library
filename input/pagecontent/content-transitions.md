@@ -9,6 +9,7 @@
 | [ObservationEducationLevelVitalRecords] | [VRCL][ObservationParentEducationLevelVitalRecordsOld]  | Generalized profile now has subject set to [patient](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-vr.html), focus set to [mother](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-mother-vr.html) or [parent](http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-RelatedPerson-parent-vr.html), and profile now includes bypassEditFlag |
 [EmergingIssuesOld] | Moved to VRCL to be used in BFDR (fetal birth/death) and VRDR (mortality) use cases |
 | [ObservationInputRaceAndEthnicityVitalRecords] | [VRDR][InputRaceAndEthnicityOld] | Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases) |
+| [ObservationUsualWorkVitalRecords] | [VRDR][UsualWorkOld] | Incorporated standard vital records approach to industry and occupation to support all vital records use cases) |
 | [PatientChildVitalRecords] | [VRCL][PatientChildVitalRecordsOld] | Now inherits from [PatientVitalRecords] rather than [USCorePatient], added bypassedit flag to multiplebirth, birthTime, dataAbsentReason, partialDate no longer extensions  |
 | [PatientMotherVitalRecords] | [VRCL][PatientMotherVitalRecordsOld] | New profile inherits from  [PatientVitalRecords] rather than [USCorePatient] |
 | [PatientVitalRecords] | New | New addition, serves as a new abstract profile (parent to [PatientChildVitalRecords], [PatientDecedentFetus][PatientDecedentFetusOld], [PatientMotherVitalRecords], and [Decedent][DecedentOld]) |
@@ -39,6 +40,7 @@
 | [ExtensionStreetNameVitalRecords] | [VRDR][StreetNameOld] | - |
 | [ExtensionStreetNumberVitalRecords] | [VRDR][StreetNumberOld] | - |
 | [ExtensionUnitOrAptNumberVitalRecords] | [VRDR][UnitOrAptNumberOld] | - |
+| [ExtensionRoleVitalRecords] | New | New Addition |
 {: .grid }
 
 ### Current Valuesets
