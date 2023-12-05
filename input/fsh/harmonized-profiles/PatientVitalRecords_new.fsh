@@ -60,12 +60,11 @@ Description: "This abstract Patient profile includes common extensions and slici
 
 * birthDate.extension contains
     ExtensionPartialDateVitalRecords named partialDate 0..1 and
-    //PartialDate named partialDate 0..1 and
-    ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..*  and
+    // ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..*  and
     $patient-birthTime named birthTime 0..1 and
     BypassEditFlag named bypassEditFlag 0..1
-* birthDate.extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."
-* birthDate.extension[datePartAbsentReason] ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
+// * birthDate.extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."
+// * birthDate.extension[datePartAbsentReason] ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
 * birthDate.extension[partialDate] ^short = "partialDate"
 * birthDate.extension[partialDate] ^definition = "Alternative component representation of partial date."
 * birthDate.extension[bypassEditFlag]
@@ -76,7 +75,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * address
   * country from ValueSetResidenceCountryVitalRecords (required)  // COUNTRYC
   * state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)  // STATEC
-  * extension contains ExtensionWithinCityLimitsIndicatorVitalRecords named withinCityLimitsIndicator 0..1 MS
+  * extension contains ExtensionWithinCityLimitsIndicatorVitalRecords named withinCityLimitsIndicator 0..1 
   * extension[withinCityLimitsIndicator] ^short = "Used to indicate whether or not an address is within city limits."
   * extension[withinCityLimitsIndicator] ^definition = "Used to indicate whether or not an address is within city limits."
 * insert CityCode
