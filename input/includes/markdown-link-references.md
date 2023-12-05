@@ -22,6 +22,8 @@
 [Note on missing method of delivery data]: usage.html#method-of-delivery
 [Note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [Handling of edit flags]: usage.html#handling-of-edit-flags
+[Change Log]: change_log.html
+[Changes Between Versions]: content-transitions.html
 [Birth and Fetal Death Vital Reporting]: https://build.fhir.org/ig/HL7/fhir-bfdr
 [Vital Records Common Library]: https://build.fhir.org/ig/HL7/vr-common-library
 [Medicolegal Death Investigation]: https://build.fhir.org/ig/HL7/fhir-mdi-ig/

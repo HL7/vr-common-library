@@ -3,7 +3,6 @@
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-emerging-issues-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
@@ -12,7 +11,6 @@ The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' do
 
 # This is an internal NCHS Code system that is not used as part of FHIR-based exchange.  Mappings are provided to ease transition from legacy systems.
 The Source Code System CodeSystemIJEVitalRecords is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
@@ -25,20 +23,8 @@ Best Practice Recommendation: In general, all observations should have an effect
 # This is a publisher induced issue.   The extension in question is introduced by the publisher, not sushi.   See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher 
 The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
 
-# Beyond my control
-Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
-
 # Unknown internal code system IJE
 	The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-
-# Best practice for Vital Stats?
-Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-
-# Can't figure out how to extinguish this
-INFORMATION: Observation/observation-coded-race-and-ethnicity-father: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
-INFORMATION: Observation/observation-coded-race-and-ethnicity-mother: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
-INFORMATION: Observation/observation-input-race-and-ethnicity-father: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
-INFORMATION: Observation/observation-input-race-and-ethnicity-mother: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
 
 # Beyond my control 
 INFORMATION: ValueSet/ValueSet-race-code-vr: ValueSet.compose.include[0]: The value set include has too many codes to validate (1,168)
