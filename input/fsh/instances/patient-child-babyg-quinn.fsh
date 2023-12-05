@@ -24,7 +24,7 @@ Usage: #example
   * extension[reportedAge]
     * valueQuantity = 34 'a'
   * extension[motherOrFather]
-    * valueReference = Reference(patient-mother-vr-jada-ann-quinn-common)
+    * valueCodeableConcept = $v3-RoleCode#MTH "mother"
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"

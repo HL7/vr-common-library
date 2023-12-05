@@ -20,6 +20,11 @@ Usage: #example
     * city = "Salt Lake City"
     * district = "Salt Lake"
     * state = "UT"
+* extension[parentReportedAgeAtDelivery]
+  * extension[reportedAge]
+    * valueQuantity = 34 'a'
+  * extension[motherOrFather]
+    * valueCodeableConcept = $v3-RoleCode#MTH "mother"
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"
