@@ -2,37 +2,33 @@
 
 {% include note-to-balloters.md %}
 
-<div class="new-content" markdown="1">
-Where possible, new and updated pre-publishing content are highlighted with green text and background - This highlighting will be removed prior to publication 
-</div><!-- note-to-balloters -->
-
 <div class="stu-note" markdown="1">
 Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages.
 </div><!-- note-to-balloters -->
 
 ### Overview
 
-The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources (FHIR) Library standard to support the needs of multiple Vital Records Implementation Guides.
-
-This guide is a FHIR Resources (FHIR) Library to support the needs of multiple Vital Records Implementation Guides. It does not provide any use case or scenario specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles for reuse in multiple use case specific implementation guides focusing on the exchange of Vital Records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.
+This guide is a FHIR Resources (FHIR) Library to support the needs of multiple Vital Records Implementation Guides (IGs) as well as the needs of related IGs.
+It does not provide any use case or scenario specific content or additional guidance on how to use these artifacts, but serves as a source for a standard set of profiles, extensions, codesystems and valuesets for reuse in multiple use case specific implementation guides focusing on the exchange of Vital Records information. Implementation details such as how and when to use a given artifact will be supplied in these guides.
 
 ### Background
-After evaluation and analysis of two separate FHIR IG projects - [Birth Defects Reporting](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) and [Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/), it was determined that there are many common data elements between the two IGs. The short-term scope of this common profiles library will include data elements common to the above-mentioned FHIR IGs and will define a US Realm specific framework that defines common elements for the implementation guides. The longer-term scope of this profiles library will include analysis and possible inclusion of data elements from other Vital Records projects (such as [Vital Records Mortality and Morbidity Reporting FHIR IG](http://hl7.org/fhir/us/vrdr/)).
+The initial development of the STU1 version of this IG was motivated by the opportunity for reuse between the [Birth and Fetal Death Reporting (BFDR) ](http://hl7.org/fhir/us/bfdr/) and [Birth Defects Reporting (BDR)](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) IGs. Following publication of STU1 versions of [BFDR](http://hl7.org/fhir/us/bfdr/) and [Medicolegal and Death Investigation (MDI)](https://hl7.org/fhir/us/mdi), an STU2 version of [Vital Records Death Reporting (VRDR) ](http://hl7.org/fhir/us/vrdr/), we have taken a broader view of reuse within these IGs as well as the anticipated needs of the as-yet unballoted [BDR)](https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig/) to develop the STU2 content for this IG. This process is described in  [Vital Records IG Harmonization](vr_ig_harmonization.html). 
 
-To avoid defining the same profiles multiple times, this IG contains a US Realm focused profile library for use by Vital Records and other FHIR standards development efforts to define the appropriate FHIR profiles, value sets, etc., once and allow them to be referenced by each of the specific implementation guides. This profile library will provide a standard framework for inclusion in multiple use case specific implementation guides focused on the exchange of Vital Records information to support interoperability among public health systems and reduce provider and implementer burden. This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross-Group Projects Work Group's variance request process and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.
+Many of the profiles previously included to support BDR have been moved to the companion STU2 version of BFDR, and the content of this IG has been focused on FHIR resources that were redundantly defined across BFDR, VRDR and MDI, representing the vital records approach to common data elements.  VRDR is the most mature of the vital records related FHIR IGs, having already moved into production usage by several jurisdictions and NCHS, and some of the patterns for FHIR implementation that were defined in the VRDR IG have been incorporated in the STU2 version of VRCL, and its companion STU2 version of BFDR.   These patterns include definition of codesystems and valuesets within this IG, in lieu of reference to [Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS)](https://phinvads.cdc.gov/vads/), support for "edit flags" within existing profiles, in lieu of additional companion Observation profiles, and standardized extensions for partial dates and times, and coded components of addresses.
 
-For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).
+This profile library will provide a standard framework for inclusion by reference in multiple use case specific IGs (i.e., BFDR, BDR, VRDR, MDI)  to support interoperability among public health systems and reduce provider and implementer burden, and to streamline maintenance of the IGs.
 
 ### How to Read This Guide
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
 
-* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.
-* Terminology: This page provides a listing of the value sets used in this guide.
-* Downloads: This page provides links to downloadable artifacts.
-* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
-
-
+* [Home](index.html): provides the introduction and background for this I
+* [Artifacts](artifacts.html): provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
+* [Specification](the_-_specification.html): provides general information about the FHIR specification
+* [Usage](usage.html): provides notes that are referenced by resources in this IG, and their uses in other IGs.
+* [Change Log](change_log.html): provides a change history
+* [STU1.1 to STU2 Changes](content-transitions.html): shows the provenance of all resources included in the STU2 version of this IG, as well as all of the disposition of the resources no longer included in this IG.
+* [Downloads](downloads.html): provides links to downloadable artifacts.
 
 ### Authors
 
@@ -51,4 +47,4 @@ This Guide is divided into several pages which are listed at the top of each pag
 </tbody>
 </table>
 
-
+{% include markdown-link-references.md %}
