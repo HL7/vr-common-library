@@ -118,7 +118,7 @@
 <tr><td> <a href='ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html'>ValueSetYesNoUnknownNotApplicableVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-edit-bypass-01234-vs.html'>VRDR</a> </td><td> Meant to be used outside of just mortality use case  </td></tr> 
 <tr><td> <a href='ValueSet-ValueSet-plurality-edit-flags-vr.html'>ValueSetPluralityEditFlagsVitalRecords</a> </td><td> <a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A'>PHINVADS</a>  </td><td> - </td></tr>
-<tr><td> <a href='ValueSet-ValueSet-Role-vr.html'>ValueSetRoleVitalRecords</a> </td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='ValueSet-ValueSet-role-vr.html'>ValueSetRoleVitalRecords</a> </td><td> New </td><td> New Addition </td></tr>
 </tbody>
 </table>
 
