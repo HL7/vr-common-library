@@ -14,7 +14,7 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 * name[namePriorToFirstMarriage] MS 
 * name.family 1..
 * birthDate 1..
-* birthDate.extension[partialDate] MS 
+* birthDate.extension[partialDateTime] MS 
 // * birthDate 1..
 //   * extension contains ExtensionDatePartAbsentReasonVitalRecords named datePartAbsentReason 0..* MS
 //   * extension[datePartAbsentReason] ^short = "Indicates reason for missing data on either the birthDate or the birthTime."

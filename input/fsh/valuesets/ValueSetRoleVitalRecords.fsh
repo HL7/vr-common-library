@@ -1,6 +1,6 @@
 
 ValueSet: ValueSetRoleVitalRecords
-Id: ValueSet-Role-vr
+Id: ValueSet-role-vr
 Title: "ValueSet - Role Vital Records"
 Description: "This value set contains codes that represent persons for whom some observations can be reported."
 * ^experimental = false

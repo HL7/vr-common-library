@@ -268,7 +268,7 @@ groups:
       - CodeSystemRaceRecode40VitalRecords
       - CodeSystemLocalObservationsCodesVitalRecords
 
-RaceEthnicityValueSets:
+  RaceEthnicityValueSets:
     name: Race and Ethnicity ValueSets
     resources:  
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
@@ -277,7 +277,7 @@ RaceEthnicityValueSets:
       - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetRaceCodeVitalRecords
 
-AddressValueSets:
+  AddressValueSets:
     name: Address ValueSets
     resources:  
       - ValueSetBirthplaceCountryVitalRecords
@@ -286,7 +286,7 @@ AddressValueSets:
       - ValueSetStatesTerritoriesAndProvincesVitalRecords
       - ValueSetUSStatesAndTerritoriesVitalRecords
 
-OtherValueSets:
+  OtherValueSets:
     name: Other ValueSets
     resources:  
       - ValueSetBirthAttendantTitlesVitalRecords
@@ -301,13 +301,13 @@ OtherValueSets:
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
       - ValueSetYesNoUnknownNotApplicableVitalRecords
-EditFlagValueSets:
+  EditFlagValueSets:
     name: ValueSets
     resources:  
       - ValueSetEditBypass01234VitalRecords
       - ValueSetMothersDateOfBirthEditFlagsVitalRecords
       - ValueSetPluralityEditFlagsVitalRecords
-VRCLConceptMaps:
+  VRCLConceptMaps:
     name: Concept Maps
     resources:
       - ConceptMapBirthAttendantTitlesVitalRecords
@@ -326,12 +326,12 @@ VRCLConceptMaps:
       - ConceptMapYesNoNotApplicableVitalRecords
       - ConceptMapYesNoUnknownNotApplicableVitalRecords
       - ConceptMapYesNoUnknownVitalRecords
-VRCLParameters:
+  VRCLParameters:
     name: Parameters
     resources:
       - expansion-parameters-vr-common
 
-VRCLExamples:
+  VRCLExamples:
     name: Examples
     resources:
       - observation-input-race-and-ethnicity-vr-mother 

@@ -24,7 +24,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 * [Home](index.html): provides the introduction and background for this I
 * [Artifacts](artifacts.html): provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
-* [Specification](the_-_specification.html): provides general information about the FHIR specification
+* [Specification](the_specification.html): provides general information about the FHIR specification
 * [Usage](usage.html): provides notes that are referenced by resources in this IG, and their uses in other IGs.
 * [Change Log](change_log.html): provides a change history
 * [STU1.1 to STU2 Changes](content-transitions.html): shows the provenance of all resources included in the STU2 version of this IG, as well as all of the disposition of the resources no longer included in this IG.
