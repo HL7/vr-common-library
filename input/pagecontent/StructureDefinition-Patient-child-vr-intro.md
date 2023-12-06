@@ -136,7 +136,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>238</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='FTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
