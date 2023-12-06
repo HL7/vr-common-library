@@ -54,7 +54,7 @@ Usage: #example
 * insert babyquinncommon
 * birthDate = "2019-02-12"
 
-Instance: patient-child-vr-babyg-quinn-common-12
+Instance: patient-child-vr-babyg-quinn-common-2
 InstanceOf: PatientChildVitalRecords
 Title: "Patient - Child example [Baby G Quinn]"
 Description: "Example of Patient-child-vr profile (Baby G Quinn) with Reported Parent Age at Delivery with partial date of birth - 2nd of some month in 2019.
