@@ -39,7 +39,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_YR</td>
   <td>birthDate</td>
   <td>date</td>
-  <td></td>
+  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -56,8 +56,8 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>Time of Birth</td>
   <td>TB</td>
   <td>birthDate.extension[patient-birthTime]</td>
-  <td></td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -75,7 +75,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_MO</td>
   <td>birthDate</td>
   <td>date</td>
-  <td></td>
+  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -84,7 +84,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_DY</td>
   <td>birthDate</td>
   <td>date</td>
-  <td></td>
+  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -127,7 +127,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>237</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -136,7 +136,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>238</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -147,7 +147,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDFNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See [Note on Child and Decedent Fetus name]</td>
+  <td>See [note on Child and Decedent Fetus name]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -156,7 +156,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDMNAME</td>
   <td>name.given, <br />name.use = official </td>
   <td>string</td>
-  <td>See [Note on Child and Decedent Fetus name]</td>
+  <td>See [note on Child and Decedent Fetus name]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -165,7 +165,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDLNAME</td>
   <td>name.family, <br />name.use = official</td>
   <td>string</td>
-  <td>See [Note on Child and Decedent Fetus name]</td>
+  <td>See [note on Child and Decedent Fetus name]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
