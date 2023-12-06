@@ -4,6 +4,7 @@ Title: "Extension - Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime for cases beyond what FHIR dateTime can support directly."
 * insert boilerplate
 * insert ExtensionContextResource(dateTime)
+* insert ExtensionContextResource(date)  //This supports birthDate, where we have a dateTime extension for birthTime...
 * . ^short = "Partial Date Time"
 * . ^definition = "Provides a partial date time."
 * extension contains
