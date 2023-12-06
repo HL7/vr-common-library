@@ -147,7 +147,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDFNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See [note on Child and Decedent Fetus name]</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -156,7 +156,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDMNAME</td>
   <td>name.given, <br />name.use = official </td>
   <td>string</td>
-  <td>See [note on Child and Decedent Fetus name]</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -165,7 +165,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDLNAME</td>
   <td>name.family, <br />name.use = official</td>
   <td>string</td>
-  <td>See [note on Child and Decedent Fetus name]</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
