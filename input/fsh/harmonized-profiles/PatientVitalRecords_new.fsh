@@ -63,7 +63,7 @@ Description: "This abstract Patient profile includes common extensions and slici
     $patient-birthTime named birthTime 0..1 and
     BypassEditFlag named bypassEditFlag 0..1
 * birthDate.extension[partialDateTime] ^short = "partialDateTIme"
-* birthDate.extension[partialDateTime] ^definition = "Alternative component representation of partial date and time. See [Note on birth date and time]."
+* birthDate.extension[partialDateTime] ^definition = "Alternative component representation of partial date and time. See [note on birth date and time]."
 * birthDate.extension[bypassEditFlag]
   * valueCodeableConcept from ValueSetMothersDateOfBirthEditFlagsVitalRecords (required)
   * value[x] only CodeableConcept

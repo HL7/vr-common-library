@@ -39,7 +39,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_YR</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -57,7 +57,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>TB</td>
   <td>birthDate.extension[patient-birthTime]</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -75,7 +75,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_MO</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -84,7 +84,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_DY</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='usage.html#birth-date-and-time '>note on birth date and time</a></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
