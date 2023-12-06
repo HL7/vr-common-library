@@ -7,7 +7,9 @@
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 [USCoreBirthSex]: http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-birthsex.html
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
+[PatientBirthTime]: https://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
+[Birth Date and Time]: usage.html#birth-date-and-time 
 [CityCodes]: usage.html#city-codes
 [CountyCodes]: usage.html#county-codes
 [StateLiterals]: usage.html#state-literals
