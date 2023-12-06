@@ -9,7 +9,7 @@
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
 [PatientBirthTime]: https://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
-[Birth Date and Time]: usage.html#birth-date-and-time 
+[Note on birth date and time]: usage.html#birth-date-and-time 
 [CityCodes]: usage.html#city-codes
 [CountyCodes]: usage.html#county-codes
 [StateLiterals]: usage.html#state-literals
