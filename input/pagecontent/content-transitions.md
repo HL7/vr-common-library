@@ -258,3 +258,4 @@
 <tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-transax-conversion-vr.html'>CodeSystemTransaxConversionVitalRecords</a> </td><td><a href='https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-transax-conversion-cs.html'>VRDR</a> </td><td> Only relevant to mortality use case </td></tr>
 </tbody>
 </table>
+

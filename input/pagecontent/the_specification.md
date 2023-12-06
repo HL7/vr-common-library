@@ -1,11 +1,12 @@
 ### FHIR Paradigm
 
-The Vital Records Common Profiles Library defines data structures, but does not define any data exchange mechanisms ("paradigms"), such as Documents, Messages, or Services. Nor does is define a RESTful API. Those are defined by the use case specific FHIR IGs, ass appropriate.
+The Vital Records Common Profiles Library defines data structures, but does not define any data exchange mechanisms ("paradigms"), such as Documents, Messages, or Services. Nor does is define a RESTful API. Those are defined by the use case specific FHIR IGs, as appropriate.
 For more information on these aspects of FHIR, please refer to the [FHIR Exchange Module](https://hl7.org/fhir/R4/exchange-module.html).
 
 ### Profiles and Extensions
 
-To claim conformance to a Vital Records Common Profiles Library, servers SHALL be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition. 
+To claim conformance to a profile from this IG, servers SHALL be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition. 
+The requirements on required and Must Support fields have been kept intentionally minimal in this IG, since the profiles included are intended as building blocks for other IGs.
 
 ### General Guidance
 
@@ -26,3 +27,5 @@ For querying and reading profiles in this IG, Must Support on any profile data e
 * When querying Sources, Consumers SHALL interpret missing data elements within resource instances as data not present in the Sources’s system.
 * In situations where information on a particular data element is missing and the Source knows the precise reason for the absence of data, Sources SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
 * Consumers SHALL be able to process resource instances containing data elements asserting missing information.
+
+The requirements on Must Support fields have been kept intentionally minimal in this IG, since the profiles included are intended as building blocks for other IGs.
