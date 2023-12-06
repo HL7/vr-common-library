@@ -30,6 +30,11 @@ RuleSet: childName
 
 RuleSet: birthDateAndTime 
 * birthDate 1..
-  * extension[birthTime] MS 
+  * ^short = "Birth Date with support for partial dates and time of birth via extension"
+  * extension[partialDate] ^short = "Use if only partial date is known"
+  * extension[birthTime]  ^short = "Time of Birth"
   * extension[partialDate] MS 
+  * extension[birthTime] MS 
+
+
   // * extension[datePartAbsentReason] MS 
