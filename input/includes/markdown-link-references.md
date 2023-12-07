@@ -11,6 +11,7 @@
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
 [note on birth date and time]: usage.html#birth-date-and-time
 [note on Child and Decedent Fetus name]: https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name
+[note on patient gender]: usage.html#gender
 [CityCodes]: usage.html#city-codes
 [CountyCodes]: usage.html#county-codes
 [StateLiterals]: usage.html#state-literals
