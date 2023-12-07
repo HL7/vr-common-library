@@ -6,6 +6,7 @@ Description: "Local Observation Codes for observations that lack an appropriate 
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false
+* ^status = #active 
 * #emergingissues "Emerging Issues" "NCHS-required emerging issues data."
 * #inputraceandethnicity "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
 * #codedraceandethnicity "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"

@@ -14,21 +14,26 @@ The Source Code System CodeSystemIJEVitalRecords is not fully defined and popula
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# This is not relevant for our application
-Best Practice Recommendation: In general, all observations should have a performer
-Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # This is a publisher induced issue.   The extension in question is introduced by the publisher, not sushi.   See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher 
 The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
 
-# Unknown internal code system IJE
-	The Source Code System IJE is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-
 # Beyond my control 
 INFORMATION: ValueSet/ValueSet-race-code-vr: ValueSet.compose.include[0]: The value set include has too many codes to validate (1,168)
 
-# How do I get rid of this?
-INFORMATION: Observation/observation-coded-race-and-ethnicity-vr-father: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
-INFORMATION: Observation/observation-coded-race-and-ethnicity-vr-mother: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
-INFORMATION: Observation/observation-input-race-and-ethnicity-vr-father: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
-INFORMATION: Observation/observation-input-race-and-ethnicity-vr-mother: Observation.code: Reference to draft item http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr|2.0.0-ballot
+# Best Practices not applicable to this application 
+WARNING: Observation/observation-autopsy-performed-indicator-vr-a-freeman: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-autopsy-performed-indicator-vr-a-freeman: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-coded-race-and-ethnicity-vr-father: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-coded-race-and-ethnicity-vr-father: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-coded-race-and-ethnicity-vr-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-coded-race-and-ethnicity-vr-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-education-level-vr-a-freeman: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-emerging-issues-vr-a-freeman: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-emerging-issues-vr-a-freeman: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-vr-father: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-vr-father: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-vr-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-vr-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-usual-work-vr-jada-ann-quinn-common: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-usual-work-vr-jada-ann-quinn-common: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
