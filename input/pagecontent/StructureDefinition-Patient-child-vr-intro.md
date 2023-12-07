@@ -6,6 +6,8 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
  * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
     * use not-applicable if the name hasn't been chosen
 
+Profile conformance requires that gender be provided, see [note on patient gender](https://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender).
+
 ### IJE Mapping
 
 <style>
