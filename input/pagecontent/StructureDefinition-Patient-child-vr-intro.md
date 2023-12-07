@@ -6,6 +6,8 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
  * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
     * use not-applicable if the name hasn't been chosen
 
+Profile conformance requires that gender be provided, see [note on patient gender](https://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender).
+
 ### IJE Mapping
 
 <style>
@@ -39,7 +41,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_YR</td>
   <td>birthDate</td>
   <td>date</td>
-  <td></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -56,8 +58,8 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>Time of Birth</td>
   <td>TB</td>
   <td>birthDate.extension[patient-birthTime]</td>
-  <td></td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>dateTime</td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -75,7 +77,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_MO</td>
   <td>birthDate</td>
   <td>date</td>
-  <td></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -84,7 +86,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>IDOB_DY</td>
   <td>birthDate</td>
   <td>date</td>
-  <td></td>
+  <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -127,7 +129,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>237</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -136,7 +138,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>238</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='FTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -147,7 +149,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDFNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See [Note on Child and Decedent Fetus name]</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -156,7 +158,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDMNAME</td>
   <td>name.given, <br />name.use = official </td>
   <td>string</td>
-  <td>See [Note on Child and Decedent Fetus name]</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -165,7 +167,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>KIDLNAME</td>
   <td>name.family, <br />name.use = official</td>
   <td>string</td>
-  <td>See [Note on Child and Decedent Fetus name]</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>

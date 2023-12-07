@@ -342,7 +342,10 @@ groups:
       - observation-education-level-vr-a-freeman
       - observation-emerging-issues-vr-a-freeman
       - observation-partial-date-time-example
+      - observation-usual-work-vr-jada-ann-quinn-common
       - patient-child-vr-babyg-quinn-common
+      - patient-child-vr-babyg-quinn-common-1
+      - patient-child-vr-babyg-quinn-common-2
       - patient-child-vr-babyg-quinn-w-edit
       - patient-fetal-death-example
       - patient-mother-vr-birth-date-part-absent
