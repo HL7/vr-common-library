@@ -1,9 +1,9 @@
 {
 	"package-id": "hl7.fhir.us.vr-common-library",
 	"version": "2.0.0-ballot",
-	"path": "http://hl7.org/fhir/us/vr-common-library/STU2.0.0-ballot",
-	"mode": "milestone",
-	"status": "trial-use",
+	"path": "http://hl7.org/fhir/us/vr-common-library/2024Jan",
+	"mode": "working",
+	"status": "ballot",
 	"sequence": "STU 2",
 	"desc": "Update to STU 2"
 }

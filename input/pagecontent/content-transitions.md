@@ -62,15 +62,14 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='StructureDefinition-ExtensionDatePartAbsentReasonVitalRecords.html'>ExtensionDatePartAbsentReasonVitalRecords</a></td><td> New </td><td> New addition </td></tr>
+<tr><td> <a href='StructureDefinition-BypassEditFlag.html'>ExtensionBypassEditFlagVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-BypassEditFlag.html'>VRDR</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-ExtensionPartialDateVitalRecords.html'>ExtensionPartialDateVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-ExtensionPartialDateTimeVitalRecords.html'>ExtensionPartialDateTimeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-time-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-relatedperson-birthplace-vr.html'>ExtensionRelatedpersonBirthplaceVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-relatedperson-deceased-vr.html'>ExtensionRelatedPersonDeceasedVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-deceased-vr.html'>VRCL</a>   </td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-within-city-limits-indicator-vr.html'>ExtensionWithinCityLimitsIndicatorVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>VRCL</a>   </td><td> changed to reference VRCL, rather than phinvads valueset </td></tr>
-<tr><td> <a href='StructureDefinition-BypassEditFlag.html'>ExtensionBypassEditFlagVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-BypassEditFlag.html'>VRDR</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-Extension-role-vr.html'>ExtensionRoleVitalRecords</a> </td><td> New </td><td> New Addition </td></tr>
 <tr><td> <a href='StructureDefinition-CityCode.html'>ExtensionCityCodeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-CityCode.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-DistrictCode.html'>ExtensionDistrictCodeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-DistrictCode.html'>VRDR</a>  </td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-ExtensionPartialDateVitalRecords.html'>ExtensionPartialDateVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-PostDirectional.html'>ExtensionPostDirectionalVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-PostDirectional.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-PreDirectional.html'>ExtensionPreDirectionalVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-PreDirectional.html'>VRDR</a> </td><td>  - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html'>ExtensionReportedParentAgeAtDeliveryVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html'>VRCL</a>  </td><td> - </td></tr>
@@ -78,7 +77,7 @@
 <tr><td> <a href='StructureDefinition-StreetName.html'>ExtensionStreetNameVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-StreetName.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-StreetNumber.html'>ExtensionStreetNumberVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-StreetNumber.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-UnitOrAptNumber.html'>ExtensionUnitOrAptNumberVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-UnitOrAptNumber.html'>VRDR</a> </td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-role-vr.html'>ExtensionRoleVitalRecords</a> </td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='StructureDefinition-Extension-within-city-limits-indicator-vr.html'>ExtensionWithinCityLimitsIndicatorVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>VRCL</a>   </td><td> changed to reference VRCL, rather than phinvads valueset </td></tr>
 </tbody>
 </table>
 
@@ -259,3 +258,4 @@
 <tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-transax-conversion-vr.html'>CodeSystemTransaxConversionVitalRecords</a> </td><td><a href='https://build.fhir.org/ig/HL7/vrdr/CodeSystem-vrdr-transax-conversion-cs.html'>VRDR</a> </td><td> Only relevant to mortality use case </td></tr>
 </tbody>
 </table>
+

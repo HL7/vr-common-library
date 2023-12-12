@@ -7,20 +7,15 @@
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 [USCoreBirthSex]: http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-birthsex.html
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
+[PatientBirthTime]: https://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html
 [PartialDatesAndTimes]: usage.html#partial-dates-and-times
+[note on birth date and time]: usage.html#birth-date-and-time
+[note on Child and Decedent Fetus name]: https://build.fhir.org/ig/HL7/fhir-bfdr/usage.html#child-and-decedent-fetus-name
+[note on patient gender]: usage.html#gender
 [CityCodes]: usage.html#city-codes
 [CountyCodes]: usage.html#county-codes
 [StateLiterals]: usage.html#state-literals
 [CountryLiterals]: usage.html#country-literals
-[Note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
-[Note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
-[Note on missing maternal morbidity data]: usage.html#maternal-morbidities
-[Note on missing characteristics of labor and delivery data]: usage.html#characteristics-of-labor-and-delivery
-[Note on missing pregnancy risk factors data]: usage.html#pregnancy-risk-factors
-[Note on missing congenital anomaly data]: usage.html#congenital-anomalies-of-newborn
-[Note on missing infections present data]: usage.html#infection-present-during-pregnancy
-[Note on missing method of delivery data]: usage.html#method-of-delivery
-[Note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [Handling of edit flags]: usage.html#handling-of-edit-flags
 [Change Log]: change_log.html
 [Changes Between Versions]: content-transitions.html
