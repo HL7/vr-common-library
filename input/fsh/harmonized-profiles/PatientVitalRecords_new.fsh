@@ -8,7 +8,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
 * extension[birthPlace].valueAddress
   * country from ValueSetBirthplaceCountryVitalRecords (required)    // BPLACE_CNT
-  * state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required) // BPLACE_ST
+  * state from ValueSetJurisdictionVitalRecords (required) // BPLACE_ST / BSTATE
   * district.extension contains
        DistrictCode named districtCode 0..1
   * district.extension[districtCode] ^label = "County code"
