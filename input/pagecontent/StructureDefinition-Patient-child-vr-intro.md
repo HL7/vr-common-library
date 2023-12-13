@@ -50,7 +50,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>BSTATE</td>
   <td>extension[patient-birthPlace].value[x].state</td>
   <td>string</td>
-  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -93,7 +93,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>10</td>
   <td>County of Birth</td>
   <td>CNTYO</td>
-  <td>extension[patient-birthplace].value[x].district.extension[countyCode]</td>
+  <td>extension[patient-birthPlace].value[x].district.extension[countyCode]</td>
   <td>integer</td>
   <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
 </tr>

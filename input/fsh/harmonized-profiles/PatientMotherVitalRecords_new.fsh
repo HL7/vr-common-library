@@ -8,6 +8,7 @@ Description: "This Patient profile represents the woman who gave birth to, or de
 // * extension[ethnicity] 1..
 //   * ^short = "If ethnicity is unknown omit both coded data fields."
 * extension[birthPlace] MS 
+  * value[x].state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)
 * identifier[MRN] MS
 * identifier[SSN] MS
 * name[currentLegalName] MS 
