@@ -47,7 +47,7 @@ Usage: #example
 
 Instance: patient-child-vr-babyg-quinn-common-1
 InstanceOf: PatientChildVitalRecords
-Title: "Patient - Child example [Baby G Quinn]"
+Title: "Patient - Child example [Baby G Quinn] - no birth time"
 Description: "Example of Patient-child-vr profile (Baby G Quinn) with Reported Parent Age at Delivery with date of birth but no time of birth.  
 Both the birthTime and partialDateTime extensions are omitted."
 Usage: #example
@@ -56,7 +56,7 @@ Usage: #example
 
 Instance: patient-child-vr-babyg-quinn-common-2
 InstanceOf: PatientChildVitalRecords
-Title: "Patient - Child example [Baby G Quinn]"
+Title: "Patient - Child example [Baby G Quinn] - partial birth date"
 Description: "Example of Patient-child-vr profile (Baby G Quinn) with Reported Parent Age at Delivery with partial date of birth - 2nd of some month in 2019.
 Both the birthTime extension and the value for the birthDate field are omitted."
 Usage: #example
