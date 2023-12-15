@@ -5,7 +5,7 @@ The purpose of the these extensions ([ExtensionPartialDateVitalRecords] and [Ext
 * XXXX-MM-DD (month & day with no year)
 * XXXX-XX-DD (day only)
 * XXXX-XX-XX (no recorded date)
-* …and all options of the above options with  present/missing <time>
+* …and all options of the above options with  present/missing time
 
 When using these extensions, a value must be specified for each component (e.g., year, month, day), or a missing value code specified.  This allows dates where any component is missing to be specified.   These extensions *SHALL NOT* be used to represent partial values that can be represented by the FHIR date and dateTime directly. The value of the field being extended should provide the portion of the date or dateTime value that can be represented by the FHIR data type.   For example, if the date is 2023-XX-01 (the month being unknown), the value of the date should be 2023, and the partialDate extension would represent all three components.
 
