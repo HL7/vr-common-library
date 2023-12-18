@@ -59,7 +59,7 @@
   <td>MAGE_BYPASS</td>
   <td>birthDate.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -518,7 +518,7 @@
   <td>MAGE_BYPASS</td>
   <td>birthDate.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>

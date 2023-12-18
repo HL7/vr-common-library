@@ -7,7 +7,7 @@ Description: "Example of an Observation with Partial Date Time"
 * effectiveDateTime = "2020-11-12T16:39:40-05:00"
 * performer.display = "A Performer"
 * code = $loinc#81956-5 "Date+time of death"
-* valueDateTime
+* valueDateTime = "2020-11"
   * extension[ExtensionPartialDateTimeVitalRecords]
     * extension[day]
       * valueUnsignedInt.extension[dataabsent].valueCode = #unknown
