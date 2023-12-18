@@ -32,7 +32,7 @@
   <td>ATTEND</td>
   <td>qualification.code</td>
   <td>codeable</td>
-  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
+  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -86,7 +86,7 @@
   <td>CERTIF</td>
   <td>qualification.code</td>
   <td>codeable</td>
-  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
+  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -131,7 +131,7 @@
   <td>ATTEND</td>
   <td>qualification.code</td>
   <td>codeable</td>
-  <td><a href='http://build.fhir.org/ig/HL7/fhir-bfdr/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
+  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
