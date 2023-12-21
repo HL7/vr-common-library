@@ -63,8 +63,8 @@
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
 <tr><td> <a href='StructureDefinition-BypassEditFlag.html'>ExtensionBypassEditFlagVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-BypassEditFlag.html'>VRDR</a> </td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-ExtensionPartialDateVitalRecords.html'>ExtensionPartialDateVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-vr.html'>VRCL</a> </td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-ExtensionPartialDateTimeVitalRecords.html'>ExtensionPartialDateTimeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-time-vr.html'>VRCL</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-Extension-partial-date-vr.html'>ExtensionPartialDateVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-vr.html'>VRCL</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-Extension-partial-date-time-vr.html'>ExtensionPartialDateTimeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-time-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-relatedperson-birthplace-vr.html'>ExtensionRelatedpersonBirthplaceVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-relatedperson-deceased-vr.html'>ExtensionRelatedPersonDeceasedVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-deceased-vr.html'>VRCL</a>   </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-role-vr.html'>ExtensionRoleVitalRecords</a> </td><td> New </td><td> New Addition </td></tr>
@@ -209,10 +209,10 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Current Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-day-vr.html'>ExtensionDateDayVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in date/time extensions </td></tr>
-<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-time-vr.html'>ExtensionDateTimeVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in <a href='StructureDefinition-ExtensionPartialDateTimeVitalRecords.html'>ExtensionPartialDateTimeVitalRecords</a> </td></tr>
-<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-month-vr.html'>ExtensionDateMonthVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in date/time extensions </td></tr>
-<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-year-vr.html'>ExtensionDateYearVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in date/time extensions </td></tr>
+<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-day-vr.html'>ExtensionDateDayVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
+<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-time-vr.html'>ExtensionDateTimeVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
+<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-month-vr.html'>ExtensionDateMonthVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
+<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-year-vr.html'>ExtensionDateYearVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
 </tbody>
 </table>
 
