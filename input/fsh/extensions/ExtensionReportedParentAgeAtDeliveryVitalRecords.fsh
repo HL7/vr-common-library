@@ -24,7 +24,9 @@ A required code indicates whether the mother or father's age is provided. It can
   * ^definition = "Age of the parent at the time of delivery reported by another person."
   * value[x] 1..1
   * value[x] only Quantity
-    * ^short = "Reported age in years"
+  * valueQuantity.code = $UCUM#a (exactly)
+  * valueQuantity ^short = "Reported age in years"
+  * valueQuantity.value 1..1  
 * extension[motherOrFather] ^short = "Mother or Father"
 * extension[reporter] only Extension
   * ^short = "Reference to the person who reported the parent's age."
