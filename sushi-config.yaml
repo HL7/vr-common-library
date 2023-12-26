@@ -295,6 +295,7 @@ groups:
       - ValueSetEducationLevelVitalRecords
       - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
+      - ValueSetMaritalStatusVitalRecords
       - ValueSetMotherRelationshipVitalRecords
       - ValueSetRoleVitalRecords 
       - ValueSetUnitsOfAgeVitalRecords
@@ -317,6 +318,7 @@ groups:
       - ConceptMapEducationLevelVitalRecords
       - ConceptMapHispanicNoUnknownVitalRecords
       - ConceptMapHispanicOriginVitalRecords
+      - ConceptMapMaritalStatusVitalRecords
       - ConceptMapMothersDateOfBirthEditFlagsVitalRecords
       - ConceptMapPluralityEditFlagsVitalRecords
       - ConceptMapRaceCodeVitalRecords 

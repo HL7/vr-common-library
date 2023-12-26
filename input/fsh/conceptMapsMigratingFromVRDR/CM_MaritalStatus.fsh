@@ -1,4 +1,4 @@
-Instance: MaritalStatusCM
+Instance: ConceptMapMaritalStatusVitalRecords
 InstanceOf: ConceptMap
 // Id: vrdr-marital-status-cm
 Usage: #definition
