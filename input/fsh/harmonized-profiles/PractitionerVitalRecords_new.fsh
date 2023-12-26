@@ -27,3 +27,4 @@ Description: "This Practitioner profile represents a practitioner who is involve
 * insert AddressComponents
 * address.country from ValueSetResidenceCountryVitalRecords (required)
 * address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)
+* identifier[NPI] ^short = "Practitioner's NPI Number"

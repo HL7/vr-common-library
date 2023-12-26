@@ -19,6 +19,7 @@ Usage: #example
   * valueCode = #F
 * extension[birthPlace]
   * valueAddress.state = "UT"
+    * extension[nationalReportingJurisdictionId].valueString = "UT"
 * identifier[0]
   * use = #usual
   * type = $v2-0203#SS "Social Security number"

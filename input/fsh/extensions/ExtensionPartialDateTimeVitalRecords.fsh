@@ -1,5 +1,5 @@
 Extension: ExtensionPartialDateTimeVitalRecords
-Id: ExtensionPartialDateTimeVitalRecords
+Id: Extension-partial-date-time-vr
 Title: "Extension - Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime for cases beyond what FHIR dateTime can support directly."
 * insert boilerplate
@@ -22,7 +22,7 @@ Description: "Provides values of a partial dateTime for cases beyond what FHIR d
      $DataAbsentReason named dataabsent 0..1
 
 Extension: ExtensionPartialDateVitalRecords
-Id: ExtensionPartialDateVitalRecords
+Id: Extension-partial-date-vr
 Title: "Extension - Partial Date Vital Records"
 Description: "Provides values of a partial date for cases beyond what FHIR date can support directly."
 * insert boilerplate

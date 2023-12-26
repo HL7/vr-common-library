@@ -6,7 +6,9 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
 * extension[race] MS
 * extension[ethnicity] MS
 * extension[birthsex] 1.. MS
-* extension[birthPlace] MS 
+* extension[$patient-birthPlace] MS 
+  * valueAddress.state ^short = "State of Birth"
+    * extension[nationalReportingJurisdictionId] ^short = "Jurisdiction of Birth"
 * extension[parentReportedAgeAtDelivery] ^short = "The mother or father's reported age at the time of delivery of the child"
 * identifier[MRN] MS
 * extension[birthsex].valueCode from ValueSetBirthSexChildVitalRecords (required)
