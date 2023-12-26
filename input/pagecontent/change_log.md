@@ -1,5 +1,8 @@
 
-### STU 2.0 January 2024
+### STU 2.0 Ballot Reconciliation
+* [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of parent ages -- [ExtensionReportedParentAgeAtDeliveryVitalRecords].
+
+### STU 2.0 Ballot - January 2024
 
 | Jira Issue | Description of Change | Changes Made |
 | -------- | -------- | -------- |
