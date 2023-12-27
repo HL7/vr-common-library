@@ -8,11 +8,11 @@ Description: "Local Observation Codes for observations that lack an appropriate 
 * ^experimental = false
 * ^status = #active 
 * #emergingissues "Emerging Issues" "NCHS-required emerging issues data."
-* #inputraceandethnicity "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #inputraceandethnicity "Input Race and Ethnicity" "Race and Ethnicity Data submitted by Jurisdictions to NCHS" 
 * #codedraceandethnicity "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
-* #inputraceandethnicityDecedent "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #inputraceandethnicityDecedent "Input Race and Ethnicity" "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
 * #codedraceandethnicityDecedent "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
-* #inputraceandethnicityMother "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #inputraceandethnicityMother "Input Race and Ethnicity" "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
 * #codedraceandethnicityMother "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
-* #inputraceandethnicityFather "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #inputraceandethnicityFather "Input Race and Ethnicity" "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
 * #codedraceandethnicityFather "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
