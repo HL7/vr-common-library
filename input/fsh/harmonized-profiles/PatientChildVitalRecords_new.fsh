@@ -13,7 +13,7 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
   * value[x].district.extension[districtCode] ^short = "County of birth"
 * extension[parentReportedAgeAtDelivery] ^short = "The mother or father's reported age at the time of delivery of the child"
   * extension[reportedAge].value[x] ^short = "Reported age"
-  * extension[motherOrFather] ^short = "Parent (MTH | FTH)"
+  * extension[motherOrFather].valueCodeableConcept ^short = "Parent (MTH | FTH)"
 * identifier[MRN] MS
   * value ^short = "Medical record number"
   * type.coding.code ^short = "Identifier type code"
