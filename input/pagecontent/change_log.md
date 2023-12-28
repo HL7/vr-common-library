@@ -1,6 +1,7 @@
 
 ### STU 2.0 Ballot Reconciliation
 * [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of parent ages -- [ExtensionReportedParentAgeAtDeliveryVitalRecords].
+* added missing IJE mapping content for [RelatedPersonFatherNaturalVitalRecords] profile page
 
 ### STU 2.0 Ballot - January 2024
 
