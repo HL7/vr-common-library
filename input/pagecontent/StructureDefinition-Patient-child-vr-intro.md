@@ -214,6 +214,13 @@ Profile conformance requires that gender be provided, see [note on patient gende
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -233,13 +240,13 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>2</td>
   <td>Child's Time of Birth</td>
-  <td>extension</td>
+  <td>extension:birthTime</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Child's Sex</td>
-  <td>extension</td>
+  <td>extension:birthsex</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
@@ -251,25 +258,25 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>6</td>
   <td>City, Town, Or Location Of Birth</td>
-  <td>extension</td>
+  <td>extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>County Of Birth</td>
-  <td>extension</td>
+  <td>extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>Father of Hispanic Origin?</td>
-  <td>extension</td>
+  <td>extension:ethnicity</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>25</td>
   <td>Father’s Race</td>
-  <td>extension</td>
+  <td>extension:race</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
@@ -281,7 +288,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>52</td>
   <td>Plurality</td>
-  <td>multipleBirth[x].extension</td>
+  <td>multipleBirth[x].extension:multipleBirthTotal</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
@@ -293,13 +300,13 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>3</td>
   <td>City, Town or Location of birth</td>
-  <td>extension</td>
+  <td>extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>County of birth</td>
-  <td>extension</td>
+  <td>extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
@@ -311,7 +318,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>18</td>
   <td>Time of birth</td>
-  <td>birthDate.extension</td>
+  <td>birthDate.extension:birthTime</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
@@ -323,13 +330,13 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>31</td>
   <td>Sex:</td>
-  <td>extension</td>
+  <td>extension:birthsex</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>33</td>
   <td>Plurality</td>
-  <td>multipleBirthInteger.extension</td>
+  <td>multipleBirthInteger.extension:multipleBirthTotal</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
@@ -353,7 +360,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>18</td>
   <td>Time of birth</td>
-  <td>birthDate.extension</td>
+  <td>birthDate.extension:birthTime</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
 </tr>
 <tr>
@@ -365,7 +372,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
 <tr>
   <td style='text-align: center'>31</td>
   <td>Sex</td>
-  <td>extension</td>
+  <td>extension:birthsex</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
 </tr>
 <tr>
@@ -374,5 +381,14 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>name</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
+<tr>
+  <td style='text-align: center'>33</td>
+  <td>Plurality</td>
+  <td>multipleBirthInteger.extension:multipleBirthTotal</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
 </tbody>
 </table>
+
+</details>
+<p></p>
