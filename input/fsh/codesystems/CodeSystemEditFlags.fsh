@@ -6,17 +6,17 @@ Description: "This code system contains codes to represent all edit flags"
 * ^content = #complete
 * ^experimental = false
 * #off "Off" //PHC1380
-* #correctOutOfRange "Queried data correct, out of range" //PHC1491
-* #failedBirthWeightGestationEdit "Queried, failed birthweight/gestation edit"
-* #editBypass0 "Edit Passed" //PHC1362
-* #editBypass1 "Edit Failed, Data Queried, and Verified" //PHC1363
-* #editBypass2 "Edit Failed, Data Queried, but not Verified" //PHC1364 
-* #editBypass3 "Edit Failed, Review Needed" //PHC1366
-* #editBypass4 "Edit Failed, Query Needed" //PHC1365
-* #dataQueried "Data queried" //PHC2143
-* #failedVerified "Edit Failed, Verified" //PHC1492
-* #pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" //PHC1495
-* #queriedCorrect "Queried, and Correct" //PHC1494
+* #correctOutOfRange "Queried data correct, out of range" "Queried data correct, out of range" //PHC1491
+* #failedBirthWeightGestationEdit "Queried, failed birthweight/gestation edit" "Queried, failed birthweight/gestation edit"
+* #editBypass0 "Edit Passed" "Edit Passed" //PHC1362
+* #editBypass1 "Edit Failed, Data Queried, and Verified" "Edit Failed, Data Queried, and Verified" //PHC1363
+* #editBypass2 "Edit Failed, Data Queried, but not Verified" "Edit Failed, Data Queried, but not Verified" //PHC1364 
+* #editBypass3 "Edit Failed, Review Needed" "Edit Failed, Review Needed" //PHC1366
+* #editBypass4 "Edit Failed, Query Needed" "Edit Failed, Query Needed" //PHC1365
+* #dataQueried "Data queried" "Data queried" //PHC2143
+* #failedVerified "Edit Failed, Verified" "Edit Failed, Verified" //PHC1492
+* #pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" "Plurality/Set Order Queried, Inconsistent" //PHC1495
+* #queriedCorrect "Queried, and Correct" "Queried, and Correct" //PHC1494
 
 // * #DEducBypass0 "Decedents Education - Edit Passed" // * #editBypass0
 // * #DEducBypass1 "Decedents Education - Edit Failed, Data Queried, and Verified" // * #editBypass1
