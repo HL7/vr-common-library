@@ -6,11 +6,17 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
 * extension[race] MS
 * extension[ethnicity] MS
 * extension[birthsex] 1.. MS
-* extension[$patient-birthPlace] MS 
+  * value[x] ^short = "Sex"
+* extension[birthPlace] MS 
   * valueAddress.state ^short = "State of Birth"
     * extension[nationalReportingJurisdictionId] ^short = "Jurisdiction of Birth"
+  * value[x].district.extension[districtCode] ^short = "County of birth"
 * extension[parentReportedAgeAtDelivery] ^short = "The mother or father's reported age at the time of delivery of the child"
+  * extension[reportedAge].value[x] ^short = "Reported age"
+  * extension[motherOrFather] ^short = "Parent (MTH | FTH)"
 * identifier[MRN] MS
+  * value ^short = "Medical record number"
+  * type.coding.code ^short = "Identifier type code"
 * extension[birthsex].valueCode from ValueSetBirthSexChildVitalRecords (required)
 * insert childName 
 * insert birthDateAndTime
@@ -20,6 +26,7 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
     * ^short = "To reflect the relevant edit possibilities for plurality."
   * .extension[multipleBirthTotal] MS
     * ^short = "Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy."
+    * value[x] ^short = "Plurality"
 * deceased[x] MS
   * ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
 
@@ -29,6 +36,8 @@ RuleSet: childName
     * extension[dataAbsentReason] ^short = "When \"name not chosen\" use code \"temp-unknown\""
   * given MS
     * extension[dataAbsentReason] ^short = "When \"name not chosen\" use code \"temp-unknown\""
+  * use ^short = "The use of a human name"
+  * suffix ^short = "Surname suffix"
 
 RuleSet: birthDateAndTime 
 * birthDate 1..

@@ -33,3 +33,4 @@ This profile is designed to supplant the similar profile in VRDR"
 
 // Add Edit Flags, a la VRDR 
 * birthDate.extension[bypassEditFlag] ^short = "To reflect the relevant edit possibilities for Father's date of birth."
+  * value[x] ^short = "DOB edit flag"

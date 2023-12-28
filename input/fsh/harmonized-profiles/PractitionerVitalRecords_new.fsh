@@ -16,8 +16,10 @@ Description: "This Practitioner profile represents a practitioner who is involve
 * qualification[birthAttendantQualification].code from ValueSetBirthAttendantTitlesVitalRecords (required)
 * qualification[birthAttendantQualification].code ^short = "List of titles"
 * qualification[birthAttendantQualification].code ^binding.description = "Live Birth/Fetal Death Practitioner title"
+* qualification[birthAttendantQualification].code.text ^short = "Attendant 'other'"
 * name 1..1
 * name ^short = "name"
+  * text ^short = "name"
 * address ^short = "address"
 * address.city ^short = "city"
 * address.district ^short = "county"
