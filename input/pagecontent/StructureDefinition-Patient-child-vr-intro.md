@@ -129,7 +129,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>237</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather]='MTH'</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -138,7 +138,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>238</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather]='FTH'</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='FTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -214,6 +214,13 @@ Profile conformance requires that gender be provided, see [note on patient gende
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -382,3 +389,6 @@ Profile conformance requires that gender be provided, see [note on patient gende
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>

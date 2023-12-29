@@ -276,6 +276,13 @@
 <p></p>
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -301,7 +308,6 @@
 <tr>
   <td style='text-align: center'>10c</td>
   <td>Father’s Birthplace</td>
-  <td>extension:birthPlace</td>
   <td>extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
@@ -380,8 +386,11 @@
 <tr>
   <td style='text-align: center'>13</td>
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
-  <td>extension:birthPlace:birthPlace</td>
+  <td>extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>
