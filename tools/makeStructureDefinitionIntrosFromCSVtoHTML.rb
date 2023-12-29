@@ -355,10 +355,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # process any natality rows firstEntry
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          if vProfileName == "RelatedPersonFatherNaturalVitalRecords" && row[IJE_PROFILE_COL].to_s == "RelatedPersonFatherNaturalVitalRecords"
-            puts "ije profile col: #{row[IJE_PROFILE_COL].to_s}"
-            puts "vProfileName:    #{vProfileName}"
-          end
           next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName
           if firstEntry
             if firstTable
