@@ -8,11 +8,11 @@ Description: "Local Observation Codes for observations that lack an appropriate 
 * ^experimental = false
 * ^status = #active 
 * #emergingissues "Emerging Issues" "NCHS-required emerging issues data."
-* #inputraceandethnicity "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #inputraceandethnicity "Input Race and Ethnicity" "Race and Ethnicity Data submitted by Jurisdictions to NCHS" 
 * #codedraceandethnicity "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
-* #inputraceandethnicityDecedent "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
-* #codedraceandethnicityDecedent "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
-* #inputraceandethnicityMother "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
-* #codedraceandethnicityMother "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
-* #inputraceandethnicityFather "Race and Ethnicity Data submitted by Jurisdictions to NCHS"
-* #codedraceandethnicityFather "Coded Race and Ethnicity" "Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+* #inputraceandethnicityDecedent "Decedent Input Race and Ethnicity" "Decedent Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #codedraceandethnicityDecedent "Decedent Coded Race and Ethnicity" "Decedent Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+* #inputraceandethnicityMother "Mother Input Race and Ethnicity" "Mother Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #codedraceandethnicityMother "Mother Coded Race and Ethnicity" "Mother Coded Race and Ethnicity Data produced by NCHS from submitted death record"
+* #inputraceandethnicityFather "Father Input Race and Ethnicity" "Father Race and Ethnicity Data submitted by Jurisdictions to NCHS"
+* #codedraceandethnicityFather "Father Coded Race and Ethnicity" "Father Coded Race and Ethnicity Data produced by NCHS from submitted death record"

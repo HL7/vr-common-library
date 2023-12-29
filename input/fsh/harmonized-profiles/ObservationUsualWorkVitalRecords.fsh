@@ -7,6 +7,7 @@ Description: "Used to send text-string industry and occupation information from 
 * focus only  Reference(RelatedPersonParentVitalRecords)  // Mother or Father
 * extension contains ExtensionRoleVitalRecords named roleVitalRecords 0..1 
 * extension[roleVitalRecords] ^short = "Vital Records Role (father,mother if present)"
+  * value[x] ^short = "Parent (MTH | FTH)"
 * component[odh-UsualIndustry]
   * valueCodeableConcept
     * text ^short = "Industry - Literal"
