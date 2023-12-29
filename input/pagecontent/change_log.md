@@ -3,6 +3,7 @@
 * [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of parent ages -- [ExtensionReportedParentAgeAtDeliveryVitalRecords].
 * added missing IJE mapping content for [RelatedPersonFatherNaturalVitalRecords] profile page
 * [FHIR-43416](https://jira.hl7.org/browse/FHIR-43416) - Add [Marital Status Value Set][ValueSetMaritalStatusVitalRecords]] (from VRDR)
+* [FHIR-43427](https://jira.hl7.org/browse/FHIR-43427) -- Add abstract profile of USCoreLocation to serve as the basis for VRDR and BFDR Location profiles.
 
 
 ### STU 2.0 Ballot - January 2024
