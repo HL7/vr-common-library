@@ -211,6 +211,7 @@ groups:
   OtherProfiles:
     name: Other Profiles
     resources:
+      - LocationVitalRecords 
       - ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationEducationLevelVitalRecords
       - ObservationEmergingIssuesVitalRecords
