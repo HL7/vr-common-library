@@ -3,7 +3,7 @@ Id: ValueSet-marital-status-vr
 Title: "Marital Status Value Set"
 Description: "The set of codes used to indicate the marital status of the decedent
 
-Mapping to IJE codes [here](ConceptMap-MaritalStatusCM.html)."
+Mapping to IJE codes [here][ConceptMapMaritalStatusVitalRecords]."
 * $v3-MaritalStatus#D "Divorced"
 * $v3-MaritalStatus#L "Legally Separated"
 * $v3-MaritalStatus#M "Married"
