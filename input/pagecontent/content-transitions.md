@@ -79,6 +79,9 @@
 <tr><td> <a href='StructureDefinition-StreetNumber.html'>ExtensionStreetNumberVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-StreetNumber.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-UnitOrAptNumber.html'>ExtensionUnitOrAptNumberVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-UnitOrAptNumber.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-within-city-limits-indicator-vr.html'>ExtensionWithinCityLimitsIndicatorVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>VRCL</a>   </td><td> changed to reference VRCL, rather than phinvads valueset </td></tr>
+<tr><td> <a href='StructureDefinition-AuxiliaryStateIdentifier1.html'>AuxiliaryStateIdentifier1</a></td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-AuxiliaryStateIdentifier1.html'>VRDR</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-AuxiliaryStateIdentifier2.html'>AuxiliaryStateIdentifier2</a></td><td> <a href='StructureDefinition-AuxiliaryStateIdentifier2.html'>VRDR</a> </td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-CertificateNumber.html'>CertificateNumber</a></td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-CertificateNumber.html'>VRDR</a> </td><td> - </td></tr>
 </tbody>
 </table>
 
