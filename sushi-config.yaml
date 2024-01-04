@@ -236,6 +236,13 @@ groups:
       - ExtensionPartialDateTimeVitalRecords
       - ExtensionPartialDateVitalRecords
 
+  RecordIdentifierExtensions:
+    name: Record Identifier Extensions 
+    resources:
+      - AuxiliaryStateIdentifier1
+      - AuxiliaryStateIdentifier2
+      - CertificateNumber
+  
   OtherExtensions:
     name: Other Extensions
     resources:
