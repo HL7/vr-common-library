@@ -9,19 +9,19 @@ RuleSet: AuxiliaryStateIdentifier
 Extension: AuxiliaryStateIdentifier1VitalRecords
 Id: AuxiliaryStateIdentifier1
 Title: "Auxiliary State Identifier1"
-Description: "An identifier associated by the submitting jurisdiction with a specific death certificate number.  Twelve digit number."
+Description: "An identifier associated by the submitting jurisdiction with a specific  certificate number.  Twelve digit number."
 * insert AuxiliaryStateIdentifier
 
-Extension: AuxiliaryStateIdentifier2italRecords
+Extension: AuxiliaryStateIdentifier2VitalRecords
 Id: AuxiliaryStateIdentifier2
 Title: "Auxiliary State Identifier2"
-Description: "An identifier associated by the submitting jurisdiction with a specific death certificate number.  Twelve digit number."
+Description: "An identifier associated by the submitting jurisdiction with a specific certificate number.  Twelve digit number."
 * insert AuxiliaryStateIdentifier
 
 Extension: CertificateNumberVitalRecords
 Id: CertificateNumber
 Title: "Certificate Number"
-Description: "Death certificate number. Six digit number.  Leading zeroes are optional."
+Description: "Certificate number. Six digit number.  Leading zeroes are optional."
 * ^context.type = #element
 * ^context.expression = "Identifier"
 * value[x] 1..1
