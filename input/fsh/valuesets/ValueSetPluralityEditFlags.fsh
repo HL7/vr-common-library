@@ -5,6 +5,6 @@ Description: "This valueset contains codes to represent Plurality Edit Flags. Th
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapPluralityEditFlagsVitalRecords.html)."
 * ^experimental = false
-* CodeSystemEditFlagsVitalRecords#off "Off" //PHC1380
-* CodeSystemEditFlagsVitalRecords#pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" //PHC1495
-* CodeSystemEditFlagsVitalRecords#queriedCorrect "Queried, and Correct" //PHC1494
+* CodeSystemEditFlagsVitalRecords#0off "Off" //PHC1380
+* CodeSystemEditFlagsVitalRecords#1queriedCorrect "Queried, and Correct" //PHC1494
+* CodeSystemEditFlagsVitalRecords#2pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" //PHC1495
