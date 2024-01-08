@@ -9,6 +9,7 @@ Description: "This code system contains codes to represent all edit flags"
 * #0off "Off" //PHC1380
 * #1 "Edit Failed, Data Queried, and Verified" "Edit Failed, Data Queried, and Verified" //PHC1363
 * #1queriedCorrect "Queried, and Correct" "Queried, and Correct" //PHC1494
+* #1dataQueried "Data queried" "Data queried" //PHC2143
 * #2 "Edit Failed, Data Queried, but not Verified" "Edit Failed, Data Queried, but not Verified" //PHC1364 
 * #2pluralityQueriedInconsistent "Plurality/Set Order Queried, Inconsistent" "Plurality/Set Order Queried, Inconsistent" //PHC1495
 * #3 "Edit Failed, Review Needed" "Edit Failed, Review Needed" //PHC1366
