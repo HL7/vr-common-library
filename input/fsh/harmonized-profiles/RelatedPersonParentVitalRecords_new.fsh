@@ -58,7 +58,7 @@ This profile is designed to supplant the similar profile in VRDR"
   * extension[partialDate] ^short = "Provides values of a partial date"
     * ^definition = "Indicates reason for missing data on either the birthDate or the birthTime."
   * extension[bypassEditFlag]
-    * valueCodeableConcept from ValueSetMothersDateOfBirthEditFlagsVitalRecords (required)
+    * valueCodeableConcept from ValueSetDateOfBirthEditFlagsVitalRecords (required)
     * value[x] only CodeableConcept
       * ^short = "To reflect the relevant edit possibilities for date of birth."
       * ^binding.description = "Date of Birth Edit Flags (NCHS)"

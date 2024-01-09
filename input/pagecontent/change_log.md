@@ -5,6 +5,7 @@
 * [FHIR-43416](https://jira.hl7.org/browse/FHIR-43416) - Add [Marital Status Value Set][ValueSetMaritalStatusVitalRecords] (from VRDR)
 * [FHIR-43427](https://jira.hl7.org/browse/FHIR-43427) -- Add abstract profile of USCoreLocation to serve as the basis for VRDR and BFDR Location profiles.
 * [FHIR-43473](https://jira.hl7.org/browse/FHIR-43473) -- Added record identifiers that are used in VRDR and BFDR to common library
+* Renamed [ValueSetMothersDateOfBirthEditFlagsVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags-vr.html) to [ValueSetDateOfBirthEditFlagsVitalRecords] to generalize utility. 
 
 ### STU 2.0 Ballot - January 2024
 
