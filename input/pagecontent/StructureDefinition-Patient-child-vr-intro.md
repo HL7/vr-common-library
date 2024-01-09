@@ -1,11 +1,11 @@
-This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
-
- * the [patient-birthPlace](http://hl7.org/fhir/StructureDefinition/patient-birthPlace) extension
- * the [patient-birthTime](http://hl7.org/fhir/StructureDefinition/patient-birthTime) extension
- * the [patient-multipleBirthTotal](http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal) extension to record plurality
- * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
-    * use not-applicable if the name hasn't been chosen
-
+This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
+
+ * the [patient-birthPlace](http://hl7.org/fhir/StructureDefinition/patient-birthPlace) extension
+ * the [patient-birthTime](http://hl7.org/fhir/StructureDefinition/patient-birthTime) extension
+ * the [patient-multipleBirthTotal](http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal) extension to record plurality
+ * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
+    * use not-applicable if the name hasn't been chosen
+
 Profile conformance requires that gender be provided, see [note on patient gender](usage.html#gender).
 
 ### IJE Mapping
@@ -48,7 +48,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>2</td>
   <td>State, U.S. Territory or Canadian Province of Birth (Infant) - code</td>
   <td>BSTATE</td>
-  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>extension[birthPlace].value[x].state</td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td>
 </tr>
@@ -93,7 +93,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>10</td>
   <td>County of Birth</td>
   <td>CNTYO</td>
-  <td>extension[patient-birthPlace].value[x].district.extension[countyCode]</td>
+  <td>extension[birthPlace].value[x].district.extension[districtCode]</td>
   <td>integer</td>
   <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
 </tr>
@@ -122,7 +122,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>PLUR_BYPASS</td>
   <td>multipleBirth.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-plurality-edit-flags.html'>PluralityEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-ValueSet-plurality-edit-flags-vr.html'>ValueSetPluralityEditFlagsVitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
