@@ -13,6 +13,100 @@ A value of unknown (all 9's) in IJE is equivalent to a component with DataAbsent
 
 A value of blank (all ' ') in IJE is equivalent to a a component with a DataAbsentReason extension with code `temp-unknown`.
 
+The following table illustrates the appropriate use of a dateTime field with a partial date time extension:
+
+<head>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>FHIR dateTime</th>
+    <th>Partial Date Time Extension Components</th>
+    <th>IJE YYYY</th>
+    <th>IJE MM</th>
+    <th>IJE DD</th>
+    <th>IJE TTTT</th>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>(none)</td>
+    <td>2023</td>
+    <td>blank</td>
+    <td>blank</td>
+    <td>blank</td>
+  </tr>
+  <tr>
+    <td>2023 (this is correct usage)</td>
+    <td>2023-XX-23 XXXX</td>
+    <td>2023</td>
+    <td>99</td>
+    <td>23</td>
+    <td>9999</td>
+  </tr>
+  <tr>
+    <td>2023-12</td>
+    <td>(none)</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>blank</td>
+    <td>blank</td>
+  </tr>
+  <tr>
+    <td>2023-12-23</td>
+    <td>(none)</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>23</td>
+    <td>blank</td>
+  </tr>
+  <tr>
+    <td>2023-12-23</td>
+    <td>2023-12-23 XXXX</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>23</td>
+    <td>9999</td>
+  </tr>
+  <tr>
+    <td>(none) this is incorrect usage. It should be</td>
+    <td>2023-12-23.</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>23</td>
+    <td>9999</td>
+  </tr>
+  <tr>
+    <td>2023-12-23 T13:28:17-05:00</td>
+    <td>(none)</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>23</td>
+    <td>1328. (uses local time)</td>
+  </tr>
+  <tr>
+    <td>(none)</td>
+    <td>XXXX-12-23 1828</td>
+    <td>9999</td>
+    <td>12</td>
+    <td>23</td>
+    <td>1828</td>
+  </tr>
+</table>
+
+</body>
+
 
 ### Birth Date and Time
 The [USCorePatient] profile provides a field for capturing the patient's birthdate. Within the vital records use cases, the date and time of birth are needed, as well as the ability to capture partial dates.  The date and time of birth should be captured as follows:
