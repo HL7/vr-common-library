@@ -33,7 +33,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
 <table>
   <tr>
     <th>FHIR dateTime</th>
-    <th>Partial Date Time Extension Components</th>
+    <th>Partial Date Time Extension Components YYYY-MM-DD TTTT</th>
     <th>IJE YYYY</th>
     <th>IJE MM</th>
     <th>IJE DD</th>
@@ -48,7 +48,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>blank</td>
   </tr>
   <tr>
-    <td>2023 (this is correct usage)</td>
+    <td>2023 (this is correct usage).  It should be </td>
     <td>2023-XX-23 XXXX</td>
     <td>2023</td>
     <td>99</td>
@@ -80,8 +80,9 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>9999</td>
   </tr>
   <tr>
-    <td>(none) this is incorrect usage. It should be</td>
-    <td>2023-12-23.</td>
+    <td>(none) this is incorrect usage. It should be  
+2023-12-23.</td>
+    <td>2023-12-23 XXXX</td>
     <td>2023</td>
     <td>12</td>
     <td>23</td>
