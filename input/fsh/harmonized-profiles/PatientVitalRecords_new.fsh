@@ -49,8 +49,8 @@ Description: "This abstract Patient profile includes common extensions and slici
   * use = #maiden (exactly)
   * ^short = "Name prior to first marriage"
 * name 
-  * use 1..1 
-  * family 1..
+//  * use 1..1 
+  * family // 1..
     * extension ^slicing.discriminator.type = #value
       * ^slicing.discriminator.path = "url"
       * ^slicing.rules = #open
