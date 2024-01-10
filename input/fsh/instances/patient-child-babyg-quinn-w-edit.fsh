@@ -8,4 +8,4 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-02-12T13:00:00-07:00"
-* multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#queriedCorrect "Queried, and Correct"
+* multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#1queriedCorrect "Queried, and Correct"

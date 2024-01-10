@@ -68,7 +68,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * birthDate.extension[partialDateTime] ^short = "partialDateTIme"
 * birthDate.extension[partialDateTime] ^definition = "Alternative component representation of partial date and time. See [note on birth date and time]."
 * birthDate.extension[bypassEditFlag]
-  * valueCodeableConcept from ValueSetMothersDateOfBirthEditFlagsVitalRecords (required)
+  * valueCodeableConcept from ValueSetDateOfBirthEditFlagsVitalRecords (required)
   * value[x] only CodeableConcept
     * ^short = "To reflect the relevant edit possibilities for date of birth."
     * ^binding.description = "Date of Birth Edit Flags (NCHS)"

@@ -314,7 +314,7 @@ groups:
     name: ValueSets
     resources:  
       - ValueSetEditBypass01234VitalRecords
-      - ValueSetMothersDateOfBirthEditFlagsVitalRecords
+      - ValueSetDateOfBirthEditFlagsVitalRecords
       - ValueSetPluralityEditFlagsVitalRecords
   VRCLConceptMaps:
     name: Concept Maps
@@ -327,7 +327,7 @@ groups:
       - ConceptMapHispanicNoUnknownVitalRecords
       - ConceptMapHispanicOriginVitalRecords
       - ConceptMapMaritalStatusVitalRecords
-      - ConceptMapMothersDateOfBirthEditFlagsVitalRecords
+      - ConceptMapDateOfBirthEditFlagsVitalRecords
       - ConceptMapPluralityEditFlagsVitalRecords
       - ConceptMapRaceCodeVitalRecords 
       - ConceptMapRaceMissingValueReasonVitalRecords

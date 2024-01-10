@@ -59,14 +59,14 @@
   <td>MAGE_BYPASS</td>
   <td>birthDate.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-ValueSet-date-of-birth-edit-flags-vr.html'>ValueSetDateOfBirthEditFlagsVitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
   <td>18</td>
   <td>State, U.S. Territory or Canadian Province of Birth (Mother) - code</td>
   <td>BPLACEC_ST_TER</td>
-  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>extension[birthPlace].value[x].state</td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
 </tr>
@@ -75,7 +75,7 @@
   <td>19</td>
   <td>Birthplace of Mother--Country</td>
   <td>BPLACEC_CNT</td>
-  <td>extension[patient-birthPlace].value[x].country </td>
+  <td>extension[birthPlace].value[x].country </td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
 </tr>
@@ -93,7 +93,7 @@
   <td>21</td>
   <td>Residence of Mother--County</td>
   <td>COUNTYC</td>
-  <td>address.district.extension[countyCode]</td>
+  <td>address.district.extension[districtCode]</td>
   <td>integer</td>
   <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
 </tr>
@@ -518,14 +518,14 @@
   <td>MAGE_BYPASS</td>
   <td>birthDate.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/bfdr/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.html'>MothersDateOfBirthEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='ValueSet-ValueSet-date-of-birth-edit-flags-vr.html'>ValueSetDateOfBirthEditFlagsVitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
   <td>18</td>
   <td>State, U.S. Territory or Canadian Province of Birth (Mother) - code</td>
   <td>BPLACEC_ST_TER</td>
-  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>extension[birthPlace].value[x].state</td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a></td>
 </tr>
@@ -534,7 +534,7 @@
   <td>19</td>
   <td>Mother's Birthplace--Country</td>
   <td>BPLACEC_CNT</td>
-  <td>extension[patient-birthPlace].value[x].country </td>
+  <td>extension[birthPlace].value[x].country </td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
 </tr>
@@ -552,7 +552,7 @@
   <td>21</td>
   <td>Residence of Mother--County</td>
   <td>COUNTYC</td>
-  <td>address.district.extension[countyCode]</td>
+  <td>address.district.extension[districtCode]</td>
   <td>integer</td>
   <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
 </tr>
