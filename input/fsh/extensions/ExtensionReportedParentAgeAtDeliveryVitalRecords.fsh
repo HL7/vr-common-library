@@ -4,8 +4,7 @@ Title: "Extension - Reported Parent Age At Delivery - Vital Records"
 Description: "This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. 
 A required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**)."
 * ^experimental = false
-* ^context.type = #element
-* ^context.expression = "Patient"
+* insert ExtensionContextResource(Patient)
 * . 0..*
   * ^short = "Extension - Reported Parent Age at Delivery - Vital Records"
   * ^definition = "This Extension profile represents the reported age of the parent at the delivery time of the newborn or fetus. 

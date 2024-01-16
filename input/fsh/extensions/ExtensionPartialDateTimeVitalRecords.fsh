@@ -2,7 +2,6 @@ Extension: ExtensionPartialDateTimeVitalRecords
 Id: Extension-partial-date-time-vr
 Title: "Extension - Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime for cases beyond what FHIR dateTime can support directly."
-* insert boilerplate
 * insert ExtensionContextResource(dateTime)
 * insert ExtensionContextResource(date)  //This supports birthDate, where we have a dateTime extension for birthTime...
 * . ^short = "Partial Date Time"
@@ -59,10 +58,6 @@ Description: "Provides values of a partial date for cases beyond what FHIR date 
 // RuleSet: ExtensionContext(path)
 // * ^context[+].type = #element
 // * ^context[=].expression = "{path}"
-
-RuleSet: ExtensionContextResource(path)
-* insert ExtensionContext({path})
-//* insert ExtensionContext({path}.Extension)
 
 RuleSet: YearMonthDay
 * extension[year] 
