@@ -37,8 +37,7 @@ RuleSet: AddressComponents
 
 RuleSet: addressextension(length)
 //* . ^short = "label"
-* ^context.type = #element
-* ^context.expression = "Address"
+* insert ExtensionContextResource(Address)
 * value[x] 1..1
 * value[x] only string
 * value[x] ^maxLength = {length}
@@ -107,6 +106,10 @@ RuleSet: LOINCCopyright
 RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
+
+RuleSet: ExtensionContextResource(path)
+* insert ExtensionContext({path})
+//* insert ExtensionContext({path}.Extension)
 
 RuleSet: ParameterSlicing
 * parameter ^slicing.discriminator.type = #value

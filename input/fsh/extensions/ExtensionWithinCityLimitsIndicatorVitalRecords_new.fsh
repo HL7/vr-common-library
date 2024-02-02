@@ -3,8 +3,7 @@ Extension: ExtensionWithinCityLimitsIndicatorVitalRecords
 Id: Extension-within-city-limits-indicator-vr
 Title: "Extension - Within City Limits Indicator Vital Records"
 Description: "Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."
-* ^context.type = #element
-* ^context.expression = "Address"
+* insert ExtensionContextResource(Address)
 * value[x] 1..1
 * value[x] only Coding
 * value[x] from ValueSetYesNoUnknownVitalRecords (required)

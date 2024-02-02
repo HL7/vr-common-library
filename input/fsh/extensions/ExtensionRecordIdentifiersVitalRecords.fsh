@@ -1,7 +1,6 @@
 RuleSet: AuxiliaryStateIdentifier
 * insert ExtensionContextResource(Meta)
-* ^context.type = #element
-* ^context.expression = "Identifier"
+* insert ExtensionContextResource(Identifier)
 * value[x] 1..1
 * value[x] only string
 * valueString ^maxLength = 12
@@ -22,8 +21,7 @@ Extension: CertificateNumberVitalRecords
 Id: CertificateNumber
 Title: "Certificate Number"
 Description: "Certificate number. Six digit number.  Leading zeroes are optional."
-* ^context.type = #element
-* ^context.expression = "Identifier"
+* insert ExtensionContextResource(Identifier)
 * value[x] 1..1
 * value[x] only string
 * valueString ^maxLength = 6

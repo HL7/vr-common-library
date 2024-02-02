@@ -2,8 +2,7 @@ Extension: ExtensionCityCodeVitalRecords
 Id: CityCode
 Title: "Extension - City Code Vital Records"
 Description: "City expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
-* ^context.type = #element
-* ^context.expression = "Address.city"
+* insert ExtensionContextResource(Address.city)
 * value[x] 1..1
 * value[x] only positiveInt
 //* value[x] obeys digitalCityCode
@@ -17,8 +16,7 @@ Id: DistrictCode
 Title: "Extension - District Code Vital Records"
 Description: "District expressed as a numeric value.  As of the date of publication, in accordance with the NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014 (https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf). (Extension)"
 //* insert boilerplate
-* ^context.type = #element
-* ^context.expression = "Address.district"
+* insert ExtensionContextResource(Address.district)
 * value[x] 1..1
 * value[x] only positiveInt
 //* value[x] obeys digitalCityCode
