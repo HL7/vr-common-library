@@ -298,8 +298,7 @@ groups:
     name: Other ValueSets
     resources:  
       - ValueSetBirthAttendantTitlesVitalRecords
-      - ValueSetBirthSexChildVitalRecords
-      - ValueSetBirthSexFetusVitalRecords
+      - ValueSetSexAssignedAtBirthVitalRecords
       - ValueSetEducationLevelVitalRecords
       - ValueSetEducationLevelPersonVitalRecords
       - ValueSetFatherRelationshipVitalRecords
