@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Title: "Birth Sex Child Vital Records"
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(BirthSex, ValueSetBirthSexChildVitalRecords)
+* insert ConceptMapIntro(BirthSex, ValueSetSexAssignedAtBirthVitalRecords)
 * insert AddGroup( $IJE, $v3-AdministrativeGender)
 * insert MapConcept( #M,  "Male", #M, "Male")
 * insert MapConcept( #F,  "Female", #F, "Female")

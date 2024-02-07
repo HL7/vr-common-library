@@ -17,7 +17,7 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
 * identifier[MRN] MS
   * value ^short = "Medical record number"
   * type.coding.code ^short = "Identifier type code"
-* extension[birthsex].valueCode from ValueSetBirthSexChildVitalRecords (required)
+* extension[birthsex].valueCode from ValueSetSexAssignedAtBirthVitalRecords (required)
 * insert childName 
 * insert birthDateAndTime
 * multipleBirth[x] only integer

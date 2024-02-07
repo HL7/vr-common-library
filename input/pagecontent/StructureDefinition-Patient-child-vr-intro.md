@@ -68,7 +68,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>ISEX</td>
   <td>extension[birthsex].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-birth-sex-child-vr.html'>ValueSetBirthSexChildVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-sex-assigned-at-birth-vr.html'>ValueSetSexAssignedAtBirthVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
