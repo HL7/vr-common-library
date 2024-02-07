@@ -1,6 +1,6 @@
 ValueSet: ValueSetBirthSexFetusVitalRecords
 Id: ValueSet-birth-sex-fetus-vr
-Title: "ValueSet - Birth Sex Fetus Vital Records"
+Title: "Birth Sex Fetus Vital Records"
 Description: "This valueset contains the subset of the US Core Birth Sex Valueset that can be used for a decedent fetus' Vital Records.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapBirthSexFetusVitalRecords.html)."

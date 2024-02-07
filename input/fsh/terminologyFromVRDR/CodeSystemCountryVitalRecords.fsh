@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemCountryCodeVitalRecords
 Id: CodeSystem-country-code-vr
-Title: "CodeSystem - Country Codes Vital Records"
+Title: "Country Codes Vital Records"
 Description: "2 Letter Country Codes from GEC and ISO 3166-1"
 * ^caseSensitive = false
 * #AA "Aruba" "Aruba"

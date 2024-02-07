@@ -1,6 +1,6 @@
 Extension: ExtensionPatientFetalDeathVitalRecords
 Id: Extension-patient-fetal-death-vr
-Title: "Extension - Patient Fetal Death - Vital Records"
+Title: "Patient Fetal Death Vital Records"
 Description: "The fetal death status of the patient."
 * ^experimental = false
 * insert ExtensionContextResource(Patient)

@@ -1,6 +1,6 @@
 Instance: ConceptMapRaceMissingValueReasonVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Race Missing Value Reason Vital Records"
+Title: "Race Missing Value Reason Vital Records"
 // Id: vrdr-race-missing-value-reason-cm
 Usage: #definition
 * experimental = false

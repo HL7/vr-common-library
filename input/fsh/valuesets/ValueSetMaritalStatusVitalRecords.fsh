@@ -1,6 +1,6 @@
 ValueSet: ValueSetMaritalStatusVitalRecords
 Id: ValueSet-marital-status-vr
-Title: "Marital Status Value Set"
+Title: "Marital Status Vital Records"
 Description: "The set of codes used to indicate the marital status of the decedent
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapMaritalStatusVitalRecords.html)." 

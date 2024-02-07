@@ -1,6 +1,6 @@
 Instance: ConceptMapEducationLevelVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Education Level Vital Records"
+Title: "Education Level Vital Records"
 // Id: vrdr-education-level-cm
 Usage: #definition
 * experimental = false

@@ -1,7 +1,7 @@
 
 Instance: ConceptMapYesNoUnknownNotApplicableVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Yes No Unknown Not Applicable Vital Records"
+Title: "Yes No Unknown Not Applicable Vital Records"
  // Id: vrdr-yes-no-unknown-not-applicable-cm
 Usage: #definition
 * experimental = false
@@ -15,7 +15,7 @@ Usage: #definition
 
 Instance: ConceptMapYesNoUnknownVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Yes No Unknown Vital Records"
+Title: "Yes No Unknown Vital Records"
  // Id: vrdr-yes-no-unknown-cm
 Usage: #definition
 * experimental = false
@@ -29,7 +29,7 @@ Usage: #definition
 
 Instance: ConceptMapYesNoNotApplicableVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Yes No Not Applicable Vital Records"
+Title: "Yes No Not Applicable Vital Records"
  // Id: vrdr-not-applicable-cm
 Usage: #definition
 * experimental = false

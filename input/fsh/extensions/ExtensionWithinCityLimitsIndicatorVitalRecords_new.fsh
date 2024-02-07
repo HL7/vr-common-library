@@ -1,7 +1,7 @@
 //changed to reference VRCL vs instead of phinvads vs
 Extension: ExtensionWithinCityLimitsIndicatorVitalRecords
 Id: Extension-within-city-limits-indicator-vr
-Title: "Extension - Within City Limits Indicator Vital Records"
+Title: "Within City Limits Indicator Vital Records"
 Description: "Used to indicate whether or not an address is within city limits. The content of the component shall be a value from the value set Yes No Unknown."
 * insert ExtensionContextResource(Address)
 * value[x] 1..1

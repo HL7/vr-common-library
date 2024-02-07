@@ -1,6 +1,6 @@
 Extension: ExtensionPartialDateTimeVitalRecords
 Id: Extension-partial-date-time-vr
-Title: "Extension - Partial Date Time Vital Records"
+Title: "Partial Date Time Vital Records"
 Description: "Provides values of a partial dateTime for cases beyond what FHIR dateTime can support directly."
 * insert ExtensionContextResource(dateTime)
 * insert ExtensionContextResource(date)  //This supports birthDate, where we have a dateTime extension for birthTime...

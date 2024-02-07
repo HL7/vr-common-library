@@ -1,6 +1,6 @@
 Instance: ConceptMapHispanicNoUnknownVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Hispanic No Unknown Vital Records"
+Title: "Hispanic No Unknown Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(HispanicNoUnknown, ValueSetHispanicNoUnknownVitalRecords)

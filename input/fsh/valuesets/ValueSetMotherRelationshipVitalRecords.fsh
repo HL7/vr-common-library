@@ -1,6 +1,6 @@
 ValueSet: ValueSetMotherRelationshipVitalRecords
 Id: ValueSet-mother-relationship-vr
-Title: "ValueSet - Mother Relationship Vital Records"
+Title: "Mother Relationship Vital Records"
 Description: "This valueset contains codes that represent relationships describing the mother's role relative to the subject."
 * ^status = #active
 * ^experimental = false

@@ -1,6 +1,6 @@
 ValueSet: ValueSetYesNoUnknownNotApplicableVitalRecords
 Id: ValueSet-yes-no-unknown-not-applicable-vr
-Title: "ValueSet - Yes No Unknown NotApplicable Vital Records"
+Title: "Yes No Unknown NotApplicable Vital Records"
 Description: "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, Unknown, or Not Applicable.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownNotApplicableVitalRecords.html)."
