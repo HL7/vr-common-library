@@ -1,6 +1,6 @@
 Instance: ConceptMapBirthSexChildVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Birth Sex Child Vital Records"
+Title: "Birth Sex Child Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(BirthSex, ValueSetSexAssignedAtBirthVitalRecords)

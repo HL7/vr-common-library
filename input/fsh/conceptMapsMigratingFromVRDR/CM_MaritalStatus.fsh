@@ -1,5 +1,6 @@
 Instance: ConceptMapMaritalStatusVitalRecords
 InstanceOf: ConceptMap
+Title: "Marital Status Vital Records"
 // Id: vrdr-marital-status-cm
 Usage: #definition
 * experimental = false

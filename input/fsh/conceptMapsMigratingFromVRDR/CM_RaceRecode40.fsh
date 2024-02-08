@@ -1,6 +1,6 @@
 Instance: ConceptMapRaceRecode40VitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Race Recode40 Vital Records"
+Title: "Race Recode40 Vital Records"
 // Id: vrdr-race-recode40-cm
 Usage: #definition
 * experimental = false

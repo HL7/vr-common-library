@@ -1,6 +1,6 @@
 Instance: ConceptMapBirthAttendantTitlesVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Birth Attendant Titles Vital Records"
+Title: "Birth Attendant Titles Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(BirthAttendantTitles, ValueSetBirthAttendantTitlesVitalRecords)
