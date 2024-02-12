@@ -1,6 +1,6 @@
 Instance: ConceptMapPluralityEditFlagsVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Plurality Edit Flags Vital Records"
+Title: "Plurality Edit Flags Vital Records"
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(PluralityEditFlags, ValueSetPluralityEditFlagsVitalRecords)

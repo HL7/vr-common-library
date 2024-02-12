@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemLocalObservationsCodesVitalRecords
 Id: CodeSystem-local-observation-codes-vr
-Title: "CodeSystem - Local Observation Codes Vital Records"
+Title: "Local Observation Codes Vital Records"
 Description: "Local Observation Codes for observations that lack an appropriate LOINC code"
 * insert boilerplate
 * ^content = #complete

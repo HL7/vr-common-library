@@ -1,6 +1,6 @@
 Instance: ConceptMapUnitsOfAgeVitalRecords
 InstanceOf: ConceptMap
-Title: "ConceptMap - Units Of Age Vital Records"
+Title: "Units Of Age Vital Records"
 // Id: vrdr-units-of-age-cm
 Usage: #definition
 * experimental = false
