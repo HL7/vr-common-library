@@ -6,6 +6,7 @@
 * [FHIR-43427](https://jira.hl7.org/browse/FHIR-43427) -- Add abstract profile of USCoreLocation to serve as the basis for VRDR and BFDR Location profiles.
 * [FHIR-43473](https://jira.hl7.org/browse/FHIR-43473) -- Added record identifiers that are used in VRDR and BFDR to common library
 * Renamed [ValueSetMothersDateOfBirthEditFlagsVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags-vr.html) to [ValueSetDateOfBirthEditFlagsVitalRecords] to generalize utility. 
+* [FHIR-44427](https://jira.hl7.org/browse/FHIR-44427) Eliminated  HispanicNoUknown valueset which was content-identical with [ValueSetYesNoUnknownVitalRecords].
 * [FHIR-44445](https://jira.hl7.org/browse/FHIR-44445) - consolidate [ValueSetBirthSexChildVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan//ValueSet/ValueSet-birth-sex-child-vr) and [ValueSetBirthSexFetusVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan//ValueSet/ValueSet-birth-sex-fetus-vr) into a single VS called [ValueSetSexAssignedAtBirthVitalRecords]
 * [FHIR-44463](https://jira.hl7.org/browse/FHIR-44463) and [FHIR-44464](https://jira.hl7.org/browse/FHIR-44464) -- drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
 
