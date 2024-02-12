@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Title: "Hispanic No Unknown Vital Records"
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(HispanicNoUnknown, ValueSetHispanicNoUnknownVitalRecords)
+* insert ConceptMapIntro(HispanicNoUnknown, ValueSetYesNoUnknownVitalRecords)
 * insert AddGroup($IJE,$v2-0136)
 * insert MapConcept( #H,  "Yes",#Y, "Yes")
 * insert MapConcept( #N,  "No",#N, "No")
