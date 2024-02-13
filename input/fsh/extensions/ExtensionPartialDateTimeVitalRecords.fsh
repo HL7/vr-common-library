@@ -22,7 +22,7 @@ Description: "Provides values of a partial dateTime for cases beyond what FHIR d
 
 Extension: ExtensionPartialDateVitalRecords
 Id: Extension-partial-date-vr
-Title: "Extension - Partial Date Vital Records"
+Title: "Partial Date Vital Records"
 Description: "Provides values of a partial date for cases beyond what FHIR date can support directly."
 * insert boilerplate
 * insert ExtensionContextResource(date)
