@@ -30,3 +30,6 @@ Description: "This Practitioner profile represents a practitioner who is involve
 * address.country from ValueSetResidenceCountryVitalRecords (required)
 * address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)
 * identifier[NPI] ^short = "Practitioner's NPI Number"
+* extension contains ExtensionRoleVitalRecords named roleVitalRecords 0..1 
+* extension[roleVitalRecords] ^short = "Vital Records Role (Attendant, Certifier if present)"
+  * value[x] ^short = "Used to differentiate attendant or certifier profiles"
