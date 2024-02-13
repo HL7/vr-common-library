@@ -6,10 +6,10 @@
 id: hl7.fhir.us.vr-common-library
 canonical: http://hl7.org/fhir/us/vr-common-library
 name: VitalRecordsCommonLibrary
-title: Vital Records Common Library (VRCL) STU2-ballot
+title: Vital Records Common Library (VRCL) STU2
 # description: Example Implementation Guide for getting started with SUSHI
-status: draft # draft | active | retired | unknown
-version: 2.0.0-ballot
+status: active # draft | active | retired | unknown
+version: 2.0.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 
@@ -28,7 +28,7 @@ dependencies:
     id: uscdcphinvads
 
 copyrightYear: 2023+
-releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
