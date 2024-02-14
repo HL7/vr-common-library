@@ -5,11 +5,6 @@ Description: "This valueset contains the set of 2 Letter codes used to represent
 * ^status = #active
 * ^version = "1.0.0"
 * ^experimental = false
-* insert USStatesAndTerritories
-
-
-
-RuleSet: USStatesAndTerritories
 * $statesCS#AL  "Alabama"
 * $statesCS#AK  "Alaska"
 * $statesCS#AS  "American Samoa"
