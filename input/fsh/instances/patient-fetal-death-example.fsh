@@ -15,7 +15,7 @@ Description: "Example of a Patient with a Fetal Death status"
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-01-09T18:23:00-07:00"
 * deceasedBoolean = true
-* deceased 
+* deceasedBoolean
   * extension
     * url = Canonical(ExtensionPatientFetalDeathVitalRecords)
     * valueBoolean = true
