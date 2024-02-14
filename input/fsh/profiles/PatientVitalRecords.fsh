@@ -83,7 +83,7 @@ Description: "This abstract Patient profile includes common extensions and slici
 * insert AddressComponents
 * extension contains ExtensionReportedParentAgeAtDeliveryVitalRecords named parentReportedAgeAtDelivery 0..2
 * insert multipleBirths
-* extension contains ExtensionPatientFetalDeathVitalRecords named fetalDeath 0..1 
+* deceased contains ExtensionPatientFetalDeathVitalRecords named fetalDeath 0..1 
 
 RuleSet: multipleBirths
 * multipleBirth[x] 
