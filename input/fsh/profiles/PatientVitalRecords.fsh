@@ -93,12 +93,12 @@ Invariant: fetalDeathOnlyIfDeceased
 Description: "Fetal death should only be indicated if Patient is deceased."
 Severity: #error
 * expression = 
-     "extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').exists() and
+     "(extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').exists() and
       extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').value.exists() and
-      extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').valueBoolean = 'true')
+      extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').value = 'true')
    implies
-      valueBoolean.exists() and
-      valueBoolean = 'true' "
+      (value.exists() and
+      value = 'true')"
 
 
 RuleSet: multipleBirths
