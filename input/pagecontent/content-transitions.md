@@ -68,7 +68,6 @@
 <tr><td> <a href='StructureDefinition-Extension-partial-date-time-vr.html'>ExtensionPartialDateTimeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-partial-date-time-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-relatedperson-birthplace-vr.html'>ExtensionRelatedpersonBirthplaceVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>VRCL</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-patient-fetal-death-vr.html'>ExtensionPatientFetalDeathVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-patient-fetal-death-vr.html'>VRCL</a> </td><td> Converted from flag (presence-absence) extension to Patient to Boolean valued extension to Patient.deceased </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-relatedperson-deceased-vr.html'>ExtensionRelatedPersonDeceasedVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-deceased-vr.html'>VRCL</a>   </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Extension-role-vr.html'>ExtensionRoleVitalRecords</a> </td><td> New </td><td> New Addition </td></tr>
 <tr><td> <a href='StructureDefinition-CityCode.html'>ExtensionCityCodeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-CityCode.html'>VRDR</a> </td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-DistrictCode.html'>ExtensionDistrictCodeVitalRecords</a> </td><td><a href='http://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-DistrictCode.html'>VRDR</a>  </td><td> - </td></tr>
@@ -218,6 +217,7 @@
 <tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-time-vr.html'>ExtensionDateTimeVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-month-vr.html'>ExtensionDateMonthVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
 <tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-date-year-vr.html'>ExtensionDateYearVitalRecords</a> </td><td>  Deleted  </td><td> No longer used in partial date/time extensions </td></tr>
+<tr><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Extension-relatedperson-deceased-vr.html'>ExtensionRelatedPersonDeceasedVitalRecords</a> </td><td>  Deleted  </td><td> Not needed for exchange of vital records data. </td></tr>
 </tbody>
 </table>
 
