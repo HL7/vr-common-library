@@ -1,5 +1,7 @@
 
 ### STU 2.0 Ballot Reconciliation
+* [FHIR-44772] Eliminate Unused Extensions for Related Person (deceased, race, ethnicity).  These are not needed.
+* [FHIR-44754](https://jira.hl7.org/browse/FHIR-FHIR-44754) - Change -- [ExtensionPatientFetalDeathVitalRecords] to be a Boolean extension of Patient.deceased
 * [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of parent ages -- [ExtensionReportedParentAgeAtDeliveryVitalRecords].
 * added missing IJE mapping content for [RelatedPersonFatherNaturalVitalRecords] profile page
 * [FHIR-43416](https://jira.hl7.org/browse/FHIR-43416) - Add [Marital Status Value Set][ValueSetMaritalStatusVitalRecords] (from VRDR)

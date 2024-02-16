@@ -83,7 +83,23 @@ Description: "This abstract Patient profile includes common extensions and slici
 * insert AddressComponents
 * extension contains ExtensionReportedParentAgeAtDeliveryVitalRecords named parentReportedAgeAtDelivery 0..2
 * insert multipleBirths
-* extension contains ExtensionPatientFetalDeathVitalRecords named fetalDeath 0..1 
+* deceasedBoolean.extension contains ExtensionPatientFetalDeathVitalRecords named fetalDeath 0..1 
+* deceasedBoolean ^short = "Boolean indicator. True if the individual is deceased."
+* deceasedBoolean.extension[fetalDeath] ^short = "Boolean indicator. True if the Patient died as a fetus."
+* deceasedBoolean obeys fetalDeathOnlyIfDeceased
+
+
+Invariant: fetalDeathOnlyIfDeceased
+Description: "Fetal death should only be indicated if Patient is deceased."
+Severity: #error
+* expression = 
+     "(extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').exists() and
+      extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').value.exists() and
+      extension.where(url = 'http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr').value = 'true')
+   implies
+      (value.exists() and
+      value = 'true')"
+
 
 RuleSet: multipleBirths
 * multipleBirth[x] 
