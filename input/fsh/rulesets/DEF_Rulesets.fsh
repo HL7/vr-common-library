@@ -40,7 +40,8 @@ RuleSet: addressextension(length)
 * insert ExtensionContextResource(Address)
 * value[x] 1..1
 * value[x] only string
-* value[x] ^maxLength = {length}
+//* value[x] ^maxLength = {length}
+* value[x] ^short = "For NCHS Submissions this field is limited to length {length}"
 
 
 
