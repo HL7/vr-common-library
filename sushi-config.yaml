@@ -248,7 +248,7 @@ groups:
     resources:
       - ExtensionPatientFetalDeathVitalRecords
       - ExtensionRelatedpersonBirthplaceVitalRecords
-      - ExtensionRelatedPersonDeceasedVitalRecords
+      #- ExtensionRelatedPersonDeceasedVitalRecords
       - ExtensionRoleVitalRecords 
       - ExtensionBypassEditFlagVitalRecords
       - ExtensionReportedParentAgeAtDeliveryVitalRecords

@@ -111,6 +111,10 @@ RuleSet: ExtensionContextResource(path)
 * insert ExtensionContext({path})
 //* insert ExtensionContext({path}.Extension)
 
+RuleSet: ExtensionContextFhirpath(fhirpath)
+* ^context[+].type = #fhirpath
+* ^context[=].expression = "{fhirpath}"
+
 RuleSet: ParameterSlicing
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
