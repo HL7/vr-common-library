@@ -5,7 +5,8 @@ Description: "This valueset contains the set of codes used to indicate the reaso
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapRaceMissingValueReasonVitalRecords.html)."
 * insert boilerplate
-* CodeSystemMissingValueReasonVitalRecords#R "Refused"
-* CodeSystemMissingValueReasonVitalRecords#S "Sought, but unknown"
-* CodeSystemMissingValueReasonVitalRecords#C "Not obtainable"
+// * CodeSystemMissingValueReasonVitalRecords#R "Refused"
+* $v3-ActReason#PREFUS "patient refuse" // "R = refused"
+* $v3-NullFlavor#ASKU "asked but unknown" // "S = Sought, but unknown"
+* $v3-NullFlavor#UNK "unknown"            // "N = Not obtainable"
 * ^experimental = false
