@@ -16,7 +16,7 @@ A required code indicates whether the mother or father's age is provided. It can
   * ^slicing.rules = #open
 * extension contains
     reportedAge 1..1 MS and
-    ExtensionRoleVitalRecords named motherOrFather 1..1 MS and
+    motherOrFather 1..1 MS and
     reporter 0..1
 * extension[reportedAge] only Extension
   * ^short = "Age of the parent at the time of delivery reported by another person."
@@ -27,6 +27,8 @@ A required code indicates whether the mother or father's age is provided. It can
     * code = $UCUM#a (exactly)
     * value 1..1  
 * extension[motherOrFather] ^short = "Mother or Father"
+* extension[motherOrFather] only Extension 
+  * insert MotherOrFather
 * extension[reporter] only Extension
   * ^short = "Reference to the person who reported the parent's age."
   * ^definition = "Reference to the person who reported the parent's age."
