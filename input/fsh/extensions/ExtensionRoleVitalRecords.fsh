@@ -12,4 +12,4 @@ RuleSet: MotherOrFather
 * value[x] only CodeableConcept
 * value[x] from ValueSetRoleVitalRecords (extensible)
   * ^short = "Value set used to indicate father or mother."
-  * ^binding.description = "Father, Mother"
+  * ^binding.description = "Vital Records Role"
