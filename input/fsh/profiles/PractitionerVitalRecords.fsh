@@ -6,9 +6,6 @@ Description: "This Practitioner profile represents a practitioner who is involve
 * insert RequireMetaProfile(Profile: PractitionerVitalRecords)
 // PractitionerVitalRecords uses the qualification field to differentiate between different 'attendees at birth', which iMHO is incorrect. This information would be better passed in the performer.function of some procedure/encounter relating to the birth. That would make it consistent with the way VRDR did it, and 
 // it could be used for Certifier as well with appropriate constraining of the value set used for performer.function. See https://jira.hl7.org/browse/FHIR-41780
-* extension contains ExtensionRoleVitalRecords named roleVitalRecords 0..* 
-* extension[roleVitalRecords] ^short = "Vital Records Role (Attendant, Certifier if present)"
-  * value[x] ^short = "Used to differentiate attendant or certifier profiles"
 * name 1..1
 * name ^short = "name"
   * text ^short = "name"
