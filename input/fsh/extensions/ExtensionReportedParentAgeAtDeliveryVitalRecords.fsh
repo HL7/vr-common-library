@@ -25,6 +25,7 @@ A required code indicates whether the mother or father's age is provided. It can
   * value[x] only Quantity
   * valueQuantity ^short = "Reported age in years"
     * code = $UCUM#a (exactly)
+      * ^short = "year"
     * value 1..1  
 * extension[motherOrFather] ^short = "Mother or Father"
 * extension[motherOrFather] only Extension 
