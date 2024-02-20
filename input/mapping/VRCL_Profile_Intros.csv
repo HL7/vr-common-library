@@ -39,32 +39,23 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
     * use not-applicable if the name hasn't been chosen
 
 Profile conformance requires that gender be provided, see [note on patient gender](usage.html#gender).",x,x,VRCPL
-,,,,,,,
-21,Input,PatientMotherVitalRecords,Patient-mother-vr,,x,x,VRCPL
-22,Input,PractitionerVitalRecords,Practitioner-vr,,x,x,VRCPL
-23,Input,RelatedPersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,,x,x,VRCPL
-24,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,x,VRCPL
-25,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
-26,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
-27,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
+20,Input,PatientMotherVitalRecords,Patient-mother-vr,,x,x,VRCPL
+21,Input,PractitionerVitalRecords,Practitioner-vr,,x,,VRCPL
+22,Input,RelatedPersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,,x,x,VRCPL
+23,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,x,VRCPL
+24,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
+25,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
+26,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
                 For documentation on their use see referenceTBD.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
-28,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS based on  submitted information and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
+27,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS based on  submitted information and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
 
 This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth, for the mother in the case of fetal death, and for the decdent for mortality reporting.",,x,VRCPL
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-29,Input,ExtensionReportedParentAgeAtDeliveryVitalRecords,Extension-reported-parent-age-at-delivery-vr,,,,VRCPL
-,,,,,,,
-,,,,,,,
-30,Input,ParametersCodingStatusValuesVitalRecords,Parameters-coding-status-values-vr,,,,VRCPL
-31,Input,ObservationUsualWorkVitalRecords,Observation-usual-work-vr,"Implementors are free to use the coded fields with the defined valuesets for inter-jurisdictional exchange, 
+28,Input,ExtensionReportedParentAgeAtDeliveryVitalRecords,Extension-reported-parent-age-at-delivery-vr,,,,VRCPL
+29,Input,ParametersCodingStatusValuesVitalRecords,Parameters-coding-status-values-vr,,,,VRCPL
+30,Input,ObservationUsualWorkVitalRecords,Observation-usual-work-vr,"Implementors are free to use the coded fields with the defined valuesets for inter-jurisdictional exchange, 
 but coded values are not expected for vital records submissions. 
 
 Note that the coded industry and occupation fields are bound to PHINVADs-hosted value sets. 
