@@ -1,5 +1,6 @@
 
 ### STU 2.0 Ballot Reconciliation
+* [FHIR-44184](https://jira.hl7.org/browse/FHIR-44184) -- Made top navigation bar labels the same as page titles
 * [FHIR-44419] Eliminated the local code system for missing race value reasons that was used for [ValueSetRaceMissingValueReasonVitalRecords]. Reworked the value set and concept map with NullFlavor and ActReason codes. 
 * [FHIR-44749](https://jira.hl7.org/browse/FHIR-FHIR-44749)  Eliminate string length limits on address extensions.    Document length limits on submissions in comment.
 * [FHIR-44772](https://jira.hl7.org/browse/FHIR-FHIR-44772)  Eliminate Unused Extensions for Related Person (deceased, race, ethnicity).  These are not needed.
