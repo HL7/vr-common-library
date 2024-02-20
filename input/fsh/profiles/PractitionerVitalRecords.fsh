@@ -19,5 +19,5 @@ Description: "This Practitioner profile represents a practitioner who is involve
 * address.country from ValueSetResidenceCountryVitalRecords (required)
 * address.state from ValueSetStatesTerritoriesAndProvincesVitalRecords (required)
 * identifier[NPI] ^short = "Practitioner's NPI Number"
-* qualification ^short = "certification, licenses, or training pertaining to the provision of care"
+* qualification ^short = "Practitioner's certification, licenses, or training pertaining to the provision of care"
 
