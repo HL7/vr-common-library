@@ -1,18 +1,5 @@
-# NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sandbox_ig
-
-#method 1:
-#Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
-#Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
-
-#method 2:
-#require 'open-uri'
-#download1 = URI.open('https://github.com/HL7/vr-common-library/blob/master/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
-#IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
-#download2 = URI.open('https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true ')
-#IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.csv')
-
 #run:
-#ruby tools/makeStructureDefinitionIntrosFromCSVtoHTML.rb input/mapping/VRCL_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
+#ruby tools/makeStructureDefinitionIntrosFromCSVtoHTML.rb input/mapping/VRCL_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/Forms_Mapping.csv
 
 require "json"
 require "pry"
@@ -57,7 +44,7 @@ INTRO_FORM_MAPPING_COL = 5
 INTRO_IJE_MAPPING_COL = 6
 #INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
 
-# BFDR_Forms_mapping.csv columns
+# Forms_mapping.csv columns
 FORMS_ORDER_COL = 0
 FORMS_FORM_COL = 1
 FORMS_URL_COL = 2
@@ -81,7 +68,7 @@ vSpreadsheet = ARGV[1]
 #vSpreadsheet = open_spreadsheet(ARGV[1])
 #vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 
-# ARGV[2] input/mapping/BFDR_Forms_Mapping.csv
+# ARGV[2] input/mapping/Forms_Mapping.csv
 vFormsMappingSpreadsheet = ARGV[2]
 #vFormsMappingSpreadsheet = open_spreadsheet(ARGV[2])
 #vFormsMappingSpreadsheet.default_sheet = "BFDR Form Items"
