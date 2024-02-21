@@ -5,6 +5,7 @@ Title: "Observation - Autopsy Performed Indicator Vital Records"
 Description: "This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."
 * status MS
 * code = $loinc#85699-7
+  * ^short = "Autopsy was performed"
 * code 
 * subject 1..1 
 * subject only Reference(PatientVitalRecords)
@@ -21,6 +22,7 @@ Description: "This Observation records if an autopsy was performed, if autopsy f
 * component contains autopsyResultsAvailable 0..1
 * component[autopsyResultsAvailable] ^short = "Autopsy Results Available"
   * code = $loinc#69436-4
+    * ^short = "Autopsy results available"
   * value[x] 1..1
   * value[x] only CodeableConcept
   * value[x] from ValueSetYesNoUnknownVitalRecords (required)
