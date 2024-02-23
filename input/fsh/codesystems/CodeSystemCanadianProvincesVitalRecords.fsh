@@ -18,6 +18,7 @@ Id: CodeSystem-canadian-provinces-vr
 Title: "Canadian Provinces Vital Records"
 Description: "Canadian Provinces"
 * ^caseSensitive = true
+* ^experimental = false
 * #AB	"Alberta" "Alberta"
 * #BC	"British Columbia" "British Columbia"
 * #MB	"Manitoba" "Manitoba"
@@ -31,6 +32,3 @@ Description: "Canadian Provinces"
 * #QC	"Quebec" "Quebec"
 * #SK	"Saskatchewan" "Saskatchewan"
 * #YT	"Yukon" "Yukon"
-* ^experimental = false
-
-

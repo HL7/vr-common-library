@@ -5,6 +5,9 @@ Description: "This valueset contains the set of 2 Letter codes used to represent
 * ^status = #active
 * ^version = "1.0.0"
 * ^experimental = false
+// * insert USTerritories 
+
+// RuleSet: USTerritories 
 * $statesCS#AS  "American Samoa"
 * $statesCS#GU  "Guam"
 * $statesCS#MP  "Northern Mariana Islands"
