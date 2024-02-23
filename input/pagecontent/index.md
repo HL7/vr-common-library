@@ -1,11 +1,3 @@
-
-
-{% include note-to-balloters.md %}
-
-<div class="stu-note" markdown="1">
-Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages.
-</div><!-- note-to-balloters -->
-
 ### Overview
 
 This guide is a FHIR Resources (FHIR) Library to support the needs of multiple Vital Records Implementation Guides (IGs) as well as the needs of related IGs.

@@ -3,7 +3,7 @@
 The Centers for Disease Control (CDC) National Center for Health Statistics (NCHS) Division of Vital Statics (DVS) is currently modernizing the submission of vital records to the National Vital Statistics System (NVSS).  CDC/NCHS/DVS funds the development of the FHIR IGs for submission submission of death records --  Vital Records Death Reporting (VRDR) -- and birth and fetal death records -- Birth and Fetal Death Reporting (BFDR), manages the NVSS Community of Practice (CoP), and holds quarterly testing events.
 Vital records offices (VROs) participate in these testing events with some on the path to pre-certification as a milestone for moving into production submission via FHIR to NVSS.
 
-NCHS has begin the transition of submission of death records by VROs to NCHS based on VRDR STU2.2.   The next vital records process planned for FHIR-based modernization is the submission of birth records.  To support submission of birth records from VROs to NCHS requires extension of the BFDR and VRCL FHIR IGs.  Both VRCL STU2 and BFDR STU2 are being balloted in the January 2024 ballot cycle with the goal of enabling initial testing of birth record submission during 2024.   This page describes the structural and content changes to BFDR and VRCL as they move from STU1.1 to STU2, and the motivation for making these changes.
+NCHS has begin the transition of submission of death records by VROs to NCHS based on VRDR STU2.2.   The next vital records process planned for FHIR-based modernization is the submission of birth records.  To support submission of birth records from VROs to NCHS requires extension of the BFDR and VRCL FHIR IGs.  Both VRCL STU2 and BFDR STU2 were balloted in the January 2024 ballot cycle with the goal of enabling initial testing of birth record submission during 2024.   This page describes the structural and content changes to BFDR and VRCL as they move from STU1.1 to STU2, and the motivation for making these changes.
 
 #### CDC/NCHS Active Projects: Medicolegal Death Investigation
 
@@ -49,16 +49,16 @@ The dependencies of this not-yet-balloted IG would change as a result of the har
 </center>
 
 ### Approach to Harmonization
-To implement the goals of harmonization described above, we are proposing the following content changes.  The VRCL and BFDR changes are implemented in the January 2024 ballot cycle with STU2 ballots:
+To implement the goals of harmonization described above, the following content changes are being made:
 
-* Birth-specific content --> BFDR
-  * Primary change:  move birth/fetal-death specific content VRCL --> BFDR
-* Death specific content --> VRDR
-  * Primary change:  MDI dependency on VRDR
-* Generalize VRDR content to support VRDR and MDI
-* Common demographic elements, extensions, valueSets --> VRCL
-  * Primary change:  VRDR, MDI, BFDR dependency on VRCL
-  * VRCL provides content supporting vital records approach to race, ethnicity, partial dates/times, addresses, education level
+* Birth-specific content --> BFDR STU2
+  * Primary change:  move birth/fetal-death specific content VRCL --> BFDR STU2
+* Death specific content --> VRDR STU3
+  * Primary change:  MDI STU2 dependency on VRDR STU3
+* Generalize VRDR STU2 content to support VRDR and MDI
+* Common demographic elements, extensions, valueSets --> VRCL STU2
+  * Primary change:  VRDR STU3, MDI STU2, BFDR STU2 dependency on VRCL STU2
+  * VRCL STU2 provides content supporting vital records approach to race, ethnicity, partial dates/times, addresses, education level
 
 
 
