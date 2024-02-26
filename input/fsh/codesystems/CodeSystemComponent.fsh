@@ -9,10 +9,6 @@ Description: "Local Component Codes for observation components that lack an appr
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false 
-* #position "position" "position"
-* #lineNumber "line number" "line number"
-* #eCodeIndicator "e Code Indicator" "e Code Indicator"
-* #wouldBeUnderlyingCauseOfDeathWithoutPregnancy "Would be underlying cause of death without pregnancy." "Would be underlying cause of death without pregnancy."
 * insert PlaceComponentCode(1,1)
 * insert PlaceComponentCode(1,2)
 * insert PlaceComponentCode(1,3)
