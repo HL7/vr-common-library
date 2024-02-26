@@ -259,6 +259,7 @@ groups:
       - CodeSystemCanadianProvincesVitalRecords
       - CodeSystemCountryCodeVitalRecords  
       - CodeSystemJurisdictionsVitalRecords
+      - CodeSystemUSStatesTerritoriesVitalRecords
       
   EditFlagCodeSystems:
     name: Edit Flag CodeSystems
