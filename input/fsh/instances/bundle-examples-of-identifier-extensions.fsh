@@ -3,7 +3,7 @@ InstanceOf: Bundle
 Title: "Bundle - Example of Identifier Extensions"
 Description: "Bundle - Example of Identifier Extensions"
 Usage: #example
-* type = #document
+* type = #collection 
 * identifier.system = Canonical(CodeSystemIJEVitalRecords)
 * identifier
   * value = "2019NJ15075"
