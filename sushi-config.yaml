@@ -345,6 +345,7 @@ groups:
   VRCLExamples:
     name: Examples
     resources:
+      - bundle-examples-of-identifiers
       - observation-input-race-and-ethnicity-vr-mother 
       - observation-input-race-and-ethnicity-vr-father 
       - observation-coded-race-and-ethnicity-vr-mother 
