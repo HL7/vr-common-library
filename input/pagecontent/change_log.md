@@ -1,7 +1,7 @@
 
 ### STU 2.0 Ballot Reconciliation
 * [FHIR-44184](https://jira.hl7.org/browse/FHIR-44184) -- Made top navigation bar labels the same as page titles
-* [FHIR-44419] Eliminated the local code system for missing race value reasons that was used for [ValueSetRaceMissingValueReasonVitalRecords]. Reworked the value set and concept map with NullFlavor and ActReason codes. 
+* [FHIR-44419](https://jira.hl7.org/browse/FHIR-44419) Eliminated the local code system for missing race value reasons that was used for [ValueSetRaceMissingValueReasonVitalRecords]. Reworked the value set and concept map with NullFlavor and ActReason codes. 
 * [FHIR-44749](https://jira.hl7.org/browse/FHIR-FHIR-44749)  Eliminate string length limits on address extensions.    Document length limits on submissions in comment.
 * [FHIR-44772](https://jira.hl7.org/browse/FHIR-FHIR-44772)  Eliminate Unused Extensions for Related Person (deceased, race, ethnicity).  These are not needed.
 * [FHIR-44754](https://jira.hl7.org/browse/FHIR-FHIR-44754) - Change -- [ExtensionPatientFetalDeathVitalRecords] to be a Boolean extension of Patient.deceased
@@ -14,7 +14,7 @@
 * [FHIR-44427](https://jira.hl7.org/browse/FHIR-44427) Eliminated  HispanicNoUknown valueset which was content-identical with [ValueSetYesNoUnknownVitalRecords].
 * [FHIR-44445](https://jira.hl7.org/browse/FHIR-44445) - consolidate [ValueSetBirthSexChildVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan//ValueSet/ValueSet-birth-sex-child-vr) and [ValueSetBirthSexFetusVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan//ValueSet/ValueSet-birth-sex-fetus-vr) into a single VS called [ValueSetSexAssignedAtBirthVitalRecords]
 * [FHIR-44463](https://jira.hl7.org/browse/FHIR-44463) and [FHIR-44464](https://jira.hl7.org/browse/FHIR-44464) -- drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
-* [FHIR-44771] (https://jira.hl7.org/browse/FHIR-44771) -- use an inline extension for motherOrFather in [ExtensionReportedParentAgeAtDeliveryVitalRecords]
+* [FHIR-44771](https://jira.hl7.org/browse/FHIR-44771) -- use an inline extension for motherOrFather in [ExtensionReportedParentAgeAtDeliveryVitalRecords]
 
 ### STU 2.0 Ballot - January 2024
 
