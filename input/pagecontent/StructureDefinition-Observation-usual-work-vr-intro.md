@@ -136,3 +136,66 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
 </details>
 <p></p>
 
+<details>
+
+<summary>
+
+<strong class='context-menu'> Mortality (Decedent) </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>84</td>
+  <td>Occupation -- Literal </td>
+  <td>OCCUP</td>
+  <td>value.text</td>
+  <td>string(40)</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>86</td>
+  <td>Industry -- Literal </td>
+  <td>INDUST</td>
+  <td>component [odh-UsualIndustry	].value.text</td>
+  <td>string(40)</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>94</td>
+  <td>Occupation -- 4 digit Code </td>
+  <td>OCCUPC4</td>
+  <td>valueCodeableConcept.coding[occupationCDCCensus2018] </td>
+  <td>codeable</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8065'>PHVS_Occupation_CDC_Census2018VS</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Mortality</td>
+  <td>95</td>
+  <td>Industry -- 4 digit Code</td>
+  <td>INDUSTC4</td>
+  <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCCensus2018] </td>
+  <td>codeable</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8066'>PHVS_Industry_CDC_Census2018VS</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
