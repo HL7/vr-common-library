@@ -136,7 +136,6 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='CodeSystem-CodeSystem-canadian-provinces-vr.html'>CodeSystemCanadianProvincesVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/ValueSet-vrdr-canada-provinces-vs.html'>VRDR</a> </td><td> Incorporated standard vital records approach to address </td></tr> 
 <tr><td> <a href='CodeSystem-codesystem-vr-component.html'>CodeSystemComponentVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-local-component-codes-vr.html'>VRCL</a>  </td><td> - </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-country-code-vr.html'>CodeSystemCountryCodeVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-country-code-cs.html'>VRDR</a>  </td><td>  Incorporated standard vital records approach to address  </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-hispanic-origin-vr.html'>CodeSystemHispanicOriginVitalRecords</a> </td><td> <a href='http://hl7.org/fhir/us/vrdr/STU2.2/CodeSystem-vrdr-hispanic-origin-cs.html'>VRDR</a>  </td><td>  Incorporated standard vital records approach to race & ethnicity (generalized to support all vital records use cases)  </td></tr>

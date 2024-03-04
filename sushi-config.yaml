@@ -256,7 +256,7 @@ groups:
   AddressCodeSystems:
     name: Address CodeSystems
     resources:
-      - CodeSystemCanadianProvincesVitalRecords
+      #- CodeSystemCanadianProvincesVitalRecords
       - CodeSystemCountryCodeVitalRecords  
       - CodeSystemJurisdictionsVitalRecords
       - CodeSystemUSStatesTerritoriesVitalRecords
