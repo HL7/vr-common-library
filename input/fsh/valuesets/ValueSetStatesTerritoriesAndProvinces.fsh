@@ -65,5 +65,18 @@ Description: "This valueset contains the set of codes used to represent 2 Letter
 * $statesCS#MP  "Northern Mariana Islands"
 * $statesCS#PR  "Puerto Rico"
 * $statesCS#VI  "Virgin Islands"
-* codes from system CodeSystemCanadianProvincesVitalRecords
+* $provincesCS#AB	"Alberta"
+* $provincesCS#BC	"British Columbia" 
+* $provincesCS#MB	"Manitoba" 
+* $provincesCS#NB	"New Brunswick" 
+* $provincesCS#NL	"Newfoundland and Labrador"
+* $provincesCS#NS	"Nova Scotia"
+* $provincesCS#NT	"Northwest Territories" 
+* $provincesCS#NU	"Nunavut" 
+* $provincesCS#ON	"Ontario" 
+* $provincesCS#PE	"Prince Edward Island"
+* $provincesCS#QC	"Quebec" 
+* $provincesCS#SK	"Saskatchewan" 
+* $provincesCS#YT	"Yukon"
+//* codes from system CodeSystemCanadianProvincesVitalRecords
 * $v3-NullFlavor#UNK

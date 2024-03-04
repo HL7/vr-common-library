@@ -72,10 +72,10 @@ Alias: $v3-ServiceDeliveryLocationRoleType = http://terminology.hl7.org/ValueSet
 Alias: $statesVS = http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state
 // Alias: $statesCS = https://www.usps.com
 Alias: $statesCS = CodeSystemUSStatesTerritoriesVitalRecords
+Alias: $provincesCS = https://canadapost.ca/CodeSystem/ProvinceCodes
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ssn = http://hl7.org/fhir/sid/us-ssn
 // Alias: $provinces = http://canadapost.ca/CodeSystem/ProvinceCodes
-Alias: $provinces = http://canadapost.ca
 
 Alias: $dataabsentreason401 = http://hl7.org/fhir/CodeSystem/data-absent-reason|4.0.1  
 Alias: $DataAbsentReason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
