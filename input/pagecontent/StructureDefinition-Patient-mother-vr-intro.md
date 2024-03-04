@@ -878,7 +878,7 @@
 <tr>
   <td style='text-align: center'>9g</td>
   <td>Mother’s Residence Inside City Limits?</td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td>extension:withinCityLimitsIndicator</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
@@ -950,7 +950,7 @@
 <tr>
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td>extension:withinCityLimitsIndicator</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
 <tr>
@@ -1058,7 +1058,7 @@
 <tr>
   <td style='text-align: center'>11g</td>
   <td>Residence of Mother-Inside City Limits?</td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td>extension:withinCityLimitsIndicator</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
@@ -1112,7 +1112,7 @@
 <tr>
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td>extension:withinCityLimitsIndicator</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
