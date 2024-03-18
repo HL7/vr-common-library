@@ -289,7 +289,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 7 = Other
 9 = Unknown",,BFDR,EncounterMaternity,location.physicalType,codeable,[BirthDeliveryOccurredVS],B,,,,,Encounter-maternity,
 1193,ITOP,11,38,10,Patient ID Number,PAT_ID, ,,not implemented,not implemented,,,,,,,,,not implemented,
-283,Surveillance,11,187,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,,y,,,,Decedent,
+283,Surveillance,11,187,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SS"", code=""SB"" is deprecated",string,-,,y,,,,Decedent,
 284,Surveillance,12,196,1,Decedent's Age--Type,AGETYPE,"1 = Years
 2 = Months
 4 = Days
@@ -502,7 +502,7 @@ For Canadian Provinces:
 485,Natality,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[districtCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr,
 838,Fetal Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[districtCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr,
 1362,Birth Infant Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,,,,,,,,,,,,
-450,Mortality Roster,21,468,50,Mother's Maiden Surname,MOMMAIDNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentMother,"name.family , name.type=maiden",string ,-,,DMOMMDN,,,,DecedentMother,
+450,Mortality Roster,21,468,50,Mother's Maiden Surname,MOMMAIDNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentMother,"name.family , name.use=maiden",string ,-,,DMOMMDN,,,,DecedentMother,
 1203,ITOP,21,130,5,Patient's Residence - Zip Code,ZIP,5 digits,,not implemented,not implemented,,,,,,,,,not implemented,
 29,Mortality,22,213,2,Birthplace--Country,BPLACE_CNT,NCHS Instruction Manual: Part 8,,VRDR,Decedent,extension[patient-birthPlace].value[x].country ,string,[ValueSetBirthplaceCountryVitalRecords],,y,,,,Decedent,
 1204,ITOP,22,135,28,Patient's Residence city/town literal,CITYTXT,Valid city/town/place literal or blank if unknown,,not implemented,not implemented,,,,,,,,,not implemented,
@@ -648,7 +648,8 @@ A = Married but Separated
 W = Widowed
 D = Divorced
 S = Never Married
-U = Not Classifiable",,VRDR,Decedent,maritalStatus,codeable, [ValueSetMaritalStatusVitalRecords],,y,,,,Decedent,
+T = Domestic Partnership
+U = Not Classifiable",,VRDR,Decedent,"maritalStatus, if value = U include description in codeable.text",codeable, [ValueSetMaritalStatusVitalRecords],,y,,,,Decedent,
 454,Mortality Roster,25,548,2,Filler,BLANK1,BLANK,,not implemented,not implemented,,,,,,,,,not implemented,
 33,Mortality,26,225,2,"State, U.S. Territory or Canadian Province of Decedent's residence - code",STATEC,"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
@@ -1591,7 +1592,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 1297,ITOP,115,961,1,"Infection 
 (at time of followup at other facility)",INFECT_F2,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 932,Fetal Death,115,495,1,Risk Factors--Poor Pregnancy Outcomes(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),PPO,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented,
-387,Surveillance,116,1975,50,Mother's Maiden Surname,DMOMMDN,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.family , name.type=maiden",string ,-,,,,,,DecedentMother,
+387,Surveillance,116,1975,50,Mother's Maiden Surname,DMOMMDN,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.family , name.use=maiden",string ,-,,,,,,DecedentMother,
 580,Natality,116,727,3,Father's Race Tabulation Variable 16C,FRACE16C,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr,
 1457,Birth Infant Death,116,727,3,Father's Race Tabulation Variable 16C,FRACE16C,NCHS Appendix E,,,,,,,,,,,,,
 126,Mortality,116,985,4,Date of injury--year,DOI_YR,,,VRDR,InjuryIncident,effective,dateTime,See [PartialDatesAndTimes],,y,,,,InjuryIncident,
@@ -2114,7 +2115,7 @@ Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr,
 635,Natality,171,835,1,Infections Present--Chlamydia,CHAM,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=105629000 (Chlamydial infection (disorder)),na,See [note on missing infections present data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-infection-present-during-pregnancy,
 1512,Birth Infant Death,171,835,1,Infections Present--Chlamydia,CHAM,"Y, N, U",,,,,,,,,,,,,
 988,Fetal Death,171,569,2,Mother's Reported Age,MAGER,"00-98, 99",,BFDR,PatientDecedentFetus,"extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'",quantity,,B,,,Needs work,FHIR-41388,Extension-reported-parent-age-at-delivery-vr,
-183,Mortality,171,2058,50,Mother's Maiden Surname,DMOMMDN,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.family , name.type=maiden",string ,-,,,,,,DecedentMother,
+183,Mortality,171,2058,50,Mother's Maiden Surname,DMOMMDN,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.family , name.use=maiden",string ,-,,,,,,DecedentMother,
 989,Fetal Death,172,571,2,Father's Reported Age,FAGER,"00-98, 99",,BFDR,PatientDecedentFetus,"extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='FTH'",quantity,,B,,,Needs work,FHIR-41388,Extension-reported-parent-age-at-delivery-vr,
 636,Natality,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=66071002 (Viral hepatitis type B (disorder)),na,See [note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy,
 1513,Birth Infant Death,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,,,,,,,,,,,,
