@@ -97,6 +97,7 @@ pages:
 parameters:
   show-inherited-invariants: false
   path-expansion-params: '../../input/_resources/exp-params.json'  # for using US ed of SNOMED
+  version-comparison-master: true 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
