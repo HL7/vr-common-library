@@ -5,6 +5,7 @@ Alias: $unitsofmeasure = http://unitsofmeasure.org
 Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $sct = http://snomed.info/sct
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v4-data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 // Alias: $v2-0005 = RaceAndEthnicityCDC // http://terminology.hl7.org/CodeSystem/v2-0005
 Alias: $v3-Ethnicity = http://terminology.hl7.org/CodeSystem/v3-Ethnicity
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
