@@ -19,6 +19,8 @@ Description: "Provides values of a partial dateTime for cases beyond what FHIR d
   * value[x] only time
   * valueTime.extension contains
      $DataAbsentReason named dataabsent 0..1
+  * valueTime.extension[dataabsent].valueCode from ValueSetPartialDateDataAbsentReasonVitalRecords (required)
+    * ^short = "If unknown (all 9's), use code 'unknown'. If blank (all ' '), use code 'temp-unknown'"
 
 Extension: ExtensionPartialDateVitalRecords
 Id: Extension-partial-date-vr
@@ -69,6 +71,8 @@ RuleSet: YearMonthDay
   * valueUnsignedInt ^maxValueInteger = 9998
   * valueUnsignedInt.extension contains
      $DataAbsentReason named dataabsent 0..1
+  * valueUnsignedInt.extension[dataabsent].valueCode from ValueSetPartialDateDataAbsentReasonVitalRecords (required)
+    * ^short = "If unknown (all 9's), use code 'unknown'. If blank (all ' '), use code 'temp-unknown'"
 * extension[month] 
   * ^short = "Date month (1-12)"
   * ^definition = "The month portion (MM) of the partial date (1-12)."
@@ -78,6 +82,8 @@ RuleSet: YearMonthDay
   * valueUnsignedInt ^maxValueInteger = 12
   * valueUnsignedInt.extension contains
      $DataAbsentReason named dataabsent 0..1
+  * valueUnsignedInt.extension[dataabsent].valueCode from ValueSetPartialDateDataAbsentReasonVitalRecords (required)
+    * ^short = "If unknown (all 9's), use code 'unknown'. If blank (all ' '), use code 'temp-unknown'"
 * extension[day] 
   * ^short = "Date day (1-31)"
   * ^definition = "The day portion (DD) of the partial date (1-31)."
@@ -87,3 +93,5 @@ RuleSet: YearMonthDay
   * valueUnsignedInt ^maxValueInteger = 31
   * valueUnsignedInt.extension contains
      $DataAbsentReason named dataabsent 0..1
+  * valueUnsignedInt.extension[dataabsent].valueCode from ValueSetPartialDateDataAbsentReasonVitalRecords (required)
+    * ^short = "If unknown (all 9's), use code 'unknown'. If blank (all ' '), use code 'temp-unknown'"
