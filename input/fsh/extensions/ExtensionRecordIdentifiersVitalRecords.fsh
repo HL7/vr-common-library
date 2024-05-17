@@ -1,18 +1,21 @@
-Extension: AuxiliaryStateIdentifierVitalRecords
-Id: AuxiliaryStateIdentifier
-Title: "Auxiliary State Identifier"
-Description: "An identifier associated by the submitting jurisdiction with a specific  certificate number.  Twelve character string with no defined format or content."
+RuleSet: AuxiliaryStateIdentifier
 * insert ExtensionContextResource(Meta)
 * insert ExtensionContextResource(Identifier)
 * value[x] 1..1
 * value[x] only string
 * valueString ^maxLength = 12
 
-// Extension: AuxiliaryStateIdentifier2VitalRecords
-// Id: AuxiliaryStateIdentifier2
-// Title: "Auxiliary State Identifier2"
-// Description: "An identifier associated by the submitting jurisdiction with a specific  certificate number.  Twelve character string with no defined format or content.  The two auxiliary identifiers map to distinct fields in legacy formats, and can be provided or ommitted independently of each other."
-// * insert AuxiliaryStateIdentifier
+Extension: AuxiliaryStateIdentifier1VitalRecords
+Id: AuxiliaryStateIdentifier1
+Title: "Auxiliary State Identifier1 Vital Records"
+Description: "An identifier associated by the submitting jurisdiction with a specific  certificate number.  Twelve character string. Identifier1 can be provided separately, or with Identifier2."
+* insert AuxiliaryStateIdentifier
+
+Extension: AuxiliaryStateIdentifier2VitalRecords
+Id: AuxiliaryStateIdentifier2
+Title: "Auxiliary State Identifier2 Vital Records"
+Description: "An identifier associated by the submitting jurisdiction with a specific certificate number.  Twelve character string. Identifier2 can be provided separately, or with Identifier1."
+* insert AuxiliaryStateIdentifier
 
 Extension: CertificateNumberVitalRecords
 Id: CertificateNumber

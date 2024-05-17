@@ -239,7 +239,8 @@ groups:
   RecordIdentifierExtensions:
     name: Record Identifier Extensions 
     resources:
-      - AuxiliaryStateIdentifier
+      - AuxiliaryStateIdentifier1
+      - AuxiliaryStateIdentifier2
       - CertificateNumber
   
   OtherExtensions:
