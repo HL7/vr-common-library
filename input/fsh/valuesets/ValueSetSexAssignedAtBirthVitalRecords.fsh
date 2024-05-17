@@ -6,12 +6,10 @@ Description: "This valueset contains the subset of the US Core Birth Sex Valuese
 Mapping to IJE codes [here for child](ConceptMap-ConceptMapBirthSexChildVitalRecords.html) and [here for decedent fetus](ConceptMap-ConceptMapBirthSexFetusVitalRecords.html)."
 * ^status = #active
 * ^experimental = false
-// Intensional definition for clarity.  We cannot arbitrarily change the USCore mapping. We can restrict it.
-* include codes from valueset BirthSex
-* exclude $v3-NullFlavor#ASKU "asked but unknown"
-* exclude $v3-NullFlavor#OTH "other"
+//* include codes from valueset BirthSex
+//* exclude $v3-NullFlavor#ASKU "asked but unknown"
+//* exclude $v3-NullFlavor#OTH "other"
 // Change from a intensional definition by subtraction, to an extensional definition. 
-//* $v3-AdministrativeGender#F "Female"
-//* $v3-AdministrativeGender#M "Male"
-//* $v3-NullFlavor#UNK "Unknown"
-
+* $v3-AdministrativeGender#F "Female"
+* $v3-AdministrativeGender#M "Male"
+* $v3-NullFlavor#UNK "Unknown"
