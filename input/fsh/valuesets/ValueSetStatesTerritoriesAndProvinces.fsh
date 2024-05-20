@@ -79,4 +79,4 @@ Description: "This valueset contains the set of codes used to represent 2 Letter
 * $provincesCS#SK	"Saskatchewan" 
 * $provincesCS#YT	"Yukon"
 //* codes from system CodeSystemCanadianProvincesVitalRecords
-* $v3-NullFlavor#UNK
+* $v3-NullFlavor#UNK "Unknown"

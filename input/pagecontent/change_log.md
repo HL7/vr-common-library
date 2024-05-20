@@ -1,5 +1,6 @@
 
 ### STU 2.0 Ballot Reconciliation
+* [FHIR-]() -- Restricted data absent reasons to codes 'unknown' and 'temp-unknown' in [ExtensionPartialDateVitalRecords] and [ExtensionPartialDateTimeVitalRecords]. Added [ValueSetPartialDateDataAbsentReasonVitalRecords] 
 * [FHIR-]() -- Replaced local codesystem for Canadian Provinces with https://canadapost.ca/CodeSystem/ProvinceCodes
 * [FHIR-44184](https://jira.hl7.org/browse/FHIR-44184) -- Made top navigation bar labels the same as page titles
 * [FHIR-44419](https://jira.hl7.org/browse/FHIR-44419) Eliminated the local code system for missing race value reasons that was used for [ValueSetRaceMissingValueReasonVitalRecords]. Reworked the value set and concept map with NullFlavor and ActReason codes. 

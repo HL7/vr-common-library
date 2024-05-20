@@ -23,5 +23,5 @@ Usage: #example
 * birthDate = "1984"
   * extension[partialDate]
     * extension[year].valueUnsignedInt = 1984 
-    * extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
-    * extension[day].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
+    * extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#temp-unknown
+    * extension[day].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#temp-unknown
