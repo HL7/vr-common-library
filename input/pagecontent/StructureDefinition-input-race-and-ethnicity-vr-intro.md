@@ -1,5 +1,5 @@
-Input (from Jurisdictions) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
-
+Input (from Jurisdictions) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
+
 This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
 ### IJE Mapping
 

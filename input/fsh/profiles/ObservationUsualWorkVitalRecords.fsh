@@ -8,7 +8,7 @@ Description: "Used to send text-string industry and occupation information from 
 * extension contains ExtensionRoleVitalRecords named roleVitalRecords 0..1 
 * extension[roleVitalRecords] ^short = "Vital Records Role (father,mother if present)"
   * value[x] ^short = "Parent (MTH | FTH)"
-* component[odh-UsualIndustry]
+* component[odh-UsualIndustry] ^short = "Literal text string submitted to NCHS for occupation"
   * valueCodeableConcept
     * text ^short = "Industry - Literal"
     * coding[industryCDCCensus2018] ^short = "Industry Code"
