@@ -1,8 +1,8 @@
-Implementors are free to use the coded fields with the defined valuesets for inter-jurisdictional exchange, 
-but coded values are not expected for vital records submissions. 
-
-Note that the coded industry and occupation fields are bound to PHINVADs-hosted value sets. 
-
+Implementors are free to use the coded fields with the defined valuesets for inter-jurisdictional exchange, 
+but coded values are not expected for vital records submissions. 
+
+Note that the coded industry and occupation fields are bound to PHINVADs-hosted value sets. 
+
 For NCHS provided coded values the specific vocabulary used will depend on the death year.
 ### IJE Mapping
 
@@ -36,7 +36,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Mother</td>
   <td>MOM_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Father</td>
   <td>DAD_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Mother</td>
   <td>MOM_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Father</td>
   <td>DAD_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 
@@ -99,7 +99,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Mother</td>
   <td>MOM_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 <tr>
@@ -108,7 +108,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Father</td>
   <td>DAD_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Mother</td>
   <td>MOM_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Father</td>
   <td>DAD_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(40)</td>
+  <td>string(25)</td>
   <td></td>
 </tr>
 
