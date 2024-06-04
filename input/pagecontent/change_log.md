@@ -17,6 +17,7 @@
 * [FHIR-44445](https://jira.hl7.org/browse/FHIR-44445) - consolidate [ValueSetBirthSexChildVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan//ValueSet/ValueSet-birth-sex-child-vr) and [ValueSetBirthSexFetusVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan//ValueSet/ValueSet-birth-sex-fetus-vr) into a single VS called [ValueSetSexAssignedAtBirthVitalRecords]
 * [FHIR-44463](https://jira.hl7.org/browse/FHIR-44463) and [FHIR-44464](https://jira.hl7.org/browse/FHIR-44464) -- drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
 * [FHIR-44771](https://jira.hl7.org/browse/FHIR-44771) -- use an inline extension for motherOrFather in [ExtensionReportedParentAgeAtDeliveryVitalRecords]
+* [FHIR-44418](https://jira.hl7.org/browse/FHIR-44418) -- removing Missing Value Reason codesystem ([ValueSetRaceMissingValueReasonVitalRecords] uses THO codes)
 
 ### STU 2.0 Ballot - January 2024
 
