@@ -1,11 +1,13 @@
 Instance: ConceptMapMaritalStatusVitalRecords
 InstanceOf: ConceptMap
 Title: "Marital Status Vital Records"
-Description: "Note: 'Domestic Partnership' is not supported by NCHS and will be mapped to 'U' unknown"
+// Description: "Note: 'Domestic Partnership' is not supported by NCHS and will be mapped to 'U' unknown"
 // Id: vrdr-marital-status-cm
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(MaritalStatus, ValueSetMaritalStatusVitalRecords)
+* description = "Note: 'Domestic Partnership' may be used by jurisdictions, but is not supported by NCHS and will be mapped to 'U' (Not Classifiable). 
+IJE 'U' maps to 'UNK' (unknown) when converted to FHIR."
 * insert AddGroup($IJE,$v3-MaritalStatus)
 * insert MapConcept( #D,  "Divorced",#D, "Divorced")
 * insert MapConcept( #A,  "Married but Separated",#L, "Legally Separated")
