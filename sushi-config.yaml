@@ -280,7 +280,6 @@ groups:
     name: Race and Ethnicity ValueSets
     resources:  
       - ValueSetCodedRaceAndEthnicityPersonVitalRecords
-      #- ValueSetHispanicNoUnknownVitalRecords
       - ValueSetHispanicOriginVitalRecords
       - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetRaceCodeVitalRecords
