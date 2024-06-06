@@ -8,13 +8,13 @@ RuleSet: AuxiliaryStateIdentifier
 Extension: AuxiliaryStateIdentifier1VitalRecords
 Id: AuxiliaryStateIdentifier1
 Title: "Auxiliary State Identifier1 Vital Records"
-Description: "An identifier associated by the submitting jurisdiction with a specific  certificate number.  Twelve character string. Identifier1 can be provided separately, or with Identifier2."
+Description: "The first of two twelve character strings associated by the submitted jurisdiction with a specific certificate number. Identifier1 can be provided separately, or with Identifier2"
 * insert AuxiliaryStateIdentifier
 
 Extension: AuxiliaryStateIdentifier2VitalRecords
 Id: AuxiliaryStateIdentifier2
 Title: "Auxiliary State Identifier2 Vital Records"
-Description: "An identifier associated by the submitting jurisdiction with a specific certificate number.  Twelve character string. Identifier2 can be provided separately, or with Identifier1."
+Description: "The second of two twelve character strings associated by the submitted jurisdiction with a specific certificate number. Identifier2 can be provided separately, or with Identifier1."
 * insert AuxiliaryStateIdentifier
 
 Extension: CertificateNumberVitalRecords
