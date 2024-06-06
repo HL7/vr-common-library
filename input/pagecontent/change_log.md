@@ -18,6 +18,8 @@
 * [FHIR-44463](https://jira.hl7.org/browse/FHIR-44463) and [FHIR-44464](https://jira.hl7.org/browse/FHIR-44464) -- drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
 * [FHIR-44771](https://jira.hl7.org/browse/FHIR-44771) -- use an inline extension for motherOrFather in [ExtensionReportedParentAgeAtDeliveryVitalRecords]
 * [FHIR-44418](https://jira.hl7.org/browse/FHIR-44418) -- removing Missing Value Reason codesystem ([ValueSetRaceMissingValueReasonVitalRecords] uses THO codes)
+* [FHIR-44998](https://jira.hl7.org/browse/FHIR-44998) -- add Domestic Partnership to [ValueSetMaritalStatusVitalRecords]
+
 
 ### STU 2.0 Ballot - January 2024
 
