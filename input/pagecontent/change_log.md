@@ -19,6 +19,7 @@
 * [FHIR-44771](https://jira.hl7.org/browse/FHIR-44771) -- use an inline extension for motherOrFather in [ExtensionReportedParentAgeAtDeliveryVitalRecords]
 * [FHIR-44418](https://jira.hl7.org/browse/FHIR-44418) -- removing Missing Value Reason codesystem ([ValueSetRaceMissingValueReasonVitalRecords] uses THO codes)
 * [FHIR-44998](https://jira.hl7.org/browse/FHIR-44998) -- add Domestic Partnership to [ValueSetMaritalStatusVitalRecords]
+* [FHIR-44426](https://jira.hl7.org/browse/FHIR-44426) -- removing Hispanic Y/N/U valueset
 
 
 ### STU 2.0 Ballot - January 2024
