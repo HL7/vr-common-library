@@ -4,7 +4,8 @@ RuleSet: PlaceComponentCode(len, number)
 CodeSystem: CodeSystemComponentVitalRecords
 Id: codesystem-vr-component
 Title: "Local Component Codes"
-Description: "Local Component Codes for observation components that lack an appropriate LOINC code"
+Description: "Local Component Codes for observation components that lack an appropriate LOINC code.
+This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * insert boilerplate
 * ^content = #complete
 * ^caseSensitive = false

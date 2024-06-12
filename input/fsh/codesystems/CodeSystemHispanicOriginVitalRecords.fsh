@@ -1,7 +1,8 @@
 CodeSystem: CodeSystemHispanicOriginVitalRecords
 Id: CodeSystem-hispanic-origin-vr
 Title: "HispanicOrigin Vital Records"
-Description: "HispanicOrigin from [Appendix_D_Excel_Hispanic_Origin_Code_List_Update_2011](https://www.cdc.gov/nchs/data/dvs/Appendix_D_Excel_Hispanic_Origin_Code_List_Update_2011.xls)"
+Description: "HispanicOrigin from [Appendix_D_Excel_Hispanic_Origin_Code_List_Update_2011](https://www.cdc.gov/nchs/data/dvs/Appendix_D_Excel_Hispanic_Origin_Code_List_Update_2011.xls).
+This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 
 * ^caseSensitive = true
 * ^experimental = false

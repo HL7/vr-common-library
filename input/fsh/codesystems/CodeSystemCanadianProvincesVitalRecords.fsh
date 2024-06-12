@@ -36,7 +36,8 @@
 CodeSystem: CodeSystemUSStatesTerritoriesVitalRecords
 Id: CodeSystem-us-states-territories-vr 
 Title: "US States and Territories"
-Description: "Surrogate for usps.com codesystem.  IG Publisher is not happy with that codesystem."
+Description: "Surrogate for usps.com codesystem - IG Publisher found issues with that codesystem.
+This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * ^caseSensitive = true
 * ^experimental = false
 * #AL  "Alabama" "Alabama"

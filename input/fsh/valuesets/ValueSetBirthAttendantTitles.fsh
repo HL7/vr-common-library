@@ -1,7 +1,9 @@
 ValueSet: ValueSetBirthAttendantTitlesVitalRecords
 Id: ValueSet-birth-attendant-titles-vr
 Title: "Birth Attendants Titles Vital Records"
-Description: "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)
+Description: "This valueset contains codes to represent the type of birth attendant titles. 
+It is based on the original [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2) PHINVADS valueset. 
+This IG is the primary source for valuesets for use in vital records.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapBirthAttendantTitlesVitalRecords.html)."
 * ^experimental = false
