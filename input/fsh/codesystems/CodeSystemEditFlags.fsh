@@ -1,7 +1,8 @@
 CodeSystem: CodeSystemEditFlagsVitalRecords
 Id: CodeSystem-vr-edit-flags
 Title: "Birth and Death Edit Flags Vital Records"
-Description: "This code system contains codes to represent all edit flags"
+Description: "This code system contains codes to represent all edit flags.
+This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false

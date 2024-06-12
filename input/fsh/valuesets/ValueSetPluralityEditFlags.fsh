@@ -1,7 +1,9 @@
 ValueSet: ValueSetPluralityEditFlagsVitalRecords
 Id: ValueSet-plurality-edit-flags-vr 
 Title: "Plurality Edit Flags (NCHS) Vital Records"
-Description: "This valueset contains codes to represent Plurality Edit Flags. This valueset is based on [PHVS_PluralityEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A)
+Description: "This valueset contains codes to represent Plurality Edit Flags. 
+It is based on the original [PHVS_PluralityEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A) PHINVADS valueset. 
+This IG is the primary source for valuesets for use in vital records.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapPluralityEditFlagsVitalRecords.html)."
 * ^experimental = false
