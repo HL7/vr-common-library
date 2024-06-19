@@ -114,6 +114,8 @@ menu:
   Implementer Guidance: 
     Specification: the_specification.html
     Usage Notes: usage.html
+    IJE Mapping to FHIR (csv): IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv
+    IJE Mapping to FHIR (xlsx): IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
   Artifacts: artifacts.html
   Changes: 
     Change Log: change_log.html
