@@ -34,7 +34,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC1</td>
   <td>component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -43,7 +43,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC2</td>
   <td>component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -52,7 +52,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC3</td>
   <td>component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -61,7 +61,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC4</td>
   <td>component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -313,7 +313,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC1</td>
   <td>component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -322,7 +322,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC2</td>
   <td>component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -331,7 +331,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC3</td>
   <td>component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -340,7 +340,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC4</td>
   <td>component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -592,7 +592,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC1</td>
   <td>component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -601,7 +601,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC2</td>
   <td>component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -610,7 +610,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC3</td>
   <td>component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -619,7 +619,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>METHNIC4</td>
   <td>component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -871,7 +871,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC1</td>
   <td>component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -880,7 +880,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC2</td>
   <td>component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -889,7 +889,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC3</td>
   <td>component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -898,7 +898,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>FETHNIC4</td>
   <td>component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -1150,7 +1150,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>DETHNIC1</td>
   <td>component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1159,7 +1159,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>DETHNIC2</td>
   <td>component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1168,7 +1168,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>DETHNIC3</td>
   <td>component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1177,7 +1177,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
   <td>DETHNIC4</td>
   <td>component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
