@@ -65,7 +65,7 @@ INFORMATION: RelatedPerson/relatedperson-mother-vr-carol-hoffer-common: RelatedP
 INFORMATION: RelatedPerson/relatedperson-parent-vr-stepmother: RelatedPerson.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 INFORMATION: RelatedPerson/relatedperson-parent-vr-stepmother: RelatedPerson.extension[1].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 
-# usps.com is valie  codesystem 
+# usps.com  is valie  codesystem 
 WARNING: Patient/patient-child-vr-babyg-quinn-common: Patient.extension[3].value.ofType(Address).state: A definition for CodeSystem 'https://www.usps.com' could not be found, so the code cannot be validated
 WARNING: Patient/patient-child-vr-babyg-quinn-common-1: Patient.extension[3].value.ofType(Address).state: A definition for CodeSystem 'https://www.usps.com' could not be found, so the code cannot be validated
 WARNING: Patient/patient-child-vr-babyg-quinn-common-2: Patient.extension[3].value.ofType(Address).state: A definition for CodeSystem 'https://www.usps.com' could not be found, so the code cannot be validated
