@@ -380,12 +380,6 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>name</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
-<tr>
-  <td style='text-align: center'>33</td>
-  <td>Plurality</td>
-  <td>multipleBirthInteger.extension:multipleBirthTotal</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
-</tr>
 </tbody>
 </table>
 
