@@ -893,18 +893,6 @@
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>21</td>
-  <td>Mother of Hispanic Origin?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>22</td>
-  <td>Mother’s Race</td>
-  <td>extension:race</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>40</td>
   <td>Mother’s Medical Record Number</td>
   <td>identifier:MRN</td>
@@ -968,18 +956,6 @@
   <td style='text-align: center'>7</td>
   <td>In what State, U.S. territory, or foreign country were you born?</td>
   <td>extension:birthPlace</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>9</td>
-  <td>Are you Spanish/Hispanic/Latina?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>10</td>
-  <td>What is your race?</td>
-  <td>extension:race</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
 <tr>
@@ -1061,18 +1037,6 @@
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>20</td>
-  <td>Mother of Hispanic Origin?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>21</td>
-  <td>Mother’s Race</td>
-  <td>extension:race</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s medical record #</td>
   <td>identifier:MRN</td>
@@ -1130,18 +1094,6 @@
   <td style='text-align: center'>7</td>
   <td>In what State, U.S. territory, or foreign country were you born?</td>
   <td>extension:birthPlace</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>9</td>
-  <td>Are you Spanish/Hispanic/Latina?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>10</td>
-  <td>What is your race?</td>
-  <td>extension:race</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>

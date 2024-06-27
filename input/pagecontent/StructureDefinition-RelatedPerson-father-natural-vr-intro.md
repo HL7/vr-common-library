@@ -353,18 +353,6 @@
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>23</td>
-  <td>Is the father Spanish/Hispanic/Latino?</td>
-  <td>extension:ethnictiy</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>24</td>
-  <td>What is the father’s race?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>25b</td>
   <td>What is the father’s Social Security Number?</td>
   <td>identifier:SSN</td>

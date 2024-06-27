@@ -267,18 +267,6 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>24</td>
-  <td>Father of Hispanic Origin?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>25</td>
-  <td>Father’s Race</td>
-  <td>extension:race</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>48</td>
   <td>Newborn Medical Record Number</td>
   <td>identifier:MRN</td>
