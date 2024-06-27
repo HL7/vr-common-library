@@ -919,7 +919,7 @@
 <tr>
   <td style='text-align: center'>-</td>
   <td>Mother’s name</td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
@@ -931,13 +931,13 @@
 <tr>
   <td style='text-align: center'>-</td>
   <td>Mother’s name</td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
   <td>What is your current legal name?</td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
 <tr>
@@ -985,7 +985,7 @@
 <tr>
   <td style='text-align: center'>17</td>
   <td>What name did you use prior to your first marriage?</td>
-  <td>name</td>
+  <td>name:namePriorToFirstMarriage</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
 </tr>
 <tr>
@@ -1081,7 +1081,7 @@
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s name</td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
@@ -1093,13 +1093,13 @@
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s Name</td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>What is your current legal name?</td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
