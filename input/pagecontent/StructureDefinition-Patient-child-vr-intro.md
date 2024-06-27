@@ -8,12 +8,11 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
 
 Profile conformance requires that gender be provided, see [note on patient gender](usage.html#gender).
 
-### IJE Mapping
-
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
+### IJE Mapping
 <details>
 
 <summary>

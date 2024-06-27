@@ -3,12 +3,11 @@ Coded (from NCHS) Race and Ethnicity (Observation). This is information that is 
 This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth, for the mother in the case of fetal death, and for the decdent for mortality reporting.
-### IJE Mapping
-
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
+### IJE Mapping
 <details>
 
 <summary>
