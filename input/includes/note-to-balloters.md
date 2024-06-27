@@ -4,7 +4,7 @@
 
 This STU2 ballot addresses the following:
 
-- Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See [Vital Records IG Harmonization](vr_ig_harmonization.html).
+- Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See [Vital Records IG Harmonization](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).
 - This reorganization and harmonization includes
   - Addition of profiles supporting NCHS-standard submission of race, ethnicity, industry and occupation inputs, and return of coded race and ethnicity.
   - Inclusion of extensions used by multiple vital-records related FHIR IGs (e.g., partial dates, coded address components)
