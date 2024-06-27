@@ -68,6 +68,8 @@ pages:
     title: Change Log 
   the_specification.md:
     title: Specification 
+  vr_ig_harmonization.md:
+    title: Vital Records FHIR Implementation Guide Harmonization Plan 
   content-transitions.md:
     title: Content Transitions (STU1.1 to STU2 Changes)
   downloads.md:
@@ -107,6 +109,7 @@ parameters:
 menu:
   Home: 
     Home: index.html
+    Vital Records FHIR IG Harmonization Plan: vr_ig_harmonization.html
     Credits: credits.html
   Implementer Guidance: 
     Specification: the_specification.html
