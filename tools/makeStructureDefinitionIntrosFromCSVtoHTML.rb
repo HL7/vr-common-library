@@ -123,6 +123,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
   # stream the BFDR_Profile_Intros.xlsx spreadsheet - this also contains any usage text for the start of the intro.md file (one file for each profile)
   # some of the profiles don't have any usage or ije mappings (currently the Bundle for example, skip those rows)
   CSV.foreach(pProfileIntrosSpreadsheet, headers: true) do |row|
+    set_css = false
     # if there is no usage, no forms mapping, and no ije mapping, skip this row, we don't need to create an into file for this profile
     # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
     next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?) #row[INTRO_PROFILE_LOCATION_COL].to_s != pIG ||
@@ -143,12 +144,14 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
     # if there are IJE mappings put them into the intro file for the profile
     if !row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?
       vIntroOutputFile.puts "" if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
+      if !set_css
+        vIntroOutputFile.puts "<style>"
+        vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
+        vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
+        vIntroOutputFile.puts "</style>"
+        set_css = true
+      end
       vIntroOutputFile.puts "### IJE Mapping"
-      vIntroOutputFile.puts ""
-      vIntroOutputFile.puts "<style>"
-      vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
-      vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
-      vIntroOutputFile.puts "</style>"
       firstTable = true
       # if filtering race or ethnicity further break down tables by mother/father
       if vProfileName == "ObservationCodedRaceAndEthnicityVitalRecords" || vProfileName == "ObservationInputRaceAndEthnicityVitalRecords"
@@ -570,6 +573,13 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
 
     # if there are form mappings put them into the intro file for the profile
     if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
+      if !set_css
+        vIntroOutputFile.puts "<style>"
+        vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
+        vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
+        vIntroOutputFile.puts "</style>"
+        set_css = true
+      end
       vIntroOutputFile.puts "" if !row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty?
       vIntroOutputFile.puts "### Form Mapping"
       vIntroOutputFile.puts "<details>"

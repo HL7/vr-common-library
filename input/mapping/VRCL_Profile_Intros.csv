@@ -27,7 +27,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
 12,Input,ExtensionStreetDesignatorVitalRecords,Extension-street-designator-vr,,,,VRCPL
 16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,"Input (from Jurisdictions) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
 
-This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.",,x,VRCPL
+This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.",x,x,VRCPL
 17,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
 18,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
 19,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
@@ -42,7 +42,7 @@ Profile conformance requires that gender be provided, see [note on patient gende
 20,Input,PatientMotherVitalRecords,Patient-mother-vr,,x,x,VRCPL
 21,Input,PractitionerVitalRecords,Practitioner-vr,,x,,VRCPL
 22,Input,RelatedPersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,,x,x,VRCPL
-23,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,x,VRCPL
+23,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,,VRCPL
 24,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
 25,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
 26,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.

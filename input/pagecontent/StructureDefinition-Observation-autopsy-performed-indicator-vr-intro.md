@@ -1,10 +1,9 @@
 
-### IJE Mapping
-
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
+### IJE Mapping
 <details>
 
 <summary>
@@ -68,7 +67,7 @@
 <tr>
   <td style='text-align: center'>28</td>
   <td>Was an autopsy performed?</td>
-  <td>-</td>
+  <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>
