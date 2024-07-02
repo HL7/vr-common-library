@@ -697,9 +697,9 @@ Variable description (""Contents"") edited; same as NCHS ""Facility Name--County
 35,Mortality,28,229,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[withinCityLimits] ,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
 300,Surveillance,28,231,2,Date of Death--Month,DOD_MO,"01-12, 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,y,,,
 492,Natality,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,
+1 = Data Queried",,VRCPL,RelatedPersonFatherNaturalVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,
 845,Fetal Death,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried ",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,
+1 = Data Queried ",,VRCPL,RelatedPersonFatherNaturalVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,
 1369,Birth Infant Death,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
 1 = Data Queried",,,,,,,,,,,
 457,Mortality Roster,28,628,2,"State, U.S. Territory or Canadian Province of Decedent's Residence - code",STATEC,"NCHS Instruction Manual: Part 8
