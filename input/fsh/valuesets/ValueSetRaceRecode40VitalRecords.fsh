@@ -4,7 +4,8 @@ Id: ValueSet-race-recode-40-vr
 Title: "Race Recode 40 Vital Records"
 Description: "This valueset contains the set of codes used to represent NCHS Race Recode 40.
 
-NCHS no longer provides this field.
+
+NCHS no longer provides this data.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapRaceRecode40VitalRecords.html)."
 //* include codes from system CodeSystemRaceRecode40VitalRecords

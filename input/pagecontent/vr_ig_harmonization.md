@@ -1,21 +1,22 @@
 ### Current Vital Records Related FHIR IG Development
 #### National Vital Statistics System (NVSS) Modernization: Mortality and Birth
-The Centers for Disease Control (CDC) National Center for Health Statistics (NCHS) Division of Vital Statics (DVS) is currently modernizing the submission of vital records to the National Vital Statistics System (NVSS).  CDC/NCHS/DVS funds the development of the FHIR IGs for submission submission of death records --  Vital Records Death Reporting (VRDR) -- and birth and fetal death records -- Birth and Fetal Death Reporting (BFDR), manages the NVSS Community of Practice (CoP), and holds quarterly testing events.
+The Centers for Disease Control (CDC) National Center for Health Statistics (NCHS) Division of Vital Statics (DVS) is currently transitioning to FHIR-based submission of vital records to the National Vital Statistics System (NVSS) as part of ongoing modernization efforts.  CDC/NCHS/DVS funds the development of the FHIR IGs for submission submission of death, birth and fetal death records, manages the NVSS Community of Practice (CoP), and holds quarterly testing events.
 Vital records offices (VROs) participate in these testing events with some on the path to pre-certification as a milestone for moving into production submission via FHIR to NVSS.
 
-NCHS has begin the transition of submission of death records by VROs to NCHS based on VRDR STU2.2.   The next vital records process planned for FHIR-based modernization is the submission of birth records.  To support submission of birth records from VROs to NCHS requires extension of the BFDR and VRCL FHIR IGs.  Both VRCL STU2 and BFDR STU2 were balloted in the January 2024 ballot cycle with the goal of enabling initial testing of birth record submission during 2024.   This page describes the structural and content changes to BFDR and VRCL as they move from STU1.1 to STU2, and the motivation for making these changes.
+NCHS is transitioning the submission of death, birth, and fetal death records by VROs to NCHS based on published FHIR IGs, starting with submission of death records.   
 
 #### CDC/NCHS Active Projects: Medicolegal Death Investigation
 
-FHIR Implementation Collaborative led by the CDC Foundation is working with CDC/NCHS’s Collaborating Office for Medical Examiners and Coroners (COMEC) to test and pilot FHIR-based Application Programming Interface (API) enabled data exchange for  medicolegal death investigation workflows.  This effort is a collaboration with MDI offices and identified partners: state vital records offices, toxicology labs and/or other entities.  It funds development of the Medicolegal Death Investigation (MDI) FHIR IG as well as collaborative testing events  with MDI sites. 
+FHIR Implementation Collaborative led by the CDC Foundation is working with CDC/NCHS’s Collaborating Office for Medical Examiners and Coroners (COMEC) to test and pilot FHIR-based Application Programming Interface (API) enabled data exchange for  medicolegal death investigation workflows.  This effort is a collaboration with MDI offices and identified partners: state vital records offices, toxicology labs and/or other entities.  It funds development of the Medicolegal Death Investigation (MDI) FHIR IG as well as collaborative testing events  with MDI sites.  
 
-### Goals of FHIR IG Harmonization
+### FHIR IG Harmonization
+This FHIR IG is part of NCHS's efforts to facilitate the transition to FHIR through reuse of resources, and standardization of documentation.  
+
 The goals of FHIR IG development and harmonization are:
 * Support known/anticipated use cases
   * direct (death, birth, fetal death, MDI) vital records use cases
   * ancillary (birth defects) vital records use cases
-* Enable BFDR to support EBRS-NCHS and EBRS-EBRS Use Cases
-* Support all IJE fields in current/contemplated usage
+* Support all Interjurisdictional Exchange (IJE) fields in current/contemplated usage
 * Support full round trip IJE-->FHIR-->IJE without data loss
   * NCHS approach to race/ethnicity
   * Address coding
@@ -24,32 +25,20 @@ The goals of FHIR IG development and harmonization are:
   * Consistent documentation style across vital records IGs to ease implementation
 
 ### Harmonizing Vital Records  Related FHIR IGs
-To achieve the goals for harmonization listed above involves modification to the content of the current IGs, development of new content, and transition of content between the IGs.  This will reduce the proliferation of content across the set of IGs due to redundancy and near-redundancy, simplify implementation of the IGs, and simplify adoption.
+Achieving the goals for harmonization listed above required modification to the content of previous versions of IGs, development of new content, and transition of content between the IGs.  This reduced the proliferation of content across the set of IGs that was due to redundancy and near-redundancy.
 
-Figure 1 shows the current dependencies among published vital reocrds FHIR IGs.  Figure 2 shows the dependencies after harmonization.  Harmonization will result in significant simplification of the MDI IG, and consolidation of all general Vital Records specific content within the VRCL.
+Figure 1 shows the dependencies among published vital reocrds FHIR IGs.  Figure 2 shows the dependencies after harmonization.  Harmonization has resulted in significant simplification of the MDI IG, and consolidation of all general Vital Records specific content within the VRCL.
 
 <center>
 <table><tr><td><figure><img src="HarmonizationPlan-Current.svg"/><figcaption style='font-weight: bold'>Figure 1: Current Vital Records FHIR IG Dependencies</figcaption></figure></td></tr></table>
 </center>
 
 <center>
-<table><tr><td><figure><img src="HarmonizationPlan-Harmonized.svg"/><figcaption style='font-weight: bold'>Figure 2: Harmonized (Future) Vital Records FHIR IG Dependencies</figcaption></figure></td></tr></table>
-</center>
-
-### Changing Dependencies - Birth Defects IG
-Although it has not yet been balloted, the design of the VRCL STU1 was driven by consideration of a future Birth Defects FHIR IG. 
-The dependencies of this not-yet-balloted IG would change as a result of the harmonization effort, since much birth-related content has been consolidated within The BFDR STU2 IG.   This change should not impact the ability of the Birth Defects IG to leverage vital records content, but would change the precise dependencies.  Figure 3 shows the current dependencies of a potential Birth Defects FHIR IG.  Figure 4 shows the dependencies following the proposed harmonization.
-
-<center>
-<table><tr><td><figure><img src="HarmonizationPlan-Current-BirthDefects.drawio.svg"/><figcaption style='font-weight: bold'>Figure 3: Current Birth Defects FHIR IG Dependencies</figcaption></figure></td></tr></table>
-</center>
-
-<center>
-<table><tr><td><figure><img src="HarmonizationPlan-Harmonized-BirthDefects.drawio.svg"/><figcaption style='font-weight: bold'>Figure 4: Harmonized (Future) Birth Defects FHIR IG Dependencies</figcaption></figure></td></tr></table>
+<table><tr><td><figure><img src="HarmonizationPlan-Harmonized.svg"/><figcaption style='font-weight: bold'>Figure 2: Harmonized Vital Records FHIR IG Dependencies</figcaption></figure></td></tr></table>
 </center>
 
 ### Approach to Harmonization
-To implement the goals of harmonization described above, the following content changes are being made:
+To implement the goals of harmonization described above, the following content changes were made:
 
 * Birth-specific content --> BFDR STU2
   * Primary change:  move birth/fetal-death specific content VRCL --> BFDR STU2
