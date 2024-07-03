@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-11-09T17:21:33.389Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="Qx4qI4_yIWsMFvoovVjn" version="22.0.3" type="device" pages="2">
+<mxfile host="Electron" modified="2023-11-09T17:34:05.387Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="mGLdE6RkISCGs4AaORXf" version="22.0.3" type="device" pages="4">
   <diagram name="Current" id="lYzvAvNy6pXz5exkMZ37">
     <mxGraphModel dx="1026" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -71,6 +71,64 @@
         </mxCell>
         <mxCell id="5nlexrqRa-v2Ez91ZqGg-10" value="USCore 5.0.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="185" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="SFuwHd9oldZIkEn96xx6" name="Current-BirthDefects">
+    <mxGraphModel dx="1026" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_pVNaHtkX5JltFpuqnT-7" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#dae8fc;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pVNaHtkX5JltFpuqnT-8" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#d5e8d4;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pVNaHtkX5JltFpuqnT-9" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#fff2cc;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pVNaHtkX5JltFpuqnT-10" value="&lt;font color=&quot;#ff0000&quot;&gt;Birth Defects (Proposed)&amp;nbsp; STU1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="160" y="55" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pVNaHtkX5JltFpuqnT-11" value="Vital Records Common Library (VRCL) STU1.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="115" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pVNaHtkX5JltFpuqnT-12" value="USCore 5.0.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="225" y="170" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BjhMqF9Q027K08lSARhE" name="Harmonized-BirthDefects">
+    <mxGraphModel dx="1026" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mmg0P85hUoG_br7xklJR-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#dae8fc;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="230" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmg0P85hUoG_br7xklJR-3" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#d5e8d4;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmg0P85hUoG_br7xklJR-5" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#fff2cc;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmg0P85hUoG_br7xklJR-7" value="&lt;font color=&quot;#ff0000&quot;&gt;Birth Defects (Proposed)&amp;nbsp; STU1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="170" y="65" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mmg0P85hUoG_br7xklJR-9" value="Vital Records Common Library (VRCL) STU2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="135" y="185" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mmg0P85hUoG_br7xklJR-10" value="USCore 5.0.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="235" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZ3W7hsGhIWDxR504BaT-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#d5e8d4;strokeColor=#33001A;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VZ3W7hsGhIWDxR504BaT-2" value="&lt;font color=&quot;#330000&quot;&gt;Birth and Fetal Death Reporting STU2&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="150" y="125" width="270" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
