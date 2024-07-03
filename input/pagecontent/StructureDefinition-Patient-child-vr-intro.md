@@ -8,12 +8,11 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
 
 Profile conformance requires that gender be provided, see [note on patient gender](usage.html#gender).
 
-### IJE Mapping
-
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
+### IJE Mapping
 <details>
 
 <summary>
@@ -268,18 +267,6 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>24</td>
-  <td>Father of Hispanic Origin?</td>
-  <td>extension:ethnicity</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>25</td>
-  <td>Father’s Race</td>
-  <td>extension:race</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>48</td>
   <td>Newborn Medical Record Number</td>
   <td>identifier:MRN</td>
@@ -380,12 +367,6 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>What will be your baby’s legal name?</td>
   <td>name</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>33</td>
-  <td>Plurality</td>
-  <td>multipleBirthInteger.extension:multipleBirthTotal</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 </tbody>
 </table>
