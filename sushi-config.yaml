@@ -248,12 +248,12 @@ groups:
   OtherExtensions:
     name: Other Extensions
     resources:
+      - ExtensionBypassEditFlagVitalRecords
+      - ExtensionLocationJurisdictionIdVitalRecords
       - ExtensionPatientFetalDeathVitalRecords
       - ExtensionRelatedpersonBirthplaceVitalRecords
-      #- ExtensionRelatedPersonDeceasedVitalRecords
-      - ExtensionRoleVitalRecords 
-      - ExtensionBypassEditFlagVitalRecords
       - ExtensionReportedParentAgeAtDeliveryVitalRecords
+      - ExtensionRoleVitalRecords 
   
   AddressCodeSystems:
     name: Address CodeSystems
@@ -285,6 +285,8 @@ groups:
       - ValueSetHispanicOriginVitalRecords
       - ValueSetInputRaceAndEthnicityPersonVitalRecords
       - ValueSetRaceCodeVitalRecords
+      - ValueSetRaceMissingValueReasonVitalRecords
+      - ValueSetRaceRecode40VitalRecords
 
   AddressValueSets:
     name: Address ValueSets
@@ -297,6 +299,13 @@ groups:
       - ValueSetUSStatesVitalRecords
       - ValueSetUSTerritoriesVitalRecords
 
+  EditFlagValueSets:
+    name: Edit Flag ValueSets
+    resources:  
+      - ValueSetEditBypass01234VitalRecords
+      - ValueSetDateOfBirthEditFlagsVitalRecords
+      - ValueSetPluralityEditFlagsVitalRecords
+
   OtherValueSets:
     name: Other ValueSets
     resources:  
@@ -307,17 +316,13 @@ groups:
       - ValueSetFatherRelationshipVitalRecords
       - ValueSetMaritalStatusVitalRecords
       - ValueSetMotherRelationshipVitalRecords
+      - ValueSetPartialDateDataAbsentReasonVitalRecords
       - ValueSetRoleVitalRecords 
       - ValueSetUnitsOfAgeVitalRecords
       - ValueSetYesNoNotApplicableVitalRecords
       - ValueSetYesNoUnknownVitalRecords
       - ValueSetYesNoUnknownNotApplicableVitalRecords
-  EditFlagValueSets:
-    name: ValueSets
-    resources:  
-      - ValueSetEditBypass01234VitalRecords
-      - ValueSetDateOfBirthEditFlagsVitalRecords
-      - ValueSetPluralityEditFlagsVitalRecords
+
   VRCLConceptMaps:
     name: Concept Maps
     resources:
