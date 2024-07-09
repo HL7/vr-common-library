@@ -3,6 +3,7 @@ Parent: PatientVitalRecords
 Id: Patient-child-vr
 Title: "Patient - Child Vital Records"
 Description: "The subject patient (newborn/infant/child) for whom clinical data is included in the report."
+* obeys childNotDeceased
 * extension[race] MS
 * extension[ethnicity] MS
 * extension[birthsex] 1.. MS
@@ -49,3 +50,11 @@ RuleSet: birthDateAndTime
 
 
   // * extension[datePartAbsentReason] MS 
+Invariant: childNotDeceased
+Description: "Patients who are marked deceased don't conform to PatientChildVitalRecords. If the deceased field is present, it must be false"
+Severity: #error
+* expression = "deceased.exists() implies deceased = false"
+//     "(deceased.exists()
+//   implies
+//      (value = 'false'))"
+

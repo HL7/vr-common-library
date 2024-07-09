@@ -33,6 +33,8 @@ RuleSet: babyquinncommon
   * given[1] = "G"
 * gender = #female
 * multipleBirthInteger = 1
+* deceasedBoolean = false 
+//* deceasedBoolean = true  // test that the invariant works.. It Works!
 
 Instance: patient-child-vr-babyg-quinn-common
 InstanceOf: PatientChildVitalRecords
