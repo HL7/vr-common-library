@@ -8,8 +8,8 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
-### IJE Mapping
-<details>
+<details open>
+
 
 <summary>
 
@@ -35,7 +35,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Mother</td>
   <td>MOM_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Father</td>
   <td>DAD_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Mother</td>
   <td>MOM_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Father</td>
   <td>DAD_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 
@@ -98,7 +98,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Mother</td>
   <td>MOM_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Occupation of Father</td>
   <td>DAD_OC_T</td>
   <td>value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Mother</td>
   <td>MOM_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ For NCHS provided coded values the specific vocabulary used will depend on the d
   <td>Industry of Father</td>
   <td>DAD_IN_T</td>
   <td>component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'</td>
-  <td>string(25)</td>
+  <td>string(40)</td>
   <td></td>
 </tr>
 
