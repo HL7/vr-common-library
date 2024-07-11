@@ -7,10 +7,10 @@ Description: "Provides values of a partial dateTime for cases beyond what FHIR d
 * . ^short = "Partial Date Time"
 * . ^definition = "Provides a partial date time."
 * extension contains
-    year 0..1 and
-    month 0..1 and
-    day 0..1 and
-    time 0..1
+    year 1..1 and
+    month 1..1 and
+    day 1..1 and
+    time 1..1
 * insert YearMonthDay
 * extension[time] 
   * ^short = "Date Time"
@@ -31,9 +31,9 @@ Description: "Provides values of a partial date for cases beyond what FHIR date 
 * . ^short = "Partial Date"
 * . ^definition = "Provides a partial date."
 * extension contains
-    year 0..1 and
-    month 0..1 and
-    day 0..1 
+    year 1..1 and
+    month 1..1 and
+    day 1..1 
 * insert YearMonthDay
 
 

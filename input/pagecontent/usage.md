@@ -41,6 +41,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <th>IJE MM</th>
     <th>IJE DD</th>
     <th>IJE TTTT</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td>2023</td>
@@ -49,14 +50,16 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>blank</td>
     <td>blank</td>
     <td>blank</td>
+    <td>Correct Usage</td>
   </tr>
   <tr>
-    <td>2023 (this is correct usage).  It should be </td>
+    <td>2023 </td>
     <td>2023-XX-23 XXXX</td>
     <td>2023</td>
     <td>99</td>
     <td>23</td>
     <td>9999</td>
+    <td>Correct Usage. The extension is required to express the unknown components.  The dateTime shows what it can.</td>
   </tr>
   <tr>
     <td>2023-12</td>
@@ -65,6 +68,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>12</td>
     <td>blank</td>
     <td>blank</td>
+    <td>Correct Usage. No extension is required because dateTime can express this partial dateTime.</td>
   </tr>
   <tr>
     <td>2023-12-23</td>
@@ -73,6 +77,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>12</td>
     <td>23</td>
     <td>blank</td>
+    <td>Correct Usage. No extension is required because dateTime can express this partial dateTime.</td>
   </tr>
   <tr>
     <td>2023-12-23</td>
@@ -81,15 +86,35 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>12</td>
     <td>23</td>
     <td>9999</td>
+    <td>Correct Usage. The extension is required to express the unknown components.  The dateTime shows what it can.</td>
+  </tr>
+    <tr>
+    <td>(none) 
+    <td>2023-12-23 XXXX</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>23</td>
+    <td>blank</td>
+    <td>This is incorrect usage. The dateTime should be 2023-12-23. No extension is required because this date can be expressed as a FHIR dateTime.</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>2023-12-23</td>
+    <td>2023-12-23 XXXX</td>
+    <td>2023</td>
+    <td>12</td>
+    <td>23</td>
+    <td>blank</td>
+    <td>This is incorrect usage. No extension is required because this date can be expressed as a FHIR dateTime. </td>
   </tr>
   <tr>
-    <td>(none) this is incorrect usage. It should be  
-2023-12-23.</td>
+    <td>(none) </td>
     <td>2023-12-23 XXXX</td>
     <td>2023</td>
     <td>12</td>
     <td>23</td>
     <td>9999</td>
+    <td> This is incorrect usage. The dateTime should be  2023-12-23. The extension is required because the unknown time component cannot be expressed as a FHIR dateTime.</td>
   </tr>
   <tr>
     <td>2023-12-23 T13:28:17-05:00</td>
@@ -98,6 +123,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>12</td>
     <td>23</td>
     <td>1328. (uses local time)</td>
+    <td>This is correct usage. </td>
   </tr>
   <tr>
     <td>(none)</td>
@@ -106,6 +132,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>12</td>
     <td>23</td>
     <td>1828</td>
+    <td>This is correct usage. The dateTime cannot express any of this date.  The extension is required. </td>
   </tr>
 </table>
 
