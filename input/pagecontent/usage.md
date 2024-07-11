@@ -32,7 +32,6 @@ The following table illustrates the appropriate use of a dateTime field with a p
 </style>
 </head>
 <body>
-
 <table>
   <tr>
     <th>FHIR dateTime</th>
@@ -106,7 +105,6 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>blank</td>
     <td>This is incorrect usage. The dateTime should be 2023-12-23. No extension is required because this date can be expressed as a FHIR dateTime.</td>
   </tr>
-    </tr>
     <tr>
     <td>2023-12-23</td>
     <td>2023-12-23 xxxx</td>
@@ -144,7 +142,6 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>This is correct usage. The dateTime cannot express any of this date.  The extension is required. </td>
   </tr>
 </table>
-
 </body>
 
 
