@@ -16,7 +16,7 @@ A value of unknown (all 9's) in IJE is equivalent to a component with DataAbsent
 
 A value of blank (all ' ') in IJE is equivalent to a a component with a DataAbsentReason extension with code `temp-unknown`.
 
-The following table illustrates the appropriate use of a dateTime field with a partial date time extension:
+The following table illustrates the appropriate use of a dateTime field with a partial date time extension.   xxxx is a dataAbsentReason of 'temp-unknown'.  XXXX is a dataAbsentReason of 'unknown'.
 
 <head>
 <style>
@@ -62,6 +62,15 @@ The following table illustrates the appropriate use of a dateTime field with a p
     <td>Correct Usage. The extension is required to express the unknown components.  The dateTime shows what it can.</td>
   </tr>
   <tr>
+    <td>2023 </td>
+    <td>2023-xx-23 XXXX</td>
+    <td>2023</td>
+    <td>blank</td>
+    <td>23</td>
+    <td>9999</td>
+    <td>Correct Usage. The extension is required to express the unknown components.  The dateTime shows what it can. The time is uknown, and the month is temporarily unknown.</td>
+  </tr>
+  <tr>
     <td>2023-12</td>
     <td>(none)</td>
     <td>2023</td>
@@ -90,7 +99,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
   </tr>
     <tr>
     <td>(none) 
-    <td>2023-12-23 XXXX</td>
+    <td>2023-12-23 xxxx</td>
     <td>2023</td>
     <td>12</td>
     <td>23</td>
@@ -100,7 +109,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
     </tr>
     <tr>
     <td>2023-12-23</td>
-    <td>2023-12-23 XXXX</td>
+    <td>2023-12-23 xxxx</td>
     <td>2023</td>
     <td>12</td>
     <td>23</td>
