@@ -1,3 +1,5 @@
+ Note: The PatientMother profile is based on the [US Core Patient Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Complete vital record submissions may fail FHIR validation due to lack of a value for gender.
 
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
@@ -795,6 +797,7 @@
 
 </details>
 <p></p>
+
 
 ### Form Mapping
 <details>
