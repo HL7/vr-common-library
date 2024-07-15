@@ -123,7 +123,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
       <td>23</td>
       <td>9999</td>
       <td>Correct Usage. The extension is required to express the unknown
-        components. The dateTime shows what it can. The time is uknown, and the
+        components. The dateTime shows what it can. The time is unknown, and the
         month is temporarily unknown.</td>
     </tr>
         <tr>
@@ -151,7 +151,7 @@ The following table illustrates the appropriate use of a dateTime field with a p
         <td>12</td>
         <td>23</td>
         <td>9999</td>
-        <td> Inncorrect usage. The extension is required because the unknown time component cannot be expressed as a FHIR dateTime. However, the dateTime should reflect 2023-12-23.</td>
+        <td> Incorrect usage. The extension is required because the unknown time component cannot be expressed as a FHIR dateTime. However, the dateTime should reflect 2023-12-23.</td>
       </tr>
         <tr>
       <td>(none)</td>
