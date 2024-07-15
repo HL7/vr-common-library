@@ -131,7 +131,7 @@ States and jurisdictions are consistently represented using two letter postal co
 Countries are consistently represented using two letter postal codes bound to a string field.   The IJE typically represents countries using a 2 letter postal code and a separate literal field.  Mapping from the 2 letter codes to literals must be provided outside of the VRCL IG, and can leverage the [CodeSystemCountryCodeVitalRecords].
 
 ### Gender
-[US Core Patient](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html) profile conformance requires that gender be provided.   A value of 'unknown' will satisfy this requirement.    Complete vital record submissions may fail FHIR validation due to lack of a value for gender. There is no IJE field that is mapped to the Patient.gender field.
+[US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) profile conformance requires that gender be provided.   A value of 'unknown' will satisfy this requirement.    Complete vital record submissions may fail FHIR validation due to lack of a value for gender. There is no IJE field that is mapped to the Patient.gender field.
 
 ### Handling of Edit Flags
 TBD
