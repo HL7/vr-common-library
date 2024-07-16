@@ -16,10 +16,10 @@ A value of unknown (all 9's) in IJE is equivalent to a component with DataAbsent
 
 A value of blank (all ' ') in IJE is equivalent to a a component with a DataAbsentReason extension with code `temp-unknown`.
 
-The following table illustrates the appropriate use of a dateTime field with a partial date time extension:
+The following table illustrates the appropriate use of a dateTime field with a partial date time extension.   xxxx is a dataAbsentReason of 'temp-unknown'.  XXXX is a dataAbsentReason of 'unknown'.
 
 <head>
-<style>
+  <style>
   table {
     border-collapse: collapse;
     width: 100%;
@@ -32,84 +32,140 @@ The following table illustrates the appropriate use of a dateTime field with a p
 </style>
 </head>
 <body>
-
-<table>
-  <tr>
-    <th>FHIR dateTime</th>
-    <th>Partial Date Time Extension Components YYYY-MM-DD TTTT</th>
-    <th>IJE YYYY</th>
-    <th>IJE MM</th>
-    <th>IJE DD</th>
-    <th>IJE TTTT</th>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>(none)</td>
-    <td>2023</td>
-    <td>blank</td>
-    <td>blank</td>
-    <td>blank</td>
-  </tr>
-  <tr>
-    <td>2023 (this is correct usage).  It should be </td>
-    <td>2023-XX-23 XXXX</td>
-    <td>2023</td>
-    <td>99</td>
-    <td>23</td>
-    <td>9999</td>
-  </tr>
-  <tr>
-    <td>2023-12</td>
-    <td>(none)</td>
-    <td>2023</td>
-    <td>12</td>
-    <td>blank</td>
-    <td>blank</td>
-  </tr>
-  <tr>
-    <td>2023-12-23</td>
-    <td>(none)</td>
-    <td>2023</td>
-    <td>12</td>
-    <td>23</td>
-    <td>blank</td>
-  </tr>
-  <tr>
-    <td>2023-12-23</td>
-    <td>2023-12-23 XXXX</td>
-    <td>2023</td>
-    <td>12</td>
-    <td>23</td>
-    <td>9999</td>
-  </tr>
-  <tr>
-    <td>(none) this is incorrect usage. It should be  
-2023-12-23.</td>
-    <td>2023-12-23 XXXX</td>
-    <td>2023</td>
-    <td>12</td>
-    <td>23</td>
-    <td>9999</td>
-  </tr>
-  <tr>
-    <td>2023-12-23 T13:28:17-05:00</td>
-    <td>(none)</td>
-    <td>2023</td>
-    <td>12</td>
-    <td>23</td>
-    <td>1328. (uses local time)</td>
-  </tr>
-  <tr>
-    <td>(none)</td>
-    <td>XXXX-12-23 1828</td>
-    <td>9999</td>
-    <td>12</td>
-    <td>23</td>
-    <td>1828</td>
-  </tr>
-</table>
-
+  <table>
+    <tr>
+      <th>FHIR dateTime</th>
+      <th>Partial Date Time Extension Components YYYY-MM-DD TTTT</th>
+      <th>IJE YYYY</th>
+      <th>IJE MM</th>
+      <th>IJE DD</th>
+      <th>IJE TTTT</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>(none)</td>
+      <td>2023</td>
+      <td>blank</td>
+      <td>blank</td>
+      <td>blank</td>
+      <td>Correct Usage</td>
+    </tr>
+    <tr>
+      <td>2023-12</td>
+      <td>(none)</td>
+      <td>2023</td>
+      <td>12</td>
+      <td>blank</td>
+      <td>blank</td>
+      <td>Correct Usage. No extension is required because dateTime can express this partial dateTime.</td>
+    </tr>
+    <tr>
+      <td>2023-12-23</td>
+      <td>(none)</td>
+      <td>2023</td>
+      <td>12</td>
+      <td>23</td>
+      <td>blank</td>
+      <td>Correct Usage. No extension is required because dateTime can express this partial dateTime.</td>
+    </tr>
+      <tr>
+        <td>2023-12-23 T13:28:17-05:00</td>
+        <td>(none)</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>23</td>
+        <td>1328. (uses local time)</td>
+        <td>Correct usage. </td>
+      </tr>
+     <tr>
+      <td>2023-12-23</td>
+      <td>2023-12-23 XXXX</td>
+      <td>2023</td>
+      <td>12</td>
+      <td>23</td>
+      <td>9999</td>
+      <td>Correct Usage. The extension is required to express the unknown components. The dateTime shows what it can.</td>
+    </tr>
+        <tr>
+        <td>(none)</td>
+        <td>XXXX-12-23 1828</td>
+        <td>9999</td>
+        <td>12</td>
+        <td>23</td>
+        <td>1828</td>
+        <td>Correct usage. The extension is required and the dateTimecannot express any of this date.</td>
+      </tr>
+      <tr>
+        <td>(none)</td>
+        <td>XXXX-12-23 1828</td>
+        <td>9999</td>
+        <td>12</td>
+        <td>23</td>
+        <td>1828</td>
+        <td>Correct usage. The extension is required and the dateTimecannot express any of this date.</td>
+      </tr>
+          <tr>
+      <td>2023 </td>
+      <td>2023-XX-23 XXXX</td>
+      <td>2023</td>
+      <td>99</td>
+      <td>23</td>
+      <td>9999</td>
+      <td>Correct Usage. The extension is required to express the unknown
+        components. The dateTime shows what it can.</td>
+    </tr>
+    <tr>
+      <td>2023 </td>
+      <td>2023-xx-23 XXXX</td>
+      <td>2023</td>
+      <td>blank</td>
+      <td>23</td>
+      <td>9999</td>
+      <td>Correct Usage. The extension is required to express the unknown
+        components. The dateTime shows what it can. The time is unknown, and the
+        month is temporarily unknown.</td>
+    </tr>
+        <tr>
+      <td>(none)</td>
+        <td>2023-12-23 xxxx</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>23</td>
+        <td>blank</td>
+        <td>Incorrect usage. This date can be expressed as a FHIR dateTime without the extension.</td>
+      </tr>
+      <tr>
+        <td>2023-12-23</td>
+        <td>2023-12-23 xxxx</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>23</td>
+        <td>blank</td>
+        <td>Incorrect usage. This date can be expressed as a FHIR dateTime without the extension. </td>
+      </tr>
+      <tr>
+        <td>(none) </td>
+        <td>2023-12-23 XXXX</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>23</td>
+        <td>9999</td>
+        <td> Incorrect usage. The extension is required because the unknown time component cannot be expressed as a FHIR dateTime. However, the dateTime should reflect 2023-12-23.</td>
+      </tr>
+        <tr>
+      <td>(none)</td>
+        <td>2023-12-23 xxxx</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>23</td>
+        <td>blank</td>
+        <td>Incorrect usage. The dateTime should be 2023-12-23. No extension is required because this date can be expressed as a FHIR dateTime.</td>
+      </tr>
+    </table>
 </body>
+
+
 
 
 ### Birth Date and Time
