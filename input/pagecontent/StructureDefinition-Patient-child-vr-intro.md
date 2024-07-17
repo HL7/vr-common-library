@@ -72,6 +72,15 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Gender</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>gender</td>
+  <td>codeable</td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. genderIdentity field is not required.</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
   <td>8</td>
   <td>Date of Birth (Infant)--Month</td>
   <td>IDOB_MO</td>
