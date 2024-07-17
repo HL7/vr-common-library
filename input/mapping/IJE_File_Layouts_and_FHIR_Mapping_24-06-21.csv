@@ -244,10 +244,16 @@ For Canadian Provinces:
 1189,ITOP,7,28,2,Date of Termination - Day,DOT_DY,"01-31 (based on month), 99",,not implemented,not implemented,,,,,,,,
 824,Fetal Death,7,30,1,Sex,FSEX,"M = Male
 F = Female
-U = Unknown",,BFDR,PatientDecedentFetus,extension[birthsex].value,codeable,[ValueSetSexAssignedAtBirthVitalRecords],B,,,,
+U = Unknown ",,BFDR,PatientDecedentFetus,extension[birthsex].value,codeable,[ValueSetSexAssignedAtBirthVitalRecords],B,,,,
+NA,Fetal Death,,,,Gender,*NO IJE MAPPING*,"male = Male
+female = Female
+other = Other unknown = Unknown",,VRCPL,PatientDecedentFetus,gender,codeable,[USCorePatient] requires gender - can be 'unknown'. See [Note on Gender] ,B,,,,
 471,Natality,7,30,1,Sex,ISEX,"M = Male
 F = Female
 N = Not Yet Determined",,VRCPL,PatientChildVitalRecords,extension[birthsex].value,codeable,[ValueSetSexAssignedAtBirthVitalRecords],B,,,,
+NA,Natality,,,,Gender,*NO IJE MAPPING*,"male = Male
+female = Female
+other = Other unknown = Unknown",,VRCPL,PatientChildVitalRecords,gender,codeable,[USCorePatient] requires gender - can be 'unknown'. See [Note on Gender] ,B,,,,
 1348,Birth Infant Death,7,30,1,Sex,ISEX,"M = Male
 F = Female
 N = Not Yet Determined",,,,,,,,,,,
@@ -345,8 +351,8 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 831,Fetal Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,"4 digit year; < year of delivery, 9999",,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,
 1355,Birth Infant Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,,,,,,,,,,
 ,Fetal Death,NA,NA,NA,Method of Disposition,*NO IJE MAPPING*,,,BFDR,ObservationFetalRemainsDispositionMethod,value,codeable,[FetalRemainsDispositionMethodVS],,,,,
-,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,
-,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,
+,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Gender],,,,,
+,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Gender],,,,,
 22,Mortality,15,191,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,,y,,,
 444,Mortality Roster,15,212,6,State File Number,FILENO,Left 0 filled; 000001-999999,,VRDR,MortalityRosterBundle,identifier.extension[certificateNumber].value,string(6),-,,,,,
 287,Surveillance,15,201,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,
@@ -1906,7 +1912,7 @@ blank if not reported",I,VRDR,Decedent,extension[SpouseAlive] ,codeable, [Spouse
 609,Natality,145,791,2,Date of Last Live Birth--Month,MLLB,"01-12, 88, 99",,BFDR,ObservationDateOfLastLiveBirth,value,dateTime,See [PartialDatesAndTimes],B,,,,
 1486,Birth Infant Death,145,791,2,Date of Last Live Birth--Month,MLLB,"01-12, 88, 99",,,,,,,,,,,
 157,Mortality,145,1435,50,Husband's Surname/Wife's Maiden Last Name,SPOUSEL ,"Free form literal; if unknown, leave blank",I,VRDR,DecedentSpouse,"name.family, name.use = 'maiden",string,-,,,,,
-962,Fetal Death,145,529,2,Obstetric Estimation of Gestation,OWGEST,"00-98, 99",,BFDR,ObservationGestationalAgeAtDelivery,value,quantity,value is a decimal; unit is from [UnitsOfGestationalAgeVS],B,,,,,
+962,Fetal Death,145,529,2,Obstetric Estimation of Gestation,OWGEST,"00-98, 99",,BFDR,ObservationGestationalAgeAtDelivery,value,quantity,value is a decimal; unit is from [UnitsOfGestationalAgeVS],B,,,,
 1327,ITOP,145,1187,1,Reason for Termination -- Fetal anomaly,REASON_FET_ANOM,"Y, N",,not implemented,not implemented,,,,,,,,
 416,Surveillance,145,3425,50,Spouse's Middle Name,SPOUSEMIDNAME,,i,VRDR,DecedentSpouse,"name.given , name.use = official",string,-,,,,,
 158,Mortality,146,1485,10,Decedent's Residence - Street number,STNUM_R,,,VRDR,Decedent,address.extension[stnum],string,-,,y,,,
@@ -2694,6 +2700,9 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 1587,Birth Infant Death,246,952,49,FILLER 2,*NO IJE MAPPING*,BLANK,,,,,,,,,,,
 710,Natality,246,952,49,Abnormal Conditions of the Newborn--Microcephaly,MCPH,"Y, N, U (For those jurisdictions reporting Microcephaly, the first character of the 49 allotted to this field will be allocated for the single code structure description, and the only acceptable values are Y=yes, N=no and U=unknown)",,not implemented,not implemented,,,,-,,"""MCPH"" listed in error on STU 1 Condition - Abnormal Condition of Newborn",,
 1063,Fetal Death,246,3567,10,Mother's Maiden Surname Suffix,MOMMSUFFIX,Valid suffix,,VRCPL,PatientMotherVitalRecords,"name.suffix, <br />name.use = maiden",string,,B,,,,
+NA,Fetal Death,,,,Gender,*NO IJE MAPPING*,"male = Male
+female = Female
+other = Other unknown = Unknown",,VRCPL,PatientMotherVitalRecords,gender,codeable,[USCorePatient] requires gender - can be 'unknown'. See [Note on Gender] ,B,,,,
 258,Mortality,246,4377,50,Marital Descriptor,MARITAL_DESCRIP,"Free text for use of jurisdictions with domestic partnerships, other
 types of relationships.",i,VRDR,Decedent,maritalStatus.text ,string,-,,,,,
 711,Natality,247,1001,50,Child's First Name,KIDFNAME,Free form literal ,,VRCPL,PatientChildVitalRecords,"name.given, <br />name.use = official",string,See [note on Child and Decedent Fetus name],B,,,,
@@ -2753,6 +2762,9 @@ types of relationships.",i,VRDR,Decedent,maritalStatus.text ,string,-,,,,,
 1601,Birth Infant Death,260,1540,50,Mother's Maiden Surname,MOMMAIDN,Free form literal ,,,,,,,,,,,
 1078,Fetal Death,261,3879,50,Father's Legal First Name,DADFNAME,Free form literal,,VRCPL,RelatedPersonFatherNaturalVitalRecords,"name.given, <br />name.use = official",string,,B,,,,
 725,Natality,261,1590,7,Mother's Maiden Surname Suffix,MOMMSUFX,Valid suffix,,VRCPL,PatientMotherVitalRecords,"name.suffix, <br />name.use = maiden",string,,B,,,,
+NA,Natality,,,,Gender,*NO IJE MAPPING*,"male = Male
+female = Female
+other = Other unknown = Unknown",,VRCPL,PatientMotherVitalRecords,gender,codeable,[USCorePatient] requires gender - can be 'unknown'. See [Note on Gender] ,B,,,,
 1602,Birth Infant Death,261,1590,7,Mother's Maiden Surname Suffix,MOMMSUFX,Valid suffix,,,,,,,,,,,
 1079,Fetal Death,262,3929,50,Father's Legal Middle Name,DADMNAME,Free form literal,,VRCPL,RelatedPersonFatherNaturalVitalRecords,"name.given, <br />name.use = official",string,,B,,,,
 726,Natality,262,1597,10,Residence Street Number,STNUM,parsed residence address,,VRCPL,PatientMotherVitalRecords,address.extension[stnum],string,,B,,,,
