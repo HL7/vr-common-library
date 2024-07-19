@@ -6,7 +6,8 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
  * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
     * use not-applicable if the name hasn't been chosen
 
-Profile conformance requires that gender be provided, see [note on patient gender](usage.html#gender).
+ Note: The PatientChild profile is based on the [US Core Patient Profile]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Complete vital record submissions may fail FHIR validation due to lack of a value for gender.
 
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
@@ -68,6 +69,15 @@ Profile conformance requires that gender be provided, see [note on patient gende
   <td>extension[birthsex].value</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-sex-assigned-at-birth-vr.html'>ValueSetSexAssignedAtBirthVitalRecords</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Gender</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>gender</td>
+  <td>codeable</td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender] </td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>

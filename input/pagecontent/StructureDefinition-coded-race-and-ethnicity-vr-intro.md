@@ -33,7 +33,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>62</td>
   <td>Mother's Race Tabulation Variable 1E</td>
   <td>MRACE1E</td>
-  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -42,7 +42,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>63</td>
   <td>Mother's Race Tabulation Variable 2E</td>
   <td>MRACE2E</td>
-  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -51,7 +51,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>64</td>
   <td>Mother's Race Tabulation Variable 3E</td>
   <td>MRACE3E</td>
-  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -60,7 +60,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>65</td>
   <td>Mother's Race Tabulation Variable 4E</td>
   <td>MRACE4E</td>
-  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -69,7 +69,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>66</td>
   <td>Mother's Race Tabulation Variable 5E</td>
   <td>MRACE5E</td>
-  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -78,7 +78,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>67</td>
   <td>Mother's Race Tabulation Variable 6E</td>
   <td>MRACE6E</td>
-  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -87,7 +87,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>68</td>
   <td>Mother's Race Tabulation Variable 7E</td>
   <td>MRACE7E</td>
-  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -96,7 +96,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>69</td>
   <td>Mother's Race Tabulation Variable 8E</td>
   <td>MRACE8E</td>
-  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -105,7 +105,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>70</td>
   <td>Mother's Race Tabulation Variable 16C</td>
   <td>MRACE16C</td>
-  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -114,7 +114,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>71</td>
   <td>Mother's Race Tabulation Variable 17C</td>
   <td>MRACE17C</td>
-  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -123,7 +123,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>72</td>
   <td>Mother's Race Tabulation Variable 18C</td>
   <td>MRACE18C</td>
-  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -132,7 +132,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>73</td>
   <td>Mother's Race Tabulation Variable 19C</td>
   <td>MRACE19C</td>
-  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -141,7 +141,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>74</td>
   <td>Mother's Race Tabulation Variable 20C</td>
   <td>MRACE20C</td>
-  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -150,7 +150,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>75</td>
   <td>Mother's Race Tabulation Variable 21C</td>
   <td>MRACE21C</td>
-  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -159,7 +159,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>76</td>
   <td>Mother's Race Tabulation Variable 22C</td>
   <td>MRACE22C</td>
-  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -168,7 +168,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>77</td>
   <td>Mother's Race Tabulation Variable 23C</td>
   <td>MRACE23C</td>
-  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -177,7 +177,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>292</td>
   <td>Mother's Hispanic Code for Literal</td>
   <td>METHNIC5C</td>
-  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -186,7 +186,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>293</td>
   <td>Mother's Edited Hispanic Origin Code</td>
   <td>METHNICE</td>
-  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -222,7 +222,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>108</td>
   <td>Father's Race Tabulation Variable 1E</td>
   <td>FRACE1E</td>
-  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -231,7 +231,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>109</td>
   <td>Father's Race Tabulation Variable 2E</td>
   <td>FRACE2E</td>
-  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -240,7 +240,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>110</td>
   <td>Father's Race Tabulation Variable 3E</td>
   <td>FRACE3E</td>
-  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -249,7 +249,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>111</td>
   <td>Father's Race Tabulation Variable 4E</td>
   <td>FRACE4E</td>
-  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -258,7 +258,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>112</td>
   <td>Father's Race Tabulation Variable 5E</td>
   <td>FRACE5E</td>
-  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -267,7 +267,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>113</td>
   <td>Father's Race Tabulation Variable 6E</td>
   <td>FRACE6E</td>
-  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -276,7 +276,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>114</td>
   <td>Father's Race Tabulation Variable 7E</td>
   <td>FRACE7E</td>
-  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -285,7 +285,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>115</td>
   <td>Father's Race Tabulation Variable 8E</td>
   <td>FRACE8E</td>
-  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -294,7 +294,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>116</td>
   <td>Father's Race Tabulation Variable 16C</td>
   <td>FRACE16C</td>
-  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -303,7 +303,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>117</td>
   <td>Father's Race Tabulation Variable 17C</td>
   <td>FRACE17C</td>
-  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -312,7 +312,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>118</td>
   <td>Father's Race Tabulation Variable 18C</td>
   <td>FRACE18C</td>
-  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -321,7 +321,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>119</td>
   <td>Father's Race Tabulation Variable 19C</td>
   <td>FRACE19C</td>
-  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -330,7 +330,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>120</td>
   <td>Father's Race Tabulation Variable 20C</td>
   <td>FRACE20C</td>
-  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -339,7 +339,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>121</td>
   <td>Father's Race Tabulation Variable 21C</td>
   <td>FRACE21C</td>
-  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -348,7 +348,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>122</td>
   <td>Father's Race Tabulation Variable 22C</td>
   <td>FRACE22C</td>
-  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -357,7 +357,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>123</td>
   <td>Father's Race Tabulation Variable 23C</td>
   <td>FRACE23C</td>
-  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -366,7 +366,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>295</td>
   <td>Father's Hispanic Code for Literal</td>
   <td>FETHNIC5C</td>
-  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -375,7 +375,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>296</td>
   <td>Father's Edited Hispanic Origin Code</td>
   <td>FETHNICE</td>
-  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -411,7 +411,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>62</td>
   <td>Mother's Race Tabulation Variable 1E</td>
   <td>MRACE1E</td>
-  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -420,7 +420,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>63</td>
   <td>Mother's Race Tabulation Variable 2E</td>
   <td>MRACE2E</td>
-  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -429,7 +429,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>64</td>
   <td>Mother's Race Tabulation Variable 3E</td>
   <td>MRACE3E</td>
-  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedtraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -438,7 +438,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>65</td>
   <td>Mother's Race Tabulation Variable 4E</td>
   <td>MRACE4E</td>
-  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -447,7 +447,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>66</td>
   <td>Mother's Race Tabulation Variable 5E</td>
   <td>MRACE5E</td>
-  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -456,7 +456,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>67</td>
   <td>Mother's Race Tabulation Variable 6E</td>
   <td>MRACE6E</td>
-  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -465,7 +465,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>68</td>
   <td>Mother's Race Tabulation Variable 7E</td>
   <td>MRACE7E</td>
-  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -474,7 +474,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>69</td>
   <td>Mother's Race Tabulation Variable 8E</td>
   <td>MRACE8E</td>
-  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -483,7 +483,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>70</td>
   <td>Mother's Race Tabulation Variable 16C</td>
   <td>MRACE16C</td>
-  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -492,7 +492,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>71</td>
   <td>Mother's Race Tabulation Variable 17C</td>
   <td>MRACE17C</td>
-  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -501,7 +501,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>72</td>
   <td>Mother's Race Tabulation Variable 18C</td>
   <td>MRACE18C</td>
-  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -510,7 +510,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>73</td>
   <td>Mother's Race Tabulation Variable 19C</td>
   <td>MRACE19C</td>
-  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -519,7 +519,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>74</td>
   <td>Mother's Race Tabulation Variable 20C</td>
   <td>MRACE20C</td>
-  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -528,7 +528,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>75</td>
   <td>Mother's Race Tabulation Variable 21C</td>
   <td>MRACE21C</td>
-  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -537,7 +537,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>76</td>
   <td>Mother's Race Tabulation Variable 22C</td>
   <td>MRACE22C</td>
-  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -546,7 +546,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>77</td>
   <td>Mother's Race Tabulation Variable 23C</td>
   <td>MRACE23C</td>
-  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -555,7 +555,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>329</td>
   <td>Mother's Hispanic Code for Literal</td>
   <td>METHNIC5C</td>
-  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -564,7 +564,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>330</td>
   <td>Mother's Edited Hispanic Origin Code</td>
   <td>METHNICE</td>
-  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
+  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -600,7 +600,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>313</td>
   <td>Father's Race Tabulation Variable 1E</td>
   <td>FRACE1E</td>
-  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -609,7 +609,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>314</td>
   <td>Father's Race Tabulation Variable 2E</td>
   <td>FRACE2E</td>
-  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -618,7 +618,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>315</td>
   <td>Father's Race Tabulation Variable 3E</td>
   <td>FRACE3E</td>
-  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -627,7 +627,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>316</td>
   <td>Father's Race Tabulation Variable 4E</td>
   <td>FRACE4E</td>
-  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -636,7 +636,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>317</td>
   <td>Father's Race Tabulation Variable 5E</td>
   <td>FRACE5E</td>
-  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -645,7 +645,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>318</td>
   <td>Father's Race Tabulation Variable 6E</td>
   <td>FRACE6E</td>
-  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -654,7 +654,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>319</td>
   <td>Father's Race Tabulation Variable 7E</td>
   <td>FRACE7E</td>
-  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -663,7 +663,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>320</td>
   <td>Father's Race Tabulation Variable 8E</td>
   <td>FRACE8E</td>
-  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -672,7 +672,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>321</td>
   <td>Father's Race Tabulation Variable 16C</td>
   <td>FRACE16C</td>
-  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -681,7 +681,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>322</td>
   <td>Father's Race Tabulation Variable 17C</td>
   <td>FRACE17C</td>
-  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -690,7 +690,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>323</td>
   <td>Father's Race Tabulation Variable 18C</td>
   <td>FRACE18C</td>
-  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -699,7 +699,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>324</td>
   <td>Father's Race Tabulation Variable 19C</td>
   <td>FRACE19C</td>
-  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -708,7 +708,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>325</td>
   <td>Father's Race Tabulation Variable 20C</td>
   <td>FRACE20C</td>
-  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -717,7 +717,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>326</td>
   <td>Father's Race Tabulation Variable 21C</td>
   <td>FRACE21C</td>
-  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -726,7 +726,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>327</td>
   <td>Father's Race Tabulation Variable 22C</td>
   <td>FRACE22C</td>
-  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -735,7 +735,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>328</td>
   <td>Father's Race Tabulation Variable 23C</td>
   <td>FRACE23C</td>
-  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -744,7 +744,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>332</td>
   <td>Father's Hispanic Code for Literal</td>
   <td>FETHNIC5C</td>
-  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -753,7 +753,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>333</td>
   <td>Father's Edited Hispanic Origin Code</td>
   <td>FETHNICE</td>
-  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
+  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -789,7 +789,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>67</td>
   <td>First Edited Code</td>
   <td>RACE1E</td>
-  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td></td>
   <td>-</td>
 </tr>
@@ -798,7 +798,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>68</td>
   <td>Second Edited Code</td>
   <td>RACE2E</td>
-  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -807,7 +807,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>69</td>
   <td>Third Edited Code</td>
   <td>RACE3E</td>
-  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -816,7 +816,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>70</td>
   <td>Fourth Edited Code</td>
   <td>RACE4E</td>
-  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -825,7 +825,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>71</td>
   <td>Fifth Edited Code</td>
   <td>RACE5E</td>
-  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -834,7 +834,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>72</td>
   <td>Sixth Edited Code</td>
   <td>RACE6E</td>
-  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -843,7 +843,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>73</td>
   <td>Seventh Edited Code</td>
   <td>RACE7E</td>
-  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -852,7 +852,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>74</td>
   <td>Eighth Edited Code</td>
   <td>RACE8E</td>
-  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -861,7 +861,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>75</td>
   <td>First American Indian Code</td>
   <td>RACE16C</td>
-  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -870,7 +870,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>76</td>
   <td>Second American Indian Code</td>
   <td>RACE17C</td>
-  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -879,7 +879,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>77</td>
   <td>First Other Asian Code</td>
   <td>RACE18C</td>
-  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -888,7 +888,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>78</td>
   <td>Second Other Asian Code</td>
   <td>RACE19C</td>
-  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -897,7 +897,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>79</td>
   <td>First Other Pacific Islander Code</td>
   <td>RACE20C</td>
-  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -906,7 +906,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>80</td>
   <td>Second Other Pacific Islander Code</td>
   <td>RACE21C</td>
-  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -915,7 +915,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>81</td>
   <td>First Other Race Code</td>
   <td>RACE22C</td>
-  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -924,7 +924,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>82</td>
   <td>Second Other Race Code</td>
   <td>RACE23C</td>
-  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
@@ -933,7 +933,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>160</td>
   <td>Hispanic</td>
   <td>DETHNICE </td>
-  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
@@ -942,7 +942,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>247</td>
   <td>Hispanic Code for Literal</td>
   <td>DETHNIC5C</td>
-  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
+  <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>

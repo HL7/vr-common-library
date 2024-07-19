@@ -1,3 +1,5 @@
+ Note: The PatientMother profile is based on the [US Core Patient Profile]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Complete vital record submissions may fail FHIR validation due to lack of a value for gender.
 
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
@@ -194,6 +196,15 @@
   <td>name.suffix, <br />name.use = maiden</td>
   <td>string</td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Gender</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>gender</td>
+  <td>codeable</td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender] </td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -656,6 +667,15 @@
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td></td>
+  <td>Gender</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>gender</td>
+  <td>codeable</td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender] </td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>247</td>
   <td>Mother's Residence Street number</td>
   <td>STNUM</td>
@@ -795,6 +815,7 @@
 
 </details>
 <p></p>
+
 
 ### Form Mapping
 <details>
