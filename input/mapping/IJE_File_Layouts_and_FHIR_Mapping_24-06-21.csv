@@ -75,7 +75,7 @@ For Canadian Provinces:
    PE  PRINCE EDWARD ISLAND 
    QC  QUEBEC  
    SK  SASKATCHEWAN
-   YT  YUKON",,VRCPL,PatientChildVitalRecords,extension[birthPlace].value[x].state,string,[ValueSetJurisdictionVitalRecords],B,,,,
+   YT  YUKON",,VRCPL,PatientChildVitalRecords,extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId],string,[ValueSetJurisdictionVitalRecords],B,,,,
 1343,Birth Infant Death,2,5,2,"State, U.S. Territory or Canadian Province of Birth (Infant) - code",BSTATE,"NCHS Instruction Manual: Part 8
 For US Territories:
    MP  NORTHERN MARIANAS
