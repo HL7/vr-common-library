@@ -48,7 +48,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>2</td>
   <td>State, U.S. Territory or Canadian Province of Birth (Infant) - code</td>
   <td>BSTATE</td>
-  <td>extension[birthPlace].value[x].state</td>
+  <td>extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId]</td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td>
 </tr>
