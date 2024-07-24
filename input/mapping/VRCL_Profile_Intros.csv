@@ -25,9 +25,7 @@ When the known components of the date can be expressed as a valid dateTime, the 
 10,Input,ExtensionPostDirectionalVitalRecords,Extension-post-directional-vr,,,,VRCPL
 11,Input,ExtensionPreDirectionalVitalRecords,Extension-pre-directional-vr,,,,VRCPL
 12,Input,ExtensionStreetDesignatorVitalRecords,Extension-street-designator-vr,,,,VRCPL
-16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,"Input (from Jurisdictions) Race and Ethnicity (Observation). This is information collected by jurisdictions and submitted to NCHS.
-
-This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.",x,x,VRCPL
+16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.,x,x,VRCPL
 17,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
 18,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
 19,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
@@ -50,9 +48,7 @@ This profile is only for use in a Vital Records Exchange. Systems looking to exc
 26,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
                 For documentation on their use see referenceTBD.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
-27,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"Coded (from NCHS) Race and Ethnicity (Observation). This is information that is coded by NCHS based on  submitted information and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions.
-
-This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
+27,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth, for the mother in the case of fetal death, and for the decdent for mortality reporting.",,x,VRCPL
 28,Input,ExtensionReportedParentAgeAtDeliveryVitalRecords,Extension-reported-parent-age-at-delivery-vr,,,,VRCPL

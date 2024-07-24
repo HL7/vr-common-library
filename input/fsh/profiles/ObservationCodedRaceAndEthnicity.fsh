@@ -3,7 +3,7 @@ Parent: Observation
 Id: coded-race-and-ethnicity-vr
 Title: "Observation - Coded Race and Ethnicity Vital Records"
 Description: "Coded (from NCHS) Race and Ethnicity (Observation). 
-This is information that is coded by NCHS and sent back to jurisdictions."
+This is information that is coded by NCHS based on  submitted information and sent back to jurisdictions, and will not be processed if submitted to NCHS by jurisdictions."
 * code from ValueSetCodedRaceAndEthnicityPersonVitalRecords (required) //  code = ObservationsCS#codedraceandethnicity
 * value[x] 0..0
 * insert SubjectRelatedPattern
