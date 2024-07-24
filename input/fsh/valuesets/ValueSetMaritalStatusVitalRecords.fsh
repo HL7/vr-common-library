@@ -11,6 +11,6 @@ Mapping to IJE codes [here](ConceptMap-ConceptMapMaritalStatusVitalRecords.html)
 * $v3-MaritalStatus#M "Married"
 * $v3-MaritalStatus#S "Never Married"
 * $v3-MaritalStatus#W "Widowed"
-* $v3-MaritalStatus#T "Domestic Partner" // not currently supported by NCHS
+* $v3-MaritalStatus#T "Domestic Partner " // not currently supported by NCHS
 * $v3-NullFlavor#UNK "unknown"
 * ^experimental = false

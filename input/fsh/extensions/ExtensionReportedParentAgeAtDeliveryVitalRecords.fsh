@@ -15,8 +15,8 @@ A required code indicates whether the mother or father's age is provided. It can
   * ^slicing.discriminator.path = "url"
   * ^slicing.rules = #open
 * extension contains
-    reportedAge 1..1 MS and
-    motherOrFather 1..1 MS and
+    reportedAge 1..1 and
+    motherOrFather 1..1 and
     reporter 0..1
 * extension[reportedAge] only Extension
   * ^short = "Age of the parent at the time of delivery reported by another person."
