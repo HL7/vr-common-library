@@ -11,7 +11,9 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
 * extension[birthPlace] MS 
   * valueAddress.state ^short = "State of Birth"
     * extension[nationalReportingJurisdictionId] ^short = "Jurisdiction of Birth"
-  * value[x].district.extension[districtCode] ^short = "County of birth"
+  * valueAddress.district ^short = "District of Birth"
+    * extension[districtCode] ^short = "County of birth"
+  * valueAddress.city ^short = "City of Birth"
 * extension[parentReportedAgeAtDelivery] ^short = "The mother or father's reported age at the time of delivery of the child"
   * extension[reportedAge].value[x] ^short = "Reported age"
   * extension[motherOrFather].valueCodeableConcept ^short = "Indicates mother/Father code"
@@ -30,6 +32,7 @@ Description: "The subject patient (newborn/infant/child) for whom clinical data 
     * value[x] ^short = "Plurality"
 * deceased[x] MS
   * ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
+
 
 RuleSet: childName
 * name MS

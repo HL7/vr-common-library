@@ -12,6 +12,8 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   * value[x].state ^short = "State, territory, province code"
   * value[x].country ^short = "Country code"
 * identifier[MRN] MS
+  * type.coding.code ^short = "Code type"
+  * value ^short = "Medical Record no."
 * identifier[SSN] MS
   * type.coding.code ^short = "Code type"
   * value ^short = "Social Security no."
@@ -42,8 +44,8 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   * extension[stdesig] ^short = "Residence street designator"
   * extension[postdir] ^short = "Residence postdirectional"
   * extension[unitnumber] ^short = "Residence unit no."
-  * city.extension[cityCode] ^short = "City code"
-  * district.extension[districtCode] ^short = "County code"
+  * city.extension[cityCode] ^short = "city code"
+  * district.extension[districtCode] ^short = "county code"
   * state ^short = "State"
   * country ^short = "Country"
   * line ^short = "Street address"
@@ -70,3 +72,4 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   * type MS
     // * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
     // * ^extension.valueBoolean = false
+* maritalStatus.text ^short = "marital status desc"
