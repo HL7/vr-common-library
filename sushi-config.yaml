@@ -211,7 +211,7 @@ groups:
     name: Other Profiles
     resources:
       - LocationVitalRecords 
-      - ObservationAutopsyPerformedIndicatorVitalRecords
+      #- ObservationAutopsyPerformedIndicatorVitalRecords
       - ObservationEducationLevelVitalRecords
       - ObservationEmergingIssuesVitalRecords
       #- ObservationUsualWorkVitalRecords
@@ -354,7 +354,7 @@ groups:
       - observation-input-race-and-ethnicity-vr-father 
       - observation-coded-race-and-ethnicity-vr-mother 
       - observation-coded-race-and-ethnicity-vr-father 
-      - observation-autopsy-performed-indicator-vr-a-freeman
+      #- observation-autopsy-performed-indicator-vr-a-freeman
       - observation-education-level-vr-a-freeman
       - observation-emerging-issues-vr-a-freeman
       - observation-partial-date-time-example

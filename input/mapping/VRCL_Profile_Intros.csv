@@ -26,7 +26,6 @@ When the known components of the date can be expressed as a valid dateTime, the 
 11,Input,ExtensionPreDirectionalVitalRecords,Extension-pre-directional-vr,,,,VRCPL
 12,Input,ExtensionStreetDesignatorVitalRecords,Extension-street-designator-vr,,,,VRCPL
 16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,This profile is only for use in a Vital Records Exchange. Systems looking to exchange this observation more broadly should reference US Core.,x,x,VRCPL
-17,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
 18,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
 19,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
 
