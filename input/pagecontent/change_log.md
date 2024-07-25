@@ -1,6 +1,7 @@
 **Sections 3.1 - 3.2 describe the changes between [STU 1.1 publication](https://hl7.org/fhir/us/vr-common-library/STU1.1/) (October 2023) and the STU 2 ballot (Jan 2024). For a history of previous changes, please see the prior change logs in the [appropriate versions](https://hl7.org/fhir/us/vr-common-library/STU1.1/change_log.html).**
 
 ### STU 2.0 Ballot Reconciliation
+* [FHIR-46470](https://jira.hl7.org/browse/FHIR-46470) -- Moved [AutopsyPerformedIndicatorVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Observation-autopsy-performed-indicator-vr.html) profile to BFDR
 * [FHIR-44596](https://jira.hl7.org/browse/FHIR-44596) -- Restricted data absent reasons to codes 'unknown' and 'temp-unknown' in [ExtensionPartialDateVitalRecords] and [ExtensionPartialDateTimeVitalRecords]. Added [ValueSetPartialDateDataAbsentReasonVitalRecords] 
 * [FHIR-44411](https://jira.hl7.org/browse/FHIR-44411) -- Replaced local codesystem for Canadian Provinces with https://canadapost.ca/CodeSystem/ProvinceCodes
 * [FHIR-44184](https://jira.hl7.org/browse/FHIR-44184) -- Made top navigation bar labels the same as page titles
