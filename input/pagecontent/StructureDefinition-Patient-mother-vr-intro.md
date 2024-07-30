@@ -31,7 +31,7 @@
   <td>14</td>
   <td>Date of Birth (Mother)--Year</td>
   <td>MDOB_YR</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -40,7 +40,7 @@
   <td>15</td>
   <td>Date of Birth (Mother)--Month</td>
   <td>MDOB_MO</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -49,7 +49,7 @@
   <td>16</td>
   <td>Date of Birth (Mother)--Day</td>
   <td>MDOB_DY</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -499,7 +499,7 @@
   <td>14</td>
   <td>Date of Birth (Mother)--Year</td>
   <td>MDOB_YR</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -508,7 +508,7 @@
   <td>15</td>
   <td>Date of Birth (Mother)--Month</td>
   <td>MDOB_MO</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -517,7 +517,7 @@
   <td>16</td>
   <td>Date of Birth (Mother)--Day</td>
   <td>MDOB_DY</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>

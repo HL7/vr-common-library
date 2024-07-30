@@ -29,7 +29,7 @@
   <td>25</td>
   <td>Date of Birth (Father)--Year</td>
   <td>FDOB_YR</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -38,7 +38,7 @@
   <td>26</td>
   <td>Date of Birth (Father)--Month</td>
   <td>FDOB_MO</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -47,7 +47,7 @@
   <td>27</td>
   <td>Date of Birth (Father)--Day</td>
   <td>FDOB_DY</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -173,7 +173,7 @@
   <td>25</td>
   <td>Date of Birth (Father)--Year</td>
   <td>FDOB_YR</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -182,7 +182,7 @@
   <td>26</td>
   <td>Date of Birth (Father)--Month</td>
   <td>FDOB_MO</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
@@ -191,7 +191,7 @@
   <td>27</td>
   <td>Date of Birth (Father)--Day</td>
   <td>FDOB_DY</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>

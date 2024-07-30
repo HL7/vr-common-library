@@ -39,7 +39,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>1</td>
   <td>Date of Birth (Infant)--Year</td>
   <td>IDOB_YR</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
@@ -84,7 +84,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>8</td>
   <td>Date of Birth (Infant)--Month</td>
   <td>IDOB_MO</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
@@ -93,7 +93,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>9</td>
   <td>Date of Birth (Infant)--Day</td>
   <td>IDOB_DY</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
