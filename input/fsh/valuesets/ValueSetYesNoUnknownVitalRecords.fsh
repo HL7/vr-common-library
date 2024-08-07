@@ -1,6 +1,6 @@
 ValueSet: ValueSetYesNoUnknownVitalRecords
 Id: ValueSet-yes-no-unknown-vr
-Title: "Yes No Unknown Vital Records"
+Title: "Value Set - Yes No Unknown Vital Records"
 Description: "This valueset contains the set of codes used to respond to any question that can be answered Yes, No, or Unknown.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapYesNoUnknownVitalRecords.html)."

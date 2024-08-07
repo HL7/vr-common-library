@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemCountryCodeVitalRecords
 Id: CodeSystem-country-code-vr
-Title: "Country Codes Vital Records"
+Title: "Code System - Country Codes Vital Records"
 Description: "2 Letter Country Codes from GEC and ISO 3166-1.
 This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * ^caseSensitive = false

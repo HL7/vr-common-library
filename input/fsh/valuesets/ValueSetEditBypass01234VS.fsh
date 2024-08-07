@@ -1,6 +1,6 @@
 ValueSet: ValueSetEditBypass01234VitalRecords
 Id: valueset-edit-bypass-01234-vr
-Title: "Edit Bypass 01234 Vital Records"
+Title: "Value Set - Edit Bypass 01234 Vital Records"
 Description: "A subset of code values (0, 1, 2, 3, and 4) use to indicate the outcome of data validation assessment for unusual data values.
 
 Mapping to IJE codes [here](ConceptMap-ConceptMapEditBypass01234VitalRecords.html)."

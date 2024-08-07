@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemIJEVitalRecords
 Id: codesystem-ije-vr
-Title: "Placeholder Code System for IJE in Vital Records"
+Title: "Code System - Placeholder Code System for IJE in Vital Records"
 Description: "IJE Code System Placeholder is needed to provide a URL upon which to anchor concept maps.
 This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * ^caseSensitive = false

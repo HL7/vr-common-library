@@ -1,6 +1,6 @@
 ValueSet: ValueSetHispanicOriginVitalRecords
 Id: ValueSet-hispanic-origin-vr
-Title: "HispanicOrigin Vital Records"
+Title: "Value Set - HispanicOrigin Vital Records"
 Description: "This valueset contains the set of codes used to represent NCHS HispanicOrigin.
 
 

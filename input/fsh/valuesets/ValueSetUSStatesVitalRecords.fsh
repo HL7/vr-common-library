@@ -1,6 +1,6 @@
 ValueSet: ValueSetUSStatesVitalRecords
 Id: ValueSet-usstates-vr
-Title: "US States Vital Records"
+Title: "Value Set - US States Vital Records"
 Description: "This valueset contains the set of 2 Letter codes used to represent the 50 US States and DC"
 * ^status = #active
 * ^version = "1.0.0"

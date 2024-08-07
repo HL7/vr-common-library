@@ -1,6 +1,6 @@
 ValueSet: ValueSetMaritalStatusVitalRecords
 Id: ValueSet-marital-status-vr
-Title: "Marital Status Vital Records"
+Title: "Value Set - Marital Status Vital Records"
 Description: "The set of codes used to indicate the marital status of the decedent
 
 Note: 'Domestic Partnership' is not supported by NCHS and will be mapped to 'U' unknown

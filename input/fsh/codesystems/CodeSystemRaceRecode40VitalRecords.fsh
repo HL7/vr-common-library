@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemRaceRecode40VitalRecords
 Id: CodeSystem-race-recode-40-vr
-Title: "Race Recode 40 Vital Records"
+Title: "Code System - Race Recode 40 Vital Records"
 Description: "Race Recode 40
 This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * ^caseSensitive = true

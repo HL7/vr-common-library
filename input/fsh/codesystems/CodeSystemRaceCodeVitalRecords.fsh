@@ -1,6 +1,6 @@
 CodeSystem: CodeSystemRaceCodeVitalRecords
 Id: CodeSystem-race-code-vr
-Title: "Race Code Vital Records"
+Title: "Code System - Race Code Vital Records"
 Description: "RaceCode from [Appendix E Excel Race Code List Update 2001](https://www.cdc.gov/nchs/data/dvs/Appendix_E_Excel_Race_Code_List_Update_2011.xls).
 This codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere."
 * ^caseSensitive = true

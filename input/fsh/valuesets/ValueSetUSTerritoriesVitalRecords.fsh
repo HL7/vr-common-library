@@ -1,6 +1,6 @@
 ValueSet: ValueSetUSTerritoriesVitalRecords
 Id: ValueSet-usterritories-vr
-Title: "US Territories Vital Records"
+Title: "Value Set - US Territories Vital Records"
 Description: "This valueset contains the set of 2 Letter codes used to represent US Territories"
 * ^status = #active
 * ^version = "1.0.0"

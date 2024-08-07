@@ -1,7 +1,7 @@
 
 ValueSet: ValueSetRaceRecode40VitalRecords
 Id: ValueSet-race-recode-40-vr
-Title: "Race Recode 40 Vital Records"
+Title: "Value Set - Race Recode 40 Vital Records"
 Description: "This valueset contains the set of codes used to represent NCHS Race Recode 40.
 
 

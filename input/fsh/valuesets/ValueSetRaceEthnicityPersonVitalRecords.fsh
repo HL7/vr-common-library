@@ -1,6 +1,6 @@
 ValueSet: ValueSetInputRaceAndEthnicityPersonVitalRecords
 Id: ValueSet-input-race-and-ethnicity-person-vr
-Title: "Input Race and Ethnicity Person Vital Records"
+Title: "Value Set - Input Race and Ethnicity Person Vital Records"
 Description: "This valueset contains codes that represent persons for whom input race and ethnicity can be reported."
 * ^experimental = false
 * ^status = #active 
