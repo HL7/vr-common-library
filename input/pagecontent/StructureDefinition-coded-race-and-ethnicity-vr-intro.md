@@ -788,8 +788,8 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>First Edited Code</td>
   <td>RACE1E</td>
   <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
-  <td></td>
-  <td>-</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
