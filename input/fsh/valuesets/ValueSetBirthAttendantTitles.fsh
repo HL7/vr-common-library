@@ -8,7 +8,8 @@ This IG is the primary source for valuesets for use in vital records.
 Mapping to IJE codes [here](ConceptMap-ConceptMapBirthAttendantTitlesVitalRecords.html)."
 * ^experimental = false
 * insert SNOMEDCopyright
-* $sct#112247003 "Medical Doctor"
+//* $sct#112247003 "Medical Doctor" -- retired
+* $sct#309343006 "Medical Doctor"
 * $sct#76231001 "Osteopath"
 * $sct#445521000124102 "Advanced Practice Midwife"
 * $sct#445531000124104 "Lay Midwife"
