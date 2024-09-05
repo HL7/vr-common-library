@@ -6,7 +6,7 @@
 id: hl7.fhir.us.vr-common-library
 canonical: http://hl7.org/fhir/us/vr-common-library
 name: VitalRecordsCommonLibrary
-title: Vital Records Common Library (VRCL) STU2-ballot
+title: Vital Records Common Library (VRCL) FHIR Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
 status: trial-use
 version: 2.0.0
