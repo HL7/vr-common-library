@@ -37,7 +37,7 @@ Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birt
 Alias: $v3-Ethnicity_1 = http://terminology.hl7.org/ValueSet/v3-Ethnicity
 //Alias: $ValueSet-contributory-tobacco-use = ValueSetContributoryTobaccoUse //http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-contributory-tobacco-use
 //Alias: $ValueSet-certifier-types = ValueSetCertifierTypes // http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types
-Alias: $IJE = [[Canonical(CodeSystemIJEVitalRecords)]] //  http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr
+Alias: $IJE = http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr
 
 
 

@@ -16,7 +16,7 @@ dependencies:
     version: 5.0.1
     id: hl7fhiruscore
   us.nlm.vsac:
-    version: 0.17.0
+    version: 0.19.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
     id: usnlmvsac
   us.cdc.phinvads:
@@ -25,7 +25,7 @@ dependencies:
     id: uscdcphinvads
 
 copyrightYear: 2023+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: STU2
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
