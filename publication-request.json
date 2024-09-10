@@ -2,8 +2,8 @@
 	"package-id": "hl7.fhir.us.vr-common-library",
 	"version": "2.0.0",
 	"path": "http://hl7.org/fhir/us/vr-common-library/STU2",
-	"mode": "working",
+	"mode": "milestone",
 	"status": "trial-use",
-	"sequence": "STU 2",
+	"sequence": "STU2",
 	"desc": "Update to STU 2"
 }
