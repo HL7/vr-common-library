@@ -12,4 +12,5 @@ This codesystem is only for use in the vital records use cases supported by this
 * ^useContext.code.display = "Vital Statistics"
 * ^useContext.valueCodeableConcept.text = "Vital Statistics"
 * ^status = #active 
+* ^valueSet = "http://hl7.org/fhir/us/vr-common-library/ValueSet/ije-vr|1.0.0"
 
