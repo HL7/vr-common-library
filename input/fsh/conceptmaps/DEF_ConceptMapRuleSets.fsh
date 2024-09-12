@@ -9,7 +9,7 @@ RuleSet: ConceptMapIntro(name, vsname)
 * useContext.valueCodeableConcept.text = "for IJE to FHIR alignment"
 * jurisdiction = urn:iso:std:iso:3166#US
 * purpose = "To help implementers map from IJE to FHIR Vocabulary"
-* sourceCanonical = "#IJE"
+* sourceCanonical = Canonical(ValueSetIJEVitalRecords)
 * targetCanonical = Canonical({vsname})
 
 RuleSet: MapConcept(code, display, targetcode, targetdisplay)
