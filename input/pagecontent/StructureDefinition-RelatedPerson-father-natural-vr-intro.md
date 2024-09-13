@@ -101,7 +101,7 @@
   <td>279</td>
   <td>Father's Social Security Number</td>
   <td>DAD_SSN</td>
-  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -245,7 +245,7 @@
   <td>266</td>
   <td>Father's Social Security Number</td>
   <td>DAD_SSN</td>
-  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”</td>
   <td>string</td>
   <td></td>
 </tr>

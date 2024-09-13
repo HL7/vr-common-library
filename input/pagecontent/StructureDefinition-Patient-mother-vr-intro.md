@@ -76,7 +76,7 @@
   <td>19</td>
   <td>Birthplace of Mother--Country</td>
   <td>BPLACEC_CNT</td>
-  <td>extension[birthPlace].value[x].country </td>
+  <td>extension[birthPlace].value[x].country</td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
 </tr>
@@ -155,7 +155,7 @@
 <tr>
   <td style='text-align: center'>Natality</td>
   <td>257</td>
-  <td>Mother's Surname Suffix </td>
+  <td>Mother's Surname Suffix</td>
   <td>MOMSUFFX</td>
   <td>name.suffix, <br />name.use = official </td>
   <td>string</td>
@@ -204,7 +204,7 @@
   <td>*NO IJE MAPPING*</td>
   <td>gender</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender] </td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -319,7 +319,7 @@
   <td>278</td>
   <td>Mother's Social Security Number</td>
   <td>MOM_SSN</td>
-  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -454,7 +454,7 @@
   <td>333</td>
   <td>Mother's Medical Record Number</td>
   <td>MOM_MED_REC_NUM</td>
-  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR” </td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -544,7 +544,7 @@
   <td>19</td>
   <td>Mother's Birthplace--Country</td>
   <td>BPLACEC_CNT</td>
-  <td>extension[birthPlace].value[x].country </td>
+  <td>extension[birthPlace].value[x].country</td>
   <td>string</td>
   <td><a href='ValueSet-ValueSet-residence-country-vr.html'>ValueSetResidenceCountryVitalRecords</a></td>
 </tr>
@@ -672,7 +672,7 @@
   <td>*NO IJE MAPPING*</td>
   <td>gender</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender] </td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -758,7 +758,7 @@
 <tr>
   <td style='text-align: center'>Fetal Death</td>
   <td>256</td>
-  <td>Mother's Residence City/Town/Place (literal) </td>
+  <td>Mother's Residence City/Town/Place (literal)</td>
   <td>CITYTXT</td>
   <td>address.city</td>
   <td>string</td>
@@ -787,7 +787,7 @@
   <td>265</td>
   <td>Mother's Social Security Number</td>
   <td>MOM_SSN</td>
-  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” </td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS”</td>
   <td>string</td>
   <td></td>
 </tr>

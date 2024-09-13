@@ -48,9 +48,9 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>2</td>
   <td>State, U.S. Territory or Canadian Province of Birth (Infant) - code</td>
   <td>BSTATE</td>
-  <td>extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId]</td>
+  <td>extension[birthPlace].value[x].state or extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId]</td>
   <td>string</td>
-  <td><a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td>
+  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> in state field or <a href='ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> in extension</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -77,7 +77,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>*NO IJE MAPPING*</td>
   <td>gender</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender] </td>
+  <td><a href='https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See [Note on Gender]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -210,7 +210,7 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
   <td>332</td>
   <td>Infant's Medical Record Number</td>
   <td>INF_MED_REC_NUM</td>
-  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR” </td>
+  <td>identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”MR”</td>
   <td>string</td>
   <td></td>
 </tr>

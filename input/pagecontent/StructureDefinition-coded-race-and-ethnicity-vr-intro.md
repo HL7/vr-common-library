@@ -930,7 +930,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td style='text-align: center'>Mortality</td>
   <td>160</td>
   <td>Hispanic</td>
-  <td>DETHNICE </td>
+  <td>DETHNICE</td>
   <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityDecedent</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>

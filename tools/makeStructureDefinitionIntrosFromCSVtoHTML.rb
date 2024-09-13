@@ -96,6 +96,7 @@ vFormsMappingSpreadsheet = ARGV[2]
 def gen_aliases
   aliases={}
   File.foreach(Dir.pwd + "/input/includes/markdown-link-references.md", chomp: true) do |line|
+      next if line.start_with?('<!-', '{%')|| line.strip.empty?
       parts = line.split(':',2)
       url =parts[1][1..] if !parts[1].nil?
       link = parts[0][1..-2]
