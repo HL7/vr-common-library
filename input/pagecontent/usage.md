@@ -190,6 +190,6 @@ Countries are consistently represented using two letter postal codes bound to a 
 [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) profile conformance requires that gender be provided.   A value of 'unknown' will satisfy this requirement.    Complete vital record submissions may fail FHIR validation due to lack of a value for gender. There is no IJE field that is mapped to the Patient.gender field.
 
 ### Handling of Edit Flags
-TBD
+Edit flags supports validation as part of the Jurisdiction to NCHS use case for submission of birth, fetal death, and death records and can be ignored for other use cases. For details on the use of edit flags see the use-case specific FHIR Implementation Guides.
 
 {% include markdown-link-references.md %}
