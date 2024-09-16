@@ -1,5 +1,5 @@
 EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
-                For documentation on their use see referenceTBD.
+                NCHS will issue instructions regarding their use as need arises.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).
 <style>
  .context-menu {cursor: context-menu; color: #438bca;}
