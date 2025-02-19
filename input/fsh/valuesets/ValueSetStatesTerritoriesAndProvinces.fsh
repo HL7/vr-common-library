@@ -2,7 +2,7 @@ ValueSet: ValueSetStatesTerritoriesAndProvincesVitalRecords
 Id: ValueSet-states-territories-provinces-vr
 Title: "Value Set - States, Territories and Provinces Vital Records"
 Description: "This valueset contains the set of codes used to represent 2 Letter States and Provinces"
-* ^copyright = "The Canadian Province codesystem is copright Canada Health Infoway"
+* ^copyright = "The Canadian Province codesystem is copyright Canada Health Infoway"
 * ^status = #active
 * ^experimental = false
 //* insert USStatesAndTerritories
@@ -78,5 +78,7 @@ Description: "This valueset contains the set of codes used to represent 2 Letter
 * $provincesCS#QC	"Quebec" 
 * $provincesCS#SK	"Saskatchewan" 
 * $provincesCS#YT	"Yukon"
+* CodeSystemIJEVitalRecords#ZZ "UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY"
+* CodeSystemIJEVitalRecords#XX "COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA"
 //* codes from system CodeSystemCanadianProvincesVitalRecords
-* $v3-NullFlavor#UNK "Unknown"
+// * $v3-NullFlavor#UNK "Unknown"
