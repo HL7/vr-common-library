@@ -1,5 +1,6 @@
 ### Unpublished Changes 
 * [FHIR-49764](https://jira.hl7.org/browse/FHIR-49764): IJE has two distinct 2-letter codoes for unknown.  The [States, Territories, and Provinces Value Set](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html) has incorporated a null flavor code of UNK since its inception in VRDR STU2, but that isn't adequate to represent IJE content.  This change needs to be propogated to VRDR and BFDR that reference this value set.
+* [FHIR-49937](https://jira.hl7.org/browse/FHIR-49937):  IJE does not represent time zones.  FHIR requires a time zone.   Added a row to the [usage](usage.html) documentation of the use of partial date times to guide usage of partial date time components for IJE conversion to FHIR.
 
 ### STU 2.0 Changes 
 * Most of the changes since STU1.1 relate to [Vital Records IG Harmonization](vr_ig_harmonization.html).  For a summary of harmonization-related changes see  the [Content Transitions](content-transitions.html) page.

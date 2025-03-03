@@ -76,7 +76,16 @@ The following table illustrates the appropriate use of a dateTime field with a p
         <td>12</td>
         <td>23</td>
         <td>1328. (uses local time)</td>
-        <td>Correct usage. </td>
+        <td>Correct usage if data originates in FHIR and Time Zone is known. </td>
+      </tr>
+      <tr>
+        <td>(none)</td>
+        <td>2023-12-23-1328</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>23</td>
+        <td>1328. (uses local time)</td>
+        <td>Correct usage for converting IJE content (where time zone is not known) to FHIR. </td>
       </tr>
      <tr>
       <td>2023-12-23</td>
