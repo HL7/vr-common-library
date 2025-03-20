@@ -60,4 +60,7 @@ Description: "This valueset contains the set of codes used to represent 2 Letter
 * $statesCS#PR  "Puerto Rico"
 * $statesCS#VI  "Virgin Islands"
 * CodeSystemJurisdictionsVitalRecords#YC "New York City"
+* CodeSystemJurisdictionsVitalRecords#TT "NCHS Test Jurisdiction"
+* CodeSystemJurisdictionsVitalRecords#TS "STEVE Test Jurisdiction"
+* CodeSystemJurisdictionsVitalRecords#ZZ "Unknown Jurisdiction"
 * ^experimental = false
