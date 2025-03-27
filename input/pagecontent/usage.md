@@ -183,6 +183,204 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 * If the date of birth is known, but the time of birth is unknown, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] and [ExtensionPartialDateTimeVitalRecords] extensions should be omitted. Example: [patient-child-vr-babyg-quinn-common-1]
 * If the date of birth is partially known, the [ExtensionPartialDateTimeVitalRecords] extension should be used to express this.  If the partial [date](https://hl7.org/fhir/R4B/datatypes.html#date) can be expressed within the birthDate field it should be included there as well.  The [PatientBirthTime] extension should be omitted. Example: [patient-child-vr-babyg-quinn-common-2]
 
+<table style="font-weight: 400; width: 711px;">
+<tbody>
+<tr>
+<td style="width: 23px;">
+<p>&nbsp;</p>
+</td>
+<td style="width: 185px;">
+<p>&nbsp;</p>
+</td>
+<td style="width: 185px;">&nbsp;</td>
+<td style="width: 104px;">
+<p>date</p>
+</td>
+<td style="width: 203px;">
+<p>partialDateTime</p>
+</td>
+<td style="width: 162px;">
+<p>dateTime</p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>&nbsp;#</p>
+</td>
+<td style="width: 185px;">
+<p><strong>Case</strong></p>
+</td>
+<td style="width: 185px;">&nbsp;</td>
+<td style="width: 104px;">
+<p><strong>birthDate</strong></p>
+</td>
+<td style="width: 203px;">
+<p><strong>birthDate.ext[partialDateTime]</strong></p>
+</td>
+<td style="width: 162px;">
+<p><strong>Birthdate.ext[birthtime]</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>0</p>
+</td>
+<td style="width: 185px;">
+<p>Complete Birth Date and Time (with Time Zone)</p>
+</td>
+<td style="width: 185px;">
+<p>2023-12-23 T13:28:17-05:00</p>
+</td>
+<td style="width: 104px;">&nbsp;23-12-23</td>
+<td style="width: 203px; text-align: center;">&nbsp;-</td>
+<td style="width: 162px;">&nbsp;2023-12-23 T13:28:17-05:00.&nbsp; <strong>This is the only case where the birthTime adds value.&nbsp; Perhaps this is the only place it should be rendered in FHIR?&nbsp; This cannot be round trippped through IJE.</strong></td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>1</p>
+</td>
+<td style="width: 185px;">
+<p>Birth Date and Birth Time without Time Zone (from IJE conversion)</p>
+</td>
+<td style="width: 185px;">
+<p>2023-12-23 13:28:17&nbsp;</p>
+</td>
+<td style="width: 104px;">23-12-23&nbsp;</td>
+<td style="width: 203px;">Represent all components of partial date and time.&nbsp;</td>
+<td style="width: 162px;">
+<p>-</p>
+<p>This can be round tripped through IJE.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>2</p>
+</td>
+<td style="width: 185px;">
+<p>Only Date</p>
+</td>
+<td style="width: 185px;">
+<p>2020-12-02</p>
+</td>
+<td style="width: 104px;">
+<p>2020-12-02</p>
+</td>
+<td style="width: 203px;">
+<p style="text-align: center;">-</p>
+</td>
+<td style="width: 162px;">
+<p style="text-align: center;">2020-12-02 or absent.&nbsp; &nbsp;<strong>This doesn't add any value, so better for it to be absent.</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>3</p>
+</td>
+<td style="width: 185px;">
+<p>Only Time (including TZ)</p>
+</td>
+<td style="width: 185px;">
+<p>01:01:01-05:00</p>
+</td>
+<td style="width: 104px;">
+<p style="text-align: center;">-</p>
+</td>
+<td style="width: 203px;">
+<p>Include HH(01), MM(01), SS(01)</p>
+</td>
+<td style="width: 162px;">
+<p>Can&rsquo;t represent a time only in a dateTime.&nbsp; The TZ can't be represented in the partialDateTime extension.&nbsp;&nbsp;<strong>Perhaps the library should only support what can be supported in a dateTime.</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>4</p>
+</td>
+<td style="width: 185px;">
+<p>Only time (missing TZ).&nbsp; No real difference with #3.</p>
+</td>
+<td style="width: 185px;">&nbsp;01:01:01</td>
+<td style="width: 104px;">
+<p style="text-align: center;">-</p>
+</td>
+<td style="width: 203px;">
+<p>&nbsp;</p>
+<p>Include HH(01), MM(01), SS(01)</p>
+</td>
+<td style="width: 162px;">
+<p>Can&rsquo;t represent a time only in a dateTime.&nbsp; The TZ can't be represented in the partialDateTime extension.&nbsp;&nbsp;<strong>Perhaps the library should only support what can be supported in a dateTime.</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>5</p>
+</td>
+<td style="width: 185px;">
+<p>Partial Date with no time</p>
+</td>
+<td style="width: 185px;">&nbsp;2023-12</td>
+<td style="width: 104px;">
+<p>2023-12</p>
+</td>
+<td style="width: 203px;">
+<p>-</p>
+</td>
+<td style="width: 162px;">
+<p>Usual rules for partial dates.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>6</p>
+</td>
+<td style="width: 185px;">
+<p>Partial Date with no time</p>
+</td>
+<td style="width: 185px;">&nbsp;2023-XX-23</td>
+<td style="width: 104px;">&nbsp;2023</td>
+<td style="width: 203px;">&nbsp;Include YYYY(2023), DD(23)</td>
+<td style="width: 162px;">&nbsp;Usual rules for partial dates.</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>7</p>
+</td>
+<td style="width: 185px;">
+<p>Partial Date with time (without TZ)</p>
+</td>
+<td style="width: 185px;">&nbsp;2023-XX-23 13:28:17&nbsp;</td>
+<td style="width: 104px;">
+<p>2023</p>
+</td>
+<td style="width: 203px;">
+<p>Include date components and time compnents</p>
+</td>
+<td style="width: 162px;">
+<p>Can&rsquo;t represent a time only in a dateTime.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 23px;">
+<p>8</p>
+</td>
+<td style="width: 185px;">
+<p>Partial Date with time (with TZ) no real difference with #6</p>
+</td>
+<td style="width: 185px;">2023-XX-23 13:28:17-05:00&nbsp;&nbsp;</td>
+<td style="width: 104px;">
+<p>2023</p>
+</td>
+<td style="width: 203px;">
+<p>Include date components and time compnents</p>
+</td>
+<td style="width: 162px;">
+<p>Can&rsquo;t represent a time only in a dateTime.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ### City Codes
 FHIR [addresses](https://hl7.org/fhir/R4B/datatypes.html#Address) support a string value for city. The death record submission requires a 5 digit coded value, so the IG defines an extension [ExtensionCityCodeVitalRecords] for this purpose. The code should be selected to match the literal content of the city field. As of the date of publication, these codes should be in accordance with the [NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014](https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf).
 
