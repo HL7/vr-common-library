@@ -56,16 +56,3 @@ Usage: #example
 * insert babyquinncommon
 * birthDate = "2019-02-12"
 
-Instance: patient-child-vr-babyg-quinn-common-2
-InstanceOf: PatientChildVitalRecords
-Title: "Patient - Child example [Baby G Quinn] - partial birth date"
-Description: "Example of Patient-child-vr profile (Baby G Quinn) with Reported Parent Age at Delivery with partial date of birth - 2nd of some month in 2019.
-Both the birthTime extension and the value for the birthDate field are omitted."
-Usage: #example
-* insert babyquinncommon
-* birthDate 
-  * extension[partialDateTime]
-    * extension[day].valueUnsignedInt = 02
-    * extension[month].valueUnsignedInt.extension[dataabsent].valueCode = #unknown
-    * extension[year].valueUnsignedInt = 2019
-    * extension[time].valueTime.extension[dataabsent].valueCode = #unknown

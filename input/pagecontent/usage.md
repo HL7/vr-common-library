@@ -178,10 +178,10 @@ The following table illustrates the appropriate use of a dateTime field with a p
 
 
 ### Birth Date and Time
-The [USCorePatient] profile provides a field for capturing the patient's birthdate. Within the vital records use cases, the date and time of birth are needed, as well as the ability to capture partial dates.  The date and time of birth should be captured as follows:
+The [USCorePatient] profile provides a field for capturing the patient's birthdate. Within the vital records use cases, the date and time of birth are needed.  The published IG includes the ability to represent partial dates and times, but the use of this capability has been deprecated.  The content of the partial date and time extensions should be ignored by all receivers.  This extension will be removed when the IG is next republished.  The date and time of birth should be captured as follows:
 * If both the date and time of birth are known, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should include the birth date and time encoded as a FHIR [dateTime](https://hl7.org/fhir/R4B/datatypes.html#dateTime). Example: [patient-child-vr-babyg-quinn-common].
-* If the date of birth is known, but the time of birth is unknown, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] and [ExtensionPartialDateTimeVitalRecords] extensions should be omitted. Example: [patient-child-vr-babyg-quinn-common-1]
-* If the date of birth is partially known, the [ExtensionPartialDateTimeVitalRecords] extension should be used to express this.  If the partial [date](https://hl7.org/fhir/R4B/datatypes.html#date) can be expressed within the birthDate field it should be included there as well.  The [PatientBirthTime] extension should be omitted. Example: [patient-child-vr-babyg-quinn-common-2]
+* If the date of birth is known, but the time of birth is unknown, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should be omitted. Example: [patient-child-vr-babyg-quinn-common-1]
+
 
 <table style="font-weight: 400; width: 711px;">
 <tbody>
@@ -192,15 +192,14 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <td style="width: 185px;">
 <p>&nbsp;</p>
 </td>
-<td style="width: 185px;">&nbsp;</td>
+<td style="width: 185px; text-align: center;" colspan="3">IDOB</td>
+<td style="width: 184.906px; text-align: center;">TB</td>
+<td style="width: 185px;">&nbsp;dateTime</td>
 <td style="width: 104px;">
 <p>date</p>
 </td>
-<td style="width: 203px;">
-<p>partialDateTime</p>
-</td>
 <td style="width: 162px;">
-<p>dateTime</p>
+<p>comment</p>
 </td>
 </tr>
 <tr>
@@ -210,47 +209,40 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <td style="width: 185px;">
 <p><strong>Case</strong></p>
 </td>
-<td style="width: 185px;">&nbsp;</td>
+<td style="width: 185px;">YYYY</td>
+<td style="width: 185px;">MM</td>
+<td style="width: 185.094px;">DD</td>
+<td style="width: 184.906px;">HHMM</td>
+<td style="width: 185px;">&nbsp;<strong>Birthdate.ext[birthtime]</strong></td>
 <td style="width: 104px;">
 <p><strong>birthDate</strong></p>
 </td>
-<td style="width: 203px;">
-<p><strong>birthDate.ext[partialDateTime]</strong></p>
-</td>
 <td style="width: 162px;">
-<p><strong>Birthdate.ext[birthtime]</strong></p>
+<p>Comment</p>
 </td>
 </tr>
 <tr>
-<td style="width: 23px;">
-<p>0</p>
-</td>
+<td style="width: 23px;">&nbsp;</td>
 <td style="width: 185px;">
 <p>Complete Birth Date and Time (with Time Zone)</p>
 </td>
 <td style="width: 185px;">
+<p>2023</p>
+</td>
+<td style="width: 185px;">
+<p>12</p>
+</td>
+<td style="width: 185.094px;">
+<p>23</p>
+</td>
+<td style="width: 184.906px;">
+<p>1328</p>
+</td>
+<td style="width: 185px;">
 <p>2023-12-23 T13:28:17-05:00</p>
 </td>
-<td style="width: 104px;">&nbsp;23-12-23</td>
-<td style="width: 203px; text-align: center;">&nbsp;-</td>
-<td style="width: 162px;">&nbsp;2023-12-23 T13:28:17-05:00.&nbsp; <strong>This is the only case where the birthTime adds value.&nbsp; Perhaps this is the only place it should be rendered in FHIR?&nbsp; This cannot be round trippped through IJE.</strong></td>
-</tr>
-<tr>
-<td style="width: 23px;">
-<p>1</p>
-</td>
-<td style="width: 185px;">
-<p>Birth Date and Birth Time without Time Zone (from IJE conversion)</p>
-</td>
-<td style="width: 185px;">
-<p>2023-12-23 13:28:17&nbsp;</p>
-</td>
-<td style="width: 104px;">23-12-23&nbsp;</td>
-<td style="width: 203px;">Represent all components of partial date and time.&nbsp;</td>
-<td style="width: 162px;">
-<p>-</p>
-<p>This can be round tripped through IJE.&nbsp;</p>
-</td>
+<td style="width: 104px;">&nbsp;2023-12-23</td>
+<td style="width: 162px;">This is the expected case.&nbsp;<br /><br />When converting from IJE to FHIR, us the TB as local time, and choose an arbitrary valid timezone offset.</td>
 </tr>
 <tr>
 <td style="width: 23px;">
@@ -260,16 +252,25 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p>Only Date</p>
 </td>
 <td style="width: 185px;">
-<p>2020-12-02</p>
+<p>2023</p>
 </td>
-<td style="width: 104px;">
-<p>2020-12-02</p>
+<td style="width: 185px;">
+<p>12</p>
 </td>
-<td style="width: 203px;">
+<td style="width: 185.094px;">
+<p>23</p>
+</td>
+<td style="width: 184.906px;">
+<p>9999</p>
+</td>
+<td style="width: 185px;">
 <p style="text-align: center;">-</p>
 </td>
+<td style="width: 104px;">
+<p>2023-12-23</p>
+</td>
 <td style="width: 162px;">
-<p style="text-align: center;">2020-12-02 or absent.&nbsp; &nbsp;<strong>This doesn't add any value, so better for it to be absent.</strong></p>
+<p style="text-align: left;">Birthtime is required, so if it is absent that is a statement that it is unknown.</p>
 </td>
 </tr>
 <tr>
@@ -277,19 +278,20 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p>3</p>
 </td>
 <td style="width: 185px;">
-<p>Only Time (including TZ)</p>
+<p>Only Time&nbsp;</p>
 </td>
-<td style="width: 185px;">
-<p>01:01:01-05:00</p>
+<td style="width: 185px;">&nbsp;</td>
+<td style="width: 185px;">&nbsp;</td>
+<td style="width: 185.094px;">&nbsp;</td>
+<td style="width: 184.906px;">&nbsp;1328</td>
+<td style="width: 185px; text-align: center;">
+<p>NA</p>
 </td>
-<td style="width: 104px;">
-<p style="text-align: center;">-</p>
-</td>
-<td style="width: 203px;">
-<p>Include HH(01), MM(01), SS(01)</p>
+<td style="width: 104px; text-align: center;">
+<p style="text-align: center;">NA</p>
 </td>
 <td style="width: 162px;">
-<p>Can&rsquo;t represent a time only in a dateTime.&nbsp; The TZ can't be represented in the partialDateTime extension.&nbsp;&nbsp;<strong>Perhaps the library should only support what can be supported in a dateTime.</strong></p>
+<p>Invalid.&nbsp; Both date and time are required.&nbsp; NCHS will not accept.</p>
 </td>
 </tr>
 <tr>
@@ -297,84 +299,18 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p>4</p>
 </td>
 <td style="width: 185px;">
-<p>Only time (missing TZ).&nbsp; No real difference with #3.</p>
+<p>Partial Date with time</p>
 </td>
-<td style="width: 185px;">&nbsp;01:01:01</td>
-<td style="width: 104px;">
-<p style="text-align: center;">-</p>
-</td>
-<td style="width: 203px;">
-<p>&nbsp;</p>
-<p>Include HH(01), MM(01), SS(01)</p>
-</td>
-<td style="width: 162px;">
-<p>Can&rsquo;t represent a time only in a dateTime.&nbsp; The TZ can't be represented in the partialDateTime extension.&nbsp;&nbsp;<strong>Perhaps the library should only support what can be supported in a dateTime.</strong></p>
-</td>
-</tr>
-<tr>
-<td style="width: 23px;">
-<p>5</p>
-</td>
-<td style="width: 185px;">
-<p>Partial Date with no time</p>
-</td>
-<td style="width: 185px;">&nbsp;2023-12</td>
-<td style="width: 104px;">
-<p>2023-12</p>
-</td>
-<td style="width: 203px;">
-<p>-</p>
+<td style="width: 185px;">2023</td>
+<td style="width: 185px;">12</td>
+<td style="width: 185.094px;">99</td>
+<td style="width: 184.906px;">&nbsp;1328</td>
+<td style="width: 185px; text-align: center;">NA</td>
+<td style="width: 104px; text-align: center;">
+<p style="text-align: center;">NA</p>
 </td>
 <td style="width: 162px;">
-<p>Usual rules for partial dates.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 23px;">
-<p>6</p>
-</td>
-<td style="width: 185px;">
-<p>Partial Date with no time</p>
-</td>
-<td style="width: 185px;">&nbsp;2023-XX-23</td>
-<td style="width: 104px;">&nbsp;2023</td>
-<td style="width: 203px;">&nbsp;Include YYYY(2023), DD(23)</td>
-<td style="width: 162px;">&nbsp;Usual rules for partial dates.</td>
-</tr>
-<tr>
-<td style="width: 23px;">
-<p>7</p>
-</td>
-<td style="width: 185px;">
-<p>Partial Date with time (without TZ)</p>
-</td>
-<td style="width: 185px;">&nbsp;2023-XX-23 13:28:17&nbsp;</td>
-<td style="width: 104px;">
-<p>2023</p>
-</td>
-<td style="width: 203px;">
-<p>Include date components and time compnents</p>
-</td>
-<td style="width: 162px;">
-<p>Can&rsquo;t represent a time only in a dateTime.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 23px;">
-<p>8</p>
-</td>
-<td style="width: 185px;">
-<p>Partial Date with time (with TZ) no real difference with #6</p>
-</td>
-<td style="width: 185px;">2023-XX-23 13:28:17-05:00&nbsp;&nbsp;</td>
-<td style="width: 104px;">
-<p>2023</p>
-</td>
-<td style="width: 203px;">
-<p>Include date components and time compnents</p>
-</td>
-<td style="width: 162px;">
-<p>Can&rsquo;t represent a time only in a dateTime.</p>
+<p>Invalid. All components of date are required.&nbsp; NCHS will not accept this record.</p>
 </td>
 </tr>
 </tbody>
