@@ -178,9 +178,11 @@ The following table illustrates the appropriate use of a dateTime field with a p
 
 
 ### Birth Date and Time
-The [USCorePatient] profile provides a field for capturing the patient's birthdate. Within the vital records use cases, the date and time of birth are needed.  The published IG includes the ability to represent partial dates and times, but the use of this capability has been deprecated.  The content of the partial date and time extensions should be ignored by all receivers.  This extension will be removed when the IG is next republished.  The date and time of birth should be captured as follows:
+The [USCorePatient] profile provides a field for capturing the patient's birthdate. Within the vital records use cases, the date and time of birth are needed.  The published IG includes the ability to represent partial dates and times, but the use of this capability has been *deprecated*.  The content of the partial date and time extensions should be ignored by all receivers.  This extension should be removed when the IG is next republished (see [FHIR-50422](https://jira.hl7.org/browse/FHIR-50422).  For submission of vital records to NCHS, use of the partialDateTime extension will trigger a business rule that will result in rejection of submissions.
+
+The date and time of birth should be captured as follows:
 * If both the date and time of birth are known, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should include the birth date and time encoded as a FHIR [dateTime](https://hl7.org/fhir/R4B/datatypes.html#dateTime). Example: [patient-child-vr-babyg-quinn-common].
-* If the date of birth is known, but the time of birth is unknown, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should be omitted. Example: [patient-child-vr-babyg-quinn-common-1]
+* If the date of birth is known, but the time of birth is unknown, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should be omitted. Example: [patient-child-vr-babyg-quinn-common-1].   Valid and invalid uses are desribed in the table below.
 
 
 <table style="font-weight: 400; width: 711px;">
@@ -242,7 +244,7 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p>2023-12-23 T13:28:17-05:00</p>
 </td>
 <td style="width: 104px;">&nbsp;2023-12-23</td>
-<td style="width: 162px;">This is the expected case.&nbsp;<br /><br />When converting from IJE to FHIR, us the TB as local time, and choose an arbitrary valid timezone offset.</td>
+<td style="width: 162px;"><strong>Valid</strong>.<br />This is the expected case.&nbsp;<br /><br />When converting from IJE to FHIR, us the TB as local time, and choose an arbitrary valid timezone offset.</td>
 </tr>
 <tr>
 <td style="width: 23px;">
@@ -270,8 +272,29 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p>2023-12-23</p>
 </td>
 <td style="width: 162px;">
-<p style="text-align: left;">Birthtime is required, so if it is absent that is a statement that it is unknown.</p>
+<p style="text-align: left;"><strong>Valid</strong>.<br />Birthtime is required, so if it is absent that is a statement that it is unknown.</p>
 </td>
+</tr>
+<tr>
+<td style="width: 23px;">&nbsp;</td>
+<td style="width: 185px;">
+<p>Only Date</p>
+</td>
+<td style="width: 185px;">
+<p>2023</p>
+</td>
+<td style="width: 185px;">
+<p>12</p>
+</td>
+<td style="width: 185.094px;">
+<p>23</p>
+</td>
+<td style="width: 184.906px;">
+<p>&lt;blank&gt;</p>
+</td>
+<td style="width: 185px;">-&nbsp;</td>
+<td style="width: 104px;">&nbsp;2023-12-23</td>
+<td style="width: 162px;">I<strong>nvalid</strong>.<br />Birthtime is required. When converting FHIR to IJE, absence of birthtime should indicate a TB of 9999.</td>
 </tr>
 <tr>
 <td style="width: 23px;">
@@ -280,9 +303,9 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <td style="width: 185px;">
 <p>Only Time&nbsp;</p>
 </td>
-<td style="width: 185px;">&nbsp;</td>
-<td style="width: 185px;">&nbsp;</td>
-<td style="width: 185.094px;">&nbsp;</td>
+<td style="width: 185px;">&nbsp;&lt;blank&gt;</td>
+<td style="width: 185px;">&nbsp;&lt;blank&gt;</td>
+<td style="width: 185.094px;">&nbsp;&lt;blank&gt;</td>
 <td style="width: 184.906px;">&nbsp;1328</td>
 <td style="width: 185px; text-align: center;">
 <p>NA</p>
@@ -291,7 +314,7 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p style="text-align: center;">NA</p>
 </td>
 <td style="width: 162px;">
-<p>Invalid.&nbsp; Both date and time are required.&nbsp; NCHS will not accept.</p>
+<p><strong>Invalid</strong>.&nbsp; <br />Both date and time are required.&nbsp; NCHS will not accept.</p>
 </td>
 </tr>
 <tr>
@@ -310,12 +333,11 @@ The [USCorePatient] profile provides a field for capturing the patient's birthda
 <p style="text-align: center;">NA</p>
 </td>
 <td style="width: 162px;">
-<p>Invalid. All components of date are required.&nbsp; NCHS will not accept this record.</p>
+<p><strong>Invalid</strong>. <br />All components of date are required.&nbsp; NCHS will not accept this record.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
 
 ### City Codes
 FHIR [addresses](https://hl7.org/fhir/R4B/datatypes.html#Address) support a string value for city. The death record submission requires a 5 digit coded value, so the IG defines an extension [ExtensionCityCodeVitalRecords] for this purpose. The code should be selected to match the literal content of the city field. As of the date of publication, these codes should be in accordance with the [NCHS Instruction Manual Part 8, Vital Records Geographic Classification, 2014](https://www.cdc.gov/nchs/data/dvs/IMP8_2014.pdf).
