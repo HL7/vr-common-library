@@ -184,7 +184,6 @@ The date and time of birth should be captured as follows:
 * If both the date and time of birth are known, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should include the birth date and time encoded as a FHIR [dateTime](https://hl7.org/fhir/R4B/datatypes.html#dateTime). Example: [patient-child-vr-babyg-quinn-common].
 * If the date of birth is known, but the time of birth is unknown, the Patient.birthDate field should include the birth [date](https://hl7.org/fhir/R4B/datatypes.html#date), and the [PatientBirthTime] extension should be omitted. Example: [patient-child-vr-babyg-quinn-common-1].   Valid and invalid uses are desribed in the table below.
 
-
 <table style="font-weight: 400; width: 711px;">
 <tbody>
 <tr>
@@ -224,7 +223,7 @@ The date and time of birth should be captured as follows:
 </td>
 </tr>
 <tr>
-<td style="width: 23px;">&nbsp;</td>
+<td style="width: 23px;">1&nbsp;</td>
 <td style="width: 185px;">
 <p>Complete Birth Date and Time (with Time Zone)</p>
 </td>
@@ -276,7 +275,7 @@ The date and time of birth should be captured as follows:
 </td>
 </tr>
 <tr>
-<td style="width: 23px;">&nbsp;</td>
+<td style="width: 23px;">3&nbsp;</td>
 <td style="width: 185px;">
 <p>Only Date</p>
 </td>
@@ -298,7 +297,7 @@ The date and time of birth should be captured as follows:
 </tr>
 <tr>
 <td style="width: 23px;">
-<p>3</p>
+<p>4</p>
 </td>
 <td style="width: 185px;">
 <p>Only Time&nbsp;</p>
@@ -319,7 +318,7 @@ The date and time of birth should be captured as follows:
 </tr>
 <tr>
 <td style="width: 23px;">
-<p>4</p>
+<p>5</p>
 </td>
 <td style="width: 185px;">
 <p>Partial Date with time</p>
