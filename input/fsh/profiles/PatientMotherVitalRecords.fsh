@@ -52,6 +52,7 @@ Description: "This Patient profile represents the woman who gave birth to, or de
   * postalCode ^short = "Zip code"
   * district ^short = "County literal"
   * city ^short = "City literal"
+  * use ^short = "Identifies the use of Mother's address, for residence=home and mailing=billing"
 * link
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "type"

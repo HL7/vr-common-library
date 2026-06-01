@@ -211,7 +211,7 @@
   <td>262</td>
   <td>Residence Street Number</td>
   <td>STNUM</td>
-  <td>address.extension[stnum]</td>
+  <td>address.extension[stnum]<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -220,7 +220,7 @@
   <td>263</td>
   <td>Residence Pre Directional</td>
   <td>PREDIR</td>
-  <td>address.extension[predir]</td>
+  <td>address.extension[predir]<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -229,7 +229,7 @@
   <td>264</td>
   <td>Residence Street name</td>
   <td>STNAME</td>
-  <td>address.extension[stname]</td>
+  <td>address.extension[stname]<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -238,7 +238,7 @@
   <td>265</td>
   <td>Residence Street designator</td>
   <td>STDESIG</td>
-  <td>address.extension[stdesig]</td>
+  <td>address.extension[stdesig]<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -247,7 +247,7 @@
   <td>266</td>
   <td>Residence Post Directional</td>
   <td>POSTDIR</td>
-  <td>address.extension[postdir]</td>
+  <td>address.extension[postdir]<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -256,7 +256,7 @@
   <td>267</td>
   <td>Residence Unit or Apartment Number</td>
   <td>UNUM</td>
-  <td>address.extension[unitnum]</td>
+  <td>address.extension[unitnum]<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -265,7 +265,7 @@
   <td>268</td>
   <td>Mother's Residence Street Address</td>
   <td>ADDRESS</td>
-  <td>address.line</td>
+  <td>address.line<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -274,7 +274,7 @@
   <td>269</td>
   <td>Mother's Residence Zip Code and Zip+4</td>
   <td>ZIPCODE</td>
-  <td>address.postalCode</td>
+  <td>address.postalCode<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -283,7 +283,7 @@
   <td>270</td>
   <td>Mother's Residence County (Literal)</td>
   <td>COUNTYTXT</td>
-  <td>address.district</td>
+  <td>address.district<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -292,7 +292,7 @@
   <td>271</td>
   <td>Mother's Residence City/Town (Literal)</td>
   <td>CITYTEXT</td>
-  <td>address.city</td>
+  <td>address.city<br />address.use = home</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -301,7 +301,7 @@
   <td>272</td>
   <td>State, U.S. Territory or Canadian Province of Residence (Mother) - literal</td>
   <td>STATETXT</td>
-  <td>address.state (expanded from 2 letter code)</td>
+  <td>address.state (expanded from 2 letter code)<br />address.use = home</td>
   <td>string</td>
   <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
 </tr>
@@ -310,7 +310,7 @@
   <td>273</td>
   <td>Mother's Residence Country (Literal)</td>
   <td>CNTRYTXT</td>
-  <td>address.country (expanded from 2 letter code)</td>
+  <td>address.country (expanded from 2 letter code)<br />address.use = home</td>
   <td>string</td>
   <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
 </tr>
@@ -346,7 +346,7 @@
   <td>309</td>
   <td>Mother's Mailing Address Street number</td>
   <td>MAIL_STNUM</td>
-  <td>address.extension[stnum]</td>
+  <td>address.extension[stnum]<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -355,7 +355,7 @@
   <td>310</td>
   <td>Mother's Mailing Address Pre Directional</td>
   <td>MAIL_PREDIR</td>
-  <td>address.extension[predir]</td>
+  <td>address.extension[predir]<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -364,7 +364,7 @@
   <td>311</td>
   <td>Mother's Mailing Address Street name</td>
   <td>MAIL_STNAME</td>
-  <td>address.extension[stname]</td>
+  <td>address.extension[stname]<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -373,7 +373,7 @@
   <td>312</td>
   <td>Mother's Mailing Address Street designator</td>
   <td>MAIL_STDESIG</td>
-  <td>address.extension[stdesig]</td>
+  <td>address.extension[stdesig]<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -382,7 +382,7 @@
   <td>313</td>
   <td>Mother's Mailing Address Post Directional</td>
   <td>MAIL_POSTDIR</td>
-  <td>address.extension[postdir]</td>
+  <td>address.extension[postdir]<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -391,7 +391,7 @@
   <td>314</td>
   <td>Mother's Mailing Address Unit or Apartment Number</td>
   <td>MAIL_UNUM</td>
-  <td>address.extension[unitnum]</td>
+  <td>address.extension[unitnum]<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -400,7 +400,7 @@
   <td>315</td>
   <td>Mother's Mailing Address Street Address</td>
   <td>MAIL_ADDRESS</td>
-  <td>address.line</td>
+  <td>address.line<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -409,7 +409,7 @@
   <td>316</td>
   <td>Mother's Mailing Address Zip Code and Zip+4</td>
   <td>MAIL_ZIPCODE</td>
-  <td>address.postalCode</td>
+  <td>address.postalCode<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -418,7 +418,7 @@
   <td>317</td>
   <td>Mother's Mailing Address County (Literal)</td>
   <td>MAIL_COUNTYTXT</td>
-  <td>address.district</td>
+  <td>address.district<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -427,7 +427,7 @@
   <td>318</td>
   <td>Mother's Mailing Address City/Town (Literal)</td>
   <td>MAIL_CITYTEXT</td>
-  <td>address.city</td>
+  <td>address.city<br />address.use = billing</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -436,7 +436,7 @@
   <td>319</td>
   <td>Mother's Mailing Address State (Literal)</td>
   <td>MAIL_STATETXT</td>
-  <td>address.state (expanded from 2 letter code)</td>
+  <td>address.state (expanded from 2 letter code)<br />address.use = billing</td>
   <td>string</td>
   <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
 </tr>
@@ -445,7 +445,7 @@
   <td>320</td>
   <td>Mother's Mailing Address Country (Literal)</td>
   <td>MAIL_CNTRYTXT</td>
-  <td>address.country (expanded from 2 letter code)</td>
+  <td>address.country (expanded from 2 letter code)<br />address.use = billing</td>
   <td>string</td>
   <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
 </tr>
