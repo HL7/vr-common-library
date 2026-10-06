@@ -6,3 +6,4 @@ Description: "A set of codes used to represent partial date/dateTime data absent
 * ^experimental = false
 * $v4-data-absent-reason#unknown "Unknown"
 * $v4-data-absent-reason#temp-unknown "Temporarily Unknown"
+* $v4-data-absent-reason#not-applicable "Not Applicable"
