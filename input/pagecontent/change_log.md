@@ -1,6 +1,11 @@
 ### Unpublished Changes 
 * [FHIR-49764](https://jira.hl7.org/browse/FHIR-49764): IJE has two distinct 2-letter codoes for unknown.  The [States, Territories, and Provinces Value Set](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html) has incorporated a null flavor code of UNK since its inception in VRDR STU2, but that isn't adequate to represent IJE content.  This change needs to be propogated to VRDR and BFDR that reference this value set.
 * [FHIR-49937](https://jira.hl7.org/browse/FHIR-49937):  IJE does not represent time zones.  FHIR requires a time zone.   Added a row to the [usage](usage.html) documentation of the use of partial date times to guide usage of partial date time components for IJE conversion to FHIR.
+* [FHIR-50068](https://jira.hl7.org/browse/FHIR-50068): Added codes to represent test jurisdictions, codes TT, TS (test for STEVE) and ZZ (unknown jurisdiction) within 
+[Code System - Jurisdictions Vital Records](https://build.fhir.org/ig/HL7/vr-common-library/en/CodeSystem-CodeSystem-jurisdictions-vr.html).
+* [FHIR-49764](https://jira.hl7.org/browse/FHIR-49764): Added XX=COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA and ZZ=UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY to [States, Territories, and Provinces Vital Records value set](https://build.fhir.org/ig/HL7/vr-common-library/en/ValueSet-ValueSet-states-territories-provinces-vr.html).
+* [FHIR-48883](https://jira.hl7.org/browse/FHIR-48883): Added text to idenfity address.use for residence=Home and mailing=Biling.
+* [FHIR-59516](https://jira.hl7.org/browse/FHIR-59516): Added binding value of not-applicable in extension:dataabsent and updated usage narrative. 
 
 ### STU 2.0 Changes 
 * Most of the changes since STU1.1 relate to [Vital Records IG Harmonization](vr_ig_harmonization.html).  For a summary of harmonization-related changes see  the [Content Transitions](content-transitions.html) page.
