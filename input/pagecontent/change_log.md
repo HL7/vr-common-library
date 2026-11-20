@@ -5,7 +5,8 @@
 [Code System - Jurisdictions Vital Records](https://build.fhir.org/ig/HL7/vr-common-library/en/CodeSystem-CodeSystem-jurisdictions-vr.html).
 * [FHIR-49764](https://jira.hl7.org/browse/FHIR-49764): Added XX=COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA and ZZ=UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY to [States, Territories, and Provinces Vital Records value set](https://build.fhir.org/ig/HL7/vr-common-library/en/ValueSet-ValueSet-states-territories-provinces-vr.html).
 * [FHIR-48883](https://jira.hl7.org/browse/FHIR-48883): Added text to idenfity address.use for residence=Home and mailing=Biling.
-* [FHIR-59516](https://jira.hl7.org/browse/FHIR-59516): Added binding value of not-applicable in extension:dataabsent and updated usage narrative. 
+* [FHIR-59516](https://jira.hl7.org/browse/FHIR-59516): Added binding value of not-applicable in extension:dataabsent and updated usage narrative.
+* [FHIR-50422](https://jira.hl7.org/browse/FHIR-50422): Removed partialDateTIme extension on Patient.birthdate for Patient - Child Vital Records.
 
 ### STU 2.0 Changes 
 * Most of the changes since STU1.1 relate to [Vital Records IG Harmonization](vr_ig_harmonization.html).  For a summary of harmonization-related changes see  the [Content Transitions](content-transitions.html) page.

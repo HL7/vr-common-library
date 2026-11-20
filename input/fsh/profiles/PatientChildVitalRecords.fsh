@@ -45,10 +45,10 @@ RuleSet: childName
 
 RuleSet: birthDateAndTime 
 * birthDate 1..
-  * ^short = "Birth Date with support for partial date and time of birth via extension.  See [Birth Date and Time]."
-  * extension[partialDateTime] ^short = "Use if only partial date and time of birth is known"
-  * extension[birthTime]  ^short = "Time of Birth"
-  * extension[partialDateTime] 
+  * ^short = "Birth Date and time of birth via extension.  See [Birth Date and Time]."
+  // * extension[partialDateTime] ^short = "Use if only partial date and time of birth is known" - commmented out partial date is not allowed for child DOB
+  * extension[birthTime]  ^short = "Time of Birth" 
+  // * extension[partialDateTime] - commmented out partial date is not allowed for child DOB
   * extension[birthTime] 
 
 
